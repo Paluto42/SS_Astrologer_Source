@@ -65,8 +65,8 @@
       <EquipDelay>0.5</EquipDelay>
     </statBases>
     <equippedStatOffsets>
-		<PawnBeauty>0.4</PawnBeauty>
-		<SocialImpact>0.05</SocialImpact>
+	  <PawnBeauty>0.4</PawnBeauty>
+	  <SocialImpact>0.05</SocialImpact>
 	</equippedStatOffsets>
     <recipeMaker>
       <displayPriority>105</displayPriority>
