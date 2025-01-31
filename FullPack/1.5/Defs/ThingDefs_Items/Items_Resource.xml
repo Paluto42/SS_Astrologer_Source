@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!-- 星光草 -->
+  <ThingDef ParentName="RoughPlantBase">
+    <defName>Astrologer_Starlightgrass</defName>
+    <label>Starlightgrass</label>
+    <description>desc.</description>
+    <stackLimit>200</stackLimit>
+    <!--等待贴图-->
+    <graphicData>
+      <texPath>Things/Item/Resource/PlantFoodRaw/Hay</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>0.6</MarketValue>
+      <Mass>0.014</Mass>
+      <Flammability>1.5</Flammability>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>60</daysToRotStart>
+        <rotDestroys>true</rotDestroys>
+      </li>
+    </comps>
+    <thingCategories>
+      <li>PlantMatter</li>
+    </thingCategories>
+    <ingestible>
+      <preferability>DesperateOnly</preferability>
+      <canAutoSelectAsFoodForCaravan>false</canAutoSelectAsFoodForCaravan>
+    </ingestible>
+  </ThingDef>
+  
+</Defs>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!--登山帽-->
+  <ThingDef ParentName="HatMakeableBase">
+    <defName>Astrologer_MountaineerHat</defName>
+    <label>mountaineer hat</label>
+    <description>desc.</description>
+    <!--等待贴图-->
+    <graphicData>
+      <texPath>Things/Pawn/Humanlike/Apparel/Tuque/Tuque</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <uiIconScale>1.25</uiIconScale>
+    <costStuffCount>20</costStuffCount>
+    <statBases>
+      <MaxHitPoints>80</MaxHitPoints>
+      <WorkToMake>1200</WorkToMake>
+      <Mass>0.07</Mass>
+      <StuffEffectMultiplierArmor>0.2</StuffEffectMultiplierArmor>
+      <StuffEffectMultiplierInsulation_Cold>0.50</StuffEffectMultiplierInsulation_Cold>
+      <StuffEffectMultiplierInsulation_Heat>0</StuffEffectMultiplierInsulation_Heat>
+      <EquipDelay>0.8</EquipDelay>
+    </statBases>
+    <!--generateCommonality>0.5</generateCommonality-->
+    <recipeMaker>
+      <displayPriority>105</displayPriority>
+    </recipeMaker>
+    <apparel>
+      <countsAsClothingForNudity>false</countsAsClothingForNudity>
+      <developmentalStageFilter>Child, Adult</developmentalStageFilter>
+      <bodyPartGroups>
+        <li>UpperHead</li>
+      </bodyPartGroups>
+      <wornGraphicPath>Things/Pawn/Humanlike/Apparel/Tuque/Tuque</wornGraphicPath>
+      <layers>
+        <li>Overhead</li>
+      </layers>
+      <defaultOutfitTags>
+        <li>Worker</li>
+      </defaultOutfitTags>
+    </apparel>
+    <tradeTags>
+      <li>BasicClothing</li>
+    </tradeTags>
+  </ThingDef>
+  
+  <!--社交大师(墨镜)-->
+  <ThingDef ParentName="Astrologer_ApparelMakeableBase">
+    <defName>Astrologer_Sunglasses</defName>
+    <label>astrologer sunglasses</label>
+    <description>desc.</description>
+    <!--等待贴图-->
+    <graphicData>
+      <texPath>Things/Pawn/Humanlike/Apparel/Tuque/Tuque</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+    </graphicData>
+    <uiIconScale>1.25</uiIconScale>
+    <costStuffCount>20</costStuffCount>
+    <statBases>
+      <MaxHitPoints>80</MaxHitPoints>
+      <WorkToMake>1200</WorkToMake>
+      <Mass>0.07</Mass>
+      <EquipDelay>0.5</EquipDelay>
+    </statBases>
+    <equippedStatOffsets>
+		<PawnBeauty>0.4</PawnBeauty>
+		<SocialImpact>0.05</SocialImpact>
+	</equippedStatOffsets>
+    <recipeMaker>
+      <displayPriority>105</displayPriority>
+    </recipeMaker>
+    <apparel>
+      <countsAsClothingForNudity>false</countsAsClothingForNudity>
+      <developmentalStageFilter>Child, Adult</developmentalStageFilter>
+      <bodyPartGroups>
+		<li>Eyes</li>
+	  </bodyPartGroups>
+      <wornGraphicPath>Things/Pawn/Humanlike/Apparel/Tuque/Tuque</wornGraphicPath>
+      <layers>
+        <li>EyeCover</li>
+      </layers>
+      <defaultOutfitTags>
+        <li>Worker</li>
+      </defaultOutfitTags>
+    </apparel>
+    <tradeTags>
+      <li>BasicClothing</li>
+    </tradeTags>
+  </ThingDef>
+
+</Defs>
