@@ -67,7 +67,7 @@
     <equippedStatOffsets>
 	  <PawnBeauty>0.4</PawnBeauty>
 	  <SocialImpact>0.05</SocialImpact>
-	</equippedStatOffsets>
+    </equippedStatOffsets>
     <recipeMaker>
       <displayPriority>105</displayPriority>
     </recipeMaker>
