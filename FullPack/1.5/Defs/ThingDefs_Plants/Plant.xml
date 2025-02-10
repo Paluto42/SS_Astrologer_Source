@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-  <!--星光草-->
+  <!--星光草球-->
   <ThingDef ParentName="PlantBase">
     <defName>Astrologer_Plant_Starlightgrass</defName>
-    <label>haygrass</label>
+    <label>星光草球</label>
     <description>desc.</description>
     <statBases>
       <MaxHitPoints>85</MaxHitPoints>
@@ -26,6 +26,7 @@
       <dieIfLeafless>true</dieIfLeafless>
       <maxMeshCount>4</maxMeshCount>
       <harvestTag>Standard</harvestTag>
+      <!--星光草-->
       <harvestedThingDef>Astrologer_Starlightgrass</harvestedThingDef>
       <harvestYield>18</harvestYield>
       <neverBlightable>true</neverBlightable>

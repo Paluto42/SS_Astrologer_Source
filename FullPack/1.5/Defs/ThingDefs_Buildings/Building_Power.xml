@@ -4,7 +4,7 @@
   <!--夜空电机-->
   <ThingDef ParentName="BuildingBase">
     <defName>Astrologer_NightGenerator</defName>
-    <label>lunar generator</label>
+    <label>夜空电机</label>
     <description>desc.</description>
     <thingClass>Building</thingClass>
     <drawerType>MapMeshAndRealTime</drawerType>

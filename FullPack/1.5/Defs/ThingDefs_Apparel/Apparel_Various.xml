@@ -23,7 +23,7 @@
   <!--连衣裙-->
   <ThingDef ParentName="Astrologer_ApparelMakeableBase">
     <defName>Astrologer_FrillOnepiece</defName>
-    <label>onepiece</label>
+    <label>连衣裙</label>
     <description>desc.</description>
     <!--等待贴图-->
     <graphicData>
@@ -72,7 +72,7 @@
   <!--登山服-->
   <ThingDef ParentName="Astrologer_ApparelMakeableBase">
     <defName>Astrologer_MountaineerOutfit</defName>
-    <label>outfit</label>
+    <label>登山服</label>
     <description>desc.</description>
     <!--等待贴图-->
     <graphicData>
@@ -112,10 +112,6 @@
     <tradeTags>
       <li>BasicClothing</li>
     </tradeTags>
-    <defaultOutfitTags>
-        <li>Worker</li>
-        <li>Soldier</li>
-      </defaultOutfitTags>
     <recipeMaker>
       <displayPriority>220</displayPriority>
     </recipeMaker>
@@ -124,7 +120,7 @@
   <!--登山裤-->
   <ThingDef ParentName="Astrologer_ApparelMakeableBase">
     <defName>Astrologer_MountaineerPants</defName>
-    <label>pants</label>
+    <label>登山裤</label>
     <description>desc.</description>
     <recipeMaker>
       <displayPriority>265</displayPriority>
@@ -149,6 +145,7 @@
         <li>Legs</li>
       </bodyPartGroups>
       <layers>
+        <li>OnSkin</li>
         <li>Middle</li>
       </layers>
       <defaultOutfitTags>
@@ -156,9 +153,6 @@
         <li>Soldier</li>
       </defaultOutfitTags>
       <canBeDesiredForIdeo>false</canBeDesiredForIdeo>
-      <layers>
-        <li>OnSkin</li>
-      </layers>
     </apparel>
     <tradeTags>
       <li>BasicClothing</li>
@@ -169,7 +163,7 @@
   <ThingDef ParentName="Astrologer_ApparelMakeableBase">
     <defName>Astrologer_Camisole</defName>
     <description>desc.</description>
-    <label>Astrologer Camisole</label>
+    <label>贴身防护服</label>
     <recipeMaker>
     </recipeMaker>
     <!--等待贴图-->
@@ -209,7 +203,7 @@
   <!--社交大师(服装)-->
   <ThingDef ParentName="Astrologer_ApparelMakeableBase">
     <defName>Astrologer_Socialwear</defName>
-    <label>socialwear</label>
+    <label>社交大师(服装)</label>
     <description>desc.</description>
     <!--等待贴图-->
     <graphicData>

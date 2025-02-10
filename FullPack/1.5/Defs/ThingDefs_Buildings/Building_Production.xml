@@ -4,7 +4,7 @@
   <!--占星师装配台-->
   <ThingDef ParentName="BenchBase">
     <defName>Astrologer_FabricationBench</defName>
-    <label>fabrication bench</label>
+    <label>占星师装配台</label>
     <description>desc.</description>
     <thingClass>Building_WorkTable</thingClass>
     <altitudeLayer>Building</altitudeLayer>
@@ -82,7 +82,7 @@
   <!--恒星熔炉-->
   <ThingDef ParentName="BenchBase">
     <defName>Astrologer_StellarStove</defName>
-    <label>fueled stove</label>
+    <label>恒星熔炉</label>
     <description>desc.</description>
     <thingClass>Building_WorkTable_HeatPush</thingClass>
     <drawerType>MapMeshAndRealTime</drawerType>
@@ -168,7 +168,7 @@
   <!--观星仪-->
   <ThingDef ParentName="BenchBase">
     <defName>Astrologer_Stargazer</defName>
-    <label>hi-tech research bench</label>
+    <label>观星仪</label>
     <description>desc.</description>
     <thingClass>Building_ResearchBench</thingClass>
     <size>(5,2)</size>
