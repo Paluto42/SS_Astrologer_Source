@@ -1,0 +1,39 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using UnityEngine;
+using Verse;
+
+namespace Astrologer
+{
+    public abstract class Gizmo_Insight_Base : Command
+    {
+        public TC_Insights compInsights;
+
+        public string prefix = "";
+        public override float GetWidth(float maxWidth)
+        {
+            return 120f;
+        }
+
+        public override GizmoResult GizmoOnGUI(Vector2 topLeft, float maxWidth, GizmoRenderParms parms)
+        {
+            Rect rect = new(topLeft.x, topLeft.y, GetWidth(maxWidth), 75f);
+            Rect rect2 = rect.ContractedBy(6f);
+            GUI.DrawTexture(rect, BGTex);
+            Text.Font = GameFont.Tiny;
+            Rect rect3 = rect2.TopHalf();
+            Widgets.Label(rect3, prefix + "Astrologer_Insights".Translate());
+
+            Rect rect4 = rect2.BottomHalf();
+            Widgets.FillableBar(rect4, compInsights.CurInsights / compInsights.MaxInsights);
+            Text.Font = GameFont.Small;
+            Text.Anchor = TextAnchor.MiddleCenter;
+            Widgets.Label(rect4, compInsights.CurInsights + " / " + compInsights.MaxInsights);
+            Text.Anchor = TextAnchor.UpperLeft;
+            return new GizmoResult(GizmoState.Clear);
+        }
+    }
+}
