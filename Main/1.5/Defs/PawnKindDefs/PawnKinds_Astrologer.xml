@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<PawnKindDef Name="Astrologer_PawnBase" Abstract="True">
+		<race>Human</race>
+		<defaultFactionType>Astrologer_Faction</defaultFactionType>
+		<backstoryCryptosleepCommonality>0</backstoryCryptosleepCommonality>
+		<invNutrition>2</invNutrition>
+		<!--gearHealthRange>0.8~1.0</gearHealthRange-->
+		<apparelIgnoreSeasons>true</apparelIgnoreSeasons>
+		<minGenerationAge>75</minGenerationAge>
+		<maxGenerationAge>300</maxGenerationAge>
+		<initialWillRange>60~90</initialWillRange>
+		<initialResistanceRange>60~90</initialResistanceRange>
+		<biocodeWeaponChance>0</biocodeWeaponChance>
+		<backstoryFiltersOverride>
+			<li>
+				<categories>
+					<li>Outlander</li>
+				</categories>
+			</li>
+		</backstoryFiltersOverride>
+		<styleItemTags>
+			<li>
+				<tag>Astrologer</tag>
+				<baseWeight>1</baseWeight>
+				<weightFactor>1</weightFactor>
+			</li>
+		</styleItemTags>
+		<disallowedTraits>
+			<li>Wimp</li>
+			<li>Nudist</li>
+			<li>BodyPurist</li>
+			<li>Gourmand</li>
+			<li>Pyromaniac</li>
+		</disallowedTraits>
+		<!--abilities>
+      <li></li>
+    </abilities-->
+		<!--xenotypeSet>
+		<xenotypeChances>
+		</xenotypeChances>
+	</xenotypeSet-->
+		<useFactionXenotypes>false</useFactionXenotypes>
+	</PawnKindDef>
+
+</Defs>

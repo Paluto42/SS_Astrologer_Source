@@ -1,34 +1,89 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-  <!-- 星光草 -->
-  <ThingDef ParentName="RoughPlantBase">
-    <defName>Astrologer_Starlightgrass</defName>
-    <label>星光草</label>
-    <description>desc.</description>
-    <stackLimit>200</stackLimit>
-    <!--等待贴图-->
-    <graphicData>
-      <texPath>Things/Item/Resource/PlantFoodRaw/Hay</texPath>
-      <graphicClass>Graphic_StackCount</graphicClass>
-    </graphicData>
-    <statBases>
-      <MarketValue>0.6</MarketValue>
-      <Mass>0.014</Mass>
-      <Flammability>1.5</Flammability>
-    </statBases>
-    <comps>
-      <li Class="CompProperties_Rottable">
-        <daysToRotStart>60</daysToRotStart>
-        <rotDestroys>true</rotDestroys>
-      </li>
-    </comps>
-    <thingCategories>
-      <li>PlantMatter</li>
-    </thingCategories>
-    <ingestible>
-      <preferability>DesperateOnly</preferability>
-      <canAutoSelectAsFoodForCaravan>false</canAutoSelectAsFoodForCaravan>
-    </ingestible>
-  </ThingDef>
-  
+    <!-- 星辉钢 -->
+    <ThingDef ParentName="ResourceBase">
+        <defName>Astrologer_StarlightIron</defName>
+        <label>星辉钢</label>
+        <description>星辉钢.</description>
+        <graphicData>
+            <texPath>Things/Item/Resource/Plasteel</texPath>
+            <graphicClass>Graphic_StackCount</graphicClass>
+        </graphicData>
+        <soundInteract>Metal_Drop</soundInteract>
+        <soundDrop>Metal_Drop</soundDrop>
+        <useHitPoints>false</useHitPoints>
+        <healthAffectsPrice>false</healthAffectsPrice>
+        <statBases>
+            <MarketValue>6</MarketValue>
+            <Mass>0.5</Mass>
+            <StuffPower_Armor_Sharp>1</StuffPower_Armor_Sharp>
+            <StuffPower_Armor_Blunt>0.5</StuffPower_Armor_Blunt>
+            <StuffPower_Armor_Heat>0.6</StuffPower_Armor_Heat>
+            <StuffPower_Insulation_Cold>3</StuffPower_Insulation_Cold>
+            <StuffPower_Insulation_Heat>0</StuffPower_Insulation_Heat>
+            <SharpDamageMultiplier>1.2</SharpDamageMultiplier>
+            <BluntDamageMultiplier>1.2</BluntDamageMultiplier>
+        </statBases>
+        <thingCategories>
+            <li>Astrologer_Resources</li>
+        </thingCategories>
+        <deepCommonality>0</deepCommonality>
+        <burnableByRecipe>false</burnableByRecipe>
+        <smeltable>true</smeltable>
+        <minRewardCount>10</minRewardCount>
+        <stuffProps>
+            <categories>
+                <li>Metallic</li>
+            </categories>
+            <appearance>Metal</appearance>
+            <commonality>0.05</commonality>
+            <color>(220,220,220)</color>
+            <constructEffect>ConstructMetal</constructEffect>
+            <soundImpactBullet>BulletImpact_Metal</soundImpactBullet>
+            <soundMeleeHitSharp>MeleeHit_Metal_Sharp</soundMeleeHitSharp>
+            <soundMeleeHitBlunt>MeleeHit_Metal_Blunt</soundMeleeHitBlunt>
+            <soundImpactMelee>Pawn_Melee_Punch_HitBuilding_Metal</soundImpactMelee>
+            <statFactors>
+                <MaxHitPoints>1.5</MaxHitPoints>
+                <Beauty>1</Beauty>
+                <Flammability>0</Flammability>
+                <DoorOpenSpeed>1.5</DoorOpenSpeed>
+            </statFactors>
+        </stuffProps>
+        <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+        <allowedArchonexusCount>80</allowedArchonexusCount>
+    </ThingDef>
+
+    <!-- 星光草 -->
+    <ThingDef ParentName="RoughPlantBase">
+        <defName>Astrologer_Starlightgrass</defName>
+        <label>星光草</label>
+        <description>晨曦之中，造物主以此等超凡彰显其伟大。--启示录Ⅰ-光明之书</description>
+        <stackLimit>200</stackLimit>
+        <!--等待贴图-->
+        <graphicData>
+            <texPath>Things/Item/Resource/PlantFoodRaw/Hay</texPath>
+            <graphicClass>Graphic_StackCount</graphicClass>
+        </graphicData>
+        <statBases>
+            <MarketValue>0.6</MarketValue>
+            <Mass>0.014</Mass>
+            <Flammability>1.5</Flammability>
+        </statBases>
+        <comps>
+            <li Class="CompProperties_Rottable">
+                <daysToRotStart>60</daysToRotStart>
+                <rotDestroys>true</rotDestroys>
+            </li>
+        </comps>
+        <thingCategories>
+            <li>Astrologer_Resources</li>
+            <li>PlantMatter</li>
+        </thingCategories>
+        <ingestible>
+            <preferability>DesperateOnly</preferability>
+            <canAutoSelectAsFoodForCaravan>false</canAutoSelectAsFoodForCaravan>
+        </ingestible>
+    </ThingDef>
+
 </Defs>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <HediffDef>
+        <defName>Astrologer_Airpurifier</defName>
+        <label>生存作战单元-呼吸过滤</label>
+        <description>多层呼吸过滤系统,能够过滤一定量有害气体.</description>
+        <descriptionHyperlinks>
+            <ThingDef>Astrologer_LightHelmet</ThingDef>
+        </descriptionHyperlinks>
+        <hediffClass>HediffWithComps</hediffClass>
+        <defaultLabelColor>(0.6, 0.6, 1.0)</defaultLabelColor>
+        <isBad>false</isBad>
+        <allowMothballIfLowPriorityWorldPawn>true</allowMothballIfLowPriorityWorldPawn>
+        <everCurableByItem>false</everCurableByItem>
+        <stages>
+            <li>
+                <statOffsets>
+                    <ToxicEnvironmentResistance>0.5</ToxicEnvironmentResistance>
+                </statOffsets>
+            </li>
+        </stages>
+    </HediffDef>
+
+    <HediffDef>
+        <defName>Astrologer_Detoxifier</defName>
+        <label>生存作战单元-代谢增益</label>
+        <description>通过先进的纳米技术，它能有效清除血液中的有害物质.</description>
+        <descriptionHyperlinks>
+            <ThingDef>Astrologer_LightArmor</ThingDef>
+        </descriptionHyperlinks>
+        <hediffClass>HediffWithComps</hediffClass>
+        <defaultLabelColor>(0.6, 0.6, 1.0)</defaultLabelColor>
+        <isBad>false</isBad>
+        <allowMothballIfLowPriorityWorldPawn>true</allowMothballIfLowPriorityWorldPawn>
+        <everCurableByItem>false</everCurableByItem>
+        <stages>
+            <li>
+                <capMods>
+                    <li>
+                        <capacity>BloodFiltration</capacity>
+                        <offset>0.2</offset>
+                    </li>
+                </capMods>
+            </li>
+        </stages>
+    </HediffDef>
+
+</Defs>

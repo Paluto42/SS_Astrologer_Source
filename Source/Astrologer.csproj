@@ -65,6 +65,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Building\StellarStove.cs" />
+    <Compile Include="Comp\HediffApparel.cs" />
     <Compile Include="Comp\Insights.cs" />
     <Compile Include="Gizmo\Gizmo_Insight.cs" />
     <Compile Include="Gizmo\Gizmo_Insight_Base.cs" />

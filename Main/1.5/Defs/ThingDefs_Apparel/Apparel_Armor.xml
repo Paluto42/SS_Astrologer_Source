@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <ThingDef Name="Astrologer_ArmorBase" ParentName="Astrologer_ApparelBase" Abstract="True">
+        <thingCategories Inherit="false">
+            <li>Astrologer_Armor</li>
+        </thingCategories>
+        <apparel>
+            <defaultOutfitTags>
+                <li>Soldier</li>
+            </defaultOutfitTags>
+        </apparel>
+        <recipeMaker>
+            <!--researchPrerequisite>ComplexClothing</researchPrerequisite-->
+            <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+            <workSkill>Crafting</workSkill>
+            <effectWorking>Smith</effectWorking>
+            <soundWorking>Recipe_Smith</soundWorking>
+            <recipeUsers>
+                <li>ElectricSmithy</li>
+                <li>FueledSmithy</li>
+            </recipeUsers>
+            <unfinishedThingDef>UnfinishedMetallicTechArmor</unfinishedThingDef>
+            <defaultIngredientFilter>
+                <categories>
+                    <li>Root</li>
+                </categories>
+                <disallowedThingDefs>
+                    <li>Gold</li>
+                    <li>Silver</li>
+                    <li>Plasteel</li>
+                    <li>Jade</li>
+                    <li>Uranium</li>
+                    <li MayRequire="Ludeon.RimWorld.Anomaly">Bioferrite</li>
+                </disallowedThingDefs>
+            </defaultIngredientFilter>
+        </recipeMaker>
+        <!--tradeTags>
+            <li>Clothing</li>
+        </tradeTags-->
+    </ThingDef>
+
+    <!--生存作战轻甲-->
+    <ThingDef ParentName="Astrologer_ArmorBase">
+        <defName>Astrologer_LightArmor</defName>
+        <label>生存作战轻甲</label>
+        <description>轻量化全能型作战服，较高的锐防和普通的钝防./n能够监控并介入穿戴者的血液循环过程,增强生存能力和战斗持久力</description>
+        <!--等待贴图-->
+        <graphicData>
+            <texPath>Things/Pawn/Humanlike/Apparel/ReconArmor/ReconArmor</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <!--占位,原版数值-->
+        <statBases>
+            <MaxHitPoints>260</MaxHitPoints>
+            <WorkToMake>6000</WorkToMake>
+            <Mass>6</Mass>
+            <ArmorRating_Sharp>0.92</ArmorRating_Sharp>
+            <ArmorRating_Blunt>0.4</ArmorRating_Blunt>
+            <ArmorRating_Heat>0.46</ArmorRating_Heat>
+            <Insulation_Cold>32</Insulation_Cold>
+            <Insulation_Heat>9</Insulation_Heat>
+            <EquipDelay>6</EquipDelay>
+        </statBases>
+        <equippedStatOffsets>
+            <MoveSpeed>0.5</MoveSpeed>
+            <!--需要hediff-->
+            <ToxicResistance>0.5</ToxicResistance>
+        </equippedStatOffsets>
+        <comps>
+            <li Class="Astrologer.TCP_HediffApparel">
+                <hediff>Astrologer_Detoxifier</hediff>
+            </li>
+        </comps>
+        <!--材料-->
+        <costList>
+            <Cloth>40</Cloth>
+            <Steel>80</Steel>
+        </costList>
+        <apparel>
+            <wornGraphicPath>Things/Pawn/Humanlike/Apparel/ReconArmor/ReconArmor</wornGraphicPath>
+            <bodyPartGroups>
+                <li>Torso</li>
+                <li>Neck</li>
+                <li>Shoulders</li>
+                <li>Arms</li>
+                <li>Legs</li>
+            </bodyPartGroups>
+            <layers>
+                <li>Middle</li>
+                <li>Shell</li>
+            </layers>
+        </apparel>
+        <recipeMaker>
+            <!--researchPrerequisite>ComplexClothing</researchPrerequisite-->
+            <skillRequirements>
+                <Crafting>8</Crafting>
+            </skillRequirements>
+            <displayPriority>1000</displayPriority>
+        </recipeMaker>
+    </ThingDef>
+
+</Defs>

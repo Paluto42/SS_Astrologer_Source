@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <ThingDef Name="Astrologer_MedievalWeaponBase" Abstract="True" ParentName="BaseWeapon">
+        <techLevel>Medieval</techLevel>
+        <smeltable>true</smeltable>
+        <relicChance>0</relicChance>
+        <inspectorTabs>
+            <li>ITab_Art</li>
+        </inspectorTabs>
+        <statBases>
+            <!--Flammability>0.5</Flammability-->
+        </statBases>
+        <recipeMaker>
+            <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+            <workSkill>Crafting</workSkill>
+            <effectWorking>Smith</effectWorking>
+            <soundWorking>Recipe_Smith</soundWorking>
+            <recipeUsers>
+                <li>TableMachining</li>
+            </recipeUsers>
+            <unfinishedThingDef>UnfinishedWeapon</unfinishedThingDef>
+        </recipeMaker>
+        <tradeTags>
+            <li>AstrologerWeapon</li>
+        </tradeTags>
+        <burnableByRecipe>true</burnableByRecipe>
+    </ThingDef>
+
+    <ThingDef Name="Astrologer_IndustrialWeaponBase" Abstract="True" ParentName="BaseWeapon">
+        <techLevel>Industrial</techLevel>
+        <smeltable>true</smeltable>
+        <relicChance>0</relicChance>
+        <!--留给近战武器burnableByRecipe>true</burnableByRecipe-->
+        <inspectorTabs>
+            <li>ITab_Art</li>
+        </inspectorTabs>
+        <statBases>
+            <!--Flammability>0.5</Flammability-->
+        </statBases>
+        <recipeMaker>
+            <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+            <workSkill>Crafting</workSkill>
+            <effectWorking>Smith</effectWorking>
+            <soundWorking>Recipe_Smith</soundWorking>
+            <recipeUsers>
+                <li>TableMachining</li>
+            </recipeUsers>
+            <unfinishedThingDef>UnfinishedWeapon</unfinishedThingDef>
+        </recipeMaker>
+        <tradeTags>
+            <li>AstrologerWeapon</li>
+        </tradeTags>
+    </ThingDef>
+
+    <ThingDef Name="Astrologer_WeaponMeleeBase" Abstract="True" ParentName="Astrologer_MedievalWeaponBase">
+        <thingCategories>
+            <li>Astrologer_WeaponMelee</li>
+        </thingCategories>
+        <weaponClasses>
+            <li>Melee</li>
+            <li>MeleePiercer</li>
+        </weaponClasses>
+        <recipeMaker>
+            <defaultIngredientFilter>
+                <categories>
+                    <li>Root</li>
+                </categories>
+                <disallowedThingDefs>
+                    <li>Silver</li>
+                    <li>Gold</li>
+                    <li>WoodLog</li>
+                </disallowedThingDefs>
+            </defaultIngredientFilter>
+        </recipeMaker>
+        <tradeTags>
+            <li>Astrologer_WeaponMelee</li>
+        </tradeTags>
+        <comps>
+            <li>
+                <compClass>CompQuality</compClass>
+            </li>
+            <li Class="CompProperties_Art">
+                <nameMaker>NamerArtWeaponMelee</nameMaker>
+                <descriptionMaker>ArtDescription_WeaponMelee</descriptionMaker>
+                <minQualityForArtistic>Excellent</minQualityForArtistic>
+            </li>
+        </comps>
+    </ThingDef>
+
+    <ThingDef Name="Astrologer_WeaponRangedBase" Abstract="True" ParentName="Astrologer_IndustrialWeaponBase">
+        <thingCategories>
+            <li>Astrologer_WeaponRanged</li>
+        </thingCategories>
+        <weaponClasses>
+            <li>Ranged</li>
+        </weaponClasses>
+        <tradeTags>
+            <li>Astrologer_WeaponRanged</li>
+        </tradeTags>
+        <comps>
+            <li>
+                <compClass>CompQuality</compClass>
+            </li>
+        </comps>
+    </ThingDef>
+
+</Defs>

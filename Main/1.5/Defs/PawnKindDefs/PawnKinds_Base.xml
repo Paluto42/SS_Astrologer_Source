@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!--PawnKindDef Name="Astrologer_PawnBase" Abstract="True">
+    <race>Astrologer_Race</race>
+    <defaultFactionType>Astrologer_Faction</defaultFactionType>
+    <backstoryCryptosleepCommonality>0</backstoryCryptosleepCommonality>
+    <invNutrition>3</invNutrition>
+	<gearHealthRange>0.8~1.0</gearHealthRange>
+	<apparelIgnoreSeasons>true</apparelIgnoreSeasons>
+	<maxGenerationAge>300</maxGenerationAge>
+	<minGenerationAge>75</minGenerationAge>
+    <initialWillRange>60~90</initialWillRange>
+    <initialResistanceRange>60~90</initialResistanceRange>
+	<styleItemTags>
+	  <li>
+		<tag>Astrologer</tag>
+		<baseWeight>1</baseWeight>
+		<weightFactor>1</weightFactor>
+	  </li>
+	</styleItemTags>
+	<abilities>
+      <li>Milira_ShortFly</li>
+    </abilities>
+	<xenotypeSet>
+		<xenotypeChances>
+		</xenotypeChances>
+	</xenotypeSet>
+	<useFactionXenotypes>false</useFactionXenotypes>
+  </PawnKindDef-->
+
+</Defs>

@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-  <ThingDef ParentName="BuildingBase" Name="Astrologer_BuildingBase" Abstract="True">
-    <!--researchPrerequisites>
-      <li>Astrologer_Research_Alchemy</li>
-    </researchPrerequisites-->
-    <!--uiOrder>3000</uiOrder-->
-  </ThingDef>
-  
+    <ThingDef ParentName="BuildingBase" Name="Astrologer_BuildingBase" Abstract="True">
+        <!--researchPrerequisites>
+            <li>Astrologer_Research_Alchemy</li>
+        </researchPrerequisites-->
+        <!--uiOrder>3000</uiOrder-->
+    </ThingDef>
+
 </Defs>

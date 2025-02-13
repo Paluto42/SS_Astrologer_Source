@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <ThingDef Name="Astrologer_ApparelBase" ParentName="ApparelBase" Abstract="True">
+        <apparel>
+            <canBeDesiredForIdeo>false</canBeDesiredForIdeo>
+            <canBeGeneratedToSatisfyWarmth>false</canBeGeneratedToSatisfyWarmth>
+            <canBeGeneratedToSatisfyToxicEnvironmentResistance>false</canBeGeneratedToSatisfyToxicEnvironmentResistance>
+            <developmentalStageFilter>Adult</developmentalStageFilter>
+            <tags>
+                <li>Astrologer_Apparel</li>
+            </tags>
+        </apparel>
+        <statBases>
+            <Beauty>0</Beauty>
+        </statBases>
+        <comps>
+            <li Class="CompProperties_Forbiddable"/>
+            <li>
+                <compClass>CompColorable</compClass>
+            </li>
+            <li>
+                <compClass>CompQuality</compClass>
+            </li>
+        </comps>
+        <relicChance>0</relicChance>
+        <recipeMaker>
+            <!--可能做独立研发项目?-->
+            <researchPrerequisite>ComplexClothing</researchPrerequisite>
+        </recipeMaker>
+    </ThingDef>
+
+</Defs>
