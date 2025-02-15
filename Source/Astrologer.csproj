@@ -66,17 +66,21 @@
   <ItemGroup>
     <Compile Include="Building\StellarStove.cs" />
     <Compile Include="Comp\TCP_HediffApparel.cs" />
-    <Compile Include="Comp\Insights.cs" />
-    <Compile Include="Comp\TCP_MultipleVerb.cs" />
+    <Compile Include="Insight\TCP_Insights.cs" />
+    <Compile Include="Insight\trash\TCP_MultipleVerb.cs" />
     <Compile Include="Comp\TC_PawnEquipGizmo.cs" />
-    <Compile Include="Comp\TCP_FireMode.cs" />
-    <Compile Include="Comp\TC_FireMods.cs" />
-    <Compile Include="Gizmo\Gizmo_Insight.cs" />
-    <Compile Include="Gizmo\Gizmo_Insight_Base.cs" />
+    <Compile Include="Insight\TCP_FireMode.cs" />
+    <Compile Include="Insight\trash\TC_FireMods.cs" />
+    <Compile Include="Insight\Gizmo_Insight.cs" />
+    <Compile Include="Insight\Gizmo_Insight_Base.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Thing\Thing_ActivatedPulsePack.cs" />
+    <Compile Include="Utility.cs" />
     <Compile Include="Verb\Verb_EMPpop.cs" />
+    <Compile Include="Insight\Verb_PreApplyShoot.cs" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Gizmo\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

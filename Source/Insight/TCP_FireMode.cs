@@ -14,6 +14,8 @@ namespace Astrologer
     {
         public VerbProperties verbProps = new();
 
+        public int consumeInsight = 1;
+
         public string mainIcon = "";
 
         public string mainWeaponLabel = "";
@@ -29,11 +31,13 @@ namespace Astrologer
 
     public class TC_FireMode : ThingComp 
     {
+        private TC_Insights CompInsight => CasterPawn?.GetComp<TC_Insights>();
+
         private Verb verbInt;
 
         private CompEquippable compEquippableInt;
 
-        private bool isSecondaryVerbSelected;
+        private bool isSecondaryVerbSelected = false;
 
         public TCP_FireMode Props => (TCP_FireMode)props;
 
@@ -70,16 +74,28 @@ namespace Astrologer
         //这个居然不会自动调用...
         public override IEnumerable<Gizmo> CompGetGizmosExtra()
         {
-            if (CasterPawn.kindDef.defName == "占星师") 
-            {
-
-            }
             if (CasterPawn == null || CasterPawn.Faction.Equals(Faction.OfPlayer))
             {
                 string text = (IsSecondaryVerbSelected ? Props.secondaryIcon : Props.mainIcon);
                 if (text == "")
                 {
                     text = "UI/Buttons/Reload";
+                }
+                if (CompInsight.CurInsights < Props.consumeInsight) 
+                {
+                    if (isSecondaryVerbSelected) 
+                    {
+                        SwitchVerb();
+                        string translatedMessage = "洞察力不足了!".Translate();
+                        MoteMaker.ThrowText(CasterPawn.PositionHeld.ToVector3(), CasterPawn.MapHeld, translatedMessage, 3f);
+                    }
+                    yield return new Command_Action
+                    {
+                        action = delegate { },
+                        defaultLabel = Props.mainWeaponLabel,
+                        icon = ContentFinder<Texture2D>.Get(Props.mainIcon, reportFailure: false)
+                    };
+                    yield break;
                 }
                 yield return new Command_Action
                 {
@@ -89,6 +105,10 @@ namespace Astrologer
                     icon = ContentFinder<Texture2D>.Get(text, reportFailure: false)
                 };
             }
+        }
+        public override void Initialize(CompProperties props)
+        {
+            base.Initialize(props);
         }
 
         public override void PostExposeData()
@@ -107,11 +127,13 @@ namespace Astrologer
             {
                 EquipmentSource.PrimaryVerb.verbProps = Props.verbProps;
                 isSecondaryVerbSelected = true;
+                Log.Message("现在的verb是 SecondaryVerb: " + EquipmentSource.PrimaryVerb);
             }
             else
             {
                 EquipmentSource.PrimaryVerb.verbProps = parent.def.Verbs[0];
                 isSecondaryVerbSelected = false;
+                Log.Message("现在的verb是 PrimaryVerb: " + EquipmentSource.PrimaryVerb);
             }
         }
 

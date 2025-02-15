@@ -24,25 +24,31 @@ namespace Astrologer
     {
         public TCP_Insights Props => (TCP_Insights)props;
         public Pawn User => parent as Pawn;
-        private int tick = 0;
-        private int curInsightAmountInt = 0;
+
+        internal int curInsightAmountInt = 0;
         public int CurInsights => curInsightAmountInt;
         public int MaxInsights => Props.maxInsights;
+
+        public void ConsumeInsight(int amount)
+        {
+            if (amount <= 0) return;
+            if (curInsightAmountInt < amount) return;
+            curInsightAmountInt -= amount;
+            //Log.Message(User.Name + " 的洞察力消耗了： " + amount);
+        }
+
         public override void CompTick()
         {
             if (User == null || User.health.Dead) return;
-            if (User.health.Dead) return;
-            ++tick;
-            if (tick >= Props.interval) 
+            if (Utility.IsTickInterval(Props.interval)) 
             {
-                tick = 0;
                 if (curInsightAmountInt < Props.maxInsights) 
                 {
                     curInsightAmountInt++;
                 }
             }
         }
-
+        //放在Pawn身上可以直接调用
         public override IEnumerable<Gizmo> CompGetGizmosExtra()
         {
             yield return new Gizmo_Insight
@@ -50,6 +56,5 @@ namespace Astrologer
                 compInsights = this
             };
         }
-
     }
 }

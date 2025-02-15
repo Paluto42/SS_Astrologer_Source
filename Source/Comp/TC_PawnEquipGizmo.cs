@@ -7,7 +7,7 @@ using Verse;
 
 namespace Astrologer
 {
-    internal class TCP_PawnEquipGizmo : CompProperties
+    public class TCP_PawnEquipGizmo : CompProperties
     {
         public TCP_PawnEquipGizmo()
         {

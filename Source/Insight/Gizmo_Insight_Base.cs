@@ -17,7 +17,14 @@ namespace Astrologer
         {
             return 120f;
         }
-
+        public float Percent 
+        {
+            get 
+            { 
+                return compInsights.CurInsights / (float)compInsights.MaxInsights; 
+            }
+        }
+        //记得加翻译字段
         public override GizmoResult GizmoOnGUI(Vector2 topLeft, float maxWidth, GizmoRenderParms parms)
         {
             Rect rect = new(topLeft.x, topLeft.y, GetWidth(maxWidth), 75f);
@@ -25,15 +32,16 @@ namespace Astrologer
             GUI.DrawTexture(rect, BGTex);
             Text.Font = GameFont.Tiny;
             Rect rect3 = rect2.TopHalf();
-            Widgets.Label(rect3, prefix + "Astrologer_Insights".Translate());
-
+            Widgets.Label(rect3, prefix + "洞察力".Translate());
+            //
             Rect rect4 = rect2.BottomHalf();
-            Widgets.FillableBar(rect4, compInsights.CurInsights / compInsights.MaxInsights);
+            Widgets.FillableBar(rect4, Percent);
             Text.Font = GameFont.Small;
             Text.Anchor = TextAnchor.MiddleCenter;
             Widgets.Label(rect4, compInsights.CurInsights + " / " + compInsights.MaxInsights);
             Text.Anchor = TextAnchor.UpperLeft;
             return new GizmoResult(GizmoState.Clear);
         }
+
     }
 }

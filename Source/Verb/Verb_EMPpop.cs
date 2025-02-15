@@ -17,7 +17,7 @@ namespace Astrologer
             verbClass = typeof(Verb_EMPpop);
         }
     }
-    public class Verb_EMPpop : Verb_Shoot
+    public class Verb_EMPpop : Verb_PreApplyShoot
     {
         VP_EMPpop Props => (VP_EMPpop)verbProps;
         protected override bool TryCastShot()

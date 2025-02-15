@@ -12,14 +12,15 @@ namespace Astrologer
     public class Thing_ActivatedPulsePack : ThingWithComps
     {
         public float radius = 5f;
+
         public override void Tick()
         {
             base.Tick();
-            if (this.IsHashIntervalTick(15))
+            if (Utility.IsTickInterval(15))
             {
                 DamageCloseThings();
             }
-            if (this.IsHashIntervalTick(2500)) 
+            if (Utility.IsTickInterval(2500)) 
             {
                 this.Destroy();
             }

@@ -8,7 +8,7 @@ using Verse;
 
 namespace Astrologer.Comp
 {
-    public class TCP_MultipleVerb : CompProperties
+    /*public class TCP_MultipleVerb : CompProperties
     {
         public List<VerbProperties> verbPropsList = new();
 
@@ -131,4 +131,5 @@ namespace Astrologer.Comp
         }
 
     }
+    */
 }
