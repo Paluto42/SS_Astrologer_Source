@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+    <DamageDef ParentName="Bullet">
+        <defName>Astrologer_Cast_Psychicinsanity</defName>
+        <label>bullet</label>
+        <workerClass>DamageWorker_AddInjury</workerClass>
+        <externalViolence>true</externalViolence>
+        <deathMessage>{0} has been shot to death.</deathMessage>
+        <hediff>PsychicShock</hediff>
+        <harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
+        <impactSoundType>Bullet</impactSoundType>
+        <armorCategory>Sharp</armorCategory>
+        <overkillPctToDestroyPart>0~0.7</overkillPctToDestroyPart>
+        <isRanged>true</isRanged>
+        <makesAnimalsFlee>true</makesAnimalsFlee>
+    </DamageDef>
+
+</Defs>
+

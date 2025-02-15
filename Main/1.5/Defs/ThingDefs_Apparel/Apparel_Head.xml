@@ -40,6 +40,77 @@
         </tradeTags-->
     </ThingDef>
 
+    <!--登山帽-->
+    <ThingDef ParentName="Astrologer_ApparelBase">
+        <defName>Astrologer_MountaineerHat</defName>
+        <label>登山帽</label>
+        <description>在繁星帝国，很多占星师喜欢在夜间的山顶观星，这顶登山帽很好的满足了她们对于保暖的需求</description>
+        <thingCategories Inherit="false">
+            <li>Astrologer_Apparel</li>
+        </thingCategories>
+        <!--等待贴图-->
+        <graphicData>
+            <texPath>Things/Pawn/Humanlike/Apparel/Tuque/Tuque</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <uiIconScale>1.25</uiIconScale>
+        <!--占位,原版数值-->
+        <statBases>
+            <MaxHitPoints>80</MaxHitPoints>
+            <WorkToMake>1200</WorkToMake>
+            <Mass>0.07</Mass>
+            <StuffEffectMultiplierArmor>0.2</StuffEffectMultiplierArmor>
+            <StuffEffectMultiplierInsulation_Cold>1.50</StuffEffectMultiplierInsulation_Cold>
+            <StuffEffectMultiplierInsulation_Heat>0</StuffEffectMultiplierInsulation_Heat>
+            <EquipDelay>0.8</EquipDelay>
+        </statBases>
+        <stuffCategories>
+            <li>Fabric</li>
+            <li>Leathery</li>
+        </stuffCategories>
+        <costStuffCount>20</costStuffCount>
+        <apparel>
+            <parentTagDef>ApparelHead</parentTagDef>
+            <countsAsClothingForNudity>false</countsAsClothingForNudity>
+            <developmentalStageFilter>Child, Adult</developmentalStageFilter>
+            <bodyPartGroups>
+                <li>UpperHead</li>
+            </bodyPartGroups>
+            <wornGraphicPath>Things/Pawn/Humanlike/Apparel/Tuque/Tuque</wornGraphicPath>
+            <layers>
+                <li>Overhead</li>
+            </layers>
+            <defaultOutfitTags>
+                <li>Worker</li>
+            </defaultOutfitTags>
+        </apparel>
+        <recipeMaker>
+            <!--researchPrerequisite>ComplexClothing</researchPrerequisite-->
+            <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+            <workSkill>Crafting</workSkill>
+            <effectWorking>Tailor</effectWorking>
+            <soundWorking>Recipe_Tailor</soundWorking>
+            <recipeUsers>
+                <li>ElectricTailoringBench</li>
+                <li>HandTailoringBench</li>
+            </recipeUsers>
+            <unfinishedThingDef>UnfinishedApparel</unfinishedThingDef>
+            <defaultIngredientFilter>
+                <categories>
+                    <li>Root</li>
+                </categories>
+                <disallowedThingDefs>
+                    <li>Gold</li>
+                    <li>Silver</li>
+                    <li>Plasteel</li>
+                    <li>Jade</li>
+                    <li>Uranium</li>
+                    <li MayRequire="Ludeon.RimWorld.Anomaly">Bioferrite</li>
+                </disallowedThingDefs>
+            </defaultIngredientFilter>
+        </recipeMaker>
+    </ThingDef>
+
     <!--生存作战头盔-->
     <ThingDef ParentName="Astrologer_HelmetBase">
         <defName>Astrologer_LightHelmet</defName>
@@ -64,15 +135,67 @@
             <EquipDelay>2</EquipDelay>
         </statBases>
         <equippedStatOffsets>
-            <AimingDelayFactor>0.25</AimingDelayFactor>
-            <ShootingAccuracyPawn>3</ShootingAccuracyPawn>
-            <ToxicEnvironmentResistance>0.5</ToxicEnvironmentResistance>
+            <!--AimingDelayFactor>0.25</AimingDelayFactor-->
+            <ShootingAccuracyPawn>2</ShootingAccuracyPawn>
+            <ToxicResistance>0.35</ToxicResistance>
         </equippedStatOffsets>
         <comps>
             <li Class="Astrologer.TCP_HediffApparel">
-                <hediff>Astrologer_Airpurifier</hediff>
+                <hediff>Astrologer_Hediff_Airpurifier</hediff>
             </li>
         </comps>
+        <!--材料-->
+        <costList>
+            <Cloth>10</Cloth>
+            <Steel>20</Steel>
+        </costList>
+        <apparel>
+            <wornGraphicPath>Things/Pawn/Humanlike/Apparel/ReconArmorHelmet/ReconHelmet</wornGraphicPath>
+            <bodyPartGroups>
+                <li>UpperHead</li>
+            </bodyPartGroups>
+            <layers>
+                <li>Overhead</li>
+            </layers>
+        </apparel>
+        <recipeMaker>
+            <!--researchPrerequisite>ComplexClothing</researchPrerequisite-->
+            <skillRequirements>
+                <Crafting>8</Crafting>
+            </skillRequirements>
+            <displayPriority>1000</displayPriority>
+        </recipeMaker>
+    </ThingDef>
+
+    <!--G-1制式头盔-->
+    <ThingDef ParentName="Astrologer_HelmetBase">
+        <defName>Astrologer_StandardHelmet</defName>
+        <label>G-1制式头盔</label>
+        <description>G-1制式头盔，增加瞄准能力，防毒防腐气</description>
+        <!--等待贴图-->
+        <graphicData>
+            <texPath>Things/Pawn/Humanlike/Apparel/AdvancedHelmet/AdvancedHelmet</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <uiIconScale>1.4</uiIconScale>
+        <!--占位,原版数值-->
+        <statBases>
+            <MaxHitPoints>160</MaxHitPoints>
+            <WorkToMake>8000</WorkToMake>
+            <Mass>1.2</Mass>
+            <ArmorRating_Sharp>0.92</ArmorRating_Sharp>
+            <ArmorRating_Blunt>0.4</ArmorRating_Blunt>
+            <ArmorRating_Heat>0.46</ArmorRating_Heat>
+            <Insulation_Cold>4</Insulation_Cold>
+            <Insulation_Heat>2</Insulation_Heat>
+            <EquipDelay>2</EquipDelay>
+        </statBases>
+        <equippedStatOffsets>
+            <!--AimingDelayFactor>0.25</AimingDelayFactor-->
+            <ShootingAccuracyPawn>3.5</ShootingAccuracyPawn>
+            <ToxicResistance>0.5</ToxicResistance>
+            <ToxicEnvironmentResistance>0.5</ToxicEnvironmentResistance>
+        </equippedStatOffsets>
         <!--材料-->
         <costList>
             <Cloth>10</Cloth>

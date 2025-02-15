@@ -2,7 +2,7 @@
 <Defs>
 
     <HediffDef>
-        <defName>Astrologer_Airpurifier</defName>
+        <defName>Astrologer_Hediff_Airpurifier</defName>
         <label>生存作战单元-呼吸过滤</label>
         <description>多层呼吸过滤系统,能够过滤一定量有害气体.</description>
         <descriptionHyperlinks>
@@ -23,7 +23,7 @@
     </HediffDef>
 
     <HediffDef>
-        <defName>Astrologer_Detoxifier</defName>
+        <defName>Astrologer_Hediff_Detoxifier</defName>
         <label>生存作战单元-代谢增益</label>
         <description>通过先进的纳米技术，它能有效清除血液中的有害物质.</description>
         <descriptionHyperlinks>
@@ -39,6 +39,30 @@
                 <capMods>
                     <li>
                         <capacity>BloodFiltration</capacity>
+                        <offset>0.2</offset>
+                    </li>
+                </capMods>
+            </li>
+        </stages>
+    </HediffDef>
+
+    <HediffDef>
+        <defName>Astrologer_Hediff_Manipulation</defName>
+        <label>心灵手巧</label>
+        <description>有了机械手套，工作效率更高了.</description>
+        <descriptionHyperlinks>
+            <ThingDef>Astrologer_ShockGlove</ThingDef>
+        </descriptionHyperlinks>
+        <hediffClass>HediffWithComps</hediffClass>
+        <defaultLabelColor>(0.6, 0.6, 1.0)</defaultLabelColor>
+        <isBad>false</isBad>
+        <allowMothballIfLowPriorityWorldPawn>true</allowMothballIfLowPriorityWorldPawn>
+        <everCurableByItem>false</everCurableByItem>
+        <stages>
+            <li>
+                <capMods>
+                    <li>
+                        <capacity>Manipulation</capacity>
                         <offset>0.2</offset>
                     </li>
                 </capMods>

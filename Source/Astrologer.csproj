@@ -65,11 +65,18 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Building\StellarStove.cs" />
-    <Compile Include="Comp\HediffApparel.cs" />
+    <Compile Include="Comp\TCP_HediffApparel.cs" />
     <Compile Include="Comp\Insights.cs" />
+    <Compile Include="Comp\TCP_MultipleVerb.cs" />
+    <Compile Include="Comp\TC_PawnEquipGizmo.cs" />
+    <Compile Include="Comp\TCP_FireMode.cs" />
+    <Compile Include="Comp\TC_FireMods.cs" />
     <Compile Include="Gizmo\Gizmo_Insight.cs" />
     <Compile Include="Gizmo\Gizmo_Insight_Base.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Thing\Thing_ActivatedPulsePack.cs" />
+    <Compile Include="Verb\Verb_EMPpop.cs" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
