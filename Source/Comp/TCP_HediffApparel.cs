@@ -26,11 +26,20 @@ namespace Astrologer
         {
             if (Props.hediff == null) return;
             if (pawn.health.hediffSet.GetFirstHediffOfDef(Props.hediff) != null) return;
-            var source = pawn.health.hediffSet.GetNotMissingParts();
-            var parts = source.Where(record => Props.partsToAffect.Contains(record.def));
-            foreach (BodyPartRecord part in parts) 
+            if (Props.partsToAffect != null)
             {
-                Hediff newHediff = HediffMaker.MakeHediff(Props.hediff, pawn, part);
+                var source = pawn.health.hediffSet.GetNotMissingParts();
+                var parts = source.Where(record => Props.partsToAffect.Contains(record.def));
+                foreach (BodyPartRecord part in parts)
+                {
+                    Hediff newHediff = HediffMaker.MakeHediff(Props.hediff, pawn, part);
+                    pawn.health.AddHediff(newHediff);
+                }
+
+            }
+            else 
+            {
+                Hediff newHediff = HediffMaker.MakeHediff(Props.hediff, pawn, null);
                 pawn.health.AddHediff(newHediff);
             }
         }

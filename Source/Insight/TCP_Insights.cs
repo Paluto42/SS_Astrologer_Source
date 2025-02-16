@@ -22,29 +22,33 @@ namespace Astrologer
 
     public class TC_Insights : ThingComp 
     {
-        public TCP_Insights Props => (TCP_Insights)props;
         public Pawn User => parent as Pawn;
+        public TCP_Insights Props => (TCP_Insights)props;
 
-        internal int curInsightAmountInt = 0;
-        public int CurInsights => curInsightAmountInt;
+        private int curInsightAmount = 0;
+        //private int maxInsightAmount = 1;
+        public int CurInsights => curInsightAmount;
         public int MaxInsights => Props.maxInsights;
 
         public void ConsumeInsight(int amount)
         {
             if (amount <= 0) return;
-            if (curInsightAmountInt < amount) return;
-            curInsightAmountInt -= amount;
+            if (curInsightAmount < amount) return;
+            curInsightAmount -= amount;
             //Log.Message(User.Name + " 的洞察力消耗了： " + amount);
         }
-
+        public override void Initialize(CompProperties props)
+        {
+            base.Initialize(props);
+        }
         public override void CompTick()
         {
             if (User == null || User.health.Dead) return;
             if (Utility.IsTickInterval(Props.interval)) 
             {
-                if (curInsightAmountInt < Props.maxInsights) 
+                if (curInsightAmount < Props.maxInsights) 
                 {
-                    curInsightAmountInt++;
+                    curInsightAmount++;
                 }
             }
         }
