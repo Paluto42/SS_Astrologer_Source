@@ -3,7 +3,7 @@
     <!--串联破甲战斗部发射器-->
     <ThingDef ParentName="Astrologer_WeaponRangedBase">
         <defName>Astrologer_TandemHEATLauncher</defName>
-        <label>串联破甲火箭发射器</label>
+        <label>串联破甲战斗部发射器</label>
         <description>一次性反重甲武器，用完弃用.</description>
         <tickerType>Normal</tickerType>
         <graphicData>

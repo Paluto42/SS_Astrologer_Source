@@ -19,7 +19,8 @@
     <Operation Class="PatchOperationAdd">
         <xpath>Defs/ThingDef[defName="Human"]/comps</xpath>
         <value>
-            <li Class="Astrologer.TCP_PawnEquipGizmo"></li>
+            <li Class="Astrologer.TCP_PawnEquipGizmo"/>
+            <li Class="Astrologer.TCP_Insights"/>
         </value>
     </Operation>
 

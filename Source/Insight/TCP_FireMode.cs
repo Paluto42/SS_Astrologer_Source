@@ -9,7 +9,7 @@ using Verse;
 
 namespace Astrologer
 {
-    //这个comp是占星师种族专属
+    //和TC_Insight联动的Comp
     public class TCP_FireMode : CompProperties
     {
         public VerbProperties verbProps = new();
@@ -81,6 +81,8 @@ namespace Astrologer
                 {
                     text = "UI/Buttons/Reload";
                 }
+                if (CompInsight == null) yield break;
+                //洞察力不足强制切回主Verb显示
                 if (CompInsight.CurInsights < Props.consumeInsight) 
                 {
                     if (isSecondaryVerbSelected) 

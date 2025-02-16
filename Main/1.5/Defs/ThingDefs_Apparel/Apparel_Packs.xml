@@ -3,7 +3,7 @@
     <!--EMP冲击背包-->
     <ThingDef ParentName="Astrologer_ApparelBase">
         <defName>Astrologer_EmpactPack</defName>
-        <label>登山帽</label>
+        <label>"AMA-2" EMP冲击背包</label>
         <description>投射在地面上会产生持续的emp脉冲，范围较大且放置距离较长</description>
         <thingCategories Inherit="false">
             <li>Astrologer_Apparel</li>

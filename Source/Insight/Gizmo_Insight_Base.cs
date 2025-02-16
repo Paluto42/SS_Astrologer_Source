@@ -8,6 +8,7 @@ using Verse;
 
 namespace Astrologer
 {
+    //可以当作其他洞察力技能的Base
     public abstract class Gizmo_Insight_Base : Command
     {
         public TC_Insights compInsights;

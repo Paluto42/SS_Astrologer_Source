@@ -278,10 +278,10 @@
         </projectile>
     </ThingDef>
 
-    <!--高速霰弹枪-->
+    <!-- "AMA-1"电能霰弹枪 -->
     <ThingDef ParentName="Astrologer_WeaponRangedBase">
         <defName>Astrologer_Shotgun_Rapid</defName>
-        <label>B-3 高速霰弹枪</label>
+        <label>"AMA-1" 电能霰弹枪</label>
         <description>一把能快速发射的霰弹枪.</description>
         <graphicData>
             <texPath>Things/Item/Equipment/WeaponRanged/ChainShotgun</texPath>
@@ -356,7 +356,7 @@
     </ThingDef>
     <ThingDef ParentName="BaseBullet">
         <defName>Astrologer_Bullet_StunShotgun</defName>
-        <label>高速独头弹</label>
+        <label>高速电能独头弹</label>
         <graphicData>
             <texPath>Things/Projectile/Bullet_Shotgun</texPath>
             <graphicClass>Graphic_Single</graphicClass>
@@ -369,6 +369,8 @@
             <extraDamages>
                 <li>
                     <def>EMP</def>
+                    <damageAmountBase>1</damageAmountBase>
+                    <chance>2</chance>
                 </li>
             </extraDamages>
             <speed>65</speed>
@@ -379,8 +381,8 @@
 
     <ThingDef ParentName="Astrologer_WeaponRangedBase">
         <defName>Astrologer_Gun_ChargeRifle</defName>
-        <label>A-5 等离子心灵干扰步枪</label>
-        <description>标准射手步枪,可造成心灵错乱效果.</description>
+        <label>"MK-5" 等离子心灵干扰步枪</label>
+        <description>标准射手步枪,点击切换模式,此时该步枪每发子弹会有心灵错乱效果.</description>
         <graphicData>
             <texPath>Things/Item/Equipment/WeaponRanged/ChargeRifle</texPath>
             <graphicClass>Graphic_Single</graphicClass>
@@ -419,9 +421,9 @@
         <thingSetMakerTags>
             <li>RewardStandardQualitySuper</li>
         </thingSetMakerTags>
-        <verbs>
+        <verbs Inherit="false">
             <li>
-                <verbClass>Verb_Shoot</verbClass>
+                <verbClass>Astrologer.Verb_PreApplyShoot</verbClass>
                 <hasStandardCommand>true</hasStandardCommand>
                 <defaultProjectile>Bullet_ChargeRifle</defaultProjectile>
                 <warmupTime>2</warmupTime>
@@ -453,7 +455,7 @@
         <comps>
             <li Class="Astrologer.TCP_FireMode">
                 <verbProps>
-                    <verbClass>Verb_Shoot</verbClass>
+                    <verbClass>Astrologer.Verb_PreApplyShoot</verbClass>
                     <hasStandardCommand>true</hasStandardCommand>
                     <defaultProjectile>Astrologer_Bullet_Psychicinsanity</defaultProjectile>
                     <warmupTime>2</warmupTime>
@@ -478,7 +480,7 @@
             <graphicClass>Graphic_Single</graphicClass>
         </graphicData>
         <projectile>
-            <damageDef>Astrologer_Cast_Psychicinsanity</damageDef>
+            <damageDef>Bullet</damageDef>
             <damageAmountBase>15</damageAmountBase>
             <armorPenetrationBase>0.35</armorPenetrationBase>
             <speed>70</speed>
