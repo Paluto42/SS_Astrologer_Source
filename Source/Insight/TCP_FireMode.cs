@@ -87,7 +87,6 @@ namespace Astrologer
             if (isSecondaryVerbSelected && Utility.IsTickInterval(Props.consumeDuration)) 
             {
                 tickStatus = FireTickStatus.Completed;
-                Log.Message("FireTickStatus.Completed");
             }
         }
         //这个居然不会自动调用...
@@ -150,13 +149,11 @@ namespace Astrologer
             {
                 EquipmentSource.PrimaryVerb.verbProps = Props.verbProps;
                 isSecondaryVerbSelected = true;
-                Log.Message("现在的verb是 SecondaryVerb: " + EquipmentSource.PrimaryVerb);
             }
             else
             {
                 EquipmentSource.PrimaryVerb.verbProps = parent.def.Verbs[0];
                 isSecondaryVerbSelected = false;
-                Log.Message("现在的verb是 PrimaryVerb: " + EquipmentSource.PrimaryVerb);
             }
         }
 

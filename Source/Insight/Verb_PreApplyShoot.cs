@@ -15,8 +15,6 @@ namespace Astrologer
         private bool ShouldConsumeInsight => CompFireMode.IsSecondaryVerbSelected;
         private int ConsumeAmount => CompFireMode.Props.consumeInsight;
         public bool ShouldCalulateTicks => CompFireMode.Props.consumeDuration > 0;
-
-        private bool tickCompleted = false;
         protected override bool TryCastShot()
         {
             PreApplyTryCastShot();
@@ -33,12 +31,10 @@ namespace Astrologer
                 if (ShouldConsumeInsight && CompFireMode.tickStatus == FireTickStatus.None)
                 {
                     CompFireMode.tickStatus = FireTickStatus.Started;
-                    Log.Message("tickStatus = FireTickStatus.Started");
                     return;
                 }
                 if (ShouldConsumeInsight && CompFireMode.tickStatus == FireTickStatus.Completed)
                 {
-                    Log.Message("Tick完成 洞察力已经消耗");
                     CompFireMode.tickStatus = FireTickStatus.None;
                     CompInsightInt.ConsumeInsight(ConsumeAmount);
                     return;
@@ -46,7 +42,6 @@ namespace Astrologer
             }
             else if(ShouldConsumeInsight) 
             {
-                Log.Message("洞察力已经消耗");
                 CompInsightInt.ConsumeInsight(ConsumeAmount);
             }
         }
