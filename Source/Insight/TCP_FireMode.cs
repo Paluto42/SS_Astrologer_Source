@@ -16,31 +16,42 @@ namespace Astrologer
 
         public int consumeInsight = 1;
 
-        public string mainIcon = "";
+        public int consumeDuration = 0;
 
-        public string mainWeaponLabel = "";
+        public string mainIcon;
 
-        public string secondaryIcon = "";
+        public string mainWeaponLabel;
 
-        public string secondaryWeaponLabel = "";
+        public string mainDescription;
+
+        public string secondaryIcon;
+
+        public string secondaryWeaponLabel;
+
+        public string secondaryDescription;
         public TCP_FireMode() 
         {
             compClass = typeof(TC_FireMode);
         }
     }
-
+    public enum FireTickStatus 
+    {
+        None = 0,
+        Started = 1,
+        Completed = 2
+    }
+    //每发子弹都消耗洞察力
     public class TC_FireMode : ThingComp 
     {
-        private TC_Insights CompInsight => CasterPawn?.GetComp<TC_Insights>();
+        public FireTickStatus tickStatus = FireTickStatus.None;
+        private TC_Insights CompInsight => CasterPawn?.GetComp<TC_Insights>();//洞察力comp
 
         private Verb verbInt;
 
         private CompEquippable compEquippableInt;
 
         private bool isSecondaryVerbSelected = false;
-
         public TCP_FireMode Props => (TCP_FireMode)props;
-
         public bool IsSecondaryVerbSelected => isSecondaryVerbSelected;
 
         private CompEquippable EquipmentSource
@@ -60,7 +71,7 @@ namespace Astrologer
             }
         }
 
-        public Pawn CasterPawn => Verb.caster as Pawn;
+        public Pawn CasterPawn => Verb.CasterPawn;
 
         private Verb Verb
         {
@@ -70,43 +81,53 @@ namespace Astrologer
                 return verbInt;
             }
         }
-
+        public override void CompTick()
+        {
+            if (tickStatus != FireTickStatus.Started) return;
+            if (isSecondaryVerbSelected && Utility.IsTickInterval(Props.consumeDuration)) 
+            {
+                tickStatus = FireTickStatus.Completed;
+                Log.Message("FireTickStatus.Completed");
+            }
+        }
         //这个居然不会自动调用...
         public override IEnumerable<Gizmo> CompGetGizmosExtra()
         {
-            if (CasterPawn == null || CasterPawn.Faction.Equals(Faction.OfPlayer))
+            if (CasterPawn == null || CasterPawn.Faction.Equals(Faction.OfPlayer) == false)
             {
-                string text = (IsSecondaryVerbSelected ? Props.secondaryIcon : Props.mainIcon);
-                if (text == "")
-                {
-                    text = "UI/Buttons/Reload";
-                }
-                if (CompInsight == null) yield break;
-                //洞察力不足强制切回主Verb显示
-                if (CompInsight.CurInsights < Props.consumeInsight) 
-                {
-                    if (isSecondaryVerbSelected) 
-                    {
-                        SwitchVerb();
-                        string translatedMessage = "洞察力不足了!".Translate();
-                        MoteMaker.ThrowText(CasterPawn.PositionHeld.ToVector3(), CasterPawn.MapHeld, translatedMessage, 3f);
-                    }
-                    yield return new Command_Action
-                    {
-                        action = delegate { },
-                        defaultLabel = Props.mainWeaponLabel,
-                        icon = ContentFinder<Texture2D>.Get(Props.mainIcon, reportFailure: false)
-                    };
-                    yield break;
-                }
-                yield return new Command_Action
-                {
-                    action = SwitchVerb,
-                    defaultLabel = (IsSecondaryVerbSelected ? Props.secondaryWeaponLabel : Props.mainWeaponLabel),
-                    //defaultDesc = Props.description,
-                    icon = ContentFinder<Texture2D>.Get(text, reportFailure: false)
-                };
+                yield break;
             }
+            string text = IsSecondaryVerbSelected ? Props.secondaryIcon : Props.mainIcon;
+            if (string.IsNullOrEmpty(text))
+            {
+                text = "UI/Buttons/Reload";
+            }
+            //洞察力不足或缺失comp强制切回主Verb显示
+            if (CompInsight == null || CompInsight.CurInsights < Props.consumeInsight)
+            {
+                if (isSecondaryVerbSelected)
+                {
+                    SwitchVerb();
+                    string message = "洞察力不足了!".Translate();
+                    MoteMaker.ThrowText(CasterPawn.PositionHeld.ToVector3(), CasterPawn.MapHeld, message, 3f);
+                }
+                yield return new Command_Action//只能显示主Verb
+                {
+                    action = delegate{ },
+                    defaultLabel = Props.mainWeaponLabel,
+                    defaultDesc = Props.mainDescription,
+                    icon = ContentFinder<Texture2D>.Get(Props.mainIcon, reportFailure: false)
+                };
+                yield break;
+            }
+            yield return new Command_Action//主副Verb同时切换显示
+            {
+                action = SwitchVerb,
+                defaultLabel = (IsSecondaryVerbSelected ? Props.secondaryWeaponLabel : Props.mainWeaponLabel),
+                defaultDesc = (IsSecondaryVerbSelected ? Props.secondaryDescription : Props.mainDescription),
+                icon = ContentFinder<Texture2D>.Get(text, reportFailure: false)
+            };
+
         }
         public override void Initialize(CompProperties props)
         {

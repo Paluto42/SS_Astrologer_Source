@@ -66,6 +66,7 @@
   <ItemGroup>
     <Compile Include="Building\StellarStove.cs" />
     <Compile Include="Comp\TCP_HediffApparel.cs" />
+    <Compile Include="HarmonyPatch\Patch_Main.cs" />
     <Compile Include="Insight\TCP_Insights.cs" />
     <Compile Include="Insight\trash\TCP_MultipleVerb.cs" />
     <Compile Include="Comp\TC_PawnEquipGizmo.cs" />
