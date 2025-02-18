@@ -115,7 +115,7 @@
                 <li>ElectricTailoringBench</li>
                 <li>HandTailoringBench</li>
             </recipeUsers>
-            <unfinishedThingDef>UnfinishedApparel</unfinishedThingDef>
+            <unfinishedThingDef>UnfinishedPack</unfinishedThingDef>
             <defaultIngredientFilter>
                 <categories>
                     <li>Root</li>
@@ -129,6 +129,67 @@
                     <li MayRequire="Ludeon.RimWorld.Anomaly">Bioferrite</li>
                 </disallowedThingDefs>
             </defaultIngredientFilter>
+        </recipeMaker>
+    </ThingDef>
+
+    <ApparelLayerDef>
+        <defName>AS_Webbing</defName>
+        <label>织带</label>
+        <drawOrder>210</drawOrder>
+    </ApparelLayerDef>
+
+    <!-- 埃兰迪尔 -->
+    <ThingDef ParentName="Astrologer_ApparelBase">
+        <defName>Astrologer_Waistbag</defName>
+        <label>埃兰迪尔</label>
+        <description>挂在腰间的腰包，消耗洞察力可以进行折跃距离较长.</description>
+        <thingCategories Inherit="false">
+            <li>Astrologer_Apparel</li>
+        </thingCategories>
+        <!--等待贴图-->
+        <graphicData>
+            <texPath>Things/Apparel/TacRigging/CE_TacRigging</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <possessionCount>1</possessionCount>
+        <statBases>
+            <MaxHitPoints>120</MaxHitPoints>
+            <WorkToMake>8000</WorkToMake>
+            <Mass>2</Mass>
+            <EquipDelay>3.5</EquipDelay>
+        </statBases>
+        <equippedStatOffsets>
+        </equippedStatOffsets>
+        <comps>
+        </comps>
+        <costStuffCount>60</costStuffCount>
+        <stuffCategories>
+            <li>Fabric</li>
+            <li>Leathery</li>
+        </stuffCategories>
+        <apparel>
+            <wornGraphicPath>Things/Apparel/TacRigging/CE_TacRigging</wornGraphicPath>
+            <bodyPartGroups>
+                <li>Shoulders</li>
+            </bodyPartGroups>
+            <layers>
+                <li>AS_Webbing</li>
+            </layers>
+            <defaultOutfitTags>
+                <li>Soldier</li>
+            </defaultOutfitTags>
+        </apparel>
+        <recipeMaker>
+            <researchPrerequisite>ComplexClothing</researchPrerequisite>
+            <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+            <workSkill>Crafting</workSkill>
+            <effectWorking>Tailor</effectWorking>
+            <soundWorking>Recipe_Tailor</soundWorking>
+            <recipeUsers>
+                <li>ElectricTailoringBench</li>
+                <li>HandTailoringBench</li>
+            </recipeUsers>
+            <unfinishedThingDef>UnfinishedPack</unfinishedThingDef>
         </recipeMaker>
     </ThingDef>
 

@@ -20,12 +20,9 @@
 				</categories>
 			</li>
 		</backstoryFiltersOverride>
+		<apparelDisallowTags>
+		</apparelDisallowTags>
 		<styleItemTags>
-			<li>
-				<tag>Astrologer</tag>
-				<baseWeight>1</baseWeight>
-				<weightFactor>1</weightFactor>
-			</li>
 		</styleItemTags>
 		<disallowedTraits>
 			<li>Wimp</li>
@@ -34,14 +31,40 @@
 			<li>Gourmand</li>
 			<li>Pyromaniac</li>
 		</disallowedTraits>
-		<!--abilities>
-      <li></li>
-    </abilities-->
-		<!--xenotypeSet>
-		<xenotypeChances>
-		</xenotypeChances>
-	</xenotypeSet-->
+		<inventoryOptions>
+		</inventoryOptions>
+		<abilities>
+		</abilities>
+		<xenotypeSet>
+			<xenotypeChances>
+			</xenotypeChances>
+		</xenotypeSet>
 		<useFactionXenotypes>false</useFactionXenotypes>
+	</PawnKindDef>
+
+	<PawnKindDef Name="Astrologer_Researcher" ParentName="Astrologer_PawnBase" Abstract="True">
+		<isFighter>false</isFighter>
+		<initialResistanceRange>10~40</initialResistanceRange>
+		<chemicalAddictionChance>0.1</chemicalAddictionChance>
+		<combatEnhancingDrugsChance>0.15</combatEnhancingDrugsChance>
+		<combatEnhancingDrugsCount>0~2</combatEnhancingDrugsCount>
+		<gearHealthRange>0.8~2</gearHealthRange>
+		<!--weaponMoney>500~1200</weaponMoney-->
+		<apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
+		<apparelMoney>700~1500</apparelMoney>
+		<apparelTags>
+			<li>Astrologer_Cloth</li>
+		</apparelTags>
+		<techHediffsChance>0.15</techHediffsChance>
+		<techHediffsMoney>700~1200</techHediffsMoney>
+		<techHediffsTags>
+		</techHediffsTags>
+		<skills>
+			<li>
+				<skill>Intellectual</skill>
+				<range>5~10</range>
+			</li>
+		</skills>
 	</PawnKindDef>
 
 </Defs>

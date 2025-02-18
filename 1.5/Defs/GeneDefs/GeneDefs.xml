@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <!--GeneDef Name="Astrologer_ResearcherBodyGene" Abstract="True">
+		<geneClass></geneClass>
+		<descriptionHyperlinks>
+			<ThingDef></ThingDef>
+		</descriptionHyperlinks>
+		<biostatCpx>0</biostatCpx>
+		<biostatMet>0</biostatMet>
+		<selectionWeight>0</selectionWeight>
+		<tattoosVisible>false</tattoosVisible>
+		<displayOrderInCategory>1</displayOrderInCategory>
+		<displayCategory>AstrologerGene</displayCategory>
+		<bodyType>Standard</bodyType>
+		<beardTagFilter>
+			<whitelist>true</whitelist>
+			<tags>
+				<li>NoBeard</li>
+			</tags>
+		</beardTagFilter>
+		<hairTagFilter>
+			<whitelist>true</whitelist>
+			<tags>
+				<li></li>
+			</tags>
+		</hairTagFilter>
+		<exclusionTags>
+			<li></li>
+		</exclusionTags>
+	</GeneDef-->
+
+    <GeneDef>
+        <defName>Astrologer_Gene_InsightEye</defName>
+        <label>洞察之眼</label>
+        <labelShortAdj>strong</labelShortAdj>
+        <description>基因携带者加命中率,减瞄准时间.</description>
+        <iconPath>UI/Icons/Genes/Skills/Shooting/strong</iconPath>
+        <displayCategory>Violence</displayCategory>
+        <displayOrderInCategory>30</displayOrderInCategory>
+        <statOffsets>
+            <ShootingAccuracyPawn>0.5</ShootingAccuracyPawn>
+            <AimingDelayFactor>-0.5</AimingDelayFactor>
+        </statOffsets>
+        <statFactors>
+        </statFactors>
+        <biostatCpx>1</biostatCpx>
+        <biostatMet>1</biostatMet>
+        <!--symbolPack>
+            <prefixSymbols>
+                <li><symbol>puno</symbol></li>
+                <li><symbol>weak</symbol></li>
+                <li><symbol>poke</symbol></li>
+                <li><symbol>flab</symbol></li>
+                <li><symbol>anemo</symbol></li>
+            </prefixSymbols>
+        </symbolPack-->
+    </GeneDef>
+
+    <GeneDef>
+        <defName>Astrologer_Gene_MeleeWeak</defName>
+        <label>近战苦手</label>
+        <labelShortAdj>weak</labelShortAdj>
+        <description>基因携带者减少近战技能，减近战命中率.</description>
+        <iconPath>UI/Icons/Genes/Gene_WeakMeleeDamage</iconPath>
+        <displayCategory>Violence</displayCategory>
+        <displayOrderInCategory>30</displayOrderInCategory>
+        <statOffsets>
+            <MeleeHitChance>-0.5</MeleeHitChance>
+        </statOffsets>
+        <aptitudes>
+            <Melee>-4</Melee>
+        </aptitudes>
+        <biostatCpx>1</biostatCpx>
+        <biostatMet>1</biostatMet>
+        <!--symbolPack>
+            <prefixSymbols>
+                <li><symbol>puno</symbol></li>
+                <li><symbol>weak</symbol></li>
+                <li><symbol>poke</symbol></li>
+                <li><symbol>flab</symbol></li>
+                <li><symbol>anemo</symbol></li>
+            </prefixSymbols>
+        </symbolPack-->
+    </GeneDef>
+
+</Defs>

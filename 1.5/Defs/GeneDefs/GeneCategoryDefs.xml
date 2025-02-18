@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <GeneCategoryDef>
+        <defName>AstrologerGene</defName>
+        <label>占星师</label>
+        <displayPriorityInXenotype>985</displayPriorityInXenotype>
+    </GeneCategoryDef>
+    
+</Defs>

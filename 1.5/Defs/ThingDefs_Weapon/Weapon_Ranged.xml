@@ -284,7 +284,7 @@
         <label>"AMA-1" 电能霰弹枪</label>
         <description>一把能快速发射的霰弹枪.</description>
         <graphicData>
-            <texPath>Things/Item/Equipment/WeaponRanged/ChainShotgun</texPath>
+            <texPath>Things/Weapons/ChargeShotgun</texPath>
             <graphicClass>Graphic_Single</graphicClass>
         </graphicData>
         <soundInteract>Interact_Shotgun</soundInteract>
@@ -384,7 +384,7 @@
         <label>"MK-5" 等离子心灵干扰步枪</label>
         <description>标准射手步枪,点击切换模式,此时该步枪每发子弹会有心灵错乱效果.</description>
         <graphicData>
-            <texPath>Things/Item/Equipment/WeaponRanged/ChargeRifle</texPath>
+            <texPath>Things/Weapons/ChargeAMR</texPath>
             <graphicClass>Graphic_Single</graphicClass>
         </graphicData>
         <soundInteract>Interact_ChargeRifle</soundInteract>
@@ -481,10 +481,102 @@
             <graphicClass>Graphic_Single</graphicClass>
         </graphicData>
         <projectile>
-            <damageDef>Bullet</damageDef>
+            <damageDef>Astrologer_Cast_Psychicinsanity</damageDef>
             <damageAmountBase>15</damageAmountBase>
             <armorPenetrationBase>0.35</armorPenetrationBase>
             <speed>70</speed>
+        </projectile>
+    </ThingDef>
+
+    <ThingDef ParentName="Astrologer_WeaponRangedBase">
+        <defName>Astrologer_Gun_Sniper</defName>
+        <label>船边星云</label>
+        <description>远程狙击，长开火前摇，短射击后摇，当占星师使用时，可使用洞察力强化该武器。每一发消耗一定量洞察力，在这种模式下，每一发子弹命中会打掉对方身体的随机的一个部位，并挂一个debuff（星云射线）持续扣血.</description>
+        <graphicData>
+            <texPath>Things/Weapons/ChargeSniper</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <soundInteract>Interact_ChargeRifle</soundInteract>
+        <weaponClasses>
+            <li>RangedHeavy</li>
+        </weaponClasses>
+        <weaponTags>
+            <li>Astrologer_WeaponRanged</li>
+        </weaponTags>
+        <!--占位,原版数值-->
+        <statBases>
+            <WorkToMake>56000</WorkToMake>
+            <Mass>6</Mass>
+            <AccuracyTouch>0.65</AccuracyTouch>
+            <AccuracyShort>0.75</AccuracyShort>
+            <AccuracyMedium>0.8</AccuracyMedium>
+            <AccuracyLong>0.85</AccuracyLong>
+            <RangedWeapon_Cooldown>2</RangedWeapon_Cooldown>
+        </statBases>
+        <costList>
+            <Plasteel>40</Plasteel>
+            <ComponentIndustrial>3</ComponentIndustrial>
+        </costList>
+        <recipeMaker>
+            <researchPrerequisite>ChargedShot</researchPrerequisite>
+            <recipeUsers>
+                <li>ElectricSmithy</li>
+                <li>FueledSmithy</li>
+            </recipeUsers>
+            <skillRequirements>
+                <Crafting>7</Crafting>
+            </skillRequirements>
+        </recipeMaker>
+        <thingSetMakerTags>
+            <li>RewardStandardQualitySuper</li>
+        </thingSetMakerTags>
+        <verbs Inherit="false">
+            <li>
+                <verbClass>Verb_Shoot</verbClass>
+                <hasStandardCommand>true</hasStandardCommand>
+                <defaultProjectile>Bullet_ChargeRifle</defaultProjectile>
+                <warmupTime>4</warmupTime>
+                <range>70</range>
+                <soundCast>ChargeLance_Fire</soundCast>
+                <soundCastTail>GunTail_Heavy</soundCastTail>
+                <muzzleFlashScale>9</muzzleFlashScale>
+            </li>
+        </verbs>
+        <comps>
+        </comps>
+        <tools>
+            <li>
+                <label>stock</label>
+                <capacities>
+                    <li>Blunt</li>
+                </capacities>
+                <power>9</power>
+                <cooldownTime>2</cooldownTime>
+            </li>
+            <li>
+                <label>barrel</label>
+                <capacities>
+                    <li>Blunt</li>
+                    <li>Poke</li>
+                </capacities>
+                <power>9</power>
+                <cooldownTime>2</cooldownTime>
+            </li>
+        </tools>
+    </ThingDef>
+    <ThingDef ParentName="BaseBullet">
+        <defName>Astrologer_Bullet_ChargeSniper</defName>
+        <label>charge shot</label>
+        <graphicData>
+            <texPath>Things/Projectile/Charge_Small</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <projectile>
+            <damageDef>Bullet</damageDef>
+            <damageAmountBase>50</damageAmountBase>
+            <armorPenetrationBase>0.45</armorPenetrationBase>
+            <speed>70</speed>
+            <stoppingPower>1</stoppingPower>
         </projectile>
     </ThingDef>
 
@@ -493,9 +585,9 @@
     <ThingDef ParentName="Astrologer_WeaponRangedBase">
         <defName>Astrologer_ChargeHMG</defName>
         <label>A-1等离子重机枪</label>
-        <description>发射电荷弹的机枪.</description>
+        <description>MPE-1是占星帝国初次遭遇暗灵时设计给前线战斗人员的制式武器。消耗洞察力可以进行一小段时间的高速射击.</description>
         <graphicData>
-            <texPath>Things/Item/Equipment/WeaponRanged/ChargeRifle</texPath>
+            <texPath>Things/Weapons/ChargeLMG</texPath>
             <graphicClass>Graphic_Single</graphicClass>
         </graphicData>
         <soundInteract>Interact_ChargeRifle</soundInteract>

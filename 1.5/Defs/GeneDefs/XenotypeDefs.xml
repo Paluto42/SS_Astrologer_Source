@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <!--XenotypeIconDef>
+		<defName>Astrologer_Icon</defName>
+		<texPath></texPath>
+	</XenotypeIconDef-->
+
+    <!--XenotypeDef>
+		<defName>Astrologer_Researcher</defName>
+		<label></label>
+		<description>desc.</description>
+		<descriptionShort></descriptionShort>
+		<iconPath></iconPath>
+		<displayPriority>-1270.01</displayPriority>
+		<nameMaker></nameMaker>
+		<chanceToUseNameMaker>99</chanceToUseNameMaker>
+		<factionlessGenerationWeight>0</factionlessGenerationWeight>
+		<inheritable>true</inheritable>
+		<genes>
+			<li></li>
+		</genes>
+	</XenotypeDef-->
+
+</Defs>
