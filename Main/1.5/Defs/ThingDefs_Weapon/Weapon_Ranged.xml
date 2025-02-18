@@ -369,7 +369,7 @@
             <extraDamages>
                 <li>
                     <def>EMP</def>
-                    <damageAmountBase>1</damageAmountBase>
+                    <amount>1</amount>
                     <chance>2</chance>
                 </li>
             </extraDamages>
@@ -433,6 +433,26 @@
                 <muzzleFlashScale>9</muzzleFlashScale>
             </li>
         </verbs>
+        <comps>
+            <li Class="Astrologer.TCP_FireMode">
+                <verbProps>
+                    <verbClass>Astrologer.Verb_PreApplyShoot</verbClass>
+                    <hasStandardCommand>true</hasStandardCommand>
+                    <defaultProjectile>Astrologer_Bullet_Psychicinsanity</defaultProjectile>
+                    <warmupTime>2</warmupTime>
+                    <range>30</range>
+                    <soundCast>Shot_Shotgun</soundCast>
+                    <soundCastTail>GunTail_Heavy</soundCastTail>
+                    <muzzleFlashScale>9</muzzleFlashScale>
+                </verbProps>
+                <mainWeaponLabel>普通射击模式</mainWeaponLabel>
+                <mainIcon>UI/Buttons/NormalFire</mainIcon>
+                <mainDescription>占星师使用时，似乎可以消耗洞察力切换到特殊的开火模式</mainDescription>
+                <secondaryWeaponLabel>心灵错乱射击</secondaryWeaponLabel>
+                <secondaryIcon>UI/Buttons/SpecialFire</secondaryIcon>
+                <secondaryDescription>消耗洞察力，每一发子弹带有心灵错乱效果</secondaryDescription>
+            </li>
+        </comps>
         <tools>
             <li>
                 <label>stock</label>
@@ -452,25 +472,6 @@
                 <cooldownTime>2</cooldownTime>
             </li>
         </tools>
-        <comps>
-            <li Class="Astrologer.TCP_FireMode">
-                <verbProps>
-                    <verbClass>Astrologer.Verb_PreApplyShoot</verbClass>
-                    <hasStandardCommand>true</hasStandardCommand>
-                    <defaultProjectile>Astrologer_Bullet_Psychicinsanity</defaultProjectile>
-                    <warmupTime>2</warmupTime>
-                    <range>30</range>
-                    <soundCast>Shot_Shotgun</soundCast>
-                    <soundCastTail>GunTail_Heavy</soundCastTail>
-                    <muzzleFlashScale>9</muzzleFlashScale>
-                </verbProps>
-                <mainWeaponLabel>Normal</mainWeaponLabel>
-                <mainIcon>UI/Buttons/NormalFire</mainIcon>
-                <secondaryWeaponLabel>Psychic insanity</secondaryWeaponLabel>
-                <secondaryIcon>UI/Buttons/SpecialFire</secondaryIcon>
-            </li>
-            <!--li Class="Astrologer.TCP_FireModes"/-->
-        </comps>
     </ThingDef>
     <ThingDef ParentName="BaseBullet">
         <defName>Astrologer_Bullet_Psychicinsanity</defName>
@@ -533,18 +534,42 @@
         </thingSetMakerTags>
         <verbs>
             <li>
-                <verbClass>Verb_Shoot</verbClass>
+                <verbClass>Astrologer.Verb_PreApplyShoot</verbClass>
                 <hasStandardCommand>true</hasStandardCommand>
                 <defaultProjectile>Bullet_ChargeRifle</defaultProjectile>
                 <warmupTime>1.2</warmupTime>
                 <range>60</range>
                 <burstShotCount>8</burstShotCount>
-                <ticksBetweenBurstShots>4</ticksBetweenBurstShots>
+                <ticksBetweenBurstShots>6</ticksBetweenBurstShots>
                 <soundCast>Shot_ChargeRifle</soundCast>
                 <soundCastTail>GunTail_Medium</soundCastTail>
                 <muzzleFlashScale>9</muzzleFlashScale>
             </li>
         </verbs>
+        <comps>
+            <li Class="Astrologer.TCP_FireMode">
+                <verbProps>
+                    <verbClass>Astrologer.Verb_PreApplyShoot</verbClass>
+                    <hasStandardCommand>true</hasStandardCommand>
+                    <defaultProjectile>Astrologer_Bullet_Psychicinsanity</defaultProjectile>
+                    <warmupTime>0.5</warmupTime>
+                    <range>60</range>
+                    <burstShotCount>18</burstShotCount>
+                    <ticksBetweenBurstShots>4</ticksBetweenBurstShots>
+                    <soundCast>Shot_Shotgun</soundCast>
+                    <soundCastTail>GunTail_Heavy</soundCastTail>
+                    <muzzleFlashScale>9</muzzleFlashScale>
+                </verbProps>
+                <consumeDuration>250</consumeDuration>
+                <mainWeaponLabel>普通射击模式</mainWeaponLabel>
+                <mainIcon>UI/Buttons/NormalFire</mainIcon>
+                <mainDescription>占星师使用时,似乎可以消耗洞察力切换到特殊的开火模式</mainDescription>
+                <secondaryWeaponLabel>过载射击模式</secondaryWeaponLabel>
+                <secondaryIcon>UI/Buttons/SpecialFire</secondaryIcon>
+                <secondaryDescription>消耗洞察力,进行一小段时间的高速射击</secondaryDescription>
+            </li>
+            <!--li Class="Astrologer.TCP_FireModes"/-->
+        </comps>
         <tools>
             <li>
                 <label>stock</label>
