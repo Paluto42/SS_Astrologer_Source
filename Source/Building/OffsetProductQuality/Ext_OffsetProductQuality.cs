@@ -6,7 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Verse;
 
-namespace Astrologer.MapBuilding
+namespace Astrologer
 {
     public class Ext_OffsetProductQuality : DefModExtension
     {
