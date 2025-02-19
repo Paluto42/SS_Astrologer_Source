@@ -33,13 +33,12 @@
     <GeneDef>
         <defName>Astrologer_Gene_InsightEye</defName>
         <label>洞察之眼</label>
-        <labelShortAdj>strong</labelShortAdj>
         <description>基因携带者加命中率,减瞄准时间.</description>
         <iconPath>UI/Icons/Genes/Skills/Shooting/strong</iconPath>
-        <displayCategory>Violence</displayCategory>
+        <displayCategory>AstrologerGene</displayCategory>
         <displayOrderInCategory>30</displayOrderInCategory>
         <statOffsets>
-            <ShootingAccuracyPawn>0.5</ShootingAccuracyPawn>
+            <ShootingAccuracyPawn>5.0</ShootingAccuracyPawn>
             <AimingDelayFactor>-0.5</AimingDelayFactor>
         </statOffsets>
         <statFactors>
@@ -60,19 +59,18 @@
     <GeneDef>
         <defName>Astrologer_Gene_MeleeWeak</defName>
         <label>近战苦手</label>
-        <labelShortAdj>weak</labelShortAdj>
         <description>基因携带者减少近战技能，减近战命中率.</description>
-        <iconPath>UI/Icons/Genes/Gene_WeakMeleeDamage</iconPath>
-        <displayCategory>Violence</displayCategory>
-        <displayOrderInCategory>30</displayOrderInCategory>
-        <statOffsets>
-            <MeleeHitChance>-0.5</MeleeHitChance>
-        </statOffsets>
+        <iconPath>UI/Icons/Genes/Skills/Melee/poor</iconPath>
+        <displayCategory>AstrologerGene</displayCategory>
+        <displayOrderInCategory>20</displayOrderInCategory>
         <aptitudes>
             <Melee>-4</Melee>
         </aptitudes>
-        <biostatCpx>1</biostatCpx>
-        <biostatMet>1</biostatMet>
+        <statOffsets>
+            <MeleeHitChance>-0.5</MeleeHitChance>
+        </statOffsets>
+        <biostatMet>-4</biostatMet>
+        <biostatCpx>2</biostatCpx>
         <!--symbolPack>
             <prefixSymbols>
                 <li><symbol>puno</symbol></li>
@@ -80,6 +78,87 @@
                 <li><symbol>poke</symbol></li>
                 <li><symbol>flab</symbol></li>
                 <li><symbol>anemo</symbol></li>
+            </prefixSymbols>
+        </symbolPack-->
+    </GeneDef>
+
+    <GeneDef>
+        <defName>Astrologer_Gene_StargazingFavor</defName>
+        <label>爱好观星</label>
+        <description>每天只睡4个小时只为了观星吗...你这家伙</description>
+        <iconPath>UI/Icons/Genes/Gene_QuickSleeper</iconPath>
+        <displayCategory>AstrologerGene</displayCategory>
+        <displayOrderInCategory>30</displayOrderInCategory>
+        <statFactors>
+            <RestFallRateFactor>0.4</RestFallRateFactor>
+        </statFactors>
+        <biostatCpx>1</biostatCpx>
+        <biostatMet>1</biostatMet>
+        <symbolPack>
+            <prefixSymbols>
+                <li><symbol>wake</symbol></li>
+                <li><symbol>night</symbol></li>
+            </prefixSymbols>
+        </symbolPack>
+    </GeneDef>
+
+    <!--GeneDef>
+        <defName>Astrologer_Gene_MiningWeak</defName>
+        <label>不喜采矿</label>
+        <description>占星师们天生就反感从事采矿工作</description>
+        <iconPath>UI/Icons/Genes/Skills/Mining/poor</iconPath>
+        <displayCategory>AstrologerGene</displayCategory>
+        <displayOrderInCategory>20</displayOrderInCategory>
+        <aptitudes>
+            <Mining>-4</Mining>
+        </aptitudes>
+        <biostatCpx>1</biostatCpx>
+        <biostatMet>1</biostatMet>
+    </GeneDef-->
+
+    <GeneDef>
+        <defName>Astrologer_Gene_FearlessWill</defName>
+        <label>无畏意志</label>
+        <description>来自群星的指示让占星师们的意志变的更加坚定</description>
+        <iconPath>UI/Icons/Genes/Gene_Sanguine</iconPath>
+        <displayCategory>AstrologerGene</displayCategory>
+        <displayOrderInCategory>30</displayOrderInCategory>
+        <statFactors>
+            <CertaintyLossFactor MayRequire="ludeon.rimworld.ideology">0.5</CertaintyLossFactor>
+        </statFactors>
+        <statOffsets>
+            <MentalBreakThreshold>-0.4</MentalBreakThreshold>
+            <PainShockThreshold>0.4</PainShockThreshold>
+        </statOffsets>
+        <biostatCpx>1</biostatCpx>
+        <biostatMet>1</biostatMet>
+        <!--symbolPack>
+            <prefixSymbols>
+                <li><symbol>wake</symbol></li>
+                <li><symbol>night</symbol></li>
+            </prefixSymbols>
+        </symbolPack-->
+    </GeneDef>
+
+    <GeneDef>
+        <defName>Astrologer_Gene_StarSeeker</defName>
+        <label>群星探索者</label>
+        <description>desc.</description>
+        <iconPath>UI/Icons/Genes/Gene_Sanguine</iconPath>
+        <displayCategory>AstrologerGene</displayCategory>
+        <displayOrderInCategory>30</displayOrderInCategory>
+        <aptitudes>
+            <Intellectual>4</Intellectual>
+        </aptitudes>
+        <statFactors>
+            <GlobalLearningFactor>0.25</GlobalLearningFactor>
+        </statFactors>
+        <biostatCpx>1</biostatCpx>
+        <biostatMet>1</biostatMet>
+        <!--symbolPack>
+            <prefixSymbols>
+                <li><symbol>wake</symbol></li>
+                <li><symbol>night</symbol></li>
             </prefixSymbols>
         </symbolPack-->
     </GeneDef>
