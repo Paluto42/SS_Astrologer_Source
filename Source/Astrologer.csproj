@@ -38,6 +38,22 @@
       <HintPath>Rely\0Harmony.dll</HintPath>
       <Private>False</Private>
     </Reference>
+    <Reference Include="1AK_TypeDef">
+      <HintPath>Rely\1AK_TypeDef.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="2AKR_WeightedRandomUnified">
+      <HintPath>Rely\2AKR_WeightedRandomUnified.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="AKS_Shield">
+      <HintPath>Rely\AKS_Shield.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="AK_Ability">
+      <HintPath>Rely\AK_Ability.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
     <Reference Include="Assembly-CSharp">
       <HintPath>Rely\Assembly-CSharp.dll</HintPath>
       <Private>False</Private>
@@ -64,9 +80,13 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AstroDocument.cs" />
+    <Compile Include="Building\OffsetProductQuality\Ext_OffsetProductQuality.cs" />
+    <Compile Include="Building\OffsetProductQuality\Patch_OffsetProductQuality.cs" />
     <Compile Include="Building\StellarStove.cs" />
     <Compile Include="Comp\TCP_HediffApparel.cs" />
     <Compile Include="HarmonyPatch\Patch_Main.cs" />
+    <Compile Include="Insight\AstroTracker.cs" />
     <Compile Include="Insight\TCP_Insights.cs" />
     <Compile Include="Insight\trash\TCP_MultipleVerb.cs" />
     <Compile Include="Comp\TC_PawnEquipGizmo.cs" />
