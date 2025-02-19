@@ -88,6 +88,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AstroDocument.cs" />
+    <Compile Include="Building\Laundry\AI\JobDriver_FillLaundry.cs" />
+    <Compile Include="Building\Laundry\AI\WorkGiver_FillLaundry.cs" />
+    <Compile Include="Building\Laundry\TCP_Laundry.cs" />
+    <Compile Include="Building\Laundry\TCP_ThingContainer.cs" />
+    <Compile Include="Building\Laundry\TC_LaundryRepair.cs" />
     <Compile Include="Building\OffsetProductQuality\Ext_OffsetProductQuality.cs" />
     <Compile Include="Building\OffsetProductQuality\Patch_OffsetProductQuality.cs" />
     <Compile Include="Building\StellarStove.cs" />
@@ -103,6 +108,7 @@
     <Compile Include="Insight\Gizmo_Insight_Base.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Thing\Thing_ActivatedPulsePack.cs" />
+    <Compile Include="TypeDef.cs" />
     <Compile Include="Utility.cs" />
     <Compile Include="Verb\Verb_EMPpop.cs" />
     <Compile Include="Insight\Verb_PreApplyShoot.cs" />

@@ -1,0 +1,24 @@
+﻿using RimWorld;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using UnityEngine;
+using Verse;
+
+namespace Astrologer
+{
+    public static class TypeDef
+    {
+        public static Texture2D LaundrySwitch => BaseContent.BadTex;
+    }
+
+    [DefOf]
+    public static class AstDefOf
+    {
+        public static ThingDef AS_Laundy;
+
+        public static JobDef AS_Job_FillLaundry;
+    }
+}
