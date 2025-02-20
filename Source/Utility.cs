@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Verse;
+﻿using Verse;
 using AK_TypeDef;
 using RimWorld;
 
@@ -11,6 +6,8 @@ namespace Astrologer
 {
     internal static class Utility
     {
+        public static int CrtTick => Find.TickManager.TicksGame;
+
         public static bool IsTickInterval(int tick)
         {
             if (tick > 0) 
@@ -25,6 +22,19 @@ namespace Astrologer
             AstroDocument doc = p?.TryGetDoc<AstroDocument>();
 
             return doc;
+        }
+
+        public static AstroTracker TryGetAstroTracker(this Pawn p)
+        {
+            return TryGetAstroDoc(p)?.astroTracker;
+        }
+
+        public static void TryOffsetInsight(this Pawn p, float amt)
+        {
+            AstroTracker tracker = TryGetAstroTracker(p);
+            if (tracker == null) return;
+
+            tracker.insight += amt;
         }
 
         public static bool BuildingWorking(this ThingWithComps building)

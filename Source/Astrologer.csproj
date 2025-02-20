@@ -105,6 +105,7 @@
     <Compile Include="Building\OffsetProductQuality\Ext_OffsetProductQuality.cs" />
     <Compile Include="Building\OffsetProductQuality\Patch_OffsetProductQuality.cs" />
     <Compile Include="Building\StellarStove.cs" />
+    <Compile Include="Building\TCP_NightGenerator.cs" />
     <Compile Include="Comp\TCP_HediffApparel.cs" />
     <Compile Include="HarmonyPatch\Patch_Main.cs" />
     <Compile Include="Insight\AstroTracker.cs" />
