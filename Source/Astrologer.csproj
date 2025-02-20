@@ -36,6 +36,7 @@
   <ItemGroup>
     <Reference Include="0Harmony">
       <HintPath>Rely\0Harmony.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="1AK_TypeDef">
       <HintPath>..\1.5\Assemblies\1AK_TypeDef.dll</HintPath>
@@ -67,8 +68,13 @@
     </Reference>
     <Reference Include="Assembly-CSharp">
       <HintPath>Rely\Assembly-CSharp.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="System" />
+    <Reference Include="System.Collections.Generic.RedBlack">
+      <HintPath>Rely\System.Collections.Generic.RedBlack.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -78,12 +84,15 @@
     <Reference Include="System.Xml" />
     <Reference Include="UnityEngine.CoreModule">
       <HintPath>Rely\UnityEngine.CoreModule.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="UnityEngine.IMGUIModule">
       <HintPath>Rely\UnityEngine.IMGUIModule.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="UnityEngine.TextRenderingModule">
       <HintPath>Rely\UnityEngine.TextRenderingModule.dll</HintPath>
+      <Private>False</Private>
     </Reference>
   </ItemGroup>
   <ItemGroup>
