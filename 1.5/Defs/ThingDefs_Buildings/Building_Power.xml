@@ -7,20 +7,19 @@
         <description>在夜晚发电.</description>
         <thingClass>Building</thingClass>
         <drawerType>MapMeshAndRealTime</drawerType>
+        <!--等待贴图-->
         <graphicData>
-            <texPath>Things/Building/Power/SolarCollector</texPath>
-            <graphicClass>Graphic_Single</graphicClass>
-            <drawSize>(4,4)</drawSize>
-            <shadowData>
-                <volume>(3.5,0.75,3.4)</volume>
-                <offset>(0,0,0)</offset>
-            </shadowData>
+            <texPath>Things/Building/Power/Battery</texPath>
+            <graphicClass>Graphic_Multi</graphicClass>
+            <drawSize>(2,3)</drawSize>
             <damageData>
-                <rect>(0,0.6,4,2.8)</rect>
+                <cornerTL>Damage/Corner</cornerTL>
+                <cornerTR>Damage/Corner</cornerTR>
+                <cornerBL>Damage/Corner</cornerBL>
+                <cornerBR>Damage/Corner</cornerBR>
             </damageData>
         </graphicData>
         <castEdgeShadows>true</castEdgeShadows>
-        <rotatable>false</rotatable>
         <altitudeLayer>Building</altitudeLayer>
         <passability>PassThroughOnly</passability>
         <pathCost>50</pathCost>
@@ -32,7 +31,7 @@
             <Flammability>0.7</Flammability>
         </statBases>
         <tickerType>Normal</tickerType>
-        <size>(4,4)</size>
+        <size>(1,2)</size>
         <building>
             <destroySound>BuildingDestroyed_Metal_Big</destroySound>
         </building>
@@ -41,9 +40,16 @@
             <ComponentIndustrial>3</ComponentIndustrial>
         </costList>
         <comps>
-            <li Class="CompProperties_Power">
-                <compClass>CompPowerPlantSolar</compClass>
-                <basePowerConsumption>-1700</basePowerConsumption>
+            <li Class="Astrologer.TCP_NightGenerator">
+                <compClass>Astrologer.TC_NightGenerator</compClass>
+                <skyGlowLowerThan>0.5</skyGlowLowerThan>
+                <basePowerConsumption>-1000</basePowerConsumption>
+                <transmitsPower>true</transmitsPower>
+            </li>
+            <li Class="CompProperties_Battery">
+                <storedEnergyMax>1800</storedEnergyMax>
+                <efficiency>1.0</efficiency>
+                <shortCircuitInRain>true</shortCircuitInRain>
                 <transmitsPower>true</transmitsPower>
             </li>
             <li Class="CompProperties_Breakdownable"/>
@@ -61,8 +67,8 @@
         <!--designationHotKey>Misc5</designationHotKey-->
         <constructEffect>ConstructMetal</constructEffect>
         <!--researchPrerequisites>
-      <li>SolarPanels</li>
-    </researchPrerequisites-->
+            <li>SolarPanels</li>
+        </researchPrerequisites-->
         <constructionSkillPrerequisite>6</constructionSkillPrerequisite>
     </ThingDef>
 

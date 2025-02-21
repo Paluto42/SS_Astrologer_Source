@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <JobDef>
+        <defName>AS_Job_FillLaundry</defName>
+        <driverClass>Astrologer.Laundry.JobDriver_FillLaundryUnited</driverClass>
+        <reportString>filling in TargetA.</reportString>
+    </JobDef>
+
+</Defs>

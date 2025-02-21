@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <!-- 环形重塑器 -->
+    <ThingDef ParentName="BuildingBase">
+        <defName>AS_Laundy</defName>
+        <label>环形重塑器</label>
+        <description>将衣物武器放入，消耗洞察力启动一段时间，在容器内的衣物会恢复耐久.</description>
+        <graphicData>
+            <texPath>Things/Building/Misc/MultiAnalyzer</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>2.46875</drawSize>
+        </graphicData>
+        <uiIconScale>0.85</uiIconScale>
+        <!--researchPrerequisites>
+            <li>MultiAnalyzer</li>
+        </researchPrerequisites-->
+        <size>(2,2)</size>
+        <rotatable>false</rotatable>
+        <altitudeLayer>Building</altitudeLayer>
+        <passability>PassThroughOnly</passability>
+        <castEdgeShadows>true</castEdgeShadows>
+        <fillPercent>0.5</fillPercent>
+        <!--designationHotKey>Misc4</designationHotKey>
+        <designationCategory>Misc</designationCategory-->
+        <minifiedDef>MinifiedThing</minifiedDef>
+        <canOverlapZones>false</canOverlapZones>
+        <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+        <thingCategories>
+            <li>BuildingsMisc</li>
+        </thingCategories>
+        <statBases>
+            <MaxHitPoints>200</MaxHitPoints>
+            <WorkToBuild>10000</WorkToBuild>
+            <Mass>60</Mass>
+            <Flammability>0.2</Flammability>
+        </statBases>
+        <costList>
+            <Steel>40</Steel>
+            <Plasteel>50</Plasteel>
+            <Gold>20</Gold>
+            <ComponentIndustrial>8</ComponentIndustrial>
+        </costList>
+        <building>
+            <destroySound>BuildingDestroyed_Metal_Medium</destroySound>
+        </building>
+        <comps>
+            <li Class="CompProperties_Power">
+                <compClass>CompPowerTrader</compClass>
+                <shortCircuitInRain>true</shortCircuitInRain>
+                <basePowerConsumption>200</basePowerConsumption>
+            </li>
+            <li Class="CompProperties_Flickable"/>
+            <li Class="CompProperties_Usable">
+                <useJob>AS_Job_FillLaundry</useJob>
+                <useLabel>使用 {0_label}</useLabel>
+            </li>
+            <li Class="Astrologer.Generic.TCP_ThingContainer"></li>
+            <li Class="Astrologer.Laundry.TCP_Laundry">
+                <compClass>Astrologer.Laundry.TC_LaundryRepair</compClass>
+            </li>
+        </comps>
+        <placeWorkers>
+        </placeWorkers>
+        <constructionSkillPrerequisite>8</constructionSkillPrerequisite>
+    </ThingDef>
+
+</Defs>
