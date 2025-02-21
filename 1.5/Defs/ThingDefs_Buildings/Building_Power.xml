@@ -4,7 +4,7 @@
     <ThingDef ParentName="BuildingBase">
         <defName>Astrologer_NightGenerator</defName>
         <label>夜空电机</label>
-        <description>在夜晚发电.</description>
+        <description>收集月光进行发电,在阳光强烈时停止工作.</description>
         <thingClass>Building</thingClass>
         <drawerType>MapMeshAndRealTime</drawerType>
         <!--等待贴图-->

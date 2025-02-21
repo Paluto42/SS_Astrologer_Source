@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <HeadTypeDef>
+        <defName>AstrologerHead_A</defName>
+        <label>占星师A</label>
+        <requiredGenes>
+        </requiredGenes>
+        <graphicPath>Things/Pawn/Heads/ASHead_A</graphicPath>
+        <gender>None</gender>
+        <modExtensions>
+        </modExtensions>
+    </HeadTypeDef>
+
+    <HeadTypeDef>
+        <defName>AstrologerHead_B</defName>
+        <label>占星师B</label>
+        <requiredGenes>
+        </requiredGenes>
+        <graphicPath>Things/Pawn/Heads/ASHead_B</graphicPath>
+        <gender>None</gender>
+        <modExtensions>
+        </modExtensions>
+    </HeadTypeDef>
+
+    <HeadTypeDef>
+        <defName>AstrologerHead_C</defName>
+        <label>占星师C</label>
+        <requiredGenes>
+        </requiredGenes>
+        <graphicPath>Things/Pawn/Heads/ASHead_C</graphicPath>
+        <gender>None</gender>
+        <modExtensions>
+        </modExtensions>
+    </HeadTypeDef>
+
+    <HeadTypeDef>
+        <defName>AstrologerHead_D</defName>
+        <label>占星师D</label>
+        <requiredGenes>
+        </requiredGenes>
+        <graphicPath>Things/Pawn/Heads/ASHead_D</graphicPath>
+        <gender>None</gender>
+        <modExtensions>
+        </modExtensions>
+    </HeadTypeDef>
+
+    <HeadTypeDef>
+        <defName>AstrologerHead_E</defName>
+        <label>占星师E</label>
+        <requiredGenes>
+        </requiredGenes>
+        <graphicPath>Things/Pawn/Heads/ASHead_E</graphicPath>
+        <gender>None</gender>
+        <modExtensions>
+        </modExtensions>
+    </HeadTypeDef>
+
+    <HeadTypeDef>
+        <defName>AstrologerHead_F</defName>
+        <label>占星师F</label>
+        <requiredGenes>
+        </requiredGenes>
+        <graphicPath>Things/Pawn/Heads/ASHead_F</graphicPath>
+        <gender>None</gender>
+        <modExtensions>
+        </modExtensions>
+    </HeadTypeDef>
+
+</Defs>

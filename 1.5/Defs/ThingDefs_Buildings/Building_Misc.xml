@@ -20,8 +20,8 @@
         <passability>PassThroughOnly</passability>
         <castEdgeShadows>true</castEdgeShadows>
         <fillPercent>0.5</fillPercent>
-        <!--designationHotKey>Misc4</designationHotKey>
-        <designationCategory>Misc</designationCategory-->
+        <!--designationHotKey>Misc4</designationHotKey-->
+        <designationCategory>Misc</designationCategory>
         <minifiedDef>MinifiedThing</minifiedDef>
         <canOverlapZones>false</canOverlapZones>
         <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
@@ -40,6 +40,9 @@
             <Gold>20</Gold>
             <ComponentIndustrial>8</ComponentIndustrial>
         </costList>
+        <inspectorTabs>
+            <li>ITab_Bills</li>
+        </inspectorTabs>
         <building>
             <destroySound>BuildingDestroyed_Metal_Medium</destroySound>
         </building>
@@ -54,7 +57,10 @@
                 <useJob>AS_Job_FillLaundry</useJob>
                 <useLabel>使用 {0_label}</useLabel>
             </li>
-            <li Class="Astrologer.Generic.TCP_ThingContainer"></li>
+            <li Class="Astrologer.Generic.TCP_ThingContainer">
+                <capacity>1</capacity>
+                <gizmoEjectLabel>弹出服装</gizmoEjectLabel>
+            </li>
             <li Class="Astrologer.Laundry.TCP_Laundry">
                 <compClass>Astrologer.Laundry.TC_LaundryRepair</compClass>
             </li>

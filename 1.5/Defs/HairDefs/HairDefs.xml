@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <StyleItemCategoryDef>
+        <defName>Astrologer_Hair</defName>
+        <label>占星师</label>
+    </StyleItemCategoryDef>
+
+    <HairDef>
+        <defName>AS_Hair_A</defName>
+        <label>AstrologerA</label>
+        <styleGender>Female</styleGender>
+        <texPath>Things/Pawn/Hairs/ASHair_A</texPath>
+        <category>Astrologer_Hair</category>
+        <styleTags>
+            <li>AstrologerHair</li>
+        </styleTags>
+    </HairDef>
+
+    <HairDef>
+        <defName>AS_Hair_B</defName>
+        <label>AstrologerB</label>
+        <styleGender>Female</styleGender>
+        <texPath>Things/Pawn/Hairs/ASHair_B</texPath>
+        <category>Astrologer_Hair</category>
+        <styleTags>
+            <li>AstrologerHair</li>
+        </styleTags>
+    </HairDef>
+
+    <HairDef>
+        <defName>AS_Hair_C</defName>
+        <label>AstrologerC</label>
+        <styleGender>Female</styleGender>
+        <texPath>Things/Pawn/Hairs/ASHair_C</texPath>
+        <category>Astrologer_Hair</category>
+        <styleTags>
+            <li>AstrologerHair</li>
+        </styleTags>
+    </HairDef>
+
+    <HairDef>
+        <defName>AS_Hair_D</defName>
+        <label>AstrologerD</label>
+        <styleGender>Female</styleGender>
+        <texPath>Things/Pawn/Hairs/ASHair_D</texPath>
+        <category>Astrologer_Hair</category>
+        <styleTags>
+            <li>AstrologerHair</li>
+        </styleTags>
+    </HairDef>
+
+    <HairDef>
+        <defName>AS_Hair_E</defName>
+        <label>AstrologerE</label>
+        <styleGender>Female</styleGender>
+        <texPath>Things/Pawn/Hairs/ASHair_E</texPath>
+        <category>Astrologer_Hair</category>
+        <styleTags>
+            <li>AstrologerHair</li>
+        </styleTags>
+    </HairDef>
+
+    <HairDef>
+        <defName>AS_Hair_F</defName>
+        <label>AstrologerF</label>
+        <styleGender>Female</styleGender>
+        <texPath>Things/Pawn/Hairs/ASHair_F</texPath>
+        <category>Astrologer_Hair</category>
+        <styleTags>
+            <li>AstrologerHair</li>
+        </styleTags>
+    </HairDef>
+
+    <HairDef>
+        <defName>AS_Hair_G</defName>
+        <label>AstrologerG</label>
+        <styleGender>Female</styleGender>
+        <texPath>Things/Pawn/Hairs/ASHair_G</texPath>
+        <category>Astrologer_Hair</category>
+        <styleTags>
+            <li>AstrologerHair</li>
+        </styleTags>
+    </HairDef>
+
+</Defs>
