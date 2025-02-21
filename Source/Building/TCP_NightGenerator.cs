@@ -22,6 +22,11 @@ namespace Astrologer
     }
     public class TC_NightGenerator : CompPowerPlantSolar
     {
+        private static readonly Vector2 BarSize = new(1.5f, 0.15f);
+
+        private static readonly Material PowerPlantSolarBarFilledMat = SolidColorMaterials.SimpleSolidColorMaterial(new Color(0.5f, 0.475f, 0.1f));
+
+        private static readonly Material PowerPlantSolarBarUnfilledMat = SolidColorMaterials.SimpleSolidColorMaterial(new Color(0.15f, 0.15f, 0.15f));
         private TCP_NightGenerator Prop => props as TCP_NightGenerator;
 
         //private float NightPower => Prop.nightPowerRatio * Prop.PowerConsumption;
@@ -56,7 +61,17 @@ namespace Astrologer
 
         public override void PostDraw()
         {
-            base.PostDraw();
+            GenDraw.FillableBarRequest r = default;
+            r.center = parent.DrawPos + Vector3.up * 0.1f;
+            r.size = BarSize;
+            r.fillPercent = PowerOutput / (0f - Props.PowerConsumption);
+            r.filledMat = PowerPlantSolarBarFilledMat;
+            r.unfilledMat = PowerPlantSolarBarUnfilledMat;
+            r.margin = 0.15f;
+            Rot4 rotation = parent.Rotation;
+            rotation.Rotate(RotationDirection.Clockwise);
+            r.rotation = rotation;
+            GenDraw.DrawFillableBar(r);
         }
     }
 }
