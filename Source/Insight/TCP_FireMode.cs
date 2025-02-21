@@ -44,7 +44,7 @@ namespace Astrologer
     public class TC_FireMode : ThingComp 
     {
         public FireTickStatus tickStatus = FireTickStatus.None;
-        //private TC_Insights CompInsight => CasterPawn?.GetComp<TC_Insights>();//洞察力comp
+        private TC_Insights CompInsight => CasterPawn?.GetComp<TC_Insights>();//洞察力comp
 
         private Verb verbInt;
 

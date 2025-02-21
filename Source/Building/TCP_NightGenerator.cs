@@ -32,12 +32,31 @@ namespace Astrologer
             get
             {
                 if (parent.Map == null || parent.Map.skyManager.CurSkyGlow > SkyGlowLowerThan) return 0;
-                return base.DesiredPowerOutput;
+                return Mathf.Lerp(0f, 0f - Props.PowerConsumption, 1f - parent.Map.skyManager.CurSkyGlow) * RoofedPowerOutputFactor;
+            }
+        }
+
+        private float RoofedPowerOutputFactor
+        {
+            get
+            {
+                int num = 0;
+                int num2 = 0;
+                foreach (IntVec3 item in parent.OccupiedRect())
+                {
+                    num++;
+                    if (parent.Map.roofGrid.Roofed(item))
+                    {
+                        num2++;
+                    }
+                }
+                return (float)(num - num2) / (float)num;
             }
         }
 
         public override void PostDraw()
         {
+            base.PostDraw();
         }
     }
 }
