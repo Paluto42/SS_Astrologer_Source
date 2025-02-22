@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-    <ThingDef ParentName="Astrologer_WeaponRangedBase">
-        <defName>Astrologer_Weapon_EagleMoon</defName>
+    <ThingDef ParentName="Astro_WeaponRangedBase">
+        <defName>Astro_EagleMoon</defName>
         <label>鹰月</label>
         <description>一把暗红色的手炮.</description>
         <graphicData>
-            <texPath>Things/Item/Equipment/WeaponRanged/Autopistol</texPath>
+            <texPath>Things/Weapons/Deagle44</texPath>
             <graphicClass>Graphic_Single</graphicClass>
         </graphicData>
         <uiIconScale>1.5</uiIconScale>
@@ -15,7 +15,7 @@
             <li>RangedLight</li>
         </weaponClasses>
         <weaponTags>
-            <li>Astrologer_WeaponRanged</li>
+            <li>Astro_WeaponRanged</li>
         </weaponTags>
         <!--占位,原版数值-->
         <statBases>
@@ -47,7 +47,7 @@
                 <verbClass>Verb_Shoot</verbClass>
                 <hasStandardCommand>true</hasStandardCommand>
                 <!--应该写个新的弹药种类-->
-                <defaultProjectile>Astrologer_Bullet_EagleMoon</defaultProjectile>
+                <defaultProjectile>Astro_Bullet_EagleMoon</defaultProjectile>
                 <warmupTime>0.4</warmupTime>
                 <range>25.9</range>
                 <soundCast>Shot_Revolver</soundCast>
@@ -76,7 +76,7 @@
         </tools>
     </ThingDef>
     <ThingDef ParentName="BaseBullet">
-        <defName>Astrologer_Bullet_EagleMoon</defName>
+        <defName>Astro_Bullet_EagleMoon</defName>
         <label>手炮弹药</label>
         <graphicData>
             <texPath>Things/Projectile/Bullet_Small</texPath>
@@ -93,8 +93,8 @@
 
     <!--=============== SMG  ====================-->
 
-    <ThingDef ParentName="Astrologer_WeaponRangedBase">
-        <defName>Astrologer_Weapon_CombatSMG</defName>
+    <ThingDef ParentName="Astro_WeaponRangedBase">
+        <defName>Astro_CombatSMG</defName>
         <label>格斗冲锋枪</label>
         <description>这把冲锋枪设计于占星帝国内战的时代，便宜和耐用是该枪的代名词.</description>
         <graphicData>
@@ -106,7 +106,7 @@
             <li>RangedLight</li>
         </weaponClasses>
         <weaponTags>
-            <li>Astrologer_WeaponRanged</li>
+            <li>Astro_WeaponRanged</li>
         </weaponTags>
         <recipeMaker>
             <researchPrerequisite>GasOperation</researchPrerequisite>
@@ -137,7 +137,7 @@
             <li>
                 <verbClass>Verb_Shoot</verbClass>
                 <hasStandardCommand>true</hasStandardCommand>
-                <defaultProjectile>Astrologer_Bullet_SMG</defaultProjectile>
+                <defaultProjectile>Astro_Bullet_SMG</defaultProjectile>
                 <warmupTime>0.6</warmupTime>
                 <range>12.9</range>
                 <burstShotCount>6</burstShotCount>
@@ -168,7 +168,7 @@
         </tools>
     </ThingDef>
     <ThingDef ParentName="BaseBullet">
-        <defName>Astrologer_Bullet_SMG</defName>
+        <defName>Astro_Bullet_SMG</defName>
         <label>冲锋枪子弹</label>
         <graphicData>
             <texPath>Things/Projectile/Bullet_Small</texPath>
@@ -185,8 +185,8 @@
 
     <!--=============== Shotguns  ====================-->
 
-    <ThingDef ParentName="Astrologer_WeaponRangedBase">
-        <defName>Astrologer_Weapon_PiercingShotgun</defName>
+    <ThingDef ParentName="Astro_WeaponRangedBase">
+        <defName>Astro_PiercingShotgun</defName>
         <label>破甲霰弹枪</label>
         <description>这是一把开罐器.</description>
         <graphicData>
@@ -197,7 +197,7 @@
         <weaponClasses>
         </weaponClasses>
         <weaponTags>
-            <li>Astrologer_WeaponRanged</li>
+            <li>Astro_WeaponRanged</li>
         </weaponTags>
         <!--占位,原版数值-->
         <statBases>
@@ -229,7 +229,7 @@
                 <verbClass>Verb_Shoot</verbClass>
                 <hasStandardCommand>true</hasStandardCommand>
                 <!--应该写个新的弹药种类-->
-                <defaultProjectile>Astrologer_Bullet_Shotgun</defaultProjectile>
+                <defaultProjectile>Astro_Bullet_Shotgun</defaultProjectile>
                 <warmupTime>0.9</warmupTime>
                 <range>14.9</range>
                 <soundCast>Shot_Shotgun</soundCast>
@@ -258,7 +258,7 @@
         </tools>
     </ThingDef>
     <ThingDef ParentName="BaseBullet">
-        <defName>Astrologer_Bullet_Shotgun</defName>
+        <defName>Astro_Bullet_Shotgun</defName>
         <label>破甲霰弹</label>
         <graphicData>
             <texPath>Things/Projectile/Bullet_Shotgun</texPath>
@@ -273,8 +273,8 @@
         </projectile>
     </ThingDef>
 
-    <ThingDef ParentName="Astrologer_WeaponRangedBase">
-        <defName>Astrologer_Weapon_RapidShotgun</defName>
+    <ThingDef ParentName="Astro_WeaponRangedBase">
+        <defName>Astro_RapidShotgun</defName>
         <label>"AMA-1" 电能霰弹枪</label>
         <description>一把能快速发射的霰弹枪.</description>
         <graphicData>
@@ -285,7 +285,7 @@
         <weaponClasses>
         </weaponClasses>
         <weaponTags>
-            <li>Astrologer_WeaponRanged</li>
+            <li>Astro_WeaponRanged</li>
         </weaponTags>
         <!--占位,原版数值-->
         <statBases>
@@ -304,7 +304,7 @@
         <recipeMaker>
             <researchPrerequisite>GasOperation</researchPrerequisite>
             <recipeUsers Inherit="false">
-                <li>Astrologer_StellarFoundry</li>
+                <li>Astro_StellarFoundry</li>
             </recipeUsers>
             <skillRequirements>
                 <Crafting>5</Crafting>
@@ -319,7 +319,7 @@
                 <verbClass>Verb_Shoot</verbClass>
                 <hasStandardCommand>true</hasStandardCommand>
                 <!--应该写个新的弹药种类-->
-                <defaultProjectile>Astrologer_Bullet_Shotgun</defaultProjectile>
+                <defaultProjectile>Astro_Bullet_Shotgun</defaultProjectile>
                 <warmupTime>0.9</warmupTime>
                 <range>14.9</range>
                 <soundCast>Shot_Shotgun</soundCast>
@@ -348,7 +348,7 @@
         </tools>
     </ThingDef>
     <ThingDef ParentName="BaseBullet">
-        <defName>Astrologer_Bullet_StunShotgun</defName>
+        <defName>Astro_Bullet_StunShotgun</defName>
         <label>高速电能独头弹</label>
         <graphicData>
             <texPath>Things/Projectile/Bullet_Shotgun</texPath>
@@ -372,8 +372,8 @@
 
     <!--=============== Rifles  ====================-->
 
-    <ThingDef ParentName="Astrologer_WeaponRangedBase">
-        <defName>Astrologer_Weapon_PsychicRifle</defName>
+    <ThingDef ParentName="Astro_WeaponRangedBase">
+        <defName>Astro_PsychicRifle</defName>
         <label>"MK-5" 等离子心灵干扰步枪</label>
         <description>标准射手步枪,点击切换模式,此时该步枪每发子弹会有心灵错乱效果.</description>
         <graphicData>
@@ -385,7 +385,7 @@
             <li>RangedHeavy</li>
         </weaponClasses>
         <weaponTags>
-            <li>Astrologer_WeaponRanged</li>
+            <li>Astro_WeaponRanged</li>
         </weaponTags>
         <!--占位,原版数值-->
         <statBases>
@@ -404,7 +404,7 @@
         <recipeMaker>
             <researchPrerequisite>ChargedShot</researchPrerequisite>
             <recipeUsers Inherit="false">
-                <li>Astrologer_StellarFoundry</li>
+                <li>Astro_StellarFoundry</li>
             </recipeUsers>
             <skillRequirements>
                 <Crafting>7</Crafting>
@@ -430,7 +430,7 @@
                 <verbProps>
                     <verbClass>Astrologer.Verb_PreApplyShoot</verbClass>
                     <hasStandardCommand>true</hasStandardCommand>
-                    <defaultProjectile>Astrologer_Bullet_Psychicinsanity</defaultProjectile>
+                    <defaultProjectile>Astro_Bullet_Psychicinsanity</defaultProjectile>
                     <warmupTime>2</warmupTime>
                     <range>30</range>
                     <soundCast>Shot_Shotgun</soundCast>
@@ -466,22 +466,22 @@
         </tools>
     </ThingDef>
     <ThingDef ParentName="BaseBullet">
-        <defName>Astrologer_Bullet_Psychicinsanity</defName>
+        <defName>Astro_Bullet_Psychicinsanity</defName>
         <label>附魔步枪子弹</label>
         <graphicData>
             <texPath>Things/Projectile/Bullet_Small</texPath>
             <graphicClass>Graphic_Single</graphicClass>
         </graphicData>
         <projectile>
-            <damageDef>Astrologer_Cast_Psychicinsanity</damageDef>
+            <damageDef>Astro_Cast_Psychicinsanity</damageDef>
             <damageAmountBase>15</damageAmountBase>
             <armorPenetrationBase>0.35</armorPenetrationBase>
             <speed>70</speed>
         </projectile>
     </ThingDef>
 
-    <ThingDef ParentName="Astrologer_WeaponRangedBase">
-        <defName>Astrologer_Weapon_AMSR</defName>
+    <ThingDef ParentName="Astro_WeaponRangedBase">
+        <defName>Astro_AMSR</defName>
         <label>ASAT-112 "船边星云"</label>
         <description>远程狙击，长开火前摇，短射击后摇，当占星师使用时，可使用洞察力强化该武器。每一发消耗一定量洞察力，在这种模式下，每一发子弹命中会打掉对方身体的随机的一个部位，并挂一个debuff（星云射线）持续扣血.</description>
         <graphicData>
@@ -493,7 +493,7 @@
             <li>RangedHeavy</li>
         </weaponClasses>
         <weaponTags>
-            <li>Astrologer_WeaponRanged</li>
+            <li>Astro_WeaponRanged</li>
         </weaponTags>
         <!--占位,原版数值-->
         <statBases>
@@ -512,7 +512,7 @@
         <recipeMaker>
             <researchPrerequisite>ChargedShot</researchPrerequisite>
             <recipeUsers Inherit="false">
-                <li>Astrologer_StellarFoundry</li>
+                <li>Astro_StellarFoundry</li>
             </recipeUsers>
             <skillRequirements>
                 <Crafting>7</Crafting>
@@ -556,7 +556,7 @@
         </tools>
     </ThingDef>
     <ThingDef ParentName="BaseBullet">
-        <defName>Astrologer_Bullet_ChargeSniper</defName>
+        <defName>Astro_Bullet_ChargeSniper</defName>
         <label>charge shot</label>
         <graphicData>
             <texPath>Things/Projectile/Charge_Small</texPath>
@@ -573,8 +573,8 @@
 
     <!--=============== Heavy  ====================-->
 
-    <ThingDef ParentName="Astrologer_WeaponRangedBase">
-        <defName>Astrologer_Weapon_PlasmaHMG</defName>
+    <ThingDef ParentName="Astro_WeaponRangedBase">
+        <defName>Astro_PlasmaHMG</defName>
         <label>"MPE-1" 等离子重机枪</label>
         <description>MPE-1是占星帝国初次遭遇暗灵时设计给前线战斗人员的制式武器。消耗洞察力可以进行一小段时间的高速射击.</description>
         <graphicData>
@@ -585,7 +585,7 @@
         <weaponClasses>
         </weaponClasses>
         <weaponTags>
-            <li>Astrologer_WeaponRanged</li>
+            <li>Astro_WeaponRanged</li>
         </weaponTags>
         <!--占位,原版数值-->
         <statBases>
@@ -605,7 +605,7 @@
         <recipeMaker>
             <researchPrerequisite>ChargedShot</researchPrerequisite>
             <recipeUsers Inherit="false">
-                <li>Astrologer_StellarFoundry</li>
+                <li>Astro_StellarFoundry</li>
             </recipeUsers>
             <skillRequirements>
                 <Crafting>7</Crafting>
@@ -633,7 +633,7 @@
                 <verbProps>
                     <verbClass>Astrologer.Verb_PreApplyShoot</verbClass>
                     <hasStandardCommand>true</hasStandardCommand>
-                    <defaultProjectile>Astrologer_Bullet_Psychicinsanity</defaultProjectile>
+                    <defaultProjectile>Astro_Bullet_Psychicinsanity</defaultProjectile>
                     <warmupTime>0.5</warmupTime>
                     <range>60</range>
                     <burstShotCount>18</burstShotCount>
@@ -672,8 +672,8 @@
         </tools>
     </ThingDef>
 
-    <ThingDef ParentName="Astrologer_WeaponRangedBase">
-        <defName>Astrologer_Weapon_Railgun</defName>
+    <ThingDef ParentName="Astro_WeaponRangedBase">
+        <defName>Astro_Railgun</defName>
         <label>ES-117 "英仙座" 舰载轨道炮</label>
         <description>手持轨道炮.</description>
         <tickerType>Normal</tickerType>
@@ -686,7 +686,7 @@
             <li>RangedHeavy</li>
         </weaponClasses>
         <weaponTags>
-            <li>Astrologer_WeaponRanged</li>
+            <li>Astro_WeaponRanged</li>
         </weaponTags>
         <!--占位,原版数值-->
         <statBases>
@@ -699,7 +699,7 @@
             <RangedWeapon_Cooldown>4.5</RangedWeapon_Cooldown>
         </statBases>
         <equippedStatOffsets>
-            <MoveSpeed>-0.25</MoveSpeed>
+            <MoveSpeed>-0.50</MoveSpeed>
         </equippedStatOffsets>
         <costList>
             <Plasteel>40</Plasteel>
@@ -708,7 +708,7 @@
         <recipeMaker>
             <!--researchPrerequisite>ChargedShot</researchPrerequisite-->
             <recipeUsers Inherit="false">
-                <li>Astrologer_StellarFoundry</li>
+                <li>Astro_StellarFoundry</li>
             </recipeUsers>
             <skillRequirements>
                 <Crafting>7</Crafting>
@@ -721,7 +721,7 @@
             <li>
                 <verbClass>Verb_Shoot</verbClass>
                 <hasStandardCommand>true</hasStandardCommand>
-                <defaultProjectile>Astrologer_Bullet_Railgun</defaultProjectile>
+                <defaultProjectile>Astro_Bullet_Railgun</defaultProjectile>
                 <forcedMissRadius>2.9</forcedMissRadius>
                 <warmupTime>4.5</warmupTime>
                 <ai_AvoidFriendlyFireRadius>5</ai_AvoidFriendlyFireRadius>
@@ -739,7 +739,9 @@
             <li Class="CompProperties_Explosive">
                 <explosiveRadius>3.9</explosiveRadius>
                 <explosiveDamageType>Bomb</explosiveDamageType>
-                <requiredDamageTypeToExplode>Flame</requiredDamageTypeToExplode>
+                <chanceToStartFire>0.22</chanceToStartFire>
+                <explosionEffect>GiantExplosion</explosionEffect>
+                <explosionSound>Explosion_GiantBomb</explosionSound>
             </li>
         </comps>
         <tools>
@@ -763,7 +765,7 @@
         </tools>
     </ThingDef>
     <ThingDef ParentName="BaseBullet">
-        <defName>Astrologer_Bullet_Railgun</defName>
+        <defName>Astro_Bullet_Railgun</defName>
         <label>Plasma shot</label>
         <graphicData>
             <texPath>Things/Projectile/Rocket_Big</texPath>
@@ -773,11 +775,15 @@
         <thingClass>Projectile_Explosive</thingClass>
         <projectile>
             <damageDef>Bomb</damageDef>
-            <damageAmountBase>500</damageAmountBase>
+            <damageAmountBase>250</damageAmountBase>
             <armorPenetrationBase>0.8</armorPenetrationBase>
             <explosionRadius>3.9</explosionRadius>
             <speed>70</speed>
             <stoppingPower>3</stoppingPower>
+            <soundHitThickRoof>Artillery_HitThickRoof</soundHitThickRoof>
+            <soundExplode>Explosion_GiantBomb</soundExplode>
+            <soundImpactAnticipate>MortarRound_PreImpact</soundImpactAnticipate>
+            <soundAmbient>MortarRound_Ambient</soundAmbient>
         </projectile>
     </ThingDef>
 

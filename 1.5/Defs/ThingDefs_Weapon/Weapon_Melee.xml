@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-    <ThingDef ParentName="Astrologer_WeaponMeleeBase">
-        <defName>Astrologer_CeremonialSword</defName>
+    <ThingDef ParentName="Astro_WeaponMeleeBase">
+        <defName>Astro_CeremonialSword</defName>
         <label>护身剑</label>
         <description>占星师社交用的礼仪剑.</description>
         <graphicData>
@@ -62,8 +62,8 @@
         </tools>
     </ThingDef>
 
-    <ThingDef ParentName="Astrologer_WeaponMeleeBase">
-        <defName>Astrologer_ShockGlove</defName>
+    <ThingDef ParentName="Astro_WeaponMeleeBase">
+        <defName>Astro_ShockGlove</defName>
         <label>机械冲击手套</label>
         <description>本来是辅助工作的手套。逐渐变为外出游玩时偶遇机械族的无奈之举.</description>
         <graphicData>
@@ -113,7 +113,7 @@
         </tools>
         <comps>
             <li Class="Astrologer.TCP_HediffApparel">
-                <hediff>Astrologer_Hediff_Manipulation</hediff>
+                <hediff>Astro_Hediff_Manipulation</hediff>
             </li>
         </comps>
     </ThingDef>

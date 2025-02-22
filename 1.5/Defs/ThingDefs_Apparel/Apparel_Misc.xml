@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-    <ThingDef ParentName="Astrologer_ClothBase">
-        <defName>Astrologer_Cloak</defName>
+    <ThingDef ParentName="Astro_ClothBase">
+        <defName>Astro_Cloak</defName>
         <label>朦胧暗月</label>
         <description>斗篷,加疼痛阈值和减崩溃阈值，持续消耗洞察力可以进入不稳定态，此时有一半的几率受击不造成伤害.</description>
         <!--等待贴图-->

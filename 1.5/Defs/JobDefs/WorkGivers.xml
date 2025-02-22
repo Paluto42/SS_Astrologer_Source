@@ -2,7 +2,7 @@
 <Defs>
 
     <WorkGiverDef>
-        <defName>Astrologer_FillLaundryRepair</defName>
+        <defName>Astro_FillLaundryRepair</defName>
         <label>使用洗衣机</label>
         <giverClass>Astrologer.Laundry.WorkGiver_FillLaundryRepair</giverClass>
         <!--workType>Crafting</workType-->

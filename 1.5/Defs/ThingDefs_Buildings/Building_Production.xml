@@ -2,7 +2,7 @@
 <Defs>
 
     <ThingDef ParentName="BenchBase">
-        <defName>Astrologer_FabricationBench</defName>
+        <defName>Astro_FabricationBench</defName>
         <label>占星师装配台</label>
         <description>一座似乎有自我意识的机械手，会在你制造东西的时候指指点点.</description>
         <thingClass>Building_WorkTable</thingClass>
@@ -82,7 +82,7 @@
     </ThingDef>
 
     <ThingDef ParentName="BenchBase">
-        <defName>Astrologer_StellarFoundry</defName>
+        <defName>Astro_StellarFoundry</defName>
         <label>恒星铸造厂</label>
         <description>制造占星师高级装备.</description>
         <thingClass>Building_WorkTable</thingClass>
@@ -156,7 +156,7 @@
     </ThingDef>
 
     <ThingDef ParentName="BenchBase">
-        <defName>Astrologer_StellarStove</defName>
+        <defName>Astro_StellarStove</defName>
         <label>恒星熔炉</label>
         <description>desc.</description>
         <thingClass>Building_WorkTable</thingClass>
@@ -235,7 +235,7 @@
     </ThingDef>
 
     <ThingDef ParentName="BenchBase">
-        <defName>Astrologer_Stargazer</defName>
+        <defName>Astro_Stargazer</defName>
         <label>观星仪</label>
         <description>desc.</description>
         <thingClass>Building_ResearchBench</thingClass>

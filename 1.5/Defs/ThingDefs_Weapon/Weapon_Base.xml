@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-    <ThingDef Name="Astrologer_MedievalWeaponBase" Abstract="True" ParentName="BaseWeapon">
+    <ThingDef Name="Astro_MedievalWeaponBase" Abstract="True" ParentName="BaseWeapon">
         <techLevel>Medieval</techLevel>
         <smeltable>true</smeltable>
         <relicChance>0</relicChance>
@@ -27,7 +27,7 @@
         <burnableByRecipe>true</burnableByRecipe>
     </ThingDef>
 
-    <ThingDef Name="Astrologer_IndustrialWeaponBase" Abstract="True" ParentName="BaseWeapon">
+    <ThingDef Name="Astro_IndustrialWeaponBase" Abstract="True" ParentName="BaseWeapon">
         <techLevel>Industrial</techLevel>
         <smeltable>true</smeltable>
         <relicChance>0</relicChance>
@@ -44,7 +44,7 @@
             <effectWorking>Smith</effectWorking>
             <soundWorking>Recipe_Smith</soundWorking>
             <recipeUsers>
-                <li>Astrologer_FabricationBench</li>
+                <li>Astro_FabricationBench</li>
             </recipeUsers>
             <unfinishedThingDef>UnfinishedWeapon</unfinishedThingDef>
         </recipeMaker>
@@ -53,7 +53,7 @@
         </tradeTags>
     </ThingDef>
 
-    <ThingDef Name="Astrologer_WeaponMeleeBase" Abstract="True" ParentName="Astrologer_MedievalWeaponBase">
+    <ThingDef Name="Astro_WeaponMeleeBase" Abstract="True" ParentName="Astro_MedievalWeaponBase">
         <thingCategories>
             <li>Astrologer_WeaponMelee</li>
         </thingCategories>
@@ -63,7 +63,7 @@
         </weaponClasses>
         <recipeMaker>
             <recipeUsers>
-                <li>Astrologer_FabricationBench</li>
+                <li>Astro_FabricationBench</li>
             </recipeUsers>
             <defaultIngredientFilter>
                 <categories>
@@ -91,7 +91,7 @@
         </comps>
     </ThingDef>
 
-    <ThingDef Name="Astrologer_WeaponRangedBase" Abstract="True" ParentName="Astrologer_IndustrialWeaponBase">
+    <ThingDef Name="Astro_WeaponRangedBase" Abstract="True" ParentName="Astro_IndustrialWeaponBase">
         <thingCategories>
             <li>Astrologer_WeaponRanged</li>
         </thingCategories>

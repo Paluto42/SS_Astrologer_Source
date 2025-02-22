@@ -2,13 +2,13 @@
 <Defs>
 
     <RecipeDef Name="AS_MakeIron">
-        <defName>Astrologer_MakeStarlightIron</defName>
+        <defName>Astro_MakeStarlightIron</defName>
         <label>冶炼星辉钢</label>
         <description>desc.</description>
         <jobString>冶炼中.</jobString>
         <workAmount>500</workAmount>
         <recipeUsers>
-			<li>Astrologer_StellarStove</li>
+			<li>Astro_StellarStove</li>
 		</recipeUsers>
 		<workSkill>Crafting</workSkill>
 		<effectWorking>Smelt</effectWorking>
@@ -26,7 +26,7 @@
             <li>
                 <filter>
                     <thingDefs>
-                        <li>Astrologer_Starlightgrass</li>
+                        <li>Astro_Starlightgrass</li>
                     </thingDefs>
                 </filter>
                 <count>25</count>
@@ -35,11 +35,11 @@
         <fixedIngredientFilter>
             <thingDefs>
                 <li>Steel</li>
-                <li>Astrologer_Starlightgrass</li>
+                <li>Astro_Starlightgrass</li>
             </thingDefs>
         </fixedIngredientFilter>
         <products>
-            <Astrologer_StarlightIron>25</Astrologer_StarlightIron>
+            <Astro_StarlightIron>25</Astro_StarlightIron>
         </products>
         <skillRequirements>
             <Crafting>6</Crafting>

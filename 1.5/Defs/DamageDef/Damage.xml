@@ -2,7 +2,7 @@
 <Defs>
 
     <DamageDef ParentName="Bullet">
-        <defName>Astrologer_Cast_Psychicinsanity</defName>
+        <defName>Astro_Cast_Psychicinsanity</defName>
         <label>bullet</label>
         <workerClass>DamageWorker_AddInjury</workerClass>
         <externalViolence>true</externalViolence>

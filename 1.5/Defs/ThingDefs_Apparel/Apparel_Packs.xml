@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-    <ThingDef ParentName="Astrologer_ApparelBase">
-        <defName>Astrologer_EmpactPack</defName>
+    <ThingDef ParentName="Astro_ApparelBase">
+        <defName>Astro_EmpactPack</defName>
         <label>"AMA-2" EMP冲击背包</label>
         <description>投射在地面上会产生持续的emp脉冲，范围较大且放置距离较长</description>
         <thingCategories Inherit="false">
@@ -138,8 +138,8 @@
         <drawOrder>210</drawOrder>
     </ApparelLayerDef>
 
-    <ThingDef ParentName="Astrologer_ApparelBase">
-        <defName>Astrologer_Waistbag</defName>
+    <ThingDef ParentName="Astro_ApparelBase">
+        <defName>Astro_Waistbag</defName>
         <label>埃兰迪尔</label>
         <description>挂在腰间的腰包，消耗洞察力可以进行折跃距离较长.</description>
         <thingCategories Inherit="false">

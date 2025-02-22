@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-    <ThingDef Name="Astrologer_ArmorBase" ParentName="Astrologer_ApparelBase" Abstract="True">
+    <ThingDef Name="Astro_ArmorBase" ParentName="Astro_ApparelBase" Abstract="True">
         <thingCategories Inherit="false">
             <li>Astrologer_Armor</li>
         </thingCategories>
@@ -40,8 +40,8 @@
         </tradeTags-->
     </ThingDef>
 
-    <ThingDef ParentName="Astrologer_ArmorBase">
-        <defName>Astrologer_LightArmor</defName>
+    <ThingDef ParentName="Astro_ArmorBase">
+        <defName>Astro_LightArmor</defName>
         <label>生存作战轻甲</label>
         <description>轻量化全能型作战服，较高的锐防和普通的钝防./n能够监控并介入穿戴者的血液循环过程,增强生存能力和战斗持久力</description>
         <!--等待贴图-->
@@ -67,7 +67,7 @@
         </equippedStatOffsets>
         <comps>
             <li Class="Astrologer.TCP_HediffApparel">
-                <hediff>Astrologer_Hediff_Detoxifier</hediff>
+                <hediff>Astro_Hediff_Detoxifier</hediff>
             </li>
         </comps>
         <!--材料-->
@@ -98,8 +98,8 @@
         </recipeMaker>
     </ThingDef>
 
-    <ThingDef ParentName="Astrologer_ArmorBase">
-        <defName>Astrologer_StandardArmor</defName>
+    <ThingDef ParentName="Astro_ArmorBase">
+        <defName>Astro_StandardArmor</defName>
         <label>"MPE-3" 制式装甲</label>
         <description>"MPE-3"制式装甲，可以发射动能火箭弹（需要装填钢铁），但是精度较低</description>
         <!--等待贴图-->
@@ -142,7 +142,7 @@
                     <canTargetLocations>true</canTargetLocations>
                 </targetParams>
                 <!--defaultProjectile>Proj_GrenadePhoenixFire</defaultProjectile-->
-                <defaultProjectile>Astrologer_Bullet_TandemHEAT</defaultProjectile>
+                <defaultProjectile>Astro_Bullet_TandemHEAT</defaultProjectile>
                 <rangedFireRulepack>Combat_RangedFire_Thrown</rangedFireRulepack>
             </li>
         </verbs>
@@ -186,8 +186,8 @@
         </recipeMaker>
     </ThingDef>
 
-    <ThingDef ParentName="Astrologer_ArmorBase">
-        <defName>Astrologer_MiningArmor</defName>
+    <ThingDef ParentName="Astro_ArmorBase">
+        <defName>Astro_MiningArmor</defName>
         <label>MI矿业支持设备</label>
         <description>远距离采矿装甲</description>
         <!--等待贴图-->
@@ -243,8 +243,8 @@
         </recipeMaker>
     </ThingDef>
 
-    <ThingDef ParentName="Astrologer_ArmorBase">
-        <defName>Astrologer_EmergencyArmor</defName>
+    <ThingDef ParentName="Astro_ArmorBase">
+        <defName>Astro_EmergencyArmor</defName>
         <label>ERT-EMT应急反应护服</label>
         <description>ERT-EMT应急反应护服 desc.</description>
         <tickerType>Normal</tickerType>

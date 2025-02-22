@@ -2,7 +2,7 @@
 <Defs>
 
     <ThingDef ParentName="ResourceBase">
-        <defName>Astrologer_StarlightIron</defName>
+        <defName>Astro_StarlightIron</defName>
         <label>星辉钢</label>
         <description>星辉钢.</description>
         <graphicData>
@@ -55,7 +55,7 @@
     </ThingDef>
 
     <ThingDef ParentName="RoughPlantBase">
-        <defName>Astrologer_Starlightgrass</defName>
+        <defName>Astro_Starlightgrass</defName>
         <label>星光草</label>
         <description>晨曦之中，造物主以此等超凡彰显其伟大。--启示录Ⅰ-光明之书</description>
         <stackLimit>200</stackLimit>

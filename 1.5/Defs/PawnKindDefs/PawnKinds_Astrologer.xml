@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-	<PawnKindDef Name="Astrologer_PawnBase" Abstract="True">
+	<PawnKindDef Name="Astro_PawnBase" Abstract="True">
 		<race>Human</race>
-		<defaultFactionType>Astrologer_Faction</defaultFactionType>
+		<defaultFactionType>Astro_Faction</defaultFactionType>
 		<backstoryCryptosleepCommonality>0</backstoryCryptosleepCommonality>
 		<invNutrition>2</invNutrition>
 		<!--gearHealthRange>0.8~1.0</gearHealthRange-->
@@ -42,7 +42,7 @@
 		<useFactionXenotypes>false</useFactionXenotypes>
 	</PawnKindDef>
 
-	<PawnKindDef Name="Astrologer_Researcher" ParentName="Astrologer_PawnBase" Abstract="True">
+	<PawnKindDef Name="Astro_Researcher" ParentName="Astro_PawnBase" Abstract="True">
 		<isFighter>false</isFighter>
 		<initialResistanceRange>10~40</initialResistanceRange>
 		<chemicalAddictionChance>0.1</chemicalAddictionChance>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-    <ThingDef Name="Astrologer_ApparelBase" ParentName="ApparelBase" Abstract="True">
+    <ThingDef Name="Astro_ApparelBase" ParentName="ApparelBase" Abstract="True">
         <apparel>
             <canBeDesiredForIdeo>false</canBeDesiredForIdeo>
             <canBeGeneratedToSatisfyWarmth>false</canBeGeneratedToSatisfyWarmth>
