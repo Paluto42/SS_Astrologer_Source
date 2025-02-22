@@ -70,6 +70,8 @@
             <Mass>0.014</Mass>
             <Flammability>1.5</Flammability>
         </statBases>
+        <burnableByRecipe>true</burnableByRecipe>
+        <healthAffectsPrice>false</healthAffectsPrice>
         <comps>
             <li Class="CompProperties_Rottable">
                 <daysToRotStart>60</daysToRotStart>
@@ -79,11 +81,8 @@
         <thingCategories>
             <li>Astrologer_Resources</li>
             <li>PlantMatter</li>
+            <li>ResourcesRaw</li>
         </thingCategories>
-        <ingestible>
-            <preferability>DesperateOnly</preferability>
-            <canAutoSelectAsFoodForCaravan>false</canAutoSelectAsFoodForCaravan>
-        </ingestible>
     </ThingDef>
 
 </Defs>

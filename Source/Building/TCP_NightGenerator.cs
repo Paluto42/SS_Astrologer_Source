@@ -20,6 +20,7 @@ namespace Astrologer
             compClass = typeof(TC_NightGenerator);
         }
     }
+    [StaticConstructorOnStartup]
     public class TC_NightGenerator : CompPowerPlantSolar
     {
         private static readonly Vector2 BarSize = new(1.5f, 0.15f);

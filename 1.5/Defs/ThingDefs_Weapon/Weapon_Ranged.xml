@@ -33,10 +33,7 @@
         </costList>
         <recipeMaker>
             <researchPrerequisite>GasOperation</researchPrerequisite>
-            <recipeUsers>
-                <li>ElectricSmithy</li>
-                <li>FueledSmithy</li>
-            </recipeUsers>
+            <recipeUsers></recipeUsers>
             <skillRequirements>
                 <Crafting>5</Crafting>
             </skillRequirements>
@@ -113,6 +110,7 @@
         </weaponTags>
         <recipeMaker>
             <researchPrerequisite>GasOperation</researchPrerequisite>
+            <recipeUsers></recipeUsers>
             <skillRequirements>
                 <Crafting>5</Crafting>
             </skillRequirements>
@@ -217,10 +215,7 @@
         </costList>
         <recipeMaker>
             <researchPrerequisite>GasOperation</researchPrerequisite>
-            <recipeUsers>
-                <li>ElectricSmithy</li>
-                <li>FueledSmithy</li>
-            </recipeUsers>
+            <recipeUsers></recipeUsers>
             <skillRequirements>
                 <Crafting>5</Crafting>
             </skillRequirements>
@@ -309,9 +304,8 @@
         </costList>
         <recipeMaker>
             <researchPrerequisite>GasOperation</researchPrerequisite>
-            <recipeUsers>
-                <li>ElectricSmithy</li>
-                <li>FueledSmithy</li>
+            <recipeUsers Inherit="false">
+                <li>Astrologer_StellarFoundry</li>
             </recipeUsers>
             <skillRequirements>
                 <Crafting>5</Crafting>
@@ -410,9 +404,8 @@
         </costList>
         <recipeMaker>
             <researchPrerequisite>ChargedShot</researchPrerequisite>
-            <recipeUsers>
-                <li>ElectricSmithy</li>
-                <li>FueledSmithy</li>
+            <recipeUsers Inherit="false">
+                <li>Astrologer_StellarFoundry</li>
             </recipeUsers>
             <skillRequirements>
                 <Crafting>7</Crafting>
@@ -519,9 +512,8 @@
         </costList>
         <recipeMaker>
             <researchPrerequisite>ChargedShot</researchPrerequisite>
-            <recipeUsers>
-                <li>ElectricSmithy</li>
-                <li>FueledSmithy</li>
+            <recipeUsers Inherit="false">
+                <li>Astrologer_StellarFoundry</li>
             </recipeUsers>
             <skillRequirements>
                 <Crafting>7</Crafting>
@@ -584,7 +576,7 @@
 
     <ThingDef ParentName="Astrologer_WeaponRangedBase">
         <defName>Astrologer_ChargeHMG</defName>
-        <label>A-1等离子重机枪</label>
+        <label>"MPE-1" 等离子重机枪</label>
         <description>MPE-1是占星帝国初次遭遇暗灵时设计给前线战斗人员的制式武器。消耗洞察力可以进行一小段时间的高速射击.</description>
         <graphicData>
             <texPath>Things/Weapons/ChargeLMG</texPath>
@@ -613,9 +605,8 @@
         </costList>
         <recipeMaker>
             <researchPrerequisite>ChargedShot</researchPrerequisite>
-            <recipeUsers>
-                <li>ElectricSmithy</li>
-                <li>FueledSmithy</li>
+            <recipeUsers Inherit="false">
+                <li>Astrologer_StellarFoundry</li>
             </recipeUsers>
             <skillRequirements>
                 <Crafting>7</Crafting>
@@ -660,7 +651,6 @@
                 <secondaryIcon>UI/Buttons/SpecialFire</secondaryIcon>
                 <secondaryDescription>消耗洞察力,进行一小段时间的高速射击</secondaryDescription>
             </li>
-            <!--li Class="Astrologer.TCP_FireModes"/-->
         </comps>
         <tools>
             <li>

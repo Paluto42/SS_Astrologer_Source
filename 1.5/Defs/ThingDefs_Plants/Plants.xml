@@ -20,8 +20,8 @@
         <ingestible />
         <plant>
             <immatureGraphicPath>Things/Plant/Haygrass_Immature</immatureGraphicPath>
-            <fertilitySensitivity>0.6</fertilitySensitivity>
-            <growDays>15</growDays>
+            <fertilitySensitivity>0</fertilitySensitivity>
+            <growDays>7.5</growDays>
             <dieIfLeafless>true</dieIfLeafless>
             <maxMeshCount>4</maxMeshCount>
             <harvestTag>Standard</harvestTag>

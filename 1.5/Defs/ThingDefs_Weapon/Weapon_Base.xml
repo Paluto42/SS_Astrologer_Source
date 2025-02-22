@@ -44,7 +44,7 @@
             <effectWorking>Smith</effectWorking>
             <soundWorking>Recipe_Smith</soundWorking>
             <recipeUsers>
-                <li>TableMachining</li>
+                <li>Astrologer_FabricationBench</li>
             </recipeUsers>
             <unfinishedThingDef>UnfinishedWeapon</unfinishedThingDef>
         </recipeMaker>
@@ -62,6 +62,9 @@
             <li>MeleePiercer</li>
         </weaponClasses>
         <recipeMaker>
+            <recipeUsers>
+                <li>Astrologer_FabricationBench</li>
+            </recipeUsers>
             <defaultIngredientFilter>
                 <categories>
                     <li>Root</li>

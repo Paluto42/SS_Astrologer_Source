@@ -29,10 +29,7 @@
         </costList>
         <recipeMaker>
             <!--researchPrerequisite>GasOperation</researchPrerequisite-->
-            <recipeUsers>
-                <li>ElectricSmithy</li>
-                <li>FueledSmithy</li>
-            </recipeUsers>
+            <recipeUsers></recipeUsers>
             <skillRequirements>
                 <Crafting>5</Crafting>
             </skillRequirements>

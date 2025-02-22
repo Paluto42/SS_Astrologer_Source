@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>/Defs/WorkGiverDef[defName="DoBillsFabricationBench"]/fixedBillGiverDefs</xpath>
+        <value>
+            <li>Astrologer_FabricationBench</li>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>/Defs/WorkGiverDef[defName="DoBillsMakeWeapons"]/fixedBillGiverDefs</xpath>
+        <value>
+            <li>Astrologer_FabricationBench</li>
+            <li>Astrologer_StellarFoundry</li>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>/Defs/WorkGiverDef[defName="DoBillsSmelter"]/fixedBillGiverDefs</xpath>
+        <value>
+            <li>Astrologer_StellarStove</li>
+        </value>
+    </Operation>
+
+</Patch>

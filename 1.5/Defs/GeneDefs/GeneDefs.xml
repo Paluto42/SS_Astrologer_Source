@@ -32,7 +32,7 @@
 
     <GeneDef>
         <defName>Astrologer_Gene_InsightEye</defName>
-        <label>洞察之眼</label>
+        <label>目光闪闪</label>
         <description>基因携带者加命中率,减瞄准时间.</description>
         <iconPath>UI/Icons/Genes/Skills/Shooting/strong</iconPath>
         <displayCategory>AstrologerGene</displayCategory>
@@ -71,15 +71,6 @@
         </statOffsets>
         <biostatMet>-4</biostatMet>
         <biostatCpx>2</biostatCpx>
-        <!--symbolPack>
-            <prefixSymbols>
-                <li><symbol>puno</symbol></li>
-                <li><symbol>weak</symbol></li>
-                <li><symbol>poke</symbol></li>
-                <li><symbol>flab</symbol></li>
-                <li><symbol>anemo</symbol></li>
-            </prefixSymbols>
-        </symbolPack-->
     </GeneDef>
 
     <GeneDef>
@@ -132,12 +123,6 @@
         </statOffsets>
         <biostatCpx>1</biostatCpx>
         <biostatMet>1</biostatMet>
-        <!--symbolPack>
-            <prefixSymbols>
-                <li><symbol>wake</symbol></li>
-                <li><symbol>night</symbol></li>
-            </prefixSymbols>
-        </symbolPack-->
     </GeneDef>
 
     <GeneDef>
@@ -155,12 +140,6 @@
         </statFactors>
         <biostatCpx>1</biostatCpx>
         <biostatMet>1</biostatMet>
-        <!--symbolPack>
-            <prefixSymbols>
-                <li><symbol>wake</symbol></li>
-                <li><symbol>night</symbol></li>
-            </prefixSymbols>
-        </symbolPack-->
     </GeneDef>
 
 </Defs>

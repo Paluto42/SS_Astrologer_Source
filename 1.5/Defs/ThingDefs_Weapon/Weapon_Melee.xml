@@ -25,10 +25,7 @@
         </costList>
         <recipeMaker>
             <researchPrerequisite>LongBlades</researchPrerequisite>
-            <recipeUsers>
-                <li>ElectricSmithy</li>
-                <li>FueledSmithy</li>
-            </recipeUsers>
+            <recipeUsers></recipeUsers>
             <skillRequirements>
                 <Crafting>5</Crafting>
             </skillRequirements>
@@ -89,10 +86,7 @@
         </costList>
         <recipeMaker>
             <!--researchPrerequisite>LongBlades</researchPrerequisite-->
-            <recipeUsers>
-                <li>ElectricSmithy</li>
-                <li>FueledSmithy</li>
-            </recipeUsers>
+            <recipeUsers></recipeUsers>
             <skillRequirements>
                 <Crafting>5</Crafting>
             </skillRequirements>
