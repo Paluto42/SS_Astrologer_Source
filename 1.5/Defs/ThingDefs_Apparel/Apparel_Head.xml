@@ -40,7 +40,6 @@
         </tradeTags-->
     </ThingDef>
 
-    <!--登山帽-->
     <ThingDef ParentName="Astrologer_ApparelBase">
         <defName>Astrologer_MountaineerHat</defName>
         <label>登山帽</label>
@@ -111,7 +110,6 @@
         </recipeMaker>
     </ThingDef>
 
-    <!--生存作战头盔-->
     <ThingDef ParentName="Astrologer_HelmetBase">
         <defName>Astrologer_LightHelmet</defName>
         <label>生存作战头盔</label>
@@ -167,11 +165,10 @@
         </recipeMaker>
     </ThingDef>
 
-    <!--G-1制式头盔-->
     <ThingDef ParentName="Astrologer_HelmetBase">
         <defName>Astrologer_StandardHelmet</defName>
-        <label>G-1制式头盔</label>
-        <description>G-1制式头盔，增加瞄准能力，防毒防腐气</description>
+        <label>"MPE-2" 制式头盔</label>
+        <description>"MPE-2"制式头盔，增加瞄准能力，防毒防腐气</description>
         <!--等待贴图-->
         <graphicData>
             <texPath>Things/Pawn/Humanlike/Apparel/AdvancedHelmet/AdvancedHelmet</texPath>
@@ -219,7 +216,6 @@
         </recipeMaker>
     </ThingDef>
 
-    <!--MI矿业支持头盔-->
     <ThingDef ParentName="Astrologer_HelmetBase">
         <defName>Astrologer_MiningHelmet</defName>
         <label>MI矿业支持头盔</label>
@@ -247,6 +243,55 @@
         </equippedStatOffsets>
         <comps>
         </comps>
+        <!--材料-->
+        <costList>
+            <Cloth>10</Cloth>
+            <Steel>20</Steel>
+        </costList>
+        <apparel>
+            <wornGraphicPath>Things/Pawn/Humanlike/Apparel/ReconArmorHelmet/ReconHelmet</wornGraphicPath>
+            <bodyPartGroups>
+                <li>UpperHead</li>
+            </bodyPartGroups>
+            <layers>
+                <li>Overhead</li>
+            </layers>
+        </apparel>
+        <recipeMaker>
+            <!--researchPrerequisite>ComplexClothing</researchPrerequisite-->
+            <skillRequirements>
+                <Crafting>8</Crafting>
+            </skillRequirements>
+            <displayPriority>1000</displayPriority>
+        </recipeMaker>
+    </ThingDef>
+
+    <ThingDef ParentName="Astrologer_HelmetBase">
+        <defName>Astrologer_EmergencyHelmet</defName>
+        <label>ERT-EMT应急反应面罩</label>
+        <description>desc.</description>
+        <!--等待贴图-->
+        <graphicData>
+            <texPath>Things/Pawn/Humanlike/Apparel/AdvancedHelmet/AdvancedHelmet</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <uiIconScale>1.4</uiIconScale>
+        <!--占位,原版数值-->
+        <statBases>
+            <MaxHitPoints>160</MaxHitPoints>
+            <WorkToMake>8000</WorkToMake>
+            <Mass>1.2</Mass>
+            <ArmorRating_Sharp>0.92</ArmorRating_Sharp>
+            <ArmorRating_Blunt>0.4</ArmorRating_Blunt>
+            <ArmorRating_Heat>0.46</ArmorRating_Heat>
+            <Insulation_Cold>4</Insulation_Cold>
+            <Insulation_Heat>8</Insulation_Heat>
+            <EquipDelay>2</EquipDelay>
+        </statBases>
+        <equippedStatOffsets>
+            <ToxicResistance>1</ToxicResistance>
+            <ToxicEnvironmentResistance>1</ToxicEnvironmentResistance>
+        </equippedStatOffsets>
         <!--材料-->
         <costList>
             <Cloth>10</Cloth>

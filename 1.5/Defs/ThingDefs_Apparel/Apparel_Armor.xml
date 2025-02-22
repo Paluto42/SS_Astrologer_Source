@@ -40,7 +40,6 @@
         </tradeTags-->
     </ThingDef>
 
-    <!--生存作战轻甲-->
     <ThingDef ParentName="Astrologer_ArmorBase">
         <defName>Astrologer_LightArmor</defName>
         <label>生存作战轻甲</label>
@@ -58,7 +57,7 @@
             <ArmorRating_Sharp>0.92</ArmorRating_Sharp>
             <ArmorRating_Blunt>0.4</ArmorRating_Blunt>
             <ArmorRating_Heat>0.46</ArmorRating_Heat>
-            <Insulation_Cold>32</Insulation_Cold>
+            <Insulation_Cold>20</Insulation_Cold>
             <Insulation_Heat>9</Insulation_Heat>
             <EquipDelay>6</EquipDelay>
         </statBases>
@@ -99,14 +98,13 @@
         </recipeMaker>
     </ThingDef>
 
-    <!--G-2制式装甲-->
     <ThingDef ParentName="Astrologer_ArmorBase">
         <defName>Astrologer_StandardArmor</defName>
-        <label>G-2制式装甲</label>
-        <description>G-2制式装甲，可以发射动能火箭弹（需要装填钢铁），但是精度较低</description>
+        <label>"MPE-3" 制式装甲</label>
+        <description>"MPE-3"制式装甲，可以发射动能火箭弹（需要装填钢铁），但是精度较低</description>
         <!--等待贴图-->
         <graphicData>
-            <texPath>Things/Pawn/Humanlike/Apparel/ReconArmor/ReconArmor</texPath>
+            <texPath>Things/Pawn/Humanlike/Apparel/PowerArmor/PowerArmor</texPath>
             <graphicClass>Graphic_Single</graphicClass>
         </graphicData>
         <!--占位,原版数值-->
@@ -188,7 +186,6 @@
         </recipeMaker>
     </ThingDef>
 
-    <!--MI矿业支持设备-->
     <ThingDef ParentName="Astrologer_ArmorBase">
         <defName>Astrologer_MiningArmor</defName>
         <label>MI矿业支持设备</label>
@@ -206,8 +203,8 @@
             <ArmorRating_Sharp>0.92</ArmorRating_Sharp>
             <ArmorRating_Blunt>0.4</ArmorRating_Blunt>
             <ArmorRating_Heat>0.46</ArmorRating_Heat>
-            <Insulation_Cold>32</Insulation_Cold>
-            <Insulation_Heat>9</Insulation_Heat>
+            <Insulation_Cold>24</Insulation_Cold>
+            <Insulation_Heat>8</Insulation_Heat>
             <EquipDelay>6</EquipDelay>
         </statBases>
         <equippedStatOffsets>
@@ -246,7 +243,6 @@
         </recipeMaker>
     </ThingDef>
 
-    <!-- ERT-EMT应急反应护服 -->
     <ThingDef ParentName="Astrologer_ArmorBase">
         <defName>Astrologer_EmergencyArmor</defName>
         <label>ERT-EMT应急反应护服</label>
@@ -266,7 +262,7 @@
             <ArmorRating_Blunt>0.4</ArmorRating_Blunt>
             <ArmorRating_Heat>0.46</ArmorRating_Heat>
             <Insulation_Cold>32</Insulation_Cold>
-            <Insulation_Heat>9</Insulation_Heat>
+            <Insulation_Heat>32</Insulation_Heat>
             <EquipDelay>6</EquipDelay>
         </statBases>
         <equippedStatOffsets>

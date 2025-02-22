@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-    <!--EMP冲击背包-->
+
     <ThingDef ParentName="Astrologer_ApparelBase">
         <defName>Astrologer_EmpactPack</defName>
         <label>"AMA-2" EMP冲击背包</label>
@@ -138,7 +138,6 @@
         <drawOrder>210</drawOrder>
     </ApparelLayerDef>
 
-    <!-- 埃兰迪尔 -->
     <ThingDef ParentName="Astrologer_ApparelBase">
         <defName>Astrologer_Waistbag</defName>
         <label>埃兰迪尔</label>

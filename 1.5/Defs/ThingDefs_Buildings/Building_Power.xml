@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-    <!--夜空电机-->
+
     <ThingDef ParentName="BuildingBase">
         <defName>Astrologer_NightGenerator</defName>
         <label>夜空电机</label>

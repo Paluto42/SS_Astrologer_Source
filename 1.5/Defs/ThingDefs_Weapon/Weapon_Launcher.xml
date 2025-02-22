@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-    <!--串联破甲战斗部发射器-->
+
     <ThingDef ParentName="Astrologer_WeaponRangedBase">
         <defName>Astrologer_TandemHEATLauncher</defName>
         <label>串联破甲战斗部发射器</label>

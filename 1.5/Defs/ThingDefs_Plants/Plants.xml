@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-    <!--星光草球-->
+
     <ThingDef ParentName="PlantBase">
         <defName>Astrologer_Plant_Starlightgrass</defName>
         <label>星光草球</label>

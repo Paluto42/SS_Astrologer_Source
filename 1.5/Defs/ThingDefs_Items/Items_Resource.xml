@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-    <!-- 星辉钢 -->
+
     <ThingDef ParentName="ResourceBase">
         <defName>Astrologer_StarlightIron</defName>
         <label>星辉钢</label>
@@ -54,7 +54,6 @@
         <allowedArchonexusCount>80</allowedArchonexusCount>
     </ThingDef>
 
-    <!-- 星光草 -->
     <ThingDef ParentName="RoughPlantBase">
         <defName>Astrologer_Starlightgrass</defName>
         <label>星光草</label>

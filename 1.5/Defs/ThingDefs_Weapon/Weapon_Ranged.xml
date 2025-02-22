@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-    <!--手炮-->
+
     <ThingDef ParentName="Astrologer_WeaponRangedBase">
-        <defName>Astrologer_Pistol_EagleMoon</defName>
+        <defName>Astrologer_Weapon_EagleMoon</defName>
         <label>鹰月</label>
         <description>一把暗红色的手炮.</description>
         <graphicData>
@@ -94,7 +94,7 @@
     <!--=============== SMG  ====================-->
 
     <ThingDef ParentName="Astrologer_WeaponRangedBase">
-        <defName>Astrologer_SMG_Combat</defName>
+        <defName>Astrologer_Weapon_CombatSMG</defName>
         <label>格斗冲锋枪</label>
         <description>这把冲锋枪设计于占星帝国内战的时代，便宜和耐用是该枪的代名词.</description>
         <graphicData>
@@ -186,7 +186,7 @@
     <!--=============== Shotguns  ====================-->
 
     <ThingDef ParentName="Astrologer_WeaponRangedBase">
-        <defName>Astrologer_Shotgun_Piercing</defName>
+        <defName>Astrologer_Weapon_PiercingShotgun</defName>
         <label>破甲霰弹枪</label>
         <description>这是一把开罐器.</description>
         <graphicData>
@@ -273,9 +273,8 @@
         </projectile>
     </ThingDef>
 
-    <!-- "AMA-1"电能霰弹枪 -->
     <ThingDef ParentName="Astrologer_WeaponRangedBase">
-        <defName>Astrologer_Shotgun_Rapid</defName>
+        <defName>Astrologer_Weapon_RapidShotgun</defName>
         <label>"AMA-1" 电能霰弹枪</label>
         <description>一把能快速发射的霰弹枪.</description>
         <graphicData>
@@ -374,7 +373,7 @@
     <!--=============== Rifles  ====================-->
 
     <ThingDef ParentName="Astrologer_WeaponRangedBase">
-        <defName>Astrologer_Gun_ChargeRifle</defName>
+        <defName>Astrologer_Weapon_PsychicRifle</defName>
         <label>"MK-5" 等离子心灵干扰步枪</label>
         <description>标准射手步枪,点击切换模式,此时该步枪每发子弹会有心灵错乱效果.</description>
         <graphicData>
@@ -482,8 +481,8 @@
     </ThingDef>
 
     <ThingDef ParentName="Astrologer_WeaponRangedBase">
-        <defName>Astrologer_Gun_Sniper</defName>
-        <label>船边星云</label>
+        <defName>Astrologer_Weapon_AMSR</defName>
+        <label>ASAT-112 "船边星云"</label>
         <description>远程狙击，长开火前摇，短射击后摇，当占星师使用时，可使用洞察力强化该武器。每一发消耗一定量洞察力，在这种模式下，每一发子弹命中会打掉对方身体的随机的一个部位，并挂一个debuff（星云射线）持续扣血.</description>
         <graphicData>
             <texPath>Things/Weapons/ChargeSniper</texPath>
@@ -575,7 +574,7 @@
     <!--=============== Heavy  ====================-->
 
     <ThingDef ParentName="Astrologer_WeaponRangedBase">
-        <defName>Astrologer_ChargeHMG</defName>
+        <defName>Astrologer_Weapon_PlasmaHMG</defName>
         <label>"MPE-1" 等离子重机枪</label>
         <description>MPE-1是占星帝国初次遭遇暗灵时设计给前线战斗人员的制式武器。消耗洞察力可以进行一小段时间的高速射击.</description>
         <graphicData>
@@ -671,6 +670,115 @@
                 <cooldownTime>2</cooldownTime>
             </li>
         </tools>
+    </ThingDef>
+
+    <ThingDef ParentName="Astrologer_WeaponRangedBase">
+        <defName>Astrologer_Weapon_Railgun</defName>
+        <label>ES-117 "英仙座" 舰载轨道炮</label>
+        <description>手持轨道炮.</description>
+        <tickerType>Normal</tickerType>
+        <graphicData>
+            <texPath>Things/Item/Equipment/WeaponRanged/ChargeLance</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <soundInteract>Interact_ChargeLance</soundInteract>
+        <weaponClasses>
+            <li>RangedHeavy</li>
+        </weaponClasses>
+        <weaponTags>
+            <li>Astrologer_WeaponRanged</li>
+        </weaponTags>
+        <!--占位,原版数值-->
+        <statBases>
+            <WorkToMake>56000</WorkToMake>
+            <Mass>8</Mass>
+            <AccuracyTouch>0.85</AccuracyTouch>
+            <AccuracyShort>0.94</AccuracyShort>
+            <AccuracyMedium>0.85</AccuracyMedium>
+            <AccuracyLong>0.75</AccuracyLong>
+            <RangedWeapon_Cooldown>4.5</RangedWeapon_Cooldown>
+        </statBases>
+        <equippedStatOffsets>
+            <MoveSpeed>-0.25</MoveSpeed>
+        </equippedStatOffsets>
+        <costList>
+            <Plasteel>40</Plasteel>
+            <ComponentIndustrial>3</ComponentIndustrial>
+        </costList>
+        <recipeMaker>
+            <!--researchPrerequisite>ChargedShot</researchPrerequisite-->
+            <recipeUsers Inherit="false">
+                <li>Astrologer_StellarFoundry</li>
+            </recipeUsers>
+            <skillRequirements>
+                <Crafting>7</Crafting>
+            </skillRequirements>
+        </recipeMaker>
+        <thingSetMakerTags>
+            <li>RewardStandardQualitySuper</li>
+        </thingSetMakerTags>
+        <verbs Inherit="false">
+            <li>
+                <verbClass>Verb_Shoot</verbClass>
+                <hasStandardCommand>true</hasStandardCommand>
+                <defaultProjectile>Astrologer_Bullet_Railgun</defaultProjectile>
+                <forcedMissRadius>2.9</forcedMissRadius>
+                <warmupTime>4.5</warmupTime>
+                <ai_AvoidFriendlyFireRadius>5</ai_AvoidFriendlyFireRadius>
+                <range>60</range>
+                <soundCast>InfernoCannon_Fire</soundCast>
+                <soundCastTail>GunTail_Heavy</soundCastTail>
+                <onlyManualCast>true</onlyManualCast>
+                <targetParams>
+                    <canTargetLocations>true</canTargetLocations>
+                </targetParams>
+                <muzzleFlashScale>14</muzzleFlashScale>
+            </li>
+        </verbs>
+        <comps>
+            <li Class="CompProperties_Explosive">
+                <explosiveRadius>3.9</explosiveRadius>
+                <explosiveDamageType>Bomb</explosiveDamageType>
+                <requiredDamageTypeToExplode>Flame</requiredDamageTypeToExplode>
+            </li>
+        </comps>
+        <tools>
+            <li>
+                <label>stock</label>
+                <capacities>
+                    <li>Blunt</li>
+                </capacities>
+                <power>9</power>
+                <cooldownTime>2</cooldownTime>
+            </li>
+            <li>
+                <label>barrel</label>
+                <capacities>
+                    <li>Blunt</li>
+                    <li>Poke</li>
+                </capacities>
+                <power>9</power>
+                <cooldownTime>2</cooldownTime>
+            </li>
+        </tools>
+    </ThingDef>
+    <ThingDef ParentName="BaseBullet">
+        <defName>Astrologer_Bullet_Railgun</defName>
+        <label>Plasma shot</label>
+        <graphicData>
+            <texPath>Things/Projectile/Rocket_Big</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <shaderType>TransparentPostLight</shaderType>
+        </graphicData>
+        <thingClass>Projectile_Explosive</thingClass>
+        <projectile>
+            <damageDef>Bomb</damageDef>
+            <damageAmountBase>500</damageAmountBase>
+            <armorPenetrationBase>0.8</armorPenetrationBase>
+            <explosionRadius>3.9</explosionRadius>
+            <speed>70</speed>
+            <stoppingPower>3</stoppingPower>
+        </projectile>
     </ThingDef>
 
 </Defs>

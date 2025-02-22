@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-    <!--朦胧暗月-->
+
     <ThingDef ParentName="Astrologer_ClothBase">
         <defName>Astrologer_Cloak</defName>
         <label>朦胧暗月</label>

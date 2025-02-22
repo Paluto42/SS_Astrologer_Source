@@ -35,7 +35,6 @@
         </tradeTags-->
     </ThingDef>
 
-    <!--连衣裙-->
     <ThingDef ParentName="Astrologer_ClothBase">
         <defName>Astrologer_FrillOnepiece</defName>
         <label>连衣裙</label>
@@ -85,7 +84,6 @@
         </apparel>
     </ThingDef>
 
-    <!--登山服-->
     <ThingDef ParentName="Astrologer_ClothBase">
         <defName>Astrologer_MountaineerOutfit</defName>
         <label>登山服</label>
@@ -130,7 +128,6 @@
         </apparel>
     </ThingDef>
 
-    <!--登山裤-->
     <ThingDef ParentName="Astrologer_ClothBase">
         <defName>Astrologer_MountaineerPants</defName>
         <label>登山裤</label>
@@ -170,7 +167,6 @@
         </apparel>
     </ThingDef>
 
-    <!--贴身防护服-->
     <ThingDef ParentName="Astrologer_ClothBase">
         <defName>Astrologer_Camisole</defName>
         <description>贴身防护服.</description>
@@ -210,7 +206,6 @@
         </apparel>
     </ThingDef>
 
-    <!--社交大师(服装)-->
     <ThingDef ParentName="Astrologer_ClothBase">
         <defName>Astrologer_SocialMaster</defName>
         <label>社交大师(服装)</label>
@@ -258,7 +253,6 @@
         </apparel>
     </ThingDef>
 
-    <!--社交大师(墨镜)-->
     <ThingDef ParentName="Astrologer_ApparelBase">
         <defName>Astrologer_SocialMaster_Glasses</defName>
         <label>社交大师(墨镜)</label>

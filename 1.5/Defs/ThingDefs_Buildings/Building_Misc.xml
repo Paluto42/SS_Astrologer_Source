@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-    <!-- 环形重塑器 -->
+
     <ThingDef ParentName="BuildingBase">
         <defName>AS_Laundy</defName>
         <label>环形重塑器</label>

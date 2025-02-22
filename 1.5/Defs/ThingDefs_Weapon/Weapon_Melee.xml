@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-    <!--护身剑-->
+
     <ThingDef ParentName="Astrologer_WeaponMeleeBase">
         <defName>Astrologer_CeremonialSword</defName>
         <label>护身剑</label>
@@ -62,7 +62,6 @@
         </tools>
     </ThingDef>
 
-    <!--机械冲击手套-->
     <ThingDef ParentName="Astrologer_WeaponMeleeBase">
         <defName>Astrologer_ShockGlove</defName>
         <label>机械冲击手套</label>
