@@ -99,7 +99,7 @@
 
     <ThingDef ParentName="Astro_WeaponRangedBase">
         <defName>Astro_CarlGustaf</defName>
-        <label>串联破甲战斗部发射器</label>
+        <label>"MPE-4" 反重甲武器</label>
         <description>可再装填的反重甲无后坐力步枪.</description>
         <tickerType>Normal</tickerType>
         <graphicData>
