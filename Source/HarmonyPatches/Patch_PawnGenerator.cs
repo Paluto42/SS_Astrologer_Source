@@ -11,7 +11,7 @@ using Verse;
 namespace Astrologer.HarmonyPatches
 {
     [HarmonyPatch(typeof(PawnGenerator), "GetBodyTypeFor")]
-    public static class Patch_PawnGenerator
+    public class Patch_PawnGenerator
     {
         [HarmonyPostfix]
         public static void Postfix(ref Pawn pawn, ref BodyTypeDef __result)

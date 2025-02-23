@@ -20,7 +20,7 @@
         <hairTagFilter>
             <whitelist>true</whitelist>
             <tags>
-                <li>AstrologerHair</li>
+                <li>Astrologer_Style</li>
             </tags>
         </hairTagFilter>
         <exclusionTags>

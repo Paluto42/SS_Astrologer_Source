@@ -16,6 +16,11 @@
         <iconPath>UI/Icons/RK_icon</iconPath>
         <styleItemTags>
             <li>
+                <tag>Astrologer_Style</tag>
+                <baseWeight>10</baseWeight>
+                <weightFactor>1</weightFactor>
+            </li>
+            <li>
                 <tag>NoBeard</tag>
                 <baseWeight>1</baseWeight>
                 <weightFactor>1</weightFactor>

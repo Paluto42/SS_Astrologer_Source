@@ -2,6 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 using Verse;
@@ -9,12 +10,12 @@ using Verse;
 namespace Astrologer.HarmonyPatches
 {
     [StaticConstructorOnStartup]
-    internal class Patch_Main
+    public static class Patch_Main
     {
-        public Patch_Main() 
+        static Patch_Main() 
         {
             Harmony harmony = new("Astrologer.patch");
-            harmony.PatchAll();
+            harmony.PatchAll(Assembly.GetExecutingAssembly());
         }
     }
 }

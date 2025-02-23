@@ -96,10 +96,10 @@
             <countsAsClothingForNudity>false</countsAsClothingForNudity>
             <developmentalStageFilter>Child, Adult</developmentalStageFilter>
             <bodyPartGroups>
-                <li>UpperHead</li>
+                <li>Waist</li>
             </bodyPartGroups>
             <layers>
-                <li>Overhead</li>
+                <li>Belt</li>
             </layers>
             <defaultOutfitTags>
                 <li>Worker</li>

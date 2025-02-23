@@ -13,7 +13,7 @@
         <texPath>Things/Pawn/Hairs/ASHair_A</texPath>
         <category>Astrologer_Hair</category>
         <styleTags>
-            <li>AstrologerHair</li>
+            <li>Astrologer_Style</li>
         </styleTags>
     </HairDef>
 
@@ -24,7 +24,7 @@
         <texPath>Things/Pawn/Hairs/ASHair_B</texPath>
         <category>Astrologer_Hair</category>
         <styleTags>
-            <li>AstrologerHair</li>
+            <li>Astrologer_Style</li>
         </styleTags>
     </HairDef>
 
@@ -35,7 +35,7 @@
         <texPath>Things/Pawn/Hairs/ASHair_C</texPath>
         <category>Astrologer_Hair</category>
         <styleTags>
-            <li>AstrologerHair</li>
+            <li>Astrologer_Style</li>
         </styleTags>
     </HairDef>
 
@@ -46,7 +46,7 @@
         <texPath>Things/Pawn/Hairs/ASHair_D</texPath>
         <category>Astrologer_Hair</category>
         <styleTags>
-            <li>AstrologerHair</li>
+            <li>Astrologer_Style</li>
         </styleTags>
     </HairDef>
 
@@ -57,7 +57,7 @@
         <texPath>Things/Pawn/Hairs/ASHair_E</texPath>
         <category>Astrologer_Hair</category>
         <styleTags>
-            <li>AstrologerHair</li>
+            <li>Astrologer_Style</li>
         </styleTags>
     </HairDef>
 
@@ -68,7 +68,7 @@
         <texPath>Things/Pawn/Hairs/ASHair_F</texPath>
         <category>Astrologer_Hair</category>
         <styleTags>
-            <li>AstrologerHair</li>
+            <li>Astrologer_Style</li>
         </styleTags>
     </HairDef>
 
@@ -79,7 +79,7 @@
         <texPath>Things/Pawn/Hairs/ASHair_G</texPath>
         <category>Astrologer_Hair</category>
         <styleTags>
-            <li>AstrologerHair</li>
+            <li>Astrologer_Style</li>
         </styleTags>
     </HairDef>
 
