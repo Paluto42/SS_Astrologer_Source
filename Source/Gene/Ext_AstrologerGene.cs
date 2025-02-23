@@ -1,14 +1,18 @@
-﻿using System;
+﻿using RimWorld;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Verse;
 
-namespace Astrologer.Gene
+namespace Astrologer
 {
-    public class Ext_AstroGeneBody : DefModExtension
+    public class Ext_AstrologerGene : DefModExtension
     {
         public bool isAstrologer = true;
+
+        public BodyTypeDef forcedBodyType;
+
     }
 }
