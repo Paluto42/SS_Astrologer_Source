@@ -7,7 +7,7 @@ using Verse;
 
 namespace Astrologer
 {
-    //洞察力
+    /*/洞察力
     public class TCP_Insights : CompProperties
     {
         //1000tick增加1
@@ -60,5 +60,5 @@ namespace Astrologer
                 compInsights = this
             };
         }
-    }
+    }*/
 }

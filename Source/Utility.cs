@@ -35,6 +35,14 @@ namespace Astrologer
             return TryGetAstroDoc(p)?.astroTracker;
         }
 
+        //查询某个id的效果是否还在有效期
+        public static bool EffectInDuration(this Pawn p, string effectID)
+        {
+            AstroDocument doc = p.TryGetAstroDoc();
+            if (doc == null || !doc.EffectValid(effectID)) return false;
+            return true;
+        }
+
         public static void TryOffsetInsight(this Pawn p, float amt)
         {
             AstroTracker tracker = TryGetAstroTracker(p);
