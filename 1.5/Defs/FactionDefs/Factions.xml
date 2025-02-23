@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <FactionDef ParentName="FactionBase">
+        <defName>Astro_Empire</defName>
+        <label>繁星帝国</label>
+        <description>desc.</description>
+        <factionIconPath>UI/Icons/RK_icon</factionIconPath>
+        <techLevel>Industrial</techLevel>
+        <pawnSingular>占星师</pawnSingular>
+        <pawnsPlural>占星师</pawnsPlural>
+        <leaderTitle>帝国领主</leaderTitle>
+        <fixedName>繁星帝国</fixedName>
+        <allowedCultures Inherit="False">
+            <li>Astro_Culture</li>
+        </allowedCultures>
+        <disallowedMemes>
+            <li MayRequire="Ludeon.RimWorld.Ideology">MaleSupremacy</li>
+            <li MayRequire="Ludeon.RimWorld.Ideology">FemaleSupremacy</li>
+            <li MayRequire="Ludeon.RimWorld.Ideology">HighLife</li>
+            <li MayRequire="Ludeon.RimWorld.Ideology">Collectivist</li>
+            <li MayRequire="Ludeon.RimWorld.Ideology">Transhumanist</li>
+            <li MayRequire="Ludeon.RimWorld.Ideology">Structure_Animist</li>
+            <li MayRequire="Ludeon.RimWorld.Ideology">Nudism</li>
+            <li MayRequire="Ludeon.RimWorld.Ideology">Blindsight</li>
+        </disallowedMemes>
+        <xenotypeSet Inherit="False">
+            <xenotypeChances>
+                <Astrologer_Citizen>1</Astrologer_Citizen>
+            </xenotypeChances>
+        </xenotypeSet>
+        <backstoryFilters>
+            <li>
+                <categories>
+                    <li>Outlander</li>
+                </categories>
+            </li>
+        </backstoryFilters>
+        <!--这些先不写-->
+        <caravanTraderKinds>
+        </caravanTraderKinds>
+        <visitorTraderKinds>
+        </visitorTraderKinds>
+        <baseTraderKinds>
+        </baseTraderKinds>
+        <raidLootMaker></raidLootMaker>
+        <pawnGroupMakers Inherit="False">
+            <li>
+				<kindDef>Combat</kindDef>
+				<options>
+					<Astro_EmpireLeader>1</Astro_EmpireLeader>
+				</options>
+			</li>
+            <li>
+                <kindDef>Peaceful</kindDef>
+                <options>
+                    <Astro_Citizen>30</Astro_Citizen>
+                </options>
+            </li>
+        </pawnGroupMakers>
+        <colorSpectrum>
+            <li>(104, 153, 130)</li>
+        </colorSpectrum>
+        <disallowedRaidAgeRestrictions>
+            <li MayRequire="Ludeon.RimWorld.Biotech">Children</li>
+        </disallowedRaidAgeRestrictions>
+        <maxPawnCostPerTotalPointsCurve>
+            <points>
+                <li>(0, 100)</li>
+                <li>(500, 120)</li>
+                <li>(1000, 200)</li>
+                <li>(1500, 500)</li>
+                <li>(2000, 1000)</li>
+            </points>
+        </maxPawnCostPerTotalPointsCurve>
+        <canSiege>false</canSiege>
+        <naturalEnemy>true</naturalEnemy>
+        <canStageAttacks>true</canStageAttacks>
+        <canMakeRandomly>true</canMakeRandomly>
+        <canUseAvoidGrid>true</canUseAvoidGrid>
+        <humanlikeFaction>true</humanlikeFaction>
+        <listOrderPriority>27</listOrderPriority>
+        <requiredCountAtGameStart>1</requiredCountAtGameStart>
+        <settlementGenerationWeight>1</settlementGenerationWeight>
+        <maxConfigurableAtWorldCreation>1</maxConfigurableAtWorldCreation>
+        <configurationListOrderPriority>70</configurationListOrderPriority>
+        <settlementNameMaker>NamerSettlementOutlander</settlementNameMaker>
+        <hostileToFactionlessHumanlikes>true</hostileToFactionlessHumanlikes>
+        <settlementTexturePath>World/WorldObjects/DefaultSettlement</settlementTexturePath>
+        <allowedArrivalTemperatureRange>-80~90</allowedArrivalTemperatureRange>
+        <fixedIdeo>true</fixedIdeo>
+        <ideoName>数星星</ideoName>
+        <ideoDescription>desc.</ideoDescription>
+        <deityPresets>
+            <li>
+                <nameType>
+                    <name>神</name>
+                    <type>114514</type>
+                </nameType>
+                <gender>Female</gender>
+                <iconPath>UI/Deities/DeityGeneric</iconPath>
+            </li>
+        </deityPresets>
+        <forcedMemes>
+            <li MayRequire="Ludeon.RimWorld.Ideology">Structure_TheistEmbodied</li>
+            <li MayRequire="Ludeon.RimWorld.Ideology">FemaleSupremacy</li>
+            <li MayRequire="Ludeon.RimWorld.Ideology">Supremacist</li>
+            <li MayRequire="Ludeon.RimWorld.Ideology">Collectivist</li>
+        </forcedMemes>
+        <requiredPreceptsOnly>true</requiredPreceptsOnly>
+    </FactionDef>
+
+</Defs>

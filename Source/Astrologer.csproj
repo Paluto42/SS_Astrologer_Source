@@ -112,8 +112,9 @@
     <Compile Include="Building\TCP_NightGenerator.cs" />
     <Compile Include="Comp\TCP_HediffApparel.cs" />
     <Compile Include="Gene\Ext_AstrologerGene.cs" />
-    <Compile Include="HarmonyPatch\Patch_PawnGenerator.cs" />
-    <Compile Include="HarmonyPatch\Patch_Main.cs" />
+    <Compile Include="HarmonyPatches\Patch_GeneTracker.cs" />
+    <Compile Include="HarmonyPatches\Patch_PawnGenerator.cs" />
+    <Compile Include="HarmonyPatches\Patch_Main.cs" />
     <Compile Include="Insight\AstroTracker.cs" />
     <Compile Include="Insight\TCP_Insights.cs" />
     <Compile Include="Insight\trash\TCP_MultipleVerb.cs" />

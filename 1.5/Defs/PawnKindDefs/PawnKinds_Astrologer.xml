@@ -3,7 +3,7 @@
 
 	<PawnKindDef Name="Astro_PawnBase" Abstract="True">
 		<race>Human</race>
-		<defaultFactionType>Astro_Faction</defaultFactionType>
+		<defaultFactionType>Astro_Empire</defaultFactionType>
 		<backstoryCryptosleepCommonality>0</backstoryCryptosleepCommonality>
 		<invNutrition>2</invNutrition>
 		<!--gearHealthRange>0.8~1.0</gearHealthRange-->
@@ -42,7 +42,7 @@
 		<useFactionXenotypes>false</useFactionXenotypes>
 	</PawnKindDef>
 
-	<PawnKindDef Name="Astro_Researcher" ParentName="Astro_PawnBase" Abstract="True">
+	<PawnKindDef Name="Astro_CitizenBase" ParentName="Astro_PawnBase" Abstract="True">
 		<isFighter>false</isFighter>
 		<initialResistanceRange>10~40</initialResistanceRange>
 		<chemicalAddictionChance>0.1</chemicalAddictionChance>
@@ -65,6 +65,77 @@
 				<range>5~10</range>
 			</li>
 		</skills>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="Astro_CitizenBase">
+		<defName>Astro_Citizen</defName>
+		<label>繁星帝国公民</label>
+		<labelPlural>繁星帝国公民</labelPlural>
+		<combatPower>80</combatPower>
+		<apparelTags>
+			<li>Astrologer_Apparel</li>
+		</apparelTags>
+		<apparelRequired>
+		</apparelRequired>
+		<weaponTags>
+		</weaponTags>
+		<skills>
+		</skills>
+		<xenotypeSet>
+			<xenotypeChances>
+				<Astrologer_Citizen>1</Astrologer_Citizen>
+			</xenotypeChances>
+		</xenotypeSet>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="Astro_CitizenBase">
+		<defName>Astro_EmpireLeader</defName>
+		<label>繁星帝国参议长</label>
+		<combatPower>300</combatPower>
+		<factionLeader>true</factionLeader>
+		<itemQuality>Excellent</itemQuality>
+		<gearHealthRange>1~2</gearHealthRange>
+		<forceDeathOnDowned>true</forceDeathOnDowned>
+		<initialResistanceRange>80~100</initialResistanceRange>
+		<apparelTags>
+			<li>Astrologer_Apparel</li>
+			<li>Astrologer_Armor</li>
+		</apparelTags>
+		<apparelRequired>
+		</apparelRequired>
+		<weaponMoney>2500~2500</weaponMoney>
+		<weaponTags>
+			<li>Astrologer_Weapon_Boss</li>
+		</weaponTags>
+		<techHediffsMoney>2000~3000</techHediffsMoney>
+		<combatEnhancingDrugsChance>0.1</combatEnhancingDrugsChance>
+		<combatEnhancingDrugsCount>1~2</combatEnhancingDrugsCount>
+		<techHediffsTags>
+			<li>Advanced</li>
+			<li>AdvancedWeapon</li>
+			<li>ImplantEmpireCommon</li>
+		</techHediffsTags>
+		<techHediffsChance>0.5</techHediffsChance>
+		<skills>
+			<li>
+				<skill>Melee</skill>
+				<range>9~18</range>
+			</li>
+			<li>
+				<skill>Shooting</skill>
+				<range>9~18</range>
+			</li>
+			<li>
+				<skill>Intellectual</skill>
+				<range>9~18</range>
+			</li>
+		</skills>
+		<useFactionXenotypes>false</useFactionXenotypes>
+		<xenotypeSet>
+			<xenotypeChances>
+				<Astrologer_Citizen>1</Astrologer_Citizen>
+			</xenotypeChances>
+		</xenotypeSet>
 	</PawnKindDef>
 
 </Defs>

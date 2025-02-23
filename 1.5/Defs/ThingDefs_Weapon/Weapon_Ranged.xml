@@ -736,6 +736,7 @@
             </li>
         </verbs>
         <comps>
+            <!--伤害类型要写新的,Thump和Bomb的混合体-->
             <li Class="CompProperties_Explosive">
                 <explosiveRadius>3.9</explosiveRadius>
                 <explosiveDamageType>Bomb</explosiveDamageType>

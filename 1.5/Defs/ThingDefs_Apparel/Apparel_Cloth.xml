@@ -41,9 +41,9 @@
         <description>研究所人员统一配给的服装，轻便保暖，胸口烫印着繁星帝国的徽章/n基于占星师热爱探索的特质，穿戴连衣裙会增加研究速度.</description>
         <!--等待贴图-->
         <graphicData>
-            <texPath>Things/Pawn/Humanlike/Apparel/ShirtBasic/ShirtBasic</texPath>
+            <texPath>Things/Apparel/FrillOnepiece/FrillOnepiece</texPath>
             <graphicClass>Graphic_Single</graphicClass>
-            <drawSize>(0.7, 0.7)</drawSize>
+            <!--drawSize>(0.7, 0.7)</drawSize-->
         </graphicData>
         <!--占位,原版数值-->
         <statBases>
@@ -64,7 +64,7 @@
         </stuffCategories>
         <costStuffCount>40</costStuffCount>
         <apparel>
-            <wornGraphicPath>Things/Pawn/Humanlike/Apparel/ShirtBasic/ShirtBasic</wornGraphicPath>
+            <wornGraphicPath>Things/Apparel/FrillOnepiece/FrillOnepiece</wornGraphicPath>
             <bodyPartGroups>
                 <li>Torso</li>
                 <li>Neck</li>

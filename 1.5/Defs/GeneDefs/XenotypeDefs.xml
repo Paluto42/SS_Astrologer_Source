@@ -1,25 +1,25 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-    <!--XenotypeIconDef>
+    <XenotypeIconDef>
 		<defName>Astrologer_Icon</defName>
-		<texPath></texPath>
-	</XenotypeIconDef-->
+		<texPath>UI/Icons/RK_icon</texPath>
+	</XenotypeIconDef>
 
-    <!--XenotypeDef>
-		<defName>Astrologer_Researcher</defName>
-		<label></label>
+    <XenotypeDef>
+		<defName>Astrologer_Citizen</defName>
+		<label>占星师</label>
 		<description>desc.</description>
 		<descriptionShort></descriptionShort>
-		<iconPath></iconPath>
-		<displayPriority>-1270.01</displayPriority>
+		<iconPath>UI/Icons/RK_icon</iconPath>
+		<displayPriority>-1270</displayPriority>
 		<nameMaker></nameMaker>
 		<chanceToUseNameMaker>99</chanceToUseNameMaker>
 		<factionlessGenerationWeight>0</factionlessGenerationWeight>
 		<inheritable>true</inheritable>
 		<genes>
-			<li></li>
+			<li>Astro_Gene_Main</li>
 		</genes>
-	</XenotypeDef-->
+	</XenotypeDef>
 
 </Defs>

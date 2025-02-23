@@ -6,12 +6,10 @@
     </BodyTypeDef>
 
     <BodyTypeDef ParentName="AS_BaseBody">
-		<defName>AstrologerBody</defName>
+		<defName>Astrologer_Body</defName>
 		<label>占星师</label>
 		<bodyNakedGraphicPath>Things/Pawn/Bodies/Naked</bodyNakedGraphicPath>
 		<bodyDessicatedGraphicPath>Things/Pawn/Bodies/Naked</bodyDessicatedGraphicPath>
-		<modExtensions>
-		</modExtensions>
 	</BodyTypeDef>
 
 </Defs>

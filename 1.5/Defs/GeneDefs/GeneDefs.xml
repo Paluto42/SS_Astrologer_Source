@@ -1,34 +1,68 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-    <!--GeneDef Name="Astrologer_ResearcherBodyGene" Abstract="True">
-		<geneClass></geneClass>
-		<descriptionHyperlinks>
-			<ThingDef></ThingDef>
-		</descriptionHyperlinks>
-		<biostatCpx>0</biostatCpx>
-		<biostatMet>0</biostatMet>
-		<selectionWeight>0</selectionWeight>
-		<tattoosVisible>false</tattoosVisible>
-		<displayOrderInCategory>1</displayOrderInCategory>
-		<displayCategory>AstrologerGene</displayCategory>
-		<bodyType>Standard</bodyType>
-		<beardTagFilter>
-			<whitelist>true</whitelist>
-			<tags>
-				<li>NoBeard</li>
-			</tags>
-		</beardTagFilter>
-		<hairTagFilter>
-			<whitelist>true</whitelist>
-			<tags>
-				<li></li>
-			</tags>
-		</hairTagFilter>
-		<exclusionTags>
-			<li></li>
-		</exclusionTags>
-	</GeneDef-->
+    <GeneDef Name="Astro_BodyGene" Abstract="True">
+        <!--geneClass></geneClass-->
+        <descriptionHyperlinks></descriptionHyperlinks>
+        <biostatCpx>0</biostatCpx>
+        <biostatMet>0</biostatMet>
+        <selectionWeight>0</selectionWeight>
+        <tattoosVisible>false</tattoosVisible>
+        <displayOrderInCategory>1</displayOrderInCategory>
+        <displayCategory>AstrologerGene</displayCategory>
+        <bodyType>Standard</bodyType>
+        <beardTagFilter>
+            <whitelist>true</whitelist>
+            <tags>
+                <li>NoBeard</li>
+            </tags>
+        </beardTagFilter>
+        <hairTagFilter>
+            <whitelist>true</whitelist>
+            <tags>
+                <li>AstrologerHair</li>
+            </tags>
+        </hairTagFilter>
+        <exclusionTags>
+            <li>Jaw</li>
+            <li>Fur</li>
+            <li>Nose</li>
+            <li>HairStyle</li>
+            <li>HeadType</li>
+            <li>BodyType</li>
+            <li>SkinColorOverride</li>
+        </exclusionTags>
+    </GeneDef>
+
+    <GeneDef ParentName="Astro_BodyGene">
+        <defName>Astro_Gene_Main</defName>
+        <label>占星师</label>
+        <description>占星师种族的核心基因.</description>
+        <descriptionHyperlinks>
+        </descriptionHyperlinks>
+        <iconPath>UI/Icons/Genes/Gene_Sanguine</iconPath>
+        <biostatCpx>3</biostatCpx>
+        <biostatMet>4</biostatMet>
+        <statOffsets>
+            <ComfyTemperatureMin>-20</ComfyTemperatureMin>
+            <ComfyTemperatureMax>20</ComfyTemperatureMax>
+        </statOffsets>
+        <forcedHeadTypes>
+            <li>Astrologer_Head_A</li>
+            <li>Astrologer_Head_B</li>
+            <li>Astrologer_Head_C</li>
+            <li>Astrologer_Head_D</li>
+            <li>Astrologer_Head_E</li>
+            <li>Astrologer_Head_F</li>
+        </forcedHeadTypes>
+        <forcedTraits>
+        </forcedTraits>
+        <modExtensions>
+            <li Class="Astrologer.Ext_AstrologerGene">
+                <forcedBodyType>Astrologer_Body</forcedBodyType>
+            </li>
+        </modExtensions>
+    </GeneDef>
 
     <GeneDef>
         <defName>Astrologer_Gene_InsightEye</defName>
@@ -87,8 +121,12 @@
         <biostatMet>1</biostatMet>
         <symbolPack>
             <prefixSymbols>
-                <li><symbol>wake</symbol></li>
-                <li><symbol>night</symbol></li>
+                <li>
+                    <symbol>wake</symbol>
+                </li>
+                <li>
+                    <symbol>night</symbol>
+                </li>
             </prefixSymbols>
         </symbolPack>
     </GeneDef>

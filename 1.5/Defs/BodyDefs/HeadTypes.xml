@@ -2,9 +2,10 @@
 <Defs>
 
     <HeadTypeDef>
-        <defName>AstrologerHead_A</defName>
-        <label>占星师A</label>
+        <defName>Astrologer_Head_A</defName>
+        <label>占星师_A</label>
         <requiredGenes>
+            <li>Astro_Gene_Main</li>
         </requiredGenes>
         <graphicPath>Things/Pawn/Heads/ASHead_A</graphicPath>
         <gender>None</gender>
@@ -13,9 +14,10 @@
     </HeadTypeDef>
 
     <HeadTypeDef>
-        <defName>AstrologerHead_B</defName>
-        <label>占星师B</label>
+        <defName>Astrologer_Head_B</defName>
+        <label>占星师_B</label>
         <requiredGenes>
+            <li>Astro_Gene_Main</li>
         </requiredGenes>
         <graphicPath>Things/Pawn/Heads/ASHead_B</graphicPath>
         <gender>None</gender>
@@ -24,9 +26,10 @@
     </HeadTypeDef>
 
     <HeadTypeDef>
-        <defName>AstrologerHead_C</defName>
-        <label>占星师C</label>
+        <defName>Astrologer_Head_C</defName>
+        <label>占星师_C</label>
         <requiredGenes>
+            <li>Astro_Gene_Main</li>
         </requiredGenes>
         <graphicPath>Things/Pawn/Heads/ASHead_C</graphicPath>
         <gender>None</gender>
@@ -35,9 +38,10 @@
     </HeadTypeDef>
 
     <HeadTypeDef>
-        <defName>AstrologerHead_D</defName>
-        <label>占星师D</label>
+        <defName>Astrologer_Head_D</defName>
+        <label>占星师_D</label>
         <requiredGenes>
+            <li>Astro_Gene_Main</li>
         </requiredGenes>
         <graphicPath>Things/Pawn/Heads/ASHead_D</graphicPath>
         <gender>None</gender>
@@ -46,9 +50,10 @@
     </HeadTypeDef>
 
     <HeadTypeDef>
-        <defName>AstrologerHead_E</defName>
-        <label>占星师E</label>
+        <defName>Astrologer_Head_E</defName>
+        <label>占星师_E</label>
         <requiredGenes>
+            <li>Astro_Gene_Main</li>
         </requiredGenes>
         <graphicPath>Things/Pawn/Heads/ASHead_E</graphicPath>
         <gender>None</gender>
@@ -57,9 +62,10 @@
     </HeadTypeDef>
 
     <HeadTypeDef>
-        <defName>AstrologerHead_F</defName>
-        <label>占星师F</label>
+        <defName>Astrologer_Head_F</defName>
+        <label>占星师_F</label>
         <requiredGenes>
+            <li>Astro_Gene_Main</li>
         </requiredGenes>
         <graphicPath>Things/Pawn/Heads/ASHead_F</graphicPath>
         <gender>None</gender>
