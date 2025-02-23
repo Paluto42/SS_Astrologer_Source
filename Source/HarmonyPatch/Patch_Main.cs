@@ -6,14 +6,14 @@ using System.Text;
 using System.Threading.Tasks;
 using Verse;
 
-namespace Astrologer
+namespace Astrologer.HarmonyPatches
 {
     [StaticConstructorOnStartup]
     internal class Patch_Main
     {
         public Patch_Main() 
         {
-            Harmony harmony = new Harmony("Astrologer.patch");
+            Harmony harmony = new("Astrologer.patch");
             harmony.PatchAll();
         }
     }
