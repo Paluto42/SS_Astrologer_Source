@@ -76,10 +76,6 @@
     <Reference Include="System.Data" />
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Xml" />
-    <Reference Include="UnityEngine">
-      <HintPath>Rely\UnityEngine.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
     <Reference Include="UnityEngine.CoreModule">
       <HintPath>Rely\UnityEngine.CoreModule.dll</HintPath>
     </Reference>
@@ -91,6 +87,11 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Ability\AE_CostInsight.cs" />
+    <Compile Include="Ability\AE_DeployBuilding.cs" />
+    <Compile Include="Ability\CC_InsightThreshold.cs" />
+    <Compile Include="Ability\HarmonyPatchs\Patch_IgnoreDmg.cs" />
+    <Compile Include="Ability\HarmonyPatchs\Patch_IgnoreStagger.cs" />
     <Compile Include="AstroDocument.cs" />
     <Compile Include="Building\Laundry\AI\JobDriver_FillLaundry.cs" />
     <Compile Include="Building\Laundry\AI\WorkGiver_FillLaundry.cs" />
@@ -102,10 +103,8 @@
     <Compile Include="Building\StellarStove.cs" />
     <Compile Include="Building\TCP_NightGenerator.cs" />
     <Compile Include="Comp\TCP_HediffApparel.cs" />
-    <Compile Include="Gene\Ext_AstrologerGene.cs" />
-    <Compile Include="HarmonyPatches\Patch_GeneTracker.cs" />
-    <Compile Include="HarmonyPatches\Patch_PawnGenerator.cs" />
-    <Compile Include="HarmonyPatches\Patch_Main.cs" />
+    <Compile Include="Gene\Ext_AstroGeneBody.cs" />
+    <Compile Include="HarmonyPatch\Patch_Main.cs" />
     <Compile Include="Insight\AstroTracker.cs" />
     <Compile Include="Insight\InteractableComp\IInsightInteractable.cs" />
     <Compile Include="Insight\InteractableComp\JobDriver_InsightInteract.cs" />
