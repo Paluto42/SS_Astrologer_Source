@@ -10,8 +10,6 @@ namespace Astrologer
 {
     public class Ext_AstrologerGene : DefModExtension
     {
-        public bool isAstrologer = true;
-
         public BodyTypeDef forcedBodyType;
 
     }
