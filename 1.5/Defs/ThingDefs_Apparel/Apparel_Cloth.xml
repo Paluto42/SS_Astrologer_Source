@@ -79,7 +79,7 @@
                 <li>Worker</li>
             </defaultOutfitTags>
             <tags>
-                <li>Astrologer_Cloth</li>
+                <li>Astrologer_CitizenCloth</li>
             </tags>
         </apparel>
     </ThingDef>
@@ -125,6 +125,9 @@
                 <li>Worker</li>
                 <li>Soldier</li>
             </defaultOutfitTags>
+            <tags>
+                <li>Astrologer_Cloth</li>
+            </tags>
         </apparel>
     </ThingDef>
 
@@ -164,6 +167,9 @@
                 <li>Worker</li>
                 <li>Soldier</li>
             </defaultOutfitTags>
+            <tags>
+                <li>Astrologer_Cloth</li>
+            </tags>
         </apparel>
     </ThingDef>
 
@@ -203,6 +209,9 @@
                 <li>Worker</li>
                 <li>Soldier</li>
             </defaultOutfitTags>
+            <tags>
+                <li>Astrologer_Cloth</li>
+            </tags>
         </apparel>
     </ThingDef>
 
@@ -250,6 +259,9 @@
                 <li>Worker</li>
                 <li>Soldier</li>
             </defaultOutfitTags>
+            <tags>
+                <li>Astrologer_Cloth</li>
+            </tags>
         </apparel>
     </ThingDef>
 
@@ -296,6 +308,9 @@
             <defaultOutfitTags>
                 <li>Worker</li>
             </defaultOutfitTags>
+            <tags>
+                <li>Astrologer_Accessory</li>
+            </tags>
         </apparel>
         <recipeMaker>
             <!--researchPrerequisite>ComplexClothing</researchPrerequisite-->

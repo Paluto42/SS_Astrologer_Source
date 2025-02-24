@@ -13,7 +13,7 @@
 		<descriptionShort></descriptionShort>
 		<iconPath>UI/Icons/RK_icon</iconPath>
 		<displayPriority>-1270</displayPriority>
-		<nameMaker></nameMaker>
+		<nameMaker>NamerPerson_AstroEmpire</nameMaker>
 		<chanceToUseNameMaker>99</chanceToUseNameMaker>
 		<factionlessGenerationWeight>0</factionlessGenerationWeight>
 		<inheritable>true</inheritable>

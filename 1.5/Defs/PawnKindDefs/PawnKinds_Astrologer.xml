@@ -8,8 +8,8 @@
 		<invNutrition>2</invNutrition>
 		<!--gearHealthRange>0.8~1.0</gearHealthRange-->
 		<apparelIgnoreSeasons>true</apparelIgnoreSeasons>
-		<minGenerationAge>75</minGenerationAge>
-		<maxGenerationAge>300</maxGenerationAge>
+		<minGenerationAge>18</minGenerationAge>
+		<maxGenerationAge>150</maxGenerationAge>
 		<initialWillRange>60~90</initialWillRange>
 		<initialResistanceRange>60~90</initialResistanceRange>
 		<biocodeWeaponChance>0</biocodeWeaponChance>
@@ -53,7 +53,7 @@
 		<apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
 		<apparelMoney>700~1500</apparelMoney>
 		<apparelTags>
-			<li>Astrologer_Cloth</li>
+			<li>Astrologer_CitizenCloth</li>
 		</apparelTags>
 		<techHediffsChance>0.15</techHediffsChance>
 		<techHediffsMoney>700~1200</techHediffsMoney>
@@ -73,7 +73,6 @@
 		<labelPlural>繁星帝国公民</labelPlural>
 		<combatPower>80</combatPower>
 		<apparelTags>
-			<li>Astrologer_Apparel</li>
 		</apparelTags>
 		<apparelRequired>
 		</apparelRequired>
@@ -98,7 +97,6 @@
 		<forceDeathOnDowned>true</forceDeathOnDowned>
 		<initialResistanceRange>80~100</initialResistanceRange>
 		<apparelTags>
-			<li>Astrologer_Apparel</li>
 			<li>Astrologer_Armor</li>
 		</apparelTags>
 		<apparelRequired>

@@ -104,6 +104,9 @@
             <defaultOutfitTags>
                 <li>Worker</li>
             </defaultOutfitTags>
+            <tags>
+                <li>Astrologer_Equipment</li>
+            </tags>
         </apparel>
         <recipeMaker>
             <!--researchPrerequisite>ComplexClothing</researchPrerequisite-->
@@ -177,6 +180,9 @@
             <defaultOutfitTags>
                 <li>Soldier</li>
             </defaultOutfitTags>
+            <tags>
+                <li>Astrologer_Equipment</li>
+            </tags>
         </apparel>
         <recipeMaker>
             <researchPrerequisite>ComplexClothing</researchPrerequisite>
