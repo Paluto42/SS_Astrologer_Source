@@ -7,7 +7,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Verse;
 
-namespace Astrologer.HarmonyPatchs
+namespace Astrologer.HarmonyPatches
 {
     //朦胧暗月
     //持续消耗洞察力可以进入不稳定态，此时有一半的几率受击不造成伤害。

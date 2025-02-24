@@ -103,8 +103,10 @@
     <Compile Include="Building\StellarStove.cs" />
     <Compile Include="Building\TCP_NightGenerator.cs" />
     <Compile Include="Comp\TCP_HediffApparel.cs" />
-    <Compile Include="Gene\Ext_AstroGeneBody.cs" />
-    <Compile Include="HarmonyPatch\Patch_Main.cs" />
+    <Compile Include="Gene\Ext_AstrologerGene.cs" />
+    <Compile Include="HarmonyPatches\Patch_GeneTracker.cs" />
+    <Compile Include="HarmonyPatches\Patch_Main.cs" />
+    <Compile Include="HarmonyPatches\Patch_PawnGenerator.cs" />
     <Compile Include="Insight\AstroTracker.cs" />
     <Compile Include="Insight\InteractableComp\IInsightInteractable.cs" />
     <Compile Include="Insight\InteractableComp\JobDriver_InsightInteract.cs" />

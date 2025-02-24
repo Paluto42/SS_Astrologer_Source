@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 using Verse;
 
 //免疫受伤减速
-namespace Astrologer.HarmonyPatchs
+namespace Astrologer.HarmonyPatches
 {
     [HarmonyPatch(typeof(StaggerHandler), "Staggered", MethodType.Getter)]
     public class Patch_IgnoreStagger

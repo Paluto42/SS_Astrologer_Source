@@ -22,7 +22,7 @@ namespace Astrologer.Insight
     {
         TCP_InsightInteractable_Base Props => props as TCP_InsightInteractable_Base;
 
-        float Radius => Props.affectRadius;
+        //float Radius => Props.affectRadius;
 
         public virtual void InsightInteract(Pawn pawn)
         {
