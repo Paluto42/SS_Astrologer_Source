@@ -38,7 +38,7 @@
     <ThingDef ParentName="Astro_ClothBase">
         <defName>Astro_FrillOnepiece</defName>
         <label>连衣裙</label>
-        <description>研究所人员统一配给的服装，轻便保暖，胸口烫印着繁星帝国的徽章/n基于占星师热爱探索的特质，穿戴连衣裙会增加研究速度.</description>
+        <description>研究所人员统一配给的服装，轻便保暖，胸口烫印着繁星帝国的徽章\n基于占星师热爱探索的特质，穿戴连衣裙会增加研究速度.</description>
         <!--等待贴图-->
         <graphicData>
             <texPath>Things/Apparel/FrillOnepiece/FrillOnepiece</texPath>
@@ -218,7 +218,7 @@
     <ThingDef ParentName="Astro_ClothBase">
         <defName>Astro_SocialMaster</defName>
         <label>社交大师(服装)</label>
-        <description>纪念碑上所载一切自永远至永远不会再重复，因为注定经受高买低卖的殖民者不会有第二次机会在边缘世界出现/n增加卖出系数，减买进系数</description>
+        <description>纪念碑上所载一切自永远至永远不会再重复，因为注定经受高买低卖的殖民者不会有第二次机会在边缘世界出现\n增加卖出系数，减买进系数</description>
         <!--等待贴图-->
         <graphicData>
             <texPath>Things/Pawn/Humanlike/Apparel/ShirtBasic/ShirtBasic</texPath>
@@ -268,7 +268,7 @@
     <ThingDef ParentName="Astro_ApparelBase">
         <defName>Astro_SocialMaster_Glasses</defName>
         <label>社交大师(墨镜)</label>
-        <description>多年以后，面对高级零部件，占星师小姐会回想起运输仓带她去见识奸商的那个遥远的下午/n加魅力加社交能力</description>
+        <description>多年以后，面对高级零部件，占星师小姐会回想起运输仓带她去见识奸商的那个遥远的下午\n加魅力加社交能力</description>
         <thingCategories Inherit="false">
             <li>Astrologer_Accessory</li>
         </thingCategories>

@@ -51,7 +51,7 @@
                 <warmupTime>0.4</warmupTime>
                 <range>25.9</range>
                 <soundCast>Shot_Revolver</soundCast>
-                <soundCastTail>GunTail_Light</soundCastTail>
+                <soundCastTail>GunTail_Heavy</soundCastTail>
                 <muzzleFlashScale>9</muzzleFlashScale>
             </li>
         </verbs>
@@ -141,7 +141,7 @@
                 <warmupTime>0.6</warmupTime>
                 <range>12.9</range>
                 <burstShotCount>6</burstShotCount>
-                <ticksBetweenBurstShots>4</ticksBetweenBurstShots>
+                <ticksBetweenBurstShots>6</ticksBetweenBurstShots>
                 <soundCast>Shot_MachinePistol</soundCast>
                 <soundCastTail>GunTail_Medium</soundCastTail>
                 <muzzleFlashScale>9</muzzleFlashScale>
@@ -203,11 +203,11 @@
         <statBases>
             <WorkToMake>12000</WorkToMake>
             <Mass>3.4</Mass>
-            <AccuracyTouch>0.80</AccuracyTouch>
+           <AccuracyTouch>0.80</AccuracyTouch>
             <AccuracyShort>0.87</AccuracyShort>
             <AccuracyMedium>0.77</AccuracyMedium>
             <AccuracyLong>0.64</AccuracyLong>
-            <RangedWeapon_Cooldown>1.25</RangedWeapon_Cooldown>
+            <RangedWeapon_Cooldown>1.00</RangedWeapon_Cooldown>
         </statBases>
         <costList>
             <Steel>60</Steel>
@@ -230,8 +230,8 @@
                 <hasStandardCommand>true</hasStandardCommand>
                 <!--应该写个新的弹药种类-->
                 <defaultProjectile>Astro_Bullet_Shotgun</defaultProjectile>
-                <warmupTime>0.9</warmupTime>
-                <range>14.9</range>
+                <warmupTime>0.5</warmupTime>
+                <range>17.9</range>
                 <soundCast>Shot_Shotgun</soundCast>
                 <soundCastTail>GunTail_Heavy</soundCastTail>
                 <muzzleFlashScale>9</muzzleFlashScale>
@@ -259,7 +259,7 @@
     </ThingDef>
     <ThingDef ParentName="BaseBullet">
         <defName>Astro_Bullet_Shotgun</defName>
-        <label>破甲霰弹</label>
+        <label>大口径破甲独头弹</label>
         <graphicData>
             <texPath>Things/Projectile/Bullet_Shotgun</texPath>
             <graphicClass>Graphic_Single</graphicClass>
@@ -268,7 +268,7 @@
             <damageDef>Bullet</damageDef>
             <damageAmountBase>22</damageAmountBase>
             <stoppingPower>3</stoppingPower>
-            <armorPenetrationBase>0.25</armorPenetrationBase>
+            <armorPenetrationBase>0.20</armorPenetrationBase>
             <speed>55</speed>
         </projectile>
     </ThingDef>
@@ -319,9 +319,11 @@
                 <verbClass>Verb_Shoot</verbClass>
                 <hasStandardCommand>true</hasStandardCommand>
                 <!--应该写个新的弹药种类-->
-                <defaultProjectile>Astro_Bullet_Shotgun</defaultProjectile>
-                <warmupTime>0.9</warmupTime>
-                <range>14.9</range>
+                <defaultProjectile>Astro_Bullet_StunShotgun</defaultProjectile>
+                <warmupTime>0.5</warmupTime>
+                <range>17.9</range>
+                <burstShotCount>2</burstShotCount>
+                <ticksBetweenBurstShots>12</ticksBetweenBurstShots>
                 <soundCast>Shot_Shotgun</soundCast>
                 <soundCastTail>GunTail_Heavy</soundCastTail>
                 <muzzleFlashScale>9</muzzleFlashScale>
@@ -349,7 +351,7 @@
     </ThingDef>
     <ThingDef ParentName="BaseBullet">
         <defName>Astro_Bullet_StunShotgun</defName>
-        <label>高速电能独头弹</label>
+        <label>高速电能霰弹</label>
         <graphicData>
             <texPath>Things/Projectile/Bullet_Shotgun</texPath>
             <graphicClass>Graphic_Single</graphicClass>
@@ -358,7 +360,7 @@
             <damageDef>Bullet</damageDef>
             <damageAmountBase>20</damageAmountBase>
             <stoppingPower>3</stoppingPower>
-            <armorPenetrationBase>0.15</armorPenetrationBase>
+            <armorPenetrationBase>0.18</armorPenetrationBase>
             <extraDamages>
                 <li>
                     <def>EMP</def>
@@ -390,12 +392,12 @@
         <!--占位,原版数值-->
         <statBases>
             <WorkToMake>56000</WorkToMake>
-            <Mass>8</Mass>
-            <AccuracyTouch>0.65</AccuracyTouch>
-            <AccuracyShort>0.75</AccuracyShort>
-            <AccuracyMedium>0.65</AccuracyMedium>
-            <AccuracyLong>0.6</AccuracyLong>
-            <RangedWeapon_Cooldown>2</RangedWeapon_Cooldown>
+            <Mass>6</Mass>
+            <AccuracyTouch>0.85</AccuracyTouch>
+            <AccuracyShort>0.80</AccuracyShort>
+            <AccuracyMedium>0.78</AccuracyMedium>
+            <AccuracyLong>0.75</AccuracyLong>
+            <RangedWeapon_Cooldown>1.5</RangedWeapon_Cooldown>
         </statBases>
         <costList>
             <Plasteel>40</Plasteel>
@@ -417,8 +419,8 @@
             <li>
                 <verbClass>Astrologer.Verb_PreApplyShoot</verbClass>
                 <hasStandardCommand>true</hasStandardCommand>
-                <defaultProjectile>Bullet_ChargeRifle</defaultProjectile>
-                <warmupTime>2</warmupTime>
+                <defaultProjectile>Astro_Bullet_DMR</defaultProjectile>
+                <warmupTime>1.0</warmupTime>
                 <range>30</range>
                 <soundCast>ChargeLance_Fire</soundCast>
                 <soundCastTail>GunTail_Heavy</soundCastTail>
@@ -431,9 +433,9 @@
                     <verbClass>Astrologer.Verb_PreApplyShoot</verbClass>
                     <hasStandardCommand>true</hasStandardCommand>
                     <defaultProjectile>Astro_Bullet_Psychicinsanity</defaultProjectile>
-                    <warmupTime>2</warmupTime>
+                    <warmupTime>1</warmupTime>
                     <range>30</range>
-                    <soundCast>Shot_Shotgun</soundCast>
+                    <soundCast>Shot_AssaultRifle</soundCast>
                     <soundCastTail>GunTail_Heavy</soundCastTail>
                     <muzzleFlashScale>9</muzzleFlashScale>
                 </verbProps>
@@ -466,6 +468,20 @@
         </tools>
     </ThingDef>
     <ThingDef ParentName="BaseBullet">
+        <defName>Astro_Bullet_DMR</defName>
+        <label>charge shot</label>
+        <graphicData>
+            <texPath>Things/Projectile/Charge_Small</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <projectile>
+            <damageDef>Bullet</damageDef>
+            <damageAmountBase>25</damageAmountBase>
+            <armorPenetrationBase>0.35</armorPenetrationBase>
+            <speed>70</speed>
+        </projectile>
+    </ThingDef>
+    <ThingDef ParentName="BaseBullet">
         <defName>Astro_Bullet_Psychicinsanity</defName>
         <label>附魔步枪子弹</label>
         <graphicData>
@@ -474,7 +490,7 @@
         </graphicData>
         <projectile>
             <damageDef>Astro_Cast_Psychicinsanity</damageDef>
-            <damageAmountBase>15</damageAmountBase>
+            <damageAmountBase>25</damageAmountBase>
             <armorPenetrationBase>0.35</armorPenetrationBase>
             <speed>70</speed>
         </projectile>
@@ -498,12 +514,12 @@
         <!--占位,原版数值-->
         <statBases>
             <WorkToMake>56000</WorkToMake>
-            <Mass>6</Mass>
-            <AccuracyTouch>0.65</AccuracyTouch>
-            <AccuracyShort>0.75</AccuracyShort>
-            <AccuracyMedium>0.8</AccuracyMedium>
-            <AccuracyLong>0.85</AccuracyLong>
-            <RangedWeapon_Cooldown>2</RangedWeapon_Cooldown>
+            <Mass>8</Mass>
+            <AccuracyTouch>0.75</AccuracyTouch>
+            <AccuracyShort>0.77</AccuracyShort>
+            <AccuracyMedium>0.82</AccuracyMedium>
+            <AccuracyLong>0.81</AccuracyLong>
+            <RangedWeapon_Cooldown>1.75</RangedWeapon_Cooldown>
         </statBases>
         <costList>
             <Plasteel>40</Plasteel>
@@ -526,7 +542,7 @@
                 <verbClass>Verb_Shoot</verbClass>
                 <hasStandardCommand>true</hasStandardCommand>
                 <defaultProjectile>Bullet_ChargeRifle</defaultProjectile>
-                <warmupTime>4</warmupTime>
+                <warmupTime>2</warmupTime>
                 <range>70</range>
                 <soundCast>ChargeLance_Fire</soundCast>
                 <soundCastTail>GunTail_Heavy</soundCastTail>

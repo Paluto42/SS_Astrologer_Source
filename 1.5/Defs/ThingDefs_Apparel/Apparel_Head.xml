@@ -135,12 +135,12 @@
         <equippedStatOffsets>
             <!--AimingDelayFactor>0.25</AimingDelayFactor-->
             <ShootingAccuracyPawn>2</ShootingAccuracyPawn>
-            <ToxicResistance>0.35</ToxicResistance>
+            <ToxicEnvironmentResistance>0.5</ToxicEnvironmentResistance>
         </equippedStatOffsets>
         <comps>
-            <li Class="Astrologer.TCP_HediffApparel">
+            <!--li Class="Astrologer.TCP_HediffApparel">
                 <hediff>Astro_Hediff_Airpurifier</hediff>
-            </li>
+            </li-->
         </comps>
         <!--材料-->
         <costList>

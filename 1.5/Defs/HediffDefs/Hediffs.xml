@@ -43,7 +43,7 @@
         </injuryProps>
     </HediffDef>
 
-    <HediffDef>
+    <!--HediffDef>
         <defName>Astro_Hediff_Airpurifier</defName>
         <label>生存作战单元-呼吸过滤</label>
         <description>多层呼吸过滤系统,能够过滤一定量有害气体.</description>
@@ -62,7 +62,7 @@
                 </statOffsets>
             </li>
         </stages>
-    </HediffDef>
+    </HediffDef-->
 
     <HediffDef>
         <defName>Astro_Hediff_Detoxifier</defName>

@@ -7,4 +7,10 @@
         <reportString>filling in TargetA.</reportString>
     </JobDef>
 
+    <JobDef>
+        <defName>AS_Job_InsightInteract</defName>
+        <driverClass>Astrologer.Insight.JobDriver_InsightInteract</driverClass>
+        <reportString>filling in TargetA.</reportString>
+    </JobDef>
+
 </Defs>
