@@ -2,7 +2,7 @@
 <Defs>
 
     <ThingDef ParentName="ResourceBase">
-        <defName>LOF_StarlightIron</defName>
+        <defName>LOF_Thing_StarlightIron</defName>
         <label>星辉钢</label>
         <description>星辉钢.</description>
         <graphicData>

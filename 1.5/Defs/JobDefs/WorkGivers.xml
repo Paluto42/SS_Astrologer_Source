@@ -8,7 +8,7 @@
         <!--workType>Crafting</workType-->
         <priorityInType>50</priorityInType>
         <fixedBillGiverDefs>
-            <li>LOF_Laundy</li>
+            <li>LOF_Thing_Laundy</li>
         </fixedBillGiverDefs>
         <verb>work at</verb>
         <gerund>working at</gerund>

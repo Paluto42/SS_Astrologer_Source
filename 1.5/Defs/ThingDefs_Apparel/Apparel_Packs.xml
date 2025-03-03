@@ -146,7 +146,7 @@
         <label>埃兰迪尔</label>
         <description>挂在腰间的腰包，消耗洞察力可以进行折跃距离较长.</description>
         <thingCategories Inherit="false">
-            <li>Astrologer_Apparel</li>
+            <li>LOF_AS_Category_Apparel</li>
         </thingCategories>
         <!--等待贴图-->
         <graphicData>

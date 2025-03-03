@@ -39,7 +39,7 @@
             </thingDefs>
         </fixedIngredientFilter>
         <products>
-            <Astro_StarlightIron>25</Astro_StarlightIron>
+            <LOF_Thing_StarlightIron>25</LOF_Thing_StarlightIron>
         </products>
         <skillRequirements>
             <Crafting>6</Crafting>
