@@ -2,7 +2,7 @@
 <Defs>
 
     <ThingDef ParentName="Astro_ApparelBase">
-        <defName>Astro_EmpactPack</defName>
+        <defName>LOF_EmpactPack</defName>
         <label>"AMA-2" EMP冲击背包</label>
         <description>投射在地面上会产生持续的emp脉冲，范围较大且放置距离较长</description>
         <thingCategories Inherit="false">
@@ -142,7 +142,7 @@
     </ApparelLayerDef>
 
     <ThingDef ParentName="Astro_ApparelBase">
-        <defName>Astro_Waistbag</defName>
+        <defName>LOF_Waistbag</defName>
         <label>埃兰迪尔</label>
         <description>挂在腰间的腰包，消耗洞察力可以进行折跃距离较长.</description>
         <thingCategories Inherit="false">

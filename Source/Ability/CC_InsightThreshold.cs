@@ -17,7 +17,7 @@ namespace Astrologer
         public float amount = 1;
         public override bool Castable(AKAbility_Base instance)
         {
-            AstroTracker tracker = instance.CasterPawn?.TryGetAstroTracker();
+            VAB_AstroTracker tracker = instance.CasterPawn?.TryGetAstroTracker();
             if (tracker == null) return false;
 
             bool castable = tracker.insight >= amount;

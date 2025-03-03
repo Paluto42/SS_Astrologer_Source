@@ -18,7 +18,7 @@
 		<factionlessGenerationWeight>0</factionlessGenerationWeight>
 		<inheritable>true</inheritable>
 		<genes>
-			<li>Astro_Gene_Main</li>
+			<li>LOF_Gene_Main</li>
 		</genes>
 	</XenotypeDef>
 

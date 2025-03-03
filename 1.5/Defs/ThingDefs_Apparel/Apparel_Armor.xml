@@ -41,7 +41,7 @@
     </ThingDef>
 
     <ThingDef ParentName="Astro_ArmorBase">
-        <defName>Astro_LightArmor</defName>
+        <defName>LOF_LightArmor</defName>
         <label>生存作战轻甲</label>
         <description>轻量化全能型作战服，较高的锐防和普通的钝防.\n能够监控并介入穿戴者的血液循环过程,增强生存能力和战斗持久力</description>
         <!--等待贴图-->
@@ -67,7 +67,7 @@
         </equippedStatOffsets>
         <comps>
             <li Class="Astrologer.TCP_HediffApparel">
-                <hediff>Astro_Hediff_Detoxifier</hediff>
+                <hediff>LOF_Hediff_Detoxifier</hediff>
             </li>
         </comps>
         <!--材料-->
@@ -99,7 +99,7 @@
     </ThingDef>
 
     <ThingDef ParentName="Astro_ArmorBase">
-        <defName>Astro_StandardArmor</defName>
+        <defName>LOF_StandardArmor</defName>
         <label>"MPE-3" 制式装甲</label>
         <description>"MPE-3"制式装甲，可以发射动能火箭弹（需要装填钢铁），但是精度较低</description>
         <!--等待贴图-->
@@ -142,7 +142,7 @@
                     <canTargetLocations>true</canTargetLocations>
                 </targetParams>
                 <!--defaultProjectile>Proj_GrenadePhoenixFire</defaultProjectile-->
-                <defaultProjectile>Astro_Bullet_TandemHEAT</defaultProjectile>
+                <defaultProjectile>LOF_Bullet_TandemHEAT</defaultProjectile>
                 <rangedFireRulepack>Combat_RangedFire_Thrown</rangedFireRulepack>
             </li>
         </verbs>
@@ -187,7 +187,7 @@
     </ThingDef>
 
     <ThingDef ParentName="Astro_ArmorBase">
-        <defName>Astro_MiningArmor</defName>
+        <defName>LOF_MiningArmor</defName>
         <label>MI矿业支持设备</label>
         <description>远距离采矿装甲</description>
         <!--等待贴图-->
@@ -244,7 +244,7 @@
     </ThingDef>
 
     <ThingDef ParentName="Astro_ArmorBase">
-        <defName>Astro_EmergencyArmor</defName>
+        <defName>LOF_EmergencyArmor</defName>
         <label>ERT-EMT应急反应护服</label>
         <description>ERT-EMT应急反应护服 desc.</description>
         <tickerType>Normal</tickerType>

@@ -2,7 +2,7 @@
 <Defs>
 
     <ThingDef ParentName="Astro_WeaponRangedBase">
-        <defName>Astro_TandemHEATLauncher</defName>
+        <defName>LOF_TandemHEATLauncher</defName>
         <label>串联破甲战斗部发射器</label>
         <description>一次性反重甲武器，用完弃用.</description>
         <tickerType>Normal</tickerType>
@@ -15,7 +15,7 @@
             <li>RangedHeavy</li>
         </weaponClasses>
         <weaponTags>
-            <li>Astro_WeaponRanged</li>
+            <li>LOF_WeaponRanged</li>
         </weaponTags>
         <!--占位,原版数值-->
         <statBases>
@@ -43,7 +43,7 @@
                 <verbClass>Verb_ShootOneUse</verbClass>
                 <hasStandardCommand>true</hasStandardCommand>
                 <!--应该写个新的弹药种类-->
-                <defaultProjectile>Astro_Bullet_TandemHEAT</defaultProjectile>
+                <defaultProjectile>LOF_Bullet_TandemHEAT</defaultProjectile>
                 <ai_IsBuildingDestroyer>false</ai_IsBuildingDestroyer>
                 <forcedMissRadius>0.1</forcedMissRadius>
                 <warmupTime>2.5</warmupTime>
@@ -80,7 +80,7 @@
         </comps>
     </ThingDef>
     <ThingDef ParentName="BaseBullet">
-        <defName>Astro_Bullet_TandemHEAT</defName>
+        <defName>LOF_Bullet_TandemHEAT</defName>
         <label>串联破甲火箭弹</label>
         <graphicData>
             <texPath>Things/Projectile/TandemHEAT</texPath>
@@ -98,7 +98,7 @@
     </ThingDef>
 
     <ThingDef ParentName="Astro_WeaponRangedBase">
-        <defName>Astro_CarlGustaf</defName>
+        <defName>LOF_CarlGustaf</defName>
         <label>"MPE-4" 反重甲武器</label>
         <description>可再装填的反重甲无后坐力步枪.</description>
         <tickerType>Normal</tickerType>
@@ -111,7 +111,7 @@
             <li>RangedHeavy</li>
         </weaponClasses>
         <weaponTags>
-            <li>Astro_WeaponRanged</li>
+            <li>LOF_WeaponRanged</li>
         </weaponTags>
         <!--占位,原版数值-->
         <statBases>
@@ -139,7 +139,7 @@
                 <verbClass>Verb_Shoot</verbClass>
                 <hasStandardCommand>true</hasStandardCommand>
                 <!--应该写个新的弹药种类-->
-                <defaultProjectile>Astro_Bullet_TandemHEAT</defaultProjectile>
+                <defaultProjectile>LOF_Bullet_TandemHEAT</defaultProjectile>
                 <ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
                 <forcedMissRadius>0.1</forcedMissRadius>
                 <warmupTime>2.5</warmupTime>

@@ -44,7 +44,7 @@
             <effectWorking>Smith</effectWorking>
             <soundWorking>Recipe_Smith</soundWorking>
             <recipeUsers>
-                <li>Astro_FabricationBench</li>
+                <li>LOF_FabricationBench</li>
             </recipeUsers>
             <unfinishedThingDef>UnfinishedWeapon</unfinishedThingDef>
         </recipeMaker>
@@ -63,7 +63,7 @@
         </weaponClasses>
         <recipeMaker>
             <recipeUsers>
-                <li>Astro_FabricationBench</li>
+                <li>LOF_FabricationBench</li>
             </recipeUsers>
             <defaultIngredientFilter>
                 <categories>

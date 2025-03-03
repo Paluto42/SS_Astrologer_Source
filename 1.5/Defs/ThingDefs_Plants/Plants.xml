@@ -2,7 +2,7 @@
 <Defs>
 
     <ThingDef ParentName="PlantBase">
-        <defName>Astro_Plant_Starlightgrass</defName>
+        <defName>LOF_Plant_Starlightgrass</defName>
         <label>星光草球</label>
         <description>晨曦之中，造物主以此等超凡彰显其伟大。--启示录Ⅰ-光明之书.</description>
         <statBases>
@@ -26,7 +26,7 @@
             <maxMeshCount>4</maxMeshCount>
             <harvestTag>Standard</harvestTag>
             <!--星光草-->
-            <harvestedThingDef>Astro_Starlightgrass</harvestedThingDef>
+            <harvestedThingDef>LOF_Starlightgrass</harvestedThingDef>
             <harvestYield>18</harvestYield>
             <neverBlightable>true</neverBlightable>
             <sowTags>

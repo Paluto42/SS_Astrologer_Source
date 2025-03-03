@@ -2,7 +2,7 @@
 <Defs>
 
     <FactionDef ParentName="FactionBase">
-        <defName>Astro_Empire</defName>
+        <defName>LOF_Empire</defName>
         <label>繁星帝国</label>
         <description>desc.</description>
         <factionIconPath>UI/Icons/RK_icon</factionIconPath>
@@ -12,7 +12,7 @@
         <leaderTitle>帝国领主</leaderTitle>
         <fixedName>繁星帝国</fixedName>
         <allowedCultures Inherit="False">
-            <li>Astro_Culture</li>
+            <li>LOF_Culture</li>
         </allowedCultures>
         <disallowedMemes>
             <li MayRequire="Ludeon.RimWorld.Ideology">MaleSupremacy</li>

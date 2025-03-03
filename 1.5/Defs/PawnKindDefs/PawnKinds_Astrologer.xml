@@ -3,7 +3,7 @@
 
 	<PawnKindDef Name="Astro_PawnBase" Abstract="True">
 		<race>Human</race>
-		<defaultFactionType>Astro_Empire</defaultFactionType>
+		<defaultFactionType>LOF_Empire</defaultFactionType>
 		<backstoryCryptosleepCommonality>0</backstoryCryptosleepCommonality>
 		<invNutrition>2</invNutrition>
 		<!--gearHealthRange>0.8~1.0</gearHealthRange-->
@@ -68,7 +68,7 @@
 	</PawnKindDef>
 
 	<PawnKindDef ParentName="Astro_CitizenBase">
-		<defName>Astro_Citizen</defName>
+		<defName>LOF_Citizen</defName>
 		<label>繁星帝国公民</label>
 		<labelPlural>繁星帝国公民</labelPlural>
 		<combatPower>80</combatPower>
@@ -88,7 +88,7 @@
 	</PawnKindDef>
 
 	<PawnKindDef ParentName="Astro_CitizenBase">
-		<defName>Astro_EmpireLeader</defName>
+		<defName>LOF_EmpireLeader</defName>
 		<label>繁星帝国参议长</label>
 		<combatPower>300</combatPower>
 		<factionLeader>true</factionLeader>

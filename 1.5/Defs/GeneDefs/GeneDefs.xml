@@ -35,7 +35,7 @@
     </GeneDef>
 
     <GeneDef ParentName="Astro_BodyGene">
-        <defName>Astro_Gene_Main</defName>
+        <defName>LOF_Gene_Main</defName>
         <label>占星师</label>
         <description>占星师种族的核心基因.</description>
         <descriptionHyperlinks>
@@ -43,6 +43,7 @@
         <iconPath>UI/Icons/Genes/Gene_Sanguine</iconPath>
         <biostatCpx>3</biostatCpx>
         <biostatMet>4</biostatMet>
+		<geneClass>Astrologer.Gene_Astrologer</geneClass>
         <statOffsets>
             <ComfyTemperatureMin>-20</ComfyTemperatureMin>
             <ComfyTemperatureMax>20</ComfyTemperatureMax>
@@ -60,12 +61,21 @@
         <modExtensions>
             <li Class="Astrologer.Ext_AstrologerGene">
                 <forcedBodyType>Astrologer_Body</forcedBodyType>
+				<astroAbility>LOF_VAbility_Operator</astroAbility>
             </li>
         </modExtensions>
     </GeneDef>
+	
+	<AbilityDef ParentName="AK_OperatorIDBase">
+		<defName>LOF_VAbility_Operator</defName>
+		<label>占星</label>
+		<description>desc</description>
+		<abilityClass>Astrologer.VAB_AstroTracker</abilityClass>
+		<iconPath>UI/Element/Arknights</iconPath>
+	</AbilityDef>
 
     <GeneDef>
-        <defName>Astrologer_Gene_InsightEye</defName>
+        <defName>LOF_Gene_InsightEye</defName>
         <label>目光闪闪</label>
         <description>基因携带者加命中率,减瞄准时间.</description>
         <iconPath>UI/Icons/Genes/Skills/Shooting/strong</iconPath>
@@ -91,7 +101,7 @@
     </GeneDef>
 
     <GeneDef>
-        <defName>Astrologer_Gene_MeleeWeak</defName>
+        <defName>LOF_Gene_MeleeWeak</defName>
         <label>近战苦手</label>
         <description>基因携带者减少近战技能，减近战命中率.</description>
         <iconPath>UI/Icons/Genes/Skills/Melee/poor</iconPath>
@@ -108,7 +118,7 @@
     </GeneDef>
 
     <GeneDef>
-        <defName>Astrologer_Gene_StargazingFavor</defName>
+        <defName>LOF_Gene_StargazingFavor</defName>
         <label>爱好观星</label>
         <description>每天只睡4个小时只为了观星吗...你这家伙</description>
         <iconPath>UI/Icons/Genes/Gene_QuickSleeper</iconPath>
@@ -146,7 +156,7 @@
     </GeneDef-->
 
     <GeneDef>
-        <defName>Astrologer_Gene_FearlessWill</defName>
+        <defName>LOF_Gene_FearlessWill</defName>
         <label>无畏意志</label>
         <description>来自群星的指示让占星师们的意志变的更加坚定</description>
         <iconPath>UI/Icons/Genes/Gene_Sanguine</iconPath>
@@ -164,7 +174,7 @@
     </GeneDef>
 
     <GeneDef>
-        <defName>Astrologer_Gene_StarSeeker</defName>
+        <defName>LOF_Gene_StarSeeker</defName>
         <label>群星探索者</label>
         <description>desc.</description>
         <iconPath>UI/Icons/Genes/Gene_Sanguine</iconPath>

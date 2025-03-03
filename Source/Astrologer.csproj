@@ -104,10 +104,11 @@
     <Compile Include="Building\TCP_NightGenerator.cs" />
     <Compile Include="Comp\TCP_HediffApparel.cs" />
     <Compile Include="Gene\Ext_AstrologerGene.cs" />
+    <Compile Include="Gene\Gene_Astrologer.cs" />
     <Compile Include="HarmonyPatches\Patch_GeneTracker.cs" />
     <Compile Include="HarmonyPatches\Patch_Main.cs" />
     <Compile Include="HarmonyPatches\Patch_PawnGenerator.cs" />
-    <Compile Include="Insight\AstroTracker.cs" />
+    <Compile Include="Insight\VAB_AstroTracker.cs" />
     <Compile Include="Insight\InteractableComp\IInsightInteractable.cs" />
     <Compile Include="Insight\InteractableComp\JobDriver_InsightInteract.cs" />
     <Compile Include="Insight\InteractableComp\TCP_AddHediffInRange.cs" />

@@ -2,7 +2,7 @@
 <Defs>
 
     <CultureDef Name="Astrologer">
-        <defName>Astro_Culture</defName>
+        <defName>LOF_Culture</defName>
         <label>占星师</label>
         <description>占星师的文化形态。</description>
         <ideoNameMaker MayRequire="Ludeon.RimWorld.Ideology">NamerIdeoAstropolitan</ideoNameMaker>

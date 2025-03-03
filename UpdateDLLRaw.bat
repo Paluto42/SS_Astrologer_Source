@@ -12,4 +12,6 @@ COPY "%2\AK_TypeDef\bin\Debug\1AK_TypeDef.dll" "%1\Assemblies\"
 DEL "%1\Assemblies\2AKR_WeightedRandomUnified.dll"
 COPY "%2\AKR_WeightedRandomUnified\bin\Debug\2AKR_WeightedRandomUnified.dll" "%1\Assemblies\"
 
+DEL "%1\Assemblies\Astrologer.dll"
+COPY "S:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\__StarSeeker\Source\bin\Debug\Astrologer.dll" "%1\Assemblies\"
 PAUSE

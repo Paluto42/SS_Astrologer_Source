@@ -11,6 +11,6 @@ namespace Astrologer
     public class Ext_AstrologerGene : DefModExtension
     {
         public BodyTypeDef forcedBodyType;
-
+        public AbilityDef astroAbility;  //舟同款，电子身份证
     }
 }

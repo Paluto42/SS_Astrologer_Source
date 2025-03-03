@@ -41,7 +41,7 @@
     </ThingDef>
 
     <ThingDef ParentName="Astro_ApparelBase">
-        <defName>Astro_MountaineerHat</defName>
+        <defName>LOF_MountaineerHat</defName>
         <label>登山帽</label>
         <description>在繁星帝国，很多占星师喜欢在夜间的山顶观星，这顶登山帽很好的满足了她们对于保暖的需求</description>
         <thingCategories Inherit="false">
@@ -111,7 +111,7 @@
     </ThingDef>
 
     <ThingDef ParentName="Astro_HelmetBase">
-        <defName>Astro_LightHelmet</defName>
+        <defName>LOF_LightHelmet</defName>
         <label>生存作战头盔</label>
         <description>轻量化全能型作战头盔，较高的锐防和普通的钝防,同时能过滤一定量的毒气吸入</description>
         <!--等待贴图-->
@@ -139,7 +139,7 @@
         </equippedStatOffsets>
         <comps>
             <!--li Class="Astrologer.TCP_HediffApparel">
-                <hediff>Astro_Hediff_Airpurifier</hediff>
+                <hediff>LOF_Hediff_Airpurifier</hediff>
             </li-->
         </comps>
         <!--材料-->
@@ -166,7 +166,7 @@
     </ThingDef>
 
     <ThingDef ParentName="Astro_HelmetBase">
-        <defName>Astro_StandardHelmet</defName>
+        <defName>LOF_StandardHelmet</defName>
         <label>"MPE-2" 制式头盔</label>
         <description>"MPE-2"制式头盔，增加瞄准能力，防毒防腐气</description>
         <!--等待贴图-->
@@ -217,7 +217,7 @@
     </ThingDef>
 
     <ThingDef ParentName="Astro_HelmetBase">
-        <defName>Astro_MiningHelmet</defName>
+        <defName>LOF_MiningHelmet</defName>
         <label>MI矿业支持头盔</label>
         <description>desc.</description>
         <!--等待贴图-->
@@ -267,7 +267,7 @@
     </ThingDef>
 
     <ThingDef ParentName="Astro_HelmetBase">
-        <defName>Astro_EmergencyHelmet</defName>
+        <defName>LOF_EmergencyHelmet</defName>
         <label>ERT-EMT应急反应面罩</label>
         <description>desc.</description>
         <!--等待贴图-->

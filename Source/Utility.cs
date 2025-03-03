@@ -30,7 +30,7 @@ namespace Astrologer
             return doc;
         }
 
-        public static AstroTracker TryGetAstroTracker(this Pawn p)
+        public static VAB_AstroTracker TryGetAstroTracker(this Pawn p)
         {
             return TryGetAstroDoc(p)?.astroTracker;
         }
@@ -45,7 +45,7 @@ namespace Astrologer
 
         public static void TryOffsetInsight(this Pawn p, float amt)
         {
-            AstroTracker tracker = TryGetAstroTracker(p);
+            VAB_AstroTracker tracker = TryGetAstroTracker(p);
             if (tracker == null) return;
 
             tracker.insight += amt;

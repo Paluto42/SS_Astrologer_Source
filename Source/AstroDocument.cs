@@ -19,7 +19,7 @@ namespace Astrologer
     }
     public class AstroDocument : DocumentBase
     {
-        public AstroTracker astroTracker;
+        public VAB_AstroTracker astroTracker;
 
         //一些技能和装备的效果以string注册在这里，int是持续到多少tick
         //总量少 没做回收

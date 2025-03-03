@@ -2,7 +2,7 @@
 <Defs>
 
     <IncidentDef>
-        <defName>Astro_WandererJoin</defName>
+        <defName>LOF_WandererJoin</defName>
         <label>占星师旅客加入</label>
         <category>Misc</category>
         <targetTags>

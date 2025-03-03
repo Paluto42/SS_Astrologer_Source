@@ -36,7 +36,7 @@
     </ThingDef>
 
     <ThingDef ParentName="Astro_ClothBase">
-        <defName>Astro_FrillOnepiece</defName>
+        <defName>LOF_FrillOnepiece</defName>
         <label>连衣裙</label>
         <description>研究所人员统一配给的服装，轻便保暖，胸口烫印着繁星帝国的徽章\n基于占星师热爱探索的特质，穿戴连衣裙会增加研究速度.</description>
         <!--等待贴图-->
@@ -85,7 +85,7 @@
     </ThingDef>
 
     <ThingDef ParentName="Astro_ClothBase">
-        <defName>Astro_MountaineerOutfit</defName>
+        <defName>LOF_MountaineerOutfit</defName>
         <label>登山服</label>
         <description>在繁星帝国，很多占星师喜欢在夜间的山顶观星，这件登山服很好的满足了她们对于保暖的需求</description>
         <!--等待贴图-->
@@ -132,7 +132,7 @@
     </ThingDef>
 
     <ThingDef ParentName="Astro_ClothBase">
-        <defName>Astro_MountaineerPants</defName>
+        <defName>LOF_MountaineerPants</defName>
         <label>登山裤</label>
         <description>在繁星帝国，很多占星师喜欢在夜间的山顶观星，这件登山裤很好的满足了她们对于保暖的需求</description>
         <!--等待贴图-->
@@ -174,7 +174,7 @@
     </ThingDef>
 
     <ThingDef ParentName="Astro_ClothBase">
-        <defName>Astro_Camisole</defName>
+        <defName>LOF_Camisole</defName>
         <description>贴身防护服.</description>
         <label>贴身防护服</label>
         <!--等待贴图-->
@@ -216,7 +216,7 @@
     </ThingDef>
 
     <ThingDef ParentName="Astro_ClothBase">
-        <defName>Astro_SocialMaster</defName>
+        <defName>LOF_SocialMaster</defName>
         <label>社交大师(服装)</label>
         <description>纪念碑上所载一切自永远至永远不会再重复，因为注定经受高买低卖的殖民者不会有第二次机会在边缘世界出现\n增加卖出系数，减买进系数</description>
         <!--等待贴图-->
@@ -266,7 +266,7 @@
     </ThingDef>
 
     <ThingDef ParentName="Astro_ApparelBase">
-        <defName>Astro_SocialMaster_Glasses</defName>
+        <defName>LOF_SocialMaster_Glasses</defName>
         <label>社交大师(墨镜)</label>
         <description>多年以后，面对高级零部件，占星师小姐会回想起运输仓带她去见识奸商的那个遥远的下午\n加魅力加社交能力</description>
         <thingCategories Inherit="false">
