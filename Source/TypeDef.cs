@@ -12,11 +12,11 @@ namespace Astrologer
     [DefOf]
     public static class AstroDefOf
     {
-        public static ThingDef AS_Laundy;
+        public static ThingDef LOF_Thing_Laundy;
 
-        public static JobDef AS_Job_FillLaundry;
-        public static JobDef AS_Job_InsightInteract; //需要洞察的建筑互动通用这个job
+        public static JobDef LOF_Job_FillLaundry;
+        public static JobDef LOF_Job_InsightInteract; //需要洞察的建筑互动通用这个job
 
-        public static GeneDef Astro_Gene_Main;
+        public static GeneDef LOF_Gene_Main;
     }
 }

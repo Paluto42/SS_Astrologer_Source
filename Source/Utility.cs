@@ -11,7 +11,7 @@ namespace Astrologer
         public static bool HasAstroGene(Pawn_GeneTracker genes)
         {
             if (genes == null) return false;
-            if (genes.HasEndogene(AstroDefOf.Astro_Gene_Main)) return true;
+            if (genes.HasEndogene(AstroDefOf.LOF_Gene_Main)) return true;
             return false;
         }
         public static bool IsTickInterval(int tick)

@@ -3,7 +3,7 @@
 
     <ThingDef Name="Astro_ArmorBase" ParentName="Astro_ApparelBase" Abstract="True">
         <thingCategories Inherit="false">
-            <li>Astrologer_Armor</li>
+            <li>LOF_AS_Category_Armor</li>
         </thingCategories>
         <apparel>
             <defaultOutfitTags>

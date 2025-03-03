@@ -55,7 +55,7 @@
 
     <ThingDef Name="Astro_WeaponMeleeBase" Abstract="True" ParentName="Astro_MedievalWeaponBase">
         <thingCategories>
-            <li>Astrologer_WeaponMelee</li>
+            <li>LOF_AS_Category_WeaponMelee</li>
         </thingCategories>
         <weaponClasses>
             <li>Melee</li>
@@ -93,13 +93,13 @@
 
     <ThingDef Name="Astro_WeaponRangedBase" Abstract="True" ParentName="Astro_IndustrialWeaponBase">
         <thingCategories>
-            <li>Astrologer_WeaponRanged</li>
+            <li>LOF_AS_Category_WeaponRanged</li>
         </thingCategories>
         <weaponClasses>
             <li>Ranged</li>
         </weaponClasses>
         <tradeTags>
-            <li>Astrologer_WeaponRanged</li>
+            <li>LOF_AS_Category_WeaponRanged</li>
         </tradeTags>
         <comps>
             <li>

@@ -68,7 +68,7 @@
 	</PawnKindDef>
 
 	<PawnKindDef ParentName="Astro_CitizenBase">
-		<defName>LOF_Citizen</defName>
+		<defName>LOF_PawnKind_Citizen</defName>
 		<label>繁星帝国公民</label>
 		<labelPlural>繁星帝国公民</labelPlural>
 		<combatPower>80</combatPower>
@@ -97,7 +97,7 @@
 		<forceDeathOnDowned>true</forceDeathOnDowned>
 		<initialResistanceRange>80~100</initialResistanceRange>
 		<apparelTags>
-			<li>Astrologer_Armor</li>
+			<li>LOF_AS_Category_Armor</li>
 		</apparelTags>
 		<apparelRequired>
 		</apparelRequired>

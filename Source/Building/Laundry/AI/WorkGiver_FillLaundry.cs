@@ -45,7 +45,7 @@ namespace Astrologer.Laundry
         //protected virtual Predicate<Thing> ContentValidator => validatorDummy.ContentValidator; //看着有点别扭，但这样应该更快 因为validator不能是static
         //protected virtual String CompID => validatorDummy.SSR_ID;
 
-        protected virtual JobDef FillJob => AstroDefOf.AS_Job_FillLaundry;
+        protected virtual JobDef FillJob => AstroDefOf.LOF_Job_FillLaundry;
 
         protected bool _ContentValidator(Thing t)
         {
@@ -61,7 +61,7 @@ namespace Astrologer.Laundry
 
             if (!pawn.CanReserve(t)) return null;
 
-            List<Building> laundrys = pawn.Map.listerBuildings.AllBuildingsColonistOfDef(AstroDefOf.AS_Laundy);
+            List<Building> laundrys = pawn.Map.listerBuildings.AllBuildingsColonistOfDef(AstroDefOf.LOF_Thing_Laundy);
             Thing laundry = GenClosest.ClosestThing_Global_Reachable(pawn.Position, pawn.Map, laundrys, PathEndMode.ClosestTouch, TraverseParms.For(pawn), SEARCH_RADIUS, LaundryValidator);
 
             if (laundry == null) return null;

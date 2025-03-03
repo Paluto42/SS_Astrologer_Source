@@ -7,7 +7,7 @@
         <workerClass>DamageWorker_AddInjury</workerClass>
         <externalViolence>true</externalViolence>
         <deathMessage>{0} has been shot to death.</deathMessage>
-        <hediff>AS_PsychicShockGunshot</hediff>
+        <hediff>LOF_PsychicShockGunshot</hediff>
         <harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
         <impactSoundType>Bullet</impactSoundType>
         <armorCategory>Sharp</armorCategory>

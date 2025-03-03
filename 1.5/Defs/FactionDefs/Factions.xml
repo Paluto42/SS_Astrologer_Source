@@ -48,13 +48,13 @@
             <li>
 				<kindDef>Combat</kindDef>
 				<options>
-					<Astro_EmpireLeader>1</Astro_EmpireLeader>
+					<LOF_EmpireLeader>1</LOF_EmpireLeader>
 				</options>
 			</li>
             <li>
                 <kindDef>Peaceful</kindDef>
                 <options>
-                    <Astro_Citizen>30</Astro_Citizen>
+                    <LOF_PawnKind_Citizen>30</LOF_PawnKind_Citizen>
                 </options>
             </li>
         </pawnGroupMakers>

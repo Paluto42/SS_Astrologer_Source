@@ -2,7 +2,7 @@
 <Defs>
 
     <HediffDef ParentName="InjuryBase">
-        <defName>AS_PsychicShockGunshot</defName>
+        <defName>LOF_PsychicShockGunshot</defName>
         <label>gunshot</label>
         <labelNoun>a gunshot wound</labelNoun>
         <description>A gunshot wound.</description>

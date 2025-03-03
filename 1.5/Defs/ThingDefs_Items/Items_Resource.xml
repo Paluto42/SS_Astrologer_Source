@@ -25,7 +25,7 @@
             <BluntDamageMultiplier>1.2</BluntDamageMultiplier>
         </statBases>
         <thingCategories>
-            <li>Astrologer_Resources</li>
+            <li>LOF_AS_Category_Resources</li>
         </thingCategories>
         <deepCommonality>0</deepCommonality>
         <burnableByRecipe>false</burnableByRecipe>
@@ -78,7 +78,7 @@
             </li>
         </comps>
         <thingCategories>
-            <li>Astrologer_Resources</li>
+            <li>LOF_AS_Category_Resources</li>
             <li>PlantMatter</li>
             <li>ResourcesRaw</li>
         </thingCategories>

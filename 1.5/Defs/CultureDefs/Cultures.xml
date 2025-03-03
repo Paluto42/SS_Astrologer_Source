@@ -16,7 +16,7 @@
         <iconPath>UI/Icons/RK_icon</iconPath>
         <styleItemTags>
             <li>
-                <tag>Astrologer_Style</tag>
+                <tag>LOF_AS_Tag_Style</tag>
                 <baseWeight>10</baseWeight>
                 <weightFactor>1</weightFactor>
             </li>

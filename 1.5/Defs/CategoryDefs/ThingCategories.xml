@@ -2,7 +2,7 @@
 <Defs>
 
 	<ThingCategoryDef>
-		<defName>Astrologer_Resources</defName>
+		<defName>LOF_AS_Category_Resources</defName>
 		<label>繁星帝国特产</label>
 		<parent>Root</parent>
 		<resourceReadoutRoot>true</resourceReadoutRoot>
@@ -10,69 +10,69 @@
 	</ThingCategoryDef>
 
 	<ThingCategoryDef>
-		<defName>Astrologer_Apparel</defName>
+		<defName>LOF_AS_Category_Apparel</defName>
 		<label>繁星帝国服饰</label>
-		<parent>Apparel</parent>
+		<parent>Apparel</parent> 
 	</ThingCategoryDef>
 
 	<ThingCategoryDef>
-		<defName>Astrologer_Cloth</defName>
+		<defName>LOF_AS_Category_Cloth</defName>
 		<label>繁星帝国服装</label>
-		<parent>Astrologer_Apparel</parent>
+		<parent>LOF_AS_Category_Apparel</parent>
 	</ThingCategoryDef>
 
 	<ThingCategoryDef>
-		<defName>Astrologer_CitizenCloth</defName>
+		<defName>LOF_AS_Category_CitizenCloth</defName>
 		<label>繁星帝国公民常服</label>
-		<parent>Astrologer_Cloth</parent>
+		<parent>LOF_AS_Category_Cloth</parent>
 	</ThingCategoryDef>
 
 	<ThingCategoryDef>
-		<defName>Astrologer_Accessory</defName>
+		<defName>LOF_AS_Category_Accessory</defName>
 		<label>繁星帝国饰品</label>
-		<parent>Astrologer_Apparel</parent>
+		<parent>LOF_AS_Category_Apparel</parent>
 	</ThingCategoryDef>
 
 	<ThingCategoryDef>
-		<defName>Astrologer_Equipment</defName>
+		<defName>LOF_AS_Category_Equipment</defName>
 		<label>繁星帝国装备</label>
-		<parent>Astrologer_Apparel</parent>
+		<parent>LOF_AS_Category_Apparel</parent>
 	</ThingCategoryDef>
 
 	<ThingCategoryDef>
-		<defName>Astrologer_Armor</defName>
+		<defName>LOF_AS_Category_Armor</defName>
 		<label>繁星帝国制式防具</label>
-		<parent>Astrologer_Apparel</parent>
+		<parent>LOF_AS_Category_Apparel</parent>
 	</ThingCategoryDef>
 
 	<ThingCategoryDef>
-		<defName>Astrologer_Armor_Advanced</defName>
+		<defName>LOF_AS_Category_Armor_Advanced</defName>
 		<label>繁星帝国高级防具</label>
-		<parent>Astrologer_Apparel</parent>
+		<parent>LOF_AS_Category_Apparel</parent>
 	</ThingCategoryDef>
 
 	<ThingCategoryDef>
-		<defName>Astrologer_Weapon</defName>
+		<defName>LOF_AS_Category_Weapon</defName>
 		<label>繁星帝国所属军事财产</label>
 		<parent>Weapons</parent>
 	</ThingCategoryDef>
 
 	<ThingCategoryDef>
-		<defName>Astrologer_WeaponMelee</defName>
+		<defName>LOF_AS_Category_WeaponMelee</defName>
 		<label>繁星帝国制式格斗作战武器</label>
-		<parent>Astrologer_Weapon</parent>
+		<parent>LOF_AS_Category_Weapon</parent>
 	</ThingCategoryDef>
 
 	<ThingCategoryDef>
-		<defName>Astrologer_WeaponRanged</defName>
+		<defName>LOF_AS_Category_WeaponRanged</defName>
 		<label>繁星帝国标准远距作战武器</label>
-		<parent>Astrologer_Weapon</parent>
+		<parent>LOF_AS_Category_Weapon</parent>
 	</ThingCategoryDef>
 
 	<ThingCategoryDef>
-		<defName>Astrologer_WeaponRanged_Advanced</defName>
+		<defName>LOF_AS_Category_WeaponRanged_Advanced</defName>
 		<label>繁星帝国高级远距作战武器</label>
-		<parent>Astrologer_Weapon</parent>
+		<parent>LOF_AS_Category_Weapon</parent>
 	</ThingCategoryDef>
 
 </Defs>

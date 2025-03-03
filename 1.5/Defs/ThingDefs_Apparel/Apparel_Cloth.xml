@@ -3,7 +3,7 @@
 
     <ThingDef Name="Astro_ClothBase" ParentName="Astro_ApparelBase" Abstract="True">
         <thingCategories Inherit="false">
-            <li>Astrologer_Cloth</li>
+            <li>LOF_AS_Category_Cloth</li>
         </thingCategories>
         <recipeMaker>
             <!--researchPrerequisite>ComplexClothing</researchPrerequisite-->
@@ -270,7 +270,7 @@
         <label>社交大师(墨镜)</label>
         <description>多年以后，面对高级零部件，占星师小姐会回想起运输仓带她去见识奸商的那个遥远的下午\n加魅力加社交能力</description>
         <thingCategories Inherit="false">
-            <li>Astrologer_Accessory</li>
+            <li>LOF_AS_Category_Armor</li>
         </thingCategories>
         <!--等待贴图-->
         <graphicData>
@@ -309,7 +309,7 @@
                 <li>Worker</li>
             </defaultOutfitTags>
             <tags>
-                <li>Astrologer_Accessory</li>
+                <li>LOF_AS_Category_Armor</li>
             </tags>
         </apparel>
         <recipeMaker>
