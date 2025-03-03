@@ -103,6 +103,7 @@
     <Compile Include="Building\StellarStove.cs" />
     <Compile Include="Building\TCP_NightGenerator.cs" />
     <Compile Include="Comp\TCP_HediffApparel.cs" />
+    <Compile Include="DebugActions.cs" />
     <Compile Include="Gene\Ext_AstrologerGene.cs" />
     <Compile Include="Gene\Gene_Astrologer.cs" />
     <Compile Include="HarmonyPatches\Patch_GeneTracker.cs" />
