@@ -18,5 +18,7 @@ namespace Astrologer
         public static JobDef LOF_Job_InsightInteract; //需要洞察的建筑互动通用这个job
 
         public static GeneDef LOF_Gene_Main;
+
+        public static ThingDef LOF_Starlightgrass; //种地上的 植物 星光草
     }
 }

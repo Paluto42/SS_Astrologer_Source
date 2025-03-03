@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using UnityEngine;
 using Verse;
 
 namespace Astrologer
@@ -13,6 +14,14 @@ namespace Astrologer
     {
         public float insight = 0;
 
+        public const float insightCapacity = 100;
+
+        public const float insightRegenPerTick = 100;
+        public const float insightRegenTickInterval = 250;
+
+        public const float insightRegenBonusNearStarGrass = 10; //靠近草时回复奖励
+
+        public const float starGrassObserveDistance = 5;
         public VAB_AstroTracker(Pawn pawn) : base(pawn)
         {
         }
@@ -24,6 +33,32 @@ namespace Astrologer
 
         public override void AbilityTick()
         {
+            if (Utility.CrtTick % insightRegenTickInterval == 0)
+            {
+                insight += insightRegenPerTick;
+                Map map = pawn.Map;
+                if (map != null)
+                {
+                    foreach (Thing t in map.listerThings.ThingsOfDef(AstroDefOf.LOF_Starlightgrass))
+                    {
+                        if (PossibleToObserve(t))
+                        {
+                            insight += insightRegenBonusNearStarGrass;
+                            break;
+                        }
+                    }
+                }
+                insight = Mathf.Clamp(insight, 0, insightCapacity);
+            }
+        }
+
+        private bool PossibleToObserve(Thing thing)
+        {
+            if (thing.Position.InHorDistOf(pawn.Position, starGrassObserveDistance))
+            {
+                return GenSight.LineOfSight(thing.Position, pawn.Position, pawn.Map, skipFirstCell: true);
+            }
+            return false;
         }
 
         public override void ExposeData()
