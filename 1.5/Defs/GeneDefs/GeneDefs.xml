@@ -9,7 +9,7 @@
         <selectionWeight>0</selectionWeight>
         <tattoosVisible>false</tattoosVisible>
         <displayOrderInCategory>1</displayOrderInCategory>
-        <displayCategory>AstrologerGene</displayCategory>
+        <displayCategory>Astro_GeneCategory</displayCategory>
         <bodyType>Standard</bodyType>
         <beardTagFilter>
             <whitelist>true</whitelist>
@@ -49,19 +49,20 @@
             <ComfyTemperatureMax>20</ComfyTemperatureMax>
         </statOffsets>
         <forcedHeadTypes>
-            <li>Astrologer_Head_A</li>
-            <li>Astrologer_Head_B</li>
-            <li>Astrologer_Head_C</li>
-            <li>Astrologer_Head_D</li>
-            <li>Astrologer_Head_E</li>
-            <li>Astrologer_Head_F</li>
+            <li>Astro_Head_A</li>
+            <li>Astro_Head_B</li>
+            <li>Astro_Head_C</li>
+            <li>Astro_Head_D</li>
+            <li>Astro_Head_E</li>
+            <li>Astro_Head_F</li>
         </forcedHeadTypes>
         <forcedTraits>
         </forcedTraits>
         <modExtensions>
             <li Class="Astrologer.Ext_AstrologerGene">
-                <forcedBodyType>Astrologer_Body</forcedBodyType>
+                <forcedBodyType>Astro_Body</forcedBodyType>
                 <astroAbility>LOF_VAbility_Operator</astroAbility>
+                <skinColorOverride>(255, 255, 255)</skinColorOverride>
             </li>
         </modExtensions>
     </GeneDef>
@@ -79,7 +80,7 @@
         <label>目光闪闪</label>
         <description>基因携带者加命中率,减瞄准时间.</description>
         <iconPath>UI/Icons/Genes/Skills/Shooting/strong</iconPath>
-        <displayCategory>AstrologerGene</displayCategory>
+        <displayCategory>Astro_GeneCategory</displayCategory>
         <displayOrderInCategory>30</displayOrderInCategory>
         <statOffsets>
             <ShootingAccuracyPawn>5.0</ShootingAccuracyPawn>
@@ -105,7 +106,7 @@
         <label>近战苦手</label>
         <description>基因携带者减少近战技能，减近战命中率.</description>
         <iconPath>UI/Icons/Genes/Skills/Melee/poor</iconPath>
-        <displayCategory>AstrologerGene</displayCategory>
+        <displayCategory>Astro_GeneCategory</displayCategory>
         <displayOrderInCategory>20</displayOrderInCategory>
         <aptitudes>
             <Melee>-4</Melee>
@@ -122,7 +123,7 @@
         <label>爱好观星</label>
         <description>每天只睡4个小时只为了观星吗...你这家伙</description>
         <iconPath>UI/Icons/Genes/Gene_QuickSleeper</iconPath>
-        <displayCategory>AstrologerGene</displayCategory>
+        <displayCategory>Astro_GeneCategory</displayCategory>
         <displayOrderInCategory>30</displayOrderInCategory>
         <statFactors>
             <RestFallRateFactor>0.4</RestFallRateFactor>
@@ -146,7 +147,7 @@
         <label>不喜采矿</label>
         <description>占星师们天生就反感从事采矿工作</description>
         <iconPath>UI/Icons/Genes/Skills/Mining/poor</iconPath>
-        <displayCategory>AstrologerGene</displayCategory>
+        <displayCategory>Astro_Gene</displayCategory>
         <displayOrderInCategory>20</displayOrderInCategory>
         <aptitudes>
             <Mining>-4</Mining>
@@ -160,7 +161,7 @@
         <label>无畏意志</label>
         <description>来自群星的指示让占星师们的意志变的更加坚定</description>
         <iconPath>UI/Icons/Genes/Gene_Sanguine</iconPath>
-        <displayCategory>AstrologerGene</displayCategory>
+        <displayCategory>Astro_GeneCategory</displayCategory>
         <displayOrderInCategory>30</displayOrderInCategory>
         <statFactors>
             <CertaintyLossFactor MayRequire="ludeon.rimworld.ideology">0.5</CertaintyLossFactor>
@@ -178,7 +179,7 @@
         <label>群星探索者</label>
         <description>desc.</description>
         <iconPath>UI/Icons/Genes/Gene_Sanguine</iconPath>
-        <displayCategory>AstrologerGene</displayCategory>
+        <displayCategory>Astro_GeneCategory</displayCategory>
         <displayOrderInCategory>30</displayOrderInCategory>
         <aptitudes>
             <Intellectual>4</Intellectual>

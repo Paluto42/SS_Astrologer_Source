@@ -1,6 +1,8 @@
 ﻿using HarmonyLib;
+using RimWorld;
 using System;
 using System.Collections.Generic;
+using System.Diagnostics.Eventing.Reader;
 using System.Linq;
 using System.Reflection;
 using System.Text;
@@ -16,6 +18,7 @@ namespace Astrologer.HarmonyPatches
         {
             Harmony harmony = new("Astrologer.patch");
             harmony.PatchAll(Assembly.GetExecutingAssembly());
+            //harmony.Patch(AccessTools.Property(typeof(Pawn_StoryTracker), "SkinColor").GetGetMethod(), null, new HarmonyMethod(typeof(Patch_SkinColor), "Postfix_get_SkinColor"));
         }
     }
 }

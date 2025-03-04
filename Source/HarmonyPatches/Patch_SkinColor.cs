@@ -1,0 +1,28 @@
+﻿using HarmonyLib;
+using RimWorld;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using UnityEngine;
+using Verse;
+
+namespace Astrologer.HarmonyPatches
+{
+    [HarmonyPatch(typeof(Pawn_StoryTracker), "SkinColor", MethodType.Getter)]
+    public class Patch_SkinColor
+    {
+        [HarmonyPostfix]
+        public static void Postfix(Pawn ___pawn, ref Color __result)
+        {
+            if (___pawn.genes.HasAstroGene() == false) return;
+            Gene astroGene = ___pawn.genes.GetAstroGene();
+            Ext_AstrologerGene ext = astroGene.def.GetModExtension<Ext_AstrologerGene>();
+            if (ext != null && ext.skinColorOverride != null)
+            {
+                __result = ext.skinColorOverride.Value;
+            }
+        }
+    }
+}

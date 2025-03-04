@@ -2,8 +2,8 @@
 <Defs>
 
     <HeadTypeDef>
-        <defName>Astrologer_Head_A</defName>
-        <label>占星师_A</label>
+        <defName>Astro_Head_A</defName>
+        <label>Astro_A</label>
         <requiredGenes>
             <li>LOF_Gene_Main</li>
         </requiredGenes>
@@ -14,8 +14,8 @@
     </HeadTypeDef>
 
     <HeadTypeDef>
-        <defName>Astrologer_Head_B</defName>
-        <label>占星师_B</label>
+        <defName>Astro_Head_B</defName>
+        <label>Astro_B</label>
         <requiredGenes>
             <li>LOF_Gene_Main</li>
         </requiredGenes>
@@ -26,8 +26,8 @@
     </HeadTypeDef>
 
     <HeadTypeDef>
-        <defName>Astrologer_Head_C</defName>
-        <label>占星师_C</label>
+        <defName>Astro_Head_C</defName>
+        <label>Astro_C</label>
         <requiredGenes>
             <li>LOF_Gene_Main</li>
         </requiredGenes>
@@ -38,8 +38,8 @@
     </HeadTypeDef>
 
     <HeadTypeDef>
-        <defName>Astrologer_Head_D</defName>
-        <label>占星师_D</label>
+        <defName>Astro_Head_D</defName>
+        <label>Astro_D</label>
         <requiredGenes>
             <li>LOF_Gene_Main</li>
         </requiredGenes>
@@ -50,8 +50,8 @@
     </HeadTypeDef>
 
     <HeadTypeDef>
-        <defName>Astrologer_Head_E</defName>
-        <label>占星师_E</label>
+        <defName>Astro_Head_E</defName>
+        <label>Astro_E</label>
         <requiredGenes>
             <li>LOF_Gene_Main</li>
         </requiredGenes>
@@ -62,8 +62,8 @@
     </HeadTypeDef>
 
     <HeadTypeDef>
-        <defName>Astrologer_Head_F</defName>
-        <label>占星师_F</label>
+        <defName>Astro_Head_F</defName>
+        <label>Astro_F</label>
         <requiredGenes>
             <li>LOF_Gene_Main</li>
         </requiredGenes>

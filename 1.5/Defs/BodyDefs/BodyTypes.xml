@@ -6,7 +6,7 @@
 	</BodyTypeDef>
 
 	<BodyTypeDef ParentName="AS_BaseBody">
-		<defName>Astrologer_Body</defName>
+		<defName>Astro_Body</defName>
 		<label>占星师</label>
 		<bodyNakedGraphicPath>Things/Pawn/Bodies/Naked</bodyNakedGraphicPath>
 		<bodyDessicatedGraphicPath>Things/Pawn/Bodies/Naked</bodyDessicatedGraphicPath>

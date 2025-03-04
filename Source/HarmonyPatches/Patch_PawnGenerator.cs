@@ -16,24 +16,34 @@ namespace Astrologer.HarmonyPatches
         [HarmonyPostfix]
         public static void Postfix(ref Pawn pawn, ref BodyTypeDef __result)
         {
-            if (pawn == null || !Utility.HasAstroGene(pawn.genes))
+            if (pawn == null || !pawn.genes.HasAstroGene()) return;
+            /*List<Gene> endogenes = pawn.genes.Endogenes;
+            foreach (Gene gen in endogenes)
             {
-                return;
-            }
-            List<Gene> endogenes = pawn.genes.Endogenes;
-            foreach (Gene item in endogenes)
-            {
-                Ext_AstrologerGene ext = item.def.GetModExtension<Ext_AstrologerGene>();
-                if (ext != null && item.Active)
+                Ext_AstrologerGene ext = gen.def.GetModExtension<Ext_AstrologerGene>();
+                if (ext != null && gen.Active)
                 {
-                    if (item.def.forcedHeadTypes != null && !item.def.forcedHeadTypes.Contains(pawn.story.headType))
+                    if (gen.def.forcedHeadTypes != null && !gen.def.forcedHeadTypes.Contains(pawn.story.headType))
                     {
-                        pawn.story.headType = item.def.forcedHeadTypes[Random.Range(0, item.def.forcedHeadTypes.Count)];
+                        pawn.story.headType = gen.def.forcedHeadTypes[Random.Range(0, gen.def.forcedHeadTypes.Count)];
                     }
                     else if (ext.forcedBodyType != null && pawn.DevelopmentalStage == DevelopmentalStage.Adult)
                     {
                         __result = ext.forcedBodyType;
                     }
+                }
+            }*/
+            Gene astroGene = pawn.genes.GetAstroGene();
+            Ext_AstrologerGene ext = astroGene.def.GetModExtension<Ext_AstrologerGene>();
+            if (ext != null && astroGene.Active)
+            {
+                if (astroGene.def.forcedHeadTypes != null && !astroGene.def.forcedHeadTypes.Contains(pawn.story.headType))
+                {
+                    pawn.story.headType = astroGene.def.forcedHeadTypes[Random.Range(0, astroGene.def.forcedHeadTypes.Count)];
+                }
+                else if (ext.forcedBodyType != null && pawn.DevelopmentalStage == DevelopmentalStage.Adult)
+                {
+                    __result = ext.forcedBodyType;
                 }
             }
         }

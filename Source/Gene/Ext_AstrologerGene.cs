@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using UnityEngine;
 using Verse;
 
 namespace Astrologer
@@ -12,5 +13,6 @@ namespace Astrologer
     {
         public BodyTypeDef forcedBodyType;
         public AbilityDef astroAbility;  //舟同款，电子身份证
+        public Color? skinColorOverride;
     }
 }

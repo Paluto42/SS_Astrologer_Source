@@ -2,12 +2,12 @@
 <Defs>
 
 	<XenotypeIconDef>
-		<defName>Astrologer_Icon</defName>
+		<defName>Astro_Icon</defName>
 		<texPath>UI/Icons/RK_icon</texPath>
 	</XenotypeIconDef>
 
 	<XenotypeDef>
-		<defName>Astrologer_Citizen</defName>
+		<defName>Astro_Xeno_Citizen</defName>
 		<label>占星师</label>
 		<description>desc.</description>
 		<descriptionShort></descriptionShort>

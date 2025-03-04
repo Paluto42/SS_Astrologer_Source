@@ -26,7 +26,7 @@
         </disallowedMemes>
         <xenotypeSet Inherit="False">
             <xenotypeChances>
-                <Astrologer_Citizen>1</Astrologer_Citizen>
+                <Astro_Xeno_Citizen>1</Astro_Xeno_Citizen>
             </xenotypeChances>
         </xenotypeSet>
         <backstoryFilters>
@@ -48,7 +48,7 @@
             <li>
                 <kindDef>Combat</kindDef>
                 <options>
-                    <LOF_EmpireLeader>1</LOF_EmpireLeader>
+                    <LOF_PawnKind_EmpireLeader>1</LOF_PawnKind_EmpireLeader>
                 </options>
             </li>
             <li>

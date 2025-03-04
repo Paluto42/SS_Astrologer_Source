@@ -109,6 +109,7 @@
     <Compile Include="HarmonyPatches\Patch_GeneTracker.cs" />
     <Compile Include="HarmonyPatches\Patch_Main.cs" />
     <Compile Include="HarmonyPatches\Patch_PawnGenerator.cs" />
+    <Compile Include="HarmonyPatches\Patch_SkinColor.cs" />
     <Compile Include="Insight\VAB_AstroTracker.cs" />
     <Compile Include="Insight\InteractableComp\IInsightInteractable.cs" />
     <Compile Include="Insight\InteractableComp\JobDriver_InsightInteract.cs" />

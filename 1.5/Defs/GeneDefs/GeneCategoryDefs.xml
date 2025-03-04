@@ -2,7 +2,7 @@
 <Defs>
 
     <GeneCategoryDef>
-        <defName>AstrologerGene</defName>
+        <defName>Astro_GeneCategory</defName>
         <label>占星师</label>
         <displayPriorityInXenotype>996</displayPriorityInXenotype>
     </GeneCategoryDef>

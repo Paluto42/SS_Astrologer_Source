@@ -82,13 +82,13 @@
 		</skills>
 		<xenotypeSet>
 			<xenotypeChances>
-				<Astrologer_Citizen>1</Astrologer_Citizen>
+				<Astro_Xeno_Citizen>1</Astro_Xeno_Citizen>
 			</xenotypeChances>
 		</xenotypeSet>
 	</PawnKindDef>
 
 	<PawnKindDef ParentName="Astro_CitizenBase">
-		<defName>LOF_EmpireLeader</defName>
+		<defName>LOF_PawnKind_EmpireLeader</defName>
 		<label>繁星帝国参议长</label>
 		<combatPower>300</combatPower>
 		<factionLeader>true</factionLeader>
@@ -131,7 +131,7 @@
 		<useFactionXenotypes>false</useFactionXenotypes>
 		<xenotypeSet>
 			<xenotypeChances>
-				<Astrologer_Citizen>1</Astrologer_Citizen>
+				<Astro_Xeno_Citizen>1</Astro_Xeno_Citizen>
 			</xenotypeChances>
 		</xenotypeSet>
 	</PawnKindDef>
