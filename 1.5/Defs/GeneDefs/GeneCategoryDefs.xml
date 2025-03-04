@@ -4,7 +4,7 @@
     <GeneCategoryDef>
         <defName>AstrologerGene</defName>
         <label>占星师</label>
-        <displayPriorityInXenotype>985</displayPriorityInXenotype>
+        <displayPriorityInXenotype>996</displayPriorityInXenotype>
     </GeneCategoryDef>
 
 </Defs>

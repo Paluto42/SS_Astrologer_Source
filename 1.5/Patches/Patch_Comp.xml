@@ -10,7 +10,7 @@
             <li Class="PatchOperationAdd">
                 <xpath>Defs/ThingDef[defName="Human"]</xpath>
                 <value>
-                    <comps />
+                    <comps/>
                 </value>
             </li>
         </operations>

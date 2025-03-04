@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-    <XenotypeIconDef>
+	<XenotypeIconDef>
 		<defName>Astrologer_Icon</defName>
 		<texPath>UI/Icons/RK_icon</texPath>
 	</XenotypeIconDef>
 
-    <XenotypeDef>
+	<XenotypeDef>
 		<defName>Astrologer_Citizen</defName>
 		<label>占星师</label>
 		<description>desc.</description>

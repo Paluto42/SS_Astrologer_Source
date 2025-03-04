@@ -203,7 +203,7 @@
         <statBases>
             <WorkToMake>12000</WorkToMake>
             <Mass>3.4</Mass>
-           <AccuracyTouch>0.80</AccuracyTouch>
+            <AccuracyTouch>0.80</AccuracyTouch>
             <AccuracyShort>0.87</AccuracyShort>
             <AccuracyMedium>0.77</AccuracyMedium>
             <AccuracyLong>0.64</AccuracyLong>

@@ -43,7 +43,7 @@
         <iconPath>UI/Icons/Genes/Gene_Sanguine</iconPath>
         <biostatCpx>3</biostatCpx>
         <biostatMet>4</biostatMet>
-		<geneClass>Astrologer.Gene_Astrologer</geneClass>
+        <geneClass>Astrologer.Gene_Astrologer</geneClass>
         <statOffsets>
             <ComfyTemperatureMin>-20</ComfyTemperatureMin>
             <ComfyTemperatureMax>20</ComfyTemperatureMax>
@@ -61,18 +61,18 @@
         <modExtensions>
             <li Class="Astrologer.Ext_AstrologerGene">
                 <forcedBodyType>Astrologer_Body</forcedBodyType>
-				<astroAbility>LOF_VAbility_Operator</astroAbility>
+                <astroAbility>LOF_VAbility_Operator</astroAbility>
             </li>
         </modExtensions>
     </GeneDef>
-	
-	<AbilityDef ParentName="AK_OperatorIDBase">
-		<defName>LOF_VAbility_Operator</defName>
-		<label>占星</label>
-		<description>desc</description>
-		<abilityClass>Astrologer.VAB_AstroTracker</abilityClass>
-		<iconPath>UI/Element/Arknights</iconPath>
-	</AbilityDef>
+
+    <AbilityDef ParentName="AK_OperatorIDBase">
+        <defName>LOF_VAbility_Operator</defName>
+        <label>占星</label>
+        <description>desc</description>
+        <abilityClass>Astrologer.VAB_AstroTracker</abilityClass>
+        <iconPath>UI/Element/Arknights</iconPath>
+    </AbilityDef>
 
     <GeneDef>
         <defName>LOF_Gene_InsightEye</defName>

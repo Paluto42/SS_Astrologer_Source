@@ -46,11 +46,11 @@
         <raidLootMaker></raidLootMaker>
         <pawnGroupMakers Inherit="False">
             <li>
-				<kindDef>Combat</kindDef>
-				<options>
-					<LOF_EmpireLeader>1</LOF_EmpireLeader>
-				</options>
-			</li>
+                <kindDef>Combat</kindDef>
+                <options>
+                    <LOF_EmpireLeader>1</LOF_EmpireLeader>
+                </options>
+            </li>
             <li>
                 <kindDef>Peaceful</kindDef>
                 <options>

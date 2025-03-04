@@ -12,7 +12,7 @@
 	<ThingCategoryDef>
 		<defName>LOF_AS_Category_Apparel</defName>
 		<label>繁星帝国服饰</label>
-		<parent>Apparel</parent> 
+		<parent>Apparel</parent>
 	</ThingCategoryDef>
 
 	<ThingCategoryDef>

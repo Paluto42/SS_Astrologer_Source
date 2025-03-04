@@ -8,12 +8,12 @@
         <jobString>冶炼中.</jobString>
         <workAmount>500</workAmount>
         <recipeUsers>
-			<li>LOF_StellarStove</li>
-		</recipeUsers>
-		<workSkill>Crafting</workSkill>
-		<effectWorking>Smelt</effectWorking>
-		<workSpeedStat>SmeltingSpeed</workSpeedStat>
-		<soundWorking>Recipe_Smelt</soundWorking>
+            <li>LOF_StellarStove</li>
+        </recipeUsers>
+        <workSkill>Crafting</workSkill>
+        <effectWorking>Smelt</effectWorking>
+        <workSpeedStat>SmeltingSpeed</workSpeedStat>
+        <soundWorking>Recipe_Smelt</soundWorking>
         <ingredients>
             <li>
                 <filter>
