@@ -15,10 +15,17 @@ namespace Astrologer.HarmonyPatches
         [HarmonyPostfix]
         public static void Postfix_Notify_GenesChanged(ref Pawn ___pawn, ref GeneDef addedOrRemovedGene)
         {
-            Ext_AstrologerGene ext = addedOrRemovedGene.GetModExtension<Ext_AstrologerGene>();
-            if (addedOrRemovedGene != null && ext != null && (ext.forcedBodyType != null))
+            if (addedOrRemovedGene == null) return;
+            Ext_AstrologerGene main = addedOrRemovedGene.GetModExtension<Ext_AstrologerGene>();
+            Ext_ForcedHeadType headType = addedOrRemovedGene.GetModExtension<Ext_ForcedHeadType>();
+            if (main != null && main.forcedBodyType != null)
             {
                 ___pawn.story.bodyType = PawnGenerator.GetBodyTypeFor(___pawn);
+                ___pawn.Drawer.renderer.SetAllGraphicsDirty();
+            }
+            if (headType != null && headType.forcedHeadType != null)
+            {
+                ___pawn.story.headType = headType.forcedHeadType;
                 ___pawn.Drawer.renderer.SetAllGraphicsDirty();
             }
         }

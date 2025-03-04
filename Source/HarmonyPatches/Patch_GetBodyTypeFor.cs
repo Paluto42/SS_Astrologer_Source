@@ -11,10 +11,10 @@ using Verse;
 namespace Astrologer.HarmonyPatches
 {
     [HarmonyPatch(typeof(PawnGenerator), "GetBodyTypeFor")]
-    public class Patch_PawnGenerator
+    public class Patch_GetBodyTypeFor
     {
         [HarmonyPostfix]
-        public static void Postfix(ref Pawn pawn, ref BodyTypeDef __result)
+        public static void Postfix_GetBodyTypeFor(ref Pawn pawn, ref BodyTypeDef __result)
         {
             if (pawn == null || !pawn.genes.HasAstroGene()) return;
             /*List<Gene> endogenes = pawn.genes.Endogenes;

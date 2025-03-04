@@ -19,6 +19,7 @@
 		<inheritable>true</inheritable>
 		<genes>
 			<li>LOF_Gene_Main</li>
+			<!--li>Hair_SnowWhite</li-->
 		</genes>
 	</XenotypeDef>
 
