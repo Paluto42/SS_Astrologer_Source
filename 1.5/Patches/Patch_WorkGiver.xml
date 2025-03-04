@@ -4,22 +4,22 @@
     <Operation Class="PatchOperationAdd">
         <xpath>/Defs/WorkGiverDef[defName="DoBillsFabricationBench"]/fixedBillGiverDefs</xpath>
         <value>
-            <li>Astro_FabricationBench</li>
+            <li>LOF_FabricationBench</li>
         </value>
     </Operation>
 
     <Operation Class="PatchOperationAdd">
         <xpath>/Defs/WorkGiverDef[defName="DoBillsMakeWeapons"]/fixedBillGiverDefs</xpath>
         <value>
-            <li>Astro_FabricationBench</li>
-            <li>Astro_StellarFoundry</li>
+            <li>LOF_FabricationBench</li>
+            <li>LOF_StellarFoundry</li>
         </value>
     </Operation>
 
     <Operation Class="PatchOperationAdd">
         <xpath>/Defs/WorkGiverDef[defName="DoBillsSmelter"]/fixedBillGiverDefs</xpath>
         <value>
-            <li>Astro_StellarStove</li>
+            <li>LOF_StellarStove</li>
         </value>
     </Operation>
 

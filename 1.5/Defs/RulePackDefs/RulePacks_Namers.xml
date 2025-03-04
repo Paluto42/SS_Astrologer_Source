@@ -5,14 +5,14 @@
         <defName>AstroEmpireNameUtility</defName>
         <rulePack>
             <rulesFiles>
-                <li>LOF_Noun_Prefix_Sign->Names/Noun/AS_Noun_Prefix_Sign</li>
-                <li>LOF_Noun_Prefix_Stellar->Names/Noun/AS_Noun_Prefix_Stellar</li>
-                <li>LOF_LastName_StellarStyle->Names/AS_LastName_StellarStyle</li>
+                <li>AS_Noun_Prefix_Sign->Names/Noun/AS_Noun_Prefix_Sign</li>
+                <li>AS_Noun_Prefix_Stellar->Names/Noun/AS_Noun_Prefix_Stellar</li>
+                <li>AS_LastName_StellarStyle->Names/AS_LastName_StellarStyle</li>
             </rulesFiles>
             <rulesStrings>
-                <li>LOF_FirstName->[AS_Noun_Prefix_Sign]</li>
-                <li>LOF_FirstName->[AS_Noun_Prefix_Stellar]</li>
-                <li>LOF_LastName->[AS_LastName_StellarStyle]</li>
+                <li>AS_FirstName->[AS_Noun_Prefix_Sign]</li>
+                <li>AS_FirstName->[AS_Noun_Prefix_Stellar]</li>
+                <li>AS_LastName->[AS_LastName_StellarStyle]</li>
             </rulesStrings>
         </rulePack>
     </RulePackDef>
