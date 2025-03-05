@@ -109,7 +109,7 @@
     <Compile Include="Gene\Ext_ForcedHeadType.cs" />
     <Compile Include="Gene\Gene_Astrologer.cs" />
     <Compile Include="HarmonyPatches\Patch_GeneTracker.cs" />
-    <Compile Include="HarmonyPatches\Patch_PawnHairColors.cs" />
+    <Compile Include="HarmonyPatches\Patch_GeneratePawn.cs" />
     <Compile Include="HarmonyPatches\Patch_Main.cs" />
     <Compile Include="HarmonyPatches\Patch_GetBodyTypeFor.cs" />
     <Compile Include="HarmonyPatches\Patch_SkinColor.cs" />

@@ -10,6 +10,6 @@ namespace Astrologer
 {
     public class Ext_ForcedHairColor : DefModExtension
     {
-        public List<Color?> hairColorOverride = new();
+        public List<ColorOption> hairColorOverride = new();
     }
 }

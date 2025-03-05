@@ -65,9 +65,18 @@
             </li>
             <li Class="Astrologer.Ext_ForcedHairColor">
                 <hairColorOverride>
-                    <li>(250, 250, 250)</li>
-                    <li>(0.65, 0.65, 0.65)</li>
-                    <li>(237, 202, 156)</li>
+                    <li>
+                        <weight>15</weight>
+                        <only>(250, 250, 250)</only>
+                    </li>
+                    <li>
+                        <weight>10</weight>
+                        <only>(0.65, 0.65, 0.65)</only>
+                    </li>
+                    <li>
+                        <weight>5</weight>
+                        <only>(237, 202, 156)</only>
+                    </li>
                 </hairColorOverride>
             </li>
         </modExtensions>
