@@ -23,6 +23,7 @@ namespace Astrologer.HarmonyPatches
                 ___pawn.story.bodyType = PawnGenerator.GetBodyTypeFor(___pawn);
                 ___pawn.Drawer.renderer.SetAllGraphicsDirty();
             }
+            //改变瞳色的专属子基因
             if (headType != null && headType.forcedHeadType != null)
             {
                 ___pawn.story.headType = headType.forcedHeadType;

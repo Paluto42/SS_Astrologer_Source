@@ -54,6 +54,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Patch_AlienRenderTreePatches.cs" />
+    <Compile Include="Patch_WantsToUseStylePrefix.cs" />
     <Compile Include="Patch_Main.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

@@ -4,7 +4,7 @@ using RimWorld;
 
 namespace Astrologer
 {
-    internal static class Utility
+    public static class Utility
     {
         public static int CrtTick => Find.TickManager.TicksGame;
 

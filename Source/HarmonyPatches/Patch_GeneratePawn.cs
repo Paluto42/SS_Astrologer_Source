@@ -27,6 +27,7 @@ namespace Astrologer.HarmonyPatches
             }
         }
     }*/
+    //应该写在Transpiler内部Calls相关方法的时候修改，太麻烦没必要
     [HarmonyPatch(typeof(PawnGenerator), "GeneratePawn", new Type[] { typeof(PawnGenerationRequest) })]
     public class Patch_GeneratePawn
     {
