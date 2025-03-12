@@ -125,6 +125,7 @@
     <Compile Include="Insight\trash\TC_FireMods.cs" />
     <Compile Include="Insight\Gizmo_Insight.cs" />
     <Compile Include="Insight\Gizmo_Insight_Base.cs" />
+    <Compile Include="Plant\TCP_NightGlower.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Thing\Projectile_Leech.cs" />
     <Compile Include="Thing\Thing_ActivatedPulsePack.cs" />

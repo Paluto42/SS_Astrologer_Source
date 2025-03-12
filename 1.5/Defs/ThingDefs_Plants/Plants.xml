@@ -37,6 +37,12 @@
             <visualSizeRange>0.5~0.8</visualSizeRange>
             <wildOrder>1</wildOrder>
         </plant>
+        <comps>
+            <li Class="Astrologer.Plant.TCP_NightGlower">
+                <glowRadius>1</glowRadius>
+                <glowColor>(0,255,255,0)</glowColor>
+            </li>
+        </comps>
     </ThingDef>
 
 </Defs>
