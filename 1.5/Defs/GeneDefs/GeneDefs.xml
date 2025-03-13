@@ -108,14 +108,6 @@
         </modExtensions>
     </GeneDef>
 
-    <AbilityDef ParentName="AK_OperatorIDBase">
-        <defName>LOF_VAbility_Operator</defName>
-        <label>占星</label>
-        <description>desc</description>
-        <abilityClass>Astrologer.VAB_AstroTracker</abilityClass>
-        <iconPath>UI/Element/Arknights</iconPath>
-    </AbilityDef>
-
     <GeneDef>
         <defName>LOF_Gene_InsightEye</defName>
         <label>目光闪闪</label>

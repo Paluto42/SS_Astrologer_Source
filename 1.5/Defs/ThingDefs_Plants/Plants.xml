@@ -41,6 +41,7 @@
             <li Class="Astrologer.Plant.TCP_NightGlower">
                 <glowRadius>1</glowRadius>
                 <glowColor>(0,255,255,0)</glowColor>
+                <skyGlowLowerThan>0.25</skyGlowLowerThan>
             </li>
         </comps>
     </ThingDef>

@@ -43,7 +43,8 @@
         </visitorTraderKinds>
         <baseTraderKinds>
         </baseTraderKinds>
-        <raidLootMaker></raidLootMaker>
+        <raidLootMaker>
+        </raidLootMaker>
         <pawnGroupMakers Inherit="False">
             <li>
                 <kindDef>Combat</kindDef>
@@ -89,9 +90,9 @@
         <settlementTexturePath>World/WorldObjects/DefaultSettlement</settlementTexturePath>
         <allowedArrivalTemperatureRange>-80~90</allowedArrivalTemperatureRange>
         <fixedIdeo>true</fixedIdeo>
-        <ideoName>数星星</ideoName>
+        <ideoName>占星师</ideoName>
         <ideoDescription>desc.</ideoDescription>
-        <deityPresets>
+        <!--deityPresets>
             <li>
                 <nameType>
                     <name>神</name>
@@ -100,12 +101,11 @@
                 <gender>Female</gender>
                 <iconPath>UI/Deities/DeityGeneric</iconPath>
             </li>
-        </deityPresets>
+        </deityPresets-->
         <forcedMemes>
-            <li MayRequire="Ludeon.RimWorld.Ideology">Structure_TheistEmbodied</li>
-            <li MayRequire="Ludeon.RimWorld.Ideology">FemaleSupremacy</li>
-            <li MayRequire="Ludeon.RimWorld.Ideology">Supremacist</li>
-            <li MayRequire="Ludeon.RimWorld.Ideology">Collectivist</li>
+            <!--li MayRequire="Ludeon.RimWorld.Ideology">FemaleSupremacy</li-->
+            <!--li MayRequire="Ludeon.RimWorld.Ideology">Supremacist</li-->
+            <!--li MayRequire="Ludeon.RimWorld.Ideology">Collectivist</li-->
         </forcedMemes>
         <requiredPreceptsOnly>true</requiredPreceptsOnly>
     </FactionDef>

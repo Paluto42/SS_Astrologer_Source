@@ -11,13 +11,13 @@ namespace Astrologer.Plant
     //只在夜晚发光的comp
     public class TCP_NightGlower : CompProperties_Glower
     {
-        public float skyGlowLowerThan = 0.25f;
+        public float skyGlowLowerThan = 0.2f;
         public TCP_NightGlower() 
         {
             compClass = typeof(TC_NightGlower);
         }
     }
-
+    //为了性能只使用TickLong更新状态
     public class TC_NightGlower : CompGlower 
     {
         private TCP_NightGlower Prop => props as TCP_NightGlower;
@@ -58,11 +58,8 @@ namespace Astrologer.Plant
         }
         public override void CompTickLong()
         {
-            base.CompTickLong();
-            if (parent != null)
-            {
-                UpdateLit(parent?.Map);
-            }
+            if (parent == null) return;
+            UpdateLit(parent?.Map);
         }
     }
 }
