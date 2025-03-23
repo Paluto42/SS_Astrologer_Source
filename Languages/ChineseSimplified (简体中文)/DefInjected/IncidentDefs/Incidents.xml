@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+    <LOF_AdventurerJoins.questNameRules.rulesStrings>
+        <li>questName->占星师旅客加入</li>
+    </LOF_AdventurerJoins.questNameRules.rulesStrings>
+
+    <LOF_AdventurerJoins.questDescriptionRules.rulesStrings>
+        <li>questDescription->[asker_nameFull], 一名出来探险的占星师路过此处.\n\n[asker_pronoun]已经观察了你们一阵.你的殖民地引起了她的兴趣\n于是[asker_pronoun]希望能在你这里呆一段时间.\n\n你可以接受,也可以拒绝.</li>
+    </LOF_AdventurerJoins.questDescriptionRules.rulesStrings>
+
+</LanguageData>

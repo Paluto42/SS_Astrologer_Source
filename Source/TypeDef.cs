@@ -1,4 +1,5 @@
 ﻿using RimWorld;
+using System.Collections.Generic;
 using UnityEngine;
 using Verse;
 
@@ -12,6 +13,20 @@ namespace Astrologer
     [DefOf]
     public static class AstroDefOf
     {
+        public static HairDef LOF_Hair_A;
+        public static HairDef LOF_Hair_B;
+        public static HairDef LOF_Hair_C;
+        public static HairDef LOF_Hair_D;
+        public static HairDef LOF_Hair_E;
+        public static HairDef LOF_Hair_F;
+        public static HairDef LOF_Hair_G;
+
+        public static List<HairDef> AstroHairDefs => new() 
+        {
+            LOF_Hair_A, LOF_Hair_B, LOF_Hair_C, 
+            LOF_Hair_D, LOF_Hair_E, LOF_Hair_F, LOF_Hair_G,
+        };
+
         public static ThingDef LOF_Thing_Laundy;
 
         public static JobDef LOF_Job_FillLaundry;

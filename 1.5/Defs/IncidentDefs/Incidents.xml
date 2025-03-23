@@ -9,10 +9,268 @@
             <li>Map_PlayerHome</li>
         </targetTags>
         <workerClass>IncidentWorker_GiveQuest</workerClass>
-        <questScriptDef>WandererJoins</questScriptDef>
-        <baseChance>0.4</baseChance>
-        <pawnKind>Villager</pawnKind>
+        <questScriptDef>LOF_AdventurerJoins</questScriptDef>
+        <baseChance>0.3</baseChance>
+        <pawnKind>LOF_PawnKind_Citizen</pawnKind>
         <populationEffect>IncreaseEasy</populationEffect>
     </IncidentDef>
+
+    <QuestScriptDef>
+        <defName>LOF_AdventurerJoins</defName>
+        <autoAccept>false</autoAccept>
+        <defaultHidden>false</defaultHidden>
+        <isRootSpecial>true</isRootSpecial>
+        <successHistoryEvent MayRequire="Ludeon.RimWorld.Ideology">CharityFulfilled_WandererJoins</successHistoryEvent>
+        <failedOrExpiredHistoryEvent MayRequire="Ludeon.RimWorld.Ideology">CharityRefused_WandererJoins</failedOrExpiredHistoryEvent>
+        <questNameRules>
+            <rulesStrings>
+                <li>questName->Astrologer Adventurer joins</li>
+            </rulesStrings>
+        </questNameRules>
+        <questDescriptionRules>
+            <rulesStrings>
+                <li>questDescription->[asker_nameFull],an astrologer who is out exploring is passing by here.\n\n[asker_pronoun] has been observing you for a while. Your colony has aroused her interest\n[asker_pronoun] hopes to stay here for a while.\n\nYou can accept or refuse.</li>
+            </rulesStrings>
+        </questDescriptionRules>
+        <!--root Class="QuestNode_Root_WandererJoin_WalkIn" /-->
+        <root Class="Astrologer.Quest.Root_GetAdventurerJoin_WalkIn">
+            <storeAs>asker</storeAs>
+            <mustBeOfKind>LOF_PawnKind_Citizen</mustBeOfKind>
+        </root>
+    </QuestScriptDef>
+
+    <IncidentDef>
+        <defName>LOF_SeminarInvite</defName>
+        <label>星相学研讨会</label>
+        <category>Misc</category>
+        <targetTags>
+            <li>Map_PlayerHome</li>
+        </targetTags>
+        <workerClass>IncidentWorker_GiveQuest</workerClass>
+        <questScriptDef>LOF_InviteQuest</questScriptDef>
+        <baseChance>0.2</baseChance>
+    </IncidentDef>
+
+    <QuestScriptDef>
+        <defName>LOF_InviteQuest</defName>
+        <expireDaysRange>4~8</expireDaysRange>
+        <questNameRules>
+            <rulesStrings>
+                <li>questName->Astrology Seminar</li>
+            </rulesStrings>
+        </questNameRules>
+        <questDescriptionRules>
+            <rulesStrings>
+                <!-- Asker is faction leader -->
+                <!--li>questDescription(asker_factionLeader==True)->[asker_faction_leaderTitle] [asker_nameFull] of [asker_faction_name] needs extra hands to help [dutyDescription].\n\n[asker_pronoun] is asking you to lend [asker_objective] [colonistCountToLend] for [lendForDays] days.\n\n[willSendShuttle]</li-->
+                <li>questDescription(asker_factionLeader==True)->[asker_nameFull] of [asker_faction_name] needs extra hands to help [dutyDescription].\n\n[asker_pronoun] is asking you to lend [asker_objective] [colonistCountToLend] for [lendForDays] days.\n\n[willSendShuttle]</li>
+
+                <li>colonistCountToLend(colonistsToLendCount==1)->1 colonist[minAgeOrOlder]</li>
+                <li>colonistCountToLend(colonistsToLendCount>1)->[colonistsToLendCount] colonists[minAgeOrOlder]</li>
+
+                <li>willSendShuttle->[asker_pronoun] will send a shuttle to pick up the [colonists].</li>
+                <li>colonists(colonistsToLendCount==1)->colonist</li>
+                <li>colonists(colonistsToLendCount>1)->colonists</li>
+                <li>minAgeOrOlder(minAge==0)-></li>
+                <li>minAgeOrOlder(minAge>0)-> [minAge] years old or older</li>
+
+                <li>pawnListHaveConjugation(colonistsToLendCount==1)->has</li>
+                <li>pawnListHaveConjugation(colonistsToLendCount>1)->have</li>
+            </rulesStrings>
+        </questDescriptionRules>
+        <root Class="QuestNode_Sequence">
+            <nodes>
+                <li Class="Astrologer.Quest.Node_IsFactionRelationKind">
+                    <factionDefs>
+                        <li>LOF_Empire</li>
+                    </factionDefs>
+                    <factionRelationKind>Hostile</factionRelationKind>
+                    <invert>true</invert>
+                </li>
+                <li Class="QuestNode_SubScript">
+                    <def>Util_RandomizePointsChallengeRating</def>
+                </li>
+                <!-- Calculate colonist count to lend -->
+                <li Class="QuestNode_GetRandomInRangeForChallengeRating">
+                    <storeAs>colonyPercentageToLend</storeAs>
+                    <oneStarRange>0.0~0.35</oneStarRange>
+                    <twoStarRange>0.36~0.6</twoStarRange>
+                    <threeStarRange>0.61~0.75</threeStarRange>
+                </li>
+                <li Class="QuestNode_ExpansionActive">
+                    <modID>Ludeon.RimWorld.Biotech</modID>
+                    <node Class="QuestNode_Set">
+                        <name>minAge</name>
+                        <value>13</value>
+                    </node>
+                    <elseNode Class="QuestNode_Set">
+                        <name>minAge</name>
+                        <value>0</value>
+                    </elseNode>
+                </li>
+                <li Class="QuestNode_GetColonistCountFromColonyPercentage">
+                    <storeAs>colonistsToLendCount</storeAs>
+                    <colonyPercentage>$colonyPercentageToLend</colonyPercentage>
+                    <mustHaveFreeColonistsAvailableCount>2</mustHaveFreeColonistsAvailableCount>
+                    <minAge>$minAge</minAge>
+                </li>
+                <li Class="QuestNode_GetMap">
+                    <preferMapWithMinFreeColonists>$colonistsToLendCount</preferMapWithMinFreeColonists>
+                </li>
+
+                <!-- End if map removed before the quest is accepted -->
+                <li Class="QuestNode_End">
+                    <inSignal>map.MapRemoved</inSignal>
+                    <outcome>Fail</outcome>
+                    <signalListenMode>NotYetAcceptedOnly</signalListenMode>
+                </li>
+                <!-- Get asker and assign some related text
+             There are two cases: Any and royal-only.
+             Each one decides the dutyDescription and dutyRoyalDescriptions so we can use the same text in several letters -->
+                <li Class="QuestNode_Sequence">
+                    <nodes>
+                        <li Class="QuestNode_GetPawn">                            <!-- Any faction leader; can be royal too -->
+                            <storeAs>asker</storeAs>
+                            <mustBeFactionLeader>true</mustBeFactionLeader>
+                            <allowPermanentEnemyFaction>false</allowPermanentEnemyFaction>
+                            <minTechLevel>Industrial</minTechLevel>
+                            <mustBeOfKind>LOF_PawnKind_EmpireLeader</mustBeOfKind>
+                        </li>
+                        <li Class="QuestNode_ResolveTextNow">
+                            <root>dutyDescription</root>
+                            <storeAs>dutyDescription</storeAs>
+                            <rules TKey="DutyRulesAny">
+                                <rulesStrings>
+                                    <li>dutyDescription->conduct academic exchanges</li>
+                                    <li>dutyDescription->studying traditional culture</li>
+                                    <li>dutyDescription->hold a seminar</li>
+                                </rulesStrings>
+                            </rules>
+                        </li>
+                        <li Class="QuestNode_Set">
+                            <name>returnLetterText</name>
+                            <value TKey="LetterTextReturnAfterHelping">{PAWNS} [pawnListHaveConjugation] returned after helping [asker_nameFull] of [asker_faction_name] to [dutyDescription].</value>
+                        </li>
+                    </nodes>
+                </li>
+                <!-- Calculate days to lend colonists for -->
+                <li Class="QuestNode_GetRandomInRangeForChallengeRating">
+                    <storeAs>lendForDays</storeAs>
+                    <oneStarRange>5~10</oneStarRange>
+                    <twoStarRange>10~20</twoStarRange>
+                    <threeStarRange>20~30</threeStarRange>
+                    <roundRandom>true</roundRandom>
+                </li>
+                <!-- Calculate reward from colonistsToLendCount * lendForDays -->
+                <li Class="QuestNode_EvaluateSimpleCurve">
+                    <value>$($colonistsToLendCount*$lendForDays)</value>
+                    <storeAs>rewardValue</storeAs>
+                    <curve>
+                        <points>
+                            <li>5, 500</li>
+                            <li>50, 1500</li>
+                            <li>200, 4000</li>
+                        </points>
+                    </curve>
+                </li>
+                <!-- Shuttle -->
+                <li Class="QuestNode_ShuttleDelay">
+                    <delayTicks>7500</delayTicks>
+                    <node Class="QuestNode_Sequence">
+                        <nodes>
+                            <li Class="QuestNode_SubScript">
+                                <def>Util_TransportShip_Pickup</def>
+                                <parms>
+                                    <leaveDelayTicks>60000</leaveDelayTicks>
+                                    <leaveImmediatelyWhenSatisfied>true</leaveImmediatelyWhenSatisfied>
+                                    <acceptColonists>true</acceptColonists>
+                                    <acceptChildren>false</acceptChildren>
+                                    <onlyAcceptColonists>true</onlyAcceptColonists>
+                                    <onlyAcceptHealthy>true</onlyAcceptHealthy>
+                                    <requireColonistCount>$colonistsToLendCount</requireColonistCount>
+                                    <minAge>$minAge</minAge>
+                                </parms>
+                            </li>
+                            <li Class="QuestNode_Letter">
+                                <label TKey="LetterLabelShuttleArrived">Shuttle arrived</label>
+                                <text TKey="LetterTextShuttleArrived">The shuttle has arrived to collect [colonistsToLendCount] of your colonists.</text>
+                                <lookTargets>$pickupShipThing</lookTargets>
+                            </li>
+                        </nodes>
+                    </node>
+                </li>
+                <!-- Shuttle destroyed -->
+                <li Class="QuestNode_Signal">
+                    <inSignal>pickupShipThing.Destroyed</inSignal>
+                    <node Class="QuestNode_Sequence">
+                        <nodes>
+                            <li Class="QuestNode_Letter">
+                                <label TKey="LetterLabelShuttleDestroyed">Shuttle destroyed</label>
+                                <text TKey="LetterTextShuttleDestroyed">The shuttle sent to collect colonists has been destroyed.</text>
+                            </li>
+                            <li Class="QuestNode_End">
+                                <outcome>Fail</outcome>
+                            </li>
+                        </nodes>
+                    </node>
+                </li>
+                <!-- Shuttle sent away -->
+                <li Class="QuestNode_Signal">
+                    <inSignal>pickupShipThing.SentSatisfied</inSignal>
+                    <node Class="QuestNode_Sequence">
+                        <nodes>
+                            <li Class="QuestNode_LendColonistsToFaction">
+                                <shuttle>$pickupShipThing</shuttle>
+                                <lendColonistsToFactionOf>$asker</lendColonistsToFactionOf>
+                                <returnLentColonistsInTicks>$($lendForDays*60000)</returnLentColonistsInTicks>
+                                <outSignalComplete>ColonistsReturned</outSignalComplete>
+                                <outSignalColonistsDied>ColonistsDied</outSignalColonistsDied>
+                            </li>
+                            <li Class="QuestNode_Delay">
+                                <delayTicks>$(randInt(300,600))</delayTicks>
+                                <node Class="QuestNode_Sequence">
+                                    <nodes>
+                                        <li Class="QuestNode_GiveRewards">
+                                            <parms>
+                                                <allowGoodwill>true</allowGoodwill>
+                                                <allowRoyalFavor>true</allowRoyalFavor>
+                                            </parms>
+                                        </li>
+                                    </nodes>
+                                </node>
+                            </li>
+                        </nodes>
+                    </node>
+                </li>
+                <li Class="QuestNode_Signal">
+                    <inSignal>ColonistsReturned</inSignal>
+                    <node Class="QuestNode_Sequence">
+                        <nodes>
+                            <li Class="QuestNode_Letter">
+                                <label TKey="LetterLabelColonistsReturned">Colonists returned</label>
+                                <text>$returnLetterText</text>
+                                <letterDef>PositiveEvent</letterDef>
+                            </li>
+                            <li Class="QuestNode_End">
+                                <outcome>Success</outcome>
+                            </li>
+                        </nodes>
+                    </node>
+                </li>
+                <li Class="QuestNode_Signal">
+                    <inSignal>ColonistsDied</inSignal>
+                    <node Class="QuestNode_End">
+                        <outcome>Success</outcome>
+                    </node>
+                </li>
+                <li Class="QuestNode_Signal">
+                    <inSignal>pickupShipThing.SentUnsatisfied</inSignal>
+                    <node Class="QuestNode_End">
+                        <outcome>Fail</outcome>
+                    </node>
+                </li>
+            </nodes>
+        </root>
+    </QuestScriptDef>
 
 </Defs>

@@ -35,6 +35,10 @@ namespace Astrologer.HarmonyPatches
         public static void Postfix(ref PawnGenerationRequest request, Pawn __result)
         {
             if (__result == null || __result.genes.HasAstroGene() == false) return;
+            if (__result.story.hairDef == HairDefOf.Bald)
+            {
+                __result.story.hairDef = AstroDefOf.AstroHairDefs.RandomElement();
+            }
             Gene astroGene = __result.genes.GetAstroGene();
             Ext_ForcedHairColor ext = astroGene.def.GetModExtension<Ext_ForcedHairColor>();
             if (ext != null && !ext.hairColorOverride.NullOrEmpty())

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+    
+    <LOF_WandererJoin.label>Astrologer Visitor Joins</LOF_WandererJoin.label>
+
+    <LOF_AdventurerJoins.questNameRules.rulesStrings>
+        <li>questName->Astrologer Adventurer joins</li>
+    </LOF_AdventurerJoins.questNameRules.rulesStrings>
+
+    <LOF_AdventurerJoins.questDescriptionRules.rulesStrings>
+        <li>questDescription->[asker_nameFull] an astrologer who is out exploring is passing by here.\n\n[asker_pronoun] has been observing you for a while. Your colony has aroused her interest\n[asker_pronoun] hopes to stay here for a while.\n\nYou can accept or refuse.</li>
+    </LOF_AdventurerJoins.questDescriptionRules.rulesStrings>
+
+</LanguageData>

@@ -128,6 +128,8 @@
     <Compile Include="ModSettings.cs" />
     <Compile Include="Plant\TCP_NightGlower.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="QuestNode\Node_IsFactionRelationKind.cs" />
+    <Compile Include="QuestNode\Root_GetAdventurerJoin_WalkIn.cs" />
     <Compile Include="Thing\Projectile_Leech.cs" />
     <Compile Include="Thing\Thing_ActivatedPulsePack.cs" />
     <Compile Include="TypeDef.cs" />
