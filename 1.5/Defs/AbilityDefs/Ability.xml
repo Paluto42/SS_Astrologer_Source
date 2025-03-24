@@ -1,12 +1,27 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-    <AbilityDef ParentName="AK_OperatorIDBase">
-        <defName>LOF_VAbility_Operator</defName>
-        <label>占星</label>
-        <description>desc</description>
-        <abilityClass>Astrologer.VAB_AstroTracker</abilityClass>
-        <iconPath>UI/Element/Arknights</iconPath>
-    </AbilityDef>
+    <AKA_Ability.AKAbilityDef>
+        <defName>LOF_Ability_IncreaseHarvest</defName>
+        <label>提高收获量</label>
+        <description>消耗一定洞察力,在一天内提高农作物收获量,屠宰量.手术成功率提高,制作物品高品质概率增加,射击命中率增加,食物消耗率x200%.</description>
+        <icon>UI/Abilities/Medic/HealEnhance</icon>
+        <grouped>false</grouped>
+        <range>40</range>
+        <abilityClass>AKA_Ability.AKAbility_SelfTarget</abilityClass>
+        <compEffectList>
+            <li Class="Astrologer.Ability.AE_IncreaseHarvest"/>
+            <li Class="AKA_Ability.AbilityEffect.AE_CostChargeStatic"/>
+        </compEffectList>
+        <useSounds>
+            <li>AK_SFX_Tactboost</li>
+        </useSounds>
+        <cooldownProperty>
+            <SPPerCharge>1</SPPerCharge>
+            <SPUnit>day</SPUnit>
+            <initSP>600000</initSP>
+            <maxCharge>1</maxCharge>
+        </cooldownProperty>
+    </AKA_Ability.AKAbilityDef>
 
 </Defs>

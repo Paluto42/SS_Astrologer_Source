@@ -33,7 +33,22 @@
             <li>BodyType</li>
             <li>SkinColorOverride</li>
         </exclusionTags>
+        <modExtensions>
+            <li Class="Astrologer.Ext_OperatorDef">
+                <AKAbilities>
+                    <li>LOF_Ability_IncreaseHarvest</li>
+                </AKAbilities>
+            </li>
+        </modExtensions>
     </GeneDef>
+
+    <AbilityDef ParentName="AK_OperatorIDBase">
+        <defName>LOF_VAbility_Operator</defName>
+        <label>占星</label>
+        <description>desc</description>
+        <abilityClass>Astrologer.VAB_AstroTracker</abilityClass>
+        <iconPath>UI/Element/Arknights</iconPath>
+    </AbilityDef>
 
     <GeneDef ParentName="Astro_BodyGene">
         <defName>LOF_Gene_Main</defName>

@@ -45,7 +45,8 @@ namespace Astrologer
         public override void ExposeData()
         {
             base.ExposeData();
-            Scribe_References.Look(ref astroTracker, "astro_tracker");
+            //VAB_AstroTracker疑似没有实现IExposable
+            Scribe_References.Look(ref astroTracker, "astroTracker");
         }
     }
 }

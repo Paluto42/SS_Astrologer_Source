@@ -67,6 +67,31 @@
 		</skills>
 	</PawnKindDef>
 
+	<PawnKindDef Name="Astro_SoldierBase" ParentName="Astro_PawnBase" Abstract="True">
+		<isFighter>true</isFighter>
+		<initialResistanceRange>10~40</initialResistanceRange>
+		<chemicalAddictionChance>0.1</chemicalAddictionChance>
+		<combatEnhancingDrugsChance>0.15</combatEnhancingDrugsChance>
+		<combatEnhancingDrugsCount>0~2</combatEnhancingDrugsCount>
+		<gearHealthRange>0.8~2</gearHealthRange>
+		<!--weaponMoney>500~1200</weaponMoney-->
+		<apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
+		<apparelMoney>700~1500</apparelMoney>
+		<apparelTags>
+			<li>Astrologer_SoldierArmor</li>
+		</apparelTags>
+		<techHediffsChance>0.15</techHediffsChance>
+		<techHediffsMoney>700~1200</techHediffsMoney>
+		<techHediffsTags>
+		</techHediffsTags>
+		<skills>
+			<li>
+				<skill>Intellectual</skill>
+				<range>5~10</range>
+			</li>
+		</skills>
+	</PawnKindDef>
+
 	<PawnKindDef ParentName="Astro_CitizenBase">
 		<defName>LOF_PawnKind_Citizen</defName>
 		<label>繁星帝国公民</label>
@@ -83,6 +108,26 @@
 		<xenotypeSet>
 			<xenotypeChances>
 				<Astro_Xeno_Citizen>1</Astro_Xeno_Citizen>
+			</xenotypeChances>
+		</xenotypeSet>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="Astro_SoldierBase">
+		<defName>LOF_PawnKind_Soldier</defName>
+		<label>繁星帝国士兵</label>
+		<labelPlural>繁星帝国士兵</labelPlural>
+		<combatPower>100</combatPower>
+		<apparelTags>
+		</apparelTags>
+		<apparelRequired>
+		</apparelRequired>
+		<weaponTags>
+		</weaponTags>
+		<skills>
+		</skills>
+		<xenotypeSet>
+			<xenotypeChances>
+				<Astro_Xeno_Soldier>1</Astro_Xeno_Soldier>
 			</xenotypeChances>
 		</xenotypeSet>
 	</PawnKindDef>

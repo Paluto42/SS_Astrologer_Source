@@ -88,6 +88,9 @@
                 <li>Middle</li>
                 <li>Shell</li>
             </layers>
+            <tags>
+                <li>Astrologer_SoldierArmor</li>
+            </tags>
         </apparel>
         <recipeMaker>
             <!--researchPrerequisite>ComplexClothing</researchPrerequisite-->

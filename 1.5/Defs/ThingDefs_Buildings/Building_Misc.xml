@@ -60,6 +60,7 @@
             <li Class="Astrologer.Generic.TCP_ThingContainer">
                 <capacity>1</capacity>
                 <gizmoEjectLabel>弹出服装</gizmoEjectLabel>
+                <gizmoEjectUIIconPath>UI/Element/Placeholder</gizmoEjectUIIconPath>
             </li>
             <li Class="Astrologer.Laundry.TCP_Laundry">
                 <compClass>Astrologer.Laundry.TC_LaundryRepair</compClass>

@@ -112,4 +112,26 @@
         </stages>
     </HediffDef>
 
+    <HediffDef>
+        <defName>LOF_Hediff_IncreaseHarvest</defName>
+        <label>提高收获量</label>
+        <description>一天内提高农作物收获量,屠宰量.手术成功率提高,制作物品高品质概率增加,射击命中率增加,食物消耗率x200%.</description>
+        <hediffClass>HediffWithComps</hediffClass>
+        <defaultLabelColor>(0.6, 0.6, 1.0)</defaultLabelColor>
+        <isBad>false</isBad>
+        <allowMothballIfLowPriorityWorldPawn>true</allowMothballIfLowPriorityWorldPawn>
+        <everCurableByItem>false</everCurableByItem>
+        <stages>
+            <li>
+                <statOffsets>
+                    <PlantHarvestYield>0.5</PlantHarvestYield>
+                    <ButcheryFleshEfficiency>0.5</ButcheryFleshEfficiency>
+                    <MedicalSurgerySuccessChance>0.5</MedicalSurgerySuccessChance>
+                    <ShootingAccuracyPawn>0.5</ShootingAccuracyPawn>
+                    <MaxNutrition>0.5</MaxNutrition>
+                </statOffsets>
+            </li>
+        </stages>
+    </HediffDef>
+
 </Defs>

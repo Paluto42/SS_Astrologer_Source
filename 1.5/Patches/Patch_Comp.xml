@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Patch>
-    <Operation Class="PatchOperationSequence">
+    <!--Operation Class="PatchOperationSequence">
         <success>Always</success>
         <operations>
             <li Class="PatchOperationTest">
@@ -22,6 +22,6 @@
             <li Class="Astrologer.TCP_PawnEquipGizmo"/>
             <li Class="Astrologer.TCP_Insights"/>
         </value>
-    </Operation>
+    </Operation-->
 
 </Patch>
