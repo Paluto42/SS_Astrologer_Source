@@ -52,6 +52,11 @@ namespace Astrologer
             }
         }
 
+        public override IEnumerable<Gizmo> GetGizmosExtra()
+        {
+            return base.GetGizmosExtra();
+        }
+
         private bool PossibleToObserve(Thing thing)
         {
             if (thing.Position.InHorDistOf(pawn.Position, starGrassObserveDistance))

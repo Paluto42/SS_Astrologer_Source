@@ -19,11 +19,11 @@ namespace Astrologer.Generic
 
         public int uniqueID = 1;                                //有多个桶时 检索的独特id 就一个桶就随便
 
-        public string gizmoEjectLabel = "SSR_Eject";            //有多个桶的话gizmo label不能重复
-        public string gizmoEjectDesc = "SSR_EjectDesc";
+        public string gizmoEjectLabel = "LOF_Eject";            //有多个桶的话gizmo label不能重复
+        public string gizmoEjectDesc = "LOF_EjectDesc";
         public string gizmoEjectUIIconPath = "UI/TempIcon";
 
-        public string btnITabLabel = "SSR_Bucket";              //左下角itab按钮的名字
+        public string btnITabLabel = "LOF_Bucket";              //左下角itab按钮的名字
         public string btnITabItemKey = "ContainedItems";        //itab点开最上面显示那个，默认是"内容物"
 
         public TCP_ThingContainer()

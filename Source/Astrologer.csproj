@@ -65,6 +65,10 @@
       <HintPath>Rely\AK_Ability.dll</HintPath>
       <Private>False</Private>
     </Reference>
+    <Reference Include="AK_DLL">
+      <HintPath>Rely\AK_DLL.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
     <Reference Include="Assembly-CSharp">
       <HintPath>Rely\Assembly-CSharp.dll</HintPath>
     </Reference>
@@ -89,9 +93,11 @@
   <ItemGroup>
     <Compile Include="Ability\AE_CostInsight.cs" />
     <Compile Include="Ability\AE_DeployBuilding.cs" />
+    <Compile Include="Ability\AE_IncreaseHarvest.cs" />
     <Compile Include="Ability\CC_InsightThreshold.cs" />
     <Compile Include="Ability\HarmonyPatchs\Patch_IgnoreDmg.cs" />
     <Compile Include="Ability\HarmonyPatchs\Patch_IgnoreStagger.cs" />
+    <Compile Include="Ability\HC_IncreastHarvest.cs" />
     <Compile Include="AstroDocument.cs" />
     <Compile Include="Building\Laundry\AI\JobDriver_FillLaundry.cs" />
     <Compile Include="Building\Laundry\AI\WorkGiver_FillLaundry.cs" />
@@ -112,6 +118,7 @@
     <Compile Include="HarmonyPatches\Patch_GeneratePawn.cs" />
     <Compile Include="HarmonyPatches\Patch_Main.cs" />
     <Compile Include="HarmonyPatches\Patch_GetBodyTypeFor.cs" />
+    <Compile Include="HarmonyPatches\Patch_GeneratePostRecruit.cs" />
     <Compile Include="HarmonyPatches\Patch_SkinColor.cs" />
     <Compile Include="Insight\VAB_AstroTracker.cs" />
     <Compile Include="Insight\InteractableComp\IInsightInteractable.cs" />
@@ -126,6 +133,7 @@
     <Compile Include="Insight\Gizmo_Insight.cs" />
     <Compile Include="Insight\Gizmo_Insight_Base.cs" />
     <Compile Include="ModSettings.cs" />
+    <Compile Include="OperatorDef\Ext_OperatorDef.cs" />
     <Compile Include="Plant\TCP_NightGlower.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="QuestNode\Node_IsFactionRelationKind.cs" />

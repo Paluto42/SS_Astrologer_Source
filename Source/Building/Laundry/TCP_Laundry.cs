@@ -38,8 +38,8 @@ namespace Astrologer.Laundry
 
         public bool working = false;    //是否在工作 不工作不tick
 
-        protected virtual string GizmoActiveLabel => "SSR_开关洗衣机";
-        protected virtual string GizmoActiveDesc => "SSR_开关洗衣机desc";
+        protected virtual string GizmoActiveLabel => "LOF_开关洗衣机";
+        protected virtual string GizmoActiveDesc => "LOF_开关洗衣机desc";
 
         public bool autoHaulManualSwitch = false;   //是否允许小人自动将符合规则的物品丢进桶里。默认是否，也就是必须手动
         //洗衣机的一个功能必须和某个桶绑定
@@ -58,7 +58,7 @@ namespace Astrologer.Laundry
                     else
                         linkedContainer = compManager.GetContainer(ID);*/
 
-                    if (linkedContainer == null) Log.Error($"[SSR] {parent} 洗衣机没有配套的 {ID}号桶");
+                    if (linkedContainer == null) Log.Error($"[LOF] {parent} 洗衣机没有配套的 {ID}号桶");
                 }
                 return linkedContainer;
             }
@@ -101,7 +101,7 @@ namespace Astrologer.Laundry
 
         public override string CompInspectStringExtra()
         {
-            return $"SSR_LaundryWork".Translate(tickActived, Interval);
+            return $"LOF_LaundryWork".Translate(tickActived, Interval);
         }
 
         public override void PostDestroy(DestroyMode mode, Map previousMap)
