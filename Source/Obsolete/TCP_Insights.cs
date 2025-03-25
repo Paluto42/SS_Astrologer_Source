@@ -7,8 +7,8 @@ using Verse;
 
 namespace Astrologer
 {
-    //洞察力
-    public class TCP_Insights : CompProperties
+    //由VAB取代
+    /*public class TCP_Insights : CompProperties
     {
         //1000tick增加1
         public int interval = 1000;
@@ -60,5 +60,5 @@ namespace Astrologer
                 compInsights = this
             };
         }
-    }
+    }*/
 }

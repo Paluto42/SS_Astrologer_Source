@@ -2,19 +2,18 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Runtime.Remoting.Messaging;
 using System.Text;
 using System.Threading.Tasks;
 using Verse;
 
 namespace Astrologer
 {
-    public class Thing_ActivatedPulsePack : ThingWithComps
+    public class Thing_ActivatedPulsePack : Building
     {
         public float radius = 5f;
-
         public override void Tick()
         {
+            Log.Message("Tick");
             base.Tick();
             if (Utility.IsTickInterval(15))
             {
@@ -25,7 +24,16 @@ namespace Astrologer
                 this.Destroy();
             }
         }
-
+        public override void TickRare()
+        {
+            Log.Message("TickRare");
+            base.TickRare();
+        }
+        public override void TickLong()
+        {
+            Log.Message("TickLong");
+            base.TickLong();
+        }
         private void DamageCloseThings() 
         {
             /*int num = GenRadial.NumCellsInRadius(radius);
@@ -42,7 +50,8 @@ namespace Astrologer
                     }
                 }
             }*/
-            GenExplosion.DoExplosion(Position, Map, radius, DamageDefOf.EMP, null, damAmount: 0, -1f, null, null, null, null, null, 1f, 1, GasType.BlindSmoke);
+            GenExplosion.DoExplosion(Position, Map, radius, DamageDefOf.EMP, null, damAmount: -1, -1f, explosionSound: SoundDefOf.EnergyShield_AbsorbDamage, null, null, null, null, 1f, 1, postExplosionGasType: null);
+            Log.Message("DamageCloseThings");
         }
     }
 }

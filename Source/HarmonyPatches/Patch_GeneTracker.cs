@@ -16,7 +16,7 @@ namespace Astrologer.HarmonyPatches
         public static void Postfix_Notify_GenesChanged(ref Pawn ___pawn, ref GeneDef addedOrRemovedGene)
         {
             if (addedOrRemovedGene == null) return;
-            Ext_AstrologerGene main = addedOrRemovedGene.GetModExtension<Ext_AstrologerGene>();
+            Ext_ForcedAstrologer main = addedOrRemovedGene.GetModExtension<Ext_ForcedAstrologer>();
             Ext_ForcedHeadType headType = addedOrRemovedGene.GetModExtension<Ext_ForcedHeadType>();
             if (main != null && main.forcedBodyType != null)
             {

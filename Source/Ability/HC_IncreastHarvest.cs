@@ -12,9 +12,10 @@ namespace Astrologer.Ability
     {
         public HCP_IncreastHarvest()
         {
-            this.compClass = typeof(HC_IncreastHarvest);
+            compClass = typeof(HC_IncreastHarvest);
         }
     }
+
     public class HC_IncreastHarvest : HediffComp
     {
         public HCP_Regrow Props => (HCP_Regrow)props;
@@ -22,7 +23,7 @@ namespace Astrologer.Ability
         {
             get
             {
-                return $"\n剩余:{base.parent.Severity * 10:0.0}环时";
+                return $"\n剩余:{parent.Severity * 10:0.0}环时";
             }
         }
     }

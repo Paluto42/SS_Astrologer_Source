@@ -31,7 +31,7 @@ namespace Astrologer.MapBuilding
                 yield return new FloatMenuOption("Astrologer_PawnNull".Translate(), null); 
                 yield break;
             }
-            if (selPawn.GetComp<TC_Insights>() != null) 
+            if (selPawn.TryGetAstroDoc() != null) 
             {
                 if (CompRefuelable.Fuel < 0.1) 
                 {

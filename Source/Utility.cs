@@ -1,6 +1,7 @@
 ﻿using Verse;
 using AK_TypeDef;
 using RimWorld;
+using Astrologer.Insight;
 
 namespace Astrologer
 {

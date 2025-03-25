@@ -10,15 +10,15 @@
         </targetTags>
         <workerClass>IncidentWorker_GiveQuest</workerClass>
         <questScriptDef>LOF_AdventurerJoins</questScriptDef>
-        <baseChance>0.3</baseChance>
+        <baseChance>0.1</baseChance>
         <pawnKind>LOF_PawnKind_Citizen</pawnKind>
         <populationEffect>IncreaseEasy</populationEffect>
     </IncidentDef>
 
-    <QuestScriptDef>
+    <QuestScriptDef >
         <defName>LOF_AdventurerJoins</defName>
-        <autoAccept>false</autoAccept>
-        <defaultHidden>false</defaultHidden>
+        <autoAccept>true</autoAccept>
+        <defaultHidden>true</defaultHidden>
         <isRootSpecial>true</isRootSpecial>
         <successHistoryEvent MayRequire="Ludeon.RimWorld.Ideology">CharityFulfilled_WandererJoins</successHistoryEvent>
         <failedOrExpiredHistoryEvent MayRequire="Ludeon.RimWorld.Ideology">CharityRefused_WandererJoins</failedOrExpiredHistoryEvent>
@@ -33,13 +33,13 @@
             </rulesStrings>
         </questDescriptionRules>
         <!--root Class="QuestNode_Root_WandererJoin_WalkIn" /-->
-        <root Class="Astrologer.Quest.Root_GetAdventurerJoin_WalkIn">
+        <root Class="Astrologer.QuestNode_Root_GetAdventurerJoin_WalkIn">
             <storeAs>asker</storeAs>
             <mustBeOfKind>LOF_PawnKind_Citizen</mustBeOfKind>
         </root>
     </QuestScriptDef>
 
-    <IncidentDef>
+    <IncidentDef MayRequire="Ludeon.Rimworld.Royalty">
         <defName>LOF_SeminarInvite</defName>
         <label>星相学研讨会</label>
         <category>Misc</category>
@@ -48,10 +48,10 @@
         </targetTags>
         <workerClass>IncidentWorker_GiveQuest</workerClass>
         <questScriptDef>LOF_InviteQuest</questScriptDef>
-        <baseChance>0.2</baseChance>
+        <baseChance>0.1</baseChance>
     </IncidentDef>
 
-    <QuestScriptDef>
+    <QuestScriptDef MayRequire="Ludeon.Rimworld.Royalty">
         <defName>LOF_InviteQuest</defName>
         <expireDaysRange>4~8</expireDaysRange>
         <questNameRules>
@@ -80,7 +80,7 @@
         </questDescriptionRules>
         <root Class="QuestNode_Sequence">
             <nodes>
-                <li Class="Astrologer.Quest.Node_IsFactionRelationKind">
+                <li Class="Astrologer.QuestNode_IsFactionRelationKind">
                     <factionDefs>
                         <li>LOF_Empire</li>
                     </factionDefs>

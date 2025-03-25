@@ -15,7 +15,7 @@ namespace Astrologer.Insight
         ThingWithComps ThingBuilding => job.GetTarget(indexBuilding).Thing as ThingWithComps;
         public override bool TryMakePreToilReservations(bool errorOnFailed)
         {
-            return pawn.Reserve(ThingBuilding, job, 1, -1, null, errorOnFailed);
+            return this.pawn.Reserve(ThingBuilding, job, 1, -1, null, errorOnFailed);
         }
 
         protected override IEnumerable<Toil> MakeNewToils()
@@ -27,7 +27,7 @@ namespace Astrologer.Insight
             t.initAction = delegate
             {
                 TC_InsightInteractable_Base interactable = ThingBuilding.TryGetComp<TC_InsightInteractable_Base>();
-                interactable?.InsightInteract(pawn);
+                interactable?.InsightInteract(this.pawn);
             };
             yield return t;
         }

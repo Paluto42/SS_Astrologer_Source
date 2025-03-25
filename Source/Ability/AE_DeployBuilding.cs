@@ -7,7 +7,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Verse;
 
-namespace Astrologer
+namespace Astrologer.Ability
 {
     //刷个建筑
     public class AE_DeployBuilding : AbilityEffectBase

@@ -134,4 +134,22 @@
         </stages>
     </HediffDef>
 
+    <HediffDef>
+        <defName>LOF_Hediff_DecreasePsychicSense</defName>
+        <label>降低心灵敏感度</label>
+        <description>一小段时间内降低心灵敏感度.</description>
+        <hediffClass>HediffWithComps</hediffClass>
+        <defaultLabelColor>(0.6, 0.6, 1.0)</defaultLabelColor>
+        <isBad>false</isBad>
+        <allowMothballIfLowPriorityWorldPawn>true</allowMothballIfLowPriorityWorldPawn>
+        <everCurableByItem>false</everCurableByItem>
+        <stages>
+            <li>
+                <statOffsets>
+                    <PsychicSensitivity>-0.5</PsychicSensitivity>
+                </statOffsets>
+            </li>
+        </stages>
+    </HediffDef>
+
 </Defs>

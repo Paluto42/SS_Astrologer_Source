@@ -8,18 +8,19 @@ using System.Threading.Tasks;
 using UnityEngine;
 using Verse;
 
-namespace Astrologer
+namespace Astrologer.Insight
 {
+    //洞察力主容器
     public class VAB_AstroTracker : VAbility_AKATrackerContainer
     {
         public float insight = 0;
 
         public const float insightCapacity = 100;
 
-        public const float insightRegenPerTick = 100;
+        public const float insightRegenPerTick = 2;
         public const float insightRegenTickInterval = 250;
 
-        public const float insightRegenBonusNearStarGrass = 10; //靠近草时回复奖励
+        public const float insightRegenBonusNearStarGrass = 2; //靠近草时回复奖励
 
         public const float starGrassObserveDistance = 5;
         public VAB_AstroTracker(Pawn pawn) : base(pawn)
@@ -30,6 +31,13 @@ namespace Astrologer
            : base(pawn, def)
         {
         }
+        public void ConsumeInsight(int amount)
+        {
+            if (amount <= 0) return;
+            if (insight < amount) return;
+            insight -= amount;
+            //Log.Message(User.Name + " 的洞察力消耗了： " + amount);
+        }
 
         public override void AbilityTick()
         {
@@ -39,7 +47,7 @@ namespace Astrologer
                 Map map = pawn.Map;
                 if (map != null)
                 {
-                    foreach (Thing t in map.listerThings.ThingsOfDef(AstroDefOf.LOF_Starlightgrass))
+                    foreach (Thing t in map.listerThings.ThingsOfDef(AstroDefOf.LOF_Plant_Starlightgrass))
                     {
                         if (PossibleToObserve(t))
                         {
@@ -50,11 +58,6 @@ namespace Astrologer
                 }
                 insight = Mathf.Clamp(insight, 0, insightCapacity);
             }
-        }
-
-        public override IEnumerable<Gizmo> GetGizmosExtra()
-        {
-            return base.GetGizmosExtra();
         }
 
         private bool PossibleToObserve(Thing thing)

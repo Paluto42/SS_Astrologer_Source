@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 using UnityEngine;
 using Verse;
 
-namespace Astrologer.HarmonyPatchs
+namespace Astrologer.HarmonyPatches
 {
     [HarmonyPatch(typeof(GenRecipe), "MakeRecipeProducts")]
     public class Patch_OffsetProductQuality

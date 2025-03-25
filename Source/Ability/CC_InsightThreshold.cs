@@ -1,6 +1,7 @@
 ﻿
 using AKA_Ability;
 using AKA_Ability.CastConditioner;
+using Astrologer.Insight;
 using RimWorld;
 using System;
 using System.Collections.Generic;
@@ -9,7 +10,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Verse;
 
-namespace Astrologer
+namespace Astrologer.Ability
 {
     public class CC_InsightThreshold : CastConditioner_Base
     {
@@ -22,7 +23,7 @@ namespace Astrologer
 
             bool castable = tracker.insight >= amount;
             if (!above) castable = !castable;
-            
+
             if (!castable && instance is AKAbility_Auto auto)
             {
                 auto.AutoCast = false;

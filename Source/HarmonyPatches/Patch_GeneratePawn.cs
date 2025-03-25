@@ -32,7 +32,6 @@ namespace Astrologer.HarmonyPatches
     public class Patch_GeneratePawn
     {
         [HarmonyPostfix]
-        [HarmonyPriority(Priority.First)]
         public static void Postfix(ref PawnGenerationRequest request, Pawn __result)
         {
             if (__result == null || __result.genes.HasAstroGene() == false) return;

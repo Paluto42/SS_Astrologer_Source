@@ -34,6 +34,6 @@ namespace Astrologer
 
         public static GeneDef LOF_Gene_Main;
 
-        public static ThingDef LOF_Starlightgrass; //种地上的 植物 星光草
+        public static ThingDef LOF_Plant_Starlightgrass; //种地上的 植物 星光草
     }
 }

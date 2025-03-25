@@ -2,7 +2,6 @@
 using RimWorld;
 using System.Collections.Generic;
 using System.Linq;
-using System.Runtime.InteropServices.ComTypes;
 using System.Text;
 using System.Threading.Tasks;
 using UnityEngine;
@@ -34,7 +33,7 @@ namespace Astrologer.HarmonyPatches
                 }
             }*/
             Gene astroGene = pawn.genes.GetAstroGene();
-            Ext_AstrologerGene ext = astroGene.def.GetModExtension<Ext_AstrologerGene>();
+            Ext_ForcedAstrologer ext = astroGene.def.GetModExtension<Ext_ForcedAstrologer>();
             if (ext != null && astroGene.Active)
             {
                 if (astroGene.def.forcedHeadTypes != null && !astroGene.def.forcedHeadTypes.Contains(pawn.story.headType))

@@ -10,7 +10,7 @@
     <JobDef>
         <defName>LOF_Job_InsightInteract</defName>
         <driverClass>Astrologer.Insight.JobDriver_InsightInteract</driverClass>
-        <reportString>filling in TargetA.</reportString>
+        <reportString>operating TargetA.</reportString>
     </JobDef>
 
 </Defs>

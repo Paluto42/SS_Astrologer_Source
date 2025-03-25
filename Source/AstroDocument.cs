@@ -1,4 +1,5 @@
 ﻿using AK_DLL.Document;
+using Astrologer.Insight;
 using RimWorld;
 using System;
 using System.Collections.Generic;
@@ -46,7 +47,7 @@ namespace Astrologer
         {
             base.ExposeData();
             //VAB_AstroTracker疑似没有实现IExposable
-            Scribe_References.Look(ref astroTracker, "astroTracker");
+            Scribe_References.Look(ref astroTracker, "tracker");
         }
     }
 }

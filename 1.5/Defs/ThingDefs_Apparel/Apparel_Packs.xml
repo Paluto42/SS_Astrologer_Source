@@ -1,8 +1,26 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
+    <ThingDef ParentName="BuildingBase">
+        <defName>LOF_ActivatedPulsePack</defName>
+        <thingClass>Astrologer.Thing_ActivatedPulsePack</thingClass>
+        <label>EMP冲击背包(工作中)</label>
+        <description>投射在地面上会产生持续的emp脉冲，范围较大且放置距离较长</description>
+        <!--等待贴图-->
+        <graphicData>
+            <texPath>Things/Pawn/Humanlike/Apparel/SmokepopPack/SmokepopPack</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <uiIconScale>1.25</uiIconScale>
+        <relicChance>0</relicChance>
+        <comps>
+            <li Class="CompProperties_Forbiddable"/>
+        </comps>
+    </ThingDef>
+
     <ThingDef ParentName="Astro_ApparelBase">
         <defName>LOF_EmpactPack</defName>
+        <tickerType>Normal</tickerType>
         <label>"AMA-2" EMP冲击背包</label>
         <description>投射在地面上会产生持续的emp脉冲，范围较大且放置距离较长</description>
         <thingCategories Inherit="false">
@@ -26,26 +44,23 @@
             <li>Metallic</li>
         </stuffCategories>
         <costStuffCount>20</costStuffCount>
-        <verbs>
-            <li>
-                <verbClass>Verb_FirefoamPop</verbClass>
-                <label>pop firefoam</label>
-                <violent>false</violent>
-                <hasStandardCommand>true</hasStandardCommand>
-                <targetable>false</targetable>
-                <nonInterruptingSelfCast>true</nonInterruptingSelfCast>
-                <onlyManualCast>True</onlyManualCast>
+        <comps>
+            <li Class="AKA_Ability.TCP_AKATracker">
+                <abilities>
+                    <li>LOF_Ability_DeployBuilding</li>
+                </abilities>
+                <sharedDataProperty Class="AKA_Ability.SharedData.SDP_SharedCharge">
+                    <sharedDataType>AKA_Ability.SharedData.SD_SharedCharge</sharedDataType>
+                    <cooldownProperty>
+                        <cooldownClass>AKA_Ability.Cooldown.CD_TrackerShared</cooldownClass>
+                        <SPPerCharge>1</SPPerCharge>
+                        <SPUnit>day</SPUnit>
+                        <initSP>600000</initSP>
+                        <maxCharge>1</maxCharge>
+                    </cooldownProperty>
+                </sharedDataProperty>
             </li>
-            <!--li Class="Astrologer.VP_EMPpop">
-                <label>使用EMP冲击背包</label>
-                <postSpawnThing></postSpawnThing>
-                <violent>false</violent>
-                <hasStandardCommand>true</hasStandardCommand>
-                <targetable>false</targetable>
-                <nonInterruptingSelfCast>true</nonInterruptingSelfCast>
-                <onlyManualCast>True</onlyManualCast>
-            </li-->
-        </verbs>
+        </comps>
         <apparel>
             <wornGraphicPath>Things/Pawn/Humanlike/Apparel/SmokepopPack/SmokepopPack</wornGraphicPath>
             <wornGraphicData>
@@ -163,6 +178,11 @@
         <equippedStatOffsets>
         </equippedStatOffsets>
         <comps>
+            <li Class="AKA_Ability.TCP_AKATracker">
+                <abilities>
+                    <li>LOF_Ability_Skip</li>
+                </abilities>
+            </li>
         </comps>
         <costStuffCount>60</costStuffCount>
         <stuffCategories>

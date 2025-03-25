@@ -1,4 +1,5 @@
 ﻿using AK_TypeDef;
+using Astrologer.Insight;
 using RimWorld;
 using System;
 using System.Collections.Generic;
@@ -13,12 +14,13 @@ namespace Astrologer
     {
         public override void PostAdd()
         {
-            Ext_AstrologerGene ext = def.GetModExtension<Ext_AstrologerGene>();
-            if (ext != null && (ext.forcedBodyType != null))
+            Ext_ForcedAstrologer ext = def.GetModExtension<Ext_ForcedAstrologer>();
+            if (ext != null && ext.forcedBodyType != null)
             {
                 pawn.story.bodyType = ext.forcedBodyType;
             }
-            pawn.AddDoc<AstroDocument>(new AstroDocument() { 
+            pawn.AddDoc(new AstroDocument()
+            {
                 parent = pawn,
                 astroTracker = new VAB_AstroTracker(pawn, ext.astroAbility),
             });

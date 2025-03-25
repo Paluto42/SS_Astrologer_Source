@@ -1,21 +1,124 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
+    <!--==================== 洞察力技能 ====================-->
+    <AKA_Ability.AKAbilityDef>
+        <defName>LOF_Ability_Monitor</defName>
+        <label>占星师洞察力</label>
+        <description>洞察力自然恢复进度\n\n介绍:\n洞察力是占星师种族拥有的独特能力,许多专属技能都依赖洞察力进行释放.\n\n注意:\n当占星师靠近星光草附近时,洞察力恢复速度会加快.</description>
+        <displayGizmoUndraft>true</displayGizmoUndraft>
+        <icon>UI/Element/Placeholder</icon>
+        <abilityClass>Astrologer.Ability.AKAbility_Monitor</abilityClass>
+        <compEffectList/>
+        <cooldownProperty/>
+    </AKA_Ability.AKAbilityDef>
+    <!--Monitor必须放在AKAbilities列表末尾才能优先显示 我也不知道为什么-->
+
+    <AKA_Ability.AKAbilityDef>
+        <defName>LOF_Ability_FireMode</defName>
+        <label>占星师切换武器模式</label>
+        <description>desc.</description>
+        <icon>UI/Element/Placeholder</icon>
+        <abilityClass>Astrologer.Ability.AKAbility_FireMode</abilityClass>
+        <compEffectList/>
+        <cooldownProperty/>
+    </AKA_Ability.AKAbilityDef>
 
     <AKA_Ability.AKAbilityDef>
         <defName>LOF_Ability_IncreaseHarvest</defName>
-        <label>提高收获量</label>
-        <description>消耗一定洞察力,在一天内提高农作物收获量,屠宰量.手术成功率提高,制作物品高品质概率增加,射击命中率增加,食物消耗率x200%.</description>
-        <icon>UI/Abilities/Medic/HealEnhance</icon>
-        <grouped>false</grouped>
+        <label>大丰收</label>
+        <description>介绍:\n消耗一定洞察力,在一天内提高农作物收获量,屠宰量.手术成功率提高,制作物品高品质概率增加,射击命中率增加,食物消耗率x200%.</description>
+        <icon>UI/Element/Placeholder</icon>
         <range>40</range>
         <abilityClass>AKA_Ability.AKAbility_SelfTarget</abilityClass>
+        <castConditions>
+            <li Class="Astrologer.Ability.CC_InsightThreshold">
+                <amount>50</amount>
+                <failReason>洞察力不足</failReason>
+            </li>
+        </castConditions>
         <compEffectList>
+            <li Class="Astrologer.Ability.AE_CostInsight">
+                <amount>50</amount>
+            </li>
             <li Class="Astrologer.Ability.AE_IncreaseHarvest"/>
-            <li Class="AKA_Ability.AbilityEffect.AE_CostChargeStatic"/>
         </compEffectList>
         <useSounds>
             <li>AK_SFX_Tactboost</li>
         </useSounds>
+        <cooldownProperty>
+            <SPPerCharge>1</SPPerCharge>
+            <SPUnit>day</SPUnit>
+            <initSP>600000</initSP>
+            <maxCharge>1</maxCharge>
+        </cooldownProperty>
+    </AKA_Ability.AKAbilityDef>
+
+    <!--AKAbility_Targetor还不支持选择Cell释放-->
+    <AKA_Ability.AKAbilityDef>
+        <defName>LOF_Ability_Skip</defName>
+        <label>进行大跳</label>
+        <description>desc.</description>
+        <icon>UI/Element/Placeholder</icon>
+        <abilityClass>AKA_Ability.AKAbility_Targetor</abilityClass>
+        <castConditions>
+            <li Class="Astrologer.Ability.CC_InsightThreshold">
+                <amount>50</amount>
+                <failReason>洞察力不足</failReason>
+            </li>
+        </castConditions>
+        <compEffectList>
+            <li Class="AKA_Ability.AE_Jump"/>
+        </compEffectList>
+        <cooldownProperty>
+            <SPPerCharge>1</SPPerCharge>
+            <SPUnit>day</SPUnit>
+            <initSP>600000</initSP>
+            <maxCharge>1</maxCharge>
+        </cooldownProperty>
+    </AKA_Ability.AKAbilityDef>
+
+    <AKA_Ability.AKAbilityDef>
+        <defName>LOF_Ability_Teleport</defName>
+        <label>进行折跃</label>
+        <description>desc.</description>
+        <icon>UI/Element/Placeholder</icon>
+        <abilityClass>AKA_Ability.AKAbility_Targetor</abilityClass>
+        <castConditions>
+            <li Class="Astrologer.Ability.CC_InsightThreshold">
+                <amount>50</amount>
+                <failReason>洞察力不足</failReason>
+            </li>
+        </castConditions>
+        <compEffectList>
+            <li Class="AKA_Ability.AbilityEffect.AE_TeleportSelfToTarget"/>
+        </compEffectList>
+        <cooldownProperty>
+            <SPPerCharge>1</SPPerCharge>
+            <SPUnit>day</SPUnit>
+            <initSP>600000</initSP>
+            <maxCharge>1</maxCharge>
+        </cooldownProperty>
+    </AKA_Ability.AKAbilityDef>
+
+    <!--==================== 不需要洞察力的技能 ====================-->
+    <AKA_Ability.AKAbilityDef>
+        <defName>LOF_Ability_DeployBuilding</defName>
+        <label>部署建筑物</label>
+        <description>desc.</description>
+        <icon>UI/Element/Placeholder</icon>
+        <abilityClass>AKA_Ability.AKAbility_SelfTarget</abilityClass>
+        <castConditions>
+            <li Class="AKA_Ability.CastConditioner.CC_NeedFullCharge"/>
+        </castConditions>
+        <compEffectList>
+            <li Class="Astrologer.Ability.AE_DeployBuilding">
+                <building>LOF_ActivatedPulsePack</building>
+                <equip>LOF_EmpactPack</equip>
+            </li>
+            <li Class="AKA_Ability.AbilityEffect.AE_CostChargeStatic">
+                <cost>1</cost>
+            </li>
+        </compEffectList>
         <cooldownProperty>
             <SPPerCharge>1</SPPerCharge>
             <SPUnit>day</SPUnit>

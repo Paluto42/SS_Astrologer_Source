@@ -7,14 +7,20 @@ using System.Threading.Tasks;
 using UnityEngine;
 using Verse;
 
-namespace Astrologer
+namespace Astrologer.Insight
 {
+    public enum FireTickStatus
+    {
+        None = 0,
+        Started = 1,
+        Completed = 2
+    }
     //和TC_Insight联动的Comp
-    public class TCP_FireMode : CompProperties
+    public class TCP_newFireMode : CompProperties
     {
         public VerbProperties verbProps = new();
 
-        public int consumeInsight = 1;
+        public int consumeAmount = 1;
 
         public int consumeDuration = 0;
 
@@ -29,29 +35,24 @@ namespace Astrologer
         public string secondaryWeaponLabel;
 
         public string secondaryDescription;
-        public TCP_FireMode() 
+        public TCP_newFireMode()
         {
-            compClass = typeof(TC_FireMode);
+            compClass = typeof(TC_newFireMode);
         }
     }
-    public enum FireTickStatus 
-    {
-        None = 0,
-        Started = 1,
-        Completed = 2
-    }
     //每发子弹都消耗洞察力
-    public class TC_FireMode : ThingComp 
+    public class TC_newFireMode : ThingComp
     {
         public FireTickStatus tickStatus = FireTickStatus.None;
-        private TC_Insights CompInsight => CasterPawn?.GetComp<TC_Insights>();//洞察力comp
+        private VAB_AstroTracker CompInsight => CasterPawn?.TryGetAstroDoc()?.astroTracker;
+        //private TC_Insights CompInsight => CasterPawn?.GetComp<TC_Insights>();//洞察力comp
 
         private Verb verbInt;
 
         private CompEquippable compEquippableInt;
 
         private bool isSecondaryVerbSelected = false;
-        public TCP_FireMode Props => (TCP_FireMode)props;
+        public TCP_newFireMode Props => (TCP_newFireMode)props;
         public bool IsSecondaryVerbSelected => isSecondaryVerbSelected;
 
         private CompEquippable EquipmentSource
@@ -84,7 +85,7 @@ namespace Astrologer
         public override void CompTick()
         {
             if (tickStatus != FireTickStatus.Started) return;
-            if (isSecondaryVerbSelected && Utility.IsTickInterval(Props.consumeDuration)) 
+            if (isSecondaryVerbSelected && Utility.IsTickInterval(Props.consumeDuration))
             {
                 tickStatus = FireTickStatus.Completed;
             }
@@ -92,7 +93,7 @@ namespace Astrologer
         //这个居然不会自动调用...
         public override IEnumerable<Gizmo> CompGetGizmosExtra()
         {
-            if (CasterPawn == null || CasterPawn.Faction.Equals(Faction.OfPlayer) == false)
+            if (CasterPawn == null || CasterPawn?.Faction.Equals(Faction.OfPlayer) == false)
             {
                 yield break;
             }
@@ -102,7 +103,7 @@ namespace Astrologer
                 text = "UI/Buttons/Reload";
             }
             //洞察力不足或缺失comp强制切回主Verb显示
-            if (CompInsight == null || CompInsight.CurInsights < Props.consumeInsight)
+            if (CompInsight == null || CompInsight.insight < Props.consumeAmount)
             {
                 if (isSecondaryVerbSelected)
                 {
@@ -112,7 +113,7 @@ namespace Astrologer
                 }
                 yield return new Command_Action//只能显示主Verb
                 {
-                    action = delegate{ },
+                    action = delegate { },
                     defaultLabel = Props.mainWeaponLabel,
                     defaultDesc = Props.mainDescription,
                     icon = ContentFinder<Texture2D>.Get(Props.mainIcon, reportFailure: false)
@@ -122,8 +123,8 @@ namespace Astrologer
             yield return new Command_Action//主副Verb同时切换显示
             {
                 action = SwitchVerb,
-                defaultLabel = (IsSecondaryVerbSelected ? Props.secondaryWeaponLabel : Props.mainWeaponLabel),
-                defaultDesc = (IsSecondaryVerbSelected ? Props.secondaryDescription : Props.mainDescription),
+                defaultLabel = IsSecondaryVerbSelected ? Props.secondaryWeaponLabel : Props.mainWeaponLabel,
+                defaultDesc = IsSecondaryVerbSelected ? Props.secondaryDescription : Props.mainDescription,
                 icon = ContentFinder<Texture2D>.Get(text, reportFailure: false)
             };
 

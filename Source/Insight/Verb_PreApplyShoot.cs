@@ -5,15 +5,15 @@ using System.Text;
 using System.Threading.Tasks;
 using Verse;
 
-namespace Astrologer
+namespace Astrologer.Insight
 {
     public class Verb_PreApplyShoot : Verb_Shoot
     {
         //Caster = Pawn
-        private TC_Insights CompInsightInt => CasterPawn?.GetComp<TC_Insights>();
-        private TC_FireMode CompFireMode => EquipmentSource?.GetComp<TC_FireMode>();
+        private VAB_AstroTracker CompInsightInt => CasterPawn?.TryGetAstroDoc()?.astroTracker;
+        private TC_newFireMode CompFireMode => EquipmentSource?.GetComp<TC_newFireMode>();
         private bool ShouldConsumeInsight => CompFireMode.IsSecondaryVerbSelected;
-        private int ConsumeAmount => CompFireMode.Props.consumeInsight;
+        private int ConsumeAmount => CompFireMode.Props.consumeAmount;
         public bool ShouldCalulateTicks => CompFireMode.Props.consumeDuration > 0;
         protected override bool TryCastShot()
         {
@@ -24,7 +24,7 @@ namespace Astrologer
 
         private void PreApplyTryCastShot() 
         {
-            Log.Message("Invoked PreApplyTryCastShot");
+            //Log.Message("Invoked PreApplyTryCastShot");
             if (CompInsightInt == null || CompFireMode == null) return;
             if (ShouldCalulateTicks) 
             {

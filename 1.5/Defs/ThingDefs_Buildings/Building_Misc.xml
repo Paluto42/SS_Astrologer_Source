@@ -67,6 +67,71 @@
             </li>
         </comps>
         <placeWorkers>
+            <!--li>PlaceWorker_ShowFacilitiesConnections</li-->
+        </placeWorkers>
+        <constructionSkillPrerequisite>8</constructionSkillPrerequisite>
+    </ThingDef>
+
+    <ThingDef ParentName="BuildingBase">
+        <defName>LOF_Thing_PsychicDevice</defName>
+        <label>心灵低语驳斥装置</label>
+        <description>消耗一定洞察力,将范围内生物的心灵敏感度降为0,持续一段时间,同时需要消耗大量电力.</description>
+        <graphicData>
+            <texPath>Things/Building/Misc/MultiAnalyzer</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>2.46875</drawSize>
+        </graphicData>
+        <uiIconScale>0.85</uiIconScale>
+        <!--researchPrerequisites>
+            <li>MultiAnalyzer</li>
+        </researchPrerequisites-->
+        <size>(2,2)</size>
+        <rotatable>false</rotatable>
+        <altitudeLayer>Building</altitudeLayer>
+        <passability>PassThroughOnly</passability>
+        <castEdgeShadows>true</castEdgeShadows>
+        <fillPercent>0.5</fillPercent>
+        <!--designationHotKey>Misc4</designationHotKey-->
+        <designationCategory>Misc</designationCategory>
+        <minifiedDef>MinifiedThing</minifiedDef>
+        <canOverlapZones>false</canOverlapZones>
+        <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+        <thingCategories>
+            <li>BuildingsMisc</li>
+        </thingCategories>
+        <statBases>
+            <MaxHitPoints>200</MaxHitPoints>
+            <WorkToBuild>10000</WorkToBuild>
+            <Mass>60</Mass>
+            <Flammability>0.2</Flammability>
+        </statBases>
+        <costList>
+            <Steel>40</Steel>
+            <Plasteel>50</Plasteel>
+            <Gold>20</Gold>
+            <ComponentIndustrial>8</ComponentIndustrial>
+        </costList>
+        <building>
+            <destroySound>BuildingDestroyed_Metal_Medium</destroySound>
+        </building>
+        <comps>
+            <!--li Class="CompProperties_Power">
+                <compClass>CompPowerTrader</compClass>
+                <shortCircuitInRain>true</shortCircuitInRain>
+                <basePowerConsumption>2000</basePowerConsumption>
+            </li-->
+            <li Class="CompProperties_Flickable"/>
+            <li Class="CompProperties_Usable">
+                <useJob>LOF_Job_InsightInteract</useJob>
+                <useLabel>激活 {0_label}</useLabel>
+            </li>
+            <li Class="Astrologer.Insight.TCP_AddHediffInRange">
+                <hediffDef>LOF_Hediff_DecreasePsychicSense</hediffDef>
+                <activeTickPerInteract>1000</activeTickPerInteract>
+            </li>
+        </comps>
+        <placeWorkers>
+            <!--li>PlaceWorker_ShowFacilitiesConnections</li-->
         </placeWorkers>
         <constructionSkillPrerequisite>8</constructionSkillPrerequisite>
     </ThingDef>

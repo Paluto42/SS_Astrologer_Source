@@ -14,7 +14,7 @@ namespace Astrologer_HAR
         public static bool BodyGraphicForPrefix_Prefix(ref bool __result, PawnRenderNode_Body __instance, Pawn pawn)
         {
             __result = true;
-            if (pawn.story.bodyType.HasModExtension<Ext_AstrologerGene>() == false) 
+            if (pawn.story.bodyType.HasModExtension<Ext_ForcedAstrologer>() == false) 
             {
                 return false;
             }

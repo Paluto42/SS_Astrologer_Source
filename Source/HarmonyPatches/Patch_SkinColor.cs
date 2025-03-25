@@ -18,7 +18,7 @@ namespace Astrologer.HarmonyPatches
         {
             if (___pawn.genes.HasAstroGene() == false) return;
             Gene astroGene = ___pawn.genes.GetAstroGene();
-            Ext_AstrologerGene ext = astroGene.def.GetModExtension<Ext_AstrologerGene>();
+            Ext_ForcedAstrologer ext = astroGene.def.GetModExtension<Ext_ForcedAstrologer>();
             if (ext != null && ext.skinColorOverride != null)
             {
                 __result = ext.skinColorOverride.Value;

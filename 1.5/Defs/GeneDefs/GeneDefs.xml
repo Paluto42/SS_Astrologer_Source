@@ -37,6 +37,8 @@
             <li Class="Astrologer.Ext_OperatorDef">
                 <AKAbilities>
                     <li>LOF_Ability_IncreaseHarvest</li>
+                    <li>LOF_Ability_Monitor</li>
+                    <li>LOF_Ability_FireMode</li>
                 </AKAbilities>
             </li>
         </modExtensions>
@@ -46,7 +48,7 @@
         <defName>LOF_VAbility_Operator</defName>
         <label>占星</label>
         <description>desc</description>
-        <abilityClass>Astrologer.VAB_AstroTracker</abilityClass>
+        <abilityClass>Astrologer.Insight.VAB_AstroTracker</abilityClass>
         <iconPath>UI/Element/Arknights</iconPath>
     </AbilityDef>
 
@@ -73,7 +75,7 @@
         <forcedTraits>
         </forcedTraits>
         <modExtensions>
-            <li Class="Astrologer.Ext_AstrologerGene">
+            <li Class="Astrologer.Ext_ForcedAstrologer">
                 <forcedBodyType>Astro_Body</forcedBodyType>
                 <astroAbility>LOF_VAbility_Operator</astroAbility>
                 <skinColorOverride>(255, 255, 255)</skinColorOverride>

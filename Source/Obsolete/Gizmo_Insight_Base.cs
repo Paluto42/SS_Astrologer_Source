@@ -10,7 +10,7 @@ namespace Astrologer
 {
     //可以当作其他洞察力技能的Base
     //技能换akability
-    public abstract class Gizmo_Insight_Base : Command
+    /*public abstract class Gizmo_Insight_Base : Command
     {
         public TC_Insights compInsights;
 
@@ -45,5 +45,5 @@ namespace Astrologer
             return new GizmoResult(GizmoState.Clear);
         }
 
-    }
+    }*/
 }

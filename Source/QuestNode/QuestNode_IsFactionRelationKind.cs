@@ -7,10 +7,10 @@ using System.Text;
 using System.Threading.Tasks;
 using Verse;
 
-namespace Astrologer.Quest
+namespace Astrologer
 {
     //判断派系关系
-    public class Node_IsFactionRelationKind : QuestNode
+    public class QuestNode_IsFactionRelationKind : QuestNode
     {
         public SlateRef<List<FactionDef>> factionDefs;
         public SlateRef<FactionRelationKind> factionRelationKind;

@@ -417,28 +417,29 @@
         </thingSetMakerTags>
         <verbs Inherit="false">
             <li>
-                <verbClass>Astrologer.Verb_PreApplyShoot</verbClass>
+                <verbClass>Astrologer.Insight.Verb_PreApplyShoot</verbClass>
                 <hasStandardCommand>true</hasStandardCommand>
                 <defaultProjectile>LOF_Bullet_DMR</defaultProjectile>
                 <warmupTime>1.0</warmupTime>
                 <range>30</range>
-                <soundCast>ChargeLance_Fire</soundCast>
+                <soundCast>Shot_Shotgun</soundCast>
                 <soundCastTail>GunTail_Heavy</soundCastTail>
                 <muzzleFlashScale>9</muzzleFlashScale>
             </li>
         </verbs>
         <comps>
-            <li Class="Astrologer.TCP_FireMode">
+            <li Class="Astrologer.Insight.TCP_newFireMode">
                 <verbProps>
-                    <verbClass>Astrologer.Verb_PreApplyShoot</verbClass>
+                    <verbClass>Astrologer.Insight.Verb_PreApplyShoot</verbClass>
                     <hasStandardCommand>true</hasStandardCommand>
                     <defaultProjectile>LOF_Bullet_Psychicinsanity</defaultProjectile>
                     <warmupTime>1</warmupTime>
                     <range>30</range>
-                    <soundCast>Shot_AssaultRifle</soundCast>
+                    <soundCast>ChargeLance_Fire</soundCast>
                     <soundCastTail>GunTail_Heavy</soundCastTail>
                     <muzzleFlashScale>9</muzzleFlashScale>
                 </verbProps>
+                <consumeAmount>5</consumeAmount>
                 <mainWeaponLabel>普通射击模式</mainWeaponLabel>
                 <mainIcon>UI/Buttons/NormalFire</mainIcon>
                 <mainDescription>占星师使用时，似乎可以消耗洞察力切换到特殊的开火模式</mainDescription>
@@ -632,7 +633,7 @@
         </thingSetMakerTags>
         <verbs>
             <li>
-                <verbClass>Astrologer.Verb_PreApplyShoot</verbClass>
+                <verbClass>Astrologer.Insight.Verb_PreApplyShoot</verbClass>
                 <hasStandardCommand>true</hasStandardCommand>
                 <defaultProjectile>Bullet_ChargeRifle</defaultProjectile>
                 <warmupTime>1.2</warmupTime>
@@ -645,9 +646,9 @@
             </li>
         </verbs>
         <comps>
-            <li Class="Astrologer.TCP_FireMode">
+            <li Class="Astrologer.Insight.TCP_newFireMode">
                 <verbProps>
-                    <verbClass>Astrologer.Verb_PreApplyShoot</verbClass>
+                    <verbClass>Astrologer.Insight.Verb_PreApplyShoot</verbClass>
                     <hasStandardCommand>true</hasStandardCommand>
                     <defaultProjectile>LOF_Bullet_Psychicinsanity</defaultProjectile>
                     <warmupTime>0.5</warmupTime>

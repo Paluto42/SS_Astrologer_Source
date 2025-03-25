@@ -17,6 +17,7 @@ namespace Astrologer.HarmonyPatches
     public class Patch_GeneratePostRecruit
     {
         [HarmonyPostfix]
+        [HarmonyPriority(Priority.First)]
         public static void Postfix(Faction newFaction, Pawn recruiter, Pawn __instance)
         {
             if (newFaction != Faction.OfPlayer) return;
