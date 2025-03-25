@@ -10,7 +10,7 @@ using Verse;
 namespace Astrologer
 {
     //用来生成一个定时产生EMP脉冲爆炸的临时Post处理物
-    public class VP_EMPpop : VerbProperties 
+    /*public class VP_EMPpop : VerbProperties 
     {
         public ThingDef postSpawnThing = null;
         public VP_EMPpop()
@@ -52,5 +52,5 @@ namespace Astrologer
                 base.EquipmentSource.Destroy();
             }
         }
-    }
+    }*/
 }

@@ -147,7 +147,7 @@
     <Compile Include="Thing\Thing_ActivatedPulsePack.cs" />
     <Compile Include="TypeDef.cs" />
     <Compile Include="Utility.cs" />
-    <Compile Include="Verb\Verb_EMPpop.cs" />
+    <Compile Include="Obsolete\Verb_EMPpop.cs" />
     <Compile Include="Insight\Verb_PreApplyShoot.cs" />
   </ItemGroup>
   <ItemGroup />
