@@ -1,10 +1,5 @@
 ﻿using AKA_Ability;
 using RimWorld;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using UnityEngine;
 using Verse;
 
@@ -36,7 +31,6 @@ namespace Astrologer.Insight
             if (amount <= 0) return;
             if (insight < amount) return;
             insight -= amount;
-            //Log.Message(User.Name + " 的洞察力消耗了： " + amount);
         }
 
         public override void AbilityTick()

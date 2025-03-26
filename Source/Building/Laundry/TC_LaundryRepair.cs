@@ -1,6 +1,4 @@
-﻿using Astrologer.Laundry;
-using RimWorld;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using Verse;
 

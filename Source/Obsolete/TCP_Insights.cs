@@ -1,11 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Verse;
-
-namespace Astrologer
+﻿namespace Astrologer
 {
     //由VAB取代
     /*public class TCP_Insights : CompProperties

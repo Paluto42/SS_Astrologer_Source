@@ -1,12 +1,4 @@
-﻿using AK_TypeDef;
-using Astrologer.Insight;
-using RimWorld;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Verse;
+﻿using Verse;
 
 namespace Astrologer
 {
@@ -19,11 +11,10 @@ namespace Astrologer
             {
                 pawn.story.bodyType = ext.forcedBodyType;
             }
-            pawn.AddDoc(new AstroDocument()
+            /*pawn.AddDoc(new AstroDocument(pawn)
             {
-                parent = pawn,
                 astroTracker = new VAB_AstroTracker(pawn, ext.astroAbility),
-            });
+            });*/
             pawn.Drawer.renderer.SetAllGraphicsDirty();
         }
     }

@@ -1,19 +1,16 @@
-﻿using HarmonyLib;
-using RimWorld;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Verse;
-using AK_DLL;
+﻿using AK_DLL;
 using AK_TypeDef;
 using AKA_Ability;
+using Astrologer.Insight;
+using HarmonyLib;
+using RimWorld;
+using System;
+using Verse;
 
 namespace Astrologer.HarmonyPatches
 {
     //招安走的后置Recruit流程，没有OperatorDef只有AKAbility
-    [HarmonyPatch(typeof(Pawn), "SetFaction", new Type[] { typeof(Faction), typeof(Pawn) } )]
+    [HarmonyPatch(typeof(Pawn), "SetFaction", new Type[] { typeof(Faction), typeof(Pawn) })]
     public class Patch_GeneratePostRecruit
     {
         [HarmonyPostfix]
@@ -25,12 +22,18 @@ namespace Astrologer.HarmonyPatches
 
             Gene astroGene = __instance.genes.GetAstroGene();
             Ext_OperatorDef operatorDef = astroGene.def.GetModExtension<Ext_OperatorDef>();
+            Ext_ForcedAstrologer ext = astroGene.def.GetModExtension<Ext_ForcedAstrologer>();
             if (operatorDef == null) return;
 
             Pawn operator_Pawn = __instance;
             VAbility_AKATrackerContainer operatorID = Recruit_OperatorID(operator_Pawn);
-            //operator_Pawn.AddDoc(new OpDocContainer(operator_Pawn) { va = operatorID });
-
+            //改成招募后才能使用技能,而不是出生自带
+            VAB_AstroTracker astroTracker = new(operator_Pawn, ext.astroAbility);
+            operator_Pawn.AddDoc(new AstroDocument()
+            {
+                parent = operator_Pawn,
+                astroTracker = astroTracker
+            });
             Recruit_Ability(operatorID, operatorDef);
         }
         private static VAbility_AKATrackerContainer Recruit_OperatorID(Pawn operator_Pawn)
@@ -39,12 +42,12 @@ namespace Astrologer.HarmonyPatches
             /*string OperatorID = "LOF" + "_" + operator_Pawn.GetHashCode().ToString();
             GC_OperatorDocumentation.AddPawn(OperatorID, null, operator_Pawn, weapon: null, null);
             OperatorDocument document = GC_OperatorDocumentation.opDocArchive[OperatorID];
-            document.voicePack = null;
-            AbilityDef operatorID = AKDefOf.AK_VAbility_Operator;*/
+            document.voicePack = null;;*/
 
-            AbilityDef operatorID = AstroDefOf.LOF_VAbility_Astro;
+            AbilityDef operatorID = AKDefOf.AK_VAbility_Operator;
+            //AbilityDef operatorID = AstroDefOf.LOF_VAbility_Astro;
             VAbility_AKATrackerContainer vAbility = AbilityUtility.MakeAbility(operatorID, operator_Pawn) as VAbility_AKATrackerContainer;
-            vAbility.AKATracker = new AbilityTracker(operator_Pawn);//使用AK_AbilityTracker会报错
+            vAbility.AKATracker = new AbilityTracker(operator_Pawn);
             operator_Pawn.abilities.abilities.Add(vAbility);
             return vAbility;
         }

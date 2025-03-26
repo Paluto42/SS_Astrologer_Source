@@ -1,7 +1,7 @@
-﻿using Verse;
-using AK_TypeDef;
-using RimWorld;
+﻿using AK_TypeDef;
 using Astrologer.Insight;
+using RimWorld;
+using Verse;
 
 namespace Astrologer
 {
@@ -15,14 +15,14 @@ namespace Astrologer
             if (genes.HasEndogene(AstroDefOf.LOF_Gene_Main)) return true;
             return false;
         }
-        public static Gene GetAstroGene(this Pawn_GeneTracker genes) 
+        public static Gene GetAstroGene(this Pawn_GeneTracker genes)
         {
             if (genes == null) return null;
             return genes.GetGene(AstroDefOf.LOF_Gene_Main);
         }
         public static bool IsTickInterval(int tick)
         {
-            if (tick > 0) 
+            if (tick > 0)
             {
                 return Find.TickManager.TicksGame % tick == 0;
             }

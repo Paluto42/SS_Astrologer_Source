@@ -1,12 +1,5 @@
 ﻿using AKA_Ability;
-using AKA_Ability.Gizmos;
 using Astrologer.Insight;
-using System;
-using System.Collections.Generic;
-using System.Diagnostics;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Verse;
 
 namespace Astrologer.Ability

@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Verse;
+﻿using Verse;
 
 namespace Astrologer.Insight
 {
@@ -22,11 +17,11 @@ namespace Astrologer.Insight
             return true;
         }
 
-        private void PreApplyTryCastShot() 
+        private void PreApplyTryCastShot()
         {
             //Log.Message("Invoked PreApplyTryCastShot");
             if (CompInsightInt == null || CompFireMode == null) return;
-            if (ShouldCalulateTicks) 
+            if (ShouldCalulateTicks)
             {
                 if (ShouldConsumeInsight && CompFireMode.tickStatus == FireTickStatus.None)
                 {
@@ -40,7 +35,7 @@ namespace Astrologer.Insight
                     return;
                 }
             }
-            else if(ShouldConsumeInsight) 
+            else if (ShouldConsumeInsight)
             {
                 CompInsightInt.ConsumeInsight(ConsumeAmount);
             }

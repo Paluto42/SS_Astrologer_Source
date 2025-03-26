@@ -1,10 +1,4 @@
-﻿using Astrologer.Laundry;
-using RimWorld;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
 using Verse;
 using Verse.AI;
 
@@ -28,7 +22,7 @@ namespace Astrologer.Laundry
         {
             get
             {
-                return ThingLaundry.TryGetComp<TC_LaundryRepair>();         
+                return ThingLaundry.TryGetComp<TC_LaundryRepair>();
             }
         }
         public override bool TryMakePreToilReservations(bool errorOnFailed)

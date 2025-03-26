@@ -1,11 +1,6 @@
 ﻿using AK_DLL.Document;
 using Astrologer.Insight;
-using RimWorld;
-using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using UnityEngine;
 using Verse;
 
@@ -46,7 +41,6 @@ namespace Astrologer
         public override void ExposeData()
         {
             base.ExposeData();
-            //VAB_AstroTracker疑似没有实现IExposable
             Scribe_References.Look(ref astroTracker, "tracker");
         }
     }

@@ -1,9 +1,4 @@
 ﻿using RimWorld;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Verse;
 
 namespace Astrologer.Plant
@@ -12,19 +7,19 @@ namespace Astrologer.Plant
     public class TCP_NightGlower : CompProperties_Glower
     {
         public float skyGlowLowerThan = 0.2f;
-        public TCP_NightGlower() 
+        public TCP_NightGlower()
         {
             compClass = typeof(TC_NightGlower);
         }
     }
     //为了性能只使用TickLong更新状态
-    public class TC_NightGlower : CompGlower 
+    public class TC_NightGlower : CompGlower
     {
         private TCP_NightGlower Prop => props as TCP_NightGlower;
         float SkyGlowLowerThan => Prop.skyGlowLowerThan;
-        protected override bool ShouldBeLitNow 
+        protected override bool ShouldBeLitNow
         {
-            get 
+            get
             {
                 if (!parent.Spawned)
                 {

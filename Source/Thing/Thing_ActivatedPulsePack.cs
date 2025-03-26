@@ -1,9 +1,4 @@
 ﻿using RimWorld;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Verse;
 
 namespace Astrologer
@@ -19,7 +14,7 @@ namespace Astrologer
             {
                 DamageCloseThings();
             }
-            if (Utility.IsTickInterval(2500)) 
+            if (Utility.IsTickInterval(2500))
             {
                 this.Destroy();
             }
@@ -34,7 +29,7 @@ namespace Astrologer
             Log.Message("TickLong");
             base.TickLong();
         }
-        private void DamageCloseThings() 
+        private void DamageCloseThings()
         {
             /*int num = GenRadial.NumCellsInRadius(radius);
             for (int i = 0; i < num; i++)

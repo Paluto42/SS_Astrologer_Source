@@ -1,9 +1,5 @@
-﻿using RimWorld;
-using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Verse;
 
 namespace Astrologer
@@ -18,7 +14,7 @@ namespace Astrologer
         }
     }
 
-    public class TC_HediffApparel : ThingComp 
+    public class TC_HediffApparel : ThingComp
     {
         public TCP_HediffApparel Props => (TCP_HediffApparel)props;
 
@@ -37,7 +33,7 @@ namespace Astrologer
                 }
 
             }
-            else 
+            else
             {
                 Hediff newHediff = HediffMaker.MakeHediff(Props.hediff, pawn, null);
                 pawn.health.AddHediff(newHediff);
@@ -47,7 +43,7 @@ namespace Astrologer
         public override void Notify_Unequipped(Pawn pawn)
         {
             Hediff hediffToRemove = pawn.health.hediffSet.GetFirstHediffOfDef(Props.hediff);
-            if (hediffToRemove != null) 
+            if (hediffToRemove != null)
             {
                 pawn.health.RemoveHediff(hediffToRemove);
             }

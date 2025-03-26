@@ -1,13 +1,4 @@
-﻿using Astrologer.Insight;
-using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Verse;
-
-namespace Astrologer
+﻿namespace Astrologer
 {
     /*public class TCP_PawnEquipGizmo : CompProperties
     {

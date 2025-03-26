@@ -1,13 +1,4 @@
-﻿using Astrologer.Insight;
-using RimWorld;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Verse;
-
-namespace Astrologer
+﻿namespace Astrologer
 {
     //用来生成一个定时产生EMP脉冲爆炸的临时Post处理物
     /*public class VP_EMPpop : VerbProperties 

@@ -1,10 +1,9 @@
 ﻿using AK_DLL;
-using AKA_Ability;
+using Astrologer.Generic;
 using RimWorld;
 using System;
 using System.Collections.Generic;
 using Verse;
-using Astrologer.Generic;
 
 namespace Astrologer.Laundry
 {

@@ -20,9 +20,9 @@ namespace Astrologer
         public static HairDef LOF_Hair_E;
         public static HairDef LOF_Hair_F;
         public static HairDef LOF_Hair_G;
-        public static List<HairDef> AstroHairDefs => new() 
+        public static List<HairDef> AstroHairDefs => new()
         {
-            LOF_Hair_A, LOF_Hair_B, LOF_Hair_C, 
+            LOF_Hair_A, LOF_Hair_B, LOF_Hair_C,
             LOF_Hair_D, LOF_Hair_E, LOF_Hair_F, LOF_Hair_G,
         };
         public static AbilityDef LOF_VAbility_Astro;

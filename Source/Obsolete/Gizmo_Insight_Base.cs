@@ -1,12 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using UnityEngine;
-using Verse;
-
-namespace Astrologer
+﻿namespace Astrologer
 {
     //可以当作其他洞察力技能的Base
     //技能换akability

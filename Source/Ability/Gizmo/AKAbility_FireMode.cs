@@ -1,11 +1,6 @@
 ﻿using AKA_Ability;
 using Astrologer.Insight;
-using System;
 using System.Collections.Generic;
-using System.Diagnostics;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Verse;
 
 namespace Astrologer.Ability
@@ -28,9 +23,9 @@ namespace Astrologer.Ability
         }
         public override IEnumerable<Command> GetGizmos()
         {
-            if (!CasterPawn.Drafted && !def.displayGizmoUndraft) 
+            if (!CasterPawn.Drafted && !def.displayGizmoUndraft)
                 yield break;
-            if (Weapon == null || Weapon.AllComps.NullOrEmpty() || FireModeComp == null) 
+            if (Weapon == null || Weapon.AllComps.NullOrEmpty() || FireModeComp == null)
                 yield break;
             foreach (Gizmo item in FireModeComp.CompGetGizmosExtra())
             {
