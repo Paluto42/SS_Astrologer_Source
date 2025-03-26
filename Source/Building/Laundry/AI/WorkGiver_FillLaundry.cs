@@ -8,7 +8,7 @@ namespace Astrologer.Laundry
 {
     //不能简化成一个 -- 一个物品可能同时满足多个桶的条件，而这里同时只能返回一个job。此外，也很难用一个jobdriver控制选哪个桶。
     //保留wg而不直接去物品右键floatmenu加吧 也许以后用得上呢
-    public abstract class WorkGiver_FillLaundryRepair : WorkGiver_Scanner
+    public class WorkGiver_FillLaundryRepair : WorkGiver_Scanner
     {
         public override ThingRequest PotentialWorkThingRequest => ThingRequest.ForGroup(ThingRequestGroup.HaulableEver);
 
@@ -32,18 +32,10 @@ namespace Astrologer.Laundry
         {
             if (comp == null) return false;
 
-            //if (!comp.autoHaulManualSwitch) return false;
-
-            //if (!comp.SatisfiedPrerequisite) return false;
-
             if (!comp.AnyVacancy) return false;
 
             return true;
         };
-
-        //static TC_LaundryDeathStain validatorDummy = new TC_LaundryDeathStain();
-        //protected virtual Predicate<Thing> ContentValidator => validatorDummy.ContentValidator; //看着有点别扭，但这样应该更快 因为validator不能是static
-        //protected virtual String CompID => validatorDummy.SSR_ID;
 
         protected virtual JobDef FillJob => AstroDefOf.LOF_Job_FillLaundry;
 
@@ -56,6 +48,7 @@ namespace Astrologer.Laundry
         {
             if (!forced || !_ContentValidator(t))   //显然先判断一个物品是否合法再搜索洗衣机更快
             {
+                Log.Message($"for {t} : {!forced}, {!_ContentValidator(t)}");
                 return null;
             }
 

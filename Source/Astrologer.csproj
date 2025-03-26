@@ -33,6 +33,9 @@
     <WarningLevel>4</WarningLevel>
     <LangVersion>9.0</LangVersion>
   </PropertyGroup>
+  <PropertyGroup>
+    <RunPostBuildEvent>OnOutputUpdated</RunPostBuildEvent>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="0Harmony">
       <HintPath>Rely\0Harmony.dll</HintPath>
@@ -110,6 +113,7 @@
     <Compile Include="Building\Laundry\AI\WorkGiver_FillLaundry.cs" />
     <Compile Include="Building\Laundry\TCP_Laundry.cs" />
     <Compile Include="Building\Laundry\TCP_ThingContainer.cs" />
+    <Compile Include="Building\Laundry\TCP_UseEffect_ActivateLaundry.cs" />
     <Compile Include="Building\Laundry\TC_LaundryRepair.cs" />
     <Compile Include="Building\OffsetProductQuality\Ext_OffsetProductQuality.cs" />
     <Compile Include="Building\OffsetProductQuality\Patch_OffsetProductQuality.cs" />
@@ -156,4 +160,8 @@
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>DEL "$(SolutionDir)..\1.5\Assemblies\Astrologer.dll"
+COPY "$(TargetPath)" "$(SolutionDir)..\1.5\Assemblies\"</PostBuildEvent>
+  </PropertyGroup>
 </Project>

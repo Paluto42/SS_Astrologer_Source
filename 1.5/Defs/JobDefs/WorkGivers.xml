@@ -2,14 +2,11 @@
 <Defs>
 
     <WorkGiverDef>
-        <defName>LOF_FillLaundryRepair</defName>
+        <defName>LOF_WorkGiver_FillLaundryRepair</defName>
         <label>使用洗衣机</label>
         <giverClass>Astrologer.Laundry.WorkGiver_FillLaundryRepair</giverClass>
-        <!--workType>Crafting</workType-->
+        <workType>Hauling</workType>
         <priorityInType>50</priorityInType>
-        <fixedBillGiverDefs>
-            <li>LOF_Thing_Laundy</li>
-        </fixedBillGiverDefs>
         <verb>work at</verb>
         <gerund>working at</gerund>
         <requiredCapacities>
