@@ -67,7 +67,15 @@
             </li>
         </castConditions>
         <compEffectList>
-            <li Class="AKA_Ability.AE_Jump"/>
+            <li Class="AKA_Ability.AE_Jump">
+                <verbJump>
+                    <targetParams>
+                        <canTargetLocations>true</canTargetLocations>
+                        <canTargetSelf>false</canTargetSelf>
+                        <canTargetPawns>false</canTargetPawns>
+                    </targetParams>
+                </verbJump>
+            </li>
         </compEffectList>
         <cooldownProperty>
             <SPPerCharge>1</SPPerCharge>

@@ -4,6 +4,7 @@
     <ThingDef ParentName="BuildingBase">
         <defName>LOF_ActivatedPulsePack</defName>
         <thingClass>Astrologer.Thing_ActivatedPulsePack</thingClass>
+        <tickerType>Normal</tickerType>
         <label>EMP冲击背包(工作中)</label>
         <description>投射在地面上会产生持续的emp脉冲，范围较大且放置距离较长</description>
         <!--等待贴图-->
