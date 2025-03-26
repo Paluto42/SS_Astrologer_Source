@@ -52,6 +52,7 @@ namespace Astrologer.Insight
                 }
                 insight = Mathf.Clamp(insight, 0, insightCapacity);
             }
+            Log.Message("现在洞察力数量为: " + insight);
         }
 
         private bool PossibleToObserve(Thing thing)

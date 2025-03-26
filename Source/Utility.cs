@@ -31,9 +31,7 @@ namespace Astrologer
 
         public static AstroDocument TryGetAstroDoc(this Pawn p)
         {
-            AstroDocument doc = p?.TryGetDoc<AstroDocument>();
-
-            return doc;
+            return p?.TryGetDoc<AstroDocument>(); ;
         }
 
         public static VAB_AstroTracker TryGetAstroTracker(this Pawn p)

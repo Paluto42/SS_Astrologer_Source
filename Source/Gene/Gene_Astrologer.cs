@@ -1,4 +1,6 @@
-﻿using Verse;
+﻿using AK_TypeDef;
+using Astrologer.Insight;
+using Verse;
 
 namespace Astrologer
 {
@@ -11,10 +13,11 @@ namespace Astrologer
             {
                 pawn.story.bodyType = ext.forcedBodyType;
             }
-            /*pawn.AddDoc(new AstroDocument(pawn)
+            VAB_AstroTracker tracker = new(pawn, ext.astroAbility);
+            pawn.AddDoc(new AstroDocument(pawn)
             {
-                astroTracker = new VAB_AstroTracker(pawn, ext.astroAbility),
-            });*/
+                astroTracker = tracker,
+            });
             pawn.Drawer.renderer.SetAllGraphicsDirty();
         }
     }

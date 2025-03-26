@@ -1,5 +1,4 @@
-﻿
-using AKA_Ability;
+﻿using AKA_Ability;
 using AKA_Ability.CastConditioner;
 using Astrologer.Insight;
 

@@ -22,18 +22,19 @@ namespace Astrologer.HarmonyPatches
 
             Gene astroGene = __instance.genes.GetAstroGene();
             Ext_OperatorDef operatorDef = astroGene.def.GetModExtension<Ext_OperatorDef>();
-            Ext_ForcedAstrologer ext = astroGene.def.GetModExtension<Ext_ForcedAstrologer>();
+
             if (operatorDef == null) return;
 
             Pawn operator_Pawn = __instance;
             VAbility_AKATrackerContainer operatorID = Recruit_OperatorID(operator_Pawn);
             //改成招募后才能使用技能,而不是出生自带
+            /*Ext_ForcedAstrologer ext = astroGene.def.GetModExtension<Ext_ForcedAstrologer>();
             VAB_AstroTracker astroTracker = new(operator_Pawn, ext.astroAbility);
             operator_Pawn.AddDoc(new AstroDocument()
             {
                 parent = operator_Pawn,
                 astroTracker = astroTracker
-            });
+            });*/
             Recruit_Ability(operatorID, operatorDef);
         }
         private static VAbility_AKATrackerContainer Recruit_OperatorID(Pawn operator_Pawn)
@@ -44,8 +45,8 @@ namespace Astrologer.HarmonyPatches
             OperatorDocument document = GC_OperatorDocumentation.opDocArchive[OperatorID];
             document.voicePack = null;;*/
 
-            AbilityDef operatorID = AKDefOf.AK_VAbility_Operator;
-            //AbilityDef operatorID = AstroDefOf.LOF_VAbility_Astro;
+            //AbilityDef operatorID = AKDefOf.AK_VAbility_Operator;
+            AbilityDef operatorID = AstroDefOf.LOF_VAbility_Astro;
             VAbility_AKATrackerContainer vAbility = AbilityUtility.MakeAbility(operatorID, operator_Pawn) as VAbility_AKATrackerContainer;
             vAbility.AKATracker = new AbilityTracker(operator_Pawn);
             operator_Pawn.abilities.abilities.Add(vAbility);

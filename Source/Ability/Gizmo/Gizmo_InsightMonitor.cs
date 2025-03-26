@@ -47,6 +47,10 @@ namespace Astrologer.Ability
                 }
                 tip.text += DescPostfix;
                 TooltipHandler.TipRegion(rect, tip);
+                if (compInsights != null)
+                {
+                    Log.Message("实际洞察力数量: " + compInsights.insight);
+                }
             }
             return new GizmoResult(GizmoState.Clear);
         }

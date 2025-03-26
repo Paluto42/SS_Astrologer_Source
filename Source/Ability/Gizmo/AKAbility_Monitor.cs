@@ -1,5 +1,6 @@
 ﻿using AKA_Ability;
 using Astrologer.Insight;
+using System.Collections.Generic;
 using Verse;
 
 namespace Astrologer.Ability
@@ -17,10 +18,7 @@ namespace Astrologer.Ability
         public AKAbility_Monitor(AKAbilityDef def, AbilityTracker tracker) : base(def, tracker)
         {
         }
-        public override void Tick()
-        {
-            Tracker?.AbilityTick();
-        }
+
         protected override void InitializeGizmoInnate()
         {
             cachedGizmo = new Gizmo_InsightMonitor(Tracker)
