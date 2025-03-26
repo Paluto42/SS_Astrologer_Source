@@ -28,40 +28,34 @@ namespace Astrologer.HarmonyPatches
             if (operatorDef == null) return;
 
             Pawn operator_Pawn = __instance;
-            VAbility_Operator operatorID = Recruit_OperatorID(operator_Pawn, null);
-            operator_Pawn.AddDoc(new OpDocContainer(operator_Pawn) { va = operatorID });
+            VAbility_AKATrackerContainer operatorID = Recruit_OperatorID(operator_Pawn);
+            //operator_Pawn.AddDoc(new OpDocContainer(operator_Pawn) { va = operatorID });
 
             Recruit_Ability(operatorID, operatorDef);
         }
-        private static VAbility_Operator Recruit_OperatorID(Pawn operator_Pawn, Thing weapon)
+        private static VAbility_AKATrackerContainer Recruit_OperatorID(Pawn operator_Pawn)
         {
-            //档案系统
-            string OperatorID = "LOF" + "_" + operator_Pawn.GetHashCode().ToString();
-            GC_OperatorDocumentation.AddPawn(OperatorID, null, operator_Pawn, weapon, null);
+            //舟档案系统 占星师不需要
+            /*string OperatorID = "LOF" + "_" + operator_Pawn.GetHashCode().ToString();
+            GC_OperatorDocumentation.AddPawn(OperatorID, null, operator_Pawn, weapon: null, null);
             OperatorDocument document = GC_OperatorDocumentation.opDocArchive[OperatorID];
             document.voicePack = null;
+            AbilityDef operatorID = AKDefOf.AK_VAbility_Operator;*/
 
-            AbilityDef operatorID = AKDefOf.AK_VAbility_Operator;
-            VAbility_Operator vAbility = AbilityUtility.MakeAbility(operatorID, operator_Pawn) as VAbility_Operator;
-            vAbility.AKATracker = new AK_AbilityTracker
-            {
-                doc = document,
-                owner = operator_Pawn
-            };
+            AbilityDef operatorID = AstroDefOf.LOF_VAbility_Astro;
+            VAbility_AKATrackerContainer vAbility = AbilityUtility.MakeAbility(operatorID, operator_Pawn) as VAbility_AKATrackerContainer;
+            vAbility.AKATracker = new AbilityTracker(operator_Pawn);//使用AK_AbilityTracker会报错
             operator_Pawn.abilities.abilities.Add(vAbility);
             return vAbility;
         }
 
-        private static void Recruit_Ability(VAbility_Operator vanillaAbility, Ext_OperatorDef operatorDef)
+        private static void Recruit_Ability(VAbility_AKATrackerContainer vanillaAbility, Ext_OperatorDef operatorDef)
         {
             if (ModLister.GetActiveModWithIdentifier("ceteam.combatextended") != null) return;
             AbilityTracker tracker = vanillaAbility.AKATracker;
-            if (operatorDef.AKAbilities != null && operatorDef.AKAbilities.Count > 0)
+            if (operatorDef.AKAbilities?.Count > 0)
             {
-                foreach (AKAbilityDef i in operatorDef.AKAbilities)
-                {
-                    tracker.AddAbility(i);
-                }
+                operatorDef.AKAbilities.ForEach(def => tracker.AddAbility(def));
             }
         }
     }

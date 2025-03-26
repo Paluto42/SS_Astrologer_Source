@@ -20,20 +20,19 @@ namespace Astrologer
         public static HairDef LOF_Hair_E;
         public static HairDef LOF_Hair_F;
         public static HairDef LOF_Hair_G;
-
         public static List<HairDef> AstroHairDefs => new() 
         {
             LOF_Hair_A, LOF_Hair_B, LOF_Hair_C, 
             LOF_Hair_D, LOF_Hair_E, LOF_Hair_F, LOF_Hair_G,
         };
+        public static AbilityDef LOF_VAbility_Astro;
 
-        public static ThingDef LOF_Thing_Laundy;
+        public static GeneDef LOF_Gene_Main;
 
         public static JobDef LOF_Job_FillLaundry;
         public static JobDef LOF_Job_InsightInteract; //需要洞察的建筑互动通用这个job
 
-        public static GeneDef LOF_Gene_Main;
-
+        public static ThingDef LOF_Thing_Laundy;
         public static ThingDef LOF_Plant_Starlightgrass; //种地上的 植物 星光草
     }
 }
