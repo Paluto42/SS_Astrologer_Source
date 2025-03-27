@@ -11,7 +11,7 @@
         <compEffectList/>
         <cooldownProperty/>
     </AKA_Ability.AKAbilityDef>
-    <!--Monitor必须放在AKAbilities列表末尾才能优先显示 我也不知道为什么-->
+    <!--技能显示顺序是和列表顺序反着来的-->
 
     <AKA_Ability.AKAbilityDef>
         <defName>LOF_Ability_FireMode</defName>
@@ -53,31 +53,22 @@
         </cooldownProperty>
     </AKA_Ability.AKAbilityDef>
 
-    <!--AKAbility_Targetor还不支持选择Cell释放-->
+
     <AKA_Ability.AKAbilityDef>
-        <defName>LOF_Ability_Skip</defName>
-        <label>进行大跳</label>
+        <defName>LOF_Ability_Teleport</defName>
+        <label>进行折跃</label>
         <description>desc.</description>
         <icon>UI/Element/Placeholder</icon>
         <abilityClass>AKA_Ability.AKAbility_Targetor</abilityClass>
-        <range>40</range>
         <castConditions>
+            <li Class="Astrologer.Ability.CC_InsightThreshold">
+                <amount>50</amount>
+                <failReason>洞察力不足</failReason>
+            </li>
             <li Class="AKA_Ability.CastConditioner.CC_NeedFullCharge"/>
         </castConditions>
         <compEffectList>
-            <li Class="AKA_Ability.AE_Jump">
-                <verbJump>
-                    <verbClass>Verb_CastAbilityJump</verbClass>
-                    <label>jump</label>
-                    <soundCast>Longjump_Jump</soundCast>
-                    <soundLanding>Longjump_Land</soundLanding>
-                    <targetParams>
-                        <canTargetLocations>true</canTargetLocations>
-                        <canTargetPawns>false</canTargetPawns>
-                        <canTargetBuildings>false</canTargetBuildings>
-                    </targetParams>
-                </verbJump>
-            </li>
+            <li Class="AKA_Ability.AbilityEffect.AE_TeleportSelfToTarget"/>
         </compEffectList>
         <useSounds>
             <li>AK_SFX_Tactboost</li>
@@ -89,18 +80,18 @@
         </targetParams>
         <cooldownProperty>
             <SPPerCharge>15</SPPerCharge>
-            <SPUnit>day</SPUnit>
+            <SPUnit>hour</SPUnit>
             <initSP>800000</initSP>
             <maxCharge>1</maxCharge>
         </cooldownProperty>
     </AKA_Ability.AKAbilityDef>
 
     <AKA_Ability.AKAbilityDef>
-        <defName>LOF_Ability_Teleport</defName>
-        <label>进行折跃</label>
-        <description>desc.</description>
+        <defName>LOF_Ability_UnstableCatalyst</defName>
+        <label>进入不稳定态</label>
+        <description>持续消耗洞察力可以进入不稳定态，此时有一半的几率受击不造成伤害.</description>
         <icon>UI/Element/Placeholder</icon>
-        <abilityClass>AKA_Ability.AKAbility_Targetor</abilityClass>
+        <abilityClass>AKA_Ability.AKAbility_SelfTarget</abilityClass>
         <castConditions>
             <li Class="Astrologer.Ability.CC_InsightThreshold">
                 <amount>50</amount>
@@ -152,6 +143,73 @@
             <SPUnit>day</SPUnit>
             <initSP>60000000</initSP>
             <maxCharge>1</maxCharge>
+        </cooldownProperty>
+    </AKA_Ability.AKAbilityDef>
+
+    <AKA_Ability.AKAbilityDef>
+        <defName>LOF_Ability_Skip</defName>
+        <label>进行大跳</label>
+        <description>desc.</description>
+        <icon>UI/Element/Placeholder</icon>
+        <abilityClass>AKA_Ability.AKAbility_Targetor</abilityClass>
+        <range>40</range>
+        <castConditions>
+            <li Class="AKA_Ability.CastConditioner.CC_NeedFullCharge"/>
+        </castConditions>
+        <compEffectList>
+            <li Class="AKA_Ability.AE_Jump">
+                <verbJump>
+                    <verbClass>Verb_CastAbilityJump</verbClass>
+                    <label>jump</label>
+                    <soundCast>Longjump_Jump</soundCast>
+                    <soundLanding>Longjump_Land</soundLanding>
+                    <targetParams>
+                        <canTargetLocations>true</canTargetLocations>
+                        <canTargetPawns>false</canTargetPawns>
+                        <canTargetBuildings>false</canTargetBuildings>
+                    </targetParams>
+                </verbJump>
+            </li>
+        </compEffectList>
+        <useSounds>
+            <li>AK_SFX_Tactboost</li>
+        </useSounds>
+        <targetParams>
+            <canTargetLocations>true</canTargetLocations>
+            <canTargetSelf>false</canTargetSelf>
+            <canTargetPawns>true</canTargetPawns>
+        </targetParams>
+        <cooldownProperty>
+            <SPPerCharge>15</SPPerCharge>
+            <SPUnit>day</SPUnit>
+            <initSP>800000</initSP>
+            <maxCharge>1</maxCharge>
+        </cooldownProperty>
+    </AKA_Ability.AKAbilityDef>
+
+    <AKA_Ability.AKAbilityDef>
+        <defName>LOF_Ability_Coagulate</defName>
+        <label>紧急救援</label>
+        <description>desc.</description>
+        <icon>UI/Element/HealEnhance</icon>
+        <abilityClass>AKA_Ability.AKAbility_Targetor</abilityClass>
+        <range>40</range>
+        <compEffectList>
+            <li Class="AKA_Ability.AbilityEffect_Heal">
+                <healPoint>10</healPoint>
+                <healHostile>true</healHostile>
+                <healNeutral>true</healNeutral>
+                <healNullFaction>true</healNullFaction>
+            </li>
+            <li Class="AKA_Ability.AbilityEffect.AE_CostChargeStatic" />
+        </compEffectList>
+        <useSounds>
+            <li>AK_SFX_Tactboost</li>
+        </useSounds>
+        <cooldownProperty>
+            <SPPerCharge>12</SPPerCharge>
+            <SPUnit>hour</SPUnit>
+            <maxCharge>5</maxCharge>
         </cooldownProperty>
     </AKA_Ability.AKAbilityDef>
 

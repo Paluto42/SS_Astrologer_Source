@@ -98,9 +98,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Ability\AE_CostInsight.cs" />
-    <Compile Include="Ability\AE_DeployBuilding.cs" />
-    <Compile Include="Ability\AE_IncreaseHarvest.cs" />
+    <Compile Include="Ability\AbilityEffect\AE_CostInsight.cs" />
+    <Compile Include="Ability\AbilityEffect\AE_DeployBuilding.cs" />
+    <Compile Include="Ability\AbilityEffect\AE_IncreaseHarvest.cs" />
+    <Compile Include="Ability\AbilityEffect\AE_UnstableCatalyst.cs" />
     <Compile Include="Ability\Gizmo\AKAbility_FireMode.cs" />
     <Compile Include="Ability\Gizmo\AKAbility_Monitor.cs" />
     <Compile Include="Ability\CC_InsightThreshold.cs" />

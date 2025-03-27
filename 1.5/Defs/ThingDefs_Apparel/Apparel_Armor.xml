@@ -270,7 +270,9 @@
         </statBases>
         <equippedStatOffsets>
             <MoveSpeed>0.5</MoveSpeed>
-            <MentalBreakThreshold>-0.35</MentalBreakThreshold>
+            <MentalBreakThreshold>-0.25</MentalBreakThreshold>
+            <MedicalPotency>0.5</MedicalPotency>
+            <MedicalSurgerySuccessChance>0.5</MedicalSurgerySuccessChance>
         </equippedStatOffsets>
         <!--大跳没写 救援没写-->
         <verbs>
@@ -311,7 +313,7 @@
             </li>
             <li Class="AKA_Ability.TCP_AKATracker">
                 <abilities>
-                    <li>LOF_Ability_Skip</li>
+                    <li>LOF_Ability_Coagulate</li>
                 </abilities>
             </li>
         </comps>

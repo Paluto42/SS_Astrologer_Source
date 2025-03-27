@@ -22,9 +22,15 @@
             <EquipDelay>3</EquipDelay>
         </statBases>
         <equippedStatOffsets>
-            <ResearchSpeed>0.25</ResearchSpeed>
+            <PainShockThreshold>0.25</PainShockThreshold>
+            <MentalBreakThreshold>-0.25</MentalBreakThreshold>
         </equippedStatOffsets>
         <comps>
+            <li Class="AKA_Ability.TCP_AKATracker">
+                <abilities>
+                    <li>LOF_Ability_Coagulate</li>
+                </abilities>
+            </li>
         </comps>
         <stuffCategories>
             <li>Fabric</li>
