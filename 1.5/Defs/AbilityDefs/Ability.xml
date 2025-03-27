@@ -68,6 +68,9 @@
             <li Class="AKA_Ability.CastConditioner.CC_NeedFullCharge"/>
         </castConditions>
         <compEffectList>
+            <li Class="Astrologer.Ability.AE_CostInsight">
+                <amount>50</amount>
+            </li>
             <li Class="AKA_Ability.AbilityEffect.AE_TeleportSelfToTarget"/>
         </compEffectList>
         <useSounds>
@@ -100,16 +103,14 @@
             <li Class="AKA_Ability.CastConditioner.CC_NeedFullCharge"/>
         </castConditions>
         <compEffectList>
-            <li Class="AKA_Ability.AbilityEffect.AE_TeleportSelfToTarget"/>
+            <li Class="Astrologer.Ability.AE_CostInsight">
+                <amount>50</amount>
+            </li>
+            <li Class="Astrologer.Ability.AE_UnstableCatalyst"/>
         </compEffectList>
         <useSounds>
             <li>AK_SFX_Tactboost</li>
         </useSounds>
-        <targetParams>
-            <canTargetLocations>true</canTargetLocations>
-            <canTargetSelf>false</canTargetSelf>
-            <canTargetPawns>true</canTargetPawns>
-        </targetParams>
         <cooldownProperty>
             <SPPerCharge>15</SPPerCharge>
             <SPUnit>hour</SPUnit>
@@ -169,6 +170,7 @@
                         <canTargetBuildings>false</canTargetBuildings>
                     </targetParams>
                 </verbJump>
+                 <li Class="AKA_Ability.AbilityEffect.AE_CostChargeStatic" />
             </li>
         </compEffectList>
         <useSounds>

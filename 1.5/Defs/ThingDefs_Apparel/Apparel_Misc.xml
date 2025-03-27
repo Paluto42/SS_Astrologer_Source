@@ -28,7 +28,7 @@
         <comps>
             <li Class="AKA_Ability.TCP_AKATracker">
                 <abilities>
-                    <li>LOF_Ability_Coagulate</li>
+                    <li>LOF_Ability_UnstableCatalyst</li>
                 </abilities>
             </li>
         </comps>

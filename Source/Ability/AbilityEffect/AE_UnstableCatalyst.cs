@@ -18,8 +18,7 @@ namespace Astrologer.Ability
         {
             AstroDocument doc = caster.CasterPawn.TryGetAstroDoc();
             if (doc.EffectValid(effect)) return false;
-            
-            doc.effects.Add(EffectIDs.halfIgnoreDmg, duration);
+            doc.EffectRefresh(effect, duration);
             return base.DoEffect(caster, target);
         }
     }
