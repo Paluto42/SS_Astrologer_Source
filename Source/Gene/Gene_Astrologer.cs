@@ -13,11 +13,13 @@ namespace Astrologer
             {
                 pawn.story.bodyType = ext.forcedBodyType;
             }
-            VAB_AstroTracker tracker = new(pawn, ext.astroAbility);
-            pawn.AddDoc(new AstroDocument(pawn)
+            //文档给的是个空VAB一定要替换掉!!!
+            pawn.AddDoc<AstroDocument>(new AstroDocument()
             {
-                astroTracker = tracker,
+                parent = pawn,
+                astroTracker = new VAB_AstroTracker(pawn, ext.astroAbility),
             });
+            Log.Message("void::Gene_Astrologer.PostAdd >> AddDoc");
             pawn.Drawer.renderer.SetAllGraphicsDirty();
         }
     }

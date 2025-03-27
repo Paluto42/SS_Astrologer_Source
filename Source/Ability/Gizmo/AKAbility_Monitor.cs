@@ -1,6 +1,5 @@
 ﻿using AKA_Ability;
 using Astrologer.Insight;
-using System.Collections.Generic;
 using Verse;
 
 namespace Astrologer.Ability

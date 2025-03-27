@@ -31,12 +31,22 @@ namespace Astrologer
 
         public static AstroDocument TryGetAstroDoc(this Pawn p)
         {
-            return p?.TryGetDoc<AstroDocument>(); ;
+            AstroDocument doc = p?.TryGetDoc<AstroDocument>();
+            if (doc == null)
+            {
+                Log.WarningOnce(p.Label + "::TryGetAstroDoc failed", 114514);
+            }
+            return doc;
         }
 
         public static VAB_AstroTracker TryGetAstroTracker(this Pawn p)
         {
-            return TryGetAstroDoc(p)?.astroTracker;
+            VAB_AstroTracker tracker = TryGetAstroDoc(p)?.astroTracker;
+            if (tracker == null)
+            {
+                Log.WarningOnce(p.Label + "::TryGetAstroTracker failed", 1919810);
+            }
+            return tracker;
         }
 
         //查询某个id的效果是否还在有效期
