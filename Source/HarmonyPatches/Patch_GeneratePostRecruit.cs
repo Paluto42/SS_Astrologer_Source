@@ -31,6 +31,7 @@ namespace Astrologer.HarmonyPatches
 
             Recruit_Ability(operatorID, operatorDef);
         }
+        //生成技能容器
         private static VAB_AstroTracker Recruit_OperatorID(Pawn operator_Pawn)
         {
             AbilityDef operatorID = AstroDefOf.LOF_VAbility_Astro;
@@ -39,12 +40,12 @@ namespace Astrologer.HarmonyPatches
             operator_Pawn.abilities.abilities.Add(vAbility);
             return vAbility;
         }
-
+        //添加AKA技能
         private static void Recruit_Ability(VAB_AstroTracker vAbility, Ext_OperatorDef operatorDef)
         {
             if (ModLister.GetActiveModWithIdentifier("ceteam.combatextended") != null) return;
             AbilityTracker tracker = vAbility.AKATracker;
-            if (tracker == null) 
+            if (tracker == null)
             {
                 Log.Error("Recruit_Ability Failed");
                 return;

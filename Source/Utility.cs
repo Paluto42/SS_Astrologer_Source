@@ -15,11 +15,13 @@ namespace Astrologer
             if (genes.HasEndogene(AstroDefOf.LOF_Gene_Main)) return true;
             return false;
         }
+
         public static Gene GetAstroGene(this Pawn_GeneTracker genes)
         {
             if (genes == null) return null;
             return genes.GetGene(AstroDefOf.LOF_Gene_Main);
         }
+
         public static bool IsTickInterval(int tick)
         {
             if (tick > 0)
@@ -29,24 +31,16 @@ namespace Astrologer
             return false;
         }
 
+        //获取占星文档
         public static AstroDocument TryGetAstroDoc(this Pawn p)
         {
-            AstroDocument doc = p?.TryGetDoc<AstroDocument>();
-            if (doc == null)
-            {
-                Log.WarningOnce(p.Label + "::TryGetAstroDoc failed", 114514);
-            }
-            return doc;
+            return p?.TryGetDoc<AstroDocument>();
         }
 
+        //获取技能容器
         public static VAB_AstroTracker TryGetAstroTracker(this Pawn p)
         {
-            VAB_AstroTracker tracker = TryGetAstroDoc(p)?.astroTracker;
-            if (tracker == null)
-            {
-                Log.WarningOnce(p.Label + "::TryGetAstroTracker failed", 1919810);
-            }
-            return tracker;
+            return TryGetAstroDoc(p)?.astroTracker;
         }
 
         //查询某个id的效果是否还在有效期

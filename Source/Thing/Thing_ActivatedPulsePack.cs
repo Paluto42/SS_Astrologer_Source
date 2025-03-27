@@ -1,11 +1,14 @@
 ﻿using RimWorld;
+using UnityEngine;
 using Verse;
 
 namespace Astrologer
 {
     public class Thing_ActivatedPulsePack : Building
     {
-        public float radius = 5f;
+        //public float radius = 5f;
+        public float Radius => Rand.Range(5, 10);
+
         public override void Tick()
         {
             Log.Message("Tick");
@@ -45,7 +48,7 @@ namespace Astrologer
                     }
                 }
             }*/
-            GenExplosion.DoExplosion(Position, Map, radius, DamageDefOf.EMP, null, damAmount: -1, -1f, explosionSound: SoundDefOf.EnergyShield_AbsorbDamage, null, null, null, null, 1f, 1, postExplosionGasType: null);
+            GenExplosion.DoExplosion(Position, Map, Radius, AstroDefOf.LOF_EMP, null, damAmount: -1, -1f, explosionSound: SoundDefOf.Power_OnSmall, null, null, null, null, 0f, 0, postExplosionGasType: null);
             Log.Message("DamageCloseThings");
         }
     }

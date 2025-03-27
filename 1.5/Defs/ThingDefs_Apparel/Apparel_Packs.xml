@@ -48,9 +48,9 @@
         <comps>
             <li Class="AKA_Ability.TCP_AKATracker">
                 <abilities>
-                    <li>LOF_Ability_DeployBuilding</li>
+                    <li>LOF_Ability_DeployEMP</li>
                 </abilities>
-                <sharedDataProperty Class="AKA_Ability.SharedData.SDP_SharedCharge">
+                <!--sharedDataProperty Class="AKA_Ability.SharedData.SDP_SharedCharge">
                     <sharedDataType>AKA_Ability.SharedData.SD_SharedCharge</sharedDataType>
                     <cooldownProperty>
                         <cooldownClass>AKA_Ability.Cooldown.CD_TrackerShared</cooldownClass>
@@ -59,7 +59,7 @@
                         <initSP>600000</initSP>
                         <maxCharge>1</maxCharge>
                     </cooldownProperty>
-                </sharedDataProperty>
+                </sharedDataProperty-->
             </li>
         </comps>
         <apparel>
@@ -181,7 +181,7 @@
         <comps>
             <li Class="AKA_Ability.TCP_AKATracker">
                 <abilities>
-                    <li>LOF_Ability_Skip</li>
+                    <li>LOF_Ability_Teleport</li>
                 </abilities>
             </li>
         </comps>

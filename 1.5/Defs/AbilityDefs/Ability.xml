@@ -35,6 +35,7 @@
                 <amount>50</amount>
                 <failReason>洞察力不足</failReason>
             </li>
+            <li Class="AKA_Ability.CastConditioner.CC_NeedFullCharge"/>
         </castConditions>
         <compEffectList>
             <li Class="Astrologer.Ability.AE_CostInsight">
@@ -46,9 +47,8 @@
             <li>AK_SFX_Tactboost</li>
         </useSounds>
         <cooldownProperty>
-            <SPPerCharge>1</SPPerCharge>
-            <SPUnit>day</SPUnit>
-            <initSP>600000</initSP>
+            <SPPerCharge>12</SPPerCharge>
+            <SPUnit>hour</SPUnit>
             <maxCharge>1</maxCharge>
         </cooldownProperty>
     </AKA_Ability.AKAbilityDef>
@@ -60,27 +60,37 @@
         <description>desc.</description>
         <icon>UI/Element/Placeholder</icon>
         <abilityClass>AKA_Ability.AKAbility_Targetor</abilityClass>
+        <range>40</range>
         <castConditions>
-            <li Class="Astrologer.Ability.CC_InsightThreshold">
-                <amount>50</amount>
-                <failReason>洞察力不足</failReason>
-            </li>
+            <li Class="AKA_Ability.CastConditioner.CC_NeedFullCharge"/>
         </castConditions>
         <compEffectList>
             <li Class="AKA_Ability.AE_Jump">
                 <verbJump>
+                    <verbClass>Verb_CastAbilityJump</verbClass>
+                    <label>jump</label>
+                    <soundCast>Longjump_Jump</soundCast>
+                    <soundLanding>Longjump_Land</soundLanding>
                     <targetParams>
                         <canTargetLocations>true</canTargetLocations>
-                        <canTargetSelf>false</canTargetSelf>
                         <canTargetPawns>false</canTargetPawns>
+                        <canTargetBuildings>false</canTargetBuildings>
                     </targetParams>
                 </verbJump>
             </li>
         </compEffectList>
+        <useSounds>
+            <li>AK_SFX_Tactboost</li>
+        </useSounds>
+        <targetParams>
+            <canTargetLocations>true</canTargetLocations>
+            <canTargetSelf>false</canTargetSelf>
+            <canTargetPawns>true</canTargetPawns>
+        </targetParams>
         <cooldownProperty>
-            <SPPerCharge>1</SPPerCharge>
+            <SPPerCharge>15</SPPerCharge>
             <SPUnit>day</SPUnit>
-            <initSP>600000</initSP>
+            <initSP>800000</initSP>
             <maxCharge>1</maxCharge>
         </cooldownProperty>
     </AKA_Ability.AKAbilityDef>
@@ -96,25 +106,35 @@
                 <amount>50</amount>
                 <failReason>洞察力不足</failReason>
             </li>
+            <li Class="AKA_Ability.CastConditioner.CC_NeedFullCharge"/>
         </castConditions>
         <compEffectList>
             <li Class="AKA_Ability.AbilityEffect.AE_TeleportSelfToTarget"/>
         </compEffectList>
+        <useSounds>
+            <li>AK_SFX_Tactboost</li>
+        </useSounds>
+        <targetParams>
+            <canTargetLocations>true</canTargetLocations>
+            <canTargetSelf>false</canTargetSelf>
+            <canTargetPawns>true</canTargetPawns>
+        </targetParams>
         <cooldownProperty>
-            <SPPerCharge>1</SPPerCharge>
-            <SPUnit>day</SPUnit>
-            <initSP>600000</initSP>
+            <SPPerCharge>15</SPPerCharge>
+            <SPUnit>hour</SPUnit>
+            <initSP>800000</initSP>
             <maxCharge>1</maxCharge>
         </cooldownProperty>
     </AKA_Ability.AKAbilityDef>
 
     <!--==================== 不需要洞察力的技能 ====================-->
     <AKA_Ability.AKAbilityDef>
-        <defName>LOF_Ability_DeployBuilding</defName>
-        <label>部署建筑物</label>
+        <defName>LOF_Ability_DeployEMP</defName>
+        <label>部署EMP冲击背包</label>
         <description>desc.</description>
         <icon>UI/Element/Placeholder</icon>
         <abilityClass>AKA_Ability.AKAbility_SelfTarget</abilityClass>
+        <allowInterrupt>true</allowInterrupt>
         <castConditions>
             <li Class="AKA_Ability.CastConditioner.CC_NeedFullCharge"/>
         </castConditions>
@@ -128,9 +148,9 @@
             </li>
         </compEffectList>
         <cooldownProperty>
-            <SPPerCharge>1</SPPerCharge>
+            <SPPerCharge>15</SPPerCharge>
             <SPUnit>day</SPUnit>
-            <initSP>600000</initSP>
+            <initSP>60000000</initSP>
             <maxCharge>1</maxCharge>
         </cooldownProperty>
     </AKA_Ability.AKAbilityDef>

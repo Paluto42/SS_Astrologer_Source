@@ -27,6 +27,8 @@ namespace Astrologer
         };
         public static AbilityDef LOF_VAbility_Astro;
 
+        public static DamageDef LOF_EMP;
+
         public static GeneDef LOF_Gene_Main;
 
         public static JobDef LOF_Job_FillLaundry;

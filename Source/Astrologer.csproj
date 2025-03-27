@@ -104,7 +104,6 @@
     <Compile Include="Ability\Gizmo\AKAbility_FireMode.cs" />
     <Compile Include="Ability\Gizmo\AKAbility_Monitor.cs" />
     <Compile Include="Ability\CC_InsightThreshold.cs" />
-    <Compile Include="Ability\Gizmo\Gizmo_FireMode.cs" />
     <Compile Include="Ability\HarmonyPatchs\Patch_IgnoreDmg.cs" />
     <Compile Include="Ability\HarmonyPatchs\Patch_IgnoreStagger.cs" />
     <Compile Include="Ability\HC_IncreastHarvest.cs" />

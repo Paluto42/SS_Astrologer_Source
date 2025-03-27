@@ -309,6 +309,11 @@
                 <wickTicks>0</wickTicks>
                 <destroyThingOnExplosionSize>9999</destroyThingOnExplosionSize>                <!--hack to not destroy on explosion-->
             </li>
+            <li Class="AKA_Ability.TCP_AKATracker">
+                <abilities>
+                    <li>LOF_Ability_Skip</li>
+                </abilities>
+            </li>
         </comps>
         <!--材料-->
         <costList>

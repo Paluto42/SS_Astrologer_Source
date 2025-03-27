@@ -19,17 +19,19 @@ namespace Astrologer.Ability
         }
         public override void Tick()
         {
+            if (Weapon == null) return;
             FireModeComp?.CompTick();
         }
+        //从武器comp上获取Gizmo
         public override IEnumerable<Command> GetGizmos()
         {
             if (!CasterPawn.Drafted && !def.displayGizmoUndraft)
                 yield break;
             if (Weapon == null || Weapon.AllComps.NullOrEmpty() || FireModeComp == null)
                 yield break;
-            foreach (Gizmo item in FireModeComp.CompGetGizmosExtra())
+            foreach (Gizmo gizmo in FireModeComp.CompGetGizmosExtra())
             {
-                yield return item as Command;
+                yield return (Command)gizmo;
             }
             yield break;
         }

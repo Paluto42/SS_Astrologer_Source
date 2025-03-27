@@ -8,7 +8,7 @@ namespace Astrologer.Ability
     {
         public const string prefix = "";
 
-        private VAB_AstroTracker compInsights;
+        private readonly VAB_AstroTracker compInsights;
 
         public Gizmo_InsightMonitor(VAB_AstroTracker tracker)
         {

@@ -19,7 +19,6 @@ namespace Astrologer
                 parent = pawn,
                 astroTracker = new VAB_AstroTracker(pawn, ext.astroAbility),
             });
-            Log.Message("void::Gene_Astrologer.PostAdd >> AddDoc");
             pawn.Drawer.renderer.SetAllGraphicsDirty();
         }
     }
