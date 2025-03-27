@@ -28,6 +28,7 @@ namespace Astrologer
         public static AbilityDef LOF_VAbility_Astro;
 
         public static DamageDef LOF_EMP;
+        public static DamageDef LOF_Cast_ForcePartDestruct;
 
         public static GeneDef LOF_Gene_Main;
 
@@ -36,5 +37,7 @@ namespace Astrologer
 
         public static ThingDef LOF_Thing_Laundy;
         public static ThingDef LOF_Plant_Starlightgrass; //种地上的 植物 星光草
+
+        public static ThingDef LOF_AMSR;
     }
 }

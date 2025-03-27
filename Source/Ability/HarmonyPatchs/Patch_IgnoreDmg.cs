@@ -9,7 +9,7 @@ namespace Astrologer.HarmonyPatches
     public class Patch_IgnoreDmg
     {
         [HarmonyPrefix]
-        public static bool prefix(Pawn __instance, ref DamageInfo dinfo, out bool absorbed)
+        public static bool Prefix(Pawn __instance, ref DamageInfo dinfo, out bool absorbed)
         {
             if (!__instance.EffectInDuration(EffectIDs.halfIgnoreDmg) || Rand.Range(0, 100) < 50)
             {

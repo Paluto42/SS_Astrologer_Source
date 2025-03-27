@@ -8,7 +8,7 @@ namespace Astrologer.HarmonyPatches
     public class Patch_IgnoreStagger
     {
         [HarmonyPrefix]
-        public static bool fix(StaggerHandler __instance, ref bool __result)
+        public static bool Prefix(StaggerHandler __instance, ref bool __result)
         {
             if (!__instance.parent.EffectInDuration(EffectIDs.ignoreStagger))
             {
