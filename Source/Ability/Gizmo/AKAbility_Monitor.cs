@@ -18,6 +18,10 @@ namespace Astrologer.Ability
         {
         }
 
+        public override void Tick()
+        {
+        }
+
         protected override void InitializeGizmoInnate()
         {
             cachedGizmo = new Gizmo_InsightMonitor(Tracker)

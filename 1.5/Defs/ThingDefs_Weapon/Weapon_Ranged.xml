@@ -47,7 +47,7 @@
                 <verbClass>Verb_Shoot</verbClass>
                 <hasStandardCommand>true</hasStandardCommand>
                 <!--应该写个新的弹药种类-->
-                <defaultProjectile>LOF_Bullet_EagleMoon</defaultProjectile>
+                <defaultProjectile>LOF_Projectile_EagleMoon</defaultProjectile>
                 <warmupTime>0.4</warmupTime>
                 <range>25.9</range>
                 <soundCast>Shot_Revolver</soundCast>
@@ -76,7 +76,7 @@
         </tools>
     </ThingDef>
     <ThingDef ParentName="BaseBullet">
-        <defName>LOF_Bullet_EagleMoon</defName>
+        <defName>LOF_Projectile_EagleMoon</defName>
         <label>手炮弹药</label>
         <graphicData>
             <texPath>Things/Projectile/Bullet_Small</texPath>
@@ -500,7 +500,7 @@
     <ThingDef ParentName="Astro_WeaponRangedBase">
         <defName>LOF_AMSR</defName>
         <label>ASAT-112 "船边星云"</label>
-        <description>远程狙击，长开火前摇，短射击后摇，当占星师使用时，可使用洞察力强化该武器。每一发消耗一定量洞察力，在这种模式下，每一发子弹命中会打掉对方身体的随机的一个部位，并挂一个debuff（星云射线）持续扣血.</description>
+        <description>远程狙击，长开火前摇，短射击后摇.\n当占星师使用时，可使用洞察力强化该武器。每一发消耗一定量洞察力，在这种模式下，每一发子弹命中会打掉对方身体的随机的一个部位，并挂一个debuff（星云射线）持续扣血.</description>
         <graphicData>
             <texPath>Things/Weapons/ChargeSniper</texPath>
             <graphicClass>Graphic_Single</graphicClass>
@@ -612,7 +612,7 @@
     <ThingDef ParentName="Astro_WeaponRangedBase">
         <defName>LOF_PlasmaHMG</defName>
         <label>"MPE-1" 等离子重机枪</label>
-        <description>MPE-1是占星帝国初次遭遇暗灵时设计给前线战斗人员的制式武器。消耗洞察力可以进行一小段时间的高速射击.</description>
+        <description>MPE-1是占星帝国初次遭遇暗灵时设计给前线战斗人员的制式武器.\n消耗洞察力可以进行一小段时间的高速射击.</description>
         <graphicData>
             <texPath>Things/Weapons/ChargeLMG</texPath>
             <graphicClass>Graphic_Single</graphicClass>
@@ -669,7 +669,7 @@
                 <verbProps>
                     <verbClass>Astrologer.Insight.Verb_InsightShoot</verbClass>
                     <hasStandardCommand>true</hasStandardCommand>
-                    <defaultProjectile>LOF_Bullet_Psychicinsanity</defaultProjectile>
+                    <defaultProjectile>Bullet_ChargeRifle</defaultProjectile>
                     <warmupTime>0.5</warmupTime>
                     <range>60</range>
                     <burstShotCount>18</burstShotCount>
@@ -679,10 +679,11 @@
                     <muzzleFlashScale>9</muzzleFlashScale>
                 </verbProps>
                 <consumeAmount>10</consumeAmount>
-                <consumeDuration>250</consumeDuration>
+                <!--一次连续开火的tick间隔为(burstShotCount*ticksBetweenBurstShots)-->
+                <consumeDuration>75</consumeDuration>
                 <mainWeaponLabel>普通射击模式</mainWeaponLabel>
                 <mainIcon>UI/Buttons/NormalFire</mainIcon>
-                <mainDescription>占星师使用时，可以切换到特殊的开火模式\n开火将消耗洞察力</mainDescription>
+                <mainDescription>占星师使用时可切换到特殊的开火模式\n开火将消耗洞察力</mainDescription>
                 <secondaryWeaponLabel>过载射击模式</secondaryWeaponLabel>
                 <secondaryIcon>UI/Buttons/SpecialFire</secondaryIcon>
                 <secondaryDescription>进行一小段时间的高速射击\n需要消耗10点洞察力</secondaryDescription>

@@ -34,8 +34,7 @@ namespace Astrologer.Insight
     public class TC_FireMode : ThingComp
     {
         public FireTickStatus tickStatus = FireTickStatus.None;
-        private VAB_AstroTracker CompInsight => CasterPawn?.TryGetAstroTracker();
-        //private TC_Insights CompInsight => CasterPawn?.GetComp<TC_Insights>();//洞察力comp
+        private VAB_AstroTracker CompInsight => CasterPawn?.TryGetAstroTracker();//洞察力comp
 
         private Verb verbInt;
 
@@ -72,10 +71,11 @@ namespace Astrologer.Insight
                 return verbInt;
             }
         }
+        //
         public override void CompTick()
         {
-            if (tickStatus != FireTickStatus.Started) return;
-            if (isSecondaryVerbSelected && Utility.IsTickInterval(Props.consumeDuration))
+            if (!isSecondaryVerbSelected || tickStatus != FireTickStatus.Started) return;
+            if (Utility.IsTickInterval(Props.consumeDuration))
             {
                 tickStatus = FireTickStatus.Completed;
             }

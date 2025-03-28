@@ -14,15 +14,17 @@ namespace Astrologer.Ability
         public AKAbility_FireMode(AbilityTracker tracker) : base(tracker)
         {
         }
-
         public AKAbility_FireMode(AKAbilityDef def, AbilityTracker tracker) : base(def, tracker)
         {
         }
+
+        //不能删
         public override void Tick()
         {
             if (Weapon == null) return;
             FireModeComp?.CompTick();
         }
+
         //从武器comp上获取Gizmo
         public override IEnumerable<Command> GetGizmos()
         {

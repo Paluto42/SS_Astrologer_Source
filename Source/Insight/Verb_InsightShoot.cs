@@ -4,38 +4,35 @@ namespace Astrologer.Insight
 {
     public class Verb_InsightShoot : Verb_Shoot
     {
-        //Caster = Pawn
         private VAB_AstroTracker CompInsightInt => CasterPawn?.TryGetAstroTracker();
         private TC_FireMode CompFireMode => EquipmentSource?.GetComp<TC_FireMode>();
         private bool ShouldConsumeInsight => CompFireMode.IsSecondaryVerbSelected;
         private int ConsumeAmount => CompFireMode.Props.consumeAmount;
         public bool ShouldCalulateTicks => CompFireMode.Props.consumeDuration > 0;
+
         protected override bool TryCastShot()
         {
             PreApplyTryCastShot();
-            base.TryCastShot();
-            return true;
+            bool IF_SUCCESS_CAST = base.TryCastShot();
+            return IF_SUCCESS_CAST;
         }
 
-        private void PreApplyTryCastShot()
+        protected virtual void PreApplyTryCastShot()
         {
-            //Log.Message("Invoked PreApplyTryCastShot");
             if (CompInsightInt == null || CompFireMode == null) return;
             if (ShouldCalulateTicks)
             {
                 if (ShouldConsumeInsight && CompFireMode.tickStatus == FireTickStatus.None)
                 {
                     CompFireMode.tickStatus = FireTickStatus.Started;
-                    return;
                 }
-                if (ShouldConsumeInsight && CompFireMode.tickStatus == FireTickStatus.Completed)
+                if (CompFireMode.tickStatus == FireTickStatus.Completed)
                 {
-                    CompFireMode.tickStatus = FireTickStatus.None;
                     CompInsightInt.ConsumeInsight(ConsumeAmount);
-                    return;
+                    CompFireMode.tickStatus = FireTickStatus.None;
                 }
             }
-            else if (ShouldConsumeInsight)
+            else if (ShouldConsumeInsight) 
             {
                 CompInsightInt.ConsumeInsight(ConsumeAmount);
             }

@@ -28,7 +28,6 @@
         <label>大丰收</label>
         <description>介绍:\n消耗一定洞察力,在一天内提高农作物收获量,屠宰量.手术成功率提高,制作物品高品质概率增加,射击命中率增加,食物消耗率x200%.</description>
         <icon>UI/Element/Placeholder</icon>
-        <range>40</range>
         <abilityClass>AKA_Ability.AKAbility_SelfTarget</abilityClass>
         <castConditions>
             <li Class="Astrologer.Ability.CC_InsightThreshold">
@@ -60,6 +59,7 @@
         <description>desc.</description>
         <icon>UI/Element/Placeholder</icon>
         <abilityClass>AKA_Ability.AKAbility_Targetor</abilityClass>
+        <range>40</range>
         <castConditions>
             <!--li Class="Astrologer.Ability.CC_InsightThreshold">
                 <amount>50</amount>

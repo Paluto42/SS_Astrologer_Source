@@ -35,6 +35,7 @@ namespace Astrologer.Insight
 
         public override void AbilityTick()
         {
+            base.AbilityTick();//哎哟我的妈这行一直没加
             if (Utility.CrtTick % insightRegenTickInterval == 0)
             {
                 insight += insightRegenPerTick;

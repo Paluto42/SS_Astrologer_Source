@@ -9,7 +9,7 @@ namespace Astrologer.HarmonyPatchs
     [HarmonyPatch(typeof(Pawn), "PostApplyDamage")]
     public class Patch_ForcePartDestruct
     {
-        public const float lastTime = 4f;//
+        public const float lastTime = 4f;//持续几小时
 
         [HarmonyPostfix]
         public static void Postfix(Pawn __instance, DamageInfo dinfo, float totalDamageDealt)
