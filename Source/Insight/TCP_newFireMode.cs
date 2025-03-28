@@ -17,19 +17,13 @@ namespace Astrologer.Insight
         public VerbProperties verbProps = new();
 
         public int consumeAmount = 1;
-
         public int consumeDuration = 0;
 
         public string mainIcon;
-
         public string mainWeaponLabel;
-
         public string mainDescription;
-
         public string secondaryIcon;
-
         public string secondaryWeaponLabel;
-
         public string secondaryDescription;
         public TCP_newFireMode()
         {
@@ -40,7 +34,7 @@ namespace Astrologer.Insight
     public class TC_newFireMode : ThingComp
     {
         public FireTickStatus tickStatus = FireTickStatus.None;
-        private VAB_AstroTracker CompInsight => CasterPawn?.TryGetAstroDoc()?.astroTracker;
+        private VAB_AstroTracker CompInsight => CasterPawn?.TryGetAstroTracker();
         //private TC_Insights CompInsight => CasterPawn?.GetComp<TC_Insights>();//洞察力comp
 
         private Verb verbInt;

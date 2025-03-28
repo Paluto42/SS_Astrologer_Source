@@ -20,7 +20,6 @@ namespace Astrologer.Ability
         {
             return 120f;
         }
-
         //记得加翻译字段
         public override GizmoResult GizmoOnGUI(Vector2 topLeft, float maxWidth, GizmoRenderParms parms)
         {

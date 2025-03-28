@@ -14,6 +14,7 @@ namespace Astrologer
         const AKAbilityDef linkedAbility = default(AKAbilityDef);
         const float insightCost = 1;
         const float healAmount = 1;
+
         //生效需要武器上面的技能开启
         AKAbility_Auto Ability
         {

@@ -28,6 +28,7 @@ namespace Astrologer
         //private float NightPower => Prop.nightPowerRatio * Prop.PowerConsumption;
 
         float SkyGlowLowerThan => Prop.skyGlowLowerThan;
+
         protected override float DesiredPowerOutput
         {
             get

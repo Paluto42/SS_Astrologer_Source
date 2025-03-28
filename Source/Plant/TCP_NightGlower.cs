@@ -17,6 +17,7 @@ namespace Astrologer.Plant
     {
         private TCP_NightGlower Prop => props as TCP_NightGlower;
         float SkyGlowLowerThan => Prop.skyGlowLowerThan;
+
         protected override bool ShouldBeLitNow
         {
             get

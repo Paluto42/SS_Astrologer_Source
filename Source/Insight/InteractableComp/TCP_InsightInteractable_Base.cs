@@ -5,7 +5,6 @@ namespace Astrologer.Insight
     public class TCP_InsightInteractable_Base : CompProperties
     {
         public float insightCost = 0;
-
         public TCP_InsightInteractable_Base()
         {
             compClass = typeof(TC_InsightInteractable_Base);

@@ -11,7 +11,6 @@ namespace Astrologer
     {
         public static string halfIgnoreDmg = "halfIgnoreDmg"; //朦胧暗月
         public static string ignoreStagger = "ignoreStagger"; //TLK-11 "凤凰座' 远行装甲 被击中不会影响移动
-
     }
     public class AstroDocument : DocumentBase
     {
@@ -20,8 +19,8 @@ namespace Astrologer
         //一些技能和装备的效果以string注册在这里，int是持续到多少tick
         //总量少 没做回收
         public Dictionary<string, int> effects = new();
-        public AstroDocument() : base() { }
 
+        public AstroDocument() : base() { }
         public AstroDocument(Thing parent) : base(parent)
         {
         }

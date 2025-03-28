@@ -6,6 +6,7 @@ namespace Astrologer.Laundry
     public class TCP_UseEffect_ActivateLaundry : CompProperties_UseEffect
     {
         public float insightCost = 1;
+
         public TCP_UseEffect_ActivateLaundry()
         {
             compClass = typeof(TC_UseEffect_ActivateLaundry);
@@ -16,6 +17,7 @@ namespace Astrologer.Laundry
     {
         TCP_UseEffect_ActivateLaundry Prop => props as TCP_UseEffect_ActivateLaundry;
         float InsightCost => Prop.insightCost;
+
         public override AcceptanceReport CanBeUsedBy(Pawn p)
         {
             AstroDocument doc = p.TryGetAstroDoc();

@@ -11,7 +11,8 @@ namespace Astrologer.Laundry
         protected override string GizmoActiveLabel => "SSR_开关生物编码洗衣机副桶";
         protected override string GizmoActiveDesc => "SSR_开关生物编码洗衣机副桶desc";
 
-        List<Thing> pendingDropping = new List<Thing>();
+        List<Thing> pendingDropping = new();
+
         public override void CompleteWashing()
         {
             pendingDropping.Clear();

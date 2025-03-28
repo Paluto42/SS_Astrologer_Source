@@ -157,7 +157,7 @@
     <Compile Include="TypeDef.cs" />
     <Compile Include="Utility.cs" />
     <Compile Include="Obsolete\Verb_EMPpop.cs" />
-    <Compile Include="Insight\Verb_PreApplyShoot.cs" />
+    <Compile Include="Insight\Verb_InsightShoot.cs" />
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -8,6 +8,7 @@ namespace Astrologer.Ability
     {
         public ThingDef building; //要部署的建筑
         public ThingDef equip;  //使用后会摧毁装备 能用就行
+
         protected override bool DoEffect(AKAbility_Base caster, LocalTargetInfo target)
         {
             Thing rest = ThingMaker.MakeThing(building);

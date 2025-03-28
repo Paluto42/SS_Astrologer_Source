@@ -2,10 +2,10 @@
 
 namespace Astrologer.Insight
 {
-    public class Verb_PreApplyShoot : Verb_Shoot
+    public class Verb_InsightShoot : Verb_Shoot
     {
         //Caster = Pawn
-        private VAB_AstroTracker CompInsightInt => CasterPawn?.TryGetAstroDoc()?.astroTracker;
+        private VAB_AstroTracker CompInsightInt => CasterPawn?.TryGetAstroTracker();
         private TC_newFireMode CompFireMode => EquipmentSource?.GetComp<TC_newFireMode>();
         private bool ShouldConsumeInsight => CompFireMode.IsSecondaryVerbSelected;
         private int ConsumeAmount => CompFireMode.Props.consumeAmount;

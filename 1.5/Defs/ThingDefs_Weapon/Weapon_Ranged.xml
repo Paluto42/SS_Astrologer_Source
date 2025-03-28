@@ -417,7 +417,7 @@
         </thingSetMakerTags>
         <verbs Inherit="false">
             <li>
-                <verbClass>Astrologer.Insight.Verb_PreApplyShoot</verbClass>
+                <verbClass>Astrologer.Insight.Verb_InsightShoot</verbClass>
                 <hasStandardCommand>true</hasStandardCommand>
                 <defaultProjectile>LOF_Bullet_DMR</defaultProjectile>
                 <warmupTime>1.0</warmupTime>
@@ -430,7 +430,7 @@
         <comps>
             <li Class="Astrologer.Insight.TCP_newFireMode">
                 <verbProps>
-                    <verbClass>Astrologer.Insight.Verb_PreApplyShoot</verbClass>
+                    <verbClass>Astrologer.Insight.Verb_InsightShoot</verbClass>
                     <hasStandardCommand>true</hasStandardCommand>
                     <defaultProjectile>LOF_Bullet_Psychicinsanity</defaultProjectile>
                     <warmupTime>1</warmupTime>
@@ -442,10 +442,10 @@
                 <consumeAmount>5</consumeAmount>
                 <mainWeaponLabel>普通射击模式</mainWeaponLabel>
                 <mainIcon>UI/Buttons/NormalFire</mainIcon>
-                <mainDescription>占星师使用时，似乎可以消耗洞察力切换到特殊的开火模式</mainDescription>
+                <mainDescription>占星师使用时，可以切换到特殊的开火模式\n开火将消耗洞察力</mainDescription>
                 <secondaryWeaponLabel>心灵错乱射击</secondaryWeaponLabel>
                 <secondaryIcon>UI/Buttons/SpecialFire</secondaryIcon>
-                <secondaryDescription>消耗洞察力，每一发子弹带有心灵错乱效果</secondaryDescription>
+                <secondaryDescription>每一发子弹命中带有心灵错乱效果\n需要消耗10点洞察力</secondaryDescription>
             </li>
         </comps>
         <tools>
@@ -540,7 +540,7 @@
         </thingSetMakerTags>
         <verbs Inherit="false">
             <li>
-                <verbClass>Verb_Shoot</verbClass>
+                <verbClass>Astrologer.Insight.Verb_InsightShoot</verbClass>
                 <hasStandardCommand>true</hasStandardCommand>
                 <defaultProjectile>Bullet_ChargeRifle</defaultProjectile>
                 <warmupTime>2</warmupTime>
@@ -551,6 +551,25 @@
             </li>
         </verbs>
         <comps>
+            <li Class="Astrologer.Insight.TCP_newFireMode">
+                <verbProps>
+                    <verbClass>Astrologer.Insight.Verb_InsightShoot</verbClass>
+                    <hasStandardCommand>true</hasStandardCommand>
+                    <defaultProjectile>LOF_Projectile_NebulaRay</defaultProjectile>
+                    <warmupTime>1</warmupTime>
+                    <range>70</range>
+                    <soundCast>ChargeLance_Fire</soundCast>
+                    <soundCastTail>GunTail_Heavy</soundCastTail>
+                    <muzzleFlashScale>9</muzzleFlashScale>
+                </verbProps>
+                <consumeAmount>10</consumeAmount>
+                <mainWeaponLabel>普通射击模式</mainWeaponLabel>
+                <mainIcon>UI/Buttons/NormalFire</mainIcon>
+                <mainDescription>占星师使用时，可以切换到特殊的开火模式\n开火将消耗洞察力</mainDescription>
+                <secondaryWeaponLabel>发射星云射线</secondaryWeaponLabel>
+                <secondaryIcon>UI/Buttons/SpecialFire</secondaryIcon>
+                <secondaryDescription>每一发子弹命中会打掉对方身体的一个随机部位\n需要消耗10点洞察力</secondaryDescription>
+            </li>
         </comps>
         <tools>
             <li>
@@ -573,16 +592,16 @@
         </tools>
     </ThingDef>
     <ThingDef ParentName="BaseBullet">
-        <defName>LOF_Bullet_ChargeSniper</defName>
-        <label>charge shot</label>
+        <defName>LOF_Projectile_NebulaRay</defName>
+        <label>星云射线</label>
         <graphicData>
             <texPath>Things/Projectile/Charge_Small</texPath>
             <graphicClass>Graphic_Single</graphicClass>
         </graphicData>
         <projectile>
-            <damageDef>Bullet</damageDef>
-            <damageAmountBase>50</damageAmountBase>
-            <armorPenetrationBase>0.45</armorPenetrationBase>
+            <damageDef>LOF_Cast_ForcePartDestruct</damageDef>
+            <damageAmountBase>25</damageAmountBase>
+            <armorPenetrationBase>0.35</armorPenetrationBase>
             <speed>70</speed>
             <stoppingPower>1</stoppingPower>
         </projectile>
@@ -633,7 +652,7 @@
         </thingSetMakerTags>
         <verbs>
             <li>
-                <verbClass>Astrologer.Insight.Verb_PreApplyShoot</verbClass>
+                <verbClass>Astrologer.Insight.Verb_InsightShoot</verbClass>
                 <hasStandardCommand>true</hasStandardCommand>
                 <defaultProjectile>Bullet_ChargeRifle</defaultProjectile>
                 <warmupTime>1.2</warmupTime>
@@ -648,7 +667,7 @@
         <comps>
             <li Class="Astrologer.Insight.TCP_newFireMode">
                 <verbProps>
-                    <verbClass>Astrologer.Insight.Verb_PreApplyShoot</verbClass>
+                    <verbClass>Astrologer.Insight.Verb_InsightShoot</verbClass>
                     <hasStandardCommand>true</hasStandardCommand>
                     <defaultProjectile>LOF_Bullet_Psychicinsanity</defaultProjectile>
                     <warmupTime>0.5</warmupTime>
@@ -659,13 +678,14 @@
                     <soundCastTail>GunTail_Heavy</soundCastTail>
                     <muzzleFlashScale>9</muzzleFlashScale>
                 </verbProps>
+                <consumeAmount>10</consumeAmount>
                 <consumeDuration>250</consumeDuration>
                 <mainWeaponLabel>普通射击模式</mainWeaponLabel>
                 <mainIcon>UI/Buttons/NormalFire</mainIcon>
-                <mainDescription>占星师使用时,似乎可以消耗洞察力切换到特殊的开火模式</mainDescription>
+                <mainDescription>占星师使用时，可以切换到特殊的开火模式\n开火将消耗洞察力</mainDescription>
                 <secondaryWeaponLabel>过载射击模式</secondaryWeaponLabel>
                 <secondaryIcon>UI/Buttons/SpecialFire</secondaryIcon>
-                <secondaryDescription>消耗洞察力,进行一小段时间的高速射击</secondaryDescription>
+                <secondaryDescription>进行一小段时间的高速射击\n需要消耗10点洞察力</secondaryDescription>
             </li>
         </comps>
         <tools>

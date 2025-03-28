@@ -8,6 +8,7 @@ namespace Astrologer.Insight
     {
         protected TargetIndex indexBuilding = TargetIndex.A;
         ThingWithComps ThingBuilding => job.GetTarget(indexBuilding).Thing as ThingWithComps;
+
         public override bool TryMakePreToilReservations(bool errorOnFailed)
         {
             return this.pawn.Reserve(ThingBuilding, job, 1, -1, null, errorOnFailed);

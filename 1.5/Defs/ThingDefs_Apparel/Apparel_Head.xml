@@ -133,8 +133,8 @@
             <EquipDelay>2</EquipDelay>
         </statBases>
         <equippedStatOffsets>
-            <!--AimingDelayFactor>0.25</AimingDelayFactor-->
-            <ShootingAccuracyPawn>2</ShootingAccuracyPawn>
+            <AimingDelayFactor>0.25</AimingDelayFactor>
+            <!--ShootingAccuracyPawn>2</ShootingAccuracyPawn-->
             <ToxicEnvironmentResistance>0.5</ToxicEnvironmentResistance>
         </equippedStatOffsets>
         <comps>

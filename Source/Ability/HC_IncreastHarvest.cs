@@ -14,6 +14,7 @@ namespace Astrologer.Ability
     public class HC_IncreastHarvest : HediffComp
     {
         public HCP_Regrow Props => (HCP_Regrow)props;
+
         public override string CompLabelInBracketsExtra
         {
             get

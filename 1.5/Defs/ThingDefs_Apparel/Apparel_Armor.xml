@@ -63,7 +63,7 @@
         </statBases>
         <equippedStatOffsets>
             <MoveSpeed>0.5</MoveSpeed>
-            <ToxicResistance>0.5</ToxicResistance>
+            <!--ToxicResistance>0.5</ToxicResistance-->
         </equippedStatOffsets>
         <comps>
             <li Class="Astrologer.TCP_HediffApparel">

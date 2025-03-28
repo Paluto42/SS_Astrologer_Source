@@ -8,6 +8,7 @@ namespace Astrologer
     {
         public HediffDef hediff;
         public List<BodyPartDef> partsToAffect;
+
         public TCP_HediffApparel()
         {
             compClass = typeof(TC_HediffApparel);

@@ -8,6 +8,7 @@ namespace Astrologer.Ability
     {
         public bool above = true;
         public float amount = 1;
+
         public override bool Castable(AKAbility_Base instance)
         {
             VAB_AstroTracker tracker = instance.CasterPawn?.TryGetAstroTracker();

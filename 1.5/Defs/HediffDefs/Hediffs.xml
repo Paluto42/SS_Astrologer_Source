@@ -3,7 +3,7 @@
 
     <HediffDef ParentName="InjuryBase">
         <defName>LOF_PsychicShockGunshot</defName>
-        <label>gunshot</label>
+        <label>心灵错乱射弹</label>
         <labelNoun>a gunshot wound</labelNoun>
         <description>A gunshot wound.</description>
         <comps>
@@ -150,6 +150,27 @@
                 </statOffsets>
             </li>
         </stages>
+    </HediffDef>
+
+    <HediffDef ParentName="InjuryBase">
+        <defName>LOF_Hediff_NebulaRay</defName>
+        <label>星云射线</label>
+        <labelNoun>持续流血的伤口.</labelNoun>
+        <description>持续流血的伤口.</description>
+        <everCurableByItem>false</everCurableByItem>
+        <comps>
+            <li Class="HediffCompProperties_Infecter">
+                <infectionChance>0.15</infectionChance>
+            </li>
+        </comps>
+        <injuryProps>
+            <painPerSeverity>0.0125</painPerSeverity>
+            <averagePainPerSeverityPermanent>0.00625</averagePainPerSeverityPermanent>
+            <bleedRate>0.10</bleedRate>
+            <canMerge>false</canMerge>
+            <destroyedLabel>Shot off</destroyedLabel>
+            <destroyedOutLabel>Shot out</destroyedOutLabel>
+        </injuryProps>
     </HediffDef>
 
 </Defs>

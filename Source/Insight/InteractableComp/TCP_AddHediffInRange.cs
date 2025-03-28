@@ -21,6 +21,7 @@ namespace Astrologer.Insight
         TCP_AddHediffInRange Props => props as TCP_AddHediffInRange;
 
         int activeUntilTick = -1;  //当前tick小于这个 就周期性加hediff
+
         public override void InsightInteract(Pawn pawn)
         {
             base.InsightInteract(pawn);

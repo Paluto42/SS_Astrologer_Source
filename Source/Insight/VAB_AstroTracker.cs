@@ -10,10 +10,10 @@ namespace Astrologer.Insight
     {
         public float insight = 0;
 
-        public const float insightCapacity = 100;
+        public const float insightCapacity = 100;//上限
 
-        public const float insightRegenPerTick = 2;
-        public const float insightRegenTickInterval = 250;
+        public const float insightRegenPerTick = 2;//回复量
+        public const float insightRegenTickInterval = 250;//回复间隔
 
         public const float insightRegenBonusNearStarGrass = 2; //靠近草时回复奖励
 

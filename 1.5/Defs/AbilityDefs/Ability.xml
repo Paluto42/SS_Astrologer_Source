@@ -38,10 +38,10 @@
             <li Class="AKA_Ability.CastConditioner.CC_NeedFullCharge"/>
         </castConditions>
         <compEffectList>
+            <li Class="Astrologer.Ability.AE_IncreaseHarvest"/>
             <li Class="Astrologer.Ability.AE_CostInsight">
                 <amount>50</amount>
             </li>
-            <li Class="Astrologer.Ability.AE_IncreaseHarvest"/>
         </compEffectList>
         <useSounds>
             <li>AK_SFX_Tactboost</li>
@@ -61,17 +61,17 @@
         <icon>UI/Element/Placeholder</icon>
         <abilityClass>AKA_Ability.AKAbility_Targetor</abilityClass>
         <castConditions>
-            <li Class="Astrologer.Ability.CC_InsightThreshold">
+            <!--li Class="Astrologer.Ability.CC_InsightThreshold">
                 <amount>50</amount>
                 <failReason>洞察力不足</failReason>
-            </li>
+            </li-->
             <li Class="AKA_Ability.CastConditioner.CC_NeedFullCharge"/>
         </castConditions>
         <compEffectList>
+            <li Class="AKA_Ability.AbilityEffect.AE_TeleportSelfToTarget"/>
             <li Class="Astrologer.Ability.AE_CostInsight">
                 <amount>50</amount>
             </li>
-            <li Class="AKA_Ability.AbilityEffect.AE_TeleportSelfToTarget"/>
         </compEffectList>
         <useSounds>
             <li>AK_SFX_Tactboost</li>
@@ -103,10 +103,10 @@
             <li Class="AKA_Ability.CastConditioner.CC_NeedFullCharge"/>
         </castConditions>
         <compEffectList>
+            <li Class="Astrologer.Ability.AE_UnstableCatalyst"/>
             <li Class="Astrologer.Ability.AE_CostInsight">
                 <amount>50</amount>
             </li>
-            <li Class="Astrologer.Ability.AE_UnstableCatalyst"/>
         </compEffectList>
         <useSounds>
             <li>AK_SFX_Tactboost</li>
@@ -170,8 +170,8 @@
                         <canTargetBuildings>false</canTargetBuildings>
                     </targetParams>
                 </verbJump>
-                 <li Class="AKA_Ability.AbilityEffect.AE_CostChargeStatic" />
             </li>
+            <li Class="AKA_Ability.AbilityEffect.AE_CostChargeStatic"/>
         </compEffectList>
         <useSounds>
             <li>AK_SFX_Tactboost</li>

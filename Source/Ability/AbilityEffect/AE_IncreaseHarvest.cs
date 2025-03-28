@@ -6,6 +6,7 @@ namespace Astrologer.Ability
     public class AE_IncreaseHarvest : AbilityEffect_AddHediff
     {
         public const float lastTime = 24f;
+
         protected override bool DoEffect(AKAbility_Base caster, LocalTargetInfo target)
         {
             hediffDef = DefDatabase<HediffDef>.GetNamed("LOF_Hediff_IncreaseHarvest");

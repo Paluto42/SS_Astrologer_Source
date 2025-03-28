@@ -16,6 +16,21 @@
         <makesAnimalsFlee>true</makesAnimalsFlee>
     </DamageDef>
 
+    <DamageDef ParentName="Bullet">
+        <defName>LOF_Cast_ForcePartDestruct</defName>
+        <label>bullet</label>
+        <workerClass>DamageWorker_AddInjury</workerClass>
+        <externalViolence>true</externalViolence>
+        <deathMessage>{0} 被星云射线杀死.</deathMessage>
+        <hediff>Gunshot</hediff>
+        <harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
+        <impactSoundType>Bullet</impactSoundType>
+        <armorCategory>Sharp</armorCategory>
+        <overkillPctToDestroyPart>0~0.1</overkillPctToDestroyPart>
+        <isRanged>true</isRanged>
+        <makesAnimalsFlee>true</makesAnimalsFlee>
+    </DamageDef>
+
     <DamageDef ParentName="StunBase">
         <defName>LOF_EMP</defName>
         <label>EMP</label>
@@ -25,7 +40,7 @@
         <!--impactSoundType>Electric</impactSoundType-->
         <defaultDamage>50</defaultDamage>
         <explosionSnowMeltAmount>0</explosionSnowMeltAmount>
-        <explosionCellFleck>BlastEMP</explosionCellFleck>
+        <explosionCellFleck>BlastDry</explosionCellFleck>
         <explosionColorEdge>(0.8, 0.8, 0.8, 0.8)</explosionColorEdge>
         <!--explosionInteriorFleck>ElectricalSpark</explosionInteriorFleck-->
         <soundExplosion>Explosion_EMP</soundExplosion>
