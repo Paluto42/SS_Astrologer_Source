@@ -152,6 +152,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="QuestNode\QuestNode_IsFactionRelationKind.cs" />
     <Compile Include="QuestNode\QuestNode_Root_GetAdventurerJoin_WalkIn.cs" />
+    <Compile Include="Misc\DamageWorker_EMP.cs" />
     <Compile Include="Thing\Projectile_Leech.cs" />
     <Compile Include="Thing\Thing_ActivatedPulsePack.cs" />
     <Compile Include="TypeDef.cs" />

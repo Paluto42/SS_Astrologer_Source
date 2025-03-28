@@ -24,7 +24,7 @@ namespace Astrologer
         }
         private void DamageCloseThings()
         {
-            GenExplosion.DoExplosion(Position, Map, Radius, AstroDefOf.LOF_EMP, null, damAmount: -1, -1f, explosionSound: SoundDefOf.Power_OnSmall, null, null, null, null, 0f, 0, postExplosionGasType: null);
+            GenExplosion.DoExplosion(Position, Map, Radius, AstroDefOf.LOF_EMP, null, damAmount: -1, -1f, explosionSound: SoundDefOf.Power_OnSmall, null, null, null, null, 0f, 0, postExplosionGasType: null, screenShakeFactor: 0.125f);
         }
     }
 }

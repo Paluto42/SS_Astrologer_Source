@@ -34,15 +34,16 @@
     <DamageDef ParentName="StunBase">
         <defName>LOF_EMP</defName>
         <label>EMP</label>
+        <workerClass>Astrologer.DamageWorker_EMP</workerClass>
         <externalViolenceForMechanoids>true</externalViolenceForMechanoids>
         <deathMessage>{0} has been EMPed to death.</deathMessage>
         <harmsHealth>false</harmsHealth>
         <!--impactSoundType>Electric</impactSoundType-->
         <defaultDamage>50</defaultDamage>
         <explosionSnowMeltAmount>0</explosionSnowMeltAmount>
-        <explosionCellFleck>BlastDry</explosionCellFleck>
+        <explosionCellFleck>BlastEMP</explosionCellFleck>
         <explosionColorEdge>(0.8, 0.8, 0.8, 0.8)</explosionColorEdge>
-        <!--explosionInteriorFleck>ElectricalSpark</explosionInteriorFleck-->
+        <explosionInteriorFleck>ElectricalSpark</explosionInteriorFleck>
         <soundExplosion>Explosion_EMP</soundExplosion>
         <combatLogRules>Damage_EMP</combatLogRules>
         <causeStun>true</causeStun>
