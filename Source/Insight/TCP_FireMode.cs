@@ -12,7 +12,7 @@ namespace Astrologer.Insight
         Completed = 2
     }
     //和TC_Insight联动的Comp
-    public class TCP_newFireMode : CompProperties
+    public class TCP_FireMode : CompProperties
     {
         public VerbProperties verbProps = new();
 
@@ -25,13 +25,13 @@ namespace Astrologer.Insight
         public string secondaryIcon;
         public string secondaryWeaponLabel;
         public string secondaryDescription;
-        public TCP_newFireMode()
+        public TCP_FireMode()
         {
-            compClass = typeof(TC_newFireMode);
+            compClass = typeof(TC_FireMode);
         }
     }
     //每发子弹都消耗洞察力
-    public class TC_newFireMode : ThingComp
+    public class TC_FireMode : ThingComp
     {
         public FireTickStatus tickStatus = FireTickStatus.None;
         private VAB_AstroTracker CompInsight => CasterPawn?.TryGetAstroTracker();
@@ -42,7 +42,7 @@ namespace Astrologer.Insight
         private CompEquippable compEquippableInt;
 
         private bool isSecondaryVerbSelected = false;
-        public TCP_newFireMode Props => (TCP_newFireMode)props;
+        public TCP_FireMode Props => (TCP_FireMode)props;
         public bool IsSecondaryVerbSelected => isSecondaryVerbSelected;
 
         private CompEquippable EquipmentSource

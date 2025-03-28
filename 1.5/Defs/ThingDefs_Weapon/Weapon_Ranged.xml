@@ -428,7 +428,7 @@
             </li>
         </verbs>
         <comps>
-            <li Class="Astrologer.Insight.TCP_newFireMode">
+            <li Class="Astrologer.Insight.TCP_FireMode">
                 <verbProps>
                     <verbClass>Astrologer.Insight.Verb_InsightShoot</verbClass>
                     <hasStandardCommand>true</hasStandardCommand>
@@ -551,7 +551,7 @@
             </li>
         </verbs>
         <comps>
-            <li Class="Astrologer.Insight.TCP_newFireMode">
+            <li Class="Astrologer.Insight.TCP_FireMode">
                 <verbProps>
                     <verbClass>Astrologer.Insight.Verb_InsightShoot</verbClass>
                     <hasStandardCommand>true</hasStandardCommand>
@@ -665,7 +665,7 @@
             </li>
         </verbs>
         <comps>
-            <li Class="Astrologer.Insight.TCP_newFireMode">
+            <li Class="Astrologer.Insight.TCP_FireMode">
                 <verbProps>
                     <verbClass>Astrologer.Insight.Verb_InsightShoot</verbClass>
                     <hasStandardCommand>true</hasStandardCommand>

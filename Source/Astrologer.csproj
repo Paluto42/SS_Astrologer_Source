@@ -133,7 +133,7 @@
     <Compile Include="HarmonyPatches\Patch_GetBodyTypeFor.cs" />
     <Compile Include="HarmonyPatches\Patch_GeneratePostRecruit.cs" />
     <Compile Include="HarmonyPatches\Patch_SkinColor.cs" />
-    <Compile Include="Insight\TCP_newFireMode.cs" />
+    <Compile Include="Insight\TCP_FireMode.cs" />
     <Compile Include="Insight\VAB_AstroTracker.cs" />
     <Compile Include="Insight\InteractableComp\IInsightInteractable.cs" />
     <Compile Include="Insight\InteractableComp\JobDriver_InsightInteract.cs" />

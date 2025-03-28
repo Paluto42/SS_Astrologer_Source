@@ -9,7 +9,7 @@ namespace Astrologer.Ability
     {
         private Pawn Caster => container.owner;
         private ThingWithComps Weapon => Caster?.equipment?.Primary;
-        private TC_newFireMode FireModeComp => Weapon?.GetComp<TC_newFireMode>();
+        private TC_FireMode FireModeComp => Weapon?.GetComp<TC_FireMode>();
 
         public AKAbility_FireMode(AbilityTracker tracker) : base(tracker)
         {

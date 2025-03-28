@@ -6,7 +6,7 @@ namespace Astrologer.Insight
     {
         //Caster = Pawn
         private VAB_AstroTracker CompInsightInt => CasterPawn?.TryGetAstroTracker();
-        private TC_newFireMode CompFireMode => EquipmentSource?.GetComp<TC_newFireMode>();
+        private TC_FireMode CompFireMode => EquipmentSource?.GetComp<TC_FireMode>();
         private bool ShouldConsumeInsight => CompFireMode.IsSecondaryVerbSelected;
         private int ConsumeAmount => CompFireMode.Props.consumeAmount;
         public bool ShouldCalulateTicks => CompFireMode.Props.consumeDuration > 0;
