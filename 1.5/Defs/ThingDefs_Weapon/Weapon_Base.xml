@@ -1,7 +1,16 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
+    <ThingDef Name="Astro_BaseWeapon" Abstract="True" ParentName="BaseWeapon">
+        <comps Inherit="false">
+            <li Class="CompProperties_Forbiddable"/>
+            <li>
+                <compClass>Astrologer.CompEquippable_AKAbility</compClass>
+            </li>
+            <li Class="CompProperties_Styleable"/>
+        </comps>
+    </ThingDef>
 
-    <ThingDef Name="Astro_MedievalWeaponBase" Abstract="True" ParentName="BaseWeapon">
+    <ThingDef Name="Astro_MedievalWeaponBase" Abstract="True" ParentName="Astro_BaseWeapon">
         <techLevel>Medieval</techLevel>
         <smeltable>true</smeltable>
         <relicChance>0</relicChance>
@@ -27,7 +36,7 @@
         <burnableByRecipe>true</burnableByRecipe>
     </ThingDef>
 
-    <ThingDef Name="Astro_IndustrialWeaponBase" Abstract="True" ParentName="BaseWeapon">
+    <ThingDef Name="Astro_IndustrialWeaponBase" Abstract="True" ParentName="Astro_BaseWeapon">
         <techLevel>Industrial</techLevel>
         <smeltable>true</smeltable>
         <relicChance>0</relicChance>

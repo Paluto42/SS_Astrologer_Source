@@ -38,7 +38,7 @@
                 <AKAbilities>
                     <li>LOF_Ability_IncreaseHarvest</li>
                     <li>LOF_Ability_Monitor</li>
-                    <li>LOF_Ability_FireMode</li>
+                    <!--li>LOF_Ability_FireMode</li-->
                 </AKAbilities>
             </li>
         </modExtensions>

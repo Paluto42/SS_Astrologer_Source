@@ -119,6 +119,32 @@
         </cooldownProperty>
     </AKA_Ability.AKAbilityDef>
 
+    <AKA_Ability.AKAbilityDef>
+        <defName>LOF_Ability_LeechAttack</defName>
+        <label>吸血攻击</label>
+        <description>介绍:\n持续消耗洞察力可以攻击回血\n对敌人造成伤则固定回血.</description>
+        <icon>UI/Element/Placeholder</icon>
+        <abilityClass>AKA_Ability.AKAbility_Auto</abilityClass>
+        <castConditions>
+            <li Class="Astrologer.Ability.CC_InsightThreshold">
+                <amount>1</amount>
+                <failReason>洞察力不足</failReason>
+            </li>
+            <!--li Class="AKA_Ability.CastConditioner.CC_NeedFullCharge"/-->
+        </castConditions>
+        <compEffectList>
+        </compEffectList>
+        <useSounds>
+            <li>AK_SFX_Tactboost</li>
+        </useSounds>
+        <cooldownProperty>
+            <SPPerCharge>12</SPPerCharge>
+            <SPUnit>hour</SPUnit>
+            <initSP>8000000</initSP>
+            <maxCharge>1</maxCharge>
+        </cooldownProperty>
+    </AKA_Ability.AKAbilityDef>
+
     <!--==================== 不需要洞察力的技能 ====================-->
     <AKA_Ability.AKAbilityDef>
         <defName>LOF_Ability_DeployEMP</defName>

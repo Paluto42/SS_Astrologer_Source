@@ -19,7 +19,7 @@
     <DamageDef ParentName="Bullet">
         <defName>LOF_Cast_ForcePartDestruct</defName>
         <label>bullet</label>
-        <workerClass>DamageWorker_AddInjury</workerClass>
+        <workerClass>Astrologer.DamageWorker_ForcePartDestruct</workerClass>
         <externalViolence>true</externalViolence>
         <deathMessage>{0} 被星云射线杀死.</deathMessage>
         <hediff>Gunshot</hediff>

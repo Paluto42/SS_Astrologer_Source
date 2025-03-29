@@ -179,7 +179,7 @@
             <damageAmountBase>10</damageAmountBase>
             <armorPenetrationBase>0.1</armorPenetrationBase>
             <speed>48</speed>
-            <stoppingPower>2</stoppingPower>
+            <stoppingPower>1</stoppingPower>
         </projectile>
     </ThingDef>
 
@@ -267,7 +267,7 @@
         <projectile>
             <damageDef>Bullet</damageDef>
             <damageAmountBase>22</damageAmountBase>
-            <stoppingPower>3</stoppingPower>
+            <stoppingPower>2</stoppingPower>
             <armorPenetrationBase>0.20</armorPenetrationBase>
             <speed>55</speed>
         </projectile>
@@ -359,7 +359,7 @@
         <projectile>
             <damageDef>Bullet</damageDef>
             <damageAmountBase>20</damageAmountBase>
-            <stoppingPower>3</stoppingPower>
+            <stoppingPower>2</stoppingPower>
             <armorPenetrationBase>0.18</armorPenetrationBase>
             <extraDamages>
                 <li>
@@ -428,6 +428,11 @@
             </li>
         </verbs>
         <comps>
+            <li Class="AKA_Ability.TCP_AKATracker">
+                <abilities>
+                    <li>LOF_Ability_FireMode</li>
+                </abilities>
+            </li>
             <li Class="Astrologer.Insight.TCP_FireMode">
                 <verbProps>
                     <verbClass>Astrologer.Insight.Verb_InsightShoot</verbClass>
@@ -551,6 +556,11 @@
             </li>
         </verbs>
         <comps>
+            <li Class="AKA_Ability.TCP_AKATracker">
+                <abilities>
+                    <li>LOF_Ability_FireMode</li>
+                </abilities>
+            </li>
             <li Class="Astrologer.Insight.TCP_FireMode">
                 <verbProps>
                     <verbClass>Astrologer.Insight.Verb_InsightShoot</verbClass>
@@ -665,7 +675,21 @@
             </li>
         </verbs>
         <comps>
+            <li Class="AKA_Ability.TCP_AKATracker">
+                <abilities>
+                    <li>LOF_Ability_FireMode</li>
+                </abilities>
+            </li>
             <li Class="Astrologer.Insight.TCP_FireMode">
+                <mainWeaponLabel>普通射击模式</mainWeaponLabel>
+                <mainIcon>UI/Buttons/NormalFire</mainIcon>
+                <mainDescription>占星师使用时可切换到特殊的开火模式\n开火将消耗洞察力</mainDescription>
+                <secondaryWeaponLabel>过载射击模式</secondaryWeaponLabel>
+                <secondaryIcon>UI/Buttons/SpecialFire</secondaryIcon>
+                <secondaryDescription>进行一小段时间的高速射击\n需要消耗10点洞察力</secondaryDescription>
+                <consumeAmount>10</consumeAmount>
+                <!--一次连续开火的tick间隔为(burstShotCount*ticksBetweenBurstShots)-->
+                <consumeDuration>75</consumeDuration>
                 <verbProps>
                     <verbClass>Astrologer.Insight.Verb_InsightShoot</verbClass>
                     <hasStandardCommand>true</hasStandardCommand>
@@ -678,15 +702,6 @@
                     <soundCastTail>GunTail_Heavy</soundCastTail>
                     <muzzleFlashScale>9</muzzleFlashScale>
                 </verbProps>
-                <consumeAmount>10</consumeAmount>
-                <!--一次连续开火的tick间隔为(burstShotCount*ticksBetweenBurstShots)-->
-                <consumeDuration>75</consumeDuration>
-                <mainWeaponLabel>普通射击模式</mainWeaponLabel>
-                <mainIcon>UI/Buttons/NormalFire</mainIcon>
-                <mainDescription>占星师使用时可切换到特殊的开火模式\n开火将消耗洞察力</mainDescription>
-                <secondaryWeaponLabel>过载射击模式</secondaryWeaponLabel>
-                <secondaryIcon>UI/Buttons/SpecialFire</secondaryIcon>
-                <secondaryDescription>进行一小段时间的高速射击\n需要消耗10点洞察力</secondaryDescription>
             </li>
         </comps>
         <tools>
@@ -757,9 +772,9 @@
         </thingSetMakerTags>
         <verbs Inherit="false">
             <li>
-                <verbClass>Verb_Shoot</verbClass>
+                <verbClass>Astrologer.Insight.Verb_InsightShoot</verbClass>
                 <hasStandardCommand>true</hasStandardCommand>
-                <defaultProjectile>LOF_Bullet_Railgun</defaultProjectile>
+                <defaultProjectile>LOF_Projectile_Railgun</defaultProjectile>
                 <forcedMissRadius>2.9</forcedMissRadius>
                 <warmupTime>4.5</warmupTime>
                 <ai_AvoidFriendlyFireRadius>5</ai_AvoidFriendlyFireRadius>
@@ -774,6 +789,11 @@
             </li>
         </verbs>
         <comps>
+            <li Class="AKA_Ability.TCP_AKATracker">
+                <abilities>
+                    <li>LOF_Ability_LeechAttack</li>
+                </abilities>
+            </li>
             <!--伤害类型要写新的,Thump和Bomb的混合体-->
             <li Class="CompProperties_Explosive">
                 <explosiveRadius>3.9</explosiveRadius>
@@ -804,14 +824,14 @@
         </tools>
     </ThingDef>
     <ThingDef ParentName="BaseBullet">
-        <defName>LOF_Bullet_Railgun</defName>
+        <defName>LOF_Projectile_Railgun</defName>
         <label>Plasma shot</label>
         <graphicData>
             <texPath>Things/Projectile/Rocket_Big</texPath>
             <graphicClass>Graphic_Single</graphicClass>
             <shaderType>TransparentPostLight</shaderType>
         </graphicData>
-        <thingClass>Projectile_Explosive</thingClass>
+        <thingClass>Astrologer.Projectile_Leech</thingClass>
         <projectile>
             <damageDef>Bomb</damageDef>
             <damageAmountBase>250</damageAmountBase>
