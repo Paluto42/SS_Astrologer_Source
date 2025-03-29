@@ -1,37 +1,38 @@
 ﻿using AKA_Ability;
-using Astrologer.Insight;
+using System;
 using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 using Verse;
 
 namespace Astrologer.Ability
 {
-    public class AKAbility_FireMode : AKAbility_Base
+    public class AKAbility_Equip : AKAbility_Base
     {
         private ThingWithComps Weapon => CasterPawn?.equipment?.Primary;
-        private TC_FireMode FireModeComp => Weapon?.GetComp<TC_FireMode>();
+        private TC_AKATracker Tracker => Weapon?.GetComp<TC_AKATracker>();
 
-        public AKAbility_FireMode(AbilityTracker tracker) : base(tracker)
-        {
-        }
-        public AKAbility_FireMode(AKAbilityDef def, AbilityTracker tracker) : base(def, tracker)
+        public AKAbility_Equip(AbilityTracker tracker) : base(tracker)
         {
         }
 
-        //不能删
+        public AKAbility_Equip(AKAbilityDef def, AbilityTracker tracker) : base(def, tracker)
+        {
+        }
+
         public override void Tick()
         {
-            if (Weapon == null) return;
-            FireModeComp?.CompTick();
+            Tracker?.CompTick();
         }
 
-        //从武器comp上获取Gizmo
         public override IEnumerable<Command> GetGizmos()
         {
             if (!base.CasterPawn.Drafted && !def.displayGizmoUndraft)
                 yield break;
-            if (Weapon == null || Weapon.AllComps.NullOrEmpty() || FireModeComp == null)
+            if (Tracker == null)
                 yield break;
-            foreach (Gizmo gizmo in FireModeComp.CompGetGizmosExtra())
+            foreach (Gizmo gizmo in Tracker.CompGetWeaponGizmosExtra())
             {
                 yield return (Command)gizmo;
             }

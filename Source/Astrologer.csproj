@@ -102,10 +102,10 @@
     <Compile Include="Ability\AbilityEffect\AE_DeployBuilding.cs" />
     <Compile Include="Ability\AbilityEffect\AE_IncreaseHarvest.cs" />
     <Compile Include="Ability\AbilityEffect\AE_UnstableCatalyst.cs" />
+    <Compile Include="Ability\Gizmo\AKAbility_Equip.cs" />
     <Compile Include="Ability\Gizmo\AKAbility_FireMode.cs" />
     <Compile Include="Ability\Gizmo\AKAbility_Monitor.cs" />
     <Compile Include="Ability\CC_InsightThreshold.cs" />
-    <Compile Include="Ability\HarmonyPatchs\Patch_ForcePartDestruct.cs" />
     <Compile Include="Ability\HarmonyPatchs\Patch_IgnoreDmg.cs" />
     <Compile Include="Ability\HarmonyPatchs\Patch_IgnoreStagger.cs" />
     <Compile Include="Ability\HC_IncreastHarvest.cs" />
@@ -139,6 +139,7 @@
     <Compile Include="Insight\InteractableComp\JobDriver_InsightInteract.cs" />
     <Compile Include="Insight\InteractableComp\TCP_AddHediffInRange.cs" />
     <Compile Include="Insight\InteractableComp\TCP_InsightInteractable_Base.cs" />
+    <Compile Include="Misc\DamageWorker_ForcePartDestruct.cs" />
     <Compile Include="Obsolete\TCP_Insights.cs" />
     <Compile Include="Obsolete\TCP_MultipleVerb.cs" />
     <Compile Include="Obsolete\TC_PawnEquipGizmo.cs" />

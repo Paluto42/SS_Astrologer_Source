@@ -1,4 +1,5 @@
-﻿using RimWorld;
+﻿using AKA_Ability;
+using RimWorld;
 using System.Collections.Generic;
 using UnityEngine;
 using Verse;
@@ -27,6 +28,8 @@ namespace Astrologer
         };
 
         public static AbilityDef LOF_VAbility_Astro;//占星师技能容器
+
+        public static AKAbilityDef LOF_Ability_LeechAttack;//吸血攻击
 
         public static DamageDef LOF_EMP;//改了Fleck的EMP
         public static DamageDef LOF_Cast_ForcePartDestruct;//强制摧毁部件

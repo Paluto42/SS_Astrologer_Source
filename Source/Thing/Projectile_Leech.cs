@@ -5,13 +5,13 @@ using Verse;
 namespace Astrologer
 {
     //命中敌人时，扣洞察并吸血
-    public class Projectile_Leech : Bullet
+    public class Projectile_Leech : Projectile_Explosive
     {
         AKAbility_Auto ability = null;
 
         //参数直接硬编译的 懒了
         //这个是控制吸血是否生效的技能
-        const AKAbilityDef linkedAbility = default(AKAbilityDef);
+        AKAbilityDef linkedAbility => AstroDefOf.LOF_Ability_LeechAttack;
         const float insightCost = 1;
         const float healAmount = 1;
 
@@ -22,17 +22,19 @@ namespace Astrologer
             {
                 if (ability == null)
                 {
-                    TC_AKATracker comp = CasterPawn.equipment.Primary?.TryGetComp<TC_AKATracker>();
+                    TC_AKATracker comp = CasterPawn?.equipment?.Primary?.TryGetComp<TC_AKATracker>();
                     ability = comp?.tracker.TryGetAbility(linkedAbility) as AKAbility_Auto;
                 }
                 return ability;
             }
         }
 
-        Pawn CasterPawn => launcher as Pawn;
+        Pawn CasterPawn => Launcher as Pawn;
+
         public override void SpawnSetup(Map map, bool respawningAfterLoad)
         {
             base.SpawnSetup(map, respawningAfterLoad);
+            if (Ability == null) return;
             if (Ability.AutoCast)
             {
                 CasterPawn.TryOffsetInsight(insightCost);
