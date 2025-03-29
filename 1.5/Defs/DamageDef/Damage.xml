@@ -5,30 +5,20 @@
         <defName>LOF_Cast_Psychicinsanity</defName>
         <label>bullet</label>
         <workerClass>DamageWorker_AddInjury</workerClass>
-        <externalViolence>true</externalViolence>
         <deathMessage>{0} has been shot to death.</deathMessage>
         <hediff>LOF_PsychicShockGunshot</hediff>
-        <harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
         <impactSoundType>Bullet</impactSoundType>
-        <armorCategory>Sharp</armorCategory>
         <overkillPctToDestroyPart>0~0.7</overkillPctToDestroyPart>
-        <isRanged>true</isRanged>
-        <makesAnimalsFlee>true</makesAnimalsFlee>
     </DamageDef>
 
     <DamageDef ParentName="Bullet">
         <defName>LOF_Cast_ForcePartDestruct</defName>
         <label>bullet</label>
         <workerClass>Astrologer.DamageWorker_ForcePartDestruct</workerClass>
-        <externalViolence>true</externalViolence>
         <deathMessage>{0} 被星云射线杀死.</deathMessage>
         <hediff>Gunshot</hediff>
-        <harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
         <impactSoundType>Bullet</impactSoundType>
-        <armorCategory>Sharp</armorCategory>
-        <overkillPctToDestroyPart>0~0.1</overkillPctToDestroyPart>
-        <isRanged>true</isRanged>
-        <makesAnimalsFlee>true</makesAnimalsFlee>
+        <overkillPctToDestroyPart>0~0.7</overkillPctToDestroyPart>
     </DamageDef>
 
     <DamageDef ParentName="StunBase">
@@ -49,6 +39,12 @@
         <causeStun>true</causeStun>
         <stunResistStat MayRequireAnyOf="Ludeon.RimWorld.Biotech,Ludeon.RimWorld.Anomaly">EMPResistance</stunResistStat>
         <stunAdaptationTicks>2200</stunAdaptationTicks>
+    </DamageDef>
+
+    <DamageDef ParentName="Bomb">
+        <defName>LOF_LeechBomb</defName>
+        <label>bomb</label>
+        <workerClass>Astrologer.DamageWorker_Bomb</workerClass>
     </DamageDef>
 
 </Defs>

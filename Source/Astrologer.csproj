@@ -139,6 +139,7 @@
     <Compile Include="Insight\InteractableComp\JobDriver_InsightInteract.cs" />
     <Compile Include="Insight\InteractableComp\TCP_AddHediffInRange.cs" />
     <Compile Include="Insight\InteractableComp\TCP_InsightInteractable_Base.cs" />
+    <Compile Include="Misc\DamageWorker_Bomb.cs" />
     <Compile Include="Misc\DamageWorker_ForcePartDestruct.cs" />
     <Compile Include="Obsolete\TCP_Insights.cs" />
     <Compile Include="Obsolete\TCP_MultipleVerb.cs" />

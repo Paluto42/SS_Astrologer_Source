@@ -10,11 +10,11 @@ namespace Astrologer
         public const float lastTime = 4f;//持续几小时
         public override DamageResult Apply(DamageInfo dinfo, Thing thing)
         {
-            DamageResult res = base.Apply(dinfo, thing);
-            if (res.hitThing is Pawn target) 
+            DamageResult result = base.Apply(dinfo, thing);
+            if (result.hitThing is Pawn target) 
             {
                 if (target.Dead) goto ret;
-                if (dinfo.Weapon != AstroDefOf.LOF_AMSR || dinfo.Def != AstroDefOf.LOF_Cast_ForcePartDestruct) goto ret;
+                if (dinfo.Weapon != AstroDefOf.LOF_Weapon_AMSR || dinfo.Def != AstroDefOf.LOF_Cast_ForcePartDestruct) goto ret;
 
                 IEnumerable<BodyPartRecord> notMissingParts = target.health.hediffSet.GetNotMissingParts();
                 if (!notMissingParts.Any()) goto ret;
@@ -30,8 +30,7 @@ namespace Astrologer
                 }
                 HealthUtility.AdjustSeverity(target, AstroDefOf.LOF_Hediff_NebulaRay, lastTime * 0.1f);
             }
-            ret:
-            return res;
+            ret:return result;
         }
     }
 }

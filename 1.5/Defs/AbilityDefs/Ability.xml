@@ -41,13 +41,16 @@
             <li Class="Astrologer.Ability.AE_CostInsight">
                 <amount>50</amount>
             </li>
+            <li Class="AKA_Ability.AbilityEffect.AE_CostChargeStatic">
+                <cost>1</cost>
+            </li>
         </compEffectList>
         <useSounds>
             <li>AK_SFX_Tactboost</li>
         </useSounds>
         <cooldownProperty>
-            <SPPerCharge>12</SPPerCharge>
-            <SPUnit>hour</SPUnit>
+            <SPPerCharge>7</SPPerCharge>
+            <SPUnit>day</SPUnit>
             <maxCharge>1</maxCharge>
         </cooldownProperty>
     </AKA_Ability.AKAbilityDef>

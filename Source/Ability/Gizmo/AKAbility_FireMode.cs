@@ -29,7 +29,7 @@ namespace Astrologer.Ability
         {
             if (!base.CasterPawn.Drafted && !def.displayGizmoUndraft)
                 yield break;
-            if (Weapon == null || Weapon.AllComps.NullOrEmpty() || FireModeComp == null)
+            if (FireModeComp == null)
                 yield break;
             foreach (Gizmo gizmo in FireModeComp.CompGetGizmosExtra())
             {
