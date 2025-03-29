@@ -7,7 +7,8 @@ namespace Astrologer
 {
     public class DamageWorker_ForcePartDestruct : DamageWorker_AddInjury
     {
-        public const float lastTime = 4f;//持续几小时
+        public const float lastTime = 4f; //持续几小时
+
         public override DamageResult Apply(DamageInfo dinfo, Thing thing)
         {
             DamageResult result = base.Apply(dinfo, thing);

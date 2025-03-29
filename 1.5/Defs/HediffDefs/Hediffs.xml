@@ -121,6 +121,7 @@
         <isBad>false</isBad>
         <allowMothballIfLowPriorityWorldPawn>true</allowMothballIfLowPriorityWorldPawn>
         <everCurableByItem>false</everCurableByItem>
+        <maxSeverity>1</maxSeverity>
         <stages>
             <li>
                 <statOffsets>
@@ -132,6 +133,11 @@
                 </statOffsets>
             </li>
         </stages>
+        <comps>
+            <li Class="HediffCompProperties_SeverityPerDay">
+                <severityPerDay>-1</severityPerDay>
+            </li>
+        </comps>
     </HediffDef>
 
     <HediffDef>
@@ -143,6 +149,7 @@
         <isBad>false</isBad>
         <allowMothballIfLowPriorityWorldPawn>true</allowMothballIfLowPriorityWorldPawn>
         <everCurableByItem>false</everCurableByItem>
+        <maxSeverity>198</maxSeverity>
         <stages>
             <li>
                 <statOffsets>
@@ -150,6 +157,11 @@
                 </statOffsets>
             </li>
         </stages>
+        <comps>
+            <li Class="HediffCompProperties_SeverityPerDay">
+                <severityPerDay>-198</severityPerDay>
+            </li>
+        </comps>
     </HediffDef>
 
     <HediffDef ParentName="InjuryBase">
@@ -158,9 +170,13 @@
         <labelNoun>持续流血的伤口.</labelNoun>
         <description>持续流血的伤口.</description>
         <everCurableByItem>false</everCurableByItem>
+        <maxSeverity>1</maxSeverity>
         <comps>
             <li Class="HediffCompProperties_Infecter">
                 <infectionChance>0.15</infectionChance>
+            </li>
+            <li Class="HediffCompProperties_SeverityPerDay">
+                <severityPerDay>-1</severityPerDay>
             </li>
         </comps>
         <injuryProps>
@@ -171,6 +187,30 @@
             <destroyedLabel>Shot off</destroyedLabel>
             <destroyedOutLabel>Shot out</destroyedOutLabel>
         </injuryProps>
+    </HediffDef>
+
+    <HediffDef>
+        <defName>LOF_Hediff_UnavoidableStance</defName>
+        <label>精准锁定(被动)</label>
+        <description>一小段时间内闪避率为0.</description>
+        <hediffClass>HediffWithComps</hediffClass>
+        <defaultLabelColor>(0.72, 0.72, 0.72)</defaultLabelColor>
+        <isBad>false</isBad>
+        <allowMothballIfLowPriorityWorldPawn>true</allowMothballIfLowPriorityWorldPawn>
+        <everCurableByItem>false</everCurableByItem>
+        <maxSeverity>1</maxSeverity>
+        <stages>
+            <li>
+                <statFactors>
+                    <MeleeDodgeChance>0</MeleeDodgeChance>
+                </statFactors>
+            </li>
+        </stages>
+        <comps>
+            <li Class="HediffCompProperties_SeverityPerDay">
+                <severityPerDay>-12</severityPerDay>
+            </li>
+        </comps>
     </HediffDef>
 
 </Defs>

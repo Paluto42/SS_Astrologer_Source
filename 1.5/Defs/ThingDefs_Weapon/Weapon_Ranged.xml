@@ -374,7 +374,7 @@
 
     <!--=============== Rifles  ====================-->
 
-    <ThingDef ParentName="Astro_WeaponRangedBase">
+    <ThingDef ParentName="Astro_AKAWeaponRangedBase">
         <defName>LOF_Weapon_PsychicRifle</defName>
         <label>"MK-5" 等离子心灵干扰步枪</label>
         <description>标准射手步枪,点击切换模式,此时该步枪每发子弹会有心灵错乱效果.</description>
@@ -502,7 +502,7 @@
         </projectile>
     </ThingDef>
 
-    <ThingDef ParentName="Astro_WeaponRangedBase">
+    <ThingDef ParentName="Astro_AKAWeaponRangedBase">
         <defName>LOF_Weapon_AMSR</defName>
         <label>ASAT-112 "船边星云"</label>
         <description>远程狙击，长开火前摇，短射击后摇.\n当占星师使用时，可使用洞察力强化该武器。每一发消耗一定量洞察力，在这种模式下，每一发子弹命中会打掉对方身体的随机的一个部位，并挂一个debuff（星云射线）持续扣血.</description>
@@ -619,7 +619,7 @@
 
     <!--=============== Heavy  ====================-->
 
-    <ThingDef ParentName="Astro_WeaponRangedBase">
+    <ThingDef ParentName="Astro_AKAWeaponRangedBase">
         <defName>LOF_Weapon_PlasmaHMG</defName>
         <label>"MPE-1" 等离子重机枪</label>
         <description>MPE-1是占星帝国初次遭遇暗灵时设计给前线战斗人员的制式武器.\n消耗洞察力可以进行一小段时间的高速射击.</description>
@@ -725,7 +725,7 @@
         </tools>
     </ThingDef>
 
-    <ThingDef ParentName="Astro_WeaponRangedBase">
+    <ThingDef ParentName="Astro_AKAWeaponRangedBase">
         <defName>LOF_Weapon_Railgun</defName>
         <label>ES-117 "英仙座" 舰载轨道炮</label>
         <description>手持轨道炮.</description>

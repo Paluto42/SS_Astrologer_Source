@@ -9,11 +9,14 @@ namespace Astrologer.Insight
     public class VAB_AstroTracker : VAbility_AKATrackerContainer
     {
         public float insight = 0;
+        public float extraInsightCapacity = 0; //可升级的额外上限量
+        public float MaxInsight => insightCapacity + extraInsightCapacity;
+        
 
-        public const float insightCapacity = 100;//上限
+        public const float insightCapacity = 100; //基础上限
 
-        public const float insightRegenPerTick = 2;//回复量
-        public const float insightRegenTickInterval = 250;//回复间隔
+        public const float insightRegenPerTick = 2; //回复量
+        public const float insightRegenTickInterval = 250; //回复间隔
 
         public const float insightRegenBonusNearStarGrass = 2; //靠近草时回复奖励
 
@@ -26,6 +29,7 @@ namespace Astrologer.Insight
            : base(pawn, def)
         {
         }
+
         public void ConsumeInsight(int amount)
         {
             if (amount <= 0) return;
@@ -35,7 +39,7 @@ namespace Astrologer.Insight
 
         public override void AbilityTick()
         {
-            base.AbilityTick();//哎哟我的妈这行一直没加
+            base.AbilityTick(); //哎哟我的妈这行一直没加
             if (Utility.CrtTick % insightRegenTickInterval == 0)
             {
                 insight += insightRegenPerTick;
@@ -51,7 +55,9 @@ namespace Astrologer.Insight
                         }
                     }
                 }
-                insight = Mathf.Clamp(insight, 0, insightCapacity);
+                float FinalCapacity = insightCapacity;
+                FinalCapacity += (extraInsightCapacity >= 0) ? extraInsightCapacity : 0f;
+                insight = Mathf.Clamp(insight, 0, FinalCapacity);
             }
         }
 

@@ -346,4 +346,80 @@
         </recipeMaker>
     </ThingDef>
 
+    <ThingDef ParentName="Astro_ArmorBase">
+        <defName>LOF_HeavyArmor</defName>
+        <label>ES-110 "盾牌座" 重护甲</label>
+        <description>繁星帝国列装的重型作战装甲\n自带可恢复护盾,拥有很高的盾防和防御.\n增加疼痛阈值,减少崩溃临界值，减少移动速度.</description>
+        <!--等待贴图-->
+        <graphicData>
+            <texPath>Things/Pawn/Humanlike/Apparel/PowerArmor/PowerArmor</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <!--占位,原版数值-->
+        <statBases>
+            <MaxHitPoints>260</MaxHitPoints>
+            <WorkToMake>6000</WorkToMake>
+            <Mass>6</Mass>
+            <ArmorRating_Sharp>0.92</ArmorRating_Sharp>
+            <ArmorRating_Blunt>0.4</ArmorRating_Blunt>
+            <ArmorRating_Heat>0.46</ArmorRating_Heat>
+            <Insulation_Cold>32</Insulation_Cold>
+            <Insulation_Heat>9</Insulation_Heat>
+            <EquipDelay>6</EquipDelay>
+        </statBases>
+        <equippedStatOffsets>
+            <MentalBreakThreshold>-0.4</MentalBreakThreshold>
+            <PainShockThreshold>0.4</PainShockThreshold>
+            <MoveSpeed>-0.50</MoveSpeed>
+        </equippedStatOffsets>
+        <!--材料-->
+        <costList>
+            <Steel>80</Steel>
+        </costList>
+        <apparel>
+            <wornGraphicPath>Things/Pawn/Humanlike/Apparel/ReconArmor/ReconArmor</wornGraphicPath>
+            <bodyPartGroups>
+                <li>Torso</li>
+                <li>Neck</li>
+                <li>Shoulders</li>
+                <li>Arms</li>
+                <li>Legs</li>
+            </bodyPartGroups>
+            <layers>
+                <li>Middle</li>
+                <li>Shell</li>
+            </layers>
+        </apparel>
+        <comps>
+            <li Class="AKS_Shield.TCP_GenericShield">
+                <energyMax>160</energyMax>
+                <energyRegenRate>0.15</energyRegenRate>
+                <energyLostPerDmg>1</energyLostPerDmg>
+                <allowEnergyOverflow>false</allowEnergyOverflow>
+                <energyRatioOnReset>0.2</energyRatioOnReset>
+                <ticksToReset>3600</ticksToReset>
+                <canAbsorbMeleeDmg>true</canAbsorbMeleeDmg>
+                <meleeAbsorbFactor>1</meleeAbsorbFactor>
+                <rangedAbsorbFactor>1</rangedAbsorbFactor>
+                <meleeDodgeChanceFactor>0.1</meleeDodgeChanceFactor>
+            </li>
+            <li Class="AKS_Shield.Extension.TCP_ExtraRenderStatic">
+                <bubbleStaticOverlay>
+                    <texPath>Things/Shield/ShieldBubble</texPath>
+                    <graphicClass>Graphic_Single</graphicClass>
+                    <color>(0,210,255)</color>
+                    <drawSize>(2,2)</drawSize>
+                    <shaderType>TransparentPostLight</shaderType>
+                </bubbleStaticOverlay>
+            </li>
+        </comps>
+        <recipeMaker>
+            <!--researchPrerequisite>ComplexClothing</researchPrerequisite-->
+            <skillRequirements>
+                <Crafting>8</Crafting>
+            </skillRequirements>
+            <displayPriority>1000</displayPriority>
+        </recipeMaker>
+    </ThingDef>
+
 </Defs>

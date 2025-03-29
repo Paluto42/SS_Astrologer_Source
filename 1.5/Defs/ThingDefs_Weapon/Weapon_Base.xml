@@ -3,10 +3,10 @@
     <ThingDef Name="Astro_BaseWeapon" Abstract="True" ParentName="BaseWeapon">
         <comps Inherit="false">
             <li Class="CompProperties_Forbiddable"/>
-            <li>
-                <compClass>Astrologer.CompEquippable_AKAbility</compClass>
-            </li>
             <li Class="CompProperties_Styleable"/>
+            <li>
+                <compClass>CompEquippable</compClass>
+            </li>
         </comps>
     </ThingDef>
 
@@ -117,4 +117,16 @@
         </comps>
     </ThingDef>
 
+    <ThingDef Name="Astro_AKAWeaponRangedBase" Abstract="True" ParentName="Astro_WeaponRangedBase">
+        <comps Inherit="false">
+            <li Class="CompProperties_Forbiddable"/>
+            <li Class="CompProperties_Styleable"/>
+            <li>
+                <compClass>Astrologer.CompEquippable_AKAbility</compClass>
+            </li>
+            <li>
+                <compClass>CompQuality</compClass>
+            </li>
+        </comps>
+    </ThingDef>
 </Defs>

@@ -15,7 +15,7 @@ namespace Astrologer.Ability
             compInsights = tracker;
         }
         public float InsightInt => compInsights?.insight ?? 0f;
-        public float Percent => InsightInt / VAB_AstroTracker.insightCapacity;
+        public float Percent => InsightInt / compInsights.MaxInsight;
         public override float GetWidth(float maxWidth)
         {
             return 120f;
@@ -29,14 +29,14 @@ namespace Astrologer.Ability
             Text.Font = GameFont.Tiny;
             Rect rect3 = rect2.TopHalf();
             Widgets.Label(rect3, prefix + "洞察力".Translate());
-            //
+
             Rect rect4 = rect2.BottomHalf();
             Widgets.FillableBar(rect4, Percent);
             Text.Font = GameFont.Small;
             Text.Anchor = TextAnchor.MiddleCenter;
-            Widgets.Label(rect4, InsightInt + " / " + VAB_AstroTracker.insightCapacity);
+            Widgets.Label(rect4, InsightInt + " / " + compInsights.MaxInsight);
             Text.Anchor = TextAnchor.UpperLeft;
-            //
+
             if (Mouse.IsOver(rect) && DoTooltip)
             {
                 TipSignal tip = Desc;
