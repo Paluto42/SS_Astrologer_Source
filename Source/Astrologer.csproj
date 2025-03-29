@@ -102,7 +102,6 @@
     <Compile Include="Ability\AbilityEffect\AE_DeployBuilding.cs" />
     <Compile Include="Ability\AbilityEffect\AE_IncreaseHarvest.cs" />
     <Compile Include="Ability\AbilityEffect\AE_UnstableCatalyst.cs" />
-    <Compile Include="Ability\Gizmo\AKAbility_Equip.cs" />
     <Compile Include="Ability\Gizmo\AKAbility_FireMode.cs" />
     <Compile Include="Ability\Gizmo\AKAbility_Monitor.cs" />
     <Compile Include="Ability\CC_InsightThreshold.cs" />
@@ -120,6 +119,7 @@
     <Compile Include="Building\OffsetProductQuality\Patch_OffsetProductQuality.cs" />
     <Compile Include="Building\StellarStove.cs" />
     <Compile Include="Building\TCP_NightGenerator.cs" />
+    <Compile Include="Comp\CompEquippable_AKAbility.cs" />
     <Compile Include="Comp\TCP_HediffApparel.cs" />
     <Compile Include="DebugActions.cs" />
     <Compile Include="Gene\Ext_ForcedAstrologer.cs" />

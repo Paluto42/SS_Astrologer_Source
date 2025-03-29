@@ -1,5 +1,5 @@
 ﻿using AKA_Ability;
-using RimWorld;
+using UnityEngine;
 using Verse;
 
 namespace Astrologer
@@ -34,6 +34,11 @@ namespace Astrologer
         public override void SpawnSetup(Map map, bool respawningAfterLoad)
         {
             base.SpawnSetup(map, respawningAfterLoad);
+        }
+
+        public override void Launch(Thing launcher, Vector3 origin, LocalTargetInfo usedTarget, LocalTargetInfo intendedTarget, ProjectileHitFlags hitFlags, bool preventFriendlyFire = false, Thing equipment = null, ThingDef targetCoverDef = null)
+        {
+            base.Launch(launcher, origin, usedTarget, intendedTarget, hitFlags, preventFriendlyFire, equipment, targetCoverDef);
             if (Ability == null) return;
             if (Ability.AutoCast)
             {
