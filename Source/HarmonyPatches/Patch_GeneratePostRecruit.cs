@@ -3,6 +3,7 @@ using Astrologer.Insight;
 using HarmonyLib;
 using RimWorld;
 using System;
+using System.Runtime.CompilerServices;
 using Verse;
 
 namespace Astrologer.HarmonyPatches
@@ -31,7 +32,9 @@ namespace Astrologer.HarmonyPatches
 
             Recruit_Ability(operatorID, operatorDef);
         }
+
         //生成技能容器
+        [MethodImpl(MethodImplOptions.AggressiveInlining)]
         private static VAB_AstroTracker Recruit_OperatorID(Pawn operator_Pawn)
         {
             AbilityDef operatorID = AstroDefOf.LOF_VAbility_Astro;
@@ -40,7 +43,9 @@ namespace Astrologer.HarmonyPatches
             operator_Pawn.abilities.abilities.Add(vAbility);
             return vAbility;
         }
+
         //添加AKA技能
+        [MethodImpl(MethodImplOptions.AggressiveInlining)]
         private static void Recruit_Ability(VAB_AstroTracker vAbility, Ext_OperatorDef operatorDef)
         {
             if (ModLister.GetActiveModWithIdentifier("ceteam.combatextended") != null) return;

@@ -3,7 +3,7 @@ using Verse;
 
 namespace Astrologer
 {
-    public class Thing_ActivatedPulsePack : Building
+    public class ActivatedPulsePack : Building
     {
         public const float minRange = 5f;
         public const float maxRange = 10;

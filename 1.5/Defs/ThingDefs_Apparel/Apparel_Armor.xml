@@ -66,7 +66,7 @@
             <!--ToxicResistance>0.5</ToxicResistance-->
         </equippedStatOffsets>
         <comps>
-            <li Class="Astrologer.TCP_HediffApparel">
+            <li Class="Astrologer.TCP_AddHediff">
                 <hediff>LOF_Hediff_Detoxifier</hediff>
             </li>
         </comps>
@@ -122,10 +122,6 @@
             <Insulation_Heat>9</Insulation_Heat>
             <EquipDelay>6</EquipDelay>
         </statBases>
-        <equippedStatOffsets>
-            <MoveSpeed>0.5</MoveSpeed>
-            <ToxicResistance>0.5</ToxicResistance>
-        </equippedStatOffsets>
         <!--暂时套皇权的凤凰装甲-->
         <verbs>
             <li>
@@ -167,7 +163,7 @@
             <Steel>80</Steel>
         </costList>
         <apparel>
-            <wornGraphicPath>Things/Pawn/Humanlike/Apparel/ReconArmor/ReconArmor</wornGraphicPath>
+            <wornGraphicPath>Things/Pawn/Humanlike/Apparel/PowerArmor/PowerArmor</wornGraphicPath>
             <bodyPartGroups>
                 <li>Torso</li>
                 <li>Neck</li>
@@ -269,7 +265,7 @@
             <EquipDelay>6</EquipDelay>
         </statBases>
         <equippedStatOffsets>
-            <MoveSpeed>0.5</MoveSpeed>
+            <MoveSpeed>1</MoveSpeed>
             <MentalBreakThreshold>-0.25</MentalBreakThreshold>
             <MedicalPotency>0.5</MedicalPotency>
             <MedicalSurgerySuccessChance>0.5</MedicalSurgerySuccessChance>
@@ -348,12 +344,28 @@
 
     <ThingDef ParentName="Astro_ArmorBase">
         <defName>LOF_HeavyArmor</defName>
+        <thingClass>Astrologer.ApparelAstro</thingClass>
         <label>ES-110 "盾牌座" 重护甲</label>
         <description>繁星帝国列装的重型作战装甲\n自带可恢复护盾,拥有很高的盾防和防御.\n增加疼痛阈值,减少崩溃临界值，减少移动速度.</description>
         <!--等待贴图-->
-        <graphicData>
+        <graphicData Class="AK_DLL.GraphicData_MultiFoam">
             <texPath>Things/Pawn/Humanlike/Apparel/PowerArmor/PowerArmor</texPath>
             <graphicClass>Graphic_Single</graphicClass>
+            <innerGraphicData_Drop>
+                <li>
+                    <key>0</key>
+                    <value>
+                        <texPath>Things/Pawn/Humanlike/Apparel/PowerArmor/PowerArmor</texPath>
+                        <graphicClass>Graphic_Single</graphicClass>
+                    </value>
+                </li>
+            </innerGraphicData_Drop>
+            <innerGraphicPath_Worn>
+                <li>
+                    <key>0</key>
+                    <value>Things/Pawn/Humanlike/Apparel/Parka/Parka</value>
+                </li>
+            </innerGraphicPath_Worn>
         </graphicData>
         <!--占位,原版数值-->
         <statBases>
@@ -374,10 +386,12 @@
         </equippedStatOffsets>
         <!--材料-->
         <costList>
-            <Steel>80</Steel>
+            <ComponentSpacer>4</ComponentSpacer>
+            <Plasteel>100</Plasteel>
+            <Uranium>20</Uranium>
         </costList>
         <apparel>
-            <wornGraphicPath>Things/Pawn/Humanlike/Apparel/ReconArmor/ReconArmor</wornGraphicPath>
+            <wornGraphicPath>Things/Pawn/Humanlike/Apparel/PowerArmor/PowerArmor</wornGraphicPath>
             <bodyPartGroups>
                 <li>Torso</li>
                 <li>Neck</li>
@@ -389,6 +403,9 @@
                 <li>Middle</li>
                 <li>Shell</li>
             </layers>
+            <useDeflectMetalEffect>true</useDeflectMetalEffect>
+            <soundWear>Wear_PowerArmor</soundWear>
+            <soundRemove>Remove_PowerArmor</soundRemove>
         </apparel>
         <comps>
             <li Class="AKS_Shield.TCP_GenericShield">
@@ -412,6 +429,88 @@
                     <shaderType>TransparentPostLight</shaderType>
                 </bubbleStaticOverlay>
             </li>
+        </comps>
+        <recipeMaker>
+            <!--researchPrerequisite>ComplexClothing</researchPrerequisite-->
+            <skillRequirements>
+                <Crafting>8</Crafting>
+            </skillRequirements>
+            <displayPriority>1000</displayPriority>
+        </recipeMaker>
+    </ThingDef>
+
+    <ThingDef ParentName="Astro_ArmorBase">
+        <defName>LOF_TravelArmor</defName>
+        <thingClass>Astrologer.ApparelAstro</thingClass>
+        <label>TLK-11 "凤凰座" 远行装甲</label>
+        <description>离死亡越近，生命的火焰就燃烧的越炽热\n高机动作战装甲--穿戴有移速加成,增加加疼痛阈,减少崩溃临界值,被击中不会影响移动.\n内置医疗系统,消耗一次洞察力可以对穿戴者进行一次治疗,生命值越低则承伤系数越低.</description>
+        <!--等待贴图-->
+        <graphicData Class="AK_DLL.GraphicData_MultiFoam">
+            <texPath>Things/Pawn/Humanlike/Apparel/PowerArmor/PowerArmor</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <innerGraphicData_Drop>
+                <li>
+                    <key>0</key>
+                    <value>
+                        <texPath>Things/Pawn/Humanlike/Apparel/PowerArmor/PowerArmor</texPath>
+                        <graphicClass>Graphic_Single</graphicClass>
+                    </value>
+                </li>
+            </innerGraphicData_Drop>
+            <innerGraphicPath_Worn>
+                <li>
+                    <key>0</key>
+                    <value>Things/Pawn/Humanlike/Apparel/Parka/Parka</value>
+                </li>
+            </innerGraphicPath_Worn>
+        </graphicData>
+        <!--占位,原版数值-->
+        <statBases>
+            <MaxHitPoints>260</MaxHitPoints>
+            <WorkToMake>6000</WorkToMake>
+            <Mass>6</Mass>
+            <ArmorRating_Sharp>0.92</ArmorRating_Sharp>
+            <ArmorRating_Blunt>0.4</ArmorRating_Blunt>
+            <ArmorRating_Heat>0.46</ArmorRating_Heat>
+            <Insulation_Cold>32</Insulation_Cold>
+            <Insulation_Heat>9</Insulation_Heat>
+            <EquipDelay>6</EquipDelay>
+        </statBases>
+        <equippedStatOffsets>
+            <MoveSpeed>0.50</MoveSpeed>
+            <PainShockThreshold>0.4</PainShockThreshold>
+            <MentalBreakThreshold>-0.4</MentalBreakThreshold>
+        </equippedStatOffsets>
+        <!--材料-->
+        <costList>
+            <ComponentSpacer>4</ComponentSpacer>
+            <Plasteel>100</Plasteel>
+            <Uranium>20</Uranium>
+        </costList>
+        <apparel>
+            <wornGraphicPath>Things/Pawn/Humanlike/Apparel/PowerArmor/PowerArmor</wornGraphicPath>
+            <bodyPartGroups>
+                <li>Torso</li>
+                <li>Neck</li>
+                <li>Shoulders</li>
+                <li>Arms</li>
+                <li>Legs</li>
+            </bodyPartGroups>
+            <layers>
+                <li>Middle</li>
+                <li>Shell</li>
+            </layers>
+            <useDeflectMetalEffect>true</useDeflectMetalEffect>
+            <soundWear>Wear_PowerArmor</soundWear>
+            <soundRemove>Remove_PowerArmor</soundRemove>
+        </apparel>
+        <comps>
+            <li Class="AKA_Ability.TCP_AKATracker">
+                <abilities>
+                    <li>LOF_Ability_InsightCoagulate</li>
+                </abilities>
+            </li>
+            <li Class="Astrologer.TCP_IgnoreStagger"/>
         </comps>
         <recipeMaker>
             <!--researchPrerequisite>ComplexClothing</researchPrerequisite-->

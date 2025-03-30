@@ -57,8 +57,9 @@
         <everCurableByItem>false</everCurableByItem>
         <stages>
             <li>
+                <becomeVisible>false</becomeVisible>
                 <statOffsets>
-                    <ToxicEnvironmentResistance>0.5</ToxicEnvironmentResistance>
+                    <ToxicEnvironmentResistance>1</ToxicEnvironmentResistance>
                 </statOffsets>
             </li>
         </stages>
@@ -76,8 +77,10 @@
         <isBad>false</isBad>
         <allowMothballIfLowPriorityWorldPawn>true</allowMothballIfLowPriorityWorldPawn>
         <everCurableByItem>false</everCurableByItem>
+        <maxSeverity>1</maxSeverity>
         <stages>
             <li>
+                <becomeVisible>false</becomeVisible>
                 <capMods>
                     <li>
                         <capacity>BloodFiltration</capacity>
@@ -100,8 +103,10 @@
         <isBad>false</isBad>
         <allowMothballIfLowPriorityWorldPawn>true</allowMothballIfLowPriorityWorldPawn>
         <everCurableByItem>false</everCurableByItem>
+        <maxSeverity>1</maxSeverity>
         <stages>
             <li>
+                <becomeVisible>false</becomeVisible>
                 <capMods>
                     <li>
                         <capacity>Manipulation</capacity>
@@ -114,14 +119,14 @@
 
     <HediffDef>
         <defName>LOF_Hediff_IncreaseHarvest</defName>
-        <label>提高收获量</label>
+        <label>收获的喜悦</label>
         <description>一天内提高农作物收获量,屠宰量.手术成功率提高,制作物品高品质概率增加,射击命中率增加,食物消耗率x200%.</description>
         <hediffClass>HediffWithComps</hediffClass>
         <defaultLabelColor>(0.6, 0.6, 1.0)</defaultLabelColor>
         <isBad>false</isBad>
         <allowMothballIfLowPriorityWorldPawn>true</allowMothballIfLowPriorityWorldPawn>
         <everCurableByItem>false</everCurableByItem>
-        <maxSeverity>1</maxSeverity>
+        <maxSeverity>2.4</maxSeverity>
         <stages>
             <li>
                 <statOffsets>
@@ -134,8 +139,9 @@
             </li>
         </stages>
         <comps>
+            <li Class="Astrologer.Ability.HCP_IncreastHarvest"/>
             <li Class="HediffCompProperties_SeverityPerDay">
-                <severityPerDay>-1</severityPerDay>
+                <severityPerDay>-2.4</severityPerDay>
             </li>
         </comps>
     </HediffDef>
@@ -194,7 +200,7 @@
         <label>精准锁定(被动)</label>
         <description>一小段时间内闪避率为0.</description>
         <hediffClass>HediffWithComps</hediffClass>
-        <defaultLabelColor>(0.72, 0.72, 0.72)</defaultLabelColor>
+        <defaultLabelColor>(0.9, 1.0, 0.35)</defaultLabelColor>
         <isBad>false</isBad>
         <allowMothballIfLowPriorityWorldPawn>true</allowMothballIfLowPriorityWorldPawn>
         <everCurableByItem>false</everCurableByItem>

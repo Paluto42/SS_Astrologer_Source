@@ -504,6 +504,7 @@
 
     <ThingDef ParentName="Astro_AKAWeaponRangedBase">
         <defName>LOF_Weapon_AMSR</defName>
+        <thingClass>Astrologer.DrafterEquipment</thingClass>
         <label>ASAT-112 "船边星云"</label>
         <description>远程狙击，长开火前摇，短射击后摇.\n当占星师使用时，可使用洞察力强化该武器。每一发消耗一定量洞察力，在这种模式下，每一发子弹命中会打掉对方身体的随机的一个部位，并挂一个debuff（星云射线）持续扣血.</description>
         <graphicData>
@@ -556,6 +557,12 @@
             </li>
         </verbs>
         <comps>
+            <li Class="Astrologer.TCP_DrafterGraphic">
+                <graphicData>
+                    <texPath>Things/Weapons/Deagle44</texPath>
+                    <graphicClass>Graphic_Single</graphicClass>
+                </graphicData>
+            </li>
             <li Class="AKA_Ability.TCP_AKATracker">
                 <abilities>
                     <li>LOF_Ability_FireMode</li>
@@ -789,6 +796,12 @@
             </li>
         </verbs>
         <comps>
+            <li Class="Astrologer.TCP_DrafterGraphic">
+                <graphicData>
+                    <texPath>Things/Weapons/Deagle44</texPath>
+                    <graphicClass>Graphic_Single</graphicClass>
+                </graphicData>
+            </li>
             <li Class="AKA_Ability.TCP_AKATracker">
                 <abilities>
                     <li>LOF_Ability_LeechAttack</li>

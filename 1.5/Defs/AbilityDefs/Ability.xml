@@ -40,7 +40,7 @@
             <!--li Class="Astrologer.Ability.AE_IncreaseHarvest"/-->
             <li Class="AKA_Ability.AbilityEffect_AddHediff">
                 <hediffDef>LOF_Hediff_IncreaseHarvest</hediffDef>
-                <severity>1</severity>
+                <severity>2.4</severity>
             </li>
             <li Class="Astrologer.Ability.AE_CostInsight">
                 <amount>50</amount>
@@ -110,7 +110,7 @@
             <li Class="AKA_Ability.CastConditioner.CC_NeedFullCharge"/>
         </castConditions>
         <compEffectList>
-            <li Class="Astrologer.Ability.AE_UnstableCatalyst"/>
+            <li Class="Astrologer.Ability.AE_IgnoreDmg"/>
             <li Class="Astrologer.Ability.AE_CostInsight">
                 <amount>50</amount>
             </li>
@@ -168,9 +168,9 @@
                 <screenShakeFactor>0.1</screenShakeFactor>
                 <fxInteriorEffecter></fxInteriorEffecter>
                 <fxInteriorMote></fxInteriorMote>
-                <fxInteriorFleck>BlastEMP</fxInteriorFleck>
+                <fxInteriorFleck>LightningGlow</fxInteriorFleck>
                 <useSounds>
-                    <li>Power_OnSmall</li>
+                    <li>Psycast_Skip_Entry</li>
                 </useSounds>
             </li>
         </compEffectList>
@@ -182,6 +182,7 @@
         <description>介绍:\n消耗洞察力创造一个让敌人闪避率为0的立场.</description>
         <icon>UI/Element/Placeholder</icon>
         <abilityClass>AKA_Ability.AKAbility_Targetor</abilityClass>
+        <reqLineofSight>true</reqLineofSight>
         <range>40</range>
         <field>10</field>
         <castConditions>
@@ -196,7 +197,7 @@
                 <delayedEffect>LOF_Effect_UnavoidableStance</delayedEffect>
                 <delayFirstEffect>true</delayFirstEffect>
                 <burstCount>10</burstCount>
-                <burstInterval>17</burstInterval>
+                <burstInterval>30</burstInterval>
                 <effectorType>AKA_Ability.DelayedEffects.DelayedEffectorBase</effectorType>
             </li>
             <li Class="Astrologer.Ability.AE_CostInsight">
@@ -215,6 +216,39 @@
             <SPPerCharge>12</SPPerCharge>
             <SPUnit>hour</SPUnit>
             <initSP>8000000</initSP>
+            <maxCharge>1</maxCharge>
+        </cooldownProperty>
+    </AKA_Ability.AKAbilityDef>
+
+    <AKA_Ability.AKAbilityDef>
+        <defName>LOF_Ability_InsightCoagulate</defName>
+        <label>紧急救援</label>
+        <description>desc.</description>
+        <icon>UI/Element/HealEnhance</icon>
+        <abilityClass>AKA_Ability.AKAbility_SelfTarget</abilityClass>
+        <castConditions>
+            <li Class="Astrologer.Ability.CC_InsightThreshold">
+                <amount>20</amount>
+                <failReason>洞察力不足</failReason>
+            </li>
+        </castConditions>
+        <compEffectList>
+            <li Class="AKA_Ability.AbilityEffect_Heal">
+                <healPoint>100</healPoint>
+                <healHostile>false</healHostile>
+                <healNeutral>false</healNeutral>
+                <healNullFaction>false</healNullFaction>
+            </li>
+            <li Class="Astrologer.Ability.AE_CostInsight">
+                <amount>20</amount>
+            </li>
+        </compEffectList>
+        <useSounds>
+            <li>AK_SFX_Tactboost</li>
+        </useSounds>
+        <cooldownProperty>
+            <SPPerCharge>1</SPPerCharge>
+            <SPUnit>day</SPUnit>
             <maxCharge>1</maxCharge>
         </cooldownProperty>
     </AKA_Ability.AKAbilityDef>

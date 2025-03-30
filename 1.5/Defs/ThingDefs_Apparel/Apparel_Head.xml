@@ -133,15 +133,15 @@
             <EquipDelay>2</EquipDelay>
         </statBases>
         <equippedStatOffsets>
-            <AimingDelayFactor>0.25</AimingDelayFactor>
-            <!--ShootingAccuracyPawn>2</ShootingAccuracyPawn-->
-            <ToxicEnvironmentResistance>0.5</ToxicEnvironmentResistance>
+            <AimingDelayFactor>-0.25</AimingDelayFactor>
+            <ToxicResistance>0.5</ToxicResistance>
+            <ToxicEnvironmentResistance>1</ToxicEnvironmentResistance>
         </equippedStatOffsets>
-        <comps>
-            <!--li Class="Astrologer.TCP_HediffApparel">
+        <!--comps>
+            <li Class="Astrologer.TCP_AddHediff">
                 <hediff>LOF_Hediff_Airpurifier</hediff>
-            </li-->
-        </comps>
+            </li>
+        </comps-->
         <!--材料-->
         <costList>
             <Cloth>10</Cloth>
@@ -188,10 +188,9 @@
             <EquipDelay>2</EquipDelay>
         </statBases>
         <equippedStatOffsets>
-            <!--AimingDelayFactor>0.25</AimingDelayFactor-->
-            <ShootingAccuracyPawn>3.5</ShootingAccuracyPawn>
+            <AimingDelayFactor>-0.25</AimingDelayFactor>
             <ToxicResistance>0.5</ToxicResistance>
-            <ToxicEnvironmentResistance>0.5</ToxicEnvironmentResistance>
+            <ToxicEnvironmentResistance>1</ToxicEnvironmentResistance>
         </equippedStatOffsets>
         <!--材料-->
         <costList>
@@ -283,7 +282,7 @@
             <Mass>1.2</Mass>
             <ArmorRating_Sharp>0.92</ArmorRating_Sharp>
             <ArmorRating_Blunt>0.4</ArmorRating_Blunt>
-            <ArmorRating_Heat>0.46</ArmorRating_Heat>
+            <ArmorRating_Heat>0.8</ArmorRating_Heat>
             <Insulation_Cold>4</Insulation_Cold>
             <Insulation_Heat>8</Insulation_Heat>
             <EquipDelay>2</EquipDelay>

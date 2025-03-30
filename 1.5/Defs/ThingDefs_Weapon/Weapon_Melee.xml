@@ -112,7 +112,7 @@
             </li>
         </tools>
         <comps>
-            <li Class="Astrologer.TCP_HediffApparel">
+            <li Class="Astrologer.TCP_AddHediff">
                 <hediff>LOF_Hediff_Manipulation</hediff>
             </li>
         </comps>
