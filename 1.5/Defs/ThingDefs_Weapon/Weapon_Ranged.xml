@@ -1,7 +1,32 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
+    <ThingDef Name="Astro_LightWeaponRangedBase" Abstract="True" ParentName="Astro_WeaponRangedBase">
+        <tools>
+            <li>
+                <label>grip</label>
+                <capacities>
+                    <li>Blunt</li>
+                </capacities>
+                <power>9</power>
+                <cooldownTime>2</cooldownTime>
+            </li>
+        </tools>
+    </ThingDef>
 
-    <ThingDef ParentName="Astro_WeaponRangedBase">
+    <ThingDef Name="Astro_ComplexWeaponRangedBase" Abstract="True" ParentName="Astro_WeaponRangedBase">
+        <tools>
+            <li>
+                <label>stock</label>
+                <capacities>
+                    <li>Blunt</li>
+                </capacities>
+                <power>9</power>
+                <cooldownTime>2</cooldownTime>
+            </li>
+        </tools>
+    </ThingDef>
+
+    <ThingDef ParentName="Astro_LightWeaponRangedBase">
         <defName>LOF_Weapon_EagleMoon</defName>
         <label>鹰月</label>
         <description>一把暗红色的手炮.</description>
@@ -39,9 +64,9 @@
             </skillRequirements>
             <displayPriority>430</displayPriority>
         </recipeMaker>
-        <thingSetMakerTags>
+        <!--thingSetMakerTags>
             <li>RewardStandardQualitySuper</li>
-        </thingSetMakerTags>
+        </thingSetMakerTags-->
         <verbs>
             <li>
                 <verbClass>Verb_Shoot</verbClass>
@@ -55,25 +80,6 @@
                 <muzzleFlashScale>9</muzzleFlashScale>
             </li>
         </verbs>
-        <tools>
-            <li>
-                <label>grip</label>
-                <capacities>
-                    <li>Blunt</li>
-                </capacities>
-                <power>9</power>
-                <cooldownTime>2</cooldownTime>
-            </li>
-            <li>
-                <label>barrel</label>
-                <capacities>
-                    <li>Blunt</li>
-                    <li>Poke</li>
-                </capacities>
-                <power>9</power>
-                <cooldownTime>2</cooldownTime>
-            </li>
-        </tools>
     </ThingDef>
     <ThingDef ParentName="BaseBullet">
         <defName>LOF_Projectile_EagleMoon</defName>
@@ -93,7 +99,7 @@
 
     <!--=============== SMG  ====================-->
 
-    <ThingDef ParentName="Astro_WeaponRangedBase">
+    <ThingDef ParentName="Astro_LightWeaponRangedBase">
         <defName>LOF_Weapon_CombatSMG</defName>
         <label>格斗冲锋枪</label>
         <description>这把冲锋枪设计于占星帝国内战的时代，便宜和耐用是该枪的代名词.</description>
@@ -116,9 +122,9 @@
             </skillRequirements>
             <displayPriority>440</displayPriority>
         </recipeMaker>
-        <thingSetMakerTags>
+        <!--thingSetMakerTags>
             <li>RewardStandardQualitySuper</li>
-        </thingSetMakerTags>
+        </thingSetMakerTags-->
         <!--占位,原版数值-->
         <statBases>
             <WorkToMake>20000</WorkToMake>
@@ -147,25 +153,6 @@
                 <muzzleFlashScale>9</muzzleFlashScale>
             </li>
         </verbs>
-        <tools>
-            <li>
-                <label>grip</label>
-                <capacities>
-                    <li>Blunt</li>
-                </capacities>
-                <power>9</power>
-                <cooldownTime>2</cooldownTime>
-            </li>
-            <li>
-                <label>barrel</label>
-                <capacities>
-                    <li>Blunt</li>
-                    <li>Poke</li>
-                </capacities>
-                <power>9</power>
-                <cooldownTime>2</cooldownTime>
-            </li>
-        </tools>
     </ThingDef>
     <ThingDef ParentName="BaseBullet">
         <defName>LOF_Bullet_SMG</defName>
@@ -185,7 +172,7 @@
 
     <!--=============== Shotguns  ====================-->
 
-    <ThingDef ParentName="Astro_WeaponRangedBase">
+    <ThingDef ParentName="Astro_ComplexWeaponRangedBase">
         <defName>LOF_Weapon_PiercingShotgun</defName>
         <label>破甲霰弹枪</label>
         <description>这是一把开罐器.</description>
@@ -221,9 +208,9 @@
             </skillRequirements>
             <displayPriority>430</displayPriority>
         </recipeMaker>
-        <thingSetMakerTags>
+        <!--thingSetMakerTags>
             <li>RewardStandardQualitySuper</li>
-        </thingSetMakerTags>
+        </thingSetMakerTags-->
         <verbs>
             <li>
                 <verbClass>Verb_Shoot</verbClass>
@@ -237,25 +224,6 @@
                 <muzzleFlashScale>9</muzzleFlashScale>
             </li>
         </verbs>
-        <tools>
-            <li>
-                <label>stock</label>
-                <capacities>
-                    <li>Blunt</li>
-                </capacities>
-                <power>9</power>
-                <cooldownTime>2</cooldownTime>
-            </li>
-            <li>
-                <label>barrel</label>
-                <capacities>
-                    <li>Blunt</li>
-                    <li>Poke</li>
-                </capacities>
-                <power>9</power>
-                <cooldownTime>2</cooldownTime>
-            </li>
-        </tools>
     </ThingDef>
     <ThingDef ParentName="BaseBullet">
         <defName>LOF_Bullet_Shotgun</defName>
@@ -273,7 +241,7 @@
         </projectile>
     </ThingDef>
 
-    <ThingDef ParentName="Astro_WeaponRangedBase">
+    <ThingDef ParentName="Astro_ComplexWeaponRangedBase">
         <defName>LOF_Weapon_RapidShotgun</defName>
         <label>"AMA-1" 电能霰弹枪</label>
         <description>一把能快速发射的霰弹枪.</description>
@@ -311,9 +279,9 @@
             </skillRequirements>
             <displayPriority>430</displayPriority>
         </recipeMaker>
-        <thingSetMakerTags>
+        <!--thingSetMakerTags>
             <li>RewardStandardQualitySuper</li>
-        </thingSetMakerTags>
+        </thingSetMakerTags-->
         <verbs>
             <li>
                 <verbClass>Verb_Shoot</verbClass>
@@ -329,25 +297,6 @@
                 <muzzleFlashScale>9</muzzleFlashScale>
             </li>
         </verbs>
-        <tools>
-            <li>
-                <label>stock</label>
-                <capacities>
-                    <li>Blunt</li>
-                </capacities>
-                <power>9</power>
-                <cooldownTime>2</cooldownTime>
-            </li>
-            <li>
-                <label>barrel</label>
-                <capacities>
-                    <li>Blunt</li>
-                    <li>Poke</li>
-                </capacities>
-                <power>9</power>
-                <cooldownTime>2</cooldownTime>
-            </li>
-        </tools>
     </ThingDef>
     <ThingDef ParentName="BaseBullet">
         <defName>LOF_Bullet_StunShotgun</defName>
@@ -412,9 +361,9 @@
                 <Crafting>7</Crafting>
             </skillRequirements>
         </recipeMaker>
-        <thingSetMakerTags>
+        <!--thingSetMakerTags>
             <li>RewardStandardQualitySuper</li>
-        </thingSetMakerTags>
+        </thingSetMakerTags-->
         <verbs Inherit="false">
             <li>
                 <verbClass>Astrologer.Insight.Verb_InsightShoot</verbClass>
@@ -453,25 +402,6 @@
                 <secondaryDescription>每一发子弹命中带有心灵错乱效果\n需要消耗10点洞察力</secondaryDescription>
             </li>
         </comps>
-        <tools>
-            <li>
-                <label>stock</label>
-                <capacities>
-                    <li>Blunt</li>
-                </capacities>
-                <power>9</power>
-                <cooldownTime>2</cooldownTime>
-            </li>
-            <li>
-                <label>barrel</label>
-                <capacities>
-                    <li>Blunt</li>
-                    <li>Poke</li>
-                </capacities>
-                <power>9</power>
-                <cooldownTime>2</cooldownTime>
-            </li>
-        </tools>
     </ThingDef>
     <ThingDef ParentName="BaseBullet">
         <defName>LOF_Bullet_DMR</defName>
@@ -541,9 +471,9 @@
                 <Crafting>7</Crafting>
             </skillRequirements>
         </recipeMaker>
-        <thingSetMakerTags>
+        <!--thingSetMakerTags>
             <li>RewardStandardQualitySuper</li>
-        </thingSetMakerTags>
+        </thingSetMakerTags-->
         <verbs Inherit="false">
             <li>
                 <verbClass>Astrologer.Insight.Verb_InsightShoot</verbClass>
@@ -588,25 +518,6 @@
                 <secondaryDescription>每一发子弹命中会打掉对方身体的一个随机部位\n需要消耗10点洞察力</secondaryDescription>
             </li>
         </comps>
-        <tools>
-            <li>
-                <label>stock</label>
-                <capacities>
-                    <li>Blunt</li>
-                </capacities>
-                <power>9</power>
-                <cooldownTime>2</cooldownTime>
-            </li>
-            <li>
-                <label>barrel</label>
-                <capacities>
-                    <li>Blunt</li>
-                    <li>Poke</li>
-                </capacities>
-                <power>9</power>
-                <cooldownTime>2</cooldownTime>
-            </li>
-        </tools>
     </ThingDef>
     <ThingDef ParentName="BaseBullet">
         <defName>LOF_Projectile_NebulaRay</defName>
@@ -664,9 +575,9 @@
                 <Crafting>7</Crafting>
             </skillRequirements>
         </recipeMaker>
-        <thingSetMakerTags>
+        <!--thingSetMakerTags>
             <li>RewardStandardQualitySuper</li>
-        </thingSetMakerTags>
+        </thingSetMakerTags-->
         <verbs>
             <li>
                 <verbClass>Astrologer.Insight.Verb_InsightShoot</verbClass>
@@ -711,25 +622,6 @@
                 </verbProps>
             </li>
         </comps>
-        <tools>
-            <li>
-                <label>stock</label>
-                <capacities>
-                    <li>Blunt</li>
-                </capacities>
-                <power>9</power>
-                <cooldownTime>2</cooldownTime>
-            </li>
-            <li>
-                <label>barrel</label>
-                <capacities>
-                    <li>Blunt</li>
-                    <li>Poke</li>
-                </capacities>
-                <power>9</power>
-                <cooldownTime>2</cooldownTime>
-            </li>
-        </tools>
     </ThingDef>
 
     <ThingDef ParentName="Astro_AKAWeaponRangedBase">
@@ -756,7 +648,7 @@
             <AccuracyShort>0.94</AccuracyShort>
             <AccuracyMedium>0.85</AccuracyMedium>
             <AccuracyLong>0.75</AccuracyLong>
-            <RangedWeapon_Cooldown>4.5</RangedWeapon_Cooldown>
+            <RangedWeapon_Cooldown>4.0</RangedWeapon_Cooldown>
         </statBases>
         <equippedStatOffsets>
             <MoveSpeed>-0.50</MoveSpeed>
@@ -774,16 +666,16 @@
                 <Crafting>7</Crafting>
             </skillRequirements>
         </recipeMaker>
-        <thingSetMakerTags>
+        <!--thingSetMakerTags>
             <li>RewardStandardQualitySuper</li>
-        </thingSetMakerTags>
+        </thingSetMakerTags-->
         <verbs Inherit="false">
             <li>
                 <verbClass>Astrologer.Insight.Verb_InsightShoot</verbClass>
                 <hasStandardCommand>true</hasStandardCommand>
                 <defaultProjectile>LOF_Projectile_Railgun</defaultProjectile>
                 <forcedMissRadius>1.9</forcedMissRadius>
-                <warmupTime>4.5</warmupTime>
+                <warmupTime>4.0</warmupTime>
                 <ai_AvoidFriendlyFireRadius>5</ai_AvoidFriendlyFireRadius>
                 <range>60</range>
                 <soundCast>InfernoCannon_Fire</soundCast>
@@ -796,6 +688,7 @@
             </li>
         </verbs>
         <comps>
+            <!--实验征召贴图-->
             <li Class="Astrologer.TCP_DrafterGraphic">
                 <graphicData>
                     <texPath>Things/Weapons/Deagle44</texPath>
@@ -807,34 +700,7 @@
                     <li>LOF_Ability_LeechAttack</li>
                 </abilities>
             </li>
-            <!--伤害类型要写新的,Thump和Bomb的混合体-->
-            <!--li Class="CompProperties_Explosive">
-                <explosiveRadius>3.9</explosiveRadius>
-                <explosiveDamageType>LOF_LeechBomb</explosiveDamageType>
-                <chanceToStartFire>0.22</chanceToStartFire>
-                <explosionEffect>GiantExplosion</explosionEffect>
-                <explosionSound>Explosion_GiantBomb</explosionSound>
-            </li-->
         </comps>
-        <tools>
-            <li>
-                <label>stock</label>
-                <capacities>
-                    <li>Blunt</li>
-                </capacities>
-                <power>9</power>
-                <cooldownTime>2</cooldownTime>
-            </li>
-            <li>
-                <label>barrel</label>
-                <capacities>
-                    <li>Blunt</li>
-                    <li>Poke</li>
-                </capacities>
-                <power>9</power>
-                <cooldownTime>2</cooldownTime>
-            </li>
-        </tools>
     </ThingDef>
     <ThingDef ParentName="BaseBullet">
         <defName>LOF_Projectile_Railgun</defName>

@@ -34,10 +34,10 @@
                 <Crafting>5</Crafting>
             </skillRequirements>
         </recipeMaker>
-        <thingSetMakerTags>
+        <!--thingSetMakerTags>
             <li>SingleUseWeapon</li>
             <li>RewardStandardLowFreq</li>
-        </thingSetMakerTags>
+        </thingSetMakerTags-->
         <verbs>
             <li>
                 <verbClass>Verb_ShootOneUse</verbClass>
@@ -65,16 +65,6 @@
                 <requiredDamageTypeToExplode>Flame</requiredDamageTypeToExplode>
             </li>
         </comps>
-        <tools>
-            <li>
-                <label>barrel</label>
-                <capacities>
-                    <li>Blunt</li>
-                </capacities>
-                <power>11.7</power>
-                <cooldownTime>2.6</cooldownTime>
-            </li>
-        </tools>
     </ThingDef>
     <ThingDef ParentName="BaseBullet">
         <defName>LOF_Bullet_TandemHEAT</defName>
@@ -127,10 +117,10 @@
                 <Crafting>5</Crafting>
             </skillRequirements>
         </recipeMaker>
-        <thingSetMakerTags>
+        <!--thingSetMakerTags>
             <li>SingleUseWeapon</li>
             <li>RewardStandardLowFreq</li>
-        </thingSetMakerTags>
+        </thingSetMakerTags-->
         <verbs>
             <li>
                 <verbClass>Verb_Shoot</verbClass>
@@ -151,16 +141,6 @@
                 <muzzleFlashScale>14</muzzleFlashScale>
             </li>
         </verbs>
-        <tools>
-            <li>
-                <label>barrel</label>
-                <capacities>
-                    <li>Blunt</li>
-                </capacities>
-                <power>11.7</power>
-                <cooldownTime>2.6</cooldownTime>
-            </li>
-        </tools>
         <comps>
             <li Class="CompProperties_Explosive">
                 <damageAmountBase>150</damageAmountBase>
