@@ -108,12 +108,9 @@
             <MaxHitPoints>80</MaxHitPoints>
             <MarketValue>250</MarketValue>
             <Mass>1.0</Mass>
-            <Flammability>0.4</Flammability>
             <ArmorRating_Sharp>0.09</ArmorRating_Sharp>
             <ArmorRating_Blunt>0.09</ArmorRating_Blunt>
             <ArmorRating_Heat>0.27</ArmorRating_Heat>
-            <Insulation_Cold>2</Insulation_Cold>
-            <Insulation_Heat>1</Insulation_Heat>
             <EquipDelay>1.5</EquipDelay>
         </statBases>
         <equippedStatOffsets>
@@ -172,6 +169,56 @@
                 </li>
             </options>
         </colorGenerator>
+        <tradeTags>
+            <li>Clothing</li>
+        </tradeTags>
+    </ThingDef>
+
+    <ThingDef ParentName="Astro_HelmetBase">
+        <defName>LOF_GravityOffsetEq</defName>
+        <label>ES-19 "牧夫座" 引力偏转装置</label>
+        <description>防毒防腐气,高盾防,减移速.\n消耗洞察力可以释放一片引力偏转尘埃,该尘埃会偏转子弹和电荷弹.</description>
+        <graphicData>
+            <texPath>Things/Pawn/Humanlike/Apparel/PsychicFoilHelmet/PsychicFoilHelmet</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <uiIconScale>1.3</uiIconScale>
+        <statBases>
+            <MaxHitPoints>80</MaxHitPoints>
+            <MarketValue>250</MarketValue>
+            <Mass>1.0</Mass>
+            <ArmorRating_Sharp>0.09</ArmorRating_Sharp>
+            <ArmorRating_Blunt>0.09</ArmorRating_Blunt>
+            <ArmorRating_Heat>0.27</ArmorRating_Heat>
+            <EquipDelay>1.5</EquipDelay>
+        </statBases>
+        <equippedStatOffsets>
+            <MoveSpeed>-0.4</MoveSpeed>
+        </equippedStatOffsets>
+        <generateCommonality>0.1</generateCommonality>
+        <smeltable>false</smeltable>
+        <costList>
+            <Cloth>10</Cloth>
+            <Steel>20</Steel>
+        </costList>
+        <apparel>
+            <bodyPartGroups>
+                <li>UpperHead</li>
+            </bodyPartGroups>
+            <wornGraphicPath>Things/Pawn/Humanlike/Apparel/PsychicFoilHelmet/PsychicFoilHelmet</wornGraphicPath>
+            <layers>
+                <li>Overhead</li>
+            </layers>
+            <tags>
+            </tags>
+        </apparel>
+        <comps>
+            <li Class="AKA_Ability.TCP_AKATracker">
+                <abilities>
+                    <li>LOF_Ability_GravityDeflection</li>
+                </abilities>
+            </li>
+        </comps>
         <tradeTags>
             <li>Clothing</li>
         </tradeTags>

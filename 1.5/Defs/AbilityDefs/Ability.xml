@@ -68,16 +68,16 @@
         <abilityClass>AKA_Ability.AKAbility_Targetor</abilityClass>
         <range>40</range>
         <castConditions>
-            <!--li Class="Astrologer.Ability.CC_InsightThreshold">
-                <amount>50</amount>
+            <li Class="Astrologer.Ability.CC_InsightThreshold">
+                <amount>20</amount>
                 <failReason>洞察力不足</failReason>
-            </li-->
+            </li>
             <li Class="AKA_Ability.CastConditioner.CC_NeedFullCharge"/>
         </castConditions>
         <compEffectList>
             <li Class="AKA_Ability.AbilityEffect.AE_TeleportSelfToTarget"/>
             <li Class="Astrologer.Ability.AE_CostInsight">
-                <amount>50</amount>
+                <amount>20</amount>
             </li>
         </compEffectList>
         <useSounds>
@@ -129,7 +129,7 @@
     <AKA_Ability.AKAbilityDef>
         <defName>LOF_Ability_LeechAttack</defName>
         <label>吸血攻击</label>
-        <description>介绍:\n持续消耗洞察力可以攻击回血\n对敌人造成伤则固定回血.</description>
+        <description>介绍:\n持续消耗洞察力,攻击敌人造成伤害时固定回复血量.</description>
         <icon>UI/Element/Placeholder</icon>
         <abilityClass>AKA_Ability.AKAbility_Auto</abilityClass>
         <castConditions>
@@ -137,10 +137,7 @@
                 <amount>1</amount>
                 <failReason>洞察力不足</failReason>
             </li>
-            <!--li Class="AKA_Ability.CastConditioner.CC_NeedFullCharge"/-->
         </castConditions>
-        <compEffectList>
-        </compEffectList>
         <useSounds>
             <li>AK_SFX_Tactboost</li>
         </useSounds>
@@ -153,21 +150,74 @@
     </AKA_Ability.AKAbilityDef>
 
     <Def Class="AKA_Ability.AbilityEffectsDef">
+        <defName>LOF_Effect_ThrowSmoke</defName>
+        <compEffectList>
+            <li Class="AKA_Ability.AbilityEffect.AE_DoEffectFX">
+                <doVisualEffects>true</doVisualEffects>
+                <doFlash>false</doFlash>
+                <doSmoke>true</doSmoke>
+                <radiusRange>10~12</radiusRange>
+            </li>
+        </compEffectList>
+    </Def>
+    <AKA_Ability.AKAbilityDef>
+        <defName>LOF_Ability_GravityDeflection</defName>
+        <label>引力偏转尘埃</label>
+        <description>介绍:\n消耗洞察力可以释放一片引力偏转尘埃,该尘埃会偏转子弹和电荷弹.</description>
+        <icon>UI/Element/Placeholder</icon>
+        <abilityClass>AKA_Ability.AKAbility_Targetor</abilityClass>
+        <reqLineofSight>true</reqLineofSight>
+        <range>40</range>
+        <field>10</field>
+        <castConditions>
+            <li Class="Astrologer.Ability.CC_InsightThreshold">
+                <amount>20</amount>
+                <failReason>洞察力不足</failReason>
+            </li>
+        </castConditions>
+        <compEffectList>
+            <li Class="Astrologer.Ability.AE_Spawn">
+                <thing>LOF_GravityDeflectionDust</thing>
+            </li>
+            <li Class="AKA_Ability.AbilityEffect.AE_DelayedEffects">
+                <delayedEffect>LOF_Effect_ThrowSmoke</delayedEffect>
+                <burstCount>6</burstCount>
+                <burstInterval>250</burstInterval>
+                <effectorType>AKA_Ability.DelayedEffects.DelayedEffectorBase</effectorType>
+            </li>
+            <li Class="Astrologer.Ability.AE_CostInsight">
+                <amount>20</amount>
+            </li>
+        </compEffectList>
+        <useSounds>
+            <li>AK_SFX_Tactboost</li>
+        </useSounds>
+        <targetParams>
+            <canTargetLocations>true</canTargetLocations>
+            <canTargetSelf>false</canTargetSelf>
+            <canTargetPawns>true</canTargetPawns>
+        </targetParams>
+        <cooldownProperty>
+            <SPPerCharge>12</SPPerCharge>
+            <SPUnit>hour</SPUnit>
+            <initSP>8000000</initSP>
+            <maxCharge>1</maxCharge>
+        </cooldownProperty>
+    </AKA_Ability.AKAbilityDef>
+
+    <Def Class="AKA_Ability.AbilityEffectsDef">
         <defName>LOF_Effect_UnavoidableStance</defName>
         <label>锚定立场</label>
         <compEffectList>
-            <li Class="Astrologer.Ability.AE_CreateStance">
+            <li Class="Astrologer.Ability.AE_AddHediffRadial">
                 <radius>10</radius>
                 <hediffDef>LOF_Hediff_UnavoidableStance</hediffDef>
                 <severity>1</severity>
             </li>
             <li Class="AKA_Ability.AbilityEffect.AE_DoEffectFX">
                 <doVisualEffects>true</doVisualEffects>
-                <doSoundEffects>true</doSoundEffects>
                 <radiusRange>6~12</radiusRange>
                 <screenShakeFactor>0.1</screenShakeFactor>
-                <fxInteriorEffecter></fxInteriorEffecter>
-                <fxInteriorMote></fxInteriorMote>
                 <fxInteriorFleck>LightningGlow</fxInteriorFleck>
                 <useSounds>
                     <li>Psycast_Skip_Entry</li>
@@ -175,7 +225,6 @@
             </li>
         </compEffectList>
     </Def>
-
     <AKA_Ability.AKAbilityDef>
         <defName>LOF_Ability_UnavoidableStance</defName>
         <label>锚定立场</label>
@@ -267,7 +316,7 @@
         <compEffectList>
             <li Class="Astrologer.Ability.AE_DeployBuilding">
                 <building>LOF_ActivatedPulsePack</building>
-                <equip>LOF_EmpactPack</equip>
+                <apparel>LOF_EmpactPack</apparel>
             </li>
             <li Class="AKA_Ability.AbilityEffect.AE_CostChargeStatic">
                 <cost>1</cost>

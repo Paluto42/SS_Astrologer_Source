@@ -12,7 +12,7 @@ namespace Astrologer
         public override DamageResult Apply(DamageInfo dinfo, Thing thing)
         {
             DamageResult result = base.Apply(dinfo, thing);
-            if (result.hitThing is Pawn target) 
+            if (result.hitThing is Pawn target)
             {
                 if (target.Dead) goto ret;
                 if (dinfo.Weapon != AstroDefOf.LOF_Weapon_AMSR || dinfo.Def != AstroDefOf.LOF_Cast_ForcePartDestruct) goto ret;
@@ -31,7 +31,7 @@ namespace Astrologer
                 }
                 HealthUtility.AdjustSeverity(target, AstroDefOf.LOF_Hediff_NebulaRay, lastTime * 0.1f);
             }
-            ret:return result;
+        ret: return result;
         }
     }
 }

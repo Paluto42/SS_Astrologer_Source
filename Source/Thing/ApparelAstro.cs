@@ -4,7 +4,7 @@ namespace Astrologer
 {
     public class ApparelAstro : Apparel_Operator
     {
-        public override string WornGraphicPath_MultiFoam 
+        public override string WornGraphicPath_MultiFoam
         {
             get
             {

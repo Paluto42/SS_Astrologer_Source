@@ -1,5 +1,4 @@
-﻿using RimWorld;
-using Verse;
+﻿using Verse;
 
 namespace Astrologer.Insight
 {
@@ -13,7 +12,7 @@ namespace Astrologer.Insight
         }
     }
 
-    public class TC_UpgradeInsight : ThingComp 
+    public class TC_UpgradeInsight : ThingComp
     {
         public TCP_UpgradeInsight Props => (TCP_UpgradeInsight)props;
 

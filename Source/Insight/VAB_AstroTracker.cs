@@ -11,7 +11,7 @@ namespace Astrologer.Insight
         public float insight = 0;
         public float extraInsightCapacity = 0; //可升级的额外上限量
         public float MaxInsight => insightCapacity + extraInsightCapacity;
-        
+
 
         public const float insightCapacity = 100; //基础上限
 

@@ -1,0 +1,20 @@
+﻿using UnityEngine;
+using Verse;
+
+namespace Astrologer
+{
+    public class GravityDeflectionDust : ThingWithComps
+    {
+        public const int lastTime = 2500;
+
+        protected override void DrawAt(Vector3 drawLoc, bool flip = false)
+        {
+            //Comps_PostDraw();
+        }
+
+        public override void Tick()
+        {
+            base.Tick();
+        }
+    }
+}

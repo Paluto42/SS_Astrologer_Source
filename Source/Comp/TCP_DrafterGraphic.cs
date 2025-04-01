@@ -12,7 +12,7 @@ namespace Astrologer
         }
     }
 
-    public class TC_DrafterGraphic : ThingComp 
+    public class TC_DrafterGraphic : ThingComp
     {
         public TCP_DrafterGraphic Props => (TCP_DrafterGraphic)props;
         public GraphicData Graphic => Props.graphicData;

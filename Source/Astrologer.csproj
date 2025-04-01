@@ -100,8 +100,9 @@
   <ItemGroup>
     <Compile Include="Ability\AbilityEffect\AE_CostInsight.cs" />
     <Compile Include="Ability\AbilityEffect\AE_DeployBuilding.cs" />
-    <Compile Include="Ability\AbilityEffect\AE_CreateStance.cs" />
+    <Compile Include="Ability\AbilityEffect\AE_AddHediffRadial.cs" />
     <Compile Include="Ability\AbilityEffect\AE_IgnoreDmg.cs" />
+    <Compile Include="Ability\AbilityEffect\AE_Spawn.cs" />
     <Compile Include="Ability\Gizmo\AKAbility_FireMode.cs" />
     <Compile Include="Ability\Gizmo\AKAbility_Monitor.cs" />
     <Compile Include="Ability\CC_InsightThreshold.cs" />
@@ -122,6 +123,7 @@
     <Compile Include="Comp\CompEquippable_AKAbility.cs" />
     <Compile Include="Comp\TCP_DrafterGraphic.cs" />
     <Compile Include="Comp\TCP_IgnoreStagger.cs" />
+    <Compile Include="Comp\TCP_TimedRemove.cs" />
     <Compile Include="Thing\ApparelAstro.cs" />
     <Compile Include="HarmonyPatches\Patch_DraftController.cs" />
     <Compile Include="Insight\TCP_UpgradeInsight.cs" />
@@ -146,6 +148,7 @@
     <Compile Include="Insight\InteractableComp\TCP_InsightInteractable_Base.cs" />
     <Compile Include="Misc\DamageWorker_Bomb.cs" />
     <Compile Include="Misc\DamageWorker_ForcePartDestruct.cs" />
+    <Compile Include="Thing\GravityDeflectionDust.cs" />
     <Compile Include="ZObsolete\TCP_FireMode.cs" />
     <Compile Include="ZObsolete\TC_FireMods.cs" />
     <Compile Include="ModSettings.cs" />

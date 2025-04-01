@@ -24,17 +24,17 @@ namespace Astrologer.Insight
             {
                 if (ShouldConsumeInsight && CompFireMode.tickStatus == FireTickStatus.None)
                 {
-                    CompFireMode.tickStatus = FireTickStatus.Started; 
+                    CompFireMode.tickStatus = FireTickStatus.Started;
                     return;
                 }
                 if (CompFireMode.tickStatus == FireTickStatus.Completed)
                 {
                     CompInsightInt.ConsumeInsight(ConsumeAmount);
-                    CompFireMode.tickStatus = FireTickStatus.None; 
+                    CompFireMode.tickStatus = FireTickStatus.None;
                     return;
                 }
             }
-            else if (ShouldConsumeInsight) 
+            else if (ShouldConsumeInsight)
             {
                 CompInsightInt.ConsumeInsight(ConsumeAmount);
             }

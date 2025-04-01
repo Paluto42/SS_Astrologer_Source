@@ -1,24 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-    <ThingDef ParentName="BuildingBase">
-        <defName>LOF_ActivatedPulsePack</defName>
-        <thingClass>Astrologer.ActivatedPulsePack</thingClass>
-        <tickerType>Normal</tickerType>
-        <label>EMP冲击背包(工作中)</label>
-        <description>投射在地面上会产生持续的emp脉冲，范围较大且放置距离较长</description>
-        <!--等待贴图-->
-        <graphicData>
-            <texPath>Things/Pawn/Humanlike/Apparel/SmokepopPack/SmokepopPack</texPath>
-            <graphicClass>Graphic_Single</graphicClass>
-        </graphicData>
-        <uiIconScale>1.25</uiIconScale>
-        <relicChance>0</relicChance>
-        <comps>
-            <li Class="CompProperties_Forbiddable"/>
-        </comps>
-    </ThingDef>
-
     <ThingDef ParentName="Astro_ApparelBase">
         <defName>LOF_EmpactPack</defName>
         <tickerType>Normal</tickerType>

@@ -1,4 +1,5 @@
 ﻿using AKA_Ability;
+using RimWorld;
 using Verse;
 
 namespace Astrologer.Ability
@@ -8,16 +9,32 @@ namespace Astrologer.Ability
     {
         public ThingDef building; //要部署的建筑
         public ThingDef equip;  //使用后会摧毁装备 能用就行
+        public ThingDef apparel;  //使用后会摧毁装备 能用就行
 
         protected override bool DoEffect(AKAbility_Base caster, LocalTargetInfo target)
         {
-            Thing rest = ThingMaker.MakeThing(building);
-            GenPlace.TryPlaceThing(rest, target.Cell, caster.CasterPawn.Map, ThingPlaceMode.Near);
-            Thing equipment = caster.CasterPawn.equipment.AllEquipmentListForReading.Find(delegate (ThingWithComps twc)
+            if (building != null)
             {
-                return twc.def == equip;
-            });
-            equipment?.Destroy();
+                Thing rest = ThingMaker.MakeThing(building);
+                GenPlace.TryPlaceThing(rest, target.Cell, caster.CasterPawn.Map, ThingPlaceMode.Near);
+            }
+            if (equip != null)
+            {
+                ThingWithComps equipment = caster.CasterPawn.equipment.AllEquipmentListForReading.Find(delegate (ThingWithComps twc)
+                {
+                    return twc.def == equip;
+                });
+                caster.CasterPawn.equipment.DestroyEquipment(equipment);
+            }
+            if (apparel != null)
+            {
+                Apparel equipment = caster.CasterPawn.apparel.WornApparel.Find(a => a.def == apparel);
+                if (equipment != null)
+                {
+                    caster.CasterPawn.apparel.TryDrop(equipment);
+                    equipment?.Destroy();
+                }
+            }
             return base.DoEffect(caster, target);
         }
     }

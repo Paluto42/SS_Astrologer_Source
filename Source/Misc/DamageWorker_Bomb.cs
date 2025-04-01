@@ -24,7 +24,7 @@ namespace Astrologer
                     AbilityEffect_Heal.Heal(caster, Projectile_Leech.HealAmount);
                 }
             }
-            ret: return result;
+        ret: return result;
         }
     }
 }

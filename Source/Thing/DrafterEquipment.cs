@@ -15,7 +15,7 @@ namespace Astrologer
         {
             get
             {
-                if (DrafterGraphic != null && Holder != null && Holder.Drafted) 
+                if (DrafterGraphic != null && Holder != null && Holder.Drafted)
                 {
                     secGraphicInt ??= DrafterGraphic.Graphic;
                     return secGraphicInt;
