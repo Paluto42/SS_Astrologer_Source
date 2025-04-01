@@ -341,7 +341,7 @@
         <defName>LOF_Weapon_AMSR</defName>
         <thingClass>Astrologer.DrafterEquipment</thingClass>
         <label>ASAT-112 "船边星云"</label>
-        <description>远程狙击，长开火前摇，短射击后摇.\n当占星师使用时，可使用洞察力强化该武器。每一发消耗一定量洞察力，在这种模式下，每一发子弹命中会打掉对方身体的随机的一个部位，并挂一个debuff（星云射线）持续扣血.</description>
+        <description>当占星师使用时,可使用洞察力强化该武器,每一发消耗一定量洞察力.\n在这种模式下,每一发子弹命中会打掉对方身体的随机的一个部位,并挂一个debuff(星云射线)持续扣血.</description>
         <graphicData>
             <texPath>Things/Weapons/ChargeSniper</texPath>
             <graphicClass>Graphic_Single</graphicClass>
@@ -421,6 +421,72 @@
                 <secondaryWeaponLabel>发射星云射线</secondaryWeaponLabel>
                 <secondaryIcon>UI/Buttons/SpecialFire</secondaryIcon>
                 <secondaryDescription>每一发子弹命中会打掉对方身体的一个随机部位\n需要消耗10点洞察力</secondaryDescription>
+            </li>
+        </comps>
+    </ThingDef>
+
+    <ThingDef ParentName="Astro_AKAWeaponRangedBase">
+        <defName>LOF_Weapon_Sagitta</defName>
+        <thingClass>Astrologer.DrafterEquipment</thingClass>
+        <label>天箭座</label>
+        <description>消耗洞察力可以发射一枚光子炸弹，该炸弹可以跨墙释放.</description>
+        <graphicData>
+            <texPath>Things/Weapons/ChargeSniper</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <soundInteract>Interact_ChargeRifle</soundInteract>
+        <weaponClasses>
+            <li>RangedHeavy</li>
+        </weaponClasses>
+        <weaponTags>
+            <li>LOF_WeaponRanged</li>
+        </weaponTags>
+        <!--占位,原版数值-->
+        <statBases>
+            <WorkToMake>56000</WorkToMake>
+            <Mass>8</Mass>
+            <AccuracyTouch>0.75</AccuracyTouch>
+            <AccuracyShort>0.77</AccuracyShort>
+            <AccuracyMedium>0.82</AccuracyMedium>
+            <AccuracyLong>0.81</AccuracyLong>
+            <RangedWeapon_Cooldown>1.75</RangedWeapon_Cooldown>
+        </statBases>
+        <costList>
+            <Plasteel>40</Plasteel>
+            <ComponentIndustrial>3</ComponentIndustrial>
+        </costList>
+        <recipeMaker>
+            <researchPrerequisite>ChargedShot</researchPrerequisite>
+            <recipeUsers Inherit="false">
+                <li>LOF_StellarFoundry</li>
+            </recipeUsers>
+            <skillRequirements>
+                <Crafting>7</Crafting>
+            </skillRequirements>
+        </recipeMaker>
+        <verbs Inherit="false">
+            <li>
+                <verbClass>Verb_Shoot</verbClass>
+                <hasStandardCommand>true</hasStandardCommand>
+                <defaultProjectile>Bullet_ChargeRifle</defaultProjectile>
+                <warmupTime>0.5</warmupTime>
+                <range>70</range>
+                <soundCast>ChargeLance_Fire</soundCast>
+                <soundCastTail>GunTail_Heavy</soundCastTail>
+                <muzzleFlashScale>9</muzzleFlashScale>
+            </li>
+        </verbs>
+        <comps>
+            <li Class="Astrologer.TCP_DrafterGraphic">
+                <graphicData>
+                    <texPath>Things/Weapons/Deagle44</texPath>
+                    <graphicClass>Graphic_Single</graphicClass>
+                </graphicData>
+            </li>
+            <li Class="AKA_Ability.TCP_AKATracker">
+                <abilities>
+                    <li>LOF_Ability_PhotonBomb</li>
+                </abilities>
             </li>
         </comps>
     </ThingDef>
@@ -561,7 +627,7 @@
         </thingSetMakerTags-->
         <verbs Inherit="false">
             <li>
-                <verbClass>Astrologer.Insight.Verb_InsightShoot</verbClass>
+                <verbClass>Verb_Shoot</verbClass>
                 <hasStandardCommand>true</hasStandardCommand>
                 <defaultProjectile>LOF_Projectile_Railgun</defaultProjectile>
                 <forcedMissRadius>1.9</forcedMissRadius>

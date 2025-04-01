@@ -302,6 +302,84 @@
         </cooldownProperty>
     </AKA_Ability.AKAbilityDef>
 
+    <AKA_Ability.AKAbilityDef>
+        <defName>LOF_Ability_PhotonBomb</defName>
+        <label>释放光子炸弹</label>
+        <description>介绍:\n该炸弹可以跨墙释放.</description>
+        <icon>UI/Element/Placeholder</icon>
+        <abilityClass>AKA_Ability.AKAbility_Targetor</abilityClass>
+        <reqLineofSight>true</reqLineofSight>
+        <range>40</range>
+        <field>10</field>
+        <castConditions>
+            <li Class="Astrologer.Ability.CC_InsightThreshold">
+                <amount>20</amount>
+                <failReason>洞察力不足</failReason>
+            </li>
+        </castConditions>
+        <compEffectList>
+            <li Class="AKA_Ability.AbilityEffect.AE_ShootProjectile">
+                <projectile>Bullet_Shell_HighExplosive</projectile>
+            </li>
+            <li Class="Astrologer.Ability.AE_CostInsight">
+                <amount>20</amount>
+            </li>
+        </compEffectList>
+        <useSounds>
+            <li>AK_SFX_Tactboost</li>
+        </useSounds>
+        <targetParams>
+            <canTargetLocations>true</canTargetLocations>
+            <canTargetSelf>false</canTargetSelf>
+            <canTargetPawns>true</canTargetPawns>
+        </targetParams>
+        <cooldownProperty>
+            <SPPerCharge>12</SPPerCharge>
+            <SPUnit>hour</SPUnit>
+            <initSP>8000000</initSP>
+            <maxCharge>1</maxCharge>
+        </cooldownProperty>
+    </AKA_Ability.AKAbilityDef>
+
+    <AKA_Ability.AKAbilityDef>
+        <defName>LOF_Ability_Gravitational</defName>
+        <label>创造引力点</label>
+        <description>介绍:\n创造一个引力点将敌人拉向该引力点.</description>
+        <icon>UI/Element/Placeholder</icon>
+        <abilityClass>AKA_Ability.AKAbility_Targetor</abilityClass>
+        <reqLineofSight>true</reqLineofSight>
+        <range>40</range>
+        <field>10</field>
+        <castConditions>
+            <li Class="Astrologer.Ability.CC_InsightThreshold">
+                <amount>20</amount>
+                <failReason>洞察力不足</failReason>
+            </li>
+        </castConditions>
+        <compEffectList>
+            <li Class="AKA_Ability.AbilityEffect.AME_Singularity">
+                <stunTick>250</stunTick>
+            </li>
+            <li Class="Astrologer.Ability.AE_CostInsight">
+                <amount>20</amount>
+            </li>
+        </compEffectList>
+        <useSounds>
+            <li>AK_SFX_Tactboost</li>
+        </useSounds>
+        <targetParams>
+            <canTargetLocations>true</canTargetLocations>
+            <canTargetSelf>false</canTargetSelf>
+            <canTargetPawns>true</canTargetPawns>
+        </targetParams>
+        <cooldownProperty>
+            <SPPerCharge>12</SPPerCharge>
+            <SPUnit>hour</SPUnit>
+            <initSP>8000000</initSP>
+            <maxCharge>1</maxCharge>
+        </cooldownProperty>
+    </AKA_Ability.AKAbilityDef>
+
     <!--==================== 不需要洞察力的技能 ====================-->
     <AKA_Ability.AKAbilityDef>
         <defName>LOF_Ability_DeployEMP</defName>
