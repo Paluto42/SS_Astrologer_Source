@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<Def Class="AK_DLL.ReserveOperatorDef">
+		<defName>LOF_ROperator_Astrologer</defName>
+		<label>astro</label>
+		<pawnkind>LOF_PawnKind_Citizen</pawnkind>
+		<operatorID>LOF_VAbility_Astro</operatorID>
+	</Def>
+
+</Defs>
