@@ -8,15 +8,15 @@
 		<operatorID>LOF_VAbility_Astro</operatorID>
 		<bodyTypeDef>Astro_Body</bodyTypeDef>
 		<headTypeRange>
-			<Astro_Head_A Class="HeadTypeDef">1</Astro_Head_A>
+			<Astro_Head_A DefClass="HeadTypeDef">1</Astro_Head_A>
 		</headTypeRange>
 		<hairRange>
-			<LOF_Hair_A Class="HairDef">1</LOF_Hair_A>
+			<LOF_Hair_A DefClass="HairDef">1</LOF_Hair_A>
 		</hairRange>
 		<hairColor>(255, 255, 255)</hairColor>
 		<skinColor>(255, 255, 255)</skinColor>
 		<backstoryChildRange>
-			<FarmKid60>1</FarmKid60>
+			<FarmKid60 DefClass="BackstoryDef">1</FarmKid60>
 		</backstoryChildRange>
 		<backstoryAdultRange>
 		</backstoryAdultRange>
