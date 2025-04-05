@@ -4,6 +4,7 @@ using Verse;
 
 namespace Astrologer
 {
+    //准备删了
     public class Gene_Astrologer : Gene
     {
         public override void PostAdd()

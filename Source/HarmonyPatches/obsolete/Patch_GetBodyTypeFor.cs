@@ -5,7 +5,7 @@ using Verse;
 
 namespace Astrologer.HarmonyPatches
 {
-    [HarmonyPatch(typeof(PawnGenerator), "GetBodyTypeFor")]
+    /*[HarmonyPatch(typeof(PawnGenerator), "GetBodyTypeFor")]
     public class Patch_GetBodyTypeFor
     {
         [HarmonyPostfix]
@@ -27,7 +27,7 @@ namespace Astrologer.HarmonyPatches
                         __result = ext.forcedBodyType;
                     }
                 }
-            }*/
+            }//
             Gene astroGene = pawn.genes.GetAstroGene();
             Ext_ForcedAstrologer ext = astroGene.def.GetModExtension<Ext_ForcedAstrologer>();
             if (ext != null && astroGene.Active)
@@ -42,5 +42,5 @@ namespace Astrologer.HarmonyPatches
                 }
             }
         }
-    }
+    }*/
 }

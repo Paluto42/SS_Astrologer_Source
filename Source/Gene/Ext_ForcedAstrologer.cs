@@ -8,6 +8,6 @@ namespace Astrologer
     {
         public BodyTypeDef forcedBodyType;
         public AbilityDef astroAbility;  //舟同款，电子身份证
-        public Color? skinColorOverride;
+        public Color? skinColorOverride; //准备删了
     }
 }

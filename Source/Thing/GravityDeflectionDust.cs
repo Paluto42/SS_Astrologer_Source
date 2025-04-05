@@ -9,6 +9,7 @@ namespace Astrologer
 
         protected override void DrawAt(Vector3 drawLoc, bool flip = false)
         {
+            return;
             //Comps_PostDraw();
         }
 
