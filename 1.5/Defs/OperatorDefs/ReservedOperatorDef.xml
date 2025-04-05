@@ -47,6 +47,9 @@
         <AKAbilities>
             <li>LOF_Ability_Monitor</li>
         </AKAbilities>
+		<postEffects>
+			<li>Astrologer.RPEW_AstroDoc</li>
+		</postEffects>
     </AK_DLL.ReserveOperatorDef>
 
 </Defs>

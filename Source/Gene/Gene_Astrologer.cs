@@ -9,7 +9,7 @@ namespace Astrologer
     {
         public override void PostAdd()
         {
-            Ext_ForcedAstrologer ext = def.GetModExtension<Ext_ForcedAstrologer>();
+            /*Ext_ForcedAstrologer ext = def.GetModExtension<Ext_ForcedAstrologer>();
             if (ext != null && ext.forcedBodyType != null)
             {
                 pawn.story.bodyType = ext.forcedBodyType;
@@ -19,7 +19,7 @@ namespace Astrologer
             {
                 parent = pawn,
                 astroTracker = new VAB_AstroTracker(pawn, ext.astroAbility),
-            });
+            });*/
             pawn.Drawer.renderer.SetAllGraphicsDirty();
         }
     }

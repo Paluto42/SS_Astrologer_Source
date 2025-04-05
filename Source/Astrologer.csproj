@@ -125,6 +125,7 @@
     <Compile Include="Comp\TCP_IgnoreStagger.cs" />
     <Compile Include="Comp\TCP_TimedRemove.cs" />
     <Compile Include="Gene\Ext_Astrologer.cs" />
+    <Compile Include="OperatorDef\RPEW_AstroDoc.cs" />
     <Compile Include="Thing\ApparelAstro.cs" />
     <Compile Include="HarmonyPatches\Patch_DraftController.cs" />
     <Compile Include="Insight\TCP_UpgradeInsight.cs" />

@@ -42,8 +42,8 @@
 		</xenotypeSet>
 		<useFactionXenotypes>false</useFactionXenotypes>
 		<modExtensions>
-			<li Class="Astrologer.Ext_Astrologer">
-				<operatorDef>LOF_Recruit_Test</operatorDef>
+			<li Class="AK_DLL.Ext_LinkedReservedOperatorDef">
+				<linkedDef>LOF_Recruit_Test</linkedDef>
 			</li>
 		</modExtensions>
 	</PawnKindDef>

@@ -55,9 +55,9 @@ namespace Astrologer.Insight
                         }
                     }
                 }
-                float FinalCapacity = insightCapacity;
-                FinalCapacity += (extraInsightCapacity >= 0) ? extraInsightCapacity : 0f;
-                insight = Mathf.Clamp(insight, 0, FinalCapacity);
+                //float FinalCapacity = insightCapacity;
+                //FinalCapacity += (extraInsightCapacity >= 0) ? extraInsightCapacity : 0f;
+                insight = Mathf.Clamp(insight, 0, MaxInsight);
             }
         }
 
