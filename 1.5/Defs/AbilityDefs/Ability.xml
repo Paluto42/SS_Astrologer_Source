@@ -1,5 +1,12 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
+    <AbilityDef ParentName="AK_OperatorIDBase">
+        <defName>LOF_VAbility_Astro</defName>
+        <label>占星师</label>
+        <description>desc</description>
+        <abilityClass>Astrologer.Insight.VAB_AstroTracker</abilityClass>
+        <iconPath>UI/Element/Placeholder</iconPath>
+    </AbilityDef>
     <!--==================== 洞察力技能 ====================-->
     <AKA_Ability.AKAbilityDef>
         <defName>LOF_Ability_Monitor</defName>
@@ -308,7 +315,6 @@
         <description>介绍:\n该炸弹可以跨墙释放.</description>
         <icon>UI/Element/Placeholder</icon>
         <abilityClass>AKA_Ability.AKAbility_Targetor</abilityClass>
-        <reqLineofSight>true</reqLineofSight>
         <range>40</range>
         <field>10</field>
         <castConditions>
@@ -319,7 +325,7 @@
         </castConditions>
         <compEffectList>
             <li Class="AKA_Ability.AbilityEffect.AE_ShootProjectile">
-                <projectile>Bullet_Shell_HighExplosive</projectile>
+                <projectile>LOF_PhotonBomb</projectile>
             </li>
             <li Class="Astrologer.Ability.AE_CostInsight">
                 <amount>20</amount>

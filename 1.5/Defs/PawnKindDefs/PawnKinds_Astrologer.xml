@@ -3,7 +3,8 @@
 
 	<PawnKindDef Name="Astro_PawnBase" Abstract="True">
 		<race>Human</race>
-		<defaultFactionType>LOF_Empire</defaultFactionType>
+		<nameMaker></nameMaker>
+		<!--defaultFactionType>LOF_Empire</defaultFactionType-->
 		<backstoryCryptosleepCommonality>0</backstoryCryptosleepCommonality>
 		<invNutrition>2</invNutrition>
 		<!--gearHealthRange>0.8~1.0</gearHealthRange-->
@@ -40,6 +41,11 @@
 			</xenotypeChances>
 		</xenotypeSet>
 		<useFactionXenotypes>false</useFactionXenotypes>
+		<modExtensions>
+			<li Class="Astrologer.Ext_Astrologer">
+				<operatorDef>LOF_Recruit_Test</operatorDef>
+			</li>
+		</modExtensions>
 	</PawnKindDef>
 
 	<PawnKindDef Name="Astro_CitizenBase" ParentName="Astro_PawnBase" Abstract="True">
@@ -89,6 +95,21 @@
 				<skill>Intellectual</skill>
 				<range>5~10</range>
 			</li>
+		</skills>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="Astro_CitizenBase">
+		<defName>LOF_PawnKind_Test</defName>
+		<label>繁星帝国公民</label>
+		<labelPlural>繁星帝国公民</labelPlural>
+		<combatPower>80</combatPower>
+		<apparelTags>
+		</apparelTags>
+		<apparelRequired>
+		</apparelRequired>
+		<weaponTags>
+		</weaponTags>
+		<skills>
 		</skills>
 	</PawnKindDef>
 

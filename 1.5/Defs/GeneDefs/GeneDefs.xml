@@ -44,14 +44,6 @@
         </modExtensions>
     </GeneDef>
 
-    <AbilityDef ParentName="AK_OperatorIDBase">
-        <defName>LOF_VAbility_Astro</defName>
-        <label>占星师</label>
-        <description>desc</description>
-        <abilityClass>Astrologer.Insight.VAB_AstroTracker</abilityClass>
-        <iconPath>UI/Element/Placeholder</iconPath>
-    </AbilityDef>
-
     <GeneDef ParentName="Astro_BodyGene">
         <defName>LOF_Gene_Main</defName>
         <label>占星师</label>
@@ -67,6 +59,7 @@
             <ComfyTemperatureMax>20</ComfyTemperatureMax>
         </statOffsets>
         <forcedHeadTypes>
+            <li>Astro_Head_A</li>
             <li>Astro_Head_B</li>
             <li>Astro_Head_C</li>
             <li>Astro_Head_D</li>
@@ -78,9 +71,9 @@
             <li Class="Astrologer.Ext_ForcedAstrologer">
                 <forcedBodyType>Astro_Body</forcedBodyType>
                 <astroAbility>LOF_VAbility_Astro</astroAbility>
-                <skinColorOverride>(255, 255, 255)</skinColorOverride>
+                <!--skinColorOverride>(255, 255, 255)</skinColorOverride-->
             </li>
-            <li Class="Astrologer.Ext_ForcedHairColor">
+            <!--li Class="Astrologer.Ext_ForcedHairColor">
                 <hairColorOverride>
                     <li>
                         <weight>15</weight>
@@ -95,7 +88,7 @@
                         <only>(237, 202, 156)</only>
                     </li>
                 </hairColorOverride>
-            </li>
+            </li-->
         </modExtensions>
     </GeneDef>
 
