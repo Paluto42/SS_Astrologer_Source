@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-    <FactionDef ParentName="FactionBase">
+    <!--FactionDef ParentName="FactionBase">
         <defName>LOF_Empire</defName>
         <label>繁星帝国</label>
         <description>desc.</description>
@@ -37,7 +37,6 @@
                 </categories>
             </li>
         </backstoryFilters>
-        <!--这些先不写-->
         <caravanTraderKinds>
         </caravanTraderKinds>
         <visitorTraderKinds>
@@ -93,22 +92,9 @@
         <fixedIdeo>true</fixedIdeo>
         <ideoName>占星师</ideoName>
         <ideoDescription>desc.</ideoDescription>
-        <!--deityPresets>
-            <li>
-                <nameType>
-                    <name>神</name>
-                    <type>114514</type>
-                </nameType>
-                <gender>Female</gender>
-                <iconPath>UI/Deities/DeityGeneric</iconPath>
-            </li>
-        </deityPresets-->
         <forcedMemes>
-            <!--li MayRequire="Ludeon.RimWorld.Ideology">FemaleSupremacy</li-->
-            <!--li MayRequire="Ludeon.RimWorld.Ideology">Supremacist</li-->
-            <!--li MayRequire="Ludeon.RimWorld.Ideology">Collectivist</li-->
         </forcedMemes>
         <requiredPreceptsOnly>true</requiredPreceptsOnly>
-    </FactionDef>
+    </FactionDef-->
 
 </Defs>

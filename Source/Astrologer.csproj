@@ -138,7 +138,6 @@
     <Compile Include="HarmonyPatches\Patch_GeneTracker.cs" />
     <Compile Include="HarmonyPatches\Patch_GeneratePawn.cs" />
     <Compile Include="HarmonyPatches\Patch_Main.cs" />
-    <Compile Include="HarmonyPatches\obsolete\Patch_GetBodyTypeFor.cs" />
     <Compile Include="HarmonyPatches\Patch_GeneratePostRecruit.cs" />
     <Compile Include="HarmonyPatches\obsolete\Patch_SkinColor.cs" />
     <Compile Include="Insight\TCP_FireMode.cs" />
@@ -150,8 +149,6 @@
     <Compile Include="Misc\DamageWorker_Bomb.cs" />
     <Compile Include="Misc\DamageWorker_ForcePartDestruct.cs" />
     <Compile Include="Thing\GravityDeflectionDust.cs" />
-    <Compile Include="ZObsolete\TCP_FireMode.cs" />
-    <Compile Include="ZObsolete\TC_FireMods.cs" />
     <Compile Include="ModSettings.cs" />
     <Compile Include="OperatorDef\Ext_OperatorDef.cs" />
     <Compile Include="Plant\TCP_NightGlower.cs" />

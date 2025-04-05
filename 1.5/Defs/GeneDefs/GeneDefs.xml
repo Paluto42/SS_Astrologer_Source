@@ -71,9 +71,9 @@
             <li Class="Astrologer.Ext_ForcedAstrologer">
                 <forcedBodyType>Astro_Body</forcedBodyType>
                 <astroAbility>LOF_VAbility_Astro</astroAbility>
-                <!--skinColorOverride>(255, 255, 255)</skinColorOverride-->
+                <skinColorOverride>(255, 255, 255)</skinColorOverride>
             </li>
-            <!--li Class="Astrologer.Ext_ForcedHairColor">
+            <li Class="Astrologer.Ext_ForcedHairColor">
                 <hairColorOverride>
                     <li>
                         <weight>15</weight>
@@ -88,7 +88,7 @@
                         <only>(237, 202, 156)</only>
                     </li>
                 </hairColorOverride>
-            </li-->
+            </li>
         </modExtensions>
     </GeneDef>
 

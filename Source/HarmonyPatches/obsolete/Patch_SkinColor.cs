@@ -5,7 +5,7 @@ using Verse;
 
 namespace Astrologer.HarmonyPatches
 {
-    /*[HarmonyPatch(typeof(Pawn_StoryTracker), "SkinColor", MethodType.Getter)]
+    [HarmonyPatch(typeof(Pawn_StoryTracker), "SkinColor", MethodType.Getter)]
     public class Patch_SkinColor
     {
         [HarmonyPostfix]
@@ -19,5 +19,5 @@ namespace Astrologer.HarmonyPatches
                 __result = ext.skinColorOverride.Value;
             }
         }
-    }*/
+    }
 }

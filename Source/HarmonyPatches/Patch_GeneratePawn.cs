@@ -1,6 +1,7 @@
 ﻿using HarmonyLib;
 using RimWorld;
 using System;
+using UnityEngine;
 using Verse;
 
 namespace Astrologer.HarmonyPatches
@@ -8,7 +9,7 @@ namespace Astrologer.HarmonyPatches
     [HarmonyPatch(typeof(PawnGenerator), "GeneratePawn", new Type[] { typeof(PawnGenerationRequest) })]
     public class Patch_GeneratePawn
     {
-        [HarmonyPostfix]
+        /*[HarmonyPostfix]
         public static void Postfix(ref PawnGenerationRequest request, Pawn __result)
         {
             var astroDef = request.KindDef.GetModExtension<Ext_Astrologer>();
@@ -23,8 +24,8 @@ namespace Astrologer.HarmonyPatches
                 __result.story.skinColorOverride = operatorDef.skinColor;
                 __result.Drawer.renderer.SetAllGraphicsDirty();
             }
-        } 
-        /*[HarmonyPostfix]
+        }*/
+        [HarmonyPostfix]
         public static void Postfix(ref PawnGenerationRequest request, Pawn __result)
         {
             if (__result == null || __result.genes.HasAstroGene() == false) return;
@@ -39,7 +40,7 @@ namespace Astrologer.HarmonyPatches
                 Color? color = ext.hairColorOverride.RandomElementByWeight((ColorOption pi) => pi.weight).only;
                 __result.story.HairColor = color.Value;
             }
-        }*/
+        }
     }
     [HarmonyPatch(typeof(PawnGenerator), "GetBodyTypeFor")]
     public class Patch_GetBodyTypeFor
