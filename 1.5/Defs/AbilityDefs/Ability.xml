@@ -407,10 +407,7 @@
             </li>
         </compEffectList>
         <cooldownProperty>
-            <SPPerCharge>15</SPPerCharge>
-            <SPUnit>day</SPUnit>
-            <initSP>60000000</initSP>
-            <maxCharge>1</maxCharge>
+			<cooldownClass>AKA_Ability.Cooldown.CD_TrackerShared</cooldownClass>
         </cooldownProperty>
     </AKA_Ability.AKAbilityDef>
 
