@@ -5,7 +5,7 @@ using Verse;
 
 namespace Astrologer.HarmonyPatches
 {
-    [HarmonyPatch(typeof(PawnGenerator), "GeneratePawn", new Type[] { typeof(PawnGenerationRequest) })]
+    /*[HarmonyPatch(typeof(PawnGenerator), "GeneratePawn", new Type[] { typeof(PawnGenerationRequest) })]
     public class Patch_GeneratePawn
     {
         [HarmonyPostfix]
@@ -39,7 +39,7 @@ namespace Astrologer.HarmonyPatches
                 Color? color = ext.hairColorOverride.RandomElementByWeight((ColorOption pi) => pi.weight).only;
                 __result.story.HairColor = color.Value;
             }
-        }*/
+        }
     }
     [HarmonyPatch(typeof(PawnGenerator), "GetBodyTypeFor")]
     public class Patch_GetBodyTypeFor
@@ -62,5 +62,5 @@ namespace Astrologer.HarmonyPatches
                 }
             }
         }
-    }
+    }*/
 }

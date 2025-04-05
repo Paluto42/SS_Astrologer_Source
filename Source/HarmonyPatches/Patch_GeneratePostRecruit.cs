@@ -9,7 +9,7 @@ using Verse;
 namespace Astrologer.HarmonyPatches
 {
     //招安走的后置Recruit流程，没有OperatorDef只有AKAbility
-    [HarmonyPatch(typeof(Pawn), "SetFaction", new Type[] { typeof(Faction), typeof(Pawn) })]
+   /* [HarmonyPatch(typeof(Pawn), "SetFaction", new Type[] { typeof(Faction), typeof(Pawn) })]
     public class Patch_GeneratePostRecruit
     {
         [HarmonyPostfix]
@@ -60,5 +60,5 @@ namespace Astrologer.HarmonyPatches
                 operatorDef.AKAbilities.ForEach(def => tracker.AddAbility(def));
             }
         }
-    }
+    }*/
 }

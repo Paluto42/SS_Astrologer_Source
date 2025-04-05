@@ -21,19 +21,21 @@
             <LOF_Hair_F DefClass="HairDef">2</LOF_Hair_F>
             <LOF_Hair_G DefClass="HairDef">1</LOF_Hair_G>
         </hairRange>
-        <hairColorRange>
-            <li>
-                <weight>15</weight>
-                <only>(250, 250, 250)</only>
-            </li>
-            <li>
-                <weight>10</weight>
-                <only>(0.65, 0.65, 0.65)</only>
-            </li>
-            <li>
-                <weight>5</weight>
-                <only>(237, 202, 156)</only>
-            </li>
+        <hairColorRange Class="ColorGenerator_Options">
+			<options>
+				<li>
+					<weight>15</weight>
+					<only>(250, 250, 250)</only>
+				</li>
+				<li>
+					<weight>10</weight>
+					<only>(0.65, 0.65, 0.65)</only>
+				</li>
+				<li>
+					<weight>5</weight>
+					<only>(237, 202, 156)</only>
+				</li>
+			</options>
         </hairColorRange>
         <skinColor>(255, 255, 255)</skinColor>
         <backstoryChildRange>
