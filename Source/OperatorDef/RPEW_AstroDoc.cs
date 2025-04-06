@@ -1,13 +1,7 @@
 ﻿using AK_DLL;
-using Astrologer.Insight;
-using RimWorld;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Verse;
 using AK_TypeDef;
+using Astrologer.Insight;
+using Verse;
 
 namespace Astrologer
 {
