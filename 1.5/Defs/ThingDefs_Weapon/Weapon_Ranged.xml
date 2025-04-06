@@ -62,11 +62,7 @@
             <skillRequirements>
                 <Crafting>5</Crafting>
             </skillRequirements>
-            <displayPriority>430</displayPriority>
         </recipeMaker>
-        <!--thingSetMakerTags>
-            <li>RewardStandardQualitySuper</li>
-        </thingSetMakerTags-->
         <verbs>
             <li>
                 <verbClass>Verb_Shoot</verbClass>
@@ -105,11 +101,7 @@
             <skillRequirements>
                 <Crafting>5</Crafting>
             </skillRequirements>
-            <displayPriority>440</displayPriority>
         </recipeMaker>
-        <!--thingSetMakerTags>
-            <li>RewardStandardQualitySuper</li>
-        </thingSetMakerTags-->
         <!--占位,原版数值-->
         <statBases>
             <WorkToMake>20000</WorkToMake>
@@ -176,11 +168,7 @@
             <skillRequirements>
                 <Crafting>5</Crafting>
             </skillRequirements>
-            <displayPriority>430</displayPriority>
         </recipeMaker>
-        <!--thingSetMakerTags>
-            <li>RewardStandardQualitySuper</li>
-        </thingSetMakerTags-->
         <verbs>
             <li>
                 <verbClass>Verb_Shoot</verbClass>
@@ -232,11 +220,7 @@
             <skillRequirements>
                 <Crafting>5</Crafting>
             </skillRequirements>
-            <displayPriority>430</displayPriority>
         </recipeMaker>
-        <!--thingSetMakerTags>
-            <li>RewardStandardQualitySuper</li>
-        </thingSetMakerTags-->
         <verbs>
             <li>
                 <verbClass>Verb_Shoot</verbClass>
@@ -294,9 +278,6 @@
                 <Crafting>7</Crafting>
             </skillRequirements>
         </recipeMaker>
-        <!--thingSetMakerTags>
-            <li>RewardStandardQualitySuper</li>
-        </thingSetMakerTags-->
         <verbs Inherit="false">
             <li>
                 <verbClass>Astrologer.Insight.Verb_InsightShoot</verbClass>
@@ -376,9 +357,6 @@
                 <Crafting>7</Crafting>
             </skillRequirements>
         </recipeMaker>
-        <!--thingSetMakerTags>
-            <li>RewardStandardQualitySuper</li>
-        </thingSetMakerTags-->
         <verbs Inherit="false">
             <li>
                 <verbClass>Astrologer.Insight.Verb_InsightShoot</verbClass>
@@ -531,9 +509,6 @@
                 <Crafting>7</Crafting>
             </skillRequirements>
         </recipeMaker>
-        <!--thingSetMakerTags>
-            <li>RewardStandardQualitySuper</li>
-        </thingSetMakerTags-->
         <verbs>
             <li>
                 <verbClass>Astrologer.Insight.Verb_InsightShoot</verbClass>
@@ -622,9 +597,6 @@
                 <Crafting>7</Crafting>
             </skillRequirements>
         </recipeMaker>
-        <!--thingSetMakerTags>
-            <li>RewardStandardQualitySuper</li>
-        </thingSetMakerTags-->
         <verbs Inherit="false">
             <li>
                 <verbClass>Verb_Shoot</verbClass>

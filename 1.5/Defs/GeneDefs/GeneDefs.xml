@@ -11,7 +11,7 @@
         <neverGrayHair>true</neverGrayHair>
         <displayOrderInCategory>1</displayOrderInCategory>
         <displayCategory>Astro_GeneCategory</displayCategory>
-        <bodyType>Standard</bodyType>
+        <!--bodyType>Standard</bodyType-->
         <beardTagFilter>
             <whitelist>true</whitelist>
             <tags>
@@ -39,6 +39,7 @@
 
     <GeneDef ParentName="Astro_BodyGene">
         <defName>LOF_Gene_Main</defName>
+        <geneClass>Astrologer.Gene_Astrologer</geneClass>
         <label>占星师</label>
         <description>占星师种族的核心基因.</description>
         <descriptionHyperlinks>
@@ -46,13 +47,11 @@
         <iconPath>UI/Icons/Genes/Gene_Sanguine</iconPath>
         <biostatCpx>3</biostatCpx>
         <biostatMet>4</biostatMet>
-        <geneClass>Astrologer.Gene_Astrologer</geneClass>
         <statOffsets>
             <ComfyTemperatureMin>-20</ComfyTemperatureMin>
             <ComfyTemperatureMax>20</ComfyTemperatureMax>
         </statOffsets>
         <forcedHeadTypes>
-            <li>Astro_Head_A</li>
             <li>Astro_Head_B</li>
             <li>Astro_Head_C</li>
             <li>Astro_Head_D</li>
@@ -60,29 +59,12 @@
         </forcedHeadTypes>
         <forcedTraits>
         </forcedTraits>
-        <modExtensions>
+        <!--modExtensions>
             <li Class="Astrologer.Ext_ForcedAstrologer">
                 <forcedBodyType>Astro_Body</forcedBodyType>
                 <astroAbility>LOF_VAbility_Astro</astroAbility>
-                <!--skinColorOverride>(255, 255, 255)</skinColorOverride-->
             </li>
-            <!--li Class="Astrologer.Ext_ForcedHairColor">
-                <hairColorOverride>
-                    <li>
-                        <weight>15</weight>
-                        <only>(250, 250, 250)</only>
-                    </li>
-                    <li>
-                        <weight>10</weight>
-                        <only>(0.65, 0.65, 0.65)</only>
-                    </li>
-                    <li>
-                        <weight>5</weight>
-                        <only>(237, 202, 156)</only>
-                    </li>
-                </hairColorOverride>
-            </li-->
-        </modExtensions>
+        </modExtensions-->
     </GeneDef>
 
     <GeneDef>

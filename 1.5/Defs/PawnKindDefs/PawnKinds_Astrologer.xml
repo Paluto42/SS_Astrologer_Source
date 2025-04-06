@@ -3,7 +3,7 @@
 
 	<PawnKindDef Name="Astro_PawnBase" Abstract="True">
 		<race>Human</race>
-		<nameMaker></nameMaker>
+		<nameMaker>NamerPerson_AstroEmpire</nameMaker>
 		<!--defaultFactionType>LOF_Empire</defaultFactionType-->
 		<backstoryCryptosleepCommonality>0</backstoryCryptosleepCommonality>
 		<invNutrition>2</invNutrition>
@@ -14,17 +14,15 @@
 		<initialWillRange>60~90</initialWillRange>
 		<initialResistanceRange>60~90</initialResistanceRange>
 		<biocodeWeaponChance>0</biocodeWeaponChance>
-		<backstoryFiltersOverride>
+		<!--backstoryFiltersOverride>
 			<li>
 				<categories>
 					<li>Outlander</li>
 				</categories>
 			</li>
-		</backstoryFiltersOverride>
-		<apparelDisallowTags>
-		</apparelDisallowTags>
-		<styleItemTags>
-		</styleItemTags>
+		</backstoryFiltersOverride-->
+		<apparelDisallowTags></apparelDisallowTags>
+		<styleItemTags></styleItemTags>
 		<disallowedTraits>
 			<li>Wimp</li>
 			<li>Nudist</li>
@@ -32,20 +30,9 @@
 			<li>Gourmand</li>
 			<li>Pyromaniac</li>
 		</disallowedTraits>
-		<inventoryOptions>
-		</inventoryOptions>
-		<abilities>
-		</abilities>
-		<xenotypeSet>
-			<xenotypeChances>
-			</xenotypeChances>
-		</xenotypeSet>
+		<inventoryOptions></inventoryOptions>
+		<abilities></abilities>
 		<useFactionXenotypes>false</useFactionXenotypes>
-		<modExtensions>
-			<li Class="AK_DLL.Ext_LinkedReservedOperatorDef">
-				<linkedDef>LOF_Recruit_Test</linkedDef>
-			</li>
-		</modExtensions>
 	</PawnKindDef>
 
 	<PawnKindDef Name="Astro_CitizenBase" ParentName="Astro_PawnBase" Abstract="True">
@@ -63,14 +50,12 @@
 		</apparelTags>
 		<techHediffsChance>0.15</techHediffsChance>
 		<techHediffsMoney>700~1200</techHediffsMoney>
-		<techHediffsTags>
-		</techHediffsTags>
-		<skills>
-			<li>
-				<skill>Intellectual</skill>
-				<range>5~10</range>
+		<techHediffsTags></techHediffsTags>
+		<modExtensions>
+			<li Class="AK_DLL.Ext_LinkedReservedOperatorDef">
+				<linkedDef>LOF_Recruit_Citizen</linkedDef>
 			</li>
-		</skills>
+		</modExtensions>
 	</PawnKindDef>
 
 	<PawnKindDef Name="Astro_SoldierBase" ParentName="Astro_PawnBase" Abstract="True">
@@ -88,8 +73,22 @@
 		</apparelTags>
 		<techHediffsChance>0.15</techHediffsChance>
 		<techHediffsMoney>700~1200</techHediffsMoney>
-		<techHediffsTags>
-		</techHediffsTags>
+		<techHediffsTags></techHediffsTags>
+		<modExtensions>
+			<li Class="AK_DLL.Ext_LinkedReservedOperatorDef">
+				<linkedDef>LOF_Recruit_Soldier</linkedDef>
+			</li>
+		</modExtensions>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="Astro_CitizenBase">
+		<defName>LOF_PawnKind_Citizen</defName>
+		<label>繁星帝国公民</label>
+		<labelPlural>繁星帝国公民</labelPlural>
+		<combatPower>80</combatPower>
+		<apparelTags></apparelTags>
+		<apparelRequired></apparelRequired>
+		<weaponTags></weaponTags>
 		<skills>
 			<li>
 				<skill>Intellectual</skill>
@@ -98,62 +97,27 @@
 		</skills>
 	</PawnKindDef>
 
-	<PawnKindDef ParentName="Astro_CitizenBase">
-		<defName>LOF_PawnKind_Test</defName>
-		<label>繁星帝国公民</label>
-		<labelPlural>繁星帝国公民</labelPlural>
-		<combatPower>80</combatPower>
-		<apparelTags>
-		</apparelTags>
-		<apparelRequired>
-		</apparelRequired>
-		<weaponTags>
-		</weaponTags>
-		<skills>
-		</skills>
-	</PawnKindDef>
-
-	<PawnKindDef ParentName="Astro_CitizenBase">
-		<defName>LOF_PawnKind_Citizen</defName>
-		<label>繁星帝国公民</label>
-		<labelPlural>繁星帝国公民</labelPlural>
-		<combatPower>80</combatPower>
-		<apparelTags>
-		</apparelTags>
-		<apparelRequired>
-		</apparelRequired>
-		<weaponTags>
-		</weaponTags>
-		<skills>
-		</skills>
-		<xenotypeSet>
-			<xenotypeChances>
-				<Astro_Xeno_Citizen>1</Astro_Xeno_Citizen>
-			</xenotypeChances>
-		</xenotypeSet>
-	</PawnKindDef>
-
 	<PawnKindDef ParentName="Astro_SoldierBase">
 		<defName>LOF_PawnKind_Soldier</defName>
 		<label>繁星帝国士兵</label>
 		<labelPlural>繁星帝国士兵</labelPlural>
 		<combatPower>100</combatPower>
-		<apparelTags>
-		</apparelTags>
-		<apparelRequired>
-		</apparelRequired>
-		<weaponTags>
-		</weaponTags>
+		<apparelTags></apparelTags>
+		<apparelRequired></apparelRequired>
+		<weaponTags></weaponTags>
 		<skills>
+			<li>
+				<skill>Melee</skill>
+				<range>5~10</range>
+			</li>
+			<li>
+				<skill>Shooting</skill>
+				<range>5~10</range>
+			</li>
 		</skills>
-		<xenotypeSet>
-			<xenotypeChances>
-				<Astro_Xeno_Soldier>1</Astro_Xeno_Soldier>
-			</xenotypeChances>
-		</xenotypeSet>
 	</PawnKindDef>
 
-	<PawnKindDef ParentName="Astro_CitizenBase">
+	<!--PawnKindDef ParentName="Astro_CitizenBase">
 		<defName>LOF_PawnKind_EmpireLeader</defName>
 		<label>繁星帝国参议长</label>
 		<combatPower>300</combatPower>
@@ -195,11 +159,6 @@
 			</li>
 		</skills>
 		<useFactionXenotypes>false</useFactionXenotypes>
-		<xenotypeSet>
-			<xenotypeChances>
-				<Astro_Xeno_Citizen>1</Astro_Xeno_Citizen>
-			</xenotypeChances>
-		</xenotypeSet>
-	</PawnKindDef>
+	</PawnKindDef-->
 
 </Defs>

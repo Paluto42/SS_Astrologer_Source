@@ -308,9 +308,6 @@
             <defaultOutfitTags>
                 <li>Worker</li>
             </defaultOutfitTags>
-            <tags>
-                <li>LOF_AS_Category_Armor</li>
-            </tags>
         </apparel>
         <recipeMaker>
             <!--researchPrerequisite>ComplexClothing</researchPrerequisite-->

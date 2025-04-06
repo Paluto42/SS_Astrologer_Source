@@ -48,6 +48,7 @@
             <!--Flammability>0.5</Flammability-->
         </statBases>
         <recipeMaker>
+            <displayPriority>450</displayPriority>
             <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
             <workSkill>Crafting</workSkill>
             <effectWorking>Smith</effectWorking>
@@ -110,6 +111,9 @@
         <tradeTags>
             <li>LOF_AS_Category_WeaponRanged</li>
         </tradeTags>
+        <recipeMaker>
+            <displayPriority>440</displayPriority>
+        </recipeMaker>
         <comps>
             <li>
                 <compClass>CompQuality</compClass>

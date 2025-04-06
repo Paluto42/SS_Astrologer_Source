@@ -32,15 +32,6 @@
                 <abilities>
                     <li>LOF_Ability_DeployEMP</li>
                 </abilities>
-                <sharedDataProperty Class="AKA_Ability.SharedData.SDP_SharedCharge">
-                    <sharedDataType>AKA_Ability.SharedData.SD_SharedCharge</sharedDataType>
-                    <cooldownProperty>
-                        <SPPerCharge>1</SPPerCharge>
-                        <SPUnit>day</SPUnit>
-                        <initSP>600000</initSP>
-                        <maxCharge>1</maxCharge>
-                    </cooldownProperty>
-                </sharedDataProperty>
             </li>
         </comps>
         <apparel>

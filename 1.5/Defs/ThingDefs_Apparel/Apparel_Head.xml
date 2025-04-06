@@ -69,7 +69,7 @@
         </stuffCategories>
         <costStuffCount>20</costStuffCount>
         <apparel>
-            <parentTagDef>ApparelHead</parentTagDef>
+            <!--parentTagDef>ApparelHead</parentTagDef-->
             <countsAsClothingForNudity>false</countsAsClothingForNudity>
             <developmentalStageFilter>Child, Adult</developmentalStageFilter>
             <bodyPartGroups>
@@ -155,6 +155,9 @@
             <layers>
                 <li>Overhead</li>
             </layers>
+            <tags>
+                <li>Astrologer_SoldierArmor</li>
+            </tags>
         </apparel>
         <recipeMaker>
             <!--researchPrerequisite>ComplexClothing</researchPrerequisite-->

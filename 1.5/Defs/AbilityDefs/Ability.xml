@@ -407,7 +407,11 @@
             </li>
         </compEffectList>
         <cooldownProperty>
-			<cooldownClass>AKA_Ability.Cooldown.CD_TrackerShared</cooldownClass>
+            <SPPerCharge>15</SPPerCharge>
+            <SPUnit>day</SPUnit>
+            <initSP>60000000</initSP>
+            <maxCharge>1</maxCharge>
+            <!--cooldownClass>AKA_Ability.Cooldown.CD_TrackerShared</cooldownClass-->
         </cooldownProperty>
     </AKA_Ability.AKAbilityDef>
 
@@ -446,8 +450,8 @@
             <canTargetPawns>true</canTargetPawns>
         </targetParams>
         <cooldownProperty>
-            <SPPerCharge>15</SPPerCharge>
-            <SPUnit>day</SPUnit>
+            <SPPerCharge>2</SPPerCharge>
+            <SPUnit>hour</SPUnit>
             <initSP>800000</initSP>
             <maxCharge>1</maxCharge>
         </cooldownProperty>
@@ -460,6 +464,11 @@
         <icon>UI/Element/HealEnhance</icon>
         <abilityClass>AKA_Ability.AKAbility_Targetor</abilityClass>
         <range>40</range>
+        <castConditions>
+            <li Class="AKA_Ability.CastConditioner.CC_NeedFullCharge">
+                <failReason>需要填充医药</failReason>
+            </li>
+        </castConditions>
         <compEffectList>
             <li Class="AKA_Ability.AbilityEffect_Heal">
                 <healPoint>10</healPoint>
@@ -467,15 +476,13 @@
                 <healNeutral>true</healNeutral>
                 <healNullFaction>true</healNullFaction>
             </li>
-            <li Class="AKA_Ability.AbilityEffect.AE_CostChargeStatic" />
+            <li Class="AKA_Ability.AbilityEffect.AE_CostChargeStatic"/>
         </compEffectList>
         <useSounds>
             <li>AK_SFX_Tactboost</li>
         </useSounds>
         <cooldownProperty>
-            <SPPerCharge>12</SPPerCharge>
-            <SPUnit>hour</SPUnit>
-            <maxCharge>5</maxCharge>
+            <cooldownClass>AKA_Ability.Cooldown.CD_TrackerShared</cooldownClass>
         </cooldownProperty>
     </AKA_Ability.AKAbilityDef>
 

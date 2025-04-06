@@ -29,7 +29,6 @@
             <skillRequirements>
                 <Crafting>5</Crafting>
             </skillRequirements>
-            <displayPriority>450</displayPriority>
         </recipeMaker>
         <!--thingSetMakerTags>
             <li>RewardStandardQualitySuper</li>
@@ -89,7 +88,6 @@
             <skillRequirements>
                 <Crafting>5</Crafting>
             </skillRequirements>
-            <displayPriority>450</displayPriority>
         </recipeMaker>
         <!--thingSetMakerTags>
             <li>RewardStandardQualitySuper</li>

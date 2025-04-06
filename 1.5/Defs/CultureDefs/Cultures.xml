@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-    <CultureDef Name="Astrologer">
+    <!--CultureDef Name="Astrologer">
         <defName>LOF_Culture</defName>
         <label>占星师</label>
         <description>占星师的文化形态。</description>
@@ -31,6 +31,6 @@
                 <weightFactor>1</weightFactor>
             </li>
         </styleItemTags>
-    </CultureDef>
+    </CultureDef-->
 
 </Defs>

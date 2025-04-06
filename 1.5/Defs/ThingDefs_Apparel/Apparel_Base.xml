@@ -30,4 +30,23 @@
         </recipeMaker>
     </ThingDef>
 
+    <ThingDef Name="Astrologer_ApparelMakeableBase" ParentName="ApparelMakeableBase" Abstract="True">
+        <recipeMaker>
+            <researchPrerequisite>ComplexClothing</researchPrerequisite>
+        </recipeMaker>
+        <stuffCategories>
+            <li>Fabric</li>
+            <li>Leathery</li>
+        </stuffCategories>
+        <thingCategories>
+            <li>ApparelMisc</li>
+        </thingCategories>
+        <apparel>
+            <tags>
+                <li>IndustrialBasic</li>
+            </tags>
+            <canBeDesiredForIdeo>false</canBeDesiredForIdeo>
+        </apparel>
+    </ThingDef>
+
 </Defs>

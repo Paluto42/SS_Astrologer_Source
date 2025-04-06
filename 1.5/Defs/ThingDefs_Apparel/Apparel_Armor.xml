@@ -270,7 +270,6 @@
             <MedicalPotency>0.5</MedicalPotency>
             <MedicalSurgerySuccessChance>0.5</MedicalSurgerySuccessChance>
         </equippedStatOffsets>
-        <!--大跳没写 救援没写-->
         <verbs>
             <li>
                 <verbClass>Verb_FirefoamPop</verbClass>
@@ -312,6 +311,15 @@
                     <li>LOF_Ability_Coagulate</li>
                     <li>LOF_Ability_Skip</li>
                 </abilities>
+                <sharedDataProperty Class="AKA_Ability.SharedData.SDP_SharedCharge">
+                    <sharedDataType>AKA_Ability.SharedData.SD_SharedCharge</sharedDataType>
+                    <cooldownProperty>
+                        <SPPerCharge>1</SPPerCharge>
+                        <SPUnit>day</SPUnit>
+                        <initSP>0</initSP>
+                        <maxCharge>5</maxCharge>
+                    </cooldownProperty>
+                </sharedDataProperty>
             </li>
         </comps>
         <!--材料-->
