@@ -3,6 +3,7 @@
 
     <ThingDef ParentName="BuildingBase">
         <defName>LOF_Thing_Laundy</defName>
+        <tickerType>Normal</tickerType>
         <label>环形重塑器</label>
         <description>将衣物武器放入，消耗洞察力启动一段时间，在容器内的衣物会恢复耐久.</description>
         <graphicData>
@@ -40,9 +41,6 @@
             <Gold>20</Gold>
             <ComponentIndustrial>8</ComponentIndustrial>
         </costList>
-        <inspectorTabs>
-            <li>ITab_Bills</li>
-        </inspectorTabs>
         <building>
             <destroySound>BuildingDestroyed_Metal_Medium</destroySound>
         </building>
@@ -61,7 +59,7 @@
                 <insightCost>10</insightCost>
             </li>
             <li Class="Astrologer.Generic.TCP_ThingContainer">
-                <capacity>1</capacity>
+                <capacity>5</capacity>
                 <gizmoEjectLabel>弹出服装</gizmoEjectLabel>
                 <gizmoEjectUIIconPath>UI/Element/Placeholder</gizmoEjectUIIconPath>
             </li>

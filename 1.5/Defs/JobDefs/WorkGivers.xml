@@ -12,6 +12,7 @@
         <requiredCapacities>
             <li>Manipulation</li>
         </requiredCapacities>
+        <canBeDoneWhileDrafted>true</canBeDoneWhileDrafted>
         <prioritizeSustains>true</prioritizeSustains>
     </WorkGiverDef>
 

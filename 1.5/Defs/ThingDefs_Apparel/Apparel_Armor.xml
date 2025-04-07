@@ -308,15 +308,13 @@
             </li>
             <li Class="AKA_Ability.TCP_AKATracker">
                 <abilities>
+                    <li>LOF_Ability_ReloadFromThing</li>
                     <li>LOF_Ability_Coagulate</li>
                     <li>LOF_Ability_Skip</li>
                 </abilities>
                 <sharedDataProperty Class="AKA_Ability.SharedData.SDP_SharedCharge">
                     <sharedDataType>AKA_Ability.SharedData.SD_SharedCharge</sharedDataType>
                     <cooldownProperty>
-                        <SPPerCharge>1</SPPerCharge>
-                        <SPUnit>day</SPUnit>
-                        <initSP>0</initSP>
                         <maxCharge>5</maxCharge>
                     </cooldownProperty>
                 </sharedDataProperty>

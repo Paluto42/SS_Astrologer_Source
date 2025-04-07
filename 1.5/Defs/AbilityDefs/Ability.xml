@@ -465,7 +465,8 @@
         <abilityClass>AKA_Ability.AKAbility_Targetor</abilityClass>
         <range>40</range>
         <castConditions>
-            <li Class="AKA_Ability.CastConditioner.CC_NeedFullCharge">
+            <li Class="AKA_Ability.CastConditioner.CC_NeedCharge">
+                <chargeRequire>1</chargeRequire>
                 <failReason>需要填充医药</failReason>
             </li>
         </castConditions>
@@ -481,6 +482,48 @@
         <useSounds>
             <li>AK_SFX_Tactboost</li>
         </useSounds>
+        <targetParams>
+            <canTargetLocations>false</canTargetLocations>
+            <canTargetSelf>true</canTargetSelf>
+            <canTargetPawns>true</canTargetPawns>
+        </targetParams>
+        <cooldownProperty>
+            <cooldownClass>AKA_Ability.Cooldown.CD_TrackerShared</cooldownClass>
+        </cooldownProperty>
+    </AKA_Ability.AKAbilityDef>
+
+    <AKA_Ability.AKAbilityDef>
+        <defName>LOF_Ability_ReloadFromThing</defName>
+        <label>重新装填</label>
+        <description>使用医药进行装填.</description>
+        <icon>UI/Element/HealEnhance</icon>
+        <abilityClass>AKA_Ability.AKAbility_Targetor</abilityClass>
+        <allowInterrupt>true</allowInterrupt>
+        <range>2</range>
+        <castConditions>
+            <li Class="AKA_Ability.CastConditioner.CC_NeedFullCharge">
+                <failReason>已满</failReason>
+                <invert>true</invert>
+            </li>
+        </castConditions>
+        <compEffectList>
+            <li Class="AKA_Ability.AbilityEffect.AE_ReloadFromThing">
+                <reloadProp>
+                    <target>LOF_Ability_Coagulate</target>
+                    <ammoDef>MedicineIndustrial</ammoDef>
+                    <ammoCountPerCharge>1</ammoCountPerCharge>
+                </reloadProp>
+            </li>
+        </compEffectList>
+        <useSounds>
+            <li>AK_SFX_Tactboost</li>
+        </useSounds>
+        <targetParams>
+            <canTargetLocations>true</canTargetLocations>
+            <canTargetItems>true</canTargetItems>
+            <canTargetSelf>false</canTargetSelf>
+            <canTargetPawns>false</canTargetPawns>
+        </targetParams>
         <cooldownProperty>
             <cooldownClass>AKA_Ability.Cooldown.CD_TrackerShared</cooldownClass>
         </cooldownProperty>
