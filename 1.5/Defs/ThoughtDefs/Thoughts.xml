@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <ThoughtDef Name="LOF_Thought_Permanent" Abstract="True">
+        <workerClass>ThoughtWorker_AlwaysActive</workerClass>
+        <validWhileDespawned>false</validWhileDespawned>
+    </ThoughtDef>
+
+    <ThoughtDef ParentName="LOF_Thought_Permanent">
+        <defName>LOF_Thought_Trait_Dusk</defName>
+        <requiredTraits>
+            <li>LOF_Trait_Sight</li>
+        </requiredTraits>
+        <stages>
+            <li>
+                <label>目光闪闪</label>
+                <description>desc.</description>
+                <baseMoodEffect>6</baseMoodEffect>
+            </li>
+        </stages>
+    </ThoughtDef>
+
+</Defs>

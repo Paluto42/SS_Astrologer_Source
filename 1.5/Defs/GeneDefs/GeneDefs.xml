@@ -42,12 +42,21 @@
         <geneClass>Astrologer.Gene_Astrologer</geneClass>
         <label>占星师</label>
         <description>占星师种族的核心基因.</description>
-        <descriptionHyperlinks>
-        </descriptionHyperlinks>
+        <descriptionHyperlinks></descriptionHyperlinks>
         <iconPath>UI/Icons/Genes/Gene_Sanguine</iconPath>
-        <biostatCpx>3</biostatCpx>
-        <biostatMet>4</biostatMet>
+        <biostatCpx>2</biostatCpx>
+        <biostatMet>2</biostatMet>
+        <aptitudes>
+            <Shooting>3</Shooting>
+        </aptitudes>
+        <capMods>
+            <li>
+                <capacity>Sight</capacity>
+                <offset>0.2</offset>
+            </li>
+        </capMods>
         <statOffsets>
+            <ResearchSpeed>0.25</ResearchSpeed>
             <ComfyTemperatureMin>-20</ComfyTemperatureMin>
             <ComfyTemperatureMax>20</ComfyTemperatureMax>
         </statOffsets>
@@ -57,14 +66,12 @@
             <li>Astro_Head_D</li>
             <li>Astro_Head_E</li>
         </forcedHeadTypes>
+        <!--会显示为强制特性-->
         <forcedTraits>
-        </forcedTraits>
-        <!--modExtensions>
-            <li Class="Astrologer.Ext_ForcedAstrologer">
-                <forcedBodyType>Astro_Body</forcedBodyType>
-                <astroAbility>LOF_VAbility_Astro</astroAbility>
+            <li>
+                <def>LOF_Trait_Sight</def>
             </li>
-        </modExtensions-->
+        </forcedTraits>
     </GeneDef>
 
     <GeneDef>
@@ -127,13 +134,13 @@
         <displayCategory>Astro_GeneCategory</displayCategory>
         <displayOrderInCategory>20</displayOrderInCategory>
         <aptitudes>
-            <Melee>-4</Melee>
+            <Melee>-3</Melee>
         </aptitudes>
         <statOffsets>
             <MeleeHitChance>-0.5</MeleeHitChance>
         </statOffsets>
-        <biostatMet>-4</biostatMet>
-        <biostatCpx>2</biostatCpx>
+        <biostatMet>-1</biostatMet>
+        <biostatCpx>1</biostatCpx>
     </GeneDef>
 
     <GeneDef>

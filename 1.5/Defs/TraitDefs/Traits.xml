@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <TraitDef>
+        <defName>LOF_Trait_Sight</defName>
+        <ignoreConfigErrors>true</ignoreConfigErrors>
+        <commonality>0.0</commonality>
+        <degreeDatas>
+            <li>
+                <label>占星师</label>
+                <description>desc</description>
+            </li>
+        </degreeDatas>
+    </TraitDef>
+
+</Defs>

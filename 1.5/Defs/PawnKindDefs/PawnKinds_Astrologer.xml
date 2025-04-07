@@ -32,6 +32,12 @@
 		</disallowedTraits>
 		<inventoryOptions></inventoryOptions>
 		<abilities></abilities>
+		<skills>
+			<li>
+				<skill>Shooting</skill>
+				<range>5~8</range>
+			</li>
+		</skills>
 		<useFactionXenotypes>false</useFactionXenotypes>
 	</PawnKindDef>
 

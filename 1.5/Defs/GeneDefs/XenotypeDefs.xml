@@ -6,33 +6,39 @@
 		<texPath>UI/Icons/RK_icon</texPath>
 	</XenotypeIconDef>
 
-	<XenotypeDef>
+
+	<XenotypeDef Name="Astro_XenoBase" Abstract="True">
+		<defName>Astro_Xeno_Base</defName>
+		<label>占星师</label>
+		<description>desc.</description>
+		<descriptionShort></descriptionShort>
+		<iconPath>UI/Icons/RK_icon</iconPath>
+		<displayPriority>-1270</displayPriority>
+		<factionlessGenerationWeight>0</factionlessGenerationWeight>
+		<inheritable>true</inheritable>
+		<genes>
+			<li>LOF_Gene_Main</li>
+			<li>LOF_Gene_StargazingFavor</li>
+		</genes>
+	</XenotypeDef>
+
+	<XenotypeDef ParentName="Astro_XenoBase">
 		<defName>Astro_Xeno_Citizen</defName>
 		<label>占星师</label>
 		<description>desc.</description>
 		<descriptionShort></descriptionShort>
-		<iconPath>UI/Icons/RK_icon</iconPath>
-		<displayPriority>-1270</displayPriority>
-		<factionlessGenerationWeight>0</factionlessGenerationWeight>
-		<inheritable>true</inheritable>
 		<genes>
-			<li>LOF_Gene_Main</li>
-			<!--li>Hair_SnowWhite</li-->
+			<li>LOF_Gene_MeleeWeak</li>
 		</genes>
 	</XenotypeDef>
 
-	<XenotypeDef>
+	<XenotypeDef ParentName="Astro_XenoBase">
 		<defName>Astro_Xeno_Soldier</defName>
 		<label>占星师</label>
 		<description>desc.</description>
 		<descriptionShort></descriptionShort>
-		<iconPath>UI/Icons/RK_icon</iconPath>
-		<displayPriority>-1270</displayPriority>
-		<factionlessGenerationWeight>0</factionlessGenerationWeight>
-		<inheritable>true</inheritable>
 		<genes>
-			<li>LOF_Gene_Main</li>
-			<!--li>Hair_SnowWhite</li-->
+			<li>LOF_Gene_InsightEye</li>
 		</genes>
 	</XenotypeDef>
 
