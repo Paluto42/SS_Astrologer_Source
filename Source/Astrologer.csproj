@@ -153,6 +153,7 @@
     <Compile Include="Thing\Projectile_Leech.cs" />
     <Compile Include="Thing\ActivatedPulsePack.cs" />
     <Compile Include="Thing\DrafterEquipment.cs" />
+    <Compile Include="Thought\ThoughtWorker_SightMood.cs" />
     <Compile Include="TypeDef.cs" />
     <Compile Include="Utility.cs" />
     <Compile Include="Insight\Verb_InsightShoot.cs" />
