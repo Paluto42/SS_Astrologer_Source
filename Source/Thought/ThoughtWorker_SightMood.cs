@@ -8,8 +8,8 @@ namespace Astrologer
     //至少要有2个stages
     public class ThoughtWorker_SightMood : ThoughtWorker
     {
-        public int passiveStage = 0;
-        public int negativeStage = 1;
+        public int PS = 0; //PlayStation
+        public int NS = 1; //Nintendo Switch
 
         protected override ThoughtState CurrentStateInternal(Pawn p)
         {
@@ -17,16 +17,19 @@ namespace Astrologer
             if (parts.Any() == false) return ThoughtState.Inactive;
 
             HediffSet hediffSet = p.health.hediffSet;
+            if (hediffSet.HasHediff(HediffDefOf.Blindness))
+            {
+                return ThoughtState.ActiveAtStage(NS);
+            }
             foreach (BodyPartRecord item in parts)
             {
                 //眼球植入物,缺眼,失明都会不开心
-                if (hediffSet.PartOrAnyAncestorHasDirectlyAddedParts(item)
-                    || hediffSet.PartIsMissing(item) || hediffSet.HasHediff(HediffDefOf.Blindness))
+                if (hediffSet.PartOrAnyAncestorHasDirectlyAddedParts(item) || hediffSet.PartIsMissing(item))
                 {
-                    return ThoughtState.ActiveAtStage(negativeStage);
+                    return ThoughtState.ActiveAtStage(NS);
                 }
             }
-            return ThoughtState.ActiveAtStage(passiveStage);
+            return ThoughtState.ActiveAtStage(PS);
         }
     }
 }

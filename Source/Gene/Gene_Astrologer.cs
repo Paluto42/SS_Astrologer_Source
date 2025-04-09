@@ -1,5 +1,4 @@
-﻿using AK_DLL;
-using RimWorld;
+﻿using RimWorld;
 using System.Collections.Generic;
 using System.Linq;
 using Verse;
@@ -10,12 +9,12 @@ namespace Astrologer
     public class Gene_Astrologer : Gene
     {
         private int tick = 0;
-
         private bool ShouldRecover = false;
+        private const int checkInterval = 250; //检测间隔
+        private const float recoveryAmount = 0.1f; //每次回复量
+        private const int recoveryInterval = 2500; //失明后的回复周期
 
-        private int checkInterval = 250; //检测间隔
-
-        private int recoveryInterval = (int)TimeToTick.hour * 1; //失明后的回复周期
+        private List<Hediff> BlindnessTmp => pawn.health.hediffSet.hediffs.FindAll(h => h.def == HediffDefOf.Blindness);
 
         public override void ExposeData()
         {
@@ -29,20 +28,17 @@ namespace Astrologer
             base.Tick();
             if (pawn.Dead) return;
 
-            List<Hediff> blindness = null;
-            if (Utility.CrtTick % checkInterval == 0)
-            {
-                blindness = pawn.health.hediffSet.hediffs.FindAll(h => h.def == HediffDefOf.Blindness);
-                ShouldRecover = blindness.Any();
-            }
-            if (ShouldRecover) 
+            if (Utility.CrtTick % checkInterval == 0) this.ShouldRecover = BlindnessTmp.Any();
+            if (this.ShouldRecover) 
             {
                 tick++;
                 if (tick % recoveryInterval == 0)
                 {
-                    blindness.ForEach(hediff => hediff.Severity -= 0.1f);
+                    BlindnessTmp.First().Severity -= recoveryAmount;
+                    tick = 0;
                 }
             }
+            else tick = 0;
         }
 
         public override void PostAdd()
