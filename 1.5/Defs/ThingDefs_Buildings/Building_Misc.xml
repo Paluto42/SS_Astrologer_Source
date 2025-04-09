@@ -51,10 +51,6 @@
                 <basePowerConsumption>200</basePowerConsumption>
             </li>
             <li Class="CompProperties_Flickable"/>
-            <li Class="CompProperties_Usable">
-                <useJob>LOF_Job_FillLaundry</useJob>
-                <useLabel>使用 {0_label}</useLabel>
-            </li>
             <li Class="Astrologer.Laundry.TCP_UseEffect_ActivateLaundry">
                 <insightCost>10</insightCost>
             </li>

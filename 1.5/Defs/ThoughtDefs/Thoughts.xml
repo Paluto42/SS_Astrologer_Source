@@ -13,13 +13,26 @@
         <stages>
             <li>
                 <label>目光闪闪</label>
-                <description>我的眼睛完好无损,我很开心.</description>
+                <description>我能清晰地感受着光线穿透眼眸,每一处细节都在视野中鲜活呈现.\n这份清晰的视觉让我满心欢喜.</description>
                 <baseMoodEffect>30</baseMoodEffect>
             </li>
-             <li>
+            <li>
                 <label>不完整的视力</label>
-                <description>我的眼睛和视力应当完好无暇,我无法洞察周围的事物.</description>
+                <description>本该如明镜般清澈的双眼,如今却蒙上了一层阴霾.\n我努力地想要看清周围的一切,可模糊的视线就像无形的枷锁,束缚着我对世界的感知.\n这种无力感如潮水般将我淹没,让我满心沮丧.</description>
                 <baseMoodEffect>-30</baseMoodEffect>
+            </li>
+        </stages>
+    </ThoughtDef>
+
+    <ThoughtDef>
+        <defName>LOF_Thought_UseTelescopeMood</defName>
+        <durationDays>2</durationDays>
+        <stackLimit>10</stackLimit>
+        <stages>
+            <li>
+                <label>观星</label>
+                <description>宇宙的壮美在眼中铺展,每一颗星辰都在诉说着超越凡俗的浩瀚与神秘.\n能见证这般奇迹,便是此刻最纯粹的欢喜</description>
+                <baseMoodEffect>8</baseMoodEffect>
             </li>
         </stages>
     </ThoughtDef>

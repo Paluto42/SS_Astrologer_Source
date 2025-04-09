@@ -7,12 +7,11 @@
         <giverClass>Astrologer.Laundry.WorkGiver_FillLaundryRepair</giverClass>
         <workType>Hauling</workType>
         <priorityInType>50</priorityInType>
-        <verb>work at</verb>
-        <gerund>working at</gerund>
+        <verb>fill</verb>
+        <gerund>filling in</gerund>
         <requiredCapacities>
             <li>Manipulation</li>
         </requiredCapacities>
-        <canBeDoneWhileDrafted>true</canBeDoneWhileDrafted>
         <prioritizeSustains>true</prioritizeSustains>
     </WorkGiverDef>
 

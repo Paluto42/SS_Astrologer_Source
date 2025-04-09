@@ -5,7 +5,7 @@ using Verse;
 namespace Astrologer.HarmonyPatches
 {
     [HarmonyPatch(typeof(Pawn_GeneTracker), "Notify_GenesChanged")]
-    public static class Patch_GeneTracker
+    public class Patch_GeneTracker
     {
         [HarmonyPostfix]
         public static void Postfix_Notify_GenesChanged(ref Pawn ___pawn, ref GeneDef addedOrRemovedGene)

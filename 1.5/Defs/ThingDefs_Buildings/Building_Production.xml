@@ -239,9 +239,13 @@
         <label>观星仪</label>
         <description>desc.</description>
         <thingClass>Building_ResearchBench</thingClass>
-        <size>(5,2)</size>
-        <minifiedDef />
-        <thingCategories Inherit="false" />
+        <graphicData>
+            <texPath>Things/Building/Joy/Telescope</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawRotated>false</drawRotated>
+        </graphicData>
+        <minifiedDef/>
+        <thingCategories Inherit="false"/>
         <stuffCategories>
             <li>Metallic</li>
         </stuffCategories>
@@ -250,20 +254,7 @@
             <Steel>100</Steel>
             <ComponentIndustrial>10</ComponentIndustrial>
         </costList>
-        <graphicData>
-            <texPath>Things/Building/Production/ResearchBenchHiTech</texPath>
-            <graphicClass>Graphic_Multi</graphicClass>
-            <shaderType>CutoutComplex</shaderType>
-            <drawSize>(7,4)</drawSize>
-            <damageData>
-                <cornerTL>Damage/Corner</cornerTL>
-                <cornerTR>Damage/Corner</cornerTR>
-                <cornerBL>Damage/Corner</cornerBL>
-                <cornerBR>Damage/Corner</cornerBR>
-            </damageData>
-        </graphicData>
-        <castEdgeShadows>true</castEdgeShadows>
-        <staticSunShadowHeight>0.20</staticSunShadowHeight>
+        <canBeUsedUnderRoof>false</canBeUsedUnderRoof>
         <altitudeLayer>Building</altitudeLayer>
         <passability>PassThroughOnly</passability>
         <pathCost>50</pathCost>
@@ -273,6 +264,14 @@
             <Flammability>1.0</Flammability>
             <ResearchSpeedFactor>1.0</ResearchSpeedFactor>
         </statBases>
+        <fillPercent>0.75</fillPercent>
+        <interactionCellOffset>(0,0,-1)</interactionCellOffset>
+        <hasInteractionCell>true</hasInteractionCell>
+        <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+        <designationCategory>Production</designationCategory>
+        <uiOrder>2610</uiOrder>
+        <surfaceType>Item</surfaceType>
+        <constructionSkillPrerequisite>6</constructionSkillPrerequisite>
         <comps Inherit="False">
             <li Class="CompProperties_ReportWorkSpeed">
                 <workSpeedStat>ResearchSpeedFactor</workSpeedStat>
@@ -291,16 +290,8 @@
                 </linkableFacilities>
             </li>
         </comps>
-        <fillPercent>0.5</fillPercent>
-        <interactionCellOffset>(0,0,-1)</interactionCellOffset>
-        <hasInteractionCell>true</hasInteractionCell>
-        <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
-        <designationCategory>Production</designationCategory>
-        <uiOrder>2610</uiOrder>
-        <surfaceType>Item</surfaceType>
-        <!--建造技能等级需求-->
-        <constructionSkillPrerequisite>6</constructionSkillPrerequisite>
         <placeWorkers>
+            <li>PlaceWorker_NotUnderRoof</li>
             <li>PlaceWorker_ShowFacilitiesConnections</li>
             <li>PlaceWorker_PreventInteractionSpotOverlap</li>
             <!--li>PlaceWorker_DrawLinesToBookcasesInRoom</li-->

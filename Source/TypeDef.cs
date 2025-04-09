@@ -47,5 +47,7 @@ namespace Astrologer
 
         public static ThingDef LOF_Thing_Laundy; //环形重塑器
         public static ThingDef LOF_Plant_Starlightgrass; //种地上的 植物 星光草
+
+        public static ThoughtDef LOF_Thought_UseTelescopeMood; //用望远镜后的心情加成
     }
 }
