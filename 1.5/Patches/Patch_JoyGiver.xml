@@ -2,13 +2,6 @@
 <Patch>
 
     <Operation Class="PatchOperationReplace">
-        <xpath>Defs/JobDef[defName="UseTelescope"]/driverClass</xpath>
-        <value>
-            <driverClass>Astrologer.JobDriver_WatchBuildingFixed</driverClass>
-        </value>
-    </Operation>
-
-    <Operation Class="PatchOperationReplace">
         <xpath>Defs/JoyGiverDef[defName="UseTelescope"]/giverClass</xpath>
         <value>
             <giverClass>Astrologer.JoyGiver_InteractBuildingCell</giverClass>

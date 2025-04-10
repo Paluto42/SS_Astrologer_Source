@@ -32,7 +32,7 @@ namespace Astrologer_HAR
         [HarmonyPrefix]
         public static bool Prefix(Pawn pawn, StyleItemDef styleItemDef)
         {
-            if (pawn.genes.HasAstroGene() == false) return true;
+            if (pawn.TryGetAstroDoc() == null) return true;
             //Log.Message("WantsToUseStylePostfix");//这个方法甚至一次能调用79-120次，sbHAR
             return false;
         }

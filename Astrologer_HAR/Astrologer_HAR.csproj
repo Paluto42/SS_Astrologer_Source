@@ -35,6 +35,10 @@
       <HintPath>..\Source\Rely\0Harmony.dll</HintPath>
       <Private>False</Private>
     </Reference>
+    <Reference Include="1AK_TypeDef">
+      <HintPath>..\Source\Rely\1AK_TypeDef.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
     <Reference Include="AlienRace">
       <HintPath>..\Source\Rely\AlienRace.dll</HintPath>
       <Private>False</Private>
