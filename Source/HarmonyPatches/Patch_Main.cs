@@ -7,7 +7,7 @@ using Verse;
 namespace Astrologer.HarmonyPatches
 {
     [StaticConstructorOnStartup]
-    public static class Patch_Main
+    internal static class Patch_Main
     {
         static Patch_Main()
         {
