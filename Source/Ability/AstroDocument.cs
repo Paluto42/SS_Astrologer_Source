@@ -11,6 +11,7 @@ namespace Astrologer
     {
         public static string halfIgnoreDmg = "halfIgnoreDmg"; //朦胧暗月
         public static string ignoreStagger = "ignoreStagger"; //TLK-11 "凤凰座' 远行装甲 被击中不会影响移动
+        public static string incomingDmgFactor = "incomingDmgFactor"; //承伤系数变低
     }
     public class AstroDocument : DocumentBase
     {

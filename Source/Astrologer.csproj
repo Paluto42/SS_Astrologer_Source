@@ -122,8 +122,9 @@
     <Compile Include="Building\TCP_NightGenerator.cs" />
     <Compile Include="Comp\CompEquippable_AKAbility.cs" />
     <Compile Include="Comp\TCP_DrafterGraphic.cs" />
-    <Compile Include="Comp\TCP_IgnoreStagger.cs" />
+    <Compile Include="Comp\TCP_EffectWorn.cs" />
     <Compile Include="Comp\TCP_TimedRemove.cs" />
+    <Compile Include="Ability\HarmonyPatchs\Patch_IncomingDamageFactor.cs" />
     <Compile Include="HarmonyPatches\Patch_JobDriver.cs" />
     <Compile Include="OperatorDef\RPEW_AstroDoc.cs" />
     <Compile Include="Thing\ApparelAstro.cs" />

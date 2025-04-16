@@ -16,7 +16,7 @@ namespace Astrologer
         }
     }
     [StaticConstructorOnStartup]
-    public class TC_NightGenerator : CompPowerPlantSolar
+    public class TC_NightGenerator : CompPowerPlant
     {
         private static readonly Vector2 BarSize = new(1.5f, 0.15f);
 
@@ -54,6 +54,12 @@ namespace Astrologer
                 }
                 return (float)(num - num2) / (float)num;
             }
+        }
+
+        public override void PostExposeData()
+        {
+            bool powerOnInt = PowerOn;
+            Scribe_Values.Look(ref powerOnInt, "powerOn", defaultValue: true);
         }
 
         public override void PostDraw()

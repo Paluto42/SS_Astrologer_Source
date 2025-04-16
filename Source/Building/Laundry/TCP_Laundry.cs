@@ -98,6 +98,7 @@ namespace Astrologer.Laundry
             }
         }
 
+        //要写
         public override string CompInspectStringExtra()
         {
             return $"LOF_LaundryWork".Translate(tickActived, Interval);

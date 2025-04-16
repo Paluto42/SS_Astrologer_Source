@@ -508,11 +508,9 @@
         </castConditions>
         <compEffectList>
             <li Class="AKA_Ability.AbilityEffect.AE_ReloadFromThing">
-                <reloadProp>
-                    <target>LOF_Ability_Coagulate</target>
-                    <ammoDef>MedicineIndustrial</ammoDef>
-                    <ammoCountPerCharge>1</ammoCountPerCharge>
-                </reloadProp>
+                <abilityToReload>LOF_Ability_Coagulate</abilityToReload>
+                <ammoDef>MedicineIndustrial</ammoDef>
+                <ammoCountPerCharge>1</ammoCountPerCharge>
             </li>
         </compEffectList>
         <useSounds>

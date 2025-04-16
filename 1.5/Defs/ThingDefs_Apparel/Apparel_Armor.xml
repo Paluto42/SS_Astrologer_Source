@@ -516,7 +516,9 @@
                     <li>LOF_Ability_InsightCoagulate</li>
                 </abilities>
             </li>
-            <li Class="Astrologer.TCP_IgnoreStagger"/>
+            <li Class="Astrologer.TCP_EffectWorn">
+                <effect>ignoreStagger</effect>
+            </li>
         </comps>
         <recipeMaker>
             <!--researchPrerequisite>ComplexClothing</researchPrerequisite-->
