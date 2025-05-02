@@ -28,16 +28,12 @@
             <ComponentIndustrial>1</ComponentIndustrial>
         </costList>
         <recipeMaker>
-            <!--researchPrerequisite>GasOperation</researchPrerequisite-->
+            <researchPrerequisite>Gunsmithing</researchPrerequisite>
             <recipeUsers></recipeUsers>
             <skillRequirements>
                 <Crafting>5</Crafting>
             </skillRequirements>
         </recipeMaker>
-        <!--thingSetMakerTags>
-            <li>SingleUseWeapon</li>
-            <li>RewardStandardLowFreq</li>
-        </thingSetMakerTags-->
         <verbs>
             <li>
                 <verbClass>Verb_ShootOneUse</verbClass>
@@ -94,16 +90,12 @@
             <ComponentIndustrial>1</ComponentIndustrial>
         </costList>
         <recipeMaker>
-            <!--researchPrerequisite>GasOperation</researchPrerequisite-->
+            <researchPrerequisite>Gunsmithing</researchPrerequisite>
             <recipeUsers></recipeUsers>
             <skillRequirements>
                 <Crafting>5</Crafting>
             </skillRequirements>
         </recipeMaker>
-        <!--thingSetMakerTags>
-            <li>SingleUseWeapon</li>
-            <li>RewardStandardLowFreq</li>
-        </thingSetMakerTags-->
         <verbs>
             <li>
                 <verbClass>Verb_Shoot</verbClass>

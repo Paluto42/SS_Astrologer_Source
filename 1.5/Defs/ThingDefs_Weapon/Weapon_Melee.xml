@@ -83,7 +83,7 @@
             <WoodLog>10</WoodLog>
         </costList>
         <recipeMaker>
-            <!--researchPrerequisite>LongBlades</researchPrerequisite-->
+            <researchPrerequisite>Smithing</researchPrerequisite>
             <recipeUsers></recipeUsers>
             <skillRequirements>
                 <Crafting>5</Crafting>

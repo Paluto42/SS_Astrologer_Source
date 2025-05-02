@@ -57,7 +57,7 @@
             <ComponentIndustrial>3</ComponentIndustrial>
         </costList>
         <recipeMaker>
-            <researchPrerequisite>GasOperation</researchPrerequisite>
+            <researchPrerequisite>BlowbackOperation</researchPrerequisite>
             <recipeUsers></recipeUsers>
             <skillRequirements>
                 <Crafting>5</Crafting>
@@ -270,7 +270,7 @@
             <ComponentIndustrial>3</ComponentIndustrial>
         </costList>
         <recipeMaker>
-            <researchPrerequisite>ChargedShot</researchPrerequisite>
+            <researchPrerequisite>PrecisionRifling</researchPrerequisite>
             <recipeUsers Inherit="false">
                 <li>LOF_StellarFoundry</li>
             </recipeUsers>

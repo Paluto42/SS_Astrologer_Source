@@ -71,7 +71,7 @@
         <designationCategory>Production</designationCategory>
         <uiOrder>2530</uiOrder>
         <surfaceType>Item</surfaceType>
-        <constructionSkillPrerequisite>6</constructionSkillPrerequisite>
+        <constructionSkillPrerequisite>4</constructionSkillPrerequisite>
         <placeWorkers>
             <li>PlaceWorker_ShowFacilitiesConnections</li>
             <li>PlaceWorker_PreventInteractionSpotOverlap</li>
@@ -145,7 +145,7 @@
         <designationCategory>Production</designationCategory>
         <uiOrder>2530</uiOrder>
         <surfaceType>Item</surfaceType>
-        <constructionSkillPrerequisite>6</constructionSkillPrerequisite>
+        <constructionSkillPrerequisite>5</constructionSkillPrerequisite>
         <placeWorkers>
             <li>PlaceWorker_ShowFacilitiesConnections</li>
             <li>PlaceWorker_PreventInteractionSpotOverlap</li>
@@ -158,7 +158,7 @@
     <ThingDef ParentName="BenchBase">
         <defName>LOF_StellarStove</defName>
         <label>恒星熔炉</label>
-        <description>desc.</description>
+        <description>可以冶炼星辉钢.</description>
         <thingClass>Building_WorkTable</thingClass>
         <drawerType>MapMeshAndRealTime</drawerType>
         <graphicData>
@@ -195,8 +195,8 @@
         <hasInteractionCell>True</hasInteractionCell>
         <interactionCellOffset>(0,0,-1)</interactionCellOffset>
         <surfaceType>Item</surfaceType>
-        <recipes>
-        </recipes>
+        <constructionSkillPrerequisite>4</constructionSkillPrerequisite>
+        <recipes></recipes>
         <inspectorTabs>
             <li>ITab_Bills</li>
         </inspectorTabs>
