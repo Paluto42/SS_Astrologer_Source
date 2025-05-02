@@ -6,7 +6,7 @@
         <label>星辉钢</label>
         <description>星辉钢.</description>
         <graphicData>
-            <texPath>Things/Item/Resource/Plasteel</texPath>
+            <texPath>Things/Item/Resource/StarlightIron</texPath>
             <graphicClass>Graphic_StackCount</graphicClass>
         </graphicData>
         <soundInteract>Metal_Drop</soundInteract>
@@ -56,12 +56,12 @@
 
     <ThingDef ParentName="RoughPlantBase">
         <defName>LOF_Starlightgrass</defName>
-        <label>星光草</label>
+        <label>星光草球</label>
         <description>晨曦之中，造物主以此等超凡彰显其伟大。--启示录Ⅰ-光明之书</description>
         <stackLimit>200</stackLimit>
         <!--等待贴图-->
         <graphicData>
-            <texPath>Things/Item/Resource/PlantFoodRaw/Hay</texPath>
+            <texPath>Things/Item/Resource/StarlightGrass</texPath>
             <graphicClass>Graphic_StackCount</graphicClass>
         </graphicData>
         <statBases>

@@ -7,7 +7,7 @@
         <description>desc.</description>
         <possessionCount>10</possessionCount>
         <graphicData>
-            <texPath>Things/Item/Resource/Neutroamine</texPath>
+            <texPath>Things/Item/Drug/StarPotion</texPath>
             <graphicClass>Graphic_StackCount</graphicClass>
             <drawSize>0.90</drawSize>
         </graphicData>
@@ -33,7 +33,7 @@
             <HediffDef>LOF_NanoFluidHigh</HediffDef>
         </descriptionHyperlinks>
         <graphicData>
-            <texPath>Things/Item/Drug/Penoxycyline</texPath>
+            <texPath>Things/Item/Drug/NanoMechanicalFluid</texPath>
             <graphicClass>Graphic_StackCount</graphicClass>
         </graphicData>
         <socialPropernessMatters>false</socialPropernessMatters>

@@ -3,7 +3,7 @@
 
 	<XenotypeIconDef>
 		<defName>Astro_Icon</defName>
-		<texPath>UI/Icons/RK_icon</texPath>
+		<texPath>UI/Icons/AS_icon</texPath>
 	</XenotypeIconDef>
 
 
@@ -12,7 +12,7 @@
 		<label>占星师</label>
 		<description>desc.</description>
 		<descriptionShort></descriptionShort>
-		<iconPath>UI/Icons/RK_icon</iconPath>
+		<iconPath>UI/Icons/AS_icon</iconPath>
 		<displayPriority>-1270</displayPriority>
 		<factionlessGenerationWeight>0</factionlessGenerationWeight>
 		<inheritable>true</inheritable>
