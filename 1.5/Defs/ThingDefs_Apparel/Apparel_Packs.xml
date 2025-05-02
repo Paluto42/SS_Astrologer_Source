@@ -2,6 +2,76 @@
 <Defs>
 
     <ThingDef ParentName="Astro_ApparelBase">
+        <defName>LOF_MountaineeringPack</defName>
+        <label>登山包</label>
+        <description>登山包desc.</description>
+        <thingCategories Inherit="false">
+            <li>LOF_AS_Category_Apparel</li>
+        </thingCategories>
+        <!--等待贴图-->
+        <graphicData>
+            <texPath>Things/Apparel/LOF_MountaineeringPack/MountaineeringPack</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <!--占位,原版数值-->
+        <statBases>
+            <MaxHitPoints>120</MaxHitPoints>
+            <WorkToMake>6000</WorkToMake>
+            <Mass>2</Mass>
+            <EquipDelay>2</EquipDelay>
+        </statBases>
+        <stuffCategories>
+            <li>Fabric</li>
+            <li>Leathery</li>
+        </stuffCategories>
+        <costStuffCount>40</costStuffCount>
+        <apparel>
+            <wornGraphicPath>Things/Apparel/LOF_MountaineeringPack/MountaineeringPack</wornGraphicPath>
+            <wornGraphicData>
+                <renderUtilityAsPack>true</renderUtilityAsPack>
+                <north>
+                    <offset>(0,-0.05)</offset>
+                    <scale>(0.9,0.9)</scale>
+                </north>
+                <east>
+                    <offset>(0.05,0)</offset>
+                    <scale>(0.9,0.9)</scale>
+                </east>
+                <west>
+                    <offset>(-0.05,0)</offset>
+                    <scale>(0.9,0.9)</scale>
+                </west>
+            </wornGraphicData>
+            <countsAsClothingForNudity>false</countsAsClothingForNudity>
+            <developmentalStageFilter>Child, Adult</developmentalStageFilter>
+            <bodyPartGroups>
+                <li>Waist</li>
+            </bodyPartGroups>
+            <layers>
+                <li>Belt</li>
+            </layers>
+            <defaultOutfitTags>
+                <li>Worker</li>
+            </defaultOutfitTags>
+            <tags>
+                <li>Astrologer_Equipment</li>
+            </tags>
+        </apparel>
+        <recipeMaker>
+            <!--researchPrerequisite>ComplexClothing</researchPrerequisite-->
+            <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+            <workSkill>Crafting</workSkill>
+            <effectWorking>Tailor</effectWorking>
+            <soundWorking>Recipe_Tailor</soundWorking>
+            <recipeUsers>
+                <li>ElectricTailoringBench</li>
+                <li>HandTailoringBench</li>
+            </recipeUsers>
+            <unfinishedThingDef>UnfinishedPack</unfinishedThingDef>
+        </recipeMaker>
+    </ThingDef>
+
+    <ThingDef ParentName="Astro_ApparelBase">
         <defName>LOF_EmpactPack</defName>
         <tickerType>Normal</tickerType>
         <label>"AMA-2" EMP冲击背包</label>

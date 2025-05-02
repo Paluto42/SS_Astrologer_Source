@@ -10,7 +10,7 @@
         </targetTags>
         <workerClass>IncidentWorker_GiveQuest</workerClass>
         <questScriptDef>LOF_AdventurerJoins</questScriptDef>
-        <baseChance>0.1</baseChance>
+        <baseChance>0</baseChance>
         <pawnKind>LOF_PawnKind_Citizen</pawnKind>
         <populationEffect>IncreaseEasy</populationEffect>
     </IncidentDef>

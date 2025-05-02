@@ -87,8 +87,6 @@
             <li>Astro_Head_A</li>
             <li>Astro_Head_F</li>
         </forcedHeadTypes>
-        <biostatCpx>1</biostatCpx>
-        <biostatMet>1</biostatMet>
         <statOffsets>
         </statOffsets>
         <forcedTraits>

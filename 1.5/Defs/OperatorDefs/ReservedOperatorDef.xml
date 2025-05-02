@@ -44,6 +44,7 @@
         </backstoryAdultRange>
         <operatorID>LOF_VAbility_Astro</operatorID>
         <AKAbilities>
+            <li>LOF_Ability_IncreaseHarvest</li>
             <li>LOF_Ability_Monitor</li>
         </AKAbilities>
         <postEffects>

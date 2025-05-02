@@ -70,7 +70,55 @@
                 <li>Neck</li>
                 <li>Shoulders</li>
                 <li>Arms</li>
-                <li>Legs</li>
+                <!--li>Legs</li-->
+            </bodyPartGroups>
+            <layers>
+                <li>OnSkin</li>
+            </layers>
+            <defaultOutfitTags>
+                <li>Worker</li>
+            </defaultOutfitTags>
+            <tags>
+                <li>Astrologer_CitizenCloth</li>
+            </tags>
+        </apparel>
+    </ThingDef>
+
+    <ThingDef ParentName="Astro_ClothBase">
+        <defName>LOF_ShirtFrillOnepiece</defName>
+        <label>衬衫连衣裙</label>
+        <description>研究所人员统一配给的服装，轻便保暖，胸口烫印着繁星帝国的徽章\n基于占星师热爱探索的特质，穿戴连衣裙会增加研究速度.</description>
+        <!--等待贴图-->
+        <graphicData>
+            <texPath>Things/Apparel/LOF_ShirtFrillOnepiece/ShirtFrillOnepiece</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <!--占位,原版数值-->
+        <statBases>
+            <MaxHitPoints>100</MaxHitPoints>
+            <WorkToMake>2000</WorkToMake>
+            <Mass>0.18</Mass>
+            <StuffEffectMultiplierArmor>0.2</StuffEffectMultiplierArmor>
+            <StuffEffectMultiplierInsulation_Cold>0.22</StuffEffectMultiplierInsulation_Cold>
+            <StuffEffectMultiplierInsulation_Heat>0.10</StuffEffectMultiplierInsulation_Heat>
+            <EquipDelay>1.5</EquipDelay>
+        </statBases>
+        <equippedStatOffsets>
+            <ResearchSpeed>0.25</ResearchSpeed>
+        </equippedStatOffsets>
+        <stuffCategories>
+            <li>Fabric</li>
+            <li>Leathery</li>
+        </stuffCategories>
+        <costStuffCount>40</costStuffCount>
+        <apparel>
+            <wornGraphicPath>Things/Apparel/LOF_ShirtFrillOnepiece/ShirtFrillOnepiece</wornGraphicPath>
+            <bodyPartGroups>
+                <li>Torso</li>
+                <li>Neck</li>
+                <li>Shoulders</li>
+                <li>Arms</li>
+                <!--li>Legs</li-->
             </bodyPartGroups>
             <layers>
                 <li>OnSkin</li>
@@ -134,10 +182,10 @@
     <ThingDef ParentName="Astro_ClothBase">
         <defName>LOF_MountaineerPants</defName>
         <label>登山裤</label>
-        <description>在繁星帝国，很多占星师喜欢在夜间的山顶观星，这件登山裤很好的满足了她们对于保暖的需求</description>
+        <description>在繁星帝国，很多占星师喜欢在夜间的山顶观星，这件登山裤(丝袜)很好的满足了她们对于保暖的需求</description>
         <!--等待贴图-->
         <graphicData>
-            <texPath>Things/Pawn/Humanlike/Apparel/Pants/Pants</texPath>
+            <texPath>Things/Apparel/LOF_MountaineerPants/MountaineerPants</texPath>
             <graphicClass>Graphic_Single</graphicClass>
         </graphicData>
         <!--占位,原版数值-->
@@ -156,12 +204,12 @@
         </stuffCategories>
         <costStuffCount>40</costStuffCount>
         <apparel>
+            <wornGraphicPath>Things/Apparel/LOF_MountaineerPants/MountaineerPants</wornGraphicPath>
             <bodyPartGroups>
                 <li>Legs</li>
             </bodyPartGroups>
             <layers>
                 <li>OnSkin</li>
-                <li>Middle</li>
             </layers>
             <defaultOutfitTags>
                 <li>Worker</li>
