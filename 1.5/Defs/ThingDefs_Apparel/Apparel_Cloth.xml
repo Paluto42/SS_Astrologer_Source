@@ -41,7 +41,7 @@
         <description>研究所人员统一配给的服装，轻便保暖，胸口烫印着繁星帝国的徽章\n基于占星师热爱探索的特质，穿戴连衣裙会增加研究速度.</description>
         <!--等待贴图-->
         <graphicData>
-            <texPath>Things/Apparel/FrillOnepiece/FrillOnepiece</texPath>
+            <texPath>Things/Apparel/LOF_FrillOnepiece/FrillOnepiece</texPath>
             <graphicClass>Graphic_Single</graphicClass>
             <!--drawSize>(0.7, 0.7)</drawSize-->
         </graphicData>
@@ -64,7 +64,7 @@
         </stuffCategories>
         <costStuffCount>40</costStuffCount>
         <apparel>
-            <wornGraphicPath>Things/Apparel/FrillOnepiece/FrillOnepiece</wornGraphicPath>
+            <wornGraphicPath>Things/Apparel/LOF_FrillOnepiece/FrillOnepiece</wornGraphicPath>
             <bodyPartGroups>
                 <li>Torso</li>
                 <li>Neck</li>
@@ -90,7 +90,7 @@
         <description>在繁星帝国，很多占星师喜欢在夜间的山顶观星，这件登山服很好的满足了她们对于保暖的需求</description>
         <!--等待贴图-->
         <graphicData>
-            <texPath>Things/Pawn/Humanlike/Apparel/Parka/Parka</texPath>
+            <texPath>Things/Apparel/LOF_MountaineerOutfit/MountaineerOutfit</texPath>
             <graphicClass>Graphic_Single</graphicClass>
             <drawSize>0.90</drawSize>
         </graphicData>
@@ -110,7 +110,7 @@
         </stuffCategories>
         <costStuffCount>80</costStuffCount>
         <apparel>
-            <wornGraphicPath>Things/Pawn/Humanlike/Apparel/Parka/Parka</wornGraphicPath>
+            <wornGraphicPath>Things/Apparel/LOF_MountaineerOutfit/MountaineerOutfit</wornGraphicPath>
             <bodyPartGroups>
                 <li>Torso</li>
                 <li>Neck</li>

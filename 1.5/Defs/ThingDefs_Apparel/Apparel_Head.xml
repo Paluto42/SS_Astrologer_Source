@@ -116,7 +116,7 @@
         <description>轻量化全能型作战头盔，较高的锐防和普通的钝防,同时能过滤一定量的毒气吸入</description>
         <!--等待贴图-->
         <graphicData>
-            <texPath>Things/Pawn/Humanlike/Apparel/ReconArmorHelmet/ReconHelmet</texPath>
+            <texPath>Things/Apparel/LOF_LightHelmet/LightHelmet</texPath>
             <graphicClass>Graphic_Single</graphicClass>
             <drawSize>(0.9, 0.9)</drawSize>
         </graphicData>
@@ -148,7 +148,7 @@
             <Steel>20</Steel>
         </costList>
         <apparel>
-            <wornGraphicPath>Things/Pawn/Humanlike/Apparel/ReconArmorHelmet/ReconHelmet</wornGraphicPath>
+            <wornGraphicPath>Things/Apparel/LOF_LightHelmet/LightHelmet</wornGraphicPath>
             <bodyPartGroups>
                 <li>UpperHead</li>
             </bodyPartGroups>

@@ -31,7 +31,7 @@
         <label>鹰月</label>
         <description>一把暗红色的手炮.</description>
         <graphicData>
-            <texPath>Things/Weapons/Deagle44</texPath>
+            <texPath>Things/Weapons/EagleMoon</texPath>
             <graphicClass>Graphic_Single</graphicClass>
         </graphicData>
         <uiIconScale>1.5</uiIconScale>
@@ -85,7 +85,7 @@
         <label>格斗冲锋枪</label>
         <description>这把冲锋枪设计于占星帝国内战的时代，便宜和耐用是该枪的代名词.</description>
         <graphicData>
-            <texPath>Things/Item/Equipment/WeaponRanged/HeavySMG</texPath>
+            <texPath>Things/Weapons/CombatSMG</texPath>
             <graphicClass>Graphic_Single</graphicClass>
         </graphicData>
         <soundInteract>Interact_SMG</soundInteract>
@@ -139,7 +139,7 @@
         <label>破甲霰弹枪</label>
         <description>这是一把开罐器.</description>
         <graphicData>
-            <texPath>Things/Item/Equipment/WeaponRanged/ChainShotgun</texPath>
+            <texPath>Things/Weapons/PiercingShotgun</texPath>
             <graphicClass>Graphic_Single</graphicClass>
         </graphicData>
         <soundInteract>Interact_Shotgun</soundInteract>
@@ -245,7 +245,7 @@
         <label>"MK-5" 等离子心灵干扰步枪</label>
         <description>标准射手步枪,点击切换模式,此时该步枪每发子弹会有心灵错乱效果.</description>
         <graphicData>
-            <texPath>Things/Weapons/ChargeAMR</texPath>
+            <texPath>Things/Weapons/PsychicRifle</texPath>
             <graphicClass>Graphic_Single</graphicClass>
         </graphicData>
         <soundInteract>Interact_ChargeRifle</soundInteract>

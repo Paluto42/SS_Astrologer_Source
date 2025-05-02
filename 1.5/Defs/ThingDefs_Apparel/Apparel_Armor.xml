@@ -46,7 +46,7 @@
         <description>轻量化全能型作战服，较高的锐防和普通的钝防.\n能够监控并介入穿戴者的血液循环过程,增强生存能力和战斗持久力</description>
         <!--等待贴图-->
         <graphicData>
-            <texPath>Things/Pawn/Humanlike/Apparel/ReconArmor/ReconArmor</texPath>
+            <texPath>Things/Apparel/LOF_LightArmor/LightArmor</texPath>
             <graphicClass>Graphic_Single</graphicClass>
         </graphicData>
         <!--占位,原版数值-->
@@ -76,7 +76,7 @@
             <Steel>80</Steel>
         </costList>
         <apparel>
-            <wornGraphicPath>Things/Pawn/Humanlike/Apparel/ReconArmor/ReconArmor</wornGraphicPath>
+            <wornGraphicPath>Things/Apparel/LOF_LightArmor/LightArmor</wornGraphicPath>
             <bodyPartGroups>
                 <li>Torso</li>
                 <li>Neck</li>

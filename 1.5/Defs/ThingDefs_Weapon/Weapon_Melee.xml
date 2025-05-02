@@ -6,7 +6,7 @@
         <label>护身剑</label>
         <description>占星师社交用的礼仪剑.</description>
         <graphicData>
-            <texPath>Things/Item/Equipment/WeaponMelee/LongSword</texPath>
+            <texPath>Things/Weapons/CeremonialSword</texPath>
             <graphicClass>Graphic_Single</graphicClass>
         </graphicData>
         <!--占位,原版数值-->
