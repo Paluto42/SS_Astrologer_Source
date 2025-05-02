@@ -59,7 +59,6 @@
         <label>星光草球</label>
         <description>晨曦之中，造物主以此等超凡彰显其伟大。--启示录Ⅰ-光明之书</description>
         <stackLimit>200</stackLimit>
-        <!--等待贴图-->
         <graphicData>
             <texPath>Things/Item/Resource/StarlightGrass</texPath>
             <graphicClass>Graphic_StackCount</graphicClass>

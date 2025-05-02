@@ -1,19 +1,17 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-    <ThingDef ParentName="Astro_ApparelBase">
+    <!--ThingDef ParentName="Astro_ApparelBase">
         <defName>LOF_MountaineeringPack</defName>
         <label>登山包</label>
         <description>登山包desc.</description>
         <thingCategories Inherit="false">
             <li>LOF_AS_Category_Apparel</li>
         </thingCategories>
-        <!--等待贴图-->
         <graphicData>
             <texPath>Things/Apparel/LOF_MountaineeringPack/MountaineeringPack</texPath>
             <graphicClass>Graphic_Single</graphicClass>
         </graphicData>
-        <!--占位,原版数值-->
         <statBases>
             <MaxHitPoints>120</MaxHitPoints>
             <WorkToMake>6000</WorkToMake>
@@ -58,7 +56,6 @@
             </tags>
         </apparel>
         <recipeMaker>
-            <!--researchPrerequisite>ComplexClothing</researchPrerequisite-->
             <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
             <workSkill>Crafting</workSkill>
             <effectWorking>Tailor</effectWorking>
@@ -69,7 +66,7 @@
             </recipeUsers>
             <unfinishedThingDef>UnfinishedPack</unfinishedThingDef>
         </recipeMaker>
-    </ThingDef>
+    </ThingDef-->
 
     <ThingDef ParentName="Astro_ApparelBase">
         <defName>LOF_EmpactPack</defName>

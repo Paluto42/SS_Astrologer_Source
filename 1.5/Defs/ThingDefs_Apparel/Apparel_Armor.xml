@@ -44,7 +44,6 @@
         <defName>LOF_LightArmor</defName>
         <label>生存作战轻甲</label>
         <description>轻量化全能型作战服，较高的锐防和普通的钝防.\n能够监控并介入穿戴者的血液循环过程,增强生存能力和战斗持久力</description>
-        <!--等待贴图-->
         <graphicData>
             <texPath>Things/Apparel/LOF_LightArmor/LightArmor</texPath>
             <graphicClass>Graphic_Single</graphicClass>

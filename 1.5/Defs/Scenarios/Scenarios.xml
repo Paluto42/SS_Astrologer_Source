@@ -106,14 +106,6 @@
                     <def>StartingThing_Defined</def>
                     <thingDef>LOF_MountaineerOutfit</thingDef>
                 </li>
-                <li Class="ScenPart_StartingThing_Defined">
-                    <def>StartingThing_Defined</def>
-                    <thingDef>LOF_MountaineeringPack</thingDef>
-                </li>
-
-                <li Class="ScenPart_DisableMapGen">
-                    <def>DisableExostriderRemains</def>
-                </li>
             </parts>
         </scenario>
     </ScenarioDef>

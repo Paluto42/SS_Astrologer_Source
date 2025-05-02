@@ -114,7 +114,6 @@
         <defName>LOF_LightHelmet</defName>
         <label>生存作战头盔</label>
         <description>轻量化全能型作战头盔，较高的锐防和普通的钝防,同时能过滤一定量的毒气吸入</description>
-        <!--等待贴图-->
         <graphicData>
             <texPath>Things/Apparel/LOF_LightHelmet/LightHelmet</texPath>
             <graphicClass>Graphic_Single</graphicClass>

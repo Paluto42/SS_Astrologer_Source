@@ -39,11 +39,9 @@
         <defName>LOF_FrillOnepiece</defName>
         <label>连衣裙</label>
         <description>研究所人员统一配给的服装，轻便保暖，胸口烫印着繁星帝国的徽章\n基于占星师热爱探索的特质，穿戴连衣裙会增加研究速度.</description>
-        <!--等待贴图-->
         <graphicData>
             <texPath>Things/Apparel/LOF_FrillOnepiece/FrillOnepiece</texPath>
             <graphicClass>Graphic_Single</graphicClass>
-            <!--drawSize>(0.7, 0.7)</drawSize-->
         </graphicData>
         <!--占位,原版数值-->
         <statBases>
@@ -88,7 +86,6 @@
         <defName>LOF_ShirtFrillOnepiece</defName>
         <label>衬衫连衣裙</label>
         <description>研究所人员统一配给的服装，轻便保暖，胸口烫印着繁星帝国的徽章\n基于占星师热爱探索的特质，穿戴连衣裙会增加研究速度.</description>
-        <!--等待贴图-->
         <graphicData>
             <texPath>Things/Apparel/LOF_ShirtFrillOnepiece/ShirtFrillOnepiece</texPath>
             <graphicClass>Graphic_Single</graphicClass>
@@ -136,7 +133,6 @@
         <defName>LOF_MountaineerOutfit</defName>
         <label>登山服</label>
         <description>在繁星帝国，很多占星师喜欢在夜间的山顶观星，这件登山服很好的满足了她们对于保暖的需求</description>
-        <!--等待贴图-->
         <graphicData>
             <texPath>Things/Apparel/LOF_MountaineerOutfit/MountaineerOutfit</texPath>
             <graphicClass>Graphic_Single</graphicClass>
@@ -183,7 +179,6 @@
         <defName>LOF_MountaineerPants</defName>
         <label>登山裤</label>
         <description>在繁星帝国，很多占星师喜欢在夜间的山顶观星，这件登山裤(丝袜)很好的满足了她们对于保暖的需求</description>
-        <!--等待贴图-->
         <graphicData>
             <texPath>Things/Apparel/LOF_MountaineerPants/MountaineerPants</texPath>
             <graphicClass>Graphic_Single</graphicClass>
