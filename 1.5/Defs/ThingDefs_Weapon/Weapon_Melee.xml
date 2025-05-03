@@ -8,6 +8,7 @@
         <graphicData>
             <texPath>Things/Weapons/LOF_CeremonialSword</texPath>
             <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>1.25</drawSize>
         </graphicData>
         <!--占位,原版数值-->
         <statBases>

@@ -55,7 +55,7 @@
             <li>
                 <kindDef>Peaceful</kindDef>
                 <options>
-                    <LOF_PawnKind_Citizen>30</LOF_PawnKind_Citizen>
+                    <LOF_PawnKind_AstroCitizen>30</LOF_PawnKind_AstroCitizen>
                 </options>
             </li>
         </pawnGroupMakers>

@@ -320,7 +320,6 @@
             <graphicClass>Graphic_Single</graphicClass>
             <shaderType>CutoutComplex</shaderType>
         </graphicData>
-        <uiIconScale>1.25</uiIconScale>
         <!--占位,原版数值-->
         <statBases>
             <MaxHitPoints>80</MaxHitPoints>

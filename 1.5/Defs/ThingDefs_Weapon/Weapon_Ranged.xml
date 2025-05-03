@@ -32,8 +32,8 @@
         <graphicData>
             <texPath>Things/Weapons/LOF_EagleMoon</texPath>
             <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>1.25</drawSize>
         </graphicData>
-        <uiIconScale>1.5</uiIconScale>
         <soundInteract>Interact_Revolver</soundInteract>
         <weaponClasses>
             <li>RangedLight</li>
@@ -85,8 +85,8 @@
         <graphicData>
             <texPath>Things/Weapons/LOF_CombatSMG</texPath>
             <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>1.25</drawSize>
         </graphicData>
-        <uiIconScale>1.25</uiIconScale>
         <soundInteract>Interact_SMG</soundInteract>
         <weaponClasses>
             <li>RangedLight</li>
@@ -139,8 +139,8 @@
         <graphicData>
             <texPath>Things/Weapons/LOF_PiercingShotgun</texPath>
             <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>1.25</drawSize>
         </graphicData>
-        <uiIconScale>1.25</uiIconScale>
         <soundInteract>Interact_Shotgun</soundInteract>
         <weaponClasses>
         </weaponClasses>
@@ -189,8 +189,8 @@
         <graphicData>
             <texPath>Things/Weapons/ChargeShotgun</texPath>
             <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>1.25</drawSize>
         </graphicData>
-        <uiIconScale>1.25</uiIconScale>
         <soundInteract>Interact_Shotgun</soundInteract>
         <weaponClasses>
         </weaponClasses>
@@ -244,8 +244,8 @@
         <graphicData>
             <texPath>Things/Weapons/LOF_PsychicRifle</texPath>
             <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>1.25</drawSize>
         </graphicData>
-        <uiIconScale>1.25</uiIconScale>
         <soundInteract>Interact_ChargeRifle</soundInteract>
         <weaponClasses>
             <li>RangedHeavy</li>
@@ -321,8 +321,8 @@
         <graphicData>
             <texPath>Things/Weapons/LOF_AMSR</texPath>
             <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>1.25</drawSize>
         </graphicData>
-        <uiIconScale>1.25</uiIconScale>
         <soundInteract>Interact_ChargeRifle</soundInteract>
         <weaponClasses>
             <li>RangedHeavy</li>
@@ -369,8 +369,9 @@
         <comps>
             <li Class="Astrologer.TCP_DrafterGraphic">
                 <graphicData>
-                    <texPath>Things/Weapons/Deagle44</texPath>
+                    <texPath>Things/Weapons/LOF_AMSR</texPath>
                     <graphicClass>Graphic_Single</graphicClass>
+                    <drawSize>1.25</drawSize>
                 </graphicData>
             </li>
             <li Class="AKA_Ability.TCP_AKATracker">
@@ -408,8 +409,8 @@
         <graphicData>
             <texPath>Things/Weapons/LOF_Sagitta</texPath>
             <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>1.25</drawSize>
         </graphicData>
-        <uiIconScale>1.25</uiIconScale>
         <soundInteract>Interact_ChargeRifle</soundInteract>
         <weaponClasses>
             <li>RangedHeavy</li>
@@ -457,8 +458,9 @@
         <comps>
             <li Class="Astrologer.TCP_DrafterGraphic">
                 <graphicData>
-                    <texPath>Things/Weapons/Deagle44</texPath>
+                    <texPath>Things/Weapons/LOF_Sagitta</texPath>
                     <graphicClass>Graphic_Single</graphicClass>
+                    <drawSize>1.25</drawSize>
                 </graphicData>
             </li>
             <li Class="AKA_Ability.TCP_AKATracker">
@@ -618,7 +620,7 @@
             <!--实验征召贴图-->
             <li Class="Astrologer.TCP_DrafterGraphic">
                 <graphicData>
-                    <texPath>Things/Weapons/Deagle44</texPath>
+                    <texPath>Things/Weapons/ChargeSniper</texPath>
                     <graphicClass>Graphic_Single</graphicClass>
                 </graphicData>
             </li>
