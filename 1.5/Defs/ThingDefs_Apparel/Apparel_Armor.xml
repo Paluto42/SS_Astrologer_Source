@@ -71,7 +71,8 @@
         <!--材料-->
         <costList>
             <Cloth>40</Cloth>
-            <Steel>80</Steel>
+            <Steel>40</Steel>
+            <LOF_Resource_StarlightIron>40</LOF_Resource_StarlightIron>
         </costList>
         <apparel>
             <wornGraphicPath>Things/Apparel/LOF_LightArmor/LightArmor</wornGraphicPath>
@@ -157,7 +158,8 @@
         <!--材料-->
         <costList>
             <Cloth>40</Cloth>
-            <Steel>80</Steel>
+            <Steel>40</Steel>
+            <LOF_Resource_StarlightIron>60</LOF_Resource_StarlightIron>
         </costList>
         <apparel>
             <wornGraphicPath>Things/Pawn/Humanlike/Apparel/PowerArmor/PowerArmor</wornGraphicPath>
@@ -214,7 +216,8 @@
         <!--材料-->
         <costList>
             <Cloth>40</Cloth>
-            <Steel>80</Steel>
+            <Steel>40</Steel>
+            <LOF_Resource_StarlightIron>60</LOF_Resource_StarlightIron>
         </costList>
         <apparel>
             <wornGraphicPath>Things/Pawn/Humanlike/Apparel/ReconArmor/ReconArmor</wornGraphicPath>
@@ -320,7 +323,8 @@
         <!--材料-->
         <costList>
             <Cloth>40</Cloth>
-            <Steel>80</Steel>
+            <Steel>20</Steel>
+            <LOF_Resource_StarlightIron>40</LOF_Resource_StarlightIron>
         </costList>
         <apparel>
             <wornGraphicPath>Things/Pawn/Humanlike/Apparel/ReconArmor/ReconArmor</wornGraphicPath>
@@ -390,7 +394,8 @@
         <!--材料-->
         <costList>
             <ComponentSpacer>4</ComponentSpacer>
-            <Plasteel>100</Plasteel>
+            <Plasteel>40</Plasteel>
+            <LOF_Resource_StarlightIron>100</LOF_Resource_StarlightIron>
             <Uranium>20</Uranium>
         </costList>
         <apparel>
@@ -490,7 +495,8 @@
         <!--材料-->
         <costList>
             <ComponentSpacer>4</ComponentSpacer>
-            <Plasteel>100</Plasteel>
+            <Plasteel>40</Plasteel>
+            <LOF_Resource_StarlightIron>100</LOF_Resource_StarlightIron>
             <Uranium>20</Uranium>
         </costList>
         <apparel>

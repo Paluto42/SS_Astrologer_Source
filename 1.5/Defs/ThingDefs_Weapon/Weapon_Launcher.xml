@@ -86,7 +86,8 @@
             <RangedWeapon_Cooldown>5</RangedWeapon_Cooldown>
         </statBases>
         <costList>
-            <Steel>40</Steel>
+            <Steel>20</Steel>
+            <LOF_Resource_StarlightIron>20</LOF_Resource_StarlightIron>
             <ComponentIndustrial>1</ComponentIndustrial>
         </costList>
         <recipeMaker>

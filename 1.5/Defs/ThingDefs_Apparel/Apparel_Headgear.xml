@@ -26,7 +26,9 @@
         <smeltable>false</smeltable>
         <costList>
             <Cloth>10</Cloth>
-            <Steel>20</Steel>
+            <Uranium>10</Uranium>
+            <ComponentSpacer>2</ComponentSpacer>
+            <LOF_Resource_StarlightIron>30</LOF_Resource_StarlightIron>
         </costList>
         <apparel>
             <bodyPartGroups>
@@ -87,7 +89,8 @@
         <smeltable>false</smeltable>
         <costList>
             <Cloth>10</Cloth>
-            <Steel>20</Steel>
+            <ComponentSpacer>2</ComponentSpacer>
+            <LOF_Resource_StarlightIron>30</LOF_Resource_StarlightIron>
         </costList>
         <apparel>
             <bodyPartGroups>
@@ -174,7 +177,8 @@
         <smeltable>false</smeltable>
         <costList>
             <Cloth>10</Cloth>
-            <Steel>20</Steel>
+            <ComponentSpacer>2</ComponentSpacer>
+            <LOF_Resource_StarlightIron>30</LOF_Resource_StarlightIron>
         </costList>
         <apparel>
             <bodyPartGroups>

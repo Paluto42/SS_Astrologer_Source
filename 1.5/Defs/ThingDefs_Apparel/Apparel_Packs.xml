@@ -90,10 +90,9 @@
             <PackRadius>4.9</PackRadius>
             <EquipDelay>2</EquipDelay>
         </statBases>
-        <stuffCategories>
-            <li>Metallic</li>
-        </stuffCategories>
-        <costStuffCount>20</costStuffCount>
+        <costList>
+            <LOF_Resource_StarlightIron>20</LOF_Resource_StarlightIron>
+        </costList>
         <comps>
             <li Class="AKA_Ability.TCP_AKATracker">
                 <abilities>

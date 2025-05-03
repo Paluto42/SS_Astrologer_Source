@@ -139,7 +139,7 @@
         </comps-->
         <costList>
             <Cloth>10</Cloth>
-            <Steel>20</Steel>
+            <LOF_Resource_StarlightIron>20</LOF_Resource_StarlightIron>
         </costList>
         <apparel>
             <wornGraphicPath>Things/Apparel/LOF_LightHelmet/LightHelmet</wornGraphicPath>
@@ -191,7 +191,7 @@
         <!--材料-->
         <costList>
             <Cloth>10</Cloth>
-            <Steel>20</Steel>
+            <LOF_Resource_StarlightIron>40</LOF_Resource_StarlightIron>
         </costList>
         <apparel>
             <wornGraphicPath>Things/Pawn/Humanlike/Apparel/ReconArmorHelmet/ReconHelmet</wornGraphicPath>
@@ -241,7 +241,7 @@
         <!--材料-->
         <costList>
             <Cloth>10</Cloth>
-            <Steel>20</Steel>
+            <LOF_Resource_StarlightIron>40</LOF_Resource_StarlightIron>
         </costList>
         <apparel>
             <wornGraphicPath>Things/Pawn/Humanlike/Apparel/ReconArmorHelmet/ReconHelmet</wornGraphicPath>
@@ -290,7 +290,7 @@
         <!--材料-->
         <costList>
             <Cloth>10</Cloth>
-            <Steel>20</Steel>
+            <LOF_Resource_StarlightIron>20</LOF_Resource_StarlightIron>
         </costList>
         <apparel>
             <wornGraphicPath>Things/Pawn/Humanlike/Apparel/ReconArmorHelmet/ReconHelmet</wornGraphicPath>
