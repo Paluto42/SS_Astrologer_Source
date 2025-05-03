@@ -115,6 +115,7 @@
             <graphicClass>Graphic_Single</graphicClass>
             <drawSize>(0.9, 0.9)</drawSize>
         </graphicData>
+        <uiIconScale>1.25</uiIconScale>
         <!--占位,原版数值-->
         <statBases>
             <MaxHitPoints>160</MaxHitPoints>

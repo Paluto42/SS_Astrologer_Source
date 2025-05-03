@@ -162,7 +162,6 @@
                 <li>Arms</li>
             </bodyPartGroups>
             <layers>
-                <li>OnSkin</li>
                 <li>Shell</li>
             </layers>
             <defaultOutfitTags>

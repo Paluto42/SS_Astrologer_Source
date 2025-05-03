@@ -86,6 +86,7 @@
             <texPath>Things/Weapons/LOF_CombatSMG</texPath>
             <graphicClass>Graphic_Single</graphicClass>
         </graphicData>
+        <uiIconScale>1.25</uiIconScale>
         <soundInteract>Interact_SMG</soundInteract>
         <weaponClasses>
             <li>RangedLight</li>
@@ -139,6 +140,7 @@
             <texPath>Things/Weapons/LOF_PiercingShotgun</texPath>
             <graphicClass>Graphic_Single</graphicClass>
         </graphicData>
+        <uiIconScale>1.25</uiIconScale>
         <soundInteract>Interact_Shotgun</soundInteract>
         <weaponClasses>
         </weaponClasses>
@@ -188,6 +190,7 @@
             <texPath>Things/Weapons/ChargeShotgun</texPath>
             <graphicClass>Graphic_Single</graphicClass>
         </graphicData>
+        <uiIconScale>1.25</uiIconScale>
         <soundInteract>Interact_Shotgun</soundInteract>
         <weaponClasses>
         </weaponClasses>
@@ -242,6 +245,7 @@
             <texPath>Things/Weapons/LOF_PsychicRifle</texPath>
             <graphicClass>Graphic_Single</graphicClass>
         </graphicData>
+        <uiIconScale>1.25</uiIconScale>
         <soundInteract>Interact_ChargeRifle</soundInteract>
         <weaponClasses>
             <li>RangedHeavy</li>
@@ -318,6 +322,7 @@
             <texPath>Things/Weapons/LOF_AMSR</texPath>
             <graphicClass>Graphic_Single</graphicClass>
         </graphicData>
+        <uiIconScale>1.25</uiIconScale>
         <soundInteract>Interact_ChargeRifle</soundInteract>
         <weaponClasses>
             <li>RangedHeavy</li>
@@ -404,6 +409,7 @@
             <texPath>Things/Weapons/LOF_Sagitta</texPath>
             <graphicClass>Graphic_Single</graphicClass>
         </graphicData>
+        <uiIconScale>1.25</uiIconScale>
         <soundInteract>Interact_ChargeRifle</soundInteract>
         <weaponClasses>
             <li>RangedHeavy</li>

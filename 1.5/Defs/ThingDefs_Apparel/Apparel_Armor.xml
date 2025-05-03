@@ -47,6 +47,7 @@
             <texPath>Things/Apparel/LOF_LightArmor/LightArmor</texPath>
             <graphicClass>Graphic_Single</graphicClass>
         </graphicData>
+        <uiIconScale>1.25</uiIconScale>
         <!--占位,原版数值-->
         <statBases>
             <MaxHitPoints>260</MaxHitPoints>

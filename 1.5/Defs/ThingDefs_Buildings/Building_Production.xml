@@ -31,9 +31,8 @@
         <thingCategories Inherit="false" />
         <size>(5,2)</size>
         <costList>
-            <Steel>200</Steel>
-            <ComponentIndustrial>12</ComponentIndustrial>
-            <ComponentSpacer>2</ComponentSpacer>
+            <Steel>150</Steel>
+            <ComponentIndustrial>5</ComponentIndustrial>
         </costList>
         <comps>
             <li Class="CompProperties_AffectedByFacilities">
@@ -110,7 +109,7 @@
         <thingCategories Inherit="false" />
         <size>(5,2)</size>
         <costList>
-            <Steel>200</Steel>
+            <LOF_Resource_StarlightIron>200</LOF_Resource_StarlightIron>
             <ComponentIndustrial>12</ComponentIndustrial>
             <ComponentSpacer>2</ComponentSpacer>
         </costList>
