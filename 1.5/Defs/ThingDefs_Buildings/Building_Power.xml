@@ -66,9 +66,9 @@
         <uiOrder>2100</uiOrder>
         <!--designationHotKey>Misc5</designationHotKey-->
         <constructEffect>ConstructMetal</constructEffect>
-        <!--researchPrerequisites>
-            <li>SolarPanels</li>
-        </researchPrerequisites-->
+        <researchPrerequisites>
+            <li>LOF_Research_NightGenerator</li>
+        </researchPrerequisites>
         <constructionSkillPrerequisite>6</constructionSkillPrerequisite>
     </ThingDef>
 

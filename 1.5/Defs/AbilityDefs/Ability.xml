@@ -400,7 +400,7 @@
         <compEffectList>
             <li Class="Astrologer.Ability.AE_DeployBuilding">
                 <building>LOF_ActivatedPulsePack</building>
-                <apparel>LOF_EmpactPack</apparel>
+                <apparel>LOF_Equip_EmpactPack</apparel>
             </li>
             <li Class="AKA_Ability.AbilityEffect.AE_CostChargeStatic">
                 <cost>1</cost>

@@ -11,14 +11,13 @@
             </defaultOutfitTags>
         </apparel>
         <recipeMaker>
-            <!--researchPrerequisite>ComplexClothing</researchPrerequisite-->
+            <researchPrerequisite>LOF_Research_BaseArmor</researchPrerequisite>
             <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
             <workSkill>Crafting</workSkill>
             <effectWorking>Smith</effectWorking>
             <soundWorking>Recipe_Smith</soundWorking>
             <recipeUsers>
-                <li>ElectricSmithy</li>
-                <li>FueledSmithy</li>
+                <li>LOF_FabricationBench</li>
             </recipeUsers>
             <unfinishedThingDef>UnfinishedArmor</unfinishedThingDef>
             <defaultIngredientFilter>
@@ -35,9 +34,6 @@
                 </disallowedThingDefs>
             </defaultIngredientFilter>
         </recipeMaker>
-        <!--tradeTags>
-            <li>Clothing</li>
-        </tradeTags-->
     </ThingDef>
 
     <ThingDef ParentName="Astro_ApparelBase">
@@ -84,7 +80,7 @@
             </defaultOutfitTags>
         </apparel>
         <recipeMaker>
-            <!--researchPrerequisite>ComplexClothing</researchPrerequisite-->
+            <researchPrerequisite>LOF_Research_BaseCloth</researchPrerequisite>
             <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
             <workSkill>Crafting</workSkill>
             <effectWorking>Tailor</effectWorking>
@@ -141,7 +137,6 @@
                 <hediff>LOF_Hediff_Airpurifier</hediff>
             </li>
         </comps-->
-        <!--材料-->
         <costList>
             <Cloth>10</Cloth>
             <Steel>20</Steel>
@@ -159,7 +154,6 @@
             </tags>
         </apparel>
         <recipeMaker>
-            <!--researchPrerequisite>ComplexClothing</researchPrerequisite-->
             <skillRequirements>
                 <Crafting>8</Crafting>
             </skillRequirements>
@@ -209,7 +203,7 @@
             </layers>
         </apparel>
         <recipeMaker>
-            <!--researchPrerequisite>ComplexClothing</researchPrerequisite-->
+            <researchPrerequisite>LOF_Research_SeriesArmor_MPE</researchPrerequisite>
             <skillRequirements>
                 <Crafting>8</Crafting>
             </skillRequirements>
@@ -259,7 +253,7 @@
             </layers>
         </apparel>
         <recipeMaker>
-            <!--researchPrerequisite>ComplexClothing</researchPrerequisite-->
+            <researchPrerequisite>LOF_Research_MultiArmor</researchPrerequisite>
             <skillRequirements>
                 <Crafting>8</Crafting>
             </skillRequirements>
@@ -308,7 +302,7 @@
             </layers>
         </apparel>
         <recipeMaker>
-            <!--researchPrerequisite>ComplexClothing</researchPrerequisite-->
+            <researchPrerequisite>LOF_Research_MultiArmor</researchPrerequisite>
             <skillRequirements>
                 <Crafting>8</Crafting>
             </skillRequirements>

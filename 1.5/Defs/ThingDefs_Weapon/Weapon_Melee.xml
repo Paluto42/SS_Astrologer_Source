@@ -6,7 +6,7 @@
         <label>护身剑</label>
         <description>占星师社交用的礼仪剑.</description>
         <graphicData>
-            <texPath>Things/Weapons/CeremonialSword</texPath>
+            <texPath>Things/Weapons/LOF_CeremonialSword</texPath>
             <graphicClass>Graphic_Single</graphicClass>
         </graphicData>
         <!--占位,原版数值-->
@@ -24,7 +24,7 @@
             <WoodLog>10</WoodLog>
         </costList>
         <recipeMaker>
-            <researchPrerequisite>LongBlades</researchPrerequisite>
+            <researchPrerequisite>LOF_Research_BaseMelee</researchPrerequisite>
             <recipeUsers></recipeUsers>
             <skillRequirements>
                 <Crafting>5</Crafting>
@@ -80,18 +80,14 @@
         </equippedStatOffsets-->
         <costList>
             <Steel>60</Steel>
-            <WoodLog>10</WoodLog>
         </costList>
         <recipeMaker>
-            <researchPrerequisite>Smithing</researchPrerequisite>
+            <researchPrerequisite>LOF_Research_BaseMelee</researchPrerequisite>
             <recipeUsers></recipeUsers>
             <skillRequirements>
                 <Crafting>5</Crafting>
             </skillRequirements>
         </recipeMaker>
-        <!--thingSetMakerTags>
-            <li>RewardStandardQualitySuper</li>
-        </thingSetMakerTags-->
         <tools>
             <li>
                 <label>拳击</label>

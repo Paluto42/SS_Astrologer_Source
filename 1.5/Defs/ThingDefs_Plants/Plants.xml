@@ -20,7 +20,7 @@
             <growDays>7</growDays>
             <dieIfLeafless>true</dieIfLeafless>
             <harvestTag>Standard</harvestTag>
-            <harvestedThingDef>LOF_Starlightgrass</harvestedThingDef>
+            <harvestedThingDef>LOF_Resource_Starlightgrass</harvestedThingDef>
             <harvestYield>8</harvestYield>
             <sowMinSkill>4</sowMinSkill>
             <sowTags>

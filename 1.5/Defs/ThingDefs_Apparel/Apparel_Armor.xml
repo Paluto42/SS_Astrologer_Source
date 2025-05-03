@@ -11,14 +11,13 @@
             </defaultOutfitTags>
         </apparel>
         <recipeMaker>
-            <!--researchPrerequisite>ComplexClothing</researchPrerequisite-->
+            <researchPrerequisite>LOF_Research_BaseArmor</researchPrerequisite>
             <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
             <workSkill>Crafting</workSkill>
             <effectWorking>Smith</effectWorking>
             <soundWorking>Recipe_Smith</soundWorking>
             <recipeUsers>
-                <li>ElectricSmithy</li>
-                <li>FueledSmithy</li>
+                <li>LOF_FabricationBench</li>
             </recipeUsers>
             <unfinishedThingDef>UnfinishedMetallicTechArmor</unfinishedThingDef>
             <defaultIngredientFilter>
@@ -92,7 +91,6 @@
             </tags>
         </apparel>
         <recipeMaker>
-            <!--researchPrerequisite>ComplexClothing</researchPrerequisite-->
             <skillRequirements>
                 <Crafting>8</Crafting>
             </skillRequirements>
@@ -103,7 +101,7 @@
     <ThingDef ParentName="Astro_ArmorBase">
         <defName>LOF_StandardArmor</defName>
         <label>"MPE-3" 制式装甲</label>
-        <description>"MPE-3"制式装甲，可以发射动能火箭弹（需要装填钢铁），但是精度较低</description>
+        <description>"MPE-3"制式装甲，可以发射动能火箭弹(需要装填钢铁),但是精度较低.</description>
         <!--等待贴图-->
         <graphicData>
             <texPath>Things/Pawn/Humanlike/Apparel/PowerArmor/PowerArmor</texPath>
@@ -176,7 +174,7 @@
             </layers>
         </apparel>
         <recipeMaker>
-            <!--researchPrerequisite>ComplexClothing</researchPrerequisite-->
+            <researchPrerequisite>LOF_Research_SeriesArmor_MPE</researchPrerequisite>
             <skillRequirements>
                 <Crafting>8</Crafting>
             </skillRequirements>
@@ -233,7 +231,7 @@
             </layers>
         </apparel>
         <recipeMaker>
-            <!--researchPrerequisite>ComplexClothing</researchPrerequisite-->
+            <researchPrerequisite>LOF_Research_MultiArmor</researchPrerequisite>
             <skillRequirements>
                 <Crafting>8</Crafting>
             </skillRequirements>
@@ -339,7 +337,7 @@
             </layers>
         </apparel>
         <recipeMaker>
-            <!--researchPrerequisite>ComplexClothing</researchPrerequisite-->
+            <researchPrerequisite>LOF_Research_MultiArmor</researchPrerequisite>
             <skillRequirements>
                 <Crafting>8</Crafting>
             </skillRequirements>
@@ -436,7 +434,10 @@
             </li>
         </comps>
         <recipeMaker>
-            <!--researchPrerequisite>ComplexClothing</researchPrerequisite-->
+            <researchPrerequisite>LOF_Research_TwilightKnight</researchPrerequisite>
+            <recipeUsers Inherit="false">
+                <li>LOF_StellarFoundry</li>
+            </recipeUsers>
             <skillRequirements>
                 <Crafting>8</Crafting>
             </skillRequirements>
@@ -520,7 +521,10 @@
             </li>
         </comps>
         <recipeMaker>
-            <!--researchPrerequisite>ComplexClothing</researchPrerequisite-->
+            <researchPrerequisite>LOF_Research_TwilightKnight</researchPrerequisite>
+            <recipeUsers Inherit="false">
+                <li>LOF_StellarFoundry</li>
+            </recipeUsers>
             <skillRequirements>
                 <Crafting>8</Crafting>
             </skillRequirements>

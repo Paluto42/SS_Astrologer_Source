@@ -26,7 +26,7 @@
             <li>
                 <filter>
                     <thingDefs>
-                        <li>LOF_Starlightgrass</li>
+                        <li>LOF_Resource_Starlightgrass</li>
                     </thingDefs>
                 </filter>
                 <count>25</count>
@@ -35,11 +35,11 @@
         <fixedIngredientFilter>
             <thingDefs>
                 <li>Steel</li>
-                <li>LOF_Starlightgrass</li>
+                <li>LOF_Resource_Starlightgrass</li>
             </thingDefs>
         </fixedIngredientFilter>
         <products>
-            <LOF_Thing_StarlightIron>25</LOF_Thing_StarlightIron>
+            <LOF_Resource_StarlightIron>25</LOF_Resource_StarlightIron>
         </products>
         <skillRequirements>
             <Crafting>6</Crafting>

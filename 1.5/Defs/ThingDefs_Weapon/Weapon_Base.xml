@@ -59,7 +59,7 @@
             <unfinishedThingDef>UnfinishedWeapon</unfinishedThingDef>
         </recipeMaker>
         <tradeTags>
-            <li>AstrologerWeapon</li>
+            <li>Astrologer_Weapon</li>
         </tradeTags>
     </ThingDef>
 
@@ -109,7 +109,7 @@
             <li>Ranged</li>
         </weaponClasses>
         <tradeTags>
-            <li>LOF_AS_Category_WeaponRanged</li>
+            <li>Astrologer_WeaponRanged</li>
         </tradeTags>
         <recipeMaker>
             <displayPriority>440</displayPriority>

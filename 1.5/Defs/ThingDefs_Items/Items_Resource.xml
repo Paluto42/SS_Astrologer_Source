@@ -2,7 +2,7 @@
 <Defs>
 
     <ThingDef ParentName="ResourceBase">
-        <defName>LOF_Thing_StarlightIron</defName>
+        <defName>LOF_Resource_StarlightIron</defName>
         <label>星辉钢</label>
         <description>星辉钢.</description>
         <graphicData>
@@ -55,7 +55,7 @@
     </ThingDef>
 
     <ThingDef ParentName="RoughPlantBase">
-        <defName>LOF_Starlightgrass</defName>
+        <defName>LOF_Resource_Starlightgrass</defName>
         <label>星光草球</label>
         <description>晨曦之中，造物主以此等超凡彰显其伟大。--启示录Ⅰ-光明之书</description>
         <stackLimit>200</stackLimit>
@@ -80,6 +80,39 @@
             <li>LOF_AS_Category_Resources</li>
             <li>PlantMatter</li>
             <li>ResourcesRaw</li>
+        </thingCategories>
+    </ThingDef>
+
+    <ThingDef ParentName="ResourceBase">
+        <defName>LOF_Resource_StarPotion</defName>
+        <label>星星药剂</label>
+        <description>desc.</description>
+        <possessionCount>10</possessionCount>
+        <graphicData>
+            <texPath>Things/Item/Drug/StarPotion</texPath>
+            <graphicClass>Graphic_StackCount</graphicClass>
+            <drawSize>0.90</drawSize>
+        </graphicData>
+        <stackLimit>150</stackLimit>
+        <healthAffectsPrice>false</healthAffectsPrice>
+        <statBases>
+            <MaxHitPoints>50</MaxHitPoints>
+            <MarketValue>6</MarketValue>
+            <Mass>0.02</Mass>
+            <DeteriorationRate>1.0</DeteriorationRate>
+        </statBases>
+        <recipeMaker>
+            <researchPrerequisite>LOF_Research_Drugsynthesis</researchPrerequisite>
+            <skillRequirements>
+                <Medicine>6</Medicine>
+            </skillRequirements>
+        </recipeMaker>
+        <costList>
+            <LOF_Resource_Starlightgrass>5</LOF_Resource_Starlightgrass>
+            <Neutroamine>2</Neutroamine>
+        </costList>
+        <thingCategories>
+            <li>Manufactured</li>
         </thingCategories>
     </ThingDef>
 

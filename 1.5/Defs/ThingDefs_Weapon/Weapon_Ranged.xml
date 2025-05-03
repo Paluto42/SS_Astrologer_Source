@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-    <ThingDef Name="Astro_LightWeaponRangedBase" Abstract="True" ParentName="Astro_WeaponRangedBase">
+
+    <ThingDef Name="Astro_BasicWeaponRangedBase" Abstract="True" ParentName="Astro_WeaponRangedBase">
+        <recipeMaker>
+            <researchPrerequisite>LOF_Research_BaseGun</researchPrerequisite>
+        </recipeMaker>
         <tools>
             <li>
                 <label>grip</label>
@@ -10,11 +14,6 @@
                 <power>9</power>
                 <cooldownTime>2</cooldownTime>
             </li>
-        </tools>
-    </ThingDef>
-
-    <ThingDef Name="Astro_ComplexWeaponRangedBase" Abstract="True" ParentName="Astro_WeaponRangedBase">
-        <tools>
             <li>
                 <label>stock</label>
                 <capacities>
@@ -26,12 +25,12 @@
         </tools>
     </ThingDef>
 
-    <ThingDef ParentName="Astro_LightWeaponRangedBase">
+    <ThingDef ParentName="Astro_BasicWeaponRangedBase">
         <defName>LOF_Weapon_EagleMoon</defName>
         <label>鹰月</label>
         <description>一把暗红色的手炮.</description>
         <graphicData>
-            <texPath>Things/Weapons/EagleMoon</texPath>
+            <texPath>Things/Weapons/LOF_EagleMoon</texPath>
             <graphicClass>Graphic_Single</graphicClass>
         </graphicData>
         <uiIconScale>1.5</uiIconScale>
@@ -57,10 +56,8 @@
             <ComponentIndustrial>3</ComponentIndustrial>
         </costList>
         <recipeMaker>
-            <researchPrerequisite>BlowbackOperation</researchPrerequisite>
-            <recipeUsers></recipeUsers>
             <skillRequirements>
-                <Crafting>5</Crafting>
+                <Crafting>4</Crafting>
             </skillRequirements>
         </recipeMaker>
         <verbs>
@@ -80,12 +77,12 @@
 
     <!--=============== SMG  ====================-->
 
-    <ThingDef ParentName="Astro_LightWeaponRangedBase">
+    <ThingDef ParentName="Astro_BasicWeaponRangedBase">
         <defName>LOF_Weapon_CombatSMG</defName>
         <label>格斗冲锋枪</label>
         <description>这把冲锋枪设计于占星帝国内战的时代，便宜和耐用是该枪的代名词.</description>
         <graphicData>
-            <texPath>Things/Weapons/CombatSMG</texPath>
+            <texPath>Things/Weapons/LOF_CombatSMG</texPath>
             <graphicClass>Graphic_Single</graphicClass>
         </graphicData>
         <soundInteract>Interact_SMG</soundInteract>
@@ -96,10 +93,8 @@
             <li>LOF_WeaponRanged</li>
         </weaponTags>
         <recipeMaker>
-            <researchPrerequisite>GasOperation</researchPrerequisite>
-            <recipeUsers></recipeUsers>
             <skillRequirements>
-                <Crafting>5</Crafting>
+                <Crafting>4</Crafting>
             </skillRequirements>
         </recipeMaker>
         <!--占位,原版数值-->
@@ -134,12 +129,12 @@
 
     <!--=============== Shotguns  ====================-->
 
-    <ThingDef ParentName="Astro_ComplexWeaponRangedBase">
+    <ThingDef ParentName="Astro_BasicWeaponRangedBase">
         <defName>LOF_Weapon_PiercingShotgun</defName>
         <label>破甲霰弹枪</label>
         <description>这是一把开罐器.</description>
         <graphicData>
-            <texPath>Things/Weapons/PiercingShotgun</texPath>
+            <texPath>Things/Weapons/LOF_PiercingShotgun</texPath>
             <graphicClass>Graphic_Single</graphicClass>
         </graphicData>
         <soundInteract>Interact_Shotgun</soundInteract>
@@ -163,8 +158,6 @@
             <ComponentIndustrial>3</ComponentIndustrial>
         </costList>
         <recipeMaker>
-            <researchPrerequisite>GasOperation</researchPrerequisite>
-            <recipeUsers></recipeUsers>
             <skillRequirements>
                 <Crafting>5</Crafting>
             </skillRequirements>
@@ -184,7 +177,7 @@
         </verbs>
     </ThingDef>
 
-    <ThingDef ParentName="Astro_ComplexWeaponRangedBase">
+    <ThingDef ParentName="Astro_BasicWeaponRangedBase">
         <defName>LOF_Weapon_RapidShotgun</defName>
         <label>"AMA-1" 电能霰弹枪</label>
         <description>一把能快速发射的霰弹枪.</description>
@@ -213,10 +206,7 @@
             <ComponentIndustrial>3</ComponentIndustrial>
         </costList>
         <recipeMaker>
-            <researchPrerequisite>GasOperation</researchPrerequisite>
-            <recipeUsers Inherit="false">
-                <li>LOF_StellarFoundry</li>
-            </recipeUsers>
+            <researchPrerequisite>LOF_Research_SeriesWeapon_AMA</researchPrerequisite>
             <skillRequirements>
                 <Crafting>5</Crafting>
             </skillRequirements>
@@ -240,12 +230,12 @@
 
     <!--=============== Rifles  ====================-->
 
-    <ThingDef ParentName="Astro_AKAWeaponRangedBase">
+    <ThingDef ParentName="Astro_BasicWeaponRangedBase">
         <defName>LOF_Weapon_PsychicRifle</defName>
         <label>"MK-5" 等离子心灵干扰步枪</label>
         <description>标准射手步枪,点击切换模式,此时该步枪每发子弹会有心灵错乱效果.</description>
         <graphicData>
-            <texPath>Things/Weapons/PsychicRifle</texPath>
+            <texPath>Things/Weapons/LOF_PsychicRifle</texPath>
             <graphicClass>Graphic_Single</graphicClass>
         </graphicData>
         <soundInteract>Interact_ChargeRifle</soundInteract>
@@ -270,10 +260,7 @@
             <ComponentIndustrial>3</ComponentIndustrial>
         </costList>
         <recipeMaker>
-            <researchPrerequisite>PrecisionRifling</researchPrerequisite>
-            <recipeUsers Inherit="false">
-                <li>LOF_StellarFoundry</li>
-            </recipeUsers>
+            <researchPrerequisite>LOF_Research_SeriesWeapon_MK</researchPrerequisite>
             <skillRequirements>
                 <Crafting>7</Crafting>
             </skillRequirements>
@@ -324,7 +311,7 @@
         <label>ASAT-112 "船边星云"</label>
         <description>当占星师使用时,可使用洞察力强化该武器,每一发消耗一定量洞察力.\n在这种模式下,每一发子弹命中会打掉对方身体的随机的一个部位,并挂一个debuff(星云射线)持续扣血.</description>
         <graphicData>
-            <texPath>Things/Weapons/ChargeSniper</texPath>
+            <texPath>Things/Weapons/LOF_AMSR</texPath>
             <graphicClass>Graphic_Single</graphicClass>
         </graphicData>
         <soundInteract>Interact_ChargeRifle</soundInteract>
@@ -349,7 +336,7 @@
             <ComponentIndustrial>3</ComponentIndustrial>
         </costList>
         <recipeMaker>
-            <researchPrerequisite>ChargedShot</researchPrerequisite>
+            <researchPrerequisite>LOF_Research_AdvancedManufacture</researchPrerequisite>
             <recipeUsers Inherit="false">
                 <li>LOF_StellarFoundry</li>
             </recipeUsers>
@@ -409,7 +396,7 @@
         <label>天箭座</label>
         <description>消耗洞察力可以发射一枚光子炸弹，该炸弹可以跨墙释放.</description>
         <graphicData>
-            <texPath>Things/Weapons/ChargeSniper</texPath>
+            <texPath>Things/Weapons/LOF_Sagitta</texPath>
             <graphicClass>Graphic_Single</graphicClass>
         </graphicData>
         <soundInteract>Interact_ChargeRifle</soundInteract>
@@ -434,7 +421,7 @@
             <ComponentIndustrial>3</ComponentIndustrial>
         </costList>
         <recipeMaker>
-            <researchPrerequisite>ChargedShot</researchPrerequisite>
+            <researchPrerequisite>LOF_Research_AdvancedManufacture</researchPrerequisite>
             <recipeUsers Inherit="false">
                 <li>LOF_StellarFoundry</li>
             </recipeUsers>
@@ -501,10 +488,7 @@
             <ComponentIndustrial>3</ComponentIndustrial>
         </costList>
         <recipeMaker>
-            <researchPrerequisite>ChargedShot</researchPrerequisite>
-            <recipeUsers Inherit="false">
-                <li>LOF_StellarFoundry</li>
-            </recipeUsers>
+            <researchPrerequisite>LOF_Research_SeriesWeapon_MPE</researchPrerequisite>
             <skillRequirements>
                 <Crafting>7</Crafting>
             </skillRequirements>
@@ -589,12 +573,12 @@
             <ComponentIndustrial>3</ComponentIndustrial>
         </costList>
         <recipeMaker>
-            <!--researchPrerequisite>ChargedShot</researchPrerequisite-->
+            <researchPrerequisite>LOF_Research_AdvancedManufacture</researchPrerequisite>
             <recipeUsers Inherit="false">
                 <li>LOF_StellarFoundry</li>
             </recipeUsers>
             <skillRequirements>
-                <Crafting>7</Crafting>
+                <Crafting>8</Crafting>
             </skillRequirements>
         </recipeMaker>
         <verbs Inherit="false">

@@ -56,12 +56,18 @@
         <defName>LOF_Recruit_Citizen</defName>
         <pawnkind>LOF_PawnKind_Citizen</pawnkind>
         <xenoType>Astro_Xeno_Citizen</xenoType>
+        <!--apparels>
+            <li>LOF_FrillOnepiece</li>
+        </apparels-->
     </AK_DLL.ReserveOperatorDef>
 
     <AK_DLL.ReserveOperatorDef ParentName="AstroRecruitBase">
         <defName>LOF_Recruit_Soldier</defName>
         <pawnkind>LOF_PawnKind_Soldier</pawnkind>
         <xenoType>Astro_Xeno_Soldier</xenoType>
+        <!--apparels>
+            <li>LOF_ShirtFrillOnepiece</li>
+        </apparels-->
     </AK_DLL.ReserveOperatorDef>
 
 </Defs>

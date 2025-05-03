@@ -5,16 +5,16 @@
         <defName>LOF_Thing_Laundy</defName>
         <tickerType>Normal</tickerType>
         <label>环形重塑器</label>
-        <description>将衣物武器放入，消耗洞察力启动一段时间，在容器内的衣物会恢复耐久.</description>
+        <description>将衣物武器放入,消耗洞察力启动一段时间,在容器内的衣物会恢复耐久.</description>
         <graphicData>
             <texPath>Things/Building/Misc/MultiAnalyzer</texPath>
             <graphicClass>Graphic_Single</graphicClass>
             <drawSize>2.46875</drawSize>
         </graphicData>
         <uiIconScale>0.85</uiIconScale>
-        <!--researchPrerequisites>
-            <li>MultiAnalyzer</li>
-        </researchPrerequisites-->
+        <researchPrerequisites>
+            <li>LOF_Research_Laundy</li>
+        </researchPrerequisites>
         <size>(2,2)</size>
         <rotatable>false</rotatable>
         <altitudeLayer>Building</altitudeLayer>
@@ -79,9 +79,9 @@
             <drawSize>2.46875</drawSize>
         </graphicData>
         <uiIconScale>0.85</uiIconScale>
-        <!--researchPrerequisites>
-            <li>MultiAnalyzer</li>
-        </researchPrerequisites-->
+        <researchPrerequisites>
+            <li>LOF_Research_PsychicDevice</li>
+        </researchPrerequisites>
         <size>(2,2)</size>
         <rotatable>false</rotatable>
         <altitudeLayer>Building</altitudeLayer>

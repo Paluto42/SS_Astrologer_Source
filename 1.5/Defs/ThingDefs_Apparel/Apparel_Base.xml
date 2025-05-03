@@ -24,16 +24,9 @@
             </li>
         </comps>
         <relicChance>0</relicChance>
-        <recipeMaker>
-            <!--可能做独立研发项目?-->
-            <researchPrerequisite>ComplexClothing</researchPrerequisite>
-        </recipeMaker>
     </ThingDef>
 
     <ThingDef Name="Astrologer_ApparelMakeableBase" ParentName="ApparelMakeableBase" Abstract="True">
-        <recipeMaker>
-            <researchPrerequisite>ComplexClothing</researchPrerequisite>
-        </recipeMaker>
         <stuffCategories>
             <li>Fabric</li>
             <li>Leathery</li>

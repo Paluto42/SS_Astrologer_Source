@@ -39,6 +39,15 @@
             <tags>
             </tags>
         </apparel>
+        <recipeMaker>
+            <researchPrerequisite>LOF_Research_EmpireSword</researchPrerequisite>
+            <recipeUsers Inherit="false">
+                <li>LOF_StellarFoundry</li>
+            </recipeUsers>
+            <skillRequirements>
+                <Crafting>8</Crafting>
+            </skillRequirements>
+        </recipeMaker>
         <comps>
             <li Class="AKA_Ability.TCP_AKATracker">
                 <abilities>
@@ -94,6 +103,15 @@
                 <li>SpacerMilitary</li>
             </tags>
         </apparel>
+        <recipeMaker>
+            <researchPrerequisite>LOF_Research_EmpireSword</researchPrerequisite>
+            <recipeUsers Inherit="false">
+                <li>LOF_StellarFoundry</li>
+            </recipeUsers>
+            <skillRequirements>
+                <Crafting>8</Crafting>
+            </skillRequirements>
+        </recipeMaker>
         <comps>
             <li Class="AKA_Ability.TCP_AKATracker">
                 <abilities>
@@ -169,6 +187,15 @@
             <tags>
             </tags>
         </apparel>
+        <recipeMaker>
+            <researchPrerequisite>LOF_Research_EmpireSword</researchPrerequisite>
+            <recipeUsers Inherit="false">
+                <li>LOF_StellarFoundry</li>
+            </recipeUsers>
+            <skillRequirements>
+                <Crafting>8</Crafting>
+            </skillRequirements>
+        </recipeMaker>
         <comps>
             <li Class="AKA_Ability.TCP_AKATracker">
                 <abilities>

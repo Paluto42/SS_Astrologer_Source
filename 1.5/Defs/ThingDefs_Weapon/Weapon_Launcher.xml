@@ -7,7 +7,7 @@
         <description>一次性反重甲武器，用完弃用.</description>
         <tickerType>Normal</tickerType>
         <graphicData>
-            <texPath>Things/Weapons/TandemHEATLauncher</texPath>
+            <texPath>Things/Weapons/LOF_TandemHEATLauncher</texPath>
             <graphicClass>Graphic_Single</graphicClass>
         </graphicData>
         <soundInteract>Interact_Rifle</soundInteract>
@@ -28,10 +28,10 @@
             <ComponentIndustrial>1</ComponentIndustrial>
         </costList>
         <recipeMaker>
-            <researchPrerequisite>Gunsmithing</researchPrerequisite>
+            <researchPrerequisite>LOF_Research_ATLauncher</researchPrerequisite>
             <recipeUsers></recipeUsers>
             <skillRequirements>
-                <Crafting>5</Crafting>
+                <Crafting>6</Crafting>
             </skillRequirements>
         </recipeMaker>
         <verbs>
@@ -90,10 +90,9 @@
             <ComponentIndustrial>1</ComponentIndustrial>
         </costList>
         <recipeMaker>
-            <researchPrerequisite>Gunsmithing</researchPrerequisite>
-            <recipeUsers></recipeUsers>
+            <researchPrerequisite>LOF_Research_ATLauncher</researchPrerequisite>
             <skillRequirements>
-                <Crafting>5</Crafting>
+                <Crafting>6</Crafting>
             </skillRequirements>
         </recipeMaker>
         <verbs>
