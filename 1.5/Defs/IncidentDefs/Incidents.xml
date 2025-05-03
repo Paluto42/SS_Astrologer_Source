@@ -11,7 +11,7 @@
         <workerClass>IncidentWorker_GiveQuest</workerClass>
         <questScriptDef>LOF_AdventurerJoins</questScriptDef>
         <baseChance>0</baseChance>
-        <pawnKind>LOF_PawnKind_Citizen</pawnKind>
+        <pawnKind>LOF_PawnKind_AstroCitizen</pawnKind>
         <populationEffect>IncreaseEasy</populationEffect>
     </IncidentDef>
 
@@ -35,7 +35,7 @@
         <!--root Class="QuestNode_Root_WandererJoin_WalkIn" /-->
         <root Class="Astrologer.QuestNode_Root_GetAdventurerJoin_WalkIn">
             <storeAs>asker</storeAs>
-            <mustBeOfKind>LOF_PawnKind_Citizen</mustBeOfKind>
+            <mustBeOfKind>LOF_PawnKind_AstroCitizen</mustBeOfKind>
         </root>
     </QuestScriptDef>
 

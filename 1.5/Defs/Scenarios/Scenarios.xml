@@ -22,10 +22,10 @@
                 <li Class="ScenPart_ConfigPage_ConfigureStartingPawns_KindDefs">
                     <def>ConfigurePawnsKindDefs</def>
                     <pawnChoiceCount>8</pawnChoiceCount>
-                    <leftBehindPawnKind>LOF_PawnKind_Citizen</leftBehindPawnKind>
+                    <leftBehindPawnKind>LOF_PawnKind_AstroCitizen</leftBehindPawnKind>
                     <kindCounts>
                         <li>
-                            <kindDef>LOF_PawnKind_Citizen</kindDef>
+                            <kindDef>LOF_PawnKind_AstroCitizen</kindDef>
                             <count>3</count>
                             <requiredAtStart>true</requiredAtStart>
                         </li>

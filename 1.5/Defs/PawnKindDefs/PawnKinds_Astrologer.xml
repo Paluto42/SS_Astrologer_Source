@@ -88,7 +88,7 @@
 	</PawnKindDef>
 
 	<PawnKindDef ParentName="Astro_CitizenBase">
-		<defName>LOF_PawnKind_Citizen</defName>
+		<defName>LOF_PawnKind_AstroCitizen</defName>
 		<label>繁星帝国公民</label>
 		<labelPlural>繁星帝国公民</labelPlural>
 		<combatPower>80</combatPower>
@@ -104,7 +104,7 @@
 	</PawnKindDef>
 
 	<PawnKindDef ParentName="Astro_SoldierBase">
-		<defName>LOF_PawnKind_Soldier</defName>
+		<defName>LOF_PawnKind_AstroSoldier</defName>
 		<label>繁星帝国士兵</label>
 		<labelPlural>繁星帝国士兵</labelPlural>
 		<combatPower>100</combatPower>
