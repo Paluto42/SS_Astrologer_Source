@@ -77,7 +77,7 @@
             <li>PlaceWorker_PreventInteractionSpotOverlap</li>
         </placeWorkers>
         <researchPrerequisites>
-            <li>Fabrication</li>
+            <li>Machining</li>
         </researchPrerequisites>
     </ThingDef>
 
