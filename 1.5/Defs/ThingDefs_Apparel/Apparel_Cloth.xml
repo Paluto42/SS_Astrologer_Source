@@ -136,7 +136,6 @@
         <graphicData>
             <texPath>Things/Apparel/LOF_MountaineerOutfit/MountaineerOutfit</texPath>
             <graphicClass>Graphic_Single</graphicClass>
-            <drawSize>0.90</drawSize>
         </graphicData>
         <!--占位,原版数值-->
         <statBases>
