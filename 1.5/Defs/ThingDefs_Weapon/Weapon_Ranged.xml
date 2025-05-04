@@ -32,7 +32,7 @@
         <graphicData>
             <texPath>Things/Weapons/LOF_EagleMoon</texPath>
             <graphicClass>Graphic_Single</graphicClass>
-            <drawSize>1.25</drawSize>
+            <drawSize>0.85</drawSize>
         </graphicData>
         <soundInteract>Interact_Revolver</soundInteract>
         <weaponClasses>
@@ -85,7 +85,7 @@
         <graphicData>
             <texPath>Things/Weapons/LOF_CombatSMG</texPath>
             <graphicClass>Graphic_Single</graphicClass>
-            <drawSize>1.25</drawSize>
+            <drawSize>0.85</drawSize>
         </graphicData>
         <soundInteract>Interact_SMG</soundInteract>
         <weaponClasses>
@@ -139,7 +139,6 @@
         <graphicData>
             <texPath>Things/Weapons/LOF_PiercingShotgun</texPath>
             <graphicClass>Graphic_Single</graphicClass>
-            <drawSize>1.25</drawSize>
         </graphicData>
         <soundInteract>Interact_Shotgun</soundInteract>
         <weaponClasses>
@@ -189,7 +188,6 @@
         <graphicData>
             <texPath>Things/Weapons/ChargeShotgun</texPath>
             <graphicClass>Graphic_Single</graphicClass>
-            <drawSize>1.25</drawSize>
         </graphicData>
         <soundInteract>Interact_Shotgun</soundInteract>
         <weaponClasses>

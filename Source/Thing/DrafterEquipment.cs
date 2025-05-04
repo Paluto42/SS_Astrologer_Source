@@ -6,8 +6,15 @@ namespace Astrologer
     public class DrafterEquipment : ThingWithComps
     {
         private Graphic secGraphicInt;
-        Pawn Holder => EqTracker?.pawn;
-        Pawn_EquipmentTracker EqTracker => (Pawn_EquipmentTracker)ParentHolder;
+        Pawn_EquipmentTracker PawnEqTracker => (Pawn_EquipmentTracker)ParentHolder;
+        Pawn Holder 
+        {
+            get 
+            {
+                if (ParentHolder == null || PawnEqTracker == null) return null;
+                return PawnEqTracker.pawn;
+            }
+        }
         TC_DrafterGraphic Drafter => GetComp<TC_DrafterGraphic>();
         GraphicData DrafterGraphic => Drafter?.Graphic;
 
@@ -15,12 +22,12 @@ namespace Astrologer
         {
             get
             {
-                if (DrafterGraphic != null && Holder != null && Holder.Drafted)
+                if (DrafterGraphic == null || Holder == null || !Holder.Drafted)
                 {
-                    secGraphicInt ??= DrafterGraphic.Graphic;
-                    return secGraphicInt;
+                    return base.Graphic;
                 }
-                return base.Graphic;
+                secGraphicInt ??= DrafterGraphic.Graphic;
+                return secGraphicInt;
             }
         }
     }

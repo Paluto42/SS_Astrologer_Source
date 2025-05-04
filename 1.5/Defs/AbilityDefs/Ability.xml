@@ -44,7 +44,6 @@
             <li Class="AKA_Ability.CastConditioner.CC_NeedFullCharge"/>
         </castConditions>
         <compEffectList>
-            <!--li Class="Astrologer.Ability.AE_IncreaseHarvest"/-->
             <li Class="AKA_Ability.AbilityEffect_AddHediff">
                 <hediffDef>LOF_Hediff_IncreaseHarvest</hediffDef>
                 <severity>2.4</severity>
