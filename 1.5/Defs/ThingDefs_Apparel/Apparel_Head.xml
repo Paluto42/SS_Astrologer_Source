@@ -112,7 +112,6 @@
         <graphicData>
             <texPath>Things/Apparel/LOF_LightHelmet/LightHelmet</texPath>
             <graphicClass>Graphic_Single</graphicClass>
-            <drawSize>(0.9, 0.9)</drawSize>
         </graphicData>
         <!--占位,原版数值-->
         <statBases>
