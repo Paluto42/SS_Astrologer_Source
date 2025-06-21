@@ -36,7 +36,7 @@
     </ThingDef>
 
     <ThingDef ParentName="Astro_ClothBase">
-        <defName>LOF_FrillOnepiece</defName>
+        <defName>LOF_Apparel_FrillOnepiece</defName>
         <label>连衣裙</label>
         <description>研究所人员统一配给的服装，轻便保暖，胸口烫印着繁星帝国的徽章\n基于占星师热爱探索的特质，穿戴连衣裙会增加研究速度.</description>
         <graphicData>
@@ -83,7 +83,7 @@
     </ThingDef>
 
     <ThingDef ParentName="Astro_ClothBase">
-        <defName>LOF_ShirtFrillOnepiece</defName>
+        <defName>LOF_Apparel_ShirtFrillOnepiece</defName>
         <label>衬衫连衣裙</label>
         <description>研究所人员统一配给的服装，轻便保暖，胸口烫印着繁星帝国的徽章\n基于占星师热爱探索的特质，穿戴连衣裙会增加研究速度.</description>
         <graphicData>
@@ -130,7 +130,54 @@
     </ThingDef>
 
     <ThingDef ParentName="Astro_ClothBase">
-        <defName>LOF_MountaineerOutfit</defName>
+        <defName>LOF_Apparel_PriestessDress</defName>
+        <label>连衣裙(豪华典藏)</label>
+        <description>祭典礼服，轻便保暖，胸口烫印着繁星帝国的徽章\n基于占星师热爱探索的特质，穿戴连衣裙会增加研究速度.</description>
+        <graphicData>
+            <texPath>Things/Apparel/LOF_PriestessDress/PriestessDress</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <!--占位,原版数值-->
+        <statBases>
+            <MaxHitPoints>100</MaxHitPoints>
+            <WorkToMake>2000</WorkToMake>
+            <Mass>0.18</Mass>
+            <StuffEffectMultiplierArmor>0.2</StuffEffectMultiplierArmor>
+            <StuffEffectMultiplierInsulation_Cold>0.22</StuffEffectMultiplierInsulation_Cold>
+            <StuffEffectMultiplierInsulation_Heat>0.10</StuffEffectMultiplierInsulation_Heat>
+            <EquipDelay>1.5</EquipDelay>
+        </statBases>
+        <equippedStatOffsets>
+            <ResearchSpeed>0.25</ResearchSpeed>
+        </equippedStatOffsets>
+        <stuffCategories>
+            <li>Fabric</li>
+            <li>Leathery</li>
+        </stuffCategories>
+        <costStuffCount>40</costStuffCount>
+        <apparel>
+            <wornGraphicPath>Things/Apparel/LOF_PriestessDress/PriestessDress</wornGraphicPath>
+            <bodyPartGroups>
+                <li>Torso</li>
+                <li>Neck</li>
+                <li>Shoulders</li>
+                <li>Arms</li>
+                <li>Legs</li>
+            </bodyPartGroups>
+            <layers>
+                <li>OnSkin</li>
+            </layers>
+            <defaultOutfitTags>
+                <li>Worker</li>
+            </defaultOutfitTags>
+            <tags>
+                <li>Astrologer_CitizenCloth</li>
+            </tags>
+        </apparel>
+    </ThingDef>
+
+    <ThingDef ParentName="Astro_ClothBase">
+        <defName>LOF_Apparel_MountaineerOutfit</defName>
         <label>登山服</label>
         <description>在繁星帝国，很多占星师喜欢在夜间的山顶观星，这件登山服很好的满足了她们对于保暖的需求</description>
         <graphicData>
@@ -174,7 +221,7 @@
     </ThingDef>
 
     <ThingDef ParentName="Astro_ClothBase">
-        <defName>LOF_MountaineerPants</defName>
+        <defName>LOF_Apparel_MountaineerPants</defName>
         <label>登山裤</label>
         <description>在繁星帝国，很多占星师喜欢在夜间的山顶观星，这件登山裤(丝袜)很好的满足了她们对于保暖的需求</description>
         <graphicData>
@@ -215,7 +262,7 @@
     </ThingDef>
 
     <ThingDef ParentName="Astro_ClothBase">
-        <defName>LOF_Camisole</defName>
+        <defName>LOF_Apparel_Camisole</defName>
         <description>贴身防护服.</description>
         <label>贴身防护服</label>
         <!--等待贴图-->
@@ -257,7 +304,7 @@
     </ThingDef>
 
     <ThingDef ParentName="Astro_ClothBase">
-        <defName>LOF_SocialMaster</defName>
+        <defName>LOF_Apparel_SocialMaster</defName>
         <label>社交大师(服装)</label>
         <description>纪念碑上所载一切自永远至永远不会再重复，因为注定经受高买低卖的殖民者不会有第二次机会在边缘世界出现\n增加卖出系数，减买进系数</description>
         <!--等待贴图-->
@@ -307,7 +354,7 @@
     </ThingDef>
 
     <ThingDef ParentName="Astro_ApparelBase">
-        <defName>LOF_SocialMaster_Glasses</defName>
+        <defName>LOF_Apparel_SocialMaster_Glasses</defName>
         <label>社交大师(墨镜)</label>
         <description>多年以后，面对高级零部件，占星师小姐会回想起运输仓带她去见识奸商的那个遥远的下午\n加魅力加社交能力</description>
         <thingCategories Inherit="false">

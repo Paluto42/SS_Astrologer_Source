@@ -2,7 +2,7 @@
 <Defs>
 
     <ThingDef ParentName="Astro_WeaponMeleeBase">
-        <defName>LOF_CeremonialSword</defName>
+        <defName>LOF_Weapon_CeremonialSword</defName>
         <label>护身剑</label>
         <description>占星师社交用的礼仪剑.</description>
         <graphicData>
@@ -63,7 +63,7 @@
     </ThingDef>
 
     <ThingDef ParentName="Astro_WeaponMeleeBase">
-        <defName>LOF_ShockGlove</defName>
+        <defName>LOF_Weapon_ShockGlove</defName>
         <label>机械冲击手套</label>
         <description>本来是辅助工作的手套。逐渐变为外出游玩时偶遇机械族的无奈之举.</description>
         <graphicData>

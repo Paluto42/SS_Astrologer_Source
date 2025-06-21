@@ -2,7 +2,7 @@
 <Defs>
 
     <ThingDef ParentName="Astro_WeaponRangedBase">
-        <defName>LOF_TandemHEATLauncher</defName>
+        <defName>LOF_Weapon_TandemHEATLauncher</defName>
         <label>串联破甲战斗部发射器</label>
         <description>一次性反重甲武器，用完弃用.</description>
         <tickerType>Normal</tickerType>
@@ -65,7 +65,7 @@
     </ThingDef>
 
     <ThingDef ParentName="Astro_WeaponRangedBase">
-        <defName>LOF_CarlGustaf</defName>
+        <defName>LOF_Weapon_CarlGustaf</defName>
         <label>"MPE-4" 反重甲武器</label>
         <description>可再装填的反重甲无后坐力步枪.</description>
         <tickerType>Normal</tickerType>

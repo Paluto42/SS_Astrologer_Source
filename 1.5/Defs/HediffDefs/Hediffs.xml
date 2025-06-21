@@ -70,7 +70,7 @@
         <label>生存作战单元-代谢增益</label>
         <description>通过先进的纳米技术，它能有效清除血液中的有害物质.</description>
         <descriptionHyperlinks>
-            <ThingDef>LOF_LightArmor</ThingDef>
+            <ThingDef>LOF_Apparel_LightArmor</ThingDef>
         </descriptionHyperlinks>
         <hediffClass>HediffWithComps</hediffClass>
         <defaultLabelColor>(0.6, 0.6, 1.0)</defaultLabelColor>
@@ -96,7 +96,7 @@
         <label>心灵手巧</label>
         <description>有了机械手套，工作效率更高了.</description>
         <descriptionHyperlinks>
-            <ThingDef>LOF_ShockGlove</ThingDef>
+            <ThingDef>LOF_Weapon_ShockGlove</ThingDef>
         </descriptionHyperlinks>
         <hediffClass>HediffWithComps</hediffClass>
         <defaultLabelColor>(0.6, 0.6, 1.0)</defaultLabelColor>

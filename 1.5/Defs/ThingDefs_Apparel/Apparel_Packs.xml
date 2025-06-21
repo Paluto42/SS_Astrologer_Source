@@ -78,7 +78,7 @@
         </thingCategories>
         <!--等待贴图-->
         <graphicData>
-            <texPath>Things/Pawn/Humanlike/Apparel/SmokepopPack/SmokepopPack</texPath>
+            <texPath>Things/Apparel/LOF_EmpactPack/EmpactPack</texPath>
             <graphicClass>Graphic_Single</graphicClass>
         </graphicData>
         <uiIconScale>1.25</uiIconScale>
@@ -101,10 +101,10 @@
             </li>
         </comps>
         <apparel>
-            <wornGraphicPath>Things/Pawn/Humanlike/Apparel/SmokepopPack/SmokepopPack</wornGraphicPath>
+            <wornGraphicPath>Things/Apparel/LOF_EmpactPack/EmpactPack</wornGraphicPath>
             <wornGraphicData>
                 <renderUtilityAsPack>true</renderUtilityAsPack>
-                <north>
+                <!--north>
                     <offset>(0,-0.15)</offset>
                 </north>
                 <east>
@@ -145,7 +145,7 @@
                 </hulk>
                 <fat>
                     <scale>(0.9,0.9)</scale>
-                </fat>
+                </fat-->
             </wornGraphicData>
             <countsAsClothingForNudity>false</countsAsClothingForNudity>
             <developmentalStageFilter>Child, Adult</developmentalStageFilter>

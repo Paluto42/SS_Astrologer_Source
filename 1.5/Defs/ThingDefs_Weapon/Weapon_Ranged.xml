@@ -186,7 +186,7 @@
         <label>"AMA-1" 电能霰弹枪</label>
         <description>一把能快速发射的霰弹枪.</description>
         <graphicData>
-            <texPath>Things/Weapons/ChargeShotgun</texPath>
+            <texPath>Things/Weapons/LOF_ChargeShotgun</texPath>
             <graphicClass>Graphic_Single</graphicClass>
         </graphicData>
         <soundInteract>Interact_Shotgun</soundInteract>
@@ -476,7 +476,7 @@
         <label>"MPE-1" 等离子重机枪</label>
         <description>MPE-1是占星帝国初次遭遇暗灵时设计给前线战斗人员的制式武器.\n消耗洞察力可以进行一小段时间的高速射击.</description>
         <graphicData>
-            <texPath>Things/Weapons/ChargeLMG</texPath>
+            <texPath>Things/Weapons/LOF_ChargeHMG</texPath>
             <graphicClass>Graphic_Single</graphicClass>
         </graphicData>
         <soundInteract>Interact_ChargeRifle</soundInteract>
@@ -558,7 +558,7 @@
         <description>手持轨道炮.</description>
         <tickerType>Normal</tickerType>
         <graphicData>
-            <texPath>Things/Item/Equipment/WeaponRanged/ChargeLance</texPath>
+            <texPath>Things/Weapons/LOF_Railgun</texPath>
             <graphicClass>Graphic_Single</graphicClass>
         </graphicData>
         <soundInteract>Interact_ChargeLance</soundInteract>

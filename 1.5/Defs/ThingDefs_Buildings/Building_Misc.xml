@@ -74,11 +74,12 @@
         <label>心灵低语驳斥装置</label>
         <description>消耗一定洞察力,将范围内生物的心灵敏感度降为0,持续一段时间,同时需要消耗大量电力.</description>
         <graphicData>
-            <texPath>Things/Building/Misc/MultiAnalyzer</texPath>
+            <texPath>Things/Building/LOF_PsychicDevice/PsychicDevice</texPath>
             <graphicClass>Graphic_Single</graphicClass>
-            <drawSize>2.46875</drawSize>
+            <drawSize>3.5</drawSize>
+            <drawOffset>(0,0,0.7)</drawOffset>
         </graphicData>
-        <uiIconScale>0.85</uiIconScale>
+        <uiIconScale>0.7</uiIconScale>
         <researchPrerequisites>
             <li>LOF_Research_PsychicDevice</li>
         </researchPrerequisites>

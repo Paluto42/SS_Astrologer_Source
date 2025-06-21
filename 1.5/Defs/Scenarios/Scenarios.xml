@@ -83,7 +83,7 @@
 
                 <li Class="ScenPart_StartingThing_Defined">
                     <def>StartingThing_Defined</def>
-                    <thingDef>LOF_CeremonialSword</thingDef>
+                    <thingDef>LOF_Weapon_CeremonialSword</thingDef>
                 </li>
                 <li Class="ScenPart_StartingThing_Defined">
                     <def>StartingThing_Defined</def>
@@ -95,16 +95,16 @@
                 </li>
                 <li Class="ScenPart_StartingThing_Defined">
                     <def>StartingThing_Defined</def>
-                    <thingDef>LOF_LightArmor</thingDef>
+                    <thingDef>LOF_Apparel_LightArmor</thingDef>
                 </li>
                 <li Class="ScenPart_StartingThing_Defined">
                     <def>StartingThing_Defined</def>
-                    <thingDef>LOF_LightHelmet</thingDef>
+                    <thingDef>LOF_Apparel_LightHelmet</thingDef>
                 </li>
 
                 <li Class="ScenPart_StartingThing_Defined">
                     <def>StartingThing_Defined</def>
-                    <thingDef>LOF_MountaineerOutfit</thingDef>
+                    <thingDef>LOF_Apparel_MountaineerOutfit</thingDef>
                 </li>
             </parts>
         </scenario>

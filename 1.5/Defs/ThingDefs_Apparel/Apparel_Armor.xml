@@ -6,6 +6,17 @@
             <li>LOF_AS_Category_Armor</li>
         </thingCategories>
         <apparel>
+            <bodyPartGroups>
+                <li>Torso</li>
+                <li>Neck</li>
+                <li>Shoulders</li>
+                <li>Arms</li>
+                <li>Legs</li>
+            </bodyPartGroups>
+            <layers>
+                <li>Middle</li>
+                <li>Shell</li>
+            </layers>
             <defaultOutfitTags>
                 <li>Soldier</li>
             </defaultOutfitTags>
@@ -40,7 +51,7 @@
     </ThingDef>
 
     <ThingDef ParentName="Astro_ArmorBase">
-        <defName>LOF_LightArmor</defName>
+        <defName>LOF_Apparel_LightArmor</defName>
         <label>生存作战轻甲</label>
         <description>轻量化全能型作战服，较高的锐防和普通的钝防.\n能够监控并介入穿戴者的血液循环过程,增强生存能力和战斗持久力</description>
         <graphicData>
@@ -77,17 +88,6 @@
         </costList>
         <apparel>
             <wornGraphicPath>Things/Apparel/LOF_LightArmor/LightArmor</wornGraphicPath>
-            <bodyPartGroups>
-                <li>Torso</li>
-                <li>Neck</li>
-                <li>Shoulders</li>
-                <li>Arms</li>
-                <li>Legs</li>
-            </bodyPartGroups>
-            <layers>
-                <li>Middle</li>
-                <li>Shell</li>
-            </layers>
             <tags>
                 <li>Astrologer_SoldierArmor</li>
             </tags>
@@ -101,7 +101,7 @@
     </ThingDef>
 
     <ThingDef ParentName="Astro_ArmorBase">
-        <defName>LOF_StandardArmor</defName>
+        <defName>LOF_Apparel_StandardArmor</defName>
         <label>"MPE-3" 制式装甲</label>
         <description>"MPE-3"制式装甲，可以发射动能火箭弹(需要装填钢铁),但是精度较低.</description>
         <!--等待贴图-->
@@ -164,17 +164,6 @@
         </costList>
         <apparel>
             <wornGraphicPath>Things/Pawn/Humanlike/Apparel/PowerArmor/PowerArmor</wornGraphicPath>
-            <bodyPartGroups>
-                <li>Torso</li>
-                <li>Neck</li>
-                <li>Shoulders</li>
-                <li>Arms</li>
-                <li>Legs</li>
-            </bodyPartGroups>
-            <layers>
-                <li>Middle</li>
-                <li>Shell</li>
-            </layers>
         </apparel>
         <recipeMaker>
             <researchPrerequisite>LOF_Research_SeriesArmor_MPE</researchPrerequisite>
@@ -186,7 +175,7 @@
     </ThingDef>
 
     <ThingDef ParentName="Astro_ArmorBase">
-        <defName>LOF_MiningArmor</defName>
+        <defName>LOF_Apparel_MiningArmor</defName>
         <label>MI矿业支持设备</label>
         <description>远距离采矿装甲</description>
         <!--等待贴图-->
@@ -222,17 +211,6 @@
         </costList>
         <apparel>
             <wornGraphicPath>Things/Pawn/Humanlike/Apparel/ReconArmor/ReconArmor</wornGraphicPath>
-            <bodyPartGroups>
-                <li>Torso</li>
-                <li>Neck</li>
-                <li>Shoulders</li>
-                <li>Arms</li>
-                <li>Legs</li>
-            </bodyPartGroups>
-            <layers>
-                <li>Middle</li>
-                <li>Shell</li>
-            </layers>
         </apparel>
         <recipeMaker>
             <researchPrerequisite>LOF_Research_MultiArmor</researchPrerequisite>
@@ -244,13 +222,13 @@
     </ThingDef>
 
     <ThingDef ParentName="Astro_ArmorBase">
-        <defName>LOF_EmergencyArmor</defName>
+        <defName>LOF_Apparel_EmergencyArmor</defName>
         <label>ERT-EMT应急反应护服</label>
         <description>ERT-EMT应急反应护服 desc.</description>
         <tickerType>Normal</tickerType>
         <!--等待贴图-->
         <graphicData>
-            <texPath>Things/Pawn/Humanlike/Apparel/ReconArmor/ReconArmor</texPath>
+            <texPath>Things/Apparel/LOF_EmergencyArmor/EmergencyArmor</texPath>
             <graphicClass>Graphic_Single</graphicClass>
         </graphicData>
         <!--占位,原版数值-->
@@ -328,18 +306,7 @@
             <LOF_Resource_StarlightIron>40</LOF_Resource_StarlightIron>
         </costList>
         <apparel>
-            <wornGraphicPath>Things/Pawn/Humanlike/Apparel/ReconArmor/ReconArmor</wornGraphicPath>
-            <bodyPartGroups>
-                <li>Torso</li>
-                <li>Neck</li>
-                <li>Shoulders</li>
-                <li>Arms</li>
-                <li>Legs</li>
-            </bodyPartGroups>
-            <layers>
-                <li>Middle</li>
-                <li>Shell</li>
-            </layers>
+            <wornGraphicPath>Things/Apparel/LOF_EmergencyArmor/EmergencyArmor</wornGraphicPath>
         </apparel>
         <recipeMaker>
             <researchPrerequisite>LOF_Research_MultiArmor</researchPrerequisite>
@@ -351,15 +318,15 @@
     </ThingDef>
 
     <ThingDef ParentName="Astro_ArmorBase">
-        <defName>LOF_HeavyArmor</defName>
+        <defName>LOF_Apparel_TwilightKnightArmor</defName>
         <thingClass>Astrologer.ApparelAstro</thingClass>
         <label>ES-110 "盾牌座" 重护甲</label>
         <description>繁星帝国列装的重型作战装甲\n自带可恢复护盾,拥有很高的盾防和防御.\n增加疼痛阈值,减少崩溃临界值，减少移动速度.</description>
         <!--等待贴图-->
         <graphicData Class="AK_DLL.GraphicData_MultiFoam">
-            <texPath>Things/Pawn/Humanlike/Apparel/PowerArmor/PowerArmor</texPath>
+            <texPath>Things/Apparel/LOF_TwilightKnightArmor/TwilightKnightArmor</texPath>
             <graphicClass>Graphic_Single</graphicClass>
-            <innerGraphicData_Drop>
+            <!--innerGraphicData_Drop>
                 <li>
                     <key>0</key>
                     <value>
@@ -373,7 +340,7 @@
                     <key>0</key>
                     <value>Things/Pawn/Humanlike/Apparel/Parka/Parka</value>
                 </li>
-            </innerGraphicPath_Worn>
+            </innerGraphicPath_Worn-->
         </graphicData>
         <!--占位,原版数值-->
         <statBases>
@@ -400,18 +367,63 @@
             <Uranium>20</Uranium>
         </costList>
         <apparel>
-            <wornGraphicPath>Things/Pawn/Humanlike/Apparel/PowerArmor/PowerArmor</wornGraphicPath>
-            <bodyPartGroups>
-                <li>Torso</li>
-                <li>Neck</li>
-                <li>Shoulders</li>
-                <li>Arms</li>
-                <li>Legs</li>
-            </bodyPartGroups>
-            <layers>
-                <li>Middle</li>
-                <li>Shell</li>
-            </layers>
+            <wornGraphicPath>Things/Apparel/LOF_TwilightKnightArmor/TwilightKnightArmor</wornGraphicPath>
+            <renderSkipFlags>
+                <li>None</li>
+            </renderSkipFlags>
+            <useWornGraphicMask>true</useWornGraphicMask>
+            <forceEyesVisibleForRotations>
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
+            </forceEyesVisibleForRotations>
+            <renderNodeProperties>
+                <li>
+                    <workerClass>PawnRenderNodeWorker_Apparel_Head</workerClass>
+                    <texPath>Things/Apparel/LOF_TwilightKnightArmor/TwilightKnightArmor</texPath>
+                    <baseLayer>0</baseLayer>
+                    <parentTagDef>Body</parentTagDef>
+                    <pawnType>Any</pawnType>
+                    <drawData>
+                        <dataEast>
+                            <layer>40</layer>
+                        </dataEast>
+                        <dataSouth>
+                            <layer>40</layer>
+                        </dataSouth>
+                        <dataNorth>
+                            <layer>40</layer>
+                        </dataNorth>
+                        <dataWest>
+                            <layer>40</layer>
+                            <flip>true</flip>
+                        </dataWest>
+                    </drawData>
+                </li>
+                <li>
+                    <workerClass>PawnRenderNodeWorker_Apparel_Head</workerClass>
+                    <texPath>Things/Apparel/LOF_TwilightKnightArmor/TwilightKnightWing</texPath>
+                    <drawSize>(1.8,1.8)</drawSize>
+                    <baseLayer>0</baseLayer>
+                    <parentTagDef>Body</parentTagDef>
+                    <pawnType>Any</pawnType>
+                    <drawData>
+                        <dataEast>
+                            <layer>10</layer>
+                        </dataEast>
+                        <dataSouth>
+                            <layer>10</layer>
+                        </dataSouth>
+                        <dataNorth>
+                            <layer>50</layer>
+                        </dataNorth>
+                        <dataWest>
+                            <layer>10</layer>
+                            <flip>true</flip>
+                        </dataWest>
+                    </drawData>
+                </li>
+            </renderNodeProperties>
             <useDeflectMetalEffect>true</useDeflectMetalEffect>
             <soundWear>Wear_PowerArmor</soundWear>
             <soundRemove>Remove_PowerArmor</soundRemove>
@@ -452,7 +464,7 @@
     </ThingDef>
 
     <ThingDef ParentName="Astro_ArmorBase">
-        <defName>LOF_TravelArmor</defName>
+        <defName>LOF_Apparel_TravelArmor</defName>
         <thingClass>Astrologer.ApparelAstro</thingClass>
         <label>TLK-11 "凤凰座" 远行装甲</label>
         <description>离死亡越近，生命的火焰就燃烧的越炽热\n高机动作战装甲--穿戴有移速加成,增加加疼痛阈,减少崩溃临界值,被击中不会影响移动.\n内置医疗系统,消耗一次洞察力可以对穿戴者进行一次治疗,生命值越低则承伤系数越低.</description>
@@ -502,17 +514,6 @@
         </costList>
         <apparel>
             <wornGraphicPath>Things/Pawn/Humanlike/Apparel/PowerArmor/PowerArmor</wornGraphicPath>
-            <bodyPartGroups>
-                <li>Torso</li>
-                <li>Neck</li>
-                <li>Shoulders</li>
-                <li>Arms</li>
-                <li>Legs</li>
-            </bodyPartGroups>
-            <layers>
-                <li>Middle</li>
-                <li>Shell</li>
-            </layers>
             <useDeflectMetalEffect>true</useDeflectMetalEffect>
             <soundWear>Wear_PowerArmor</soundWear>
             <soundRemove>Remove_PowerArmor</soundRemove>
