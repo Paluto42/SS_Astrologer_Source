@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<PawnKindDef Name="Astro_PawnBase" Abstract="True">
+		<race>Human</race>
+		<nameMaker>NamerPerson_AstroEmpire</nameMaker>
+		<!--defaultFactionType>LOF_Empire</defaultFactionType-->
+		<backstoryCryptosleepCommonality>0</backstoryCryptosleepCommonality>
+		<invNutrition>2</invNutrition>
+		<!--gearHealthRange>0.8~1.0</gearHealthRange-->
+		<apparelIgnoreSeasons>true</apparelIgnoreSeasons>
+		<minGenerationAge>18</minGenerationAge>
+		<maxGenerationAge>150</maxGenerationAge>
+		<initialWillRange>60~90</initialWillRange>
+		<initialResistanceRange>60~90</initialResistanceRange>
+		<biocodeWeaponChance>0</biocodeWeaponChance>
+		<!--backstoryFiltersOverride>
+			<li>
+				<categories>
+					<li>Outlander</li>
+				</categories>
+			</li>
+		</backstoryFiltersOverride-->
+		<apparelDisallowTags></apparelDisallowTags>
+		<styleItemTags></styleItemTags>
+		<disallowedTraits>
+			<li>Wimp</li>
+			<li>Nudist</li>
+			<li>BodyPurist</li>
+			<li>Gourmand</li>
+			<li>Pyromaniac</li>
+		</disallowedTraits>
+		<skills>
+			<li>
+				<skill>Shooting</skill>
+				<range>5~8</range>
+			</li>
+		</skills>
+		<useFactionXenotypes>false</useFactionXenotypes>
+		<modExtensions MayRequire="Paluto22.AK.Compatibility">
+			<li Class="PA_AKPatch.Ext_KeepOriginal"/>
+		</modExtensions>
+	</PawnKindDef>
+
+	<PawnKindDef Name="Astro_CitizenBase" ParentName="Astro_PawnBase" Abstract="True">
+		<isFighter>false</isFighter>
+		<initialResistanceRange>10~40</initialResistanceRange>
+		<chemicalAddictionChance>0.1</chemicalAddictionChance>
+		<combatEnhancingDrugsChance>0.15</combatEnhancingDrugsChance>
+		<combatEnhancingDrugsCount>0~2</combatEnhancingDrugsCount>
+		<gearHealthRange>0.8~2</gearHealthRange>
+		<!--weaponMoney>500~1200</weaponMoney-->
+		<apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
+		<apparelMoney>700~1500</apparelMoney>
+		<techHediffsChance>0.15</techHediffsChance>
+		<techHediffsMoney>700~1200</techHediffsMoney>
+		<techHediffsTags></techHediffsTags>
+		<modExtensions>
+			<li Class="AK_DLL.Ext_LinkedReservedOperatorDef">
+				<linkedDef>LOF_Recruit_Citizen</linkedDef>
+			</li>
+		</modExtensions>
+	</PawnKindDef>
+
+	<PawnKindDef Name="Astro_SoldierBase" ParentName="Astro_PawnBase" Abstract="True">
+		<isFighter>true</isFighter>
+		<initialResistanceRange>10~40</initialResistanceRange>
+		<chemicalAddictionChance>0.1</chemicalAddictionChance>
+		<combatEnhancingDrugsChance>0.15</combatEnhancingDrugsChance>
+		<combatEnhancingDrugsCount>0~2</combatEnhancingDrugsCount>
+		<gearHealthRange>0.8~2</gearHealthRange>
+		<!--weaponMoney>500~1200</weaponMoney-->
+		<apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
+		<apparelMoney>700~1500</apparelMoney>
+		<techHediffsChance>0.15</techHediffsChance>
+		<techHediffsMoney>700~1200</techHediffsMoney>
+		<techHediffsTags></techHediffsTags>
+		<modExtensions>
+			<li Class="AK_DLL.Ext_LinkedReservedOperatorDef">
+				<linkedDef>LOF_Recruit_Soldier</linkedDef>
+			</li>
+		</modExtensions>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="Astro_CitizenBase">
+		<defName>LOF_PawnKind_AstroCitizen</defName>
+		<label>繁星帝国公民</label>
+		<labelPlural>繁星帝国公民</labelPlural>
+		<combatPower>80</combatPower>
+		<apparelTags>
+			<li>Astrologer_CitizenCloth</li>
+		</apparelTags>
+		<skills>
+			<li>
+				<skill>Intellectual</skill>
+				<range>5~10</range>
+			</li>
+		</skills>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="Astro_SoldierBase">
+		<defName>LOF_PawnKind_AstroSoldier</defName>
+		<label>繁星帝国士兵</label>
+		<labelPlural>繁星帝国士兵</labelPlural>
+		<combatPower>100</combatPower>
+		<apparelTags>
+			<li>Astrologer_SoldierArmor</li>
+		</apparelTags>
+		<skills>
+			<li>
+				<skill>Melee</skill>
+				<range>5~10</range>
+			</li>
+			<li>
+				<skill>Shooting</skill>
+				<range>5~10</range>
+			</li>
+		</skills>
+	</PawnKindDef>
+
+	<!--PawnKindDef ParentName="Astro_CitizenBase">
+		<defName>LOF_PawnKind_EmpireLeader</defName>
+		<label>繁星帝国参议长</label>
+		<combatPower>300</combatPower>
+		<factionLeader>true</factionLeader>
+		<itemQuality>Excellent</itemQuality>
+		<gearHealthRange>1~2</gearHealthRange>
+		<forceDeathOnDowned>true</forceDeathOnDowned>
+		<initialResistanceRange>80~100</initialResistanceRange>
+		<apparelTags>
+			<li>LOF_AS_Category_Armor</li>
+		</apparelTags>
+		<apparelRequired>
+		</apparelRequired>
+		<weaponMoney>2500~2500</weaponMoney>
+		<weaponTags>
+			<li>Astrologer_Weapon_Boss</li>
+		</weaponTags>
+		<techHediffsMoney>2000~3000</techHediffsMoney>
+		<combatEnhancingDrugsChance>0.1</combatEnhancingDrugsChance>
+		<combatEnhancingDrugsCount>1~2</combatEnhancingDrugsCount>
+		<techHediffsTags>
+			<li>Advanced</li>
+			<li>AdvancedWeapon</li>
+			<li>ImplantEmpireCommon</li>
+		</techHediffsTags>
+		<techHediffsChance>0.5</techHediffsChance>
+		<skills>
+			<li>
+				<skill>Melee</skill>
+				<range>9~18</range>
+			</li>
+			<li>
+				<skill>Shooting</skill>
+				<range>9~18</range>
+			</li>
+			<li>
+				<skill>Intellectual</skill>
+				<range>9~18</range>
+			</li>
+		</skills>
+		<useFactionXenotypes>false</useFactionXenotypes>
+	</PawnKindDef-->
+
+</Defs>

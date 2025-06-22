@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <ThingDef>
+        <defName>LOF_ActivatedPulsePack</defName>
+        <label>EMP冲击背包(工作中)</label>
+        <thingClass>Astrologer.ActivatedPulsePack</thingClass>
+        <category>Building</category>
+        <tickerType>Normal</tickerType>
+        <drawerType>MapMeshOnly</drawerType>
+        <description>投射在地面上会产生持续的emp脉冲,范围较大且放置距离较长</description>
+        <selectable>true</selectable>
+        <soundImpactDefault>BulletImpact_Metal</soundImpactDefault>
+        <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+        <leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+        <filthLeaving>Filth_RubbleBuilding</filthLeaving>
+        <!--等待贴图-->
+        <graphicData>
+            <texPath>Things/Apparel/LOF_EmpactPack/EmpactPack</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <uiIconScale>1.25</uiIconScale>
+        <relicChance>0</relicChance>
+    </ThingDef>
+
+    <ThingDef>
+        <defName>LOF_GravityDeflectionDust</defName>
+        <label>引力偏转尘埃</label>
+        <thingClass>Astrologer.GravityDeflectionDust</thingClass>
+        <tickerType>Normal</tickerType>
+        <drawerType>RealtimeOnly</drawerType>
+        <drawOffscreen>true</drawOffscreen>
+        <useHitPoints>false</useHitPoints>
+        <!--等待贴图-->
+        <comps>
+            <li Class="Astrologer.TCP_TimedRemove">
+                <lastTime>2500</lastTime>
+            </li>
+            <li Class="CompProperties_ProjectileInterceptor">
+                <radius>10</radius>
+                <interceptGroundProjectiles>true</interceptGroundProjectiles>
+                <interceptNonHostileProjectiles>true</interceptNonHostileProjectiles>
+                <color>(0.4, 0.4, 0.4)</color>
+                <reactivateEffect>BulletShieldGenerator_Reactivate</reactivateEffect>
+                <!--activeSound>BulletShield_Ambience</activeSound-->
+                <hitPoints>0</hitPoints>
+                <minAlpha>0.5</minAlpha>
+                <interceptOutgoingProjectiles>true</interceptOutgoingProjectiles>
+                <disarmedByEmpForTicks>0</disarmedByEmpForTicks>
+            </li>
+        </comps>
+    </ThingDef>
+
+</Defs>

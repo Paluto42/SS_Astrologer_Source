@@ -31,6 +31,8 @@ namespace Astrologer
 
         public static AKAbilityDef LOF_Ability_LeechAttack; //吸血攻击
 
+        public static EffecterDef LOF_Effecter_PsychicPulse;
+
         public static DamageDef LOF_EMP; //改了Fleck的EMP
         public static DamageDef LOF_Cast_ForcePartDestruct; //强制摧毁部件
         public static DamageDef LOF_LeechBomb; //吸血攻击

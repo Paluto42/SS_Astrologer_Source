@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <ThingDef ParentName="ResourceBase">
+        <defName>LOF_Resource_StarlightIron</defName>
+        <label>星辉钢</label>
+        <description>星辉钢.</description>
+        <descriptionHyperlinks>
+            <ThingDef>LOF_Plant_Starlightgrass</ThingDef>
+            <ThingDef>LOF_Resource_Starlightgrass</ThingDef>
+        </descriptionHyperlinks>
+        <graphicData>
+            <texPath>Things/Item/Resource/StarlightIron</texPath>
+            <graphicClass>Graphic_StackCount</graphicClass>
+        </graphicData>
+        <soundInteract>Metal_Drop</soundInteract>
+        <soundDrop>Metal_Drop</soundDrop>
+        <useHitPoints>false</useHitPoints>
+        <healthAffectsPrice>false</healthAffectsPrice>
+        <statBases>
+            <MarketValue>6</MarketValue>
+            <Mass>0.5</Mass>
+            <StuffPower_Armor_Sharp>1</StuffPower_Armor_Sharp>
+            <StuffPower_Armor_Blunt>0.5</StuffPower_Armor_Blunt>
+            <StuffPower_Armor_Heat>0.6</StuffPower_Armor_Heat>
+            <StuffPower_Insulation_Cold>3</StuffPower_Insulation_Cold>
+            <StuffPower_Insulation_Heat>0</StuffPower_Insulation_Heat>
+            <SharpDamageMultiplier>1.2</SharpDamageMultiplier>
+            <BluntDamageMultiplier>1.2</BluntDamageMultiplier>
+        </statBases>
+        <thingCategories>
+            <li>LOF_AS_Category_Resources</li>
+        </thingCategories>
+        <deepCommonality>0</deepCommonality>
+        <burnableByRecipe>false</burnableByRecipe>
+        <smeltable>true</smeltable>
+        <minRewardCount>10</minRewardCount>
+        <stuffProps>
+            <categories>
+                <li>Metallic</li>
+            </categories>
+            <appearance>Metal</appearance>
+            <commonality>0.05</commonality>
+            <color>(220,220,220)</color>
+            <constructEffect>ConstructMetal</constructEffect>
+            <soundImpactBullet>BulletImpact_Metal</soundImpactBullet>
+            <soundMeleeHitSharp>MeleeHit_Metal_Sharp</soundMeleeHitSharp>
+            <soundMeleeHitBlunt>MeleeHit_Metal_Blunt</soundMeleeHitBlunt>
+            <soundImpactMelee>Pawn_Melee_Punch_HitBuilding_Metal</soundImpactMelee>
+            <statFactors>
+                <MaxHitPoints>1.5</MaxHitPoints>
+                <Beauty>1</Beauty>
+                <Flammability>0</Flammability>
+                <DoorOpenSpeed>1.5</DoorOpenSpeed>
+            </statFactors>
+        </stuffProps>
+        <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+        <allowedArchonexusCount>80</allowedArchonexusCount>
+    </ThingDef>
+
+    <ThingDef ParentName="RoughPlantBase">
+        <defName>LOF_Resource_Starlightgrass</defName>
+        <label>星光草球</label>
+        <description>晨曦之中，造物主以此等超凡彰显其伟大。--启示录Ⅰ-光明之书</description>
+        <descriptionHyperlinks>
+            <ThingDef>LOF_Plant_Starlightgrass</ThingDef>
+            <ThingDef>LOF_Resource_StarlightIron</ThingDef>
+        </descriptionHyperlinks>
+        <stackLimit>200</stackLimit>
+        <graphicData>
+            <texPath>Things/Item/Resource/StarlightGrass</texPath>
+            <graphicClass>Graphic_StackCount</graphicClass>
+        </graphicData>
+        <statBases>
+            <MarketValue>0.6</MarketValue>
+            <Mass>0.014</Mass>
+            <Flammability>1.5</Flammability>
+        </statBases>
+        <burnableByRecipe>true</burnableByRecipe>
+        <healthAffectsPrice>false</healthAffectsPrice>
+        <comps>
+            <li Class="CompProperties_Rottable">
+                <daysToRotStart>60</daysToRotStart>
+                <rotDestroys>true</rotDestroys>
+            </li>
+        </comps>
+        <thingCategories>
+            <li>LOF_AS_Category_Resources</li>
+            <li>PlantMatter</li>
+            <li>ResourcesRaw</li>
+        </thingCategories>
+    </ThingDef>
+
+    <ThingDef ParentName="ResourceBase">
+        <defName>LOF_Resource_StarPotion</defName>
+        <label>星星药剂</label>
+        <description>desc.</description>
+        <possessionCount>10</possessionCount>
+        <graphicData>
+            <texPath>Things/Item/Drug/StarPotion</texPath>
+            <graphicClass>Graphic_StackCount</graphicClass>
+            <drawSize>0.90</drawSize>
+        </graphicData>
+        <stackLimit>150</stackLimit>
+        <healthAffectsPrice>false</healthAffectsPrice>
+        <statBases>
+            <MaxHitPoints>50</MaxHitPoints>
+            <MarketValue>6</MarketValue>
+            <Mass>0.02</Mass>
+            <DeteriorationRate>1.0</DeteriorationRate>
+        </statBases>
+        <recipeMaker>
+            <researchPrerequisite>LOF_Research_Drugsynthesis</researchPrerequisite>
+            <skillRequirements>
+                <Medicine>6</Medicine>
+            </skillRequirements>
+        </recipeMaker>
+        <costList>
+            <LOF_Resource_Starlightgrass>5</LOF_Resource_Starlightgrass>
+            <Neutroamine>2</Neutroamine>
+        </costList>
+        <thingCategories>
+            <li>Manufactured</li>
+        </thingCategories>
+    </ThingDef>
+
+</Defs>

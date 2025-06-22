@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <ThingDef ParentName="BuildingBase">
+        <defName>LOF_Thing_Laundy</defName>
+        <tickerType>Normal</tickerType>
+        <label>环形重塑器</label>
+        <description>将衣物武器放入,消耗洞察力启动一段时间,在容器内的衣物会恢复耐久.</description>
+        <!--等待贴图-->
+        <graphicData>
+            <texPath>Things/Building/Misc/MultiAnalyzer</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>2.46875</drawSize>
+        </graphicData>
+        <uiIconScale>0.85</uiIconScale>
+        <researchPrerequisites>
+            <li>LOF_Research_Laundy</li>
+        </researchPrerequisites>
+        <size>(2,2)</size>
+        <rotatable>false</rotatable>
+        <altitudeLayer>Building</altitudeLayer>
+        <passability>PassThroughOnly</passability>
+        <castEdgeShadows>true</castEdgeShadows>
+        <fillPercent>0.5</fillPercent>
+        <designationCategory>Misc</designationCategory>
+        <minifiedDef>MinifiedThing</minifiedDef>
+        <canOverlapZones>false</canOverlapZones>
+        <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+        <thingCategories>
+            <li>BuildingsMisc</li>
+        </thingCategories>
+        <statBases>
+            <MaxHitPoints>200</MaxHitPoints>
+            <WorkToBuild>10000</WorkToBuild>
+            <Mass>60</Mass>
+            <Flammability>0.2</Flammability>
+        </statBases>
+        <costList>
+            <Steel>40</Steel>
+            <Plasteel>50</Plasteel>
+            <Gold>20</Gold>
+            <ComponentIndustrial>8</ComponentIndustrial>
+        </costList>
+        <building>
+            <destroySound>BuildingDestroyed_Metal_Medium</destroySound>
+        </building>
+        <comps>
+            <li Class="CompProperties_Power">
+                <compClass>CompPowerTrader</compClass>
+                <shortCircuitInRain>true</shortCircuitInRain>
+                <basePowerConsumption>200</basePowerConsumption>
+            </li>
+            <li Class="CompProperties_Flickable"/>
+            <li Class="Astrologer.Laundry.TCP_UseEffect_ActivateLaundry">
+                <insightCost>10</insightCost>
+            </li>
+            <li Class="Astrologer.Generic.TCP_ThingContainer">
+                <capacity>5</capacity>
+                <gizmoEjectLabel>弹出服装</gizmoEjectLabel>
+                <gizmoEjectUIIconPath>UI/Element/Placeholder</gizmoEjectUIIconPath>
+            </li>
+            <li Class="Astrologer.Laundry.TCP_Laundry">
+                <compClass>Astrologer.Laundry.TC_LaundryRepair</compClass>
+            </li>
+        </comps>
+        <constructionSkillPrerequisite>8</constructionSkillPrerequisite>
+    </ThingDef>
+
+    <ThingDef ParentName="BuildingBase">
+        <defName>LOF_Thing_PsychicDevice</defName>
+        <thingClass>Astrologer.PsychicDevice</thingClass>
+        <drawerType>MapMeshAndRealTime</drawerType>
+        <tickerType>Normal</tickerType>
+        <label>心灵低语驳斥装置</label>
+        <description>消耗一定洞察力,将范围内生物的心灵敏感度降为0,持续一段时间,同时需要消耗大量电力.</description>
+        <graphicData>
+            <texPath>Things/Building/LOF_PsychicDevice/PsychicDevice</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>3.5</drawSize>
+            <drawOffset>(0,0,0.7)</drawOffset>
+        </graphicData>
+        <uiIconScale>0.7</uiIconScale>
+        <researchPrerequisites>
+            <li>LOF_Research_PsychicDevice</li>
+        </researchPrerequisites>
+        <size>(2,2)</size>
+        <rotatable>false</rotatable>
+        <altitudeLayer>Building</altitudeLayer>
+        <passability>PassThroughOnly</passability>
+        <castEdgeShadows>true</castEdgeShadows>
+        <fillPercent>0.5</fillPercent>
+        <designationCategory>Misc</designationCategory>
+        <minifiedDef>MinifiedThing</minifiedDef>
+        <canOverlapZones>false</canOverlapZones>
+        <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+        <thingCategories>
+            <li>BuildingsMisc</li>
+        </thingCategories>
+        <statBases>
+            <MaxHitPoints>200</MaxHitPoints>
+            <WorkToBuild>10000</WorkToBuild>
+            <Mass>60</Mass>
+            <Flammability>0.2</Flammability>
+        </statBases>
+        <costList>
+            <Steel>40</Steel>
+            <Plasteel>50</Plasteel>
+            <Gold>20</Gold>
+            <ComponentIndustrial>8</ComponentIndustrial>
+        </costList>
+        <building>
+            <destroySound>BuildingDestroyed_Metal_Medium</destroySound>
+        </building>
+        <comps>
+            <li Class="CompProperties_Power">
+                <compClass>CompPowerTrader</compClass>
+                <shortCircuitInRain>true</shortCircuitInRain>
+                <basePowerConsumption>2000</basePowerConsumption>
+            </li>
+            <li Class="CompProperties_Flickable"/>
+            <li Class="CompProperties_Usable">
+                <useJob>LOF_Job_InsightInteract</useJob>
+                <useLabel>激活 {0_label}</useLabel>
+            </li>
+            <li Class="Astrologer.Insight.TCP_AddHediffInRange">
+                <hediffDef>LOF_Hediff_DecreasePsychicSense</hediffDef>
+                <activeTickPerInteract>1000</activeTickPerInteract>
+            </li>
+        </comps>
+        <constructionSkillPrerequisite>8</constructionSkillPrerequisite>
+    </ThingDef>
+
+    <FleckDef ParentName="FleckBase_RandomGraphic">
+        <defName>LOF_Fleck_PsychicPulse</defName>
+        <altitudeLayer>MoteOverhead</altitudeLayer>
+        <fadeInTime>0.2</fadeInTime>
+        <fadeOutTime>1.35</fadeOutTime>
+        <solidTime>0.15</solidTime>
+        <randomGraphics>
+            <li>
+                <graphicClass>Graphic_Fleck</graphicClass>
+                <texPath>UI/Mote/LOF_BeamBurn/BeamBurn_B</texPath>
+                <shaderType>MoteGlow</shaderType>
+                <color>(1, 1, 1, 1)</color>
+                <drawSize>4</drawSize>
+            </li>
+            <li>
+                <graphicClass>Graphic_Fleck</graphicClass>
+                <texPath>UI/Mote/LOF_BeamBurn/BeamBurn_A</texPath>
+                <shaderType>MoteGlow</shaderType>
+                <color>(1, 1, 1, 0.8)</color>
+                <drawSize>4</drawSize>
+            </li>
+        </randomGraphics>
+    </FleckDef>
+    <EffecterDef>
+        <defName>LOF_Effecter_PsychicPulse</defName>
+        <children>
+            <li>
+                <subEffecterClass>SubEffecter_SprayerContinuous</subEffecterClass>
+                <fleckDef>LOF_Fleck_PsychicPulse</fleckDef>
+                <ticksBetweenMotes>135</ticksBetweenMotes>
+                <angle>0</angle>
+                <rotation>0~0</rotation>
+                <positionOffset>(-0.5,0,0.25)</positionOffset>
+                <spawnLocType>OnSource</spawnLocType>
+                <attachToSpawnThing>true</attachToSpawnThing>
+            </li>
+        </children>
+    </EffecterDef>
+
+</Defs>

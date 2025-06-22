@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <ThingDef Name="LOF_ChargedShotBase" ParentName="BaseBullet" Abstract="True">
+        <graphicData>
+            <texPath>Things/Projectile/LOF_ChargedShot</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+    </ThingDef>
+
+
+    <ThingDef ParentName="BaseBullet">
+        <defName>LOF_Projectile_EagleMoon</defName>
+        <label>手炮弹药</label>
+        <graphicData>
+            <texPath>Things/Projectile/Bullet_Small</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <projectile>
+            <damageDef>Bullet</damageDef>
+            <damageAmountBase>18</damageAmountBase>
+            <armorPenetrationBase>0.2</armorPenetrationBase>
+            <stoppingPower>1</stoppingPower>
+            <speed>60</speed>
+        </projectile>
+    </ThingDef>
+
+    <ThingDef ParentName="BaseBullet">
+        <defName>LOF_Bullet_SMG</defName>
+        <label>冲锋枪子弹</label>
+        <graphicData>
+            <texPath>Things/Projectile/Bullet_Small</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <projectile>
+            <damageDef>Bullet</damageDef>
+            <damageAmountBase>10</damageAmountBase>
+            <armorPenetrationBase>0.1</armorPenetrationBase>
+            <speed>48</speed>
+            <stoppingPower>1</stoppingPower>
+        </projectile>
+    </ThingDef>
+
+    <ThingDef ParentName="BaseBullet">
+        <defName>LOF_Bullet_Shotgun</defName>
+        <label>大口径破甲独头弹</label>
+        <graphicData>
+            <texPath>Things/Projectile/Bullet_Shotgun</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <projectile>
+            <damageDef>Bullet</damageDef>
+            <damageAmountBase>22</damageAmountBase>
+            <stoppingPower>2</stoppingPower>
+            <armorPenetrationBase>0.20</armorPenetrationBase>
+            <speed>55</speed>
+        </projectile>
+    </ThingDef>
+
+    <ThingDef ParentName="LOF_ChargedShotBase">
+        <defName>LOF_Bullet_StunShotgun</defName>
+        <label>高速电能霰弹</label>
+        <projectile>
+            <damageDef>Bullet</damageDef>
+            <damageAmountBase>20</damageAmountBase>
+            <stoppingPower>2</stoppingPower>
+            <armorPenetrationBase>0.18</armorPenetrationBase>
+            <extraDamages>
+                <li>
+                    <def>EMP</def>
+                    <amount>1</amount>
+                    <chance>2</chance>
+                </li>
+            </extraDamages>
+            <speed>65</speed>
+        </projectile>
+    </ThingDef>
+
+    <ThingDef ParentName="LOF_ChargedShotBase">
+        <defName>LOF_Bullet_ChargeRifle</defName>
+        <label>charge shot</label>
+        <projectile>
+            <damageDef>Bullet</damageDef>
+            <damageAmountBase>15</damageAmountBase>
+            <armorPenetrationBase>0.35</armorPenetrationBase>
+            <speed>70</speed>
+        </projectile>
+    </ThingDef>
+
+    <ThingDef ParentName="LOF_ChargedShotBase">
+        <defName>LOF_Bullet_DMR</defName>
+        <label>charge shot</label>
+        <projectile>
+            <damageDef>Bullet</damageDef>
+            <damageAmountBase>25</damageAmountBase>
+            <armorPenetrationBase>0.35</armorPenetrationBase>
+            <speed>70</speed>
+        </projectile>
+    </ThingDef>
+
+    <ThingDef ParentName="BaseBullet">
+        <defName>LOF_Bullet_Psychicinsanity</defName>
+        <label>附魔步枪子弹</label>
+        <graphicData>
+            <texPath>Things/Projectile/LOF_PsychicinsanityShot</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <projectile>
+            <damageDef>LOF_Cast_Psychicinsanity</damageDef>
+            <damageAmountBase>25</damageAmountBase>
+            <armorPenetrationBase>0.35</armorPenetrationBase>
+            <speed>70</speed>
+        </projectile>
+    </ThingDef>
+
+    <ThingDef ParentName="LOF_ChargedShotBase">
+        <defName>LOF_Projectile_NebulaRay</defName>
+        <label>星云射线</label>
+        <graphicData>
+            <texPath>Things/Projectile/Charge_Small</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <projectile>
+            <damageDef>LOF_Cast_ForcePartDestruct</damageDef>
+            <damageAmountBase>25</damageAmountBase>
+            <armorPenetrationBase>0.35</armorPenetrationBase>
+            <speed>70</speed>
+            <stoppingPower>1</stoppingPower>
+        </projectile>
+    </ThingDef>
+
+    <ThingDef ParentName="BaseBullet">
+        <defName>LOF_Projectile_Railgun</defName>
+        <label>Plasma shot</label>
+        <graphicData>
+            <texPath>Things/Projectile/Rocket_Big</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <shaderType>TransparentPostLight</shaderType>
+        </graphicData>
+        <thingClass>Astrologer.Projectile_Leech</thingClass>
+        <projectile>
+            <damageDef>LOF_LeechBomb</damageDef>
+            <damageAmountBase>250</damageAmountBase>
+            <armorPenetrationBase>0.8</armorPenetrationBase>
+            <explosionRadius>3.9</explosionRadius>
+            <speed>80</speed>
+            <stoppingPower>3</stoppingPower>
+            <soundHitThickRoof>Artillery_HitThickRoof</soundHitThickRoof>
+            <soundExplode>Explosion_GiantBomb</soundExplode>
+            <soundImpactAnticipate>MortarRound_PreImpact</soundImpactAnticipate>
+            <soundAmbient>MortarRound_Ambient</soundAmbient>
+        </projectile>
+    </ThingDef>
+
+    <!--Bomb-->
+
+    <ThingDef ParentName="BaseBullet">
+        <defName>LOF_PhotonBomb</defName>
+        <label>光子炸弹</label>
+        <graphicData>
+            <texPath>Things/Projectile/ShellHighExplosive</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <shaderType>TransparentPostLight</shaderType>
+        </graphicData>
+        <thingClass>Projectile_Explosive</thingClass>
+        <projectile>
+            <damageDef>BombSuper</damageDef>
+            <speed>100</speed>
+            <flyOverhead>true</flyOverhead>
+            <explosionRadius>10</explosionRadius>
+            <explosionEffect>GiantExplosion</explosionEffect>
+            <soundHitThickRoof>Artillery_HitThickRoof</soundHitThickRoof>
+            <soundExplode>Explosion_GiantBomb</soundExplode>
+            <soundImpactAnticipate>MortarRound_PreImpact</soundImpactAnticipate>
+            <soundAmbient>MortarRound_Ambient</soundAmbient>
+        </projectile>
+    </ThingDef>
+
+    <!--Rockets-->
+
+    <ThingDef ParentName="BaseBullet">
+        <defName>LOF_Bullet_TandemHEAT</defName>
+        <label>串联破甲火箭弹</label>
+        <graphicData>
+            <texPath>Things/Projectile/TandemHEAT</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <shaderType>TransparentPostLight</shaderType>
+        </graphicData>
+        <thingClass>Projectile_DoomsdayRocket</thingClass>
+        <projectile>
+            <damageDef>Bullet</damageDef>
+            <damageAmountBase>450</damageAmountBase>
+            <armorPenetrationBase>1.2</armorPenetrationBase>
+            <explosionRadius>2</explosionRadius>
+            <speed>65</speed>
+        </projectile>
+    </ThingDef>
+
+</Defs>
