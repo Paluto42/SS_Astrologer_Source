@@ -146,6 +146,7 @@
             <renderNodeProperties>
                 <li>
                     <workerClass>PawnRenderNodeWorker_Apparel_Head</workerClass>
+                    <nodeClass>PawnRenderNode_Apparel</nodeClass>
                     <texPath>Things/Apparel/LOF_PriestessVeil/PriestessVeil</texPath>
                     <baseLayer>0</baseLayer>
                     <parentTagDef>Head</parentTagDef>
@@ -168,6 +169,7 @@
                 </li>
                 <li>
                     <workerClass>PawnRenderNodeWorker_Apparel_Head</workerClass>
+                    <nodeClass>PawnRenderNode_Apparel</nodeClass>
                     <texPath>Things/Apparel/LOF_PriestessVeil/PriestessVeilBack</texPath>
                     <baseLayer>0</baseLayer>
                     <parentTagDef>Head</parentTagDef>

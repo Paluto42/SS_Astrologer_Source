@@ -44,8 +44,7 @@
       <Private>False</Private>
     </Reference>
     <Reference Include="Assembly-CSharp">
-      <HintPath>..\Source\Rely\Assembly-CSharp.dll</HintPath>
-      <Private>False</Private>
+      <HintPath>..\Source\Rely\1.6\Assembly-CSharp.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />

@@ -12,7 +12,7 @@ namespace Astrologer
         public const float screenShakeFactor = 0.125f;
         public float Radius => Rand.Range(minRange, maxRange);
 
-        public override void Tick()
+        protected override void Tick()
         {
             if (Utility.IsTickInterval(duration))
             {

@@ -15,7 +15,8 @@ namespace Astrologer.HarmonyPatches
             harmony.PatchAll(Assembly.GetExecutingAssembly());
             
             Type nested = typeof(JobDriver_WatchBuilding).GetNestedType("<>c__DisplayClass2_0", BindingFlags.NonPublic);
-            MethodBase method = nested.GetMethod("<MakeNewToils>b__2", BindingFlags.NonPublic | BindingFlags.Instance);
+            //1.5是<MakeNewToils>b__2
+            MethodBase method = nested.GetMethod("<MakeNewToils>b__1", BindingFlags.NonPublic | BindingFlags.Instance);
 
             harmony.Patch(method, transpiler: new HarmonyMethod(typeof(Patch_JobDriver), nameof(Patch_JobDriver.Transpiler)));
         }

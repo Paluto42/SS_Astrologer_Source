@@ -42,7 +42,7 @@ namespace Astrologer
             Graphics.DrawMesh(MeshPool.plane20, matrix, EffectsMat, 0);
         }
 
-        public override void Tick()
+        protected override void Tick()
         {
             base.Tick();
             if (CompPower == null || !CompPower.PowerOn) return;

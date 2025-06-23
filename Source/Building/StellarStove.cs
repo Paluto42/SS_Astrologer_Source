@@ -11,7 +11,7 @@ namespace Astrologer.MapBuilding
         public CompPowerTrader CompPower => GetComp<CompPowerTrader>();
         public CompRefuelable CompRefuelable => GetComp<CompRefuelable>();
 
-        public override void Tick()
+        protected override void Tick()
         {
             base.Tick();
         }

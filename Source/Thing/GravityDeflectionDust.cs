@@ -13,7 +13,7 @@ namespace Astrologer
             //Comps_PostDraw();
         }
 
-        public override void Tick()
+        protected override void Tick()
         {
             base.Tick();
         }
