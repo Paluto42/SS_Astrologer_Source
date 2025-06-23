@@ -3,6 +3,6 @@
 	<v1.5>
 		<li>/</li>
 		<li>1.5</li>
-		<li IfModActive="erdelf.HumanoidAlienRaces">SoftRely/HAR</li>
+		<li IfModActive="erdelf.HumanoidAlienRaces">SoftRely/1.5</li>
 	</v1.5>
 </loadFolders>
