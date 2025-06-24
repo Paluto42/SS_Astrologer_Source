@@ -107,6 +107,7 @@
     <Compile Include="Building\Laundry\TC_LaundryRepair.cs" />
     <Compile Include="Building\OffsetProductQuality\Ext_OffsetProductQuality.cs" />
     <Compile Include="Building\OffsetProductQuality\Patch_OffsetProductQuality.cs" />
+    <Compile Include="Building\StellarFoundry.cs" />
     <Compile Include="Building\StellarStove.cs" />
     <Compile Include="Building\TCP_NightGenerator.cs" />
     <Compile Include="Comp\CompEquippable_AKAbility.cs" />

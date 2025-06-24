@@ -1,11 +1,10 @@
 ﻿using AK_DLL;
-using Astrologer.Generic;
 using RimWorld;
 using System;
 using System.Collections.Generic;
 using Verse;
 
-namespace Astrologer.Laundry
+namespace Astrologer
 {
     //可以把东西装进这个洗衣机桶洗，洗完对内容物执行效果。一个建筑物可以有多个不同名洗衣机功能，不能有相同功能
     public class TCP_Laundry : CompProperties

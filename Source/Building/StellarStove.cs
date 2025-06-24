@@ -3,21 +3,23 @@ using System.Collections.Generic;
 using Verse;
 using Verse.AI;
 
-namespace Astrologer.MapBuilding
+namespace Astrologer
 {
-    public class StellarStove : Building
+    public class StellarStove : Building_WorkTable
     {
         public bool canProduceNow = false;
         public CompPowerTrader CompPower => GetComp<CompPowerTrader>();
         public CompRefuelable CompRefuelable => GetComp<CompRefuelable>();
+        public bool PowerOn => CompPower != null && CompPower.PowerOn;
 
         public override void Tick()
         {
             base.Tick();
         }
+
         public override IEnumerable<FloatMenuOption> GetFloatMenuOptions(Pawn selPawn)
         {
-            if (CompPower != null && !CompPower.PowerOn)
+            if (!PowerOn)
             {
                 yield return new FloatMenuOption("CannotUseNoPower".Translate(), null, MenuOptionPriority.Default, null, null, 0f, null, null, true, 0);
                 yield break;

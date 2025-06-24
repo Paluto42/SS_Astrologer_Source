@@ -2,7 +2,7 @@
 using Verse;
 using Verse.AI;
 
-namespace Astrologer.Laundry
+namespace Astrologer
 {
     //好像jobdriver是可以用同一个的
     public class JobDriver_FillLaundryUnited : JobDriver

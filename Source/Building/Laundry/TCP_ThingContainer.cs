@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using Verse;
 
-namespace Astrologer.Generic
+namespace Astrologer
 {
     //通用的，可以存储一组物品的comp
     [StaticConstructorOnStartup]
