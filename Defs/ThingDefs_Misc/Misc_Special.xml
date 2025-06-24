@@ -14,10 +14,10 @@
         <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
         <leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
         <filthLeaving>Filth_RubbleBuilding</filthLeaving>
-        <!--等待贴图-->
         <graphicData>
             <texPath>Things/Apparel/LOF_EmpactPack/EmpactPack</texPath>
             <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>3</drawSize>
         </graphicData>
         <uiIconScale>1.25</uiIconScale>
         <relicChance>0</relicChance>
@@ -31,7 +31,6 @@
         <drawerType>RealtimeOnly</drawerType>
         <drawOffscreen>true</drawOffscreen>
         <useHitPoints>false</useHitPoints>
-        <!--等待贴图-->
         <comps>
             <li Class="Astrologer.TCP_TimedRemove">
                 <lastTime>2500</lastTime>

@@ -6,10 +6,6 @@ namespace Astrologer
 {
     public class PsychicDevice : Building
     {
-        public static bool isBadTex = false;
-
-        public readonly string EffectsBaseTexPath = "UI/Effect/PsychicDeviceBase";
-
         public readonly static float rotationSpeed = 15f;
 
         public readonly static Vector2 size = new(2f, 2f);
@@ -31,10 +27,12 @@ namespace Astrologer
         private static Quaternion EffectRotation => Quaternion.Euler(0, EffectAngle, 0);
         private Vector3 EffectDrawPos => DrawPos + new Vector3(0, 0.1f, 0.1f);
 
+        public bool PowerOn => CompPower != null && CompPower.PowerOn;
+
         protected override void DrawAt(Vector3 drawLoc, bool flip = false)
         {
             base.DrawAt(drawLoc, flip);
-            if (CompPower == null || !CompPower.PowerOn) return;
+            if (!PowerOn) return;
 
             Matrix4x4 matrix = default;
             Vector3 s = new(size.x, 1f, size.y);
@@ -45,7 +43,7 @@ namespace Astrologer
         protected override void Tick()
         {
             base.Tick();
-            if (CompPower == null || !CompPower.PowerOn) return;
+            if (!PowerOn) return;
 
             effecter ??= AstroDefOf.LOF_Effecter_PsychicPulse.SpawnAttached(this, base.Map);
             effecter?.EffectTick(this, this);

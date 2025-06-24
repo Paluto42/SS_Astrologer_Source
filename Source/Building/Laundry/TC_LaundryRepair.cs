@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using Verse;
 
-namespace Astrologer.Laundry
+namespace Astrologer
 {
     public class TC_LaundryRepair : TC_LaundryBase
     {

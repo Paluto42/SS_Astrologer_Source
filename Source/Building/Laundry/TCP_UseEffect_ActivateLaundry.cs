@@ -1,7 +1,7 @@
 ﻿using RimWorld;
 using Verse;
 
-namespace Astrologer.Laundry
+namespace Astrologer
 {
     public class TCP_UseEffect_ActivateLaundry : CompProperties_UseEffect
     {

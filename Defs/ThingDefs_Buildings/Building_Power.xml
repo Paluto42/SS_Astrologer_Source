@@ -7,6 +7,9 @@
         <description>收集月光进行发电,在阳光强烈时停止工作.</description>
         <thingClass>Building</thingClass>
         <drawerType>MapMeshAndRealTime</drawerType>
+        <tickerType>Normal</tickerType>
+        <altitudeLayer>Building</altitudeLayer>
+        <passability>PassThroughOnly</passability>
         <!--等待贴图-->
         <graphicData>
             <texPath>Things/Building/Power/Battery</texPath>
@@ -19,9 +22,8 @@
                 <cornerBR>Damage/Corner</cornerBR>
             </damageData>
         </graphicData>
+        <size>(1,2)</size>
         <castEdgeShadows>true</castEdgeShadows>
-        <altitudeLayer>Building</altitudeLayer>
-        <passability>PassThroughOnly</passability>
         <pathCost>50</pathCost>
         <fillPercent>0.5</fillPercent>
         <canOverlapZones>false</canOverlapZones>
@@ -30,8 +32,6 @@
             <WorkToBuild>2500</WorkToBuild>
             <Flammability>0.7</Flammability>
         </statBases>
-        <tickerType>Normal</tickerType>
-        <size>(1,2)</size>
         <building>
             <destroySound>BuildingDestroyed_Metal_Big</destroySound>
         </building>

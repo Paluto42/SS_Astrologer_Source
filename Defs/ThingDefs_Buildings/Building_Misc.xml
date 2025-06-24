@@ -4,22 +4,23 @@
     <ThingDef ParentName="BuildingBase">
         <defName>LOF_Thing_Laundy</defName>
         <tickerType>Normal</tickerType>
-        <label>环形重塑器</label>
-        <description>将衣物武器放入,消耗洞察力启动一段时间,在容器内的衣物会恢复耐久.</description>
-        <!--等待贴图-->
-        <graphicData>
-            <texPath>Things/Building/Misc/MultiAnalyzer</texPath>
-            <graphicClass>Graphic_Single</graphicClass>
-            <drawSize>2.46875</drawSize>
-        </graphicData>
-        <uiIconScale>0.85</uiIconScale>
-        <researchPrerequisites>
-            <li>LOF_Research_Laundy</li>
-        </researchPrerequisites>
-        <size>(2,2)</size>
-        <rotatable>false</rotatable>
         <altitudeLayer>Building</altitudeLayer>
         <passability>PassThroughOnly</passability>
+        <label>环形重塑器</label>
+        <description>将衣物武器放入,消耗洞察力启动一段时间,在容器内的衣物会恢复耐久.</description>
+        <graphicData>
+            <texPath>Things/Building/LOF_Laundy/Laundy</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>2.46875</drawSize>
+            <drawOffset>(0,0,0.25)</drawOffset>
+            <shadowData>
+                <volume>(1.5,0.35,1.4)</volume>
+                <offset>(0,0,-0.05)</offset>
+            </shadowData>
+        </graphicData>
+        <uiIconScale>0.85</uiIconScale>
+        <size>(2,2)</size>
+        <rotatable>false</rotatable>
         <castEdgeShadows>true</castEdgeShadows>
         <fillPercent>0.5</fillPercent>
         <designationCategory>Misc</designationCategory>
@@ -33,7 +34,7 @@
             <MaxHitPoints>200</MaxHitPoints>
             <WorkToBuild>10000</WorkToBuild>
             <Mass>60</Mass>
-            <Flammability>0.2</Flammability>
+            <Flammability>0.5</Flammability>
         </statBases>
         <costList>
             <Steel>40</Steel>
@@ -51,19 +52,22 @@
                 <basePowerConsumption>200</basePowerConsumption>
             </li>
             <li Class="CompProperties_Flickable"/>
-            <li Class="Astrologer.Laundry.TCP_UseEffect_ActivateLaundry">
+            <li Class="Astrologer.TCP_UseEffect_ActivateLaundry">
                 <insightCost>10</insightCost>
             </li>
-            <li Class="Astrologer.Generic.TCP_ThingContainer">
+            <li Class="Astrologer.TCP_ThingContainer">
                 <capacity>5</capacity>
                 <gizmoEjectLabel>弹出服装</gizmoEjectLabel>
                 <gizmoEjectUIIconPath>UI/Element/Placeholder</gizmoEjectUIIconPath>
             </li>
-            <li Class="Astrologer.Laundry.TCP_Laundry">
-                <compClass>Astrologer.Laundry.TC_LaundryRepair</compClass>
+            <li Class="Astrologer.TCP_Laundry">
+                <compClass>Astrologer.TC_LaundryRepair</compClass>
             </li>
         </comps>
         <constructionSkillPrerequisite>8</constructionSkillPrerequisite>
+        <researchPrerequisites>
+            <li>LOF_Research_Laundy</li>
+        </researchPrerequisites>
     </ThingDef>
 
     <ThingDef ParentName="BuildingBase">
@@ -71,6 +75,8 @@
         <thingClass>Astrologer.PsychicDevice</thingClass>
         <drawerType>MapMeshAndRealTime</drawerType>
         <tickerType>Normal</tickerType>
+        <altitudeLayer>Building</altitudeLayer>
+        <passability>PassThroughOnly</passability>
         <label>心灵低语驳斥装置</label>
         <description>消耗一定洞察力,将范围内生物的心灵敏感度降为0,持续一段时间,同时需要消耗大量电力.</description>
         <graphicData>
@@ -80,13 +86,8 @@
             <drawOffset>(0,0,0.7)</drawOffset>
         </graphicData>
         <uiIconScale>0.7</uiIconScale>
-        <researchPrerequisites>
-            <li>LOF_Research_PsychicDevice</li>
-        </researchPrerequisites>
         <size>(2,2)</size>
-        <rotatable>false</rotatable>
-        <altitudeLayer>Building</altitudeLayer>
-        <passability>PassThroughOnly</passability>
+        <rotatable>true</rotatable>
         <castEdgeShadows>true</castEdgeShadows>
         <fillPercent>0.5</fillPercent>
         <designationCategory>Misc</designationCategory>
@@ -100,7 +101,7 @@
             <MaxHitPoints>200</MaxHitPoints>
             <WorkToBuild>10000</WorkToBuild>
             <Mass>60</Mass>
-            <Flammability>0.2</Flammability>
+            <Flammability>0.5</Flammability>
         </statBases>
         <costList>
             <Steel>40</Steel>
@@ -128,6 +129,9 @@
             </li>
         </comps>
         <constructionSkillPrerequisite>8</constructionSkillPrerequisite>
+        <researchPrerequisites>
+            <li>LOF_Research_PsychicDevice</li>
+        </researchPrerequisites>
     </ThingDef>
 
     <FleckDef ParentName="FleckBase_RandomGraphic">
@@ -162,7 +166,9 @@
                 <ticksBetweenMotes>135</ticksBetweenMotes>
                 <angle>0</angle>
                 <rotation>0~0</rotation>
-                <positionOffset>(-0.5,0,0.25)</positionOffset>
+                <useTargetAInitialRotation>true</useTargetAInitialRotation>
+                <scale>1.0~1.2</scale>
+                <positionOffset>(-0.5,0,0.2)</positionOffset>
                 <spawnLocType>OnSource</spawnLocType>
                 <attachToSpawnThing>true</attachToSpawnThing>
             </li>

@@ -9,28 +9,24 @@
         <altitudeLayer>Building</altitudeLayer>
         <passability>PassThroughOnly</passability>
         <pathCost>50</pathCost>
-        <!--等待贴图-->
         <graphicData>
-            <texPath>Things/Building/Production/FabricationBench</texPath>
+            <texPath>Things/Building/LOF_FabricationBench/FabricationBench</texPath>
             <graphicClass>Graphic_Multi</graphicClass>
-            <shaderType>CutoutComplex</shaderType>
-            <drawSize>(7,4)</drawSize>
+            <drawSize>(3.15,2.1)</drawSize>
             <damageData>
-                <cornerTL>Damage/Corner</cornerTL>
-                <cornerTR>Damage/Corner</cornerTR>
                 <cornerBL>Damage/Corner</cornerBL>
                 <cornerBR>Damage/Corner</cornerBR>
             </damageData>
         </graphicData>
+        <size>(3,2)</size>
         <statBases>
             <MaxHitPoints>300</MaxHitPoints>
             <WorkToBuild>5000</WorkToBuild>
             <WorkTableWorkSpeedFactor>1.8</WorkTableWorkSpeedFactor>
-            <Flammability>1.0</Flammability>
+            <Flammability>0.5</Flammability>
         </statBases>
         <minifiedDef />
         <thingCategories Inherit="false" />
-        <size>(5,2)</size>
         <costList>
             <Steel>150</Steel>
             <ComponentIndustrial>5</ComponentIndustrial>
@@ -56,8 +52,8 @@
             <li>Make_ComponentIndustrial</li>
             <li>Make_ComponentSpacer</li>
         </recipes>
-        <castEdgeShadows>true</castEdgeShadows>
-        <staticSunShadowHeight>0.20</staticSunShadowHeight>
+        <!--castEdgeShadows>true</castEdgeShadows>
+        <staticSunShadowHeight>0.10</staticSunShadowHeight-->
         <inspectorTabs>
             <li>ITab_Bills</li>
         </inspectorTabs>
@@ -85,16 +81,17 @@
         <defName>LOF_StellarFoundry</defName>
         <label>恒星铸造厂</label>
         <description>制造占星师高级装备.</description>
-        <thingClass>Building_WorkTable</thingClass>
+        <thingClass>Astrologer.StellarFoundry</thingClass>
+        <drawerType>MapMeshAndRealTime</drawerType>
         <altitudeLayer>Building</altitudeLayer>
         <passability>PassThroughOnly</passability>
         <pathCost>50</pathCost>
-        <!--等待贴图-->
         <graphicData>
-            <texPath>Things/Building/Production/FabricationBench</texPath>
-            <graphicClass>Graphic_Multi</graphicClass>
+            <texPath>Things/Building/LOF_StellarFoundry/StellarFoundry</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
             <shaderType>CutoutComplex</shaderType>
-            <drawSize>(7,4)</drawSize>
+            <drawSize>(4,4)</drawSize>
+            <drawOffset>(0,0,0.25)</drawOffset>
             <damageData>
                 <cornerTL>Damage/Corner</cornerTL>
                 <cornerTR>Damage/Corner</cornerTR>
@@ -102,14 +99,14 @@
                 <cornerBR>Damage/Corner</cornerBR>
             </damageData>
         </graphicData>
+        <size>(3,3)</size>
         <statBases>
             <MaxHitPoints>300</MaxHitPoints>
             <WorkToBuild>5000</WorkToBuild>
-            <Flammability>1.0</Flammability>
+            <Flammability>0.5</Flammability>
         </statBases>
         <minifiedDef />
         <thingCategories Inherit="false" />
-        <size>(5,2)</size>
         <costList>
             <LOF_Resource_StarlightIron>200</LOF_Resource_StarlightIron>
             <ComponentIndustrial>12</ComponentIndustrial>
@@ -129,10 +126,9 @@
             <li Class="CompProperties_Flickable"/>
             <li Class="CompProperties_Breakdownable"/>
         </comps>
-        <recipes>
-        </recipes>
-        <castEdgeShadows>true</castEdgeShadows>
-        <staticSunShadowHeight>0.20</staticSunShadowHeight>
+        <recipes></recipes>
+        <!--castEdgeShadows>true</castEdgeShadows>
+        <staticSunShadowHeight>0.20</staticSunShadowHeight-->
         <inspectorTabs>
             <li>ITab_Bills</li>
         </inspectorTabs>
@@ -187,7 +183,7 @@
         <statBases>
             <WorkToBuild>3500</WorkToBuild>
             <MaxHitPoints>180</MaxHitPoints>
-            <Flammability>1.0</Flammability>
+            <Flammability>0.5</Flammability>
         </statBases>
         <size>(3,1)</size>
         <designationCategory>Production</designationCategory>
@@ -241,38 +237,38 @@
         <label>观星仪</label>
         <description>desc.</description>
         <thingClass>Building_ResearchBench</thingClass>
+        <altitudeLayer>Building</altitudeLayer>
+        <passability>PassThroughOnly</passability>
         <!--等待贴图-->
         <graphicData>
-            <texPath>Things/Building/Joy/Telescope</texPath>
-            <graphicClass>Graphic_Single</graphicClass>
-            <drawRotated>false</drawRotated>
+            <texPath>Things/Building/LOF_Stargazer/Stargazer</texPath>
+            <graphicClass>Graphic_Multi</graphicClass>
+            <drawSize>(3.15,2.1)</drawSize>
         </graphicData>
+        <size>(3,2)</size>
         <minifiedDef/>
         <thingCategories Inherit="false"/>
         <stuffCategories>
             <li>Metallic</li>
         </stuffCategories>
-        <costStuffCount>150</costStuffCount>
         <costList>
             <Steel>100</Steel>
             <ComponentIndustrial>10</ComponentIndustrial>
         </costList>
         <canBeUsedUnderRoof>false</canBeUsedUnderRoof>
-        <altitudeLayer>Building</altitudeLayer>
-        <passability>PassThroughOnly</passability>
         <pathCost>50</pathCost>
         <statBases>
             <MaxHitPoints>250</MaxHitPoints>
             <WorkToBuild>5000</WorkToBuild>
-            <Flammability>1.0</Flammability>
             <ResearchSpeedFactor>1.0</ResearchSpeedFactor>
+            <Flammability>0.5</Flammability>
         </statBases>
-        <fillPercent>0.75</fillPercent>
+        <fillPercent>0.5</fillPercent>
         <interactionCellOffset>(0,0,-1)</interactionCellOffset>
         <hasInteractionCell>true</hasInteractionCell>
         <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
         <designationCategory>Production</designationCategory>
-        <uiOrder>2610</uiOrder>
+        <uiOrder>2530</uiOrder>
         <surfaceType>Item</surfaceType>
         <constructionSkillPrerequisite>6</constructionSkillPrerequisite>
         <comps Inherit="False">
@@ -301,9 +297,6 @@
         <researchPrerequisites>
             <li>MicroelectronicsBasics</li>
         </researchPrerequisites>
-        <building>
-            <paintable>true</paintable>
-        </building>
     </ThingDef>
 
 </Defs>

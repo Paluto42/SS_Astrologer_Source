@@ -3,7 +3,7 @@
 
     <JobDef>
         <defName>LOF_Job_FillLaundry</defName>
-        <driverClass>Astrologer.Laundry.JobDriver_FillLaundryUnited</driverClass>
+        <driverClass>Astrologer.JobDriver_FillLaundryUnited</driverClass>
         <reportString>filling in TargetA.</reportString>
     </JobDef>
 

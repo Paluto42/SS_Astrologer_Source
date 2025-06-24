@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using Verse;
 using Verse.AI;
 
-namespace Astrologer.Laundry
+namespace Astrologer
 {
     //不能简化成一个 -- 一个物品可能同时满足多个桶的条件，而这里同时只能返回一个job。此外，也很难用一个jobdriver控制选哪个桶。
     //保留wg而不直接去物品右键floatmenu加吧 也许以后用得上呢
