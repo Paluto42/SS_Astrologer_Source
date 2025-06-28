@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <RitualPatternDef ParentName="CelebrationPartyChat" MayRequire="Ludeon.Rimworld.Ideology">
+        <defName>LOF_CelebrationSkyLanterns</defName>
+        <shortDescOverride>占星师天灯节</shortDescOverride>
+        <descOverride>占星师死亡后在一段时间后会变成一朵月光花.</descOverride>
+        <iconPathOverride>UI/Icons/Rituals/CelebrationPartySkylanterns</iconPathOverride>
+        <canStartAnytime>true</canStartAnytime>
+        <ritualObligationTargetFilter>CampfireSkylanterns</ritualObligationTargetFilter>
+        <ritualBehavior>CelebrationSkyLanterns</ritualBehavior>
+        <patternGroupTag>CelebratedDate</patternGroupTag>
+        <ritualOutcomeEffect>CelebrationSkyLanterns</ritualOutcomeEffect>
+        <layerBlacklist>
+            <li MayRequire="Ludeon.RimWorld.Odyssey">Orbit</li>
+        </layerBlacklist>
+    </RitualPatternDef>
+
+</Defs>

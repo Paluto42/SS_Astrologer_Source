@@ -9,7 +9,7 @@
 
 	<XenotypeDef Name="Astro_XenoBase" Abstract="True">
 		<defName>Astro_Xeno_Base</defName>
-		<label>占星师</label>
+		<label>Astrologer</label>
 		<description>desc.</description>
 		<descriptionShort></descriptionShort>
 		<iconPath>UI/Icons/AS_icon</iconPath>
@@ -24,9 +24,7 @@
 
 	<XenotypeDef ParentName="Astro_XenoBase">
 		<defName>Astro_Xeno_Citizen</defName>
-		<label>占星师</label>
-		<description>desc.</description>
-		<descriptionShort></descriptionShort>
+		<description>normal citizen from the Star Empire.</description>
 		<genes>
 			<li>LOF_Gene_MeleeWeak</li>
 		</genes>
@@ -34,9 +32,7 @@
 
 	<XenotypeDef ParentName="Astro_XenoBase">
 		<defName>Astro_Xeno_Soldier</defName>
-		<label>占星师</label>
-		<description>desc.</description>
-		<descriptionShort></descriptionShort>
+		<description>genetically modified soldiers,a member of the Star Empire's standing armed forces.</description>
 		<genes>
 			<li>LOF_Gene_InsightEye</li>
 		</genes>

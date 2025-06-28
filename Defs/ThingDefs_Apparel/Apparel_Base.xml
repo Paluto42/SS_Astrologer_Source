@@ -2,6 +2,9 @@
 <Defs>
 
     <ThingDef Name="Astro_ApparelBase" ParentName="ApparelBase" Abstract="True">
+        <thingCategories Inherit="false">
+            <li>LOF_AS_Category_Apparel</li>
+        </thingCategories>
         <apparel>
             <canBeDesiredForIdeo>false</canBeDesiredForIdeo>
             <canBeGeneratedToSatisfyWarmth>false</canBeGeneratedToSatisfyWarmth>
@@ -32,7 +35,7 @@
             <li>Leathery</li>
         </stuffCategories>
         <thingCategories>
-            <li>ApparelMisc</li>
+            <li>LOF_AS_Category_Apparel</li>
         </thingCategories>
         <apparel>
             <tags>

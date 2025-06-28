@@ -119,13 +119,16 @@
                 <basePowerConsumption>2000</basePowerConsumption>
             </li>
             <li Class="CompProperties_Flickable"/>
-            <li Class="CompProperties_Usable">
+            <li Class="Astrologer.Insight.TCP_InsightUsable">
                 <useJob>LOF_Job_InsightInteract</useJob>
-                <useLabel>激活 {0_label}</useLabel>
+                <useLabel>消耗洞察力激活 {0_label}</useLabel>
+                <requiredInsight>20</requiredInsight>
             </li>
             <li Class="Astrologer.Insight.TCP_AddHediffInRange">
-                <hediffDef>LOF_Hediff_DecreasePsychicSense</hediffDef>
+                <radius>15</radius>
+                <hediff>LOF_Hediff_DecreasePsychicSense</hediff>
                 <activeTickPerInteract>1000</activeTickPerInteract>
+                <insightCost>20</insightCost>
             </li>
         </comps>
         <constructionSkillPrerequisite>8</constructionSkillPrerequisite>

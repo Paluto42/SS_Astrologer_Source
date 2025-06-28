@@ -7,9 +7,9 @@ namespace Astrologer
     {
         private Graphic secGraphicInt;
         Pawn_EquipmentTracker PawnEqTracker => (Pawn_EquipmentTracker)ParentHolder;
-        Pawn Holder 
+        Pawn Holder
         {
-            get 
+            get
             {
                 if (ParentHolder == null || PawnEqTracker == null) return null;
                 return PawnEqTracker.pawn;

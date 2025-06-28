@@ -108,7 +108,7 @@
         <minifiedDef />
         <thingCategories Inherit="false" />
         <costList>
-            <LOF_Resource_StarlightIron>200</LOF_Resource_StarlightIron>
+            <LOF_Thing_StarlightIron>200</LOF_Thing_StarlightIron>
             <ComponentIndustrial>12</ComponentIndustrial>
             <ComponentSpacer>2</ComponentSpacer>
         </costList>

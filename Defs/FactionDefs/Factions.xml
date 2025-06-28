@@ -2,10 +2,10 @@
 <Defs>
 
     <!--FactionDef ParentName="FactionBase">
-        <defName>LOF_Empire</defName>
+        <defName>LOF_StarEmpire</defName>
         <label>繁星帝国</label>
         <description>desc.</description>
-        <factionIconPath>UI/Icons/RK_icon</factionIconPath>
+        <factionIconPath>UI/Icons/PlaceHolder</factionIconPath>
         <techLevel>Industrial</techLevel>
         <pawnSingular>占星师</pawnSingular>
         <pawnsPlural>占星师</pawnsPlural>

@@ -80,7 +80,7 @@
         <costList>
             <Cloth>40</Cloth>
             <Steel>40</Steel>
-            <LOF_Resource_StarlightIron>40</LOF_Resource_StarlightIron>
+            <LOF_Thing_StarlightIron>40</LOF_Thing_StarlightIron>
         </costList>
         <apparel>
             <wornGraphicPath>Things/Apparel/LOF_LightArmor/LightArmor</wornGraphicPath>
@@ -155,7 +155,7 @@
         <costList>
             <Cloth>40</Cloth>
             <Steel>40</Steel>
-            <LOF_Resource_StarlightIron>60</LOF_Resource_StarlightIron>
+            <LOF_Thing_StarlightIron>60</LOF_Thing_StarlightIron>
         </costList>
         <apparel>
             <wornGraphicPath>Things/Pawn/Humanlike/Apparel/PowerArmor/PowerArmor</wornGraphicPath>
@@ -199,7 +199,7 @@
         <costList>
             <Cloth>40</Cloth>
             <Steel>40</Steel>
-            <LOF_Resource_StarlightIron>60</LOF_Resource_StarlightIron>
+            <LOF_Thing_StarlightIron>60</LOF_Thing_StarlightIron>
         </costList>
         <apparel>
             <wornGraphicPath>Things/Apparel/LOF_MiningArmor/MiningArmor</wornGraphicPath>
@@ -298,7 +298,7 @@
         <costList>
             <Cloth>40</Cloth>
             <Steel>20</Steel>
-            <LOF_Resource_StarlightIron>40</LOF_Resource_StarlightIron>
+            <LOF_Thing_StarlightIron>40</LOF_Thing_StarlightIron>
         </costList>
         <apparel>
             <wornGraphicPath>Things/Apparel/LOF_EmergencyArmor/EmergencyArmor</wornGraphicPath>
@@ -357,7 +357,7 @@
         <costList>
             <ComponentSpacer>4</ComponentSpacer>
             <Plasteel>50</Plasteel>
-            <LOF_Resource_StarlightIron>100</LOF_Resource_StarlightIron>
+            <LOF_Thing_StarlightIron>100</LOF_Thing_StarlightIron>
             <Uranium>20</Uranium>
         </costList>
         <apparel>
@@ -494,7 +494,7 @@
         <costList>
             <ComponentSpacer>4</ComponentSpacer>
             <Plasteel>40</Plasteel>
-            <LOF_Resource_StarlightIron>100</LOF_Resource_StarlightIron>
+            <LOF_Thing_StarlightIron>100</LOF_Thing_StarlightIron>
             <Uranium>20</Uranium>
         </costList>
         <apparel>
@@ -506,7 +506,7 @@
         <comps>
             <li Class="AKA_Ability.TCP_AKATracker">
                 <abilities>
-                    <li>LOF_Ability_InsightCoagulate</li>
+                    <li>LOF_Ability_EmergencyRescue</li>
                 </abilities>
             </li>
             <li Class="Astrologer.TCP_EffectWorn">

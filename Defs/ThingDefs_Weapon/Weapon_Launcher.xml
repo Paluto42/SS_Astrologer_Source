@@ -88,7 +88,7 @@
         </statBases>
         <costList>
             <Steel>20</Steel>
-            <LOF_Resource_StarlightIron>20</LOF_Resource_StarlightIron>
+            <LOF_Thing_StarlightIron>20</LOF_Thing_StarlightIron>
             <ComponentIndustrial>1</ComponentIndustrial>
         </costList>
         <recipeMaker>

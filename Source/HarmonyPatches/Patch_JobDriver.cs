@@ -25,12 +25,12 @@ namespace Astrologer.HarmonyPatches
             pawn.needs.mood.thoughts.memories.TryGainMemory(AstroDefOf.LOF_Thought_UseTelescopeMood);
         }
 
-        public static IEnumerable<CodeInstruction> Transpiler(IEnumerable<CodeInstruction> instructions) 
+        public static IEnumerable<CodeInstruction> Transpiler(IEnumerable<CodeInstruction> instructions)
         {
             List<CodeInstruction> codes = instructions.ToList();
             //IL_000b
             int index = codes.FindIndex(code => code.opcode == OpCodes.Call);
-            if (index != -1) 
+            if (index != -1)
             {
                 MethodInfo delegateMethod = typeof(Patch_JobDriver).GetMethod(nameof(TryGainMemory));
                 codes.InsertRange(index, new CodeInstruction[]

@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-    <RecipeDef Name="AS_MakeIron">
-        <defName>LOF_MakeStarlightIron</defName>
+    <RecipeDef>
+        <defName>LOF_Recipe_MakeStarlightIron</defName>
         <label>冶炼星辉钢</label>
         <description>desc.</description>
         <jobString>冶炼中.</jobString>
@@ -26,7 +26,7 @@
             <li>
                 <filter>
                     <thingDefs>
-                        <li>LOF_Resource_Starlightgrass</li>
+                        <li>LOF_Thing_StarlightFruit</li>
                     </thingDefs>
                 </filter>
                 <count>25</count>
@@ -35,11 +35,11 @@
         <fixedIngredientFilter>
             <thingDefs>
                 <li>Steel</li>
-                <li>LOF_Resource_Starlightgrass</li>
+                <li>LOF_Thing_StarlightFruit</li>
             </thingDefs>
         </fixedIngredientFilter>
         <products>
-            <LOF_Resource_StarlightIron>25</LOF_Resource_StarlightIron>
+            <LOF_Thing_StarlightIron>25</LOF_Thing_StarlightIron>
         </products>
         <skillRequirements>
             <Crafting>6</Crafting>

@@ -44,9 +44,6 @@
         <defName>LOF_Apparel_MountaineerHat</defName>
         <label>登山帽</label>
         <description>在繁星帝国，很多占星师喜欢在夜间的山顶观星，这顶登山帽很好的满足了她们对于保暖的需求</description>
-        <thingCategories Inherit="false">
-            <li>LOF_AS_Category_Apparel</li>
-        </thingCategories>
         <!--等待贴图-->
         <graphicData>
             <texPath>Things/Pawn/Humanlike/Apparel/Tuque/Tuque</texPath>
@@ -114,9 +111,6 @@
         <defName>LOF_Apparel_PriestessVeil</defName>
         <label>祭司头罩</label>
         <description>desc.</description>
-        <thingCategories Inherit="false">
-            <li>LOF_AS_Category_Apparel</li>
-        </thingCategories>
         <graphicData>
             <texPath>Things/Apparel/LOF_PriestessVeil/PriestessVeil</texPath>
             <graphicClass>Graphic_Single</graphicClass>
@@ -259,7 +253,7 @@
         </equippedStatOffsets>
         <costList>
             <Cloth>10</Cloth>
-            <LOF_Resource_StarlightIron>20</LOF_Resource_StarlightIron>
+            <LOF_Thing_StarlightIron>20</LOF_Thing_StarlightIron>
         </costList>
         <apparel>
             <wornGraphicPath>Things/Apparel/LOF_LightHelmet/LightHelmet</wornGraphicPath>
@@ -307,7 +301,7 @@
         <!--材料-->
         <costList>
             <Cloth>10</Cloth>
-            <LOF_Resource_StarlightIron>40</LOF_Resource_StarlightIron>
+            <LOF_Thing_StarlightIron>40</LOF_Thing_StarlightIron>
         </costList>
         <apparel>
             <wornGraphicPath>Things/Pawn/Humanlike/Apparel/ReconArmorHelmet/ReconHelmet</wornGraphicPath>
@@ -352,7 +346,7 @@
         <!--材料-->
         <costList>
             <Cloth>10</Cloth>
-            <LOF_Resource_StarlightIron>40</LOF_Resource_StarlightIron>
+            <LOF_Thing_StarlightIron>40</LOF_Thing_StarlightIron>
         </costList>
         <apparel>
             <bodyPartGroups>
@@ -423,7 +417,7 @@
         <!--材料-->
         <costList>
             <Cloth>10</Cloth>
-            <LOF_Resource_StarlightIron>20</LOF_Resource_StarlightIron>
+            <LOF_Thing_StarlightIron>20</LOF_Thing_StarlightIron>
         </costList>
         <apparel>
             <wornGraphicPath>Things/Apparel/LOF_EmergencyHelmet/EmergencyHelmet</wornGraphicPath>
@@ -492,7 +486,7 @@
         <costList>
             <ComponentSpacer>2</ComponentSpacer>
             <Plasteel>25</Plasteel>
-            <LOF_Resource_StarlightIron>50</LOF_Resource_StarlightIron>
+            <LOF_Thing_StarlightIron>50</LOF_Thing_StarlightIron>
             <Uranium>10</Uranium>
         </costList>
         <apparel>

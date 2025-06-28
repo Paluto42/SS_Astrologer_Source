@@ -2,11 +2,11 @@
 <Defs>
 
     <DamageDef ParentName="Bullet">
-        <defName>LOF_Cast_Psychicinsanity</defName>
+        <defName>LOF_Cast_PsychicInsanity</defName>
         <label>bullet</label>
         <workerClass>DamageWorker_AddInjury</workerClass>
         <deathMessage>{0} has been shot to death.</deathMessage>
-        <hediff>LOF_PsychicShockGunshot</hediff>
+        <hediff>LOF_Hediff_PsychicGunshot</hediff>
         <impactSoundType>Bullet</impactSoundType>
         <overkillPctToDestroyPart>0~0.7</overkillPctToDestroyPart>
     </DamageDef>
@@ -43,7 +43,6 @@
 
     <DamageDef ParentName="Bomb">
         <defName>LOF_LeechBomb</defName>
-        <label>bomb</label>
         <workerClass>Astrologer.DamageWorker_Bomb</workerClass>
     </DamageDef>
 

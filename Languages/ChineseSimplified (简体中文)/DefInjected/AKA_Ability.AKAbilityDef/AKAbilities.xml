@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+    <LOF_Ability_Monitor.description>洞察力自然恢复进度\n
+介绍:\n洞察力是占星师种族拥有的独特能力,许多专属技能都依赖洞察力进行释放.\n
+注意:\n当占星师靠近星光草附近时,洞察力恢复速度会加快.</LOF_Ability_Monitor.description>
+
+    <LOF_Ability_IncreaseHarvest.label>大丰收</LOF_Ability_IncreaseHarvest.label>
+    <LOF_Ability_IncreaseHarvest.description>消耗一定洞察力,在一天内提高农作物收获量,屠宰量,手术成功率,制作物品高品质概率,射击命中率.\n食物消耗率x200%.</LOF_Ability_IncreaseHarvest.description>
+    <LOF_Ability_IncreaseHarvest.castConditions.LOF_InsightThreshold.failReason>洞察力不足</LOF_Ability_IncreaseHarvest.castConditions.LOF_InsightThreshold.failReason>
+
+    <LOF_Ability_Teleport.label>进行折跃</LOF_Ability_Teleport.label>
+    <LOF_Ability_Teleport.castConditions.LOF_InsightThreshold.failReason>洞察力不足</LOF_Ability_Teleport.castConditions.LOF_InsightThreshold.failReason>
+
+    <LOF_Ability_UnstableCatalyst.label>进入不稳定态</LOF_Ability_UnstableCatalyst.label>
+    <LOF_Ability_UnstableCatalyst.description>持续消耗洞察力可以进入不稳定态，此时有一半的几率受击不造成伤害.</LOF_Ability_UnstableCatalyst.description>
+    <LOF_Ability_UnstableCatalyst.castConditions.LOF_InsightThreshold.failReason>洞察力不足</LOF_Ability_UnstableCatalyst.castConditions.LOF_InsightThreshold.failReason>
+
+    <LOF_Ability_LeechAttack.label>吸血攻击</LOF_Ability_LeechAttack.label>
+    <LOF_Ability_LeechAttack.description>持续消耗洞察力,攻击敌人造成伤害时固定回复血量.</LOF_Ability_LeechAttack.description>
+    <LOF_Ability_LeechAttack.castConditions.LOF_InsightThreshold.failReason>洞察力不足</LOF_Ability_LeechAttack.castConditions.LOF_InsightThreshold.failReason>
+
+    <LOF_Ability_GravityDeflection.label>释放引力偏转尘埃</LOF_Ability_GravityDeflection.label>
+    <LOF_Ability_GravityDeflection.description>消耗洞察力可以释放一片引力偏转尘埃,该尘埃会偏转子弹和电荷弹.</LOF_Ability_GravityDeflection.description>
+    <LOF_Ability_GravityDeflection.castConditions.LOF_InsightThreshold.failReason>洞察力不足</LOF_Ability_GravityDeflection.castConditions.LOF_InsightThreshold.failReason>
+
+    <LOF_Ability_AnchoredStance.label>锚定立场</LOF_Ability_AnchoredStance.label>
+    <LOF_Ability_AnchoredStance.description>消耗洞察力创造一个让敌人闪避率为0的立场.</LOF_Ability_AnchoredStance.description>
+    <LOF_Ability_AnchoredStance.castConditions.LOF_InsightThreshold.failReason>洞察力不足</LOF_Ability_AnchoredStance.castConditions.LOF_InsightThreshold.failReason>
+
+    <LOF_Ability_EmergencyRescue.label>紧急救援</LOF_Ability_EmergencyRescue.label>
+    <LOF_Ability_EmergencyRescue.description>立刻回复大量生命.</LOF_Ability_EmergencyRescue.description>
+    <LOF_Ability_EmergencyRescue.castConditions.LOF_InsightThreshold.failReason>紧急救援</LOF_Ability_EmergencyRescue.castConditions.LOF_InsightThreshold.failReason>
+
+    <LOF_Ability_PhotonBomb.label>释放光子炸弹</LOF_Ability_PhotonBomb.label>
+    <LOF_Ability_PhotonBomb.description>可以跨墙释放的光子炸弹</LOF_Ability_PhotonBomb.description>
+    <LOF_Ability_PhotonBomb.castConditions.LOF_InsightThreshold.failReason>洞察力不足</LOF_Ability_PhotonBomb.castConditions.LOF_InsightThreshold.failReason>
+
+    <LOF_Ability_Gravitational.label>创造引力点</LOF_Ability_Gravitational.label>
+    <LOF_Ability_Gravitational.description>创造一个引力点将敌人拉向该引力点</LOF_Ability_Gravitational.description>
+    <LOF_Ability_Gravitational.castConditions.LOF_InsightThreshold.failReason>洞察力不足</LOF_Ability_Gravitational.castConditions.LOF_InsightThreshold.failReason>
+
+    <LOF_Ability_DeployEMP.label>部署EMP冲击背包</LOF_Ability_DeployEMP.label>
+    <LOF_Ability_DeployEMP.description>部署可以定期产生EMP冲击波的背包.</LOF_Ability_DeployEMP.description>
+
+    <LOF_Ability_Skip.label>进行大跳</LOF_Ability_Skip.label>
+    <LOF_Ability_Skip.description>desc.</LOF_Ability_Skip.description>
+
+    <LOF_Ability_Coagulate.label>紧急止血</LOF_Ability_Coagulate.label>
+    <LOF_Ability_Coagulate.description>desc.</LOF_Ability_Coagulate.description>
+
+    <LOF_Ability_ReloadFromThing.label>重新装填</LOF_Ability_ReloadFromThing.label>
+    <LOF_Ability_ReloadFromThing.description>使用医药进行装填.</LOF_Ability_ReloadFromThing.description>
+
+</LanguageData>

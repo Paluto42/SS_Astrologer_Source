@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+    <Astrologer_Scenario.label>占星师的郊游</Astrologer_Scenario.label>
+    <Astrologer_Scenario.description>按照传统,占星师们通常以三人为一组随机寻找边缘世界进行科研考察\n由于携带了大量物资,你们这次探险的难度几乎和郊游一样轻松</Astrologer_Scenario.description>
+    <Astrologer_Scenario.scenario.description>按照传统,占星师们通常以三人为一组随机寻找边缘世界进行科研考察\n由于携带了大量物资,你们这次探险的难度几乎和郊游一样轻松</Astrologer_Scenario.scenario.description>
+    <Astrologer_Scenario.scenario.name>占星师的郊游</Astrologer_Scenario.scenario.name>
+    <Astrologer_Scenario.scenario.summary>三个占星师的科研考察旅行</Astrologer_Scenario.scenario.summary>
+    <Astrologer_Scenario.scenario.parts.LOF_GameStartLetter.label>踏上旅途</Astrologer_Scenario.scenario.parts.LOF_GameStartLetter.label>
+    <Astrologer_Scenario.scenario.parts.LOF_GameStartLetter.description>
+现在,占星师们的命运由你来掌握!
+占星师拥有自己的“洞察力”，通过洞察力，能与占星师建筑和装备进行交互.
+洞察力可以自然恢复吗?当然!此外，一些特殊的装备可以增加洞察力储备上限.
+
+-记得多做眼保健操
+    占星师拥有较好的视力和夜视能力,在眼睛完好时有心情加成.但在失明时会获得巨量心情减益,在失明后一段时间后眼睛会修复.
+
+-观星狂热爱好者
+    占星师会更倾向于使用望远镜进行娱乐.使用望远镜后会有心情加成.她们往往只用睡5个小时,这让她们晚上可以用更多的时间去观察夜空.
+    
+-发展独特的工业
+    在占星师们的故乡,遥远的繁星帝国存在一种特殊的作物:星光草.将星光果实与钢铁放入恒星熔炉中一起冶炼可以得到星辉钢.它是繁星帝国工业化不可或缺的原材料,记得多存一些!
+
+-魂归星乡
+    如遭遇不测，待躯体开始腐烂之时，她们的灵魂会被牵引回到故乡，残躯则自动分解,最终留下一朵月光花。如果还有复活的机会，请妥善保存好占星师的遗体。
+    </Astrologer_Scenario.scenario.parts.LOF_GameStartLetter.description>
+</LanguageData>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+    <LOF_Hediff_PsychicGunshot.label>心灵错乱枪伤</LOF_Hediff_PsychicGunshot.label>
+    <LOF_Hediff_PsychicGunshot.label>枪伤</LOF_Hediff_PsychicGunshot.label>
+    <LOF_Hediff_PsychicGunshot.labelNoun>枪伤</LOF_Hediff_PsychicGunshot.labelNoun>
+    <LOF_Hediff_PsychicGunshot.description>枪伤伤口。</LOF_Hediff_PsychicGunshot.description>
+    <LOF_Hediff_PsychicGunshot.comps.HediffComp_TendDuration.labelSolidTendedWell>已简单止血</LOF_Hediff_PsychicGunshot.comps.HediffComp_TendDuration.labelSolidTendedWell>
+    <LOF_Hediff_PsychicGunshot.comps.HediffComp_TendDuration.labelTendedWell>已包扎</LOF_Hediff_PsychicGunshot.comps.HediffComp_TendDuration.labelTendedWell>
+    <LOF_Hediff_PsychicGunshot.comps.HediffComp_TendDuration.labelTendedWellInner>已缝合</LOF_Hediff_PsychicGunshot.comps.HediffComp_TendDuration.labelTendedWellInner>
+    <LOF_Hediff_PsychicGunshot.comps.HediffComp_GetsPermanent.instantlyPermanentLabel>永久性枪伤</LOF_Hediff_PsychicGunshot.comps.HediffComp_GetsPermanent.instantlyPermanentLabel>
+    <LOF_Hediff_PsychicGunshot.comps.HediffComp_GetsPermanent.permanentLabel>老枪伤</LOF_Hediff_PsychicGunshot.comps.HediffComp_GetsPermanent.permanentLabel>
+    <LOF_Hediff_PsychicGunshot.injuryProps.destroyedLabel>被射毁</LOF_Hediff_PsychicGunshot.injuryProps.destroyedLabel>
+    <LOF_Hediff_PsychicGunshot.injuryProps.destroyedOutLabel>被射掉</LOF_Hediff_PsychicGunshot.injuryProps.destroyedOutLabel>
+
+    <LOF_Hediff_Detoxifier.label>生存作战单元-代谢增益</LOF_Hediff_Detoxifier.label>
+    <LOF_Hediff_Detoxifier.description>通过先进的纳米技术，它能有效清除血液中的有害物质。</LOF_Hediff_Detoxifier.description>
+
+    <LOF_Hediff_Manipulation.label>心灵手巧</LOF_Hediff_Manipulation.label>
+    <LOF_Hediff_Manipulation.description>有了机械手套，工作效率更高了。</LOF_Hediff_Manipulation.description>
+
+    <LOF_Hediff_IncreaseHarvest.label>丰收的渴望</LOF_Hediff_IncreaseHarvest.label>
+    <LOF_Hediff_IncreaseHarvest.description>一天内提高农作物收获量，屠宰量，手术成功率,制作物品高品质概率,射击命中率。\n食物消耗率x200%。</LOF_Hediff_IncreaseHarvest.description>
+
+    <LOF_Hediff_DecreasePsychicSense.label>心灵敏感度降低</LOF_Hediff_DecreasePsychicSense.label>
+    <LOF_Hediff_DecreasePsychicSense.description>一小段时间内降低心灵敏感度。</LOF_Hediff_DecreasePsychicSense.description>
+
+    <LOF_Hediff_NebulaRay.label>星云射线</LOF_Hediff_NebulaRay.label>
+    <LOF_Hediff_NebulaRay.labelNoun>星云射线</LOF_Hediff_NebulaRay.labelNoun>
+    <LOF_Hediff_NebulaRay.description>持续流血的伤口。</LOF_Hediff_NebulaRay.description>
+    <LOF_Hediff_NebulaRay.injuryProps.destroyedLabel>被射毁</LOF_Hediff_NebulaRay.injuryProps.destroyedLabel>
+    <LOF_Hediff_NebulaRay.injuryProps.destroyedOutLabel>被射掉</LOF_Hediff_NebulaRay.injuryProps.destroyedOutLabel>
+
+    <LOF_Hediff_AnchoredStance.label>锚定立场</LOF_Hediff_AnchoredStance.label>
+    <LOF_Hediff_AnchoredStance.description>一小段时间内闪避率降至0%。</LOF_Hediff_AnchoredStance.description>
+
+    <LOF_NanoFluidHigh.label>纳米机械自检</LOF_NanoFluidHigh.label>
+    <LOF_NanoFluidHigh.description>血液中流动的纳米机械可以阻止感染大部分传染病。</LOF_NanoFluidHigh.description>
+</LanguageData>

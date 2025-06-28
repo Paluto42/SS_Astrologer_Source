@@ -13,7 +13,7 @@ namespace Astrologer.HarmonyPatches
         {
             Harmony harmony = new("Astrologer.patch");
             harmony.PatchAll(Assembly.GetExecutingAssembly());
-            
+
             Type nested = typeof(JobDriver_WatchBuilding).GetNestedType("<>c__DisplayClass2_0", BindingFlags.NonPublic);
             //1.5是<MakeNewToils>b__2
             MethodBase method = nested.GetMethod("<MakeNewToils>b__1", BindingFlags.NonPublic | BindingFlags.Instance);

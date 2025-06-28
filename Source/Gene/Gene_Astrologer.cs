@@ -29,7 +29,7 @@ namespace Astrologer
             if (pawn.Dead) return;
 
             if (Utility.CrtTick % checkInterval == 0) this.ShouldRecover = BlindnessTmp.Any();
-            if (this.ShouldRecover) 
+            if (this.ShouldRecover)
             {
                 tick++;
                 if (tick % recoveryInterval == 0)

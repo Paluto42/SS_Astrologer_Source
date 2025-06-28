@@ -4,6 +4,7 @@ using Verse;
 
 namespace Astrologer
 {
+    [StaticConstructorOnStartup]
     public class StellarFoundry : Building_WorkTable
     {
         public CompPowerTrader CompPower => GetComp<CompPowerTrader>();
@@ -18,7 +19,7 @@ namespace Astrologer
 
         private int frame = 0;
 
-        public readonly static Vector2 size = new(2f,2f);
+        public readonly static Vector2 size = new(2f, 2f);
         private Vector3 EffectDrawPos => DrawPos + new Vector3(0, 0.1f, 0.25f);
 
         protected override void DrawAt(Vector3 drawLoc, bool flip = false)

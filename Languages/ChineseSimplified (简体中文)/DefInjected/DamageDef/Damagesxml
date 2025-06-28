@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+    <LOF_Cast_PsychicInsanity.label>子弹伤</LOF_Cast_PsychicInsanity.label>
+    <LOF_Cast_PsychicInsanity.deathMessage>{0}被枪射杀了。</LOF_Cast_PsychicInsanity.deathMessage>
+
+    <LOF_Cast_ForcePartDestruct.label>子弹伤</LOF_Cast_ForcePartDestruct.label>
+    <LOF_Cast_ForcePartDestruct.deathMessage>{0}被星云射线杀死.</LOF_Cast_ForcePartDestruct.deathMessage>
+
+    <LOF_Cast_ForcePartDestruct.label>电磁脉冲</LOF_Cast_ForcePartDestruct.label>
+    <LOF_Cast_ForcePartDestruct.deathMessage>{0}被电磁脉冲杀死了。</LOF_Cast_ForcePartDestruct.deathMessage>
+</LanguageData>

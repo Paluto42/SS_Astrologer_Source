@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+    <LOF_AS_CategoryBase.label>占星师</LOF_AS_CategoryBase.label>
+    <LOF_AS_Category_Resources.label>繁星帝国特产</LOF_AS_Category_Resources.label>
+    <LOF_AS_Category_Apparel.label>衣物</LOF_AS_Category_Apparel.label>
+    <LOF_AS_Category_Armor.label>防具</LOF_AS_Category_Armor.label>
+    <LOF_AS_Category_Weapon.label>武器</LOF_AS_Category_Weapon.label>
+    <LOF_AS_Category_WeaponMelee.label>格斗作战武器</LOF_AS_Category_WeaponMelee.label>
+    <LOF_AS_Category_WeaponRanged.label>远距作战武器</LOF_AS_Category_WeaponRanged.label>
+</LanguageData>

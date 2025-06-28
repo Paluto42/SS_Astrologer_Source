@@ -14,6 +14,8 @@ namespace Astrologer.Insight
     //和TC_Insight联动的Comp
     public class TCP_FireMode : CompProperties
     {
+        [TranslationHandle]
+        public string refName = "LOF_FireMode";
         public VerbProperties verbProps = new();
 
         public int consumeAmount = 1;

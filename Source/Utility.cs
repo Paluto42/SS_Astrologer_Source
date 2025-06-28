@@ -51,12 +51,13 @@ namespace Astrologer
             return true;
         }
 
-        public static void TryOffsetInsight(this Pawn p, float amt)
+        public static bool TryOffsetInsight(this Pawn p, float amt)
         {
             VAB_AstroTracker tracker = TryGetAstroTracker(p);
-            if (tracker == null) return;
-
+            if (tracker == null) return false;
+            if ((tracker.insight + amt) < 0) return false;
             tracker.insight += amt;
+            return true;
         }
 
         public static bool BuildingWorking(this ThingWithComps building)

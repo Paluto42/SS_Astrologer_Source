@@ -7,7 +7,7 @@ namespace Astrologer.Insight
     public class TCP_AddHediffInRange : TCP_InsightInteractable_Base
     {
         public float radius = 8f;
-        public HediffDef hediffDef;
+        public HediffDef hediff;
 
         public int activeTickPerInteract = 1000;
         public TCP_AddHediffInRange()
@@ -21,6 +21,8 @@ namespace Astrologer.Insight
         TCP_AddHediffInRange Props => props as TCP_AddHediffInRange;
 
         int activeUntilTick = -1;  //当前tick小于这个 就周期性加hediff
+
+        private Effecter effecter;
 
         public override void InsightInteract(Pawn pawn)
         {
@@ -47,14 +49,18 @@ namespace Astrologer.Insight
         public virtual void Tick(int amt)
         {
             if (Utility.CrtTick > activeUntilTick) return;
-
+            if (Utility.CrtTick % 250 == 0)
+            {
+                effecter ??= DefDatabase<EffecterDef>.GetNamed("BlastMechBandShockwave").SpawnAttached(parent, parent.Map);
+                effecter?.Trigger(parent, parent);
+            }
             foreach (IntVec3 c in GenRadial.RadialCellsAround(parent.Position, Props.radius, true))
             {
                 foreach (Thing t in c.GetThingList(parent.Map))
                 {
                     if (t is Pawn p && p.health != null)
                     {
-                        GenericUtilities.AddHediff(p, Props.hediffDef, severity: 99);
+                        GenericUtilities.AddHediff(p, Props.hediff, severity: 99);
                     }
                 }
             }

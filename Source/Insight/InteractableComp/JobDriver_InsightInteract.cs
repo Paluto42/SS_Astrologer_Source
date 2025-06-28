@@ -19,11 +19,13 @@ namespace Astrologer.Insight
             this.FailOnDestroyedOrNull(indexBuilding);
             yield return Toils_Goto.GotoCell(indexBuilding, PathEndMode.InteractionCell);
 
-            Toil t = new();
-            t.initAction = delegate
+            Toil t = new()
+            {
+                initAction = delegate
             {
                 TC_InsightInteractable_Base interactable = ThingBuilding.TryGetComp<TC_InsightInteractable_Base>();
                 interactable?.InsightInteract(this.pawn);
+            }
             };
             yield return t;
         }

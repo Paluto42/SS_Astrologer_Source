@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
-
     <AstroEmpireNameUtility.rulePack.rulesStrings>
         <li>AS_FirstName->[AS_Noun_Prefix_Sign]</li>
         <li>AS_FirstName->[AS_Noun_Prefix_Stellar]</li>
@@ -11,5 +10,4 @@
         <li>r_name->[AS_FirstName] [AS_LastName]</li>
         <li>nickName->[AS_LastName]</li>
     </NamerPerson_AstroEmpire.rulePack.rulesStrings>
-
 </LanguageData>

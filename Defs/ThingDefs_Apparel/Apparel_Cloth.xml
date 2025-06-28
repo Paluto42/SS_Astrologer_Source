@@ -2,9 +2,6 @@
 <Defs>
 
     <ThingDef Name="Astro_ClothBase" ParentName="Astro_ApparelBase" Abstract="True">
-        <thingCategories Inherit="false">
-            <li>LOF_AS_Category_Cloth</li>
-        </thingCategories>
         <recipeMaker>
             <researchPrerequisite>LOF_Research_BaseCloth</researchPrerequisite>
             <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
@@ -362,9 +359,6 @@
         <defName>LOF_Apparel_SocialMaster_Glasses</defName>
         <label>社交大师(墨镜)</label>
         <description>多年以后，面对高级零部件，占星师小姐会回想起运输仓带她去见识奸商的那个遥远的下午\n加魅力加社交能力</description>
-        <thingCategories Inherit="false">
-            <li>LOF_AS_Category_Armor</li>
-        </thingCategories>
         <!--等待贴图-->
         <graphicData>
             <texPath>Things/Pawn/Humanlike/Apparel/Tuque/Tuque</texPath>

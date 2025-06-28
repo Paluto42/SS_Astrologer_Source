@@ -37,7 +37,7 @@
         </hairColorRange>
         <skinColor>(255, 255, 255)</skinColor>
         <backstoryChildRange>
-            <ChildScientist30 DefClass="BackstoryDef">1</ChildScientist30>
+            <SpaceFanboy22 DefClass="BackstoryDef">1</SpaceFanboy22>
         </backstoryChildRange>
         <backstoryAdultRange>
             <SpaceResearcher25 DefClass="BackstoryDef">1</SpaceResearcher25>

@@ -2,76 +2,46 @@
 <Defs>
 
 	<ThingCategoryDef>
-		<defName>LOF_AS_Category_Resources</defName>
-		<label>繁星帝国特产</label>
+		<defName>LOF_AS_CategoryBase</defName>
+		<label>Astrologer</label>
 		<parent>Root</parent>
 		<resourceReadoutRoot>true</resourceReadoutRoot>
 		<iconPath>UI/Icons/ThingCategories/ResourcesRaw</iconPath>
 	</ThingCategoryDef>
 
 	<ThingCategoryDef>
+		<defName>LOF_AS_Category_Resources</defName>
+		<label>Specialty</label>
+		<parent>LOF_AS_CategoryBase</parent>
+	</ThingCategoryDef>
+
+	<ThingCategoryDef>
 		<defName>LOF_AS_Category_Apparel</defName>
-		<label>繁星帝国服饰</label>
+		<label>Apparel</label>
 		<parent>Apparel</parent>
 	</ThingCategoryDef>
 
 	<ThingCategoryDef>
-		<defName>LOF_AS_Category_Cloth</defName>
-		<label>繁星帝国服装</label>
-		<parent>LOF_AS_Category_Apparel</parent>
-	</ThingCategoryDef>
-
-	<ThingCategoryDef>
-		<defName>LOF_AS_Category_CitizenCloth</defName>
-		<label>繁星帝国公民常服</label>
-		<parent>LOF_AS_Category_Cloth</parent>
-	</ThingCategoryDef>
-
-	<ThingCategoryDef>
-		<defName>LOF_AS_Category_Accessory</defName>
-		<label>繁星帝国饰品</label>
-		<parent>LOF_AS_Category_Apparel</parent>
-	</ThingCategoryDef>
-
-	<ThingCategoryDef>
-		<defName>LOF_AS_Category_Equipment</defName>
-		<label>繁星帝国装备</label>
-		<parent>LOF_AS_Category_Apparel</parent>
-	</ThingCategoryDef>
-
-	<ThingCategoryDef>
 		<defName>LOF_AS_Category_Armor</defName>
-		<label>繁星帝国制式防具</label>
-		<parent>LOF_AS_Category_Apparel</parent>
-	</ThingCategoryDef>
-
-	<ThingCategoryDef>
-		<defName>LOF_AS_Category_Armor_Advanced</defName>
-		<label>繁星帝国高级防具</label>
+		<label>Standard Armor</label>
 		<parent>LOF_AS_Category_Apparel</parent>
 	</ThingCategoryDef>
 
 	<ThingCategoryDef>
 		<defName>LOF_AS_Category_Weapon</defName>
-		<label>繁星帝国所属军事财产</label>
-		<parent>Weapons</parent>
+		<label>Weapon</label>
+		<parent>LOF_AS_CategoryBase</parent>
 	</ThingCategoryDef>
 
 	<ThingCategoryDef>
 		<defName>LOF_AS_Category_WeaponMelee</defName>
-		<label>繁星帝国制式格斗作战武器</label>
+		<label>Melee</label>
 		<parent>LOF_AS_Category_Weapon</parent>
 	</ThingCategoryDef>
 
 	<ThingCategoryDef>
 		<defName>LOF_AS_Category_WeaponRanged</defName>
-		<label>繁星帝国标准远距作战武器</label>
-		<parent>LOF_AS_Category_Weapon</parent>
-	</ThingCategoryDef>
-
-	<ThingCategoryDef>
-		<defName>LOF_AS_Category_WeaponRanged_Advanced</defName>
-		<label>繁星帝国高级远距作战武器</label>
+		<label>Ranged</label>
 		<parent>LOF_AS_Category_Weapon</parent>
 	</ThingCategoryDef>
 

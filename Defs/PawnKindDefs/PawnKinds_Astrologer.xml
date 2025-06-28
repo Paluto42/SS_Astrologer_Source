@@ -10,7 +10,7 @@
 		<!--gearHealthRange>0.8~1.0</gearHealthRange-->
 		<apparelIgnoreSeasons>true</apparelIgnoreSeasons>
 		<minGenerationAge>18</minGenerationAge>
-		<maxGenerationAge>150</maxGenerationAge>
+		<maxGenerationAge>100</maxGenerationAge>
 		<initialWillRange>60~90</initialWillRange>
 		<initialResistanceRange>60~90</initialResistanceRange>
 		<biocodeWeaponChance>0</biocodeWeaponChance>
@@ -33,9 +33,21 @@
 		<skills>
 			<li>
 				<skill>Shooting</skill>
-				<range>5~8</range>
+				<range>6~9</range>
+			</li>
+			<li>
+				<skill>Mining</skill>
+				<range>3~6</range>
+			</li>
+			<li>
+				<skill>Cooking</skill>
+				<range>3~6</range>
 			</li>
 		</skills>
+		<inventoryOptions>
+			<thingDef>LOF_Thing_StarlightFruit</thingDef>
+			<skipChance>0.5</skipChance>
+		</inventoryOptions>
 		<useFactionXenotypes>false</useFactionXenotypes>
 		<modExtensions MayRequire="Paluto22.AK.Compatibility">
 			<li Class="PA_AKPatch.Ext_KeepOriginal"/>

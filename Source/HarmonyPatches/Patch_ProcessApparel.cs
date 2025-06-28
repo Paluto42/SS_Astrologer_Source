@@ -1,12 +1,7 @@
-﻿using HarmonyLib;
-using RimWorld;
-using System;
-using System.Collections.Generic;
-using Verse;
-
-namespace Astrologer.HarmonyPatches
+﻿namespace Astrologer.HarmonyPatches
 {
-    [HarmonyPatch(typeof(DynamicPawnRenderNodeSetup_Apparel), "GetDynamicNodes")]
+    //死妈泰南之测试版塞BUG
+    /*[HarmonyPatch(typeof(DynamicPawnRenderNodeSetup_Apparel), "GetDynamicNodes")]
     public class Patch_ProcessApparel
     {
         [HarmonyPostfix]
@@ -52,5 +47,5 @@ namespace Astrologer.HarmonyPatches
             }
         }
 
-    }
+    }*/
 }

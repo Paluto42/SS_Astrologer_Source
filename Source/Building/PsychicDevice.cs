@@ -4,30 +4,20 @@ using Verse;
 
 namespace Astrologer
 {
+    //心灵低语驳斥装置 
     public class PsychicDevice : Building
     {
         public readonly static float rotationSpeed = 15f;
 
         public readonly static Vector2 size = new(2f, 2f);
-
-        private CompPowerTrader compPowerTrader;
-
-        CompPowerTrader CompPower 
-        {
-            get
-            {
-                compPowerTrader ??= GetComp<CompPowerTrader>();
-                return compPowerTrader;
-            }
-        }
+        public CompPowerTrader CompPower => GetComp<CompPowerTrader>();
+        public bool PowerOn => CompPower != null && CompPower.PowerOn;
 
         private Effecter effecter;
         private static Material EffectsMat => AstroMatPool.PsychicDevice_Particle;
         private static float EffectAngle => Time.time * rotationSpeed;
         private static Quaternion EffectRotation => Quaternion.Euler(0, EffectAngle, 0);
         private Vector3 EffectDrawPos => DrawPos + new Vector3(0, 0.1f, 0.1f);
-
-        public bool PowerOn => CompPower != null && CompPower.PowerOn;
 
         protected override void DrawAt(Vector3 drawLoc, bool flip = false)
         {

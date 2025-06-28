@@ -99,14 +99,14 @@
     </ThingDef>
 
     <ThingDef ParentName="BaseBullet">
-        <defName>LOF_Bullet_Psychicinsanity</defName>
+        <defName>LOF_Bullet_PsychicInsanity</defName>
         <label>附魔步枪子弹</label>
         <graphicData>
             <texPath>Things/Projectile/LOF_PsychicinsanityShot</texPath>
             <graphicClass>Graphic_Single</graphicClass>
         </graphicData>
         <projectile>
-            <damageDef>LOF_Cast_Psychicinsanity</damageDef>
+            <damageDef>LOF_Cast_PsychicInsanity</damageDef>
             <damageAmountBase>25</damageAmountBase>
             <armorPenetrationBase>0.35</armorPenetrationBase>
             <speed>70</speed>

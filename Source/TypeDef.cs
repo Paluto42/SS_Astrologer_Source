@@ -44,11 +44,15 @@ namespace Astrologer
         public static JobDef LOF_Job_FillLaundry;
         public static JobDef LOF_Job_InsightInteract; //需要洞察的建筑互动通用这个job
 
+        public static ThingDef LOF_Thing_Laundy; //环形重塑器
+
         public static ThingDef LOF_Weapon_AMSR; //ASAT-112
         public static ThingDef LOF_Weapon_Railgun; //ES-117
 
-        public static ThingDef LOF_Thing_Laundy; //环形重塑器
-        public static ThingDef LOF_Plant_Starlightgrass; //种地上的 植物 星光草
+        public static ThingDef LOF_Plant_StarlightGrass; //种地上的 植物 星光草
+        public static ThingDef LOF_Plant_MoonFlower; //月光花
+        public static ThingDef LOF_Thing_StarlightFruit; //星光果
+        public static ThingDef LOF_Thing_StarlightIron; //星辉钢
 
         public static ThoughtDef LOF_Thought_UseTelescopeMood; //用望远镜后的心情加成
     }

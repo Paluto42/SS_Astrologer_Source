@@ -2,21 +2,36 @@
 <Defs>
 
     <ScenarioDef>
-        <defName>LOF_Astrologer</defName>
-        <label>占星师</label>
-        <description>按照传统,占星师们通常以三人为一组随机寻找边缘世界进行科研考察.\n由于携带了大量物资,你们这次探险的难度几乎和郊游一样轻松.</description>
+        <defName>Astrologer_Scenario</defName>
+        <label>Astrologer's trip</label>
+        <description>According to tradition, astrologers usually form a group of three to randomly search for marginal worlds for scientific research.\nSince you carry a lot of supplies, the difficulty of your expedition is almost as easy as a picnic.</description>
         <scenario>
-            <summary>三个占星师的科研考察旅行.</summary>
+            <summary>Three astrologers' scientific research trip</summary>
             <playerFaction>
                 <def>PlayerFaction</def>
                 <factionDef>PlayerColony</factionDef>
             </playerFaction>
             <parts>
-                <!-- Game start dialog -->
-                <li Class="ScenPart_GameStartDialog">
-                    <def>GameStartDialog</def>
-                    <text>按照传统,占星师们通常以三人为一组随机寻找边缘世界进行科研考察.\n由于携带了大量物资,你们这次探险的难度几乎和郊游一样轻松.</text>
-                    <closeSound>GameStartSting</closeSound>
+                <li Class="Astrologer.ScenPart_GameStartLetter">
+                    <def>LOF_GameStartLetter</def>
+                    <label>Hit the road</label>
+                    <description>
+Now, the fate of the Astrologers is in your hands!
+Astrologers possess their own "Insight", through which they can interact with astrologer buildings and equipment.
+Insight recover naturally. Additionally, some special equipment can increase the maximum Insight reserve.
+
+-Keen Vision Adept
+    Astrologers have excellent eyesight and night vision, gaining a mood bonus when their eyes are intact. However, blindness causes a massive mood penalty, and their eyes will repair after a period of time.
+
+-Astronomy Enthusiast
+    Astrologers prefer to use Telescopes for recreation, which grants a mood boost. They often only need 5 hours of sleep, allowing more time to observe the night sky.
+
+-Unique Industrial Development
+    In the Astrologers' homeland, the distant Star Empire grows a special crop: StarlightGrass. Smelting StarlightFruit with steel in a StellarStove produces Starlight Steel, an indispensable raw material for the Star Empire's industrialization. Be sure to stock up!
+
+-Astral return
+    Should any misfortune befall them, when their bodies begin to rot, their souls will be drawn back to their homeland, and the remains will automatically decompose, leaving behind a Moonlight flower only. If there is any chance of resurrect, be sure to preserve the astrologer's body.
+                    </description>
                 </li>
                 <!-- Config pages -->
                 <li Class="ScenPart_ConfigPage_ConfigureStartingPawns_KindDefs">
@@ -37,17 +52,13 @@
                     <visible>false</visible>
                     <method>DropPods</method>
                 </li>
-                <!--li Class="ScenPart_StartingResearch">
-                    <def>StartingResearch</def>
-                    <project>MicroelectronicsBasics</project>
-                </li>
-                <li Class="ScenPart_StartingResearch">
-                    <def>StartingResearch</def>
-                    <project>BasicMechtech</project>
-                </li-->
                 <li Class="ScenPart_StartingResearch">
                     <def>StartingResearch</def>
                     <project>Batteries</project>
+                </li>
+                <li Class="ScenPart_StartingResearch">
+                    <def>StartingResearch</def>
+                    <project>LOF_Research_Starlightgrass</project>
                 </li>
                 <!-- Player starting things -->
                 <li Class="ScenPart_StartingThing_Defined">
@@ -58,29 +69,28 @@
                 <li Class="ScenPart_StartingThing_Defined">
                     <def>StartingThing_Defined</def>
                     <thingDef>MealSurvivalPack</thingDef>
-                    <count>40</count>
+                    <count>50</count>
                 </li>
                 <li Class="ScenPart_StartingThing_Defined">
                     <def>StartingThing_Defined</def>
                     <thingDef>MedicineIndustrial</thingDef>
-                    <count>10</count>
+                    <count>30</count>
                 </li>
                 <li Class="ScenPart_StartingThing_Defined">
                     <def>StartingThing_Defined</def>
                     <thingDef>ComponentIndustrial</thingDef>
-                    <count>55</count>
+                    <count>30</count>
                 </li>
                 <li Class="ScenPart_StartingThing_Defined">
                     <def>StartingThing_Defined</def>
                     <thingDef>Steel</thingDef>
-                    <count>900</count>
+                    <count>450</count>
                 </li>
                 <li Class="ScenPart_StartingThing_Defined">
                     <def>StartingThing_Defined</def>
                     <thingDef>Plasteel</thingDef>
-                    <count>100</count>
+                    <count>10</count>
                 </li>
-
                 <li Class="ScenPart_StartingThing_Defined">
                     <def>StartingThing_Defined</def>
                     <thingDef>LOF_Weapon_CeremonialSword</thingDef>
@@ -92,6 +102,7 @@
                 <li Class="ScenPart_StartingThing_Defined">
                     <def>StartingThing_Defined</def>
                     <thingDef>LOF_Weapon_CombatSMG</thingDef>
+                    <count>2</count>
                 </li>
                 <li Class="ScenPart_StartingThing_Defined">
                     <def>StartingThing_Defined</def>
@@ -101,12 +112,13 @@
                     <def>StartingThing_Defined</def>
                     <thingDef>LOF_Apparel_LightHelmet</thingDef>
                 </li>
-
                 <li Class="ScenPart_StartingThing_Defined">
                     <def>StartingThing_Defined</def>
                     <thingDef>LOF_Apparel_MountaineerOutfit</thingDef>
+                    <stuff>Synthread</stuff>
                 </li>
             </parts>
         </scenario>
     </ScenarioDef>
+
 </Defs>

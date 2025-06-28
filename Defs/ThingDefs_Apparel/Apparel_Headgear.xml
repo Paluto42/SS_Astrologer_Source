@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
+
     <![CDATA[
     <ThingDef ParentName="Astro_HelmetBase">
         <defName>LOF_GravityOffsetEq</defName>
@@ -29,7 +30,7 @@
             <Cloth>10</Cloth>
             <Uranium>10</Uranium>
             <ComponentSpacer>2</ComponentSpacer>
-            <LOF_Resource_StarlightIron>30</LOF_Resource_StarlightIron>
+            <LOF_Thing_StarlightIron>30</LOF_Thing_StarlightIron>
         </costList>
         <apparel>
             <bodyPartGroups>
@@ -90,7 +91,7 @@
         <costList>
             <Cloth>10</Cloth>
             <ComponentSpacer>2</ComponentSpacer>
-            <LOF_Resource_StarlightIron>30</LOF_Resource_StarlightIron>
+            <LOF_Thing_StarlightIron>30</LOF_Thing_StarlightIron>
         </costList>
         <apparel>
             <bodyPartGroups>
@@ -116,7 +117,7 @@
             <li Class="AKA_Ability.TCP_AKATracker">
                 <trackerGenProp>
                     <abilities>
-                        <li>LOF_Ability_UnavoidableStance</li>
+                        <li>LOF_Ability_AnchoredStance</li>
                     </abilities>
                 </trackerGenProp>
             </li>
@@ -177,7 +178,7 @@
         <costList>
             <Cloth>10</Cloth>
             <ComponentSpacer>2</ComponentSpacer>
-            <LOF_Resource_StarlightIron>30</LOF_Resource_StarlightIron>
+            <LOF_Thing_StarlightIron>30</LOF_Thing_StarlightIron>
         </costList>
         <apparel>
             <bodyPartGroups>

@@ -7,7 +7,7 @@
         <description>预防瘟疫,疟疾,昏睡流感,纳米机械感染,金属异形感染.</description>
         <possessionCount>10</possessionCount>
         <descriptionHyperlinks>
-            <HediffDef>LOF_NanoFluidHigh</HediffDef>
+            <HediffDef>LOF_Hediff_NanoFluid</HediffDef>
         </descriptionHyperlinks>
         <graphicData>
             <texPath>Things/Item/Drug/NanoMechanicalFluid</texPath>
@@ -25,7 +25,7 @@
             <drugCategory>Medical</drugCategory>
             <outcomeDoers>
                 <li Class="IngestionOutcomeDoer_GiveHediff">
-                    <hediffDef>LOF_NanoFluidHigh</hediffDef>
+                    <hediffDef>LOF_Hediff_NanoFluid</hediffDef>
                     <severity>1.0</severity>
                 </li>
             </outcomeDoers>
@@ -41,7 +41,7 @@
             <displayPriority>2100</displayPriority>
         </recipeMaker>
         <costList>
-            <LOF_Resource_StarPotion>2</LOF_Resource_StarPotion>
+            <LOF_Thing_StarPotion>2</LOF_Thing_StarPotion>
             <Neutroamine>2</Neutroamine>
         </costList>
         <comps>

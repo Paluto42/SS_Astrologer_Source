@@ -14,6 +14,7 @@ namespace Astrologer
             DamageResult result = base.Apply(dinfo, thing);
             if (result.hitThing is Pawn target)
             {
+                Thing t = new();
                 if (target.Dead) goto ret;
                 if (dinfo.Weapon != AstroDefOf.LOF_Weapon_AMSR || dinfo.Def != AstroDefOf.LOF_Cast_ForcePartDestruct) goto ret;
 

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-    <!--RitualPatternDef ParentName="CelebrationPartyChat" MayRequire="Ludeon.Rimworld.Ideology">
+    <RitualPatternDef ParentName="CelebrationPartyChat" MayRequire="Ludeon.Rimworld.Ideology">
         <defName>LOF_CelebrationSkyLanterns</defName>
         <shortDescOverride>占星师天灯节</shortDescOverride>
         <descOverride>占星师死亡后在一段时间后会变成一朵月光花.</descOverride>
@@ -11,6 +11,6 @@
         <ritualBehavior>CelebrationSkyLanterns</ritualBehavior>
         <patternGroupTag>CelebratedDate</patternGroupTag>
         <ritualOutcomeEffect>CelebrationSkyLanterns</ritualOutcomeEffect>
-    </RitualPatternDef-->
+    </RitualPatternDef>
 
 </Defs>

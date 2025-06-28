@@ -19,7 +19,7 @@ namespace Astrologer.Insight
 
         public virtual void InsightInteract(Pawn pawn)
         {
-            pawn.TryOffsetInsight(Props.insightCost);
+            pawn.TryOffsetInsight(-Props.insightCost);
         }
     }
 }

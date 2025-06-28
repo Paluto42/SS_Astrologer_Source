@@ -39,6 +39,7 @@ namespace Astrologer.Insight
 
         public override void AbilityTick()
         {
+            if (pawn.Dead || pawn.DestroyedOrNull()) return;
             base.AbilityTick(); //哎哟我的妈这行一直没加
             if (Utility.CrtTick % insightRegenTickInterval == 0)
             {
@@ -46,7 +47,7 @@ namespace Astrologer.Insight
                 Map map = pawn.Map;
                 if (map != null)
                 {
-                    foreach (Thing t in map.listerThings.ThingsOfDef(AstroDefOf.LOF_Plant_Starlightgrass))
+                    foreach (Thing t in map.listerThings.ThingsOfDef(AstroDefOf.LOF_Plant_StarlightGrass))
                     {
                         if (PossibleToObserve(t))
                         {

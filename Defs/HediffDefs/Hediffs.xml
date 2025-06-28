@@ -2,8 +2,8 @@
 <Defs>
 
     <HediffDef ParentName="InjuryBase">
-        <defName>LOF_PsychicShockGunshot</defName>
-        <label>心灵错乱射弹</label>
+        <defName>LOF_Hediff_PsychicGunshot</defName>
+        <label>psychicinsanity gunshot</label>
         <labelNoun>a gunshot wound</labelNoun>
         <description>A gunshot wound.</description>
         <comps>
@@ -67,8 +67,8 @@
 
     <HediffDef>
         <defName>LOF_Hediff_Detoxifier</defName>
-        <label>生存作战单元-代谢增益</label>
-        <description>通过先进的纳米技术，它能有效清除血液中的有害物质.</description>
+        <label>Survival Combat Unit - Metabolic Boost</label>
+        <description>Through advanced nanotechnology,it effectively removes harmful substances from the blood.</description>
         <descriptionHyperlinks>
             <ThingDef>LOF_Apparel_LightArmor</ThingDef>
         </descriptionHyperlinks>
@@ -80,7 +80,7 @@
         <maxSeverity>1</maxSeverity>
         <stages>
             <li>
-                <becomeVisible>false</becomeVisible>
+                <becomeVisible>true</becomeVisible>
                 <capMods>
                     <li>
                         <capacity>BloodFiltration</capacity>
@@ -93,8 +93,8 @@
 
     <HediffDef>
         <defName>LOF_Hediff_Manipulation</defName>
-        <label>心灵手巧</label>
-        <description>有了机械手套，工作效率更高了.</description>
+        <label>Manual Dexterity</label>
+        <description>with mechanical gloves,work efficiency is higher</description>
         <descriptionHyperlinks>
             <ThingDef>LOF_Weapon_ShockGlove</ThingDef>
         </descriptionHyperlinks>
@@ -119,8 +119,8 @@
 
     <HediffDef>
         <defName>LOF_Hediff_IncreaseHarvest</defName>
-        <label>收获的喜悦</label>
-        <description>一天内提高农作物收获量,屠宰量.手术成功率提高,制作物品高品质概率增加,射击命中率增加,食物消耗率x200%.</description>
+        <label>Harvest Longing</label>
+        <description>increases crop and butcher yields,surgery success rate,high-quality craft chance,and shooting accuracy for 1 day.\nfood consumption rate is multiplied by 200%.</description>
         <hediffClass>HediffWithComps</hediffClass>
         <defaultLabelColor>(0.6, 0.6, 1.0)</defaultLabelColor>
         <isBad>false</isBad>
@@ -148,8 +148,8 @@
 
     <HediffDef>
         <defName>LOF_Hediff_DecreasePsychicSense</defName>
-        <label>降低心灵敏感度</label>
-        <description>一小段时间内降低心灵敏感度.</description>
+        <label>Reduced Psychic Sensitivity</label>
+        <description>decreases psychic sensitivity for a short period of time.</description>
         <hediffClass>HediffWithComps</hediffClass>
         <defaultLabelColor>(0.6, 0.6, 1.0)</defaultLabelColor>
         <isBad>false</isBad>
@@ -159,22 +159,22 @@
         <stages>
             <li>
                 <statOffsets>
-                    <PsychicSensitivity>-0.5</PsychicSensitivity>
+                    <PsychicSensitivity>-1.0</PsychicSensitivity>
                 </statOffsets>
             </li>
         </stages>
         <comps>
             <li Class="HediffCompProperties_SeverityPerDay">
-                <severityPerDay>-198</severityPerDay>
+                <severityPerDay>-3280</severityPerDay>
             </li>
         </comps>
     </HediffDef>
 
     <HediffDef ParentName="InjuryBase">
         <defName>LOF_Hediff_NebulaRay</defName>
-        <label>星云射线</label>
-        <labelNoun>持续流血的伤口.</labelNoun>
-        <description>持续流血的伤口.</description>
+        <label>Nebula Ray</label>
+        <labelNoun>Nebula Ray</labelNoun>
+        <description>Bleeding Wound.</description>
         <everCurableByItem>false</everCurableByItem>
         <maxSeverity>1</maxSeverity>
         <comps>
@@ -196,9 +196,9 @@
     </HediffDef>
 
     <HediffDef>
-        <defName>LOF_Hediff_UnavoidableStance</defName>
-        <label>精准锁定(被动)</label>
-        <description>一小段时间内闪避率为0.</description>
+        <defName>LOF_Hediff_AnchoredStance</defName>
+        <label>Anchored Stance</label>
+        <description>dodge chance is reduced to 0% for a short period of time.</description>
         <hediffClass>HediffWithComps</hediffClass>
         <defaultLabelColor>(0.9, 1.0, 0.35)</defaultLabelColor>
         <isBad>false</isBad>
@@ -220,10 +220,10 @@
     </HediffDef>
 
     <HediffDef>
-        <defName>LOF_NanoFluidHigh</defName>
+        <defName>LOF_Hediff_NanoFluid</defName>
         <hediffClass>Hediff_High</hediffClass>
-        <label>penoxycyline</label>
-        <description>Penoxycyline-induced immunity to certain illnesses. This only blocks new infections; it does nothing for those who are already infected, even if their infection is dormant.</description>
+        <label>nanomachine self-inspection</label>
+        <description>nanomachines flowing in the blood can prevent infection from most contagious diseases.</description>
         <defaultLabelColor>(1,0,0.5)</defaultLabelColor>
         <scenarioCanAdd>true</scenarioCanAdd>
         <maxSeverity>1.0</maxSeverity>
@@ -240,6 +240,8 @@
                     <li>Malaria</li>
                     <li>SleepingSickness</li>
                     <li>Plague</li>
+                    <li>FibrousMechanites</li>
+                    <li>SensoryMechanites</li>
                     <li MayRequire="Ludeon.Rimworld.Anomaly">MetalhorrorImplant</li>
                 </makeImmuneTo>
             </li>

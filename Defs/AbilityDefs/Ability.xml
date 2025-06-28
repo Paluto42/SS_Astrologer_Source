@@ -1,19 +1,22 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
+
     <AbilityDef ParentName="AK_OperatorIDBase">
         <defName>LOF_VAbility_Astro</defName>
-        <label>占星师</label>
-        <description>desc</description>
+        <label>Astrologer</label>
+        <description>Insight into Everything.</description>
         <abilityClass>Astrologer.Insight.VAB_AstroTracker</abilityClass>
         <iconPath>UI/Element/Placeholder</iconPath>
     </AbilityDef>
     <!--==================== 洞察力技能 ====================-->
     <AKA_Ability.AKAbilityDef>
         <defName>LOF_Ability_Monitor</defName>
-        <label>占星师洞察力</label>
-        <description>洞察力自然恢复进度\n\n介绍:\n洞察力是占星师种族拥有的独特能力,许多专属技能都依赖洞察力进行释放.\n\n注意:\n当占星师靠近星光草附近时,洞察力恢复速度会加快.</description>
-        <displayGizmoUndraft>true</displayGizmoUndraft>
+        <label>Astrologer's Insight</label>
+        <description>Insight Recovery Progress\n
+Introduce:\nInsight is a unique ability of the astrologer race.Many exclusive skills rely on insight to release.\n\n
+Tips:\nWhen the Astrologer is near the Starlight Grass,the insight recovery speed will be faster.</description>
         <icon>UI/Element/Placeholder</icon>
+        <displayGizmoUndraft>true</displayGizmoUndraft>
         <abilityClass>Astrologer.Ability.AKAbility_Monitor</abilityClass>
         <compEffectList/>
         <cooldownProperty/>
@@ -22,7 +25,7 @@
 
     <AKA_Ability.AKAbilityDef>
         <defName>LOF_Ability_FireMode</defName>
-        <label>占星师切换武器模式</label>
+        <label>change Astrologer's wepaon firemode</label>
         <description>desc.</description>
         <icon>UI/Element/Placeholder</icon>
         <abilityClass>Astrologer.Ability.AKAbility_FireMode</abilityClass>
@@ -32,14 +35,14 @@
 
     <AKA_Ability.AKAbilityDef>
         <defName>LOF_Ability_IncreaseHarvest</defName>
-        <label>大丰收</label>
-        <description>介绍:\n消耗一定洞察力,在一天内提高农作物收获量,屠宰量.手术成功率提高,制作物品高品质概率增加,射击命中率增加,食物消耗率x200%.</description>
+        <label>Great harvest</label>
+        <description>consume a certain amount of insight to increase crop harvest,slaughter volume,surgery success rate,high quality probability of crafting items,shooting hit rate in one day.\nFood consumption rate x200%.</description>
         <icon>UI/Element/Placeholder</icon>
         <abilityClass>AKA_Ability.AKAbility_SelfTarget</abilityClass>
         <castConditions>
             <li Class="Astrologer.Ability.CC_InsightThreshold">
                 <amount>50</amount>
-                <failReason>洞察力不足</failReason>
+                <failReason>Lack of Insight</failReason>
             </li>
             <li Class="AKA_Ability.CastConditioner.CC_NeedFullCharge"/>
         </castConditions>
@@ -51,9 +54,7 @@
             <li Class="Astrologer.Ability.AE_CostInsight">
                 <amount>50</amount>
             </li>
-            <li Class="AKA_Ability.AbilityEffect.AE_CostChargeStatic">
-                <cost>1</cost>
-            </li>
+            <li Class="AKA_Ability.AbilityEffect.AE_CostChargeStatic"/>
         </compEffectList>
         <useSounds>
             <li>AK_SFX_Tactboost</li>
@@ -68,7 +69,7 @@
 
     <AKA_Ability.AKAbilityDef>
         <defName>LOF_Ability_Teleport</defName>
-        <label>进行折跃</label>
+        <label>Teleport to</label>
         <description>desc.</description>
         <icon>UI/Element/Placeholder</icon>
         <abilityClass>AKA_Ability.AKAbility_Targetor</abilityClass>
@@ -76,7 +77,7 @@
         <castConditions>
             <li Class="Astrologer.Ability.CC_InsightThreshold">
                 <amount>20</amount>
-                <failReason>洞察力不足</failReason>
+                <failReason>Lack of Insight</failReason>
             </li>
             <li Class="AKA_Ability.CastConditioner.CC_NeedFullCharge"/>
         </castConditions>
@@ -104,14 +105,14 @@
 
     <AKA_Ability.AKAbilityDef>
         <defName>LOF_Ability_UnstableCatalyst</defName>
-        <label>进入不稳定态</label>
-        <description>持续消耗洞察力可以进入不稳定态，此时有一半的几率受击不造成伤害.</description>
+        <label>Enter Unstable State</label>
+        <description>Continuously consuming insight can enter an unstable state.\nThere is a 50% chance that being hit will not cause damage.</description>
         <icon>UI/Element/Placeholder</icon>
         <abilityClass>AKA_Ability.AKAbility_SelfTarget</abilityClass>
         <castConditions>
             <li Class="Astrologer.Ability.CC_InsightThreshold">
                 <amount>50</amount>
-                <failReason>洞察力不足</failReason>
+                <failReason>Lack of Insight</failReason>
             </li>
             <li Class="AKA_Ability.CastConditioner.CC_NeedFullCharge"/>
         </castConditions>
@@ -134,14 +135,14 @@
 
     <AKA_Ability.AKAbilityDef>
         <defName>LOF_Ability_LeechAttack</defName>
-        <label>吸血攻击</label>
-        <description>介绍:\n持续消耗洞察力,攻击敌人造成伤害时固定回复血量.</description>
+        <label>Leech Attack</label>
+        <description>consumes Insight continuously.fixed health restoration when dealing damage to enemies.</description>
         <icon>UI/Element/Placeholder</icon>
         <abilityClass>AKA_Ability.AKAbility_Auto</abilityClass>
         <castConditions>
             <li Class="Astrologer.Ability.CC_InsightThreshold">
                 <amount>1</amount>
-                <failReason>洞察力不足</failReason>
+                <failReason>Lack of Insight</failReason>
             </li>
         </castConditions>
         <useSounds>
@@ -168,8 +169,8 @@
     </Def>
     <AKA_Ability.AKAbilityDef>
         <defName>LOF_Ability_GravityDeflection</defName>
-        <label>引力偏转尘埃</label>
-        <description>介绍:\n消耗洞察力可以释放一片引力偏转尘埃,该尘埃会偏转子弹和电荷弹.</description>
+        <label>Release Gravitational Deflection Dust</label>
+        <description>consume Insight to release a cloud of Gravitational Deflection Dust,which deflects bullets and charged shots.</description>
         <icon>UI/Element/Placeholder</icon>
         <abilityClass>AKA_Ability.AKAbility_Targetor</abilityClass>
         <reqLineofSight>true</reqLineofSight>
@@ -178,7 +179,7 @@
         <castConditions>
             <li Class="Astrologer.Ability.CC_InsightThreshold">
                 <amount>20</amount>
-                <failReason>洞察力不足</failReason>
+                <failReason>Lack of Insight</failReason>
             </li>
         </castConditions>
         <compEffectList>
@@ -212,12 +213,11 @@
     </AKA_Ability.AKAbilityDef>
 
     <Def Class="AKA_Ability.AbilityEffectsDef">
-        <defName>LOF_Effect_UnavoidableStance</defName>
-        <label>锚定立场</label>
+        <defName>LOF_Effect_AnchoredStance</defName>
         <compEffectList>
             <li Class="Astrologer.Ability.AE_AddHediffRadial">
                 <radius>10</radius>
-                <hediffDef>LOF_Hediff_UnavoidableStance</hediffDef>
+                <hediffDef>LOF_Hediff_AnchoredStance</hediffDef>
                 <severity>1</severity>
             </li>
             <li Class="AKA_Ability.AbilityEffect.AE_DoEffectFX">
@@ -232,9 +232,9 @@
         </compEffectList>
     </Def>
     <AKA_Ability.AKAbilityDef>
-        <defName>LOF_Ability_UnavoidableStance</defName>
-        <label>锚定立场</label>
-        <description>介绍:\n消耗洞察力创造一个让敌人闪避率为0的立场.</description>
+        <defName>LOF_Ability_AnchoredStance</defName>
+        <label>Release AnchoredStance</label>
+        <description>consume Insight to create a field that nullifies enemies' dodge chance.</description>
         <icon>UI/Element/Placeholder</icon>
         <abilityClass>AKA_Ability.AKAbility_Targetor</abilityClass>
         <reqLineofSight>true</reqLineofSight>
@@ -243,13 +243,13 @@
         <castConditions>
             <li Class="Astrologer.Ability.CC_InsightThreshold">
                 <amount>20</amount>
-                <failReason>洞察力不足</failReason>
+                <failReason>Lack of Insight</failReason>
             </li>
             <!--li Class="AKA_Ability.CastConditioner.CC_NeedFullCharge"/-->
         </castConditions>
         <compEffectList>
             <li Class="AKA_Ability.AbilityEffect.AE_DelayedEffects">
-                <delayedEffect>LOF_Effect_UnavoidableStance</delayedEffect>
+                <delayedEffect>LOF_Effect_AnchoredStance</delayedEffect>
                 <delayFirstEffect>true</delayFirstEffect>
                 <burstCount>10</burstCount>
                 <burstInterval>30</burstInterval>
@@ -276,15 +276,15 @@
     </AKA_Ability.AKAbilityDef>
 
     <AKA_Ability.AKAbilityDef>
-        <defName>LOF_Ability_InsightCoagulate</defName>
-        <label>紧急救援</label>
+        <defName>LOF_Ability_EmergencyRescue</defName>
+        <label>Emergency Rescue</label>
         <description>desc.</description>
         <icon>UI/Element/HealEnhance</icon>
         <abilityClass>AKA_Ability.AKAbility_SelfTarget</abilityClass>
         <castConditions>
             <li Class="Astrologer.Ability.CC_InsightThreshold">
                 <amount>20</amount>
-                <failReason>洞察力不足</failReason>
+                <failReason>Lack of Insight</failReason>
             </li>
         </castConditions>
         <compEffectList>
@@ -310,8 +310,8 @@
 
     <AKA_Ability.AKAbilityDef>
         <defName>LOF_Ability_PhotonBomb</defName>
-        <label>释放光子炸弹</label>
-        <description>介绍:\n该炸弹可以跨墙释放.</description>
+        <label>Deploy Photon Bomb</label>
+        <description>this bomb can be deployed through walls.</description>
         <icon>UI/Element/Placeholder</icon>
         <abilityClass>AKA_Ability.AKAbility_Targetor</abilityClass>
         <range>40</range>
@@ -319,7 +319,7 @@
         <castConditions>
             <li Class="Astrologer.Ability.CC_InsightThreshold">
                 <amount>20</amount>
-                <failReason>洞察力不足</failReason>
+                <failReason>Lack of Insight</failReason>
             </li>
         </castConditions>
         <compEffectList>
@@ -348,8 +348,8 @@
 
     <AKA_Ability.AKAbilityDef>
         <defName>LOF_Ability_Gravitational</defName>
-        <label>创造引力点</label>
-        <description>介绍:\n创造一个引力点将敌人拉向该引力点.</description>
+        <label>Create Gravitational Anchor</label>
+        <description>creates a gravitational anchor that pulls enemies toward it.</description>
         <icon>UI/Element/Placeholder</icon>
         <abilityClass>AKA_Ability.AKAbility_Targetor</abilityClass>
         <reqLineofSight>true</reqLineofSight>
@@ -358,7 +358,7 @@
         <castConditions>
             <li Class="Astrologer.Ability.CC_InsightThreshold">
                 <amount>20</amount>
-                <failReason>洞察力不足</failReason>
+                <failReason>Lack of Insight</failReason>
             </li>
         </castConditions>
         <compEffectList>
@@ -388,7 +388,7 @@
     <!--==================== 不需要洞察力的技能 ====================-->
     <AKA_Ability.AKAbilityDef>
         <defName>LOF_Ability_DeployEMP</defName>
-        <label>部署EMP冲击背包</label>
+        <label>Deploy EMP Impact Pack</label>
         <description>desc.</description>
         <icon>UI/Element/Placeholder</icon>
         <abilityClass>AKA_Ability.AKAbility_SelfTarget</abilityClass>
@@ -401,9 +401,7 @@
                 <building>LOF_ActivatedPulsePack</building>
                 <apparel>LOF_Equip_EmpactPack</apparel>
             </li>
-            <li Class="AKA_Ability.AbilityEffect.AE_CostChargeStatic">
-                <cost>1</cost>
-            </li>
+            <li Class="AKA_Ability.AbilityEffect.AE_CostChargeStatic"/>
         </compEffectList>
         <cooldownProperty>
             <SPPerCharge>15</SPPerCharge>
@@ -416,7 +414,7 @@
 
     <AKA_Ability.AKAbilityDef>
         <defName>LOF_Ability_Skip</defName>
-        <label>进行大跳</label>
+        <label>Cast Long Jump</label>
         <description>desc.</description>
         <icon>UI/Element/Placeholder</icon>
         <abilityClass>AKA_Ability.AKAbility_Targetor</abilityClass>
@@ -458,7 +456,7 @@
 
     <AKA_Ability.AKAbilityDef>
         <defName>LOF_Ability_Coagulate</defName>
-        <label>紧急救援</label>
+        <label>Emergency Hemostasis</label>
         <description>desc.</description>
         <icon>UI/Element/HealEnhance</icon>
         <abilityClass>AKA_Ability.AKAbility_Targetor</abilityClass>
@@ -493,15 +491,15 @@
 
     <AKA_Ability.AKAbilityDef>
         <defName>LOF_Ability_ReloadFromThing</defName>
-        <label>重新装填</label>
-        <description>使用医药进行装填.</description>
+        <label>Reload from</label>
+        <description>Reload with Medicine.</description>
         <icon>UI/Element/HealEnhance</icon>
         <abilityClass>AKA_Ability.AKAbility_Targetor</abilityClass>
         <allowInterrupt>true</allowInterrupt>
         <range>2</range>
         <castConditions>
             <li Class="AKA_Ability.CastConditioner.CC_NeedFullCharge">
-                <failReason>已满</failReason>
+                <failReason>Full</failReason>
                 <invert>true</invert>
             </li>
         </castConditions>

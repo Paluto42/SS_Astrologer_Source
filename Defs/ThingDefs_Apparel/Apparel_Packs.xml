@@ -5,9 +5,6 @@
         <defName>LOF_MountaineeringPack</defName>
         <label>登山包</label>
         <description>登山包desc.</description>
-        <thingCategories Inherit="false">
-            <li>LOF_AS_Category_Apparel</li>
-        </thingCategories>
         <graphicData>
             <texPath>Things/Apparel/LOF_MountaineeringPack/MountaineeringPack</texPath>
             <graphicClass>Graphic_Single</graphicClass>
@@ -73,14 +70,11 @@
         <tickerType>Normal</tickerType>
         <label>"AMA-2" EMP冲击背包</label>
         <description>投射在地面上会产生持续的emp脉冲，范围较大且放置距离较长</description>
-        <thingCategories Inherit="false">
-            <li>LOF_AS_Category_Apparel</li>
-        </thingCategories>
         <graphicData>
             <texPath>Things/Apparel/LOF_EmpactPack/EmpactPack</texPath>
             <graphicClass>Graphic_Single</graphicClass>
         </graphicData>
-        <uiIconScale>1.25</uiIconScale>
+        <uiIconScale>1.5</uiIconScale>
         <!--占位,原版数值-->
         <statBases>
             <MaxHitPoints>80</MaxHitPoints>
@@ -90,7 +84,7 @@
             <EquipDelay>2</EquipDelay>
         </statBases>
         <costList>
-            <LOF_Resource_StarlightIron>20</LOF_Resource_StarlightIron>
+            <LOF_Thing_StarlightIron>20</LOF_Thing_StarlightIron>
         </costList>
         <comps>
             <li Class="AKA_Ability.TCP_AKATracker">
@@ -157,7 +151,7 @@
                 <li>Belt</li>
             </layers>
             <defaultOutfitTags>
-                <li>Worker</li>
+                <li>Soldier</li>
             </defaultOutfitTags>
             <tags>
                 <li>Astrologer_Equipment</li>
@@ -200,9 +194,6 @@
         <defName>LOF_Equip_Waistbag</defName>
         <label>埃兰迪尔</label>
         <description>挂在腰间的腰包，消耗洞察力可以进行折跃距离较长.</description>
-        <thingCategories Inherit="false">
-            <li>LOF_AS_Category_Apparel</li>
-        </thingCategories>
         <!--等待贴图-->
         <graphicData>
             <texPath>Things/Apparel/TacRigging/CE_TacRigging</texPath>

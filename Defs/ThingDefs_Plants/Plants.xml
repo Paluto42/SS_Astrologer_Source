@@ -2,12 +2,12 @@
 <Defs>
 
     <ThingDef ParentName="PlantBase">
-        <defName>LOF_Plant_Starlightgrass</defName>
+        <defName>LOF_Plant_StarlightGrass</defName>
         <label>星光草</label>
         <description>晨曦之中，造物主以此等超凡彰显其伟大。--启示录Ⅰ-光明之书.</description>
         <descriptionHyperlinks>
-            <ThingDef>LOF_Resource_Starlightgrass</ThingDef>
-            <ThingDef>LOF_Resource_StarlightIron</ThingDef>
+            <ThingDef>LOF_Thing_StarlightFruit</ThingDef>
+            <ThingDef>LOF_Thing_StarlightIron</ThingDef>
         </descriptionHyperlinks>
         <statBases>
             <MaxHitPoints>100</MaxHitPoints>
@@ -21,20 +21,25 @@
         <pathCost>14</pathCost>
         <ingestible/>
         <plant>
-            <growDays>7</growDays>
+            <growDays>22</growDays>
             <dieIfLeafless>true</dieIfLeafless>
             <harvestTag>Standard</harvestTag>
-            <harvestedThingDef>LOF_Resource_Starlightgrass</harvestedThingDef>
-            <harvestYield>8</harvestYield>
+            <harvestedThingDef>LOF_Thing_StarlightFruit</harvestedThingDef>
+            <harvestYield>6</harvestYield>
             <sowMinSkill>4</sowMinSkill>
+            <sowWork>400</sowWork>
             <sowTags>
                 <li>Ground</li>
                 <li>Hydroponic</li>
             </sowTags>
+            <sowResearchPrerequisites>
+                <li>LOF_Research_Starlightgrass</li>
+            </sowResearchPrerequisites>
             <topWindExposure>0.1</topWindExposure>
             <immatureGraphicPath>Things/Plant/StarlightGrass_Immature</immatureGraphicPath>
             <visualSizeRange>0.65~1.00</visualSizeRange>
-            <wildOrder>2</wildOrder>
+            <wildOrder>0</wildOrder>
+            <fertilityMin>0</fertilityMin>
         </plant>
         <comps>
             <li Class="Astrologer.Plant.TCP_NightGlower">
@@ -43,6 +48,44 @@
                 <skyGlowLowerThan>0.25</skyGlowLowerThan>
             </li>
         </comps>
+    </ThingDef>
+
+    <ThingDef ParentName="PlantBase">
+        <defName>LOF_Plant_MoonFlower</defName>
+        <label>月光花</label>
+        <description>她的魂灵循着月光的轨迹溯回星空，她曾经的躯壳在原地化作一朵月光花。</description>
+        <descriptionHyperlinks>
+            <PawnKindDef>LOF_PawnKind_AstroCitizen</PawnKindDef>
+            <PawnKindDef>LOF_PawnKind_AstroSoldier</PawnKindDef>
+        </descriptionHyperlinks>
+        <statBases>
+            <MaxHitPoints>85</MaxHitPoints>
+            <Beauty>14</Beauty>
+            <BeautyOutdoors>14</BeautyOutdoors>
+            <Nutrition>0.05</Nutrition>
+        </statBases>
+        <graphicData>
+            <texPath>Things/Plant/MoonFlower</texPath>
+            <graphicClass>Graphic_Random</graphicClass>
+        </graphicData>
+        <altitudeLayer>Item</altitudeLayer>
+        <selectable>true</selectable>
+        <ingestible>
+            <canAutoSelectAsFoodForCaravan>false</canAutoSelectAsFoodForCaravan>
+        </ingestible>
+        <plant>
+            <dieIfLeafless>true</dieIfLeafless>
+            <sowWork>750</sowWork>            <!-- 100 ticks per live day -->
+            <sowTags Inherit="False"/>
+            <growMinGlow>0.3</growMinGlow>
+            <topWindExposure>0.1</topWindExposure>
+            <growDays>1.5</growDays>
+            <lifespanDaysPerGrowDays>5</lifespanDaysPerGrowDays>
+            <visualSizeRange>0.8~1.25</visualSizeRange>
+            <immatureGraphicPath>Things/Plant/MoonFlower_Immature</immatureGraphicPath>
+            <wildOrder>0</wildOrder>
+            <purpose>Beauty</purpose>
+        </plant>
     </ThingDef>
 
 </Defs>

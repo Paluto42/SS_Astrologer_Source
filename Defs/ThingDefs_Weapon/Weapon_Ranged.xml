@@ -54,7 +54,7 @@
         </statBases>
         <costList>
             <Steel>25</Steel>
-            <LOF_Resource_StarlightIron>5</LOF_Resource_StarlightIron>
+            <LOF_Thing_StarlightIron>5</LOF_Thing_StarlightIron>
             <ComponentIndustrial>1</ComponentIndustrial>
         </costList>
         <recipeMaker>
@@ -82,7 +82,7 @@
     <ThingDef ParentName="Astro_BasicWeaponRangedBase">
         <defName>LOF_Weapon_CombatSMG</defName>
         <label>格斗冲锋枪</label>
-        <description>这把冲锋枪设计于占星帝国内战的时代，便宜和耐用是该枪的代名词.</description>
+        <description>这把冲锋枪设计于繁星帝国内战的时代，便宜和耐用是该枪的代名词.</description>
         <graphicData>
             <texPath>Things/Weapons/LOF_CombatSMG</texPath>
             <graphicClass>Graphic_Single</graphicClass>
@@ -113,7 +113,7 @@
         </statBases>
         <costList>
             <Steel>50</Steel>
-            <LOF_Resource_StarlightIron>10</LOF_Resource_StarlightIron>
+            <LOF_Thing_StarlightIron>10</LOF_Thing_StarlightIron>
             <ComponentIndustrial>2</ComponentIndustrial>
         </costList>
         <verbs>
@@ -161,7 +161,7 @@
         </statBases>
         <costList>
             <Steel>50</Steel>
-            <LOF_Resource_StarlightIron>10</LOF_Resource_StarlightIron>
+            <LOF_Thing_StarlightIron>10</LOF_Thing_StarlightIron>
             <ComponentIndustrial>3</ComponentIndustrial>
         </costList>
         <recipeMaker>
@@ -210,7 +210,7 @@
         </statBases>
         <costList>
             <Steel>50</Steel>
-            <LOF_Resource_StarlightIron>10</LOF_Resource_StarlightIron>
+            <LOF_Thing_StarlightIron>10</LOF_Thing_StarlightIron>
             <ComponentIndustrial>3</ComponentIndustrial>
         </costList>
         <recipeMaker>
@@ -265,7 +265,7 @@
             <RangedWeapon_Cooldown>1.5</RangedWeapon_Cooldown>
         </statBases>
         <costList>
-            <LOF_Resource_StarlightIron>40</LOF_Resource_StarlightIron>
+            <LOF_Thing_StarlightIron>40</LOF_Thing_StarlightIron>
             <ComponentIndustrial>3</ComponentIndustrial>
         </costList>
         <recipeMaker>
@@ -298,7 +298,7 @@
                 <verbProps>
                     <verbClass>Astrologer.Insight.Verb_InsightShoot</verbClass>
                     <hasStandardCommand>true</hasStandardCommand>
-                    <defaultProjectile>LOF_Bullet_Psychicinsanity</defaultProjectile>
+                    <defaultProjectile>LOF_Bullet_PsychicInsanity</defaultProjectile>
                     <warmupTime>1</warmupTime>
                     <range>30</range>
                     <soundCast>ChargeLance_Fire</soundCast>
@@ -306,12 +306,12 @@
                     <muzzleFlashScale>9</muzzleFlashScale>
                 </verbProps>
                 <consumeAmount>5</consumeAmount>
-                <mainWeaponLabel>普通射击模式</mainWeaponLabel>
+                <mainWeaponLabel>Normal FireMode</mainWeaponLabel>
                 <mainIcon>UI/Buttons/NormalFire</mainIcon>
-                <mainDescription>占星师使用时，可以切换到特殊的开火模式\n开火将消耗洞察力</mainDescription>
-                <secondaryWeaponLabel>心灵错乱射击</secondaryWeaponLabel>
+                <mainDescription>When used by the Astrologer, you can switch to a special firing mode that consume insight.</mainDescription>
+                <secondaryWeaponLabel>Psychicinsanity Shooting</secondaryWeaponLabel>
                 <secondaryIcon>UI/Buttons/SpecialFire</secondaryIcon>
-                <secondaryDescription>每一发子弹命中带有心灵错乱效果\n需要消耗10点洞察力</secondaryDescription>
+                <secondaryDescription>Each bullet hits with a Psychicinsanity effect\nRequires 5 points of insight for each shot.</secondaryDescription>
             </li>
         </comps>
     </ThingDef>
@@ -346,7 +346,7 @@
         </statBases>
         <costList>
             <Plasteel>20</Plasteel>
-            <LOF_Resource_StarlightIron>40</LOF_Resource_StarlightIron>
+            <LOF_Thing_StarlightIron>40</LOF_Thing_StarlightIron>
             <ComponentSpacer>3</ComponentSpacer>
         </costList>
         <recipeMaker>
@@ -437,7 +437,7 @@
         <costList>
             <Plasteel>20</Plasteel>
             <Uranium>20</Uranium>
-            <LOF_Resource_StarlightIron>60</LOF_Resource_StarlightIron>
+            <LOF_Thing_StarlightIron>60</LOF_Thing_StarlightIron>
             <ComponentSpacer>4</ComponentSpacer>
         </costList>
         <recipeMaker>
@@ -507,7 +507,7 @@
             <RangedWeapon_Cooldown>0.6</RangedWeapon_Cooldown>
         </statBases>
         <costList>
-            <LOF_Resource_StarlightIron>50</LOF_Resource_StarlightIron>
+            <LOF_Thing_StarlightIron>50</LOF_Thing_StarlightIron>
             <Plasteel>20</Plasteel>
             <ComponentIndustrial>3</ComponentIndustrial>
         </costList>
@@ -596,7 +596,7 @@
             <MoveSpeed>-0.50</MoveSpeed>
         </equippedStatOffsets>
         <costList>
-            <LOF_Resource_StarlightIron>60</LOF_Resource_StarlightIron>
+            <LOF_Thing_StarlightIron>60</LOF_Thing_StarlightIron>
             <Plasteel>40</Plasteel>
             <Uranium>20</Uranium>
             <ComponentSpacer>4</ComponentSpacer>

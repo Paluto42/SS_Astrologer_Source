@@ -3,13 +3,13 @@
 
     <StyleItemCategoryDef>
         <defName>LOF_AS_StyleCategory_Hair</defName>
-        <label>占星师</label>
+        <label>Astrologer</label>
     </StyleItemCategoryDef>
 
     <HairDef>
         <defName>LOF_Hair_A</defName>
         <label>AstrologerA</label>
-        <styleGender>Female</styleGender>
+        <styleGender>Any</styleGender>
         <texPath>Things/Pawn/Hairs/ASHair_A</texPath>
         <category>LOF_AS_StyleCategory_Hair</category>
         <styleTags>
@@ -20,7 +20,7 @@
     <HairDef>
         <defName>LOF_Hair_B</defName>
         <label>AstrologerB</label>
-        <styleGender>Female</styleGender>
+        <styleGender>Any</styleGender>
         <texPath>Things/Pawn/Hairs/ASHair_B</texPath>
         <category>LOF_AS_StyleCategory_Hair</category>
         <styleTags>
@@ -31,7 +31,7 @@
     <HairDef>
         <defName>LOF_Hair_C</defName>
         <label>AstrologerC</label>
-        <styleGender>Female</styleGender>
+        <styleGender>Any</styleGender>
         <texPath>Things/Pawn/Hairs/ASHair_C</texPath>
         <category>LOF_AS_StyleCategory_Hair</category>
         <styleTags>
@@ -42,7 +42,7 @@
     <HairDef>
         <defName>LOF_Hair_D</defName>
         <label>AstrologerD</label>
-        <styleGender>Female</styleGender>
+        <styleGender>Any</styleGender>
         <texPath>Things/Pawn/Hairs/ASHair_D</texPath>
         <category>LOF_AS_StyleCategory_Hair</category>
         <styleTags>
@@ -53,7 +53,7 @@
     <HairDef>
         <defName>LOF_Hair_E</defName>
         <label>AstrologerE</label>
-        <styleGender>Female</styleGender>
+        <styleGender>Any</styleGender>
         <texPath>Things/Pawn/Hairs/ASHair_E</texPath>
         <category>LOF_AS_StyleCategory_Hair</category>
         <styleTags>
@@ -64,7 +64,7 @@
     <HairDef>
         <defName>LOF_Hair_F</defName>
         <label>AstrologerF</label>
-        <styleGender>Female</styleGender>
+        <styleGender>Any</styleGender>
         <texPath>Things/Pawn/Hairs/ASHair_F</texPath>
         <category>LOF_AS_StyleCategory_Hair</category>
         <styleTags>
@@ -75,7 +75,7 @@
     <HairDef>
         <defName>LOF_Hair_G</defName>
         <label>AstrologerG</label>
-        <styleGender>Female</styleGender>
+        <styleGender>Any</styleGender>
         <texPath>Things/Pawn/Hairs/ASHair_G</texPath>
         <category>LOF_AS_StyleCategory_Hair</category>
         <styleTags>

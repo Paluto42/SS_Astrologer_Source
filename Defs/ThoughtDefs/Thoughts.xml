@@ -7,9 +7,9 @@
         <workerClass>Astrologer.ThoughtWorker_SightMood</workerClass>
         <stackLimit>1</stackLimit>
         <validWhileDespawned>true</validWhileDespawned>
-        <requiredTraits>
-            <li>LOF_Trait_Sight</li>
-        </requiredTraits>
+        <requiredGenes>
+            <li>LOF_Gene_Main</li>
+        </requiredGenes>
         <stages>
             <li>
                 <label>目光闪闪</label>

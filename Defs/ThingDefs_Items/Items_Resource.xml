@@ -2,12 +2,12 @@
 <Defs>
 
     <ThingDef ParentName="ResourceBase">
-        <defName>LOF_Resource_StarlightIron</defName>
+        <defName>LOF_Thing_StarlightIron</defName>
         <label>星辉钢</label>
         <description>星辉钢.</description>
         <descriptionHyperlinks>
-            <ThingDef>LOF_Plant_Starlightgrass</ThingDef>
-            <ThingDef>LOF_Resource_Starlightgrass</ThingDef>
+            <ThingDef>LOF_Plant_StarlightGrass</ThingDef>
+            <ThingDef>LOF_Thing_StarlightFruit</ThingDef>
         </descriptionHyperlinks>
         <graphicData>
             <texPath>Things/Item/Resource/StarlightIron</texPath>
@@ -59,12 +59,12 @@
     </ThingDef>
 
     <ThingDef ParentName="RoughPlantBase">
-        <defName>LOF_Resource_Starlightgrass</defName>
-        <label>星光草球</label>
+        <defName>LOF_Thing_StarlightFruit</defName>
+        <label>星光果实</label>
         <description>晨曦之中，造物主以此等超凡彰显其伟大。--启示录Ⅰ-光明之书</description>
         <descriptionHyperlinks>
-            <ThingDef>LOF_Plant_Starlightgrass</ThingDef>
-            <ThingDef>LOF_Resource_StarlightIron</ThingDef>
+            <ThingDef>LOF_Plant_StarlightGrass</ThingDef>
+            <ThingDef>LOF_Thing_StarlightIron</ThingDef>
         </descriptionHyperlinks>
         <stackLimit>200</stackLimit>
         <graphicData>
@@ -83,6 +83,28 @@
                 <daysToRotStart>60</daysToRotStart>
                 <rotDestroys>true</rotDestroys>
             </li>
+            <li Class="CompProperties_CompAnalyzableUnlockResearch">
+                <analysisID>114514996</analysisID>
+                <!-- Analyzable -->
+                <analysisDurationHours>0.5</analysisDurationHours>
+                <destroyedOnAnalyzed>false</destroyedOnAnalyzed>
+                <completedLetterLabel>StarlightFruit studied: {RESEARCH} unlocked</completedLetterLabel>
+                <completedLetter>By studying the starlightfruit, {PAWN_labelShort} has acquired the insight needed for the research project(s) {RESEARCH}.\n\nYour researchers can now use research benches to begin researching how to actually use the technology.</completedLetter>
+                <completedLetterDef>PositiveEvent</completedLetterDef>
+                <!-- Interactable -->
+                <activateTexPath>UI/Icons/Study</activateTexPath>
+                <activateLabelString>Analyze...</activateLabelString>
+                <activateDescString>Analyze the starlightfruit.</activateDescString>
+                <jobString>Analyze powerfocus chip</jobString>
+                <guiLabelString>Choose who should analyze this</guiLabelString>
+                <inspectString>Can be analyzed by a colonist.</inspectString>
+                <targetingParameters>
+                    <canTargetBuildings>false</canTargetBuildings>
+                    <canTargetAnimals>false</canTargetAnimals>
+                    <canTargetMechs>false</canTargetMechs>
+                    <onlyTargetControlledPawns>true</onlyTargetControlledPawns>
+                </targetingParameters>
+            </li>
         </comps>
         <thingCategories>
             <li>LOF_AS_Category_Resources</li>
@@ -92,9 +114,9 @@
     </ThingDef>
 
     <ThingDef ParentName="ResourceBase">
-        <defName>LOF_Resource_StarPotion</defName>
+        <defName>LOF_Thing_StarPotion</defName>
         <label>星星药剂</label>
-        <description>desc.</description>
+        <description>嘿，它只是药剂原材料，不能喝。</description>
         <possessionCount>10</possessionCount>
         <graphicData>
             <texPath>Things/Item/Drug/StarPotion</texPath>
@@ -109,14 +131,20 @@
             <Mass>0.02</Mass>
             <DeteriorationRate>1.0</DeteriorationRate>
         </statBases>
+        <!--ingestible>
+            <drugCategory>Medical</drugCategory>
+        </ingestible-->
         <recipeMaker>
             <researchPrerequisite>LOF_Research_Drugsynthesis</researchPrerequisite>
+            <recipeUsers>
+                <li>DrugLab</li>
+            </recipeUsers>
             <skillRequirements>
                 <Medicine>6</Medicine>
             </skillRequirements>
         </recipeMaker>
         <costList>
-            <LOF_Resource_Starlightgrass>5</LOF_Resource_Starlightgrass>
+            <LOF_Thing_StarlightFruit>5</LOF_Thing_StarlightFruit>
             <Neutroamine>2</Neutroamine>
         </costList>
         <thingCategories>

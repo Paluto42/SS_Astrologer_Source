@@ -1,11 +1,14 @@
 ﻿using AKA_Ability;
 using AKA_Ability.CastConditioner;
 using Astrologer.Insight;
+using Verse;
 
 namespace Astrologer.Ability
 {
     public class CC_InsightThreshold : CastConditioner_Base
     {
+        [TranslationHandle]
+        public string refName = "LOF_InsightThreshold";
         public bool above = true;
         public float amount = 1;
 

@@ -19,19 +19,19 @@ namespace Astrologer
 
         static AstroMatPool()
         {
-			try
-			{
-				InitializeMaterials();
+            try
+            {
+                InitializeMaterials();
             }
-			catch (Exception)
-			{
+            catch (Exception)
+            {
                 Log.Error("Astroloer. Critical Error: Materials Initialization Failed");
                 throw;
-			}
+            }
         }
 
-		private static void InitializeMaterials() 
-		{
+        private static void InitializeMaterials()
+        {
             PsychicDevice_Particle ??= MaterialPool.MatFrom(PsychicDevice_ParticleTexPath, ShaderDatabase.Transparent);
             StellarFoundry_A ??= MaterialPool.MatFrom(StellarFoundry_SphereATexPath, ShaderDatabase.Cutout);
             StellarFoundry_B ??= MaterialPool.MatFrom(StellarFoundry_SphereBTexPath, ShaderDatabase.Cutout);
