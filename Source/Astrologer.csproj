@@ -115,7 +115,6 @@
     <Compile Include="Comp\CompEquippable_AKAbility.cs" />
     <Compile Include="Comp\TCP_DrafterGraphic.cs" />
     <Compile Include="Comp\TCP_EffectWorn.cs" />
-    <Compile Include="Comp\TCP_EMPactGlow.cs" />
     <Compile Include="Comp\TCP_TimedRemove.cs" />
     <Compile Include="Ability\HarmonyPatches\Patch_IncomingDamageFactor.cs" />
     <Compile Include="HarmonyPatches\Patch_Corpse.cs" />
