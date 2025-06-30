@@ -1,11 +1,14 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Patch>
 
-    <Operation Class="PatchOperationReplace">
+    <Operation Class="PatchOperationConditional">
         <xpath>Defs/JoyGiverDef[defName="UseTelescope"]/giverClass</xpath>
-        <value>
-            <giverClass>Astrologer.JoyGiver_InteractBuildingCell</giverClass>
-        </value>
+        <match Class="PatchOperationReplace">
+            <xpath>Defs/JoyGiverDef[defName="UseTelescope"]/giverClass</xpath>
+            <value>
+                <giverClass>Astrologer.JoyGiver_InteractBuildingCell</giverClass>
+            </value>
+        </match>
     </Operation>
 
 </Patch>

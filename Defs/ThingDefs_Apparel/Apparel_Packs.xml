@@ -68,7 +68,7 @@
     <ThingDef ParentName="Astro_ApparelBase">
         <defName>LOF_Equip_EmpactPack</defName>
         <tickerType>Normal</tickerType>
-        <label>"AMA-2" EMP冲击背包</label>
+        <label>&lt;color=#00AEEF&gt;"AMA-2" EMP冲击背包&lt;/color&gt;</label>
         <description>投射在地面上会产生持续的emp脉冲，范围较大且放置距离较长</description>
         <graphicData>
             <texPath>Things/Apparel/LOF_EmpactPack/EmpactPack</texPath>
@@ -85,6 +85,7 @@
         </statBases>
         <costList>
             <LOF_Thing_StarlightIron>20</LOF_Thing_StarlightIron>
+            <ComponentIndustrial>4</ComponentIndustrial>
         </costList>
         <comps>
             <li Class="AKA_Ability.TCP_AKATracker">
@@ -96,52 +97,57 @@
             </li>
         </comps>
         <apparel>
-            <wornGraphicPath>Things/Apparel/LOF_EmpactPack/EmpactPack</wornGraphicPath>
-            <wornGraphicData>
-                <renderUtilityAsPack>true</renderUtilityAsPack>
-                <!--north>
-                    <offset>(0,-0.15)</offset>
-                </north>
-                <east>
-                    <offset>(-0.35,-0.05)</offset>
-                    <thin>
-                        <offset>(0.05,0)</offset>
-                    </thin>
-                    <hulk>
-                        <offset>(-0.1,0)</offset>
-                    </hulk>
-                    <fat>
-                        <offset>(-0.15,0)</offset>
-                    </fat>
-                </east>
-                <west>
-                    <offset>(0.35,-0.05)</offset>
-                    <thin>
-                        <offset>(-0.05,0)</offset>
-                    </thin>
-                    <hulk>
-                        <offset>(0.1,0)</offset>
-                    </hulk>
-                    <fat>
-                        <offset>(0.15,0)</offset>
-                    </fat>
-                </west>
-                <male>
-                    <scale>(0.75,0.75)</scale>
-                </male>
-                <female>
-                    <scale>(0.75,0.75)</scale>
-                </female>
-                <thin>
-                    <scale>(0.7,0.7)</scale>
-                </thin>
-                <hulk>
-                    <scale>(0.9,0.9)</scale>
-                </hulk>
-                <fat>
-                    <scale>(0.9,0.9)</scale>
-                </fat-->
-            </wornGraphicData>
+            <renderSkipFlags>
+                <li>None</li>
+            </renderSkipFlags>
+            <renderNodeProperties>
+                <li>
+                    <nodeClass>Astrologer.PawnRenderNode_Apparel</nodeClass>
+                    <texPath>Things/Apparel/LOF_EmpactPack/EmpactPack</texPath>
+                    <baseLayer>0</baseLayer>
+                    <parentTagDef>Body</parentTagDef>
+                    <pawnType>Any</pawnType>
+                    <drawData>
+                        <dataEast>
+                            <layer>90</layer>
+                        </dataEast>
+                        <dataNorth>
+                            <layer>90</layer>
+                        </dataNorth>
+                        <dataWest>
+                            <layer>90</layer>
+                        </dataWest>
+                    </drawData>
+                    <visibleFacing>
+                        <li>0</li>
+                        <li>1</li>
+                        <li>3</li>
+                    </visibleFacing>
+                </li>
+                <li>
+                    <nodeClass>Astrologer.PawnRenderNode_Apparel</nodeClass>
+                    <texPath>Things/Apparel/LOF_EmpactPack/EMPactPackLight</texPath>
+                    <baseLayer>0</baseLayer>
+                    <parentTagDef>Body</parentTagDef>
+                    <pawnType>Any</pawnType>
+                    <drawData>
+                        <dataEast>
+                            <layer>91</layer>
+                        </dataEast>
+                        <dataNorth>
+                            <layer>91</layer>
+                        </dataNorth>
+                        <dataWest>
+                            <layer>91</layer>
+                        </dataWest>
+                    </drawData>
+                    <visibleFacing>
+                        <li>0</li>
+                        <li>1</li>
+                        <li>3</li>
+                    </visibleFacing>
+                </li>
+            </renderNodeProperties>
             <countsAsClothingForNudity>false</countsAsClothingForNudity>
             <developmentalStageFilter>Child, Adult</developmentalStageFilter>
             <bodyPartGroups>

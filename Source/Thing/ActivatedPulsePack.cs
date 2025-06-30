@@ -7,7 +7,7 @@ namespace Astrologer
     {
         public const float minRange = 5f;
         public const float maxRange = 10;
-        public const int duration = 20;
+        public const int duration = 64;
         public const int lastTime = 2500;
         public const float screenShakeFactor = 0.125f;
         public float Radius => Rand.Range(minRange, maxRange);
@@ -25,7 +25,8 @@ namespace Astrologer
         }
         private void DamageCloseThings()
         {
-            GenExplosion.DoExplosion(Position, Map, Radius, AstroDefOf.LOF_EMP, null, damAmount: -1, -1f, explosionSound: SoundDefOf.Power_OnSmall, null, null, null, null, 0f, 0, postExplosionGasType: null, screenShakeFactor: screenShakeFactor);
+            GenExplosion.DoExplosion(Position, Map, Radius, DamageDefOf.EMP, null, damAmount: -1, armorPenetration: -1, explosionSound: SoundDefOf.Power_OnSmall, null, null, null, null, 0f, 0, postExplosionGasType: null, screenShakeFactor: screenShakeFactor);
+            //GenExplosion.DoExplosion(Position, Map, Radius, AstroDefOf.LOF_Damage_EMP, null, damAmount: -1, armorPenetration: -1, explosionSound: SoundDefOf.Power_OnSmall, null, null, null, null, 0f, 0, postExplosionGasType: null, screenShakeFactor: screenShakeFactor);
         }
     }
 }

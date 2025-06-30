@@ -8,8 +8,8 @@ namespace Astrologer
     //至少要有2个stages
     public class ThoughtWorker_SightMood : ThoughtWorker
     {
-        public int PS = 0; //PlayStation
-        public int NS = 1; //Nintendo Switch
+        public const int PS = 0; //PlayStation
+        public const int NS = 1; //Nintendo Switch
 
         protected override ThoughtState CurrentStateInternal(Pawn p)
         {

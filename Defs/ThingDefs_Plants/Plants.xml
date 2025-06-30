@@ -21,11 +21,11 @@
         <pathCost>14</pathCost>
         <ingestible/>
         <plant>
-            <growDays>22</growDays>
+            <growDays>15</growDays>
             <dieIfLeafless>true</dieIfLeafless>
             <harvestTag>Standard</harvestTag>
             <harvestedThingDef>LOF_Thing_StarlightFruit</harvestedThingDef>
-            <harvestYield>6</harvestYield>
+            <harvestYield>10</harvestYield>
             <sowMinSkill>4</sowMinSkill>
             <sowWork>400</sowWork>
             <sowTags>
@@ -40,6 +40,7 @@
             <visualSizeRange>0.65~1.00</visualSizeRange>
             <wildOrder>0</wildOrder>
             <fertilityMin>0</fertilityMin>
+            <fertilitySensitivity>0</fertilitySensitivity>
         </plant>
         <comps>
             <li Class="Astrologer.Plant.TCP_NightGlower">

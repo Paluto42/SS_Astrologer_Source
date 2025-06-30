@@ -15,25 +15,16 @@
             <WorkToMake>10000</WorkToMake>
             <Mass>2</Mass>
         </statBases>
-        <!--equippedStatOffsets>
-            <MeleeDodgeChance>10</MeleeDodgeChance>
-            <MoveSpeed>0.2</MoveSpeed>
-        </equippedStatOffsets-->
         <costList>
-            <Gold>1</Gold>
-            <Steel>60</Steel>
-            <WoodLog>10</WoodLog>
+            <LOF_Thing_StarlightIron>60</LOF_Thing_StarlightIron>
+            <WoodLog>20</WoodLog>
         </costList>
         <recipeMaker>
             <researchPrerequisite>LOF_Research_BaseMelee</researchPrerequisite>
-            <recipeUsers></recipeUsers>
             <skillRequirements>
                 <Crafting>5</Crafting>
             </skillRequirements>
         </recipeMaker>
-        <!--thingSetMakerTags>
-            <li>RewardStandardQualitySuper</li>
-        </thingSetMakerTags-->
         <tools>
             <li>
                 <label>handle</label>
@@ -75,16 +66,11 @@
             <WorkToMake>10000</WorkToMake>
             <Mass>2</Mass>
         </statBases>
-        <!--equippedStatOffsets>
-            <MeleeDodgeChance>10</MeleeDodgeChance>
-            <MoveSpeed>0.2</MoveSpeed>
-        </equippedStatOffsets-->
         <costList>
-            <Steel>60</Steel>
+            <LOF_Thing_StarlightIron>60</LOF_Thing_StarlightIron>
         </costList>
         <recipeMaker>
             <researchPrerequisite>LOF_Research_BaseMelee</researchPrerequisite>
-            <recipeUsers></recipeUsers>
             <skillRequirements>
                 <Crafting>5</Crafting>
             </skillRequirements>
@@ -96,7 +82,7 @@
                     <li>Blunt</li>
                 </capacities>
                 <power>14</power>
-                <cooldownTime>1.5</cooldownTime>
+                <cooldownTime>1.0</cooldownTime>
                 <extraMeleeDamages>
                     <li>
                         <def>EMP</def>

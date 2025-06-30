@@ -28,15 +28,15 @@
         <fillPercent>0.5</fillPercent>
         <canOverlapZones>false</canOverlapZones>
         <statBases>
-            <MaxHitPoints>300</MaxHitPoints>
-            <WorkToBuild>2500</WorkToBuild>
+            <MaxHitPoints>100</MaxHitPoints>
+            <WorkToBuild>800</WorkToBuild>
             <Flammability>0.7</Flammability>
         </statBases>
         <building>
             <destroySound>BuildingDestroyed_Metal_Big</destroySound>
         </building>
         <costList>
-            <Steel>100</Steel>
+            <LOF_Thing_StarlightIron>100</LOF_Thing_StarlightIron>
             <ComponentIndustrial>3</ComponentIndustrial>
         </costList>
         <comps>
@@ -64,7 +64,6 @@
         <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
         <designationCategory>Power</designationCategory>
         <uiOrder>2100</uiOrder>
-        <!--designationHotKey>Misc5</designationHotKey-->
         <constructEffect>ConstructMetal</constructEffect>
         <researchPrerequisites>
             <li>LOF_Research_NightGenerator</li>

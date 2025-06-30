@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+    <Operation Class="PatchOperationConditional">
+        <xpath>Defs/DamageDef[defName="EMP"]</xpath>
+        <match Class="PatchOperationAdd">
+            <xpath>Defs/DamageDef[defName="EMP"]</xpath>
+            <value>
+                <workerClass>Astrologer.DamageWorker_EMP</workerClass>
+            </value>
+        </match>
+    </Operation>
+
+</Patch>

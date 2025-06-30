@@ -27,9 +27,6 @@
                 </disallowedThingDefs>
             </defaultIngredientFilter>
         </recipeMaker>
-        <!--tradeTags>
-            <li>Clothing</li>
-        </tradeTags-->
     </ThingDef>
 
     <ThingDef ParentName="Astro_ClothBase">
@@ -37,7 +34,7 @@
         <label>连衣裙</label>
         <description>研究所人员统一配给的服装，轻便保暖，胸口烫印着繁星帝国的徽章\n基于占星师热爱探索的特质，穿戴连衣裙会增加研究速度.</description>
         <graphicData>
-            <texPath>Things/Apparel/LOF_FrillOnepiece/FrillOnepiece</texPath>
+            <texPath>Things/Apparel/LOF_Dress/FrillOnepiece</texPath>
             <graphicClass>Graphic_Single</graphicClass>
         </graphicData>
         <!--占位,原版数值-->
@@ -59,54 +56,7 @@
         </stuffCategories>
         <costStuffCount>40</costStuffCount>
         <apparel>
-            <wornGraphicPath>Things/Apparel/LOF_FrillOnepiece/FrillOnepiece</wornGraphicPath>
-            <bodyPartGroups>
-                <li>Torso</li>
-                <li>Neck</li>
-                <li>Shoulders</li>
-                <li>Arms</li>
-                <li>Legs</li>
-            </bodyPartGroups>
-            <layers>
-                <li>OnSkin</li>
-            </layers>
-            <defaultOutfitTags>
-                <li>Worker</li>
-            </defaultOutfitTags>
-            <tags>
-                <li>Astrologer_CitizenCloth</li>
-            </tags>
-        </apparel>
-    </ThingDef>
-
-    <ThingDef ParentName="Astro_ClothBase">
-        <defName>LOF_Apparel_ShirtFrillOnepiece</defName>
-        <label>衬衫连衣裙</label>
-        <description>研究所人员统一配给的服装，轻便保暖，胸口烫印着繁星帝国的徽章\n基于占星师热爱探索的特质，穿戴连衣裙会增加研究速度.</description>
-        <graphicData>
-            <texPath>Things/Apparel/LOF_ShirtFrillOnepiece/ShirtFrillOnepiece</texPath>
-            <graphicClass>Graphic_Single</graphicClass>
-        </graphicData>
-        <!--占位,原版数值-->
-        <statBases>
-            <MaxHitPoints>100</MaxHitPoints>
-            <WorkToMake>2000</WorkToMake>
-            <Mass>0.18</Mass>
-            <StuffEffectMultiplierArmor>0.2</StuffEffectMultiplierArmor>
-            <StuffEffectMultiplierInsulation_Cold>0.22</StuffEffectMultiplierInsulation_Cold>
-            <StuffEffectMultiplierInsulation_Heat>0.10</StuffEffectMultiplierInsulation_Heat>
-            <EquipDelay>1.5</EquipDelay>
-        </statBases>
-        <equippedStatOffsets>
-            <ResearchSpeed>0.25</ResearchSpeed>
-        </equippedStatOffsets>
-        <stuffCategories>
-            <li>Fabric</li>
-            <li>Leathery</li>
-        </stuffCategories>
-        <costStuffCount>40</costStuffCount>
-        <apparel>
-            <wornGraphicPath>Things/Apparel/LOF_ShirtFrillOnepiece/ShirtFrillOnepiece</wornGraphicPath>
+            <wornGraphicPath>Things/Apparel/LOF_Dress/FrillOnepiece</wornGraphicPath>
             <bodyPartGroups>
                 <li>Torso</li>
                 <li>Neck</li>
@@ -128,7 +78,7 @@
 
     <ThingDef ParentName="Astro_ClothBase">
         <defName>LOF_Apparel_PriestessDress</defName>
-        <label>连衣裙(豪华典藏)</label>
+        <label>华丽连衣裙</label>
         <description>轻便保暖，胸口烫印着繁星帝国的徽章\n基于占星师热爱探索的特质，穿戴连衣裙会增加研究速度.</description>
         <graphicData>
             <texPath>Things/Apparel/LOF_PriestessDress/PriestessDress</texPath>
@@ -170,6 +120,94 @@
             <tags>
                 <li>Astrologer_CitizenCloth</li>
             </tags>
+        </apparel>
+    </ThingDef>
+
+    <ThingDef ParentName="Astro_ClothBase">
+        <defName>LOF_Apparel_Camisole</defName>
+        <label>贴身防护服</label>
+        <description>研究所人员统一配给的服装，轻便保暖，胸口烫印着繁星帝国的徽章\n基于占星师热爱探索的特质，穿戴连衣裙会增加研究速度.</description>
+        <graphicData>
+            <texPath>Things/Apparel/LOF_Camisole/Camisole</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <!--占位,原版数值-->
+        <statBases>
+            <MaxHitPoints>100</MaxHitPoints>
+            <WorkToMake>2000</WorkToMake>
+            <Mass>0.18</Mass>
+            <StuffEffectMultiplierArmor>0.2</StuffEffectMultiplierArmor>
+            <StuffEffectMultiplierInsulation_Cold>0.22</StuffEffectMultiplierInsulation_Cold>
+            <StuffEffectMultiplierInsulation_Heat>0.10</StuffEffectMultiplierInsulation_Heat>
+            <EquipDelay>1.5</EquipDelay>
+        </statBases>
+        <equippedStatOffsets>
+            <ResearchSpeed>0.25</ResearchSpeed>
+        </equippedStatOffsets>
+        <stuffCategories>
+            <li>Fabric</li>
+            <li>Leathery</li>
+        </stuffCategories>
+        <costStuffCount>40</costStuffCount>
+        <apparel>
+            <wornGraphicPath>Things/Apparel/LOF_Camisole/Camisole</wornGraphicPath>
+            <bodyPartGroups>
+                <li>Torso</li>
+                <li>Neck</li>
+                <li>Shoulders</li>
+                <li>Arms</li>
+                <li>Legs</li>
+            </bodyPartGroups>
+            <layers>
+                <li>OnSkin</li>
+            </layers>
+            <defaultOutfitTags>
+                <li>Worker</li>
+            </defaultOutfitTags>
+            <tags>
+                <li>Astrologer_CitizenCloth</li>
+            </tags>
+        </apparel>
+    </ThingDef>
+
+    <ThingDef ParentName="Astro_ClothBase">
+        <defName>LOF_Apparel_Scarf</defName>
+        <label>围巾</label>
+        <description>可以给颈部保暖.</description>
+        <possessionCount>1</possessionCount>
+        <graphicData>
+            <texPath>Things/Apparel/LOF_Scarf/Scarf</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <stuffCategories>
+            <li>Fabric</li>
+        </stuffCategories>
+        <costStuffCount>10</costStuffCount>
+        <statBases>
+            <WorkToMake>800</WorkToMake>
+            <MaxHitPoints>40</MaxHitPoints>
+            <Mass>0.05</Mass>
+            <StuffEffectMultiplierArmor>0.2</StuffEffectMultiplierArmor>
+            <StuffEffectMultiplierInsulation_Cold>0.02</StuffEffectMultiplierInsulation_Cold>
+            <StuffEffectMultiplierInsulation_Heat>0.02</StuffEffectMultiplierInsulation_Heat>
+            <EquipDelay>1</EquipDelay>
+        </statBases>
+        <apparel>
+            <developmentalStageFilter>Child, Adult</developmentalStageFilter>
+            <bodyPartGroups>
+                <li>Neck</li>
+            </bodyPartGroups>
+            <wornGraphicPath>Things/Apparel/LOF_Scarf/Scarf</wornGraphicPath>
+            <drawData>
+                <scale>0.9</scale>
+                <dataNorth>
+                    <layer>40</layer>
+                </dataNorth>
+            </drawData>
+            <countsAsClothingForNudity>false</countsAsClothingForNudity>
+            <layers>
+                <li>LOF_ApparelLayer_Webbing</li>
+            </layers>
         </apparel>
     </ThingDef>
 
@@ -257,50 +295,6 @@
             </tags>
         </apparel>
     </ThingDef>
-
-    <![CDATA[
-    <ThingDef ParentName="Astro_ClothBase">
-        <defName>LOF_Apparel_Camisole</defName>
-        <description>贴身防护服.</description>
-        <label>贴身防护服</label>
-        <!--等待贴图-->
-        <graphicData>
-            <texPath>Things/Pawn/Humanlike/Apparel/ShirtButton/ShirtButton</texPath>
-            <graphicClass>Graphic_Single</graphicClass>
-        </graphicData>
-        <!--占位,原版数值-->
-        <statBases>
-            <MaxHitPoints>100</MaxHitPoints>
-            <WorkToMake>1000</WorkToMake>
-            <Mass>0.05</Mass>
-            <StuffEffectMultiplierArmor>0</StuffEffectMultiplierArmor>
-            <StuffEffectMultiplierInsulation_Cold>0.04</StuffEffectMultiplierInsulation_Cold>
-            <StuffEffectMultiplierInsulation_Heat>0.02</StuffEffectMultiplierInsulation_Heat>
-            <EquipDelay>1</EquipDelay>
-        </statBases>
-        <stuffCategories>
-            <li>Fabric</li>
-            <li>Leathery</li>
-        </stuffCategories>
-        <costStuffCount>10</costStuffCount>
-        <apparel>
-            <wornGraphicPath>Things/Pawn/Humanlike/Apparel/ShirtButton/ShirtButton</wornGraphicPath>
-            <bodyPartGroups>
-                <li>Torso</li>
-            </bodyPartGroups>
-            <layers>
-                <li>OnSkin</li>
-            </layers>
-            <defaultOutfitTags>
-                <li>Worker</li>
-                <li>Soldier</li>
-            </defaultOutfitTags>
-            <tags>
-                <li>Astrologer_Cloth</li>
-            </tags>
-        </apparel>
-    </ThingDef>
-    ]]>
 
     <![CDATA[
     <ThingDef ParentName="Astro_ClothBase">

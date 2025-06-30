@@ -37,8 +37,8 @@
             <Flammability>0.5</Flammability>
         </statBases>
         <costList>
-            <Steel>40</Steel>
-            <Plasteel>50</Plasteel>
+            <LOF_Thing_StarlightIron>100</LOF_Thing_StarlightIron>
+            <Plasteel>20</Plasteel>
             <Gold>20</Gold>
             <ComponentIndustrial>8</ComponentIndustrial>
         </costList>
@@ -104,10 +104,8 @@
             <Flammability>0.5</Flammability>
         </statBases>
         <costList>
-            <Steel>40</Steel>
-            <Plasteel>50</Plasteel>
-            <Gold>20</Gold>
-            <ComponentIndustrial>8</ComponentIndustrial>
+            <LOF_Thing_StarlightIron>120</LOF_Thing_StarlightIron>
+            <ComponentSpacer>4</ComponentSpacer>
         </costList>
         <building>
             <destroySound>BuildingDestroyed_Metal_Medium</destroySound>

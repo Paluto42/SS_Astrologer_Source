@@ -15,30 +15,10 @@
         <defName>LOF_Cast_ForcePartDestruct</defName>
         <label>bullet</label>
         <workerClass>Astrologer.DamageWorker_ForcePartDestruct</workerClass>
-        <deathMessage>{0} 被星云射线杀死.</deathMessage>
+        <deathMessage>{0} has been killed by nebula ray.</deathMessage>
         <hediff>Gunshot</hediff>
         <impactSoundType>Bullet</impactSoundType>
         <overkillPctToDestroyPart>0~0.7</overkillPctToDestroyPart>
-    </DamageDef>
-
-    <DamageDef ParentName="StunBase">
-        <defName>LOF_EMP</defName>
-        <label>EMP</label>
-        <workerClass>Astrologer.DamageWorker_EMP</workerClass>
-        <externalViolenceForMechanoids>true</externalViolenceForMechanoids>
-        <deathMessage>{0} has been EMPed to death.</deathMessage>
-        <harmsHealth>false</harmsHealth>
-        <!--impactSoundType>Electric</impactSoundType-->
-        <defaultDamage>50</defaultDamage>
-        <explosionSnowMeltAmount>0</explosionSnowMeltAmount>
-        <explosionCellFleck>BlastEMP</explosionCellFleck>
-        <explosionColorEdge>(0.8, 0.8, 0.8, 0.8)</explosionColorEdge>
-        <explosionInteriorFleck>ElectricalSpark</explosionInteriorFleck>
-        <soundExplosion>Explosion_EMP</soundExplosion>
-        <combatLogRules>Damage_EMP</combatLogRules>
-        <causeStun>true</causeStun>
-        <stunResistStat MayRequireAnyOf="Ludeon.RimWorld.Biotech,Ludeon.RimWorld.Anomaly">EMPResistance</stunResistStat>
-        <stunAdaptationTicks>2200</stunAdaptationTicks>
     </DamageDef>
 
     <DamageDef ParentName="Bomb">

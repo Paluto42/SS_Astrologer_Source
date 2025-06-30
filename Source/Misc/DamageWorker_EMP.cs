@@ -5,7 +5,7 @@ using Verse;
 
 namespace Astrologer
 {
-    public class DamageWorker_EMP : DamageWorker_Stun
+    public class DamageWorker_EMP : DamageWorker
     {
         //无烟的EMP脉冲爆炸
         protected override void ExplosionVisualEffectCenter(Explosion explosion)
@@ -19,10 +19,7 @@ namespace Astrologer
                 MoteMaker.MakeStaticMote(explosion.Position.ToVector3Shifted(), explosion.Map, def.explosionCenterMote);
             }
 
-            if (def.explosionCenterEffecter != null)
-            {
-                def.explosionCenterEffecter.Spawn(explosion.Position, explosion.Map, Vector3.zero);
-            }
+            def.explosionCenterEffecter?.Spawn(explosion.Position, explosion.Map, Vector3.zero);
 
             if (def.explosionInteriorMote == null && def.explosionInteriorFleck == null && def.explosionInteriorEffecter == null)
             {

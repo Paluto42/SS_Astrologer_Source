@@ -29,8 +29,7 @@
             <ComponentIndustrial>1</ComponentIndustrial>
         </costList>
         <recipeMaker>
-            <researchPrerequisite>LOF_Research_ATLauncher</researchPrerequisite>
-            <recipeUsers></recipeUsers>
+            <researchPrerequisite>LOF_Research_BaseGun</researchPrerequisite>
             <skillRequirements>
                 <Crafting>6</Crafting>
             </skillRequirements>
@@ -66,7 +65,7 @@
 
     <ThingDef ParentName="Astro_WeaponRangedBase">
         <defName>LOF_Weapon_CarlGustaf</defName>
-        <label>"MPE-4" 反重甲武器</label>
+        <label>&lt;color=#00AEEF&gt;"MPE-4" 反重甲武器&lt;/color&gt;</label>
         <description>可再装填的反重甲无后坐力步枪.</description>
         <tickerType>Normal</tickerType>
         <graphicData>
@@ -92,7 +91,7 @@
             <ComponentIndustrial>1</ComponentIndustrial>
         </costList>
         <recipeMaker>
-            <researchPrerequisite>LOF_Research_ATLauncher</researchPrerequisite>
+            <researchPrerequisite>LOF_Research_SeriesWeapon_MPE</researchPrerequisite>
             <skillRequirements>
                 <Crafting>6</Crafting>
             </skillRequirements>

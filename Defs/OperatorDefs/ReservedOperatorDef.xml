@@ -3,7 +3,7 @@
 
     <AK_DLL.ReserveOperatorDef Name="AstroRecruitBase">
         <defName>LOF_Recruit_Test</defName>
-        <bodyTypeDef>Astro_Body</bodyTypeDef>
+        <bodyTypeDef>AstroBody</bodyTypeDef>
         <headTypeRange>
             <Astro_Head_B DefClass="HeadTypeDef">4</Astro_Head_B>
             <Astro_Head_C DefClass="HeadTypeDef">3</Astro_Head_C>

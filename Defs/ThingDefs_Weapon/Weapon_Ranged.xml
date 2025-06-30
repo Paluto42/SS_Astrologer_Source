@@ -53,9 +53,8 @@
             <RangedWeapon_Cooldown>0.8</RangedWeapon_Cooldown>
         </statBases>
         <costList>
-            <Steel>25</Steel>
-            <LOF_Thing_StarlightIron>5</LOF_Thing_StarlightIron>
-            <ComponentIndustrial>1</ComponentIndustrial>
+            <LOF_Thing_StarlightIron>30</LOF_Thing_StarlightIron>
+            <ComponentIndustrial>2</ComponentIndustrial>
         </costList>
         <recipeMaker>
             <skillRequirements>
@@ -112,9 +111,8 @@
             <RangedWeapon_Cooldown>0.36</RangedWeapon_Cooldown>
         </statBases>
         <costList>
-            <Steel>50</Steel>
-            <LOF_Thing_StarlightIron>10</LOF_Thing_StarlightIron>
-            <ComponentIndustrial>2</ComponentIndustrial>
+            <LOF_Thing_StarlightIron>70</LOF_Thing_StarlightIron>
+            <ComponentIndustrial>4</ComponentIndustrial>
         </costList>
         <verbs>
             <li>
@@ -160,9 +158,8 @@
             <RangedWeapon_Cooldown>1.00</RangedWeapon_Cooldown>
         </statBases>
         <costList>
-            <Steel>50</Steel>
-            <LOF_Thing_StarlightIron>10</LOF_Thing_StarlightIron>
-            <ComponentIndustrial>3</ComponentIndustrial>
+            <LOF_Thing_StarlightIron>60</LOF_Thing_StarlightIron>
+            <ComponentIndustrial>5</ComponentIndustrial>
         </costList>
         <recipeMaker>
             <skillRequirements>
@@ -186,8 +183,8 @@
 
     <ThingDef ParentName="Astro_BasicWeaponRangedBase">
         <defName>LOF_Weapon_RapidShotgun</defName>
-        <label>"AMA-1" 电能霰弹枪</label>
-        <description>一把能快速发射的霰弹枪.</description>
+        <label>&lt;color=#00AEEF&gt;"AMA-1" 电能霰弹枪&lt;/color&gt;</label>
+        <description>一把能快速发射的霰弹枪，对目标造成EMP伤害。</description>
         <graphicData>
             <texPath>Things/Weapons/LOF_ChargeShotgun</texPath>
             <graphicClass>Graphic_Single</graphicClass>
@@ -209,9 +206,8 @@
             <RangedWeapon_Cooldown>1.25</RangedWeapon_Cooldown>
         </statBases>
         <costList>
-            <Steel>50</Steel>
-            <LOF_Thing_StarlightIron>10</LOF_Thing_StarlightIron>
-            <ComponentIndustrial>3</ComponentIndustrial>
+            <LOF_Thing_StarlightIron>75</LOF_Thing_StarlightIron>
+            <ComponentIndustrial>8</ComponentIndustrial>
         </costList>
         <recipeMaker>
             <researchPrerequisite>LOF_Research_SeriesWeapon_AMA</researchPrerequisite>
@@ -240,7 +236,7 @@
 
     <ThingDef ParentName="Astro_AKAWeaponRangedBase">
         <defName>LOF_Weapon_PsychicRifle</defName>
-        <label>"MK-5" 等离子心灵干扰步枪</label>
+        <label>&lt;color=#00AEEF&gt;"MK-5" 等离子心灵干扰步枪&lt;/color&gt;</label>
         <description>标准射手步枪,点击切换模式,此时该步枪每发子弹会有心灵错乱效果.</description>
         <graphicData>
             <texPath>Things/Weapons/LOF_PsychicRifle</texPath>
@@ -265,8 +261,8 @@
             <RangedWeapon_Cooldown>1.5</RangedWeapon_Cooldown>
         </statBases>
         <costList>
-            <LOF_Thing_StarlightIron>40</LOF_Thing_StarlightIron>
-            <ComponentIndustrial>3</ComponentIndustrial>
+            <LOF_Thing_StarlightIron>75</LOF_Thing_StarlightIron>
+            <ComponentIndustrial>6</ComponentIndustrial>
         </costList>
         <recipeMaker>
             <researchPrerequisite>LOF_Research_SeriesWeapon_MK</researchPrerequisite>
@@ -315,12 +311,11 @@
             </li>
         </comps>
     </ThingDef>
-    
-    <![CDATA[
+
     <ThingDef ParentName="Astro_AKAWeaponRangedBase">
         <defName>LOF_Weapon_AMSR</defName>
         <thingClass>Astrologer.DrafterEquipment</thingClass>
-        <label>ASAT-112 "船边星云"</label>
+        <label>&lt;color=#AF23A5&gt;ASAT-112 "船边星云"&lt;/color&gt;</label>
         <description>当占星师使用时,可使用洞察力强化该武器,每一发消耗一定量洞察力.\n在这种模式下,每一发子弹命中会打掉对方身体的随机的一个部位,并挂一个debuff(星云射线)持续扣血.</description>
         <graphicData>
             <texPath>Things/Weapons/LOF_AMSR</texPath>
@@ -346,17 +341,17 @@
         </statBases>
         <costList>
             <Plasteel>20</Plasteel>
-            <LOF_Thing_StarlightIron>40</LOF_Thing_StarlightIron>
-            <ComponentSpacer>3</ComponentSpacer>
+            <LOF_Thing_StarlightIron>100</LOF_Thing_StarlightIron>
+            <ComponentSpacer>5</ComponentSpacer>
         </costList>
-        <recipeMaker>
-            <researchPrerequisite>LOF_Research_AdvancedManufacture</researchPrerequisite>
+        <recipeMaker Inherit="false">
+            <!--researchPrerequisite>LOF_Research_AdvancedManufacture</researchPrerequisite>
             <recipeUsers Inherit="false">
                 <li>LOF_StellarFoundry</li>
             </recipeUsers>
             <skillRequirements>
                 <Crafting>7</Crafting>
-            </skillRequirements>
+            </skillRequirements-->
         </recipeMaker>
         <verbs Inherit="false">
             <li>
@@ -410,7 +405,7 @@
     <ThingDef ParentName="Astro_AKAWeaponRangedBase">
         <defName>LOF_Weapon_Sagitta</defName>
         <thingClass>Astrologer.DrafterEquipment</thingClass>
-        <label>天箭座</label>
+        <label>&lt;color=#AF23A5&gt;天箭座&lt;/color&gt;</label>
         <description>消耗洞察力可以发射一枚光子炸弹，该炸弹可以跨墙释放.</description>
         <graphicData>
             <texPath>Things/Weapons/LOF_Sagitta</texPath>
@@ -437,17 +432,17 @@
         <costList>
             <Plasteel>20</Plasteel>
             <Uranium>20</Uranium>
-            <LOF_Thing_StarlightIron>60</LOF_Thing_StarlightIron>
-            <ComponentSpacer>4</ComponentSpacer>
+            <LOF_Thing_StarlightIron>120</LOF_Thing_StarlightIron>
+            <ComponentSpacer>10</ComponentSpacer>
         </costList>
-        <recipeMaker>
-            <researchPrerequisite>LOF_Research_AdvancedManufacture</researchPrerequisite>
+        <recipeMaker Inherit="false">
+            <!--researchPrerequisite>LOF_Research_AdvancedManufacture</researchPrerequisite>
             <recipeUsers Inherit="false">
                 <li>LOF_StellarFoundry</li>
             </recipeUsers>
             <skillRequirements>
                 <Crafting>7</Crafting>
-            </skillRequirements>
+            </skillRequirements-->
         </recipeMaker>
         <verbs Inherit="false">
             <li>
@@ -478,13 +473,12 @@
             </li>
         </comps>
     </ThingDef>
-    ]]>
 
     <!--=============== Heavy  ====================-->
 
     <ThingDef ParentName="Astro_AKAWeaponRangedBase">
         <defName>LOF_Weapon_PlasmaHMG</defName>
-        <label>"MPE-1" 等离子重机枪</label>
+        <label>&lt;color=#00AEEF&gt;"MPE-1" 等离子重机枪&lt;/color&gt;</label>
         <description>MPE-1是占星帝国初次遭遇暗灵时设计给前线战斗人员的制式武器.\n消耗洞察力可以进行一小段时间的高速射击.</description>
         <graphicData>
             <texPath>Things/Weapons/LOF_ChargeHMG</texPath>
@@ -507,9 +501,8 @@
             <RangedWeapon_Cooldown>0.6</RangedWeapon_Cooldown>
         </statBases>
         <costList>
-            <LOF_Thing_StarlightIron>50</LOF_Thing_StarlightIron>
-            <Plasteel>20</Plasteel>
-            <ComponentIndustrial>3</ComponentIndustrial>
+            <LOF_Thing_StarlightIron>150</LOF_Thing_StarlightIron>
+            <ComponentIndustrial>30</ComponentIndustrial>
         </costList>
         <recipeMaker>
             <researchPrerequisite>LOF_Research_SeriesWeapon_MPE</researchPrerequisite>
@@ -564,11 +557,10 @@
             </li>
         </comps>
     </ThingDef>
-    
-    <![CDATA[
+
     <ThingDef ParentName="Astro_AKAWeaponRangedBase">
         <defName>LOF_Weapon_Railgun</defName>
-        <label>ES-117 "英仙座" 舰载轨道炮</label>
+        <label>&lt;color=#AF23A5&gt;ES-117 "英仙座" 舰载轨道炮&lt;/color&gt;</label>
         <description>手持轨道炮.</description>
         <tickerType>Normal</tickerType>
         <graphicData>
@@ -596,19 +588,19 @@
             <MoveSpeed>-0.50</MoveSpeed>
         </equippedStatOffsets>
         <costList>
-            <LOF_Thing_StarlightIron>60</LOF_Thing_StarlightIron>
+            <LOF_Thing_StarlightIron>200</LOF_Thing_StarlightIron>
             <Plasteel>40</Plasteel>
             <Uranium>20</Uranium>
-            <ComponentSpacer>4</ComponentSpacer>
+            <ComponentSpacer>10</ComponentSpacer>
         </costList>
-        <recipeMaker>
-            <researchPrerequisite>LOF_Research_AdvancedManufacture</researchPrerequisite>
+        <recipeMaker Inherit="false">
+            <!--researchPrerequisite>LOF_Research_AdvancedManufacture</researchPrerequisite>
             <recipeUsers Inherit="false">
                 <li>LOF_StellarFoundry</li>
             </recipeUsers>
             <skillRequirements>
                 <Crafting>8</Crafting>
-            </skillRequirements>
+            </skillRequirements-->
         </recipeMaker>
         <verbs Inherit="false">
             <li>
@@ -645,6 +637,5 @@
             </li>
         </comps>
     </ThingDef>
-    ]]>
 
 </Defs>

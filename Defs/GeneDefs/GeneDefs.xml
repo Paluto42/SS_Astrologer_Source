@@ -98,7 +98,7 @@
     <GeneDef>
         <defName>LOF_Gene_InsightEye</defName>
         <label>目光闪闪</label>
-        <description>encoded gene - implanting this gene will automatically submit an application for enlistment to the Imperial Armed Forces, effective immediately.</description>
+        <description>encoded gene - implanting this gene will automatically submit an application for enlistment to the Star Empire Armed Forces, effective immediately.</description>
         <iconPath>UI/Icons/Genes/InsightEye</iconPath>
         <displayCategory>Astro_GeneCategory</displayCategory>
         <displayOrderInCategory>5</displayOrderInCategory>

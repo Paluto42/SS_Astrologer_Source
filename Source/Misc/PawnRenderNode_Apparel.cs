@@ -5,7 +5,7 @@ using Verse;
 namespace Astrologer
 {
     //1.6新写的
-    
+
     public class PawnRenderNode_Apparel : Verse.PawnRenderNode_Apparel
     {
         public PawnRenderNode_Apparel(Pawn pawn, PawnRenderNodeProperties props, PawnRenderTree tree, Apparel apparel) : base(pawn, props, tree, apparel)

@@ -28,7 +28,7 @@
         <minifiedDef />
         <thingCategories Inherit="false" />
         <costList>
-            <Steel>150</Steel>
+            <LOF_Thing_StarlightIron>150</LOF_Thing_StarlightIron>
             <ComponentIndustrial>5</ComponentIndustrial>
         </costList>
         <comps>
@@ -52,8 +52,6 @@
             <li>Make_ComponentIndustrial</li>
             <li>Make_ComponentSpacer</li>
         </recipes>
-        <!--castEdgeShadows>true</castEdgeShadows>
-        <staticSunShadowHeight>0.10</staticSunShadowHeight-->
         <inspectorTabs>
             <li>ITab_Bills</li>
         </inspectorTabs>
@@ -127,8 +125,6 @@
             <li Class="CompProperties_Breakdownable"/>
         </comps>
         <recipes></recipes>
-        <!--castEdgeShadows>true</castEdgeShadows>
-        <staticSunShadowHeight>0.20</staticSunShadowHeight-->
         <inspectorTabs>
             <li>ITab_Bills</li>
         </inspectorTabs>

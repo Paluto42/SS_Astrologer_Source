@@ -226,7 +226,7 @@
 
     <ThingDef ParentName="Astro_HelmetBase">
         <defName>LOF_Apparel_LightHelmet</defName>
-        <label>生存作战头盔</label>
+        <label>&lt;color=#00AEEF&gt;生存作战头盔&lt;/color&gt;</label>
         <description>轻量化全能型作战头盔，较高的锐防和普通的钝防,同时能过滤一定量的毒气吸入</description>
         <graphicData>
             <texPath>Things/Apparel/LOF_LightHelmet/LightHelmet</texPath>
@@ -251,7 +251,8 @@
         </equippedStatOffsets>
         <costList>
             <Cloth>10</Cloth>
-            <LOF_Thing_StarlightIron>20</LOF_Thing_StarlightIron>
+            <LOF_Thing_StarlightIron>40</LOF_Thing_StarlightIron>
+            <ComponentIndustrial>1</ComponentIndustrial>
         </costList>
         <apparel>
             <wornGraphicPath>Things/Apparel/LOF_LightHelmet/LightHelmet</wornGraphicPath>
@@ -272,7 +273,7 @@
 
     <ThingDef ParentName="Astro_HelmetBase">
         <defName>LOF_Apparel_StandardHelmet</defName>
-        <label>"MPE-2" 制式头盔</label>
+        <label>&lt;color=#00AEEF&gt;"MPE-2" 制式头盔&lt;/color&gt;</label>
         <description>"MPE-2"制式头盔，增加瞄准能力，防毒防腐气</description>
         <!--等待贴图-->
         <graphicData>
@@ -318,7 +319,7 @@
 
     <ThingDef ParentName="Astro_HelmetBase">
         <defName>LOF_Apparel_MiningHelmet</defName>
-        <label>MI矿业支持头盔</label>
+        <label>&lt;color=#00AEEF&gt;MI矿业支持头盔&lt;/color&gt;</label>
         <description>desc.</description>
         <graphicData>
             <texPath>Things/Apparel/LOF_MiningHelmet/MiningHelmet</texPath>
@@ -345,6 +346,7 @@
         <costList>
             <Cloth>10</Cloth>
             <LOF_Thing_StarlightIron>40</LOF_Thing_StarlightIron>
+            <ComponentIndustrial>2</ComponentIndustrial>
         </costList>
         <apparel>
             <bodyPartGroups>
@@ -353,31 +355,24 @@
             <renderSkipFlags>
                 <li>None</li>
             </renderSkipFlags>
-            <renderNodeProperties>
-                <li>
-                    <texPath>Things/Apparel/LOF_MiningHelmet/MiningHelmet</texPath>
-                    <drawSize>(1.1,1.1)</drawSize>
-                    <baseLayer>0</baseLayer>
-                    <parentTagDef>Head</parentTagDef>
-                    <pawnType>Any</pawnType>
-                    <drawData>
-                        <dataEast>
-                            <layer>99</layer>
-                        </dataEast>
-                        <dataSouth>
-                            <layer>99</layer>
-                            <offset>(0,0,0.03)</offset>
-                        </dataSouth>
-                        <dataNorth>
-                            <layer>99</layer>
-                            <offset>(0,0,0.03)</offset>
-                        </dataNorth>
-                        <dataWest>
-                            <layer>99</layer>
-                        </dataWest>
-                    </drawData>
-                </li>
-            </renderNodeProperties>
+            <wornGraphicPath>Things/Apparel/LOF_MiningHelmet/MiningHelmet</wornGraphicPath>
+            <drawData>
+                <scale>1.1</scale>
+                <dataEast>
+                    <layer>99</layer>
+                </dataEast>
+                <dataSouth>
+                    <layer>99</layer>
+                    <offset>(0,0,0.025)</offset>
+                </dataSouth>
+                <dataNorth>
+                    <layer>99</layer>
+                    <offset>(0,0,0.025)</offset>
+                </dataNorth>
+                <dataWest>
+                    <layer>99</layer>
+                </dataWest>
+            </drawData>
         </apparel>
         <recipeMaker>
             <researchPrerequisite>LOF_Research_MultiArmor</researchPrerequisite>
@@ -390,7 +385,7 @@
 
     <ThingDef ParentName="Astro_HelmetBase">
         <defName>LOF_Apparel_EmergencyHelmet</defName>
-        <label>ERT-EMT应急反应面罩</label>
+        <label>&lt;color=#00AEEF&gt;ERT-EMT应急反应面罩&lt;/color&gt;</label>
         <description>desc.</description>
         <graphicData>
             <texPath>Things/Apparel/LOF_EmergencyHelmet/EmergencyHelmet</texPath>
@@ -415,6 +410,7 @@
         <costList>
             <Cloth>10</Cloth>
             <LOF_Thing_StarlightIron>20</LOF_Thing_StarlightIron>
+            <ComponentIndustrial>1</ComponentIndustrial>
         </costList>
         <apparel>
             <wornGraphicPath>Things/Apparel/LOF_EmergencyHelmet/EmergencyHelmet</wornGraphicPath>
