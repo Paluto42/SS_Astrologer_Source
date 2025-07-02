@@ -13,9 +13,17 @@ namespace Astrologer
             //Comps_PostDraw();
         }
 
+        #if ver16
         protected override void Tick()
         {
             base.Tick();
         }
+        #endif
+        #if !ver16
+        public override void Tick()
+        {
+            base.Tick();
+        }
+        #endif
     }
 }

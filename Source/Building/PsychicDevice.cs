@@ -28,13 +28,23 @@ namespace Astrologer
             Graphics.DrawMesh(MeshPool.plane20, Matrix4x4.TRS(EffectDrawPos, EffectRotation, scale), EffectsMat, 0);
         }
 
+        #if ver16
         protected override void Tick()
         {
             base.Tick();
             if (!PowerOn) return;
-
             effecter ??= AstroDefOf.LOF_Effecter_PsychicPulse.SpawnAttached(this, base.Map);
             effecter?.EffectTick(this, this);
         }
+        #endif
+        #if !ver16
+        public override void Tick()
+        {
+            base.Tick();
+            if (!PowerOn) return;
+            effecter ??= AstroDefOf.LOF_Effecter_PsychicPulse.SpawnAttached(this, base.Map);
+            effecter?.EffectTick(this, this);
+        }
+        #endif
     }
 }

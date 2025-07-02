@@ -11,11 +11,19 @@ namespace Astrologer
         public CompPowerTrader CompPower => GetComp<CompPowerTrader>();
         public CompRefuelable CompRefuelable => GetComp<CompRefuelable>();
         public bool PowerOn => CompPower != null && CompPower.PowerOn;
-
+        
+        #if ver16
         protected override void Tick()
         {
             base.Tick();
         }
+        #endif
+        #if !ver16
+        public override void Tick()
+        {
+            base.Tick();
+        }
+        #endif
 
         public override IEnumerable<FloatMenuOption> GetFloatMenuOptions(Pawn selPawn)
         {

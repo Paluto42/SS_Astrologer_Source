@@ -6,7 +6,13 @@ namespace Astrologer
 {
     public static class DebugActions
     {
+        #if ver16
         [DebugAction("Astro Actions", "OffsetPostionX-5", false, false, false, false, false, 0, false, allowedGameStates = AllowedGameStates.PlayingOnMap)]
+        #endif
+        #if !ver16
+        [DebugAction("Astro Actions", "OffsetPostionX-5", false, false, false, false, 0, false, allowedGameStates = AllowedGameStates.PlayingOnMap)]
+        #endif
+    
         public static void OffsetPositionX()
         {
             var t = Find.Selector.SelectedPawns?.First();
