@@ -258,7 +258,7 @@
             <AccuracyShort>0.80</AccuracyShort>
             <AccuracyMedium>0.78</AccuracyMedium>
             <AccuracyLong>0.75</AccuracyLong>
-            <RangedWeapon_Cooldown>1.5</RangedWeapon_Cooldown>
+            <RangedWeapon_Cooldown>1.0</RangedWeapon_Cooldown>
         </statBases>
         <costList>
             <LOF_Thing_StarlightIron>75</LOF_Thing_StarlightIron>
@@ -275,9 +275,9 @@
                 <verbClass>Astrologer.Insight.Verb_InsightShoot</verbClass>
                 <hasStandardCommand>true</hasStandardCommand>
                 <defaultProjectile>LOF_Bullet_DMR</defaultProjectile>
-                <warmupTime>1.0</warmupTime>
+                <warmupTime>0.5</warmupTime>
                 <range>30</range>
-                <soundCast>Shot_Shotgun</soundCast>
+                <soundCast>Shot_ChargeRifle</soundCast>
                 <soundCastTail>GunTail_Heavy</soundCastTail>
                 <muzzleFlashScale>9</muzzleFlashScale>
             </li>
@@ -295,13 +295,13 @@
                     <verbClass>Astrologer.Insight.Verb_InsightShoot</verbClass>
                     <hasStandardCommand>true</hasStandardCommand>
                     <defaultProjectile>LOF_Bullet_PsychicInsanity</defaultProjectile>
-                    <warmupTime>1</warmupTime>
+                    <warmupTime>0.5</warmupTime>
                     <range>30</range>
-                    <soundCast>ChargeLance_Fire</soundCast>
+                    <soundCast>Shot_ChargeRifle</soundCast>
                     <soundCastTail>GunTail_Heavy</soundCastTail>
                     <muzzleFlashScale>9</muzzleFlashScale>
                 </verbProps>
-                <consumeAmount>5</consumeAmount>
+                <consumeAmount>2</consumeAmount>
                 <mainWeaponLabel>Normal FireMode</mainWeaponLabel>
                 <mainIcon>UI/Buttons/NormalFire</mainIcon>
                 <mainDescription>When used by the Astrologer, you can switch to a special firing mode that consume insight.</mainDescription>

@@ -7,11 +7,11 @@ namespace Astrologer.HarmonyPatches
     [HarmonyPatch(typeof(Corpse), "RotStageChanged")]
     public class Patch_Corpse
     {
-        [HarmonyPrefix]
-        public static bool Prefix(Corpse __instance)
+        [HarmonyPostfix]
+        public static void Postfix(Corpse __instance)
         {
             Pawn pawn = __instance.InnerPawn;
-            if (pawn.TryGetAstroDoc() == null) return true;
+            if (pawn.TryGetAstroDoc() == null) return;
             if (__instance.GetRotStage() is RotStage.Rotting or RotStage.Dessicated)
             {
                 Map map = pawn.MapHeld;
@@ -20,9 +20,9 @@ namespace Astrologer.HarmonyPatches
                 Thing t = ThingMaker.MakeThing(AstroDefOf.LOF_Plant_MoonFlower);
                 if (GenPlace.TryPlaceThing(t, pos, map, ThingPlaceMode.Direct) || GenPlace.TryPlaceThing(t, pos, map, ThingPlaceMode.Near))
                 {
+                    //Messages.Message("".Translate(), MessageTypeDefOf.NeutralEvent);
                 }
             }
-            return false;
         }
     }
 }

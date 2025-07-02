@@ -118,7 +118,7 @@
     <Compile Include="Comp\TCP_TimedRemove.cs" />
     <Compile Include="Ability\HarmonyPatches\Patch_IncomingDamageFactor.cs" />
     <Compile Include="HarmonyPatches\Patch_Corpse.cs" />
-    <Compile Include="HarmonyPatches\Patch_MassCarried.cs" />
+    <Compile Include="HarmonyPatches\Patch_MassCapacity.cs" />
     <Compile Include="HarmonyPatches\Patch_ProcessApparel.cs" />
     <Compile Include="HarmonyPatches\Patch_JobDriver.cs" />
     <Compile Include="Insight\InteractableComp\TCP_InsightUsable.cs" />

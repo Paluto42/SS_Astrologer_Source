@@ -189,28 +189,21 @@
         </recipeMaker>
     </ThingDef>
 
-    <![CDATA[
-    <ApparelLayerDef>
-        <defName>LOF_Webbing</defName>
-        <label>织带</label>
-        <drawOrder>210</drawOrder>
-    </ApparelLayerDef>
-
     <ThingDef ParentName="Astro_ApparelBase">
         <defName>LOF_Equip_Waistbag</defName>
         <label>埃兰迪尔</label>
-        <description>挂在腰间的腰包，消耗洞察力可以进行折跃距离较长.</description>
-        <!--等待贴图-->
+        <description>挂在腰间的装备，消耗洞察力可以进行折跃距离较长.</description>
         <graphicData>
-            <texPath>Things/Apparel/TacRigging/CE_TacRigging</texPath>
+            <texPath>Things/Apparel/LOF_Waistbag/Waistbag</texPath>
             <graphicClass>Graphic_Single</graphicClass>
         </graphicData>
         <possessionCount>1</possessionCount>
+        <!--占位,原版数值-->
         <statBases>
             <MaxHitPoints>120</MaxHitPoints>
             <WorkToMake>8000</WorkToMake>
             <Mass>2</Mass>
-            <EquipDelay>3.5</EquipDelay>
+            <EquipDelay>3.0</EquipDelay>
         </statBases>
         <equippedStatOffsets>
         </equippedStatOffsets>
@@ -223,18 +216,18 @@
                 </trackerGenProp>
             </li>
         </comps>
-        <costStuffCount>60</costStuffCount>
-        <stuffCategories>
-            <li>Fabric</li>
-            <li>Leathery</li>
-        </stuffCategories>
+        <costList>
+            <Cloth>20</Cloth>
+            <LOF_Thing_StarlightIron>40</LOF_Thing_StarlightIron>
+            <ComponentIndustrial>10</ComponentIndustrial>
+        </costList>
         <apparel>
-            <wornGraphicPath>Things/Apparel/TacRigging/CE_TacRigging</wornGraphicPath>
+            <wornGraphicPath>Things/Apparel/LOF_Waistbag/Waistbag</wornGraphicPath>
             <bodyPartGroups>
-                <li>Shoulders</li>
+                <li>Waist</li>
             </bodyPartGroups>
             <layers>
-                <li>LOF_Webbing</li>
+                <li>LOF_ApparelLayer_Webbing</li>
             </layers>
             <defaultOutfitTags>
                 <li>Soldier</li>
@@ -243,8 +236,8 @@
                 <li>Astrologer_Equipment</li>
             </tags>
         </apparel>
-        <recipeMaker>
-            <researchPrerequisite>LOF_Research_BaseCloth</researchPrerequisite>
+        <recipeMaker Inherit="false">
+            <!--researchPrerequisite>LOF_Research_AdvancedManufacture</researchPrerequisite>
             <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
             <workSkill>Crafting</workSkill>
             <effectWorking>Tailor</effectWorking>
@@ -253,9 +246,8 @@
                 <li>ElectricTailoringBench</li>
                 <li>HandTailoringBench</li>
             </recipeUsers>
-            <unfinishedThingDef>UnfinishedPack</unfinishedThingDef>
+            <unfinishedThingDef>UnfinishedPack</unfinishedThingDef-->
         </recipeMaker>
     </ThingDef>
-    ]]>
 
 </Defs>

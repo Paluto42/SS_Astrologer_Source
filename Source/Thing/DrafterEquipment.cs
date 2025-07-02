@@ -6,17 +6,17 @@ namespace Astrologer
     public class DrafterEquipment : ThingWithComps
     {
         private Graphic secGraphicInt;
-        Pawn_EquipmentTracker PawnEqTracker => (Pawn_EquipmentTracker)ParentHolder;
+        Pawn_EquipmentTracker PawnEqTracker => (Pawn_EquipmentTracker)ParentHolder; //不能直接用哦
         Pawn Holder
         {
             get
             {
-                if (ParentHolder == null || PawnEqTracker == null) return null;
+                if (ParentHolder == null || ParentHolder is not Pawn_EquipmentTracker) return null;
                 return PawnEqTracker.pawn;
             }
         }
-        TC_DrafterGraphic Drafter => GetComp<TC_DrafterGraphic>();
-        GraphicData DrafterGraphic => Drafter?.Graphic;
+        TC_DrafterGraphic CompDrafter => GetComp<TC_DrafterGraphic>();
+        GraphicData DrafterGraphic => CompDrafter?.Graphic;
 
         public override Graphic Graphic
         {

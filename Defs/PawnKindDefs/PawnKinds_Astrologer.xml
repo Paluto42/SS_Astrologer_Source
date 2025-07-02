@@ -49,9 +49,6 @@
 			<skipChance>0.5</skipChance>
 		</inventoryOptions>
 		<useFactionXenotypes>false</useFactionXenotypes>
-		<modExtensions MayRequire="Paluto22.AK.Compatibility">
-			<li Class="PA_AKPatch.Ext_KeepOriginal"/>
-		</modExtensions>
 	</PawnKindDef>
 
 	<PawnKindDef Name="Astro_CitizenBase" ParentName="Astro_PawnBase" Abstract="True">

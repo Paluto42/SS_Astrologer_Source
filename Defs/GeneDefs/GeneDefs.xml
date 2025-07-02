@@ -30,8 +30,6 @@
             <li>BodyType</li>
             <li>SkinColorOverride</li>
         </exclusionTags>
-        <modExtensions>
-        </modExtensions>
     </GeneDef>
 
     <GeneDef ParentName="Astro_BodyGene">
@@ -66,11 +64,11 @@
             <li>Astro_Head_D</li>
             <li>Astro_Head_E</li>
         </forcedHeadTypes>
-        <!--forcedTraits>
+        <forcedTraits>
             <li>
                 <def>LOF_Trait_Sight</def>
             </li>
-        </forcedTraits-->
+        </forcedTraits>
     </GeneDef>
 
     <GeneDef>

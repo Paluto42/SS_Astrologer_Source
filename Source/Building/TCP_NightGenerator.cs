@@ -18,7 +18,7 @@ namespace Astrologer
     [StaticConstructorOnStartup]
     public class TC_NightGenerator : CompPowerPlant
     {
-        private static readonly Vector2 BarSize = new(1.5f, 0.15f);
+        private static readonly Vector2 BarSize = new(0.65f, 0.07f);
 
         private static readonly Material PowerPlantSolarBarFilledMat = SolidColorMaterials.SimpleSolidColorMaterial(new Color(0.5f, 0.475f, 0.1f));
 
@@ -65,14 +65,14 @@ namespace Astrologer
         public override void PostDraw()
         {
             GenDraw.FillableBarRequest r = default;
-            r.center = parent.DrawPos + Vector3.up * 0.1f;
+            r.center = parent.DrawPos + new Vector3(0f, 0.1f, -0.25f);
             r.size = BarSize;
             r.fillPercent = PowerOutput / (0f - Props.PowerConsumption);
             r.filledMat = PowerPlantSolarBarFilledMat;
             r.unfilledMat = PowerPlantSolarBarUnfilledMat;
-            r.margin = 0.15f;
+            r.margin = 0.025f;
             Rot4 rotation = parent.Rotation;
-            rotation.Rotate(RotationDirection.Clockwise);
+            //rotation.Rotate(RotationDirection.Clockwise);
             r.rotation = rotation;
             GenDraw.DrawFillableBar(r);
         }

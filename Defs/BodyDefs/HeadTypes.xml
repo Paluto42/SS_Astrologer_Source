@@ -1,64 +1,47 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-    <HeadTypeDef>
+    <HeadTypeDef Name="AstroHeadBase" Abstract="True">
+        <requiredGenes>
+            <li>LOF_Gene_Main</li>
+        </requiredGenes>
+        <gender>None</gender>
+    </HeadTypeDef>
+
+    <HeadTypeDef ParentName="AstroHeadBase">
         <defName>Astro_Head_A</defName>
         <label>Astro_A</label>
-        <requiredGenes>
-            <li>LOF_Gene_Main</li>
-        </requiredGenes>
         <graphicPath>Things/Pawn/Heads/ASHead_A</graphicPath>
-        <gender>None</gender>
     </HeadTypeDef>
 
-    <HeadTypeDef>
+    <HeadTypeDef ParentName="AstroHeadBase">
         <defName>Astro_Head_B</defName>
         <label>Astro_B</label>
-        <requiredGenes>
-            <li>LOF_Gene_Main</li>
-        </requiredGenes>
         <graphicPath>Things/Pawn/Heads/ASHead_B</graphicPath>
-        <gender>None</gender>
     </HeadTypeDef>
 
-    <HeadTypeDef>
+    <HeadTypeDef ParentName="AstroHeadBase">
         <defName>Astro_Head_C</defName>
         <label>Astro_C</label>
-        <requiredGenes>
-            <li>LOF_Gene_Main</li>
-        </requiredGenes>
         <graphicPath>Things/Pawn/Heads/ASHead_C</graphicPath>
-        <gender>None</gender>
     </HeadTypeDef>
 
-    <HeadTypeDef>
+    <HeadTypeDef ParentName="AstroHeadBase">
         <defName>Astro_Head_D</defName>
         <label>Astro_D</label>
-        <requiredGenes>
-            <li>LOF_Gene_Main</li>
-        </requiredGenes>
         <graphicPath>Things/Pawn/Heads/ASHead_D</graphicPath>
-        <gender>None</gender>
     </HeadTypeDef>
 
-    <HeadTypeDef>
+    <HeadTypeDef ParentName="AstroHeadBase">
         <defName>Astro_Head_E</defName>
         <label>Astro_E</label>
-        <requiredGenes>
-            <li>LOF_Gene_Main</li>
-        </requiredGenes>
         <graphicPath>Things/Pawn/Heads/ASHead_E</graphicPath>
-        <gender>None</gender>
     </HeadTypeDef>
 
-    <HeadTypeDef>
+    <HeadTypeDef ParentName="AstroHeadBase">
         <defName>Astro_Head_F</defName>
         <label>Astro_F</label>
-        <requiredGenes>
-            <li>LOF_Gene_Main</li>
-        </requiredGenes>
         <graphicPath>Things/Pawn/Heads/ASHead_F</graphicPath>
-        <gender>None</gender>
     </HeadTypeDef>
 
 </Defs>

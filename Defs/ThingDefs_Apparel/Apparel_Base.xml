@@ -48,7 +48,7 @@
     <ApparelLayerDef>
         <defName>LOF_ApparelLayer_Webbing</defName>
         <label>webbing</label>
-        <drawOrder>160</drawOrder>
+        <drawOrder>210</drawOrder>
     </ApparelLayerDef>
 
 </Defs>

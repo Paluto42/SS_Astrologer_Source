@@ -145,18 +145,9 @@
                     <parentTagDef>Head</parentTagDef>
                     <pawnType>Any</pawnType>
                     <drawData>
-                        <dataEast>
+                        <defaultData>
                             <layer>90</layer>
-                        </dataEast>
-                        <dataSouth>
-                            <layer>90</layer>
-                        </dataSouth>
-                        <dataNorth>
-                            <layer>90</layer>
-                        </dataNorth>
-                        <dataWest>
-                            <layer>90</layer>
-                        </dataWest>
+                        </defaultData>
                     </drawData>
                 </li>
                 <li>
@@ -267,53 +258,7 @@
         </apparel>
         <recipeMaker>
             <skillRequirements>
-                <Crafting>8</Crafting>
-            </skillRequirements>
-            <displayPriority>1000</displayPriority>
-        </recipeMaker>
-    </ThingDef>
-
-    <ThingDef ParentName="Astro_HelmetBase">
-        <defName>LOF_Apparel_StandardHelmet</defName>
-        <label>&lt;color=#00AEEF&gt;"MPE-2" 制式头盔&lt;/color&gt;</label>
-        <description>"MPE-2"制式头盔，增加瞄准能力，防毒防腐气</description>
-        <!--等待贴图-->
-        <graphicData>
-            <texPath>Things/Pawn/Humanlike/Apparel/AdvancedHelmet/AdvancedHelmet</texPath>
-            <graphicClass>Graphic_Single</graphicClass>
-        </graphicData>
-        <!--占位,原版数值-->
-        <statBases>
-            <MaxHitPoints>160</MaxHitPoints>
-            <WorkToMake>8000</WorkToMake>
-            <Mass>1.2</Mass>
-            <ArmorRating_Sharp>0.92</ArmorRating_Sharp>
-            <ArmorRating_Blunt>0.4</ArmorRating_Blunt>
-            <ArmorRating_Heat>0.46</ArmorRating_Heat>
-            <Insulation_Cold>4</Insulation_Cold>
-            <Insulation_Heat>2</Insulation_Heat>
-            <EquipDelay>2</EquipDelay>
-        </statBases>
-        <equippedStatOffsets>
-            <AimingDelayFactor>-0.25</AimingDelayFactor>
-            <ToxicResistance>0.5</ToxicResistance>
-            <ToxicEnvironmentResistance>1</ToxicEnvironmentResistance>
-        </equippedStatOffsets>
-        <!--材料-->
-        <costList>
-            <Cloth>10</Cloth>
-            <LOF_Thing_StarlightIron>40</LOF_Thing_StarlightIron>
-        </costList>
-        <apparel>
-            <wornGraphicPath>Things/Pawn/Humanlike/Apparel/ReconArmorHelmet/ReconHelmet</wornGraphicPath>
-            <bodyPartGroups>
-                <li>FullHead</li>
-            </bodyPartGroups>
-        </apparel>
-        <recipeMaker>
-            <researchPrerequisite>LOF_Research_SeriesArmor_MPE</researchPrerequisite>
-            <skillRequirements>
-                <Crafting>8</Crafting>
+                <Crafting>6</Crafting>
             </skillRequirements>
             <displayPriority>1000</displayPriority>
         </recipeMaker>
@@ -427,18 +372,9 @@
                     <parentTagDef>Head</parentTagDef>
                     <pawnType>Any</pawnType>
                     <drawData>
-                        <dataEast>
+                        <defaultData>
                             <layer>99</layer>
-                        </dataEast>
-                        <dataSouth>
-                            <layer>99</layer>
-                        </dataSouth>
-                        <dataNorth>
-                            <layer>99</layer>
-                        </dataNorth>
-                        <dataWest>
-                            <layer>99</layer>
-                        </dataWest>
+                        </defaultData>
                     </drawData>
                 </li>
             </renderNodeProperties>
@@ -449,16 +385,78 @@
         <recipeMaker>
             <researchPrerequisite>LOF_Research_MultiArmor</researchPrerequisite>
             <skillRequirements>
-                <Crafting>7</Crafting>
+                <Crafting>6</Crafting>
             </skillRequirements>
             <displayPriority>1000</displayPriority>
         </recipeMaker>
     </ThingDef>
 
-    <![CDATA[
+    <ThingDef ParentName="Astro_HelmetBase">
+        <defName>LOF_Apparel_StandardHelmet</defName>
+        <label>&lt;color=#00AEEF&gt;"MPE-2" 制式头盔&lt;/color&gt;</label>
+        <description>"MPE-2"制式头盔，增加瞄准能力，防毒防腐气</description>
+        <!--等待贴图-->
+        <graphicData>
+            <texPath>Things/Apparel/LOF_StandardHelmet/StandardHelmet</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <!--占位,原版数值-->
+        <statBases>
+            <MaxHitPoints>160</MaxHitPoints>
+            <WorkToMake>8000</WorkToMake>
+            <Mass>1.2</Mass>
+            <ArmorRating_Sharp>0.92</ArmorRating_Sharp>
+            <ArmorRating_Blunt>0.4</ArmorRating_Blunt>
+            <ArmorRating_Heat>0.46</ArmorRating_Heat>
+            <Insulation_Cold>4</Insulation_Cold>
+            <Insulation_Heat>2</Insulation_Heat>
+            <EquipDelay>2</EquipDelay>
+        </statBases>
+        <equippedStatOffsets>
+            <AimingDelayFactor>-0.25</AimingDelayFactor>
+            <ToxicResistance>0.5</ToxicResistance>
+            <ToxicEnvironmentResistance>1</ToxicEnvironmentResistance>
+        </equippedStatOffsets>
+        <!--材料-->
+        <costList>
+            <Cloth>10</Cloth>
+            <LOF_Thing_StarlightIron>40</LOF_Thing_StarlightIron>
+            <ComponentIndustrial>5</ComponentIndustrial>
+        </costList>
+        <apparel>
+            <bodyPartGroups>
+                <li>FullHead</li>
+            </bodyPartGroups>
+            <renderSkipFlags>
+                <li>None</li>
+            </renderSkipFlags>
+            <renderNodeProperties>
+                <li>
+                    <nodeClass>Astrologer.PawnRenderNode_Apparel</nodeClass>
+                    <texPath>Things/Apparel/LOF_StandardHelmet/StandardHelmet</texPath>
+                    <baseLayer>0</baseLayer>
+                    <parentTagDef>Head</parentTagDef>
+                    <pawnType>Any</pawnType>
+                    <drawData>
+                        <defaultData>
+                            <layer>99</layer>
+                        </defaultData>
+                    </drawData>
+                </li>
+            </renderNodeProperties>
+        </apparel>
+        <recipeMaker>
+            <researchPrerequisite>LOF_Research_SeriesArmor_MPE</researchPrerequisite>
+            <skillRequirements>
+                <Crafting>6</Crafting>
+            </skillRequirements>
+            <displayPriority>1000</displayPriority>
+        </recipeMaker>
+    </ThingDef>
+
     <ThingDef ParentName="Astro_HelmetBase">
         <defName>LOF_Apparel_TwilightKnightHelmet</defName>
-        <label>暮光骑士头盔</label>
+        <label>&lt;color=#AF23A5&gt;暮光骑士头盔&lt;/color&gt;</label>
         <description>desc.</description>
         <graphicData>
             <texPath>Things/Apparel/LOF_TwilightKnightHelmet/TwilightKnightHelmet</texPath>
@@ -493,17 +491,16 @@
                 <li>Astrologer_SoldierArmor</li>
             </tags>
         </apparel>
-        <recipeMaker>
-            <researchPrerequisite>LOF_Research_TwilightKnight</researchPrerequisite>
+        <recipeMaker Inherit="false">
+            <!--researchPrerequisite>LOF_Research_TwilightKnight</researchPrerequisite>
             <recipeUsers Inherit="false">
                 <li>LOF_StellarFoundry</li>
             </recipeUsers>
             <skillRequirements>
-                <Crafting>8</Crafting>
+                <Crafting>6</Crafting>
             </skillRequirements>
-            <displayPriority>1000</displayPriority>
+            <displayPriority>1000</displayPriority-->
         </recipeMaker>
     </ThingDef>
-    ]]>
 
 </Defs>

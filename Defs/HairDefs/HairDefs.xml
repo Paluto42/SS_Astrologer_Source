@@ -6,81 +6,55 @@
         <label>Astrologer</label>
     </StyleItemCategoryDef>
 
-    <HairDef>
+    <HairDef Name="Astro_HairBase" Abstract="True">
+        <category>LOF_AS_StyleCategory_Hair</category>
+        <requiredGene>LOF_Gene_Main</requiredGene>
+        <styleGender>Any</styleGender>
+        <styleTags>
+            <li>LOF_AS_Tag_Style</li>
+        </styleTags>
+    </HairDef>
+
+    <HairDef ParentName="Astro_HairBase">
         <defName>LOF_Hair_A</defName>
         <label>AstrologerA</label>
-        <styleGender>Any</styleGender>
         <texPath>Things/Pawn/Hairs/ASHair_A</texPath>
-        <category>LOF_AS_StyleCategory_Hair</category>
-        <styleTags>
-            <li>LOF_AS_Tag_Style</li>
-        </styleTags>
     </HairDef>
 
-    <HairDef>
+    <HairDef ParentName="Astro_HairBase">
         <defName>LOF_Hair_B</defName>
         <label>AstrologerB</label>
-        <styleGender>Any</styleGender>
         <texPath>Things/Pawn/Hairs/ASHair_B</texPath>
-        <category>LOF_AS_StyleCategory_Hair</category>
-        <styleTags>
-            <li>LOF_AS_Tag_Style</li>
-        </styleTags>
     </HairDef>
 
-    <HairDef>
+    <HairDef ParentName="Astro_HairBase">
         <defName>LOF_Hair_C</defName>
         <label>AstrologerC</label>
-        <styleGender>Any</styleGender>
         <texPath>Things/Pawn/Hairs/ASHair_C</texPath>
-        <category>LOF_AS_StyleCategory_Hair</category>
-        <styleTags>
-            <li>LOF_AS_Tag_Style</li>
-        </styleTags>
     </HairDef>
 
-    <HairDef>
+    <HairDef ParentName="Astro_HairBase">
         <defName>LOF_Hair_D</defName>
         <label>AstrologerD</label>
-        <styleGender>Any</styleGender>
         <texPath>Things/Pawn/Hairs/ASHair_D</texPath>
-        <category>LOF_AS_StyleCategory_Hair</category>
-        <styleTags>
-            <li>LOF_AS_Tag_Style</li>
-        </styleTags>
     </HairDef>
 
-    <HairDef>
+    <HairDef ParentName="Astro_HairBase">
         <defName>LOF_Hair_E</defName>
         <label>AstrologerE</label>
-        <styleGender>Any</styleGender>
         <texPath>Things/Pawn/Hairs/ASHair_E</texPath>
-        <category>LOF_AS_StyleCategory_Hair</category>
-        <styleTags>
-            <li>LOF_AS_Tag_Style</li>
-        </styleTags>
     </HairDef>
 
-    <HairDef>
+    <HairDef ParentName="Astro_HairBase">
         <defName>LOF_Hair_F</defName>
         <label>AstrologerF</label>
-        <styleGender>Any</styleGender>
         <texPath>Things/Pawn/Hairs/ASHair_F</texPath>
-        <category>LOF_AS_StyleCategory_Hair</category>
-        <styleTags>
-            <li>LOF_AS_Tag_Style</li>
-        </styleTags>
     </HairDef>
 
-    <HairDef>
+    <HairDef ParentName="Astro_HairBase">
         <defName>LOF_Hair_G</defName>
         <label>AstrologerG</label>
-        <styleGender>Any</styleGender>
         <texPath>Things/Pawn/Hairs/ASHair_G</texPath>
-        <category>LOF_AS_StyleCategory_Hair</category>
-        <styleTags>
-            <li>LOF_AS_Tag_Style</li>
-        </styleTags>
     </HairDef>
 
 </Defs>

@@ -12,9 +12,9 @@
         <passability>PassThroughOnly</passability>
         <!--等待贴图-->
         <graphicData>
-            <texPath>Things/Building/Power/Battery</texPath>
-            <graphicClass>Graphic_Multi</graphicClass>
-            <drawSize>(2,3)</drawSize>
+            <texPath>Things/Building/LOF_NightGenerator/NightGenerator</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>4</drawSize>
             <damageData>
                 <cornerTL>Damage/Corner</cornerTL>
                 <cornerTR>Damage/Corner</cornerTR>
@@ -22,7 +22,7 @@
                 <cornerBR>Damage/Corner</cornerBR>
             </damageData>
         </graphicData>
-        <size>(1,2)</size>
+        <size>(1,1)</size>
         <castEdgeShadows>true</castEdgeShadows>
         <pathCost>50</pathCost>
         <fillPercent>0.5</fillPercent>
@@ -68,7 +68,7 @@
         <researchPrerequisites>
             <li>LOF_Research_NightGenerator</li>
         </researchPrerequisites>
-        <constructionSkillPrerequisite>6</constructionSkillPrerequisite>
+        <constructionSkillPrerequisite>4</constructionSkillPrerequisite>
     </ThingDef>
 
 </Defs>

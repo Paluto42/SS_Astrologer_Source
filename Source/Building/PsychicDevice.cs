@@ -10,6 +10,7 @@ namespace Astrologer
         public readonly static float rotationSpeed = 15f;
 
         public readonly static Vector2 size = new(2f, 2f);
+        public readonly static Vector3 scale = new(size.x, 1f, size.y);
         public CompPowerTrader CompPower => GetComp<CompPowerTrader>();
         public bool PowerOn => CompPower != null && CompPower.PowerOn;
 
@@ -24,10 +25,7 @@ namespace Astrologer
             base.DrawAt(drawLoc, flip);
             if (!PowerOn) return;
 
-            Matrix4x4 matrix = default;
-            Vector3 s = new(size.x, 1f, size.y);
-            matrix.SetTRS(EffectDrawPos, EffectRotation, s);
-            Graphics.DrawMesh(MeshPool.plane20, matrix, EffectsMat, 0);
+            Graphics.DrawMesh(MeshPool.plane20, Matrix4x4.TRS(EffectDrawPos, EffectRotation, scale), EffectsMat, 0);
         }
 
         protected override void Tick()

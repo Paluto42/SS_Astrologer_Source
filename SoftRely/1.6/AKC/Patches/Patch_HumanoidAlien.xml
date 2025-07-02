@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+    <Operation Class="PatchOperationConditional">
+        <xpath>Defs/PawnKindDef[@Name="Astro_PawnBase"]</xpath>
+        <match Class="PatchOperationAddModExtension">
+            <xpath>Defs/PawnKindDef[@Name="Astro_PawnBase"]</xpath>
+            <value>
+                <li Class="PA_AKPatch.Ext_KeepOriginal"/>
+            </value>
+        </match>
+    </Operation>
+
+</Patch>
