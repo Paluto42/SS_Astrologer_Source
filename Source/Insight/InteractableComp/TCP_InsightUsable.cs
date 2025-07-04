@@ -1,4 +1,5 @@
 ﻿using RimWorld;
+using System.Collections.Generic;
 using Verse;
 
 namespace Astrologer.Insight
@@ -15,6 +16,30 @@ namespace Astrologer.Insight
     public class TC_InsightUsable : CompUsable
     {
         public TCP_InsightUsable Prop => (TCP_InsightUsable)props;
+
+        private Building_CraftingTable craftTable;
+        protected Building_CraftingTable SelTable 
+        {
+            get 
+            {
+
+                if (craftTable == null && parent is Building_CraftingTable table)
+                {
+                    craftTable = table;
+                }
+                return craftTable;
+            }
+        }
+
+        public override IEnumerable<FloatMenuOption> CompFloatMenuOptions(Pawn myPawn)
+        {
+            foreach (var option in base.CompFloatMenuOptions(myPawn))
+            {
+                if (!option.Disabled && SelTable != null && SelTable.canProduceNow) continue;
+                yield return option;
+            }
+        }
+
         public override AcceptanceReport CanBeUsedBy(Pawn p, bool forced = false, bool ignoreReserveAndReachable = false)
         {
             AcceptanceReport acceptanceReport = base.CanBeUsedBy(p, forced, ignoreReserveAndReachable);

@@ -134,7 +134,7 @@
             <li Class="CompProperties_Forbiddable"/>
             <li Class="CompProperties_Styleable"/>
             <li>
-                <compClass>Astrologer.CompEquippable_AKAbility</compClass>
+                <compClass>AKA_Ability.CompEquippable_AKAbility</compClass>
             </li>
             <li>
                 <compClass>CompQuality</compClass>

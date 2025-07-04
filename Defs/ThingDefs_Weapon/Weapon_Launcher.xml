@@ -43,7 +43,7 @@
                 <ai_IsBuildingDestroyer>false</ai_IsBuildingDestroyer>
                 <forcedMissRadius>0.1</forcedMissRadius>
                 <warmupTime>2.5</warmupTime>
-                <range>60</range>
+                <range>30</range>
                 <burstShotCount>1</burstShotCount>
                 <soundCast>InfernoCannon_Fire</soundCast>
                 <soundCastTail>GunTail_Heavy</soundCastTail>

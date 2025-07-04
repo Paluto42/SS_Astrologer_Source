@@ -101,6 +101,10 @@
     <Compile Include="Ability\HC_IncreastHarvest.cs" />
     <Compile Include="Ability\AstroDocument.cs" />
     <Compile Include="AstroMatPool.cs" />
+    <Compile Include="Building\Foundry\Bill_ProductionSingle.cs" />
+    <Compile Include="Building\Foundry\ITab_BillsInsight.cs" />
+    <Compile Include="Building\Foundry\Patch_BillStack.cs" />
+    <Compile Include="Building\Foundry\TCP_StellarFoundry.cs" />
     <Compile Include="Building\Laundry\AI\JobDriver_FillLaundry.cs" />
     <Compile Include="Building\Laundry\AI\WorkGiver_FillLaundry.cs" />
     <Compile Include="Building\Laundry\TCP_Laundry.cs" />
@@ -109,7 +113,7 @@
     <Compile Include="Building\Laundry\TC_LaundryRepair.cs" />
     <Compile Include="Building\OffsetProductQuality\Ext_OffsetProductQuality.cs" />
     <Compile Include="Building\OffsetProductQuality\Patch_OffsetProductQuality.cs" />
-    <Compile Include="Building\StellarFoundry.cs" />
+    <Compile Include="Building\Foundry\Building_CraftingTable.cs" />
     <Compile Include="Building\StellarStove.cs" />
     <Compile Include="Building\TCP_NightGenerator.cs" />
     <Compile Include="Comp\CompEquippable_AKAbility.cs" />
@@ -122,6 +126,7 @@
     <Compile Include="HarmonyPatches\Patch_ProcessApparel.cs" />
     <Compile Include="HarmonyPatches\Patch_JobDriver.cs" />
     <Compile Include="Insight\InteractableComp\TCP_InsightUsable.cs" />
+    <Compile Include="Insight\InteractableComp\TCP_OpenBillTab.cs" />
     <Compile Include="Misc\MC_Astrologer.cs" />
     <Compile Include="Misc\PawnRenderNode_Apparel.cs" />
     <Compile Include="Misc\RitualOutcomeEffectWorker_Skylantern.cs" />

@@ -4,11 +4,19 @@ using Verse;
 
 namespace Astrologer
 {
-    [StaticConstructorOnStartup]
-    public class StellarFoundry : Building_WorkTable
+    public class TCP_StellarFoundry : CompProperties
     {
-        public CompPowerTrader CompPower => GetComp<CompPowerTrader>();
-        public CompRefuelable CompRefuelable => GetComp<CompRefuelable>();
+        public TCP_StellarFoundry() 
+        {
+            compClass = typeof(TC_StellarFoundry);
+        }
+    }
+
+    [StaticConstructorOnStartup]
+    public class TC_StellarFoundry : ThingComp 
+    {
+        public CompPowerTrader CompPower => parent.GetComp<CompPowerTrader>();
+        public CompRefuelable CompRefuelable => parent.GetComp<CompRefuelable>();
         public bool PowerOn => CompPower != null && CompPower.PowerOn;
 
         private static readonly Material[] EffectMats = { AstroMatPool.StellarFoundry_A, AstroMatPool.StellarFoundry_B, AstroMatPool.StellarFoundry_C };
@@ -20,11 +28,10 @@ namespace Astrologer
         private int frame = 0;
 
         public readonly static Vector2 size = new(2f, 2f);
-        private Vector3 EffectDrawPos => DrawPos + new Vector3(0, 0.1f, 0.25f);
+        private Vector3 EffectDrawPos => parent.DrawPos + new Vector3(0, 0.1f, 0.25f);
 
-        protected override void DrawAt(Vector3 drawLoc, bool flip = false)
+        public override void PostDraw()
         {
-            base.DrawAt(drawLoc, flip);
             if (!PowerOn) return;
 
             frame++;
@@ -34,7 +41,6 @@ namespace Astrologer
                 index = (index + 1) % 3;
                 frame = 0;
             }
-
             Matrix4x4 matrix = default;
             Vector3 s = new(size.x, 1f, size.y);
             Quaternion q = Quaternion.AngleAxis(0, Vector3.up);

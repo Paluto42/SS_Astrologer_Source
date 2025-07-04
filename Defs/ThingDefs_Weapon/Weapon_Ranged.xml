@@ -32,7 +32,7 @@
         <graphicData>
             <texPath>Things/Weapons/LOF_Relover</texPath>
             <graphicClass>Graphic_Single</graphicClass>
-            <drawSize>0.85</drawSize>
+            <drawSize>0.7</drawSize>
         </graphicData>
         <soundInteract>Interact_Revolver</soundInteract>
         <weaponClasses>
@@ -258,7 +258,7 @@
             <AccuracyShort>0.80</AccuracyShort>
             <AccuracyMedium>0.78</AccuracyMedium>
             <AccuracyLong>0.75</AccuracyLong>
-            <RangedWeapon_Cooldown>1.0</RangedWeapon_Cooldown>
+            <RangedWeapon_Cooldown>0.75</RangedWeapon_Cooldown>
         </statBases>
         <costList>
             <LOF_Thing_StarlightIron>75</LOF_Thing_StarlightIron>
@@ -275,7 +275,7 @@
                 <verbClass>Astrologer.Insight.Verb_InsightShoot</verbClass>
                 <hasStandardCommand>true</hasStandardCommand>
                 <defaultProjectile>LOF_Bullet_DMR</defaultProjectile>
-                <warmupTime>0.5</warmupTime>
+                <warmupTime>0.25</warmupTime>
                 <range>30</range>
                 <soundCast>Shot_ChargeRifle</soundCast>
                 <soundCastTail>GunTail_Heavy</soundCastTail>
@@ -295,7 +295,7 @@
                     <verbClass>Astrologer.Insight.Verb_InsightShoot</verbClass>
                     <hasStandardCommand>true</hasStandardCommand>
                     <defaultProjectile>LOF_Bullet_PsychicInsanity</defaultProjectile>
-                    <warmupTime>0.5</warmupTime>
+                    <warmupTime>0.25</warmupTime>
                     <range>30</range>
                     <soundCast>Shot_ChargeRifle</soundCast>
                     <soundCastTail>GunTail_Heavy</soundCastTail>

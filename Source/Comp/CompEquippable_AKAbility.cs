@@ -4,6 +4,7 @@ using Verse;
 
 namespace Astrologer
 {
+    /*
     public class CompEquippable_AKAbility : CompEquippable
     {
         private TC_AKATracker Tracker => parent?.GetComp<TC_AKATracker>();
@@ -22,5 +23,5 @@ namespace Astrologer
                 yield return (Command)gizmo;
             }
         }
-    }
+    }*/
 }
