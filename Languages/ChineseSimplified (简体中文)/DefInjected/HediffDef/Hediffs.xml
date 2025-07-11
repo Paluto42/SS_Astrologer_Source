@@ -22,7 +22,7 @@
     <LOF_Hediff_IncreaseHarvest.description>一天内提高农作物收获量，屠宰量，手术成功率,制作物品高品质概率,射击命中率。\n食物消耗率x200%。</LOF_Hediff_IncreaseHarvest.description>
 
     <LOF_Hediff_DecreasePsychicSense.label>心灵敏感度降低</LOF_Hediff_DecreasePsychicSense.label>
-    <LOF_Hediff_DecreasePsychicSense.description>一小段时间内降低心灵敏感度。</LOF_Hediff_DecreasePsychicSense.description>
+    <LOF_Hediff_DecreasePsychicSense.description>一天内降低心灵敏感度。</LOF_Hediff_DecreasePsychicSense.description>
 
     <LOF_Hediff_NebulaRay.label>星云射线</LOF_Hediff_NebulaRay.label>
     <LOF_Hediff_NebulaRay.labelNoun>星云射线</LOF_Hediff_NebulaRay.labelNoun>

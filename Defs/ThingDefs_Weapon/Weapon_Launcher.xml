@@ -69,7 +69,7 @@
         <description>可再装填的反重甲无后坐力步枪.</description>
         <tickerType>Normal</tickerType>
         <graphicData>
-            <texPath>Things/Weapons/CarlGustaf</texPath>
+            <texPath>Things/Weapons/LOF_RailgunAT</texPath>
             <graphicClass>Graphic_Single</graphicClass>
         </graphicData>
         <soundInteract>Interact_Rifle</soundInteract>
@@ -118,8 +118,8 @@
         </verbs>
         <comps>
             <li Class="CompProperties_Explosive">
-                <damageAmountBase>150</damageAmountBase>
-                <explosiveRadius>2</explosiveRadius>
+                <damageAmountBase>50</damageAmountBase>
+                <explosiveRadius>1</explosiveRadius>
                 <explosiveDamageType>Bomb</explosiveDamageType>
                 <requiredDamageTypeToExplode>Flame</requiredDamageTypeToExplode>
             </li>

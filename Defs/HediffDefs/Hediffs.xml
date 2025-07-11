@@ -149,13 +149,13 @@
     <HediffDef>
         <defName>LOF_Hediff_DecreasePsychicSense</defName>
         <label>Reduced Psychic Sensitivity</label>
-        <description>decreases psychic sensitivity for a short period of time.</description>
+        <description>decreases psychic sensitivity for a day.</description>
         <hediffClass>HediffWithComps</hediffClass>
         <defaultLabelColor>(0.6, 0.6, 1.0)</defaultLabelColor>
         <isBad>false</isBad>
         <allowMothballIfLowPriorityWorldPawn>true</allowMothballIfLowPriorityWorldPawn>
         <everCurableByItem>false</everCurableByItem>
-        <maxSeverity>198</maxSeverity>
+        <maxSeverity>64</maxSeverity>
         <stages>
             <li>
                 <statOffsets>
@@ -165,7 +165,7 @@
         </stages>
         <comps>
             <li Class="HediffCompProperties_SeverityPerDay">
-                <severityPerDay>-3280</severityPerDay>
+                <severityPerDay>-64</severityPerDay>
             </li>
         </comps>
     </HediffDef>
