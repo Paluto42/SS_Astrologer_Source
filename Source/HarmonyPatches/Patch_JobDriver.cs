@@ -11,13 +11,10 @@ using Verse.AI;
 namespace Astrologer.HarmonyPatches
 {
     //孩子们我是闭包委托,一句话封装一个类
-    public class Patch_JobDriver
+    public static class Patch_JobDriver
     {
-        public static Type nestedAction; // <>c__DisplayClass2_0
-        static Patch_JobDriver()
-        {
-            nestedAction = typeof(JobDriver_WatchBuilding).GetNestedType("<>c__DisplayClass2_0", BindingFlags.NonPublic);
-        }
+        // <>c__DisplayClass2_0
+        public static readonly Type nestedAction = typeof(JobDriver_WatchBuilding).GetNestedType("<>c__DisplayClass2_0", BindingFlags.NonPublic);
 
         public static void TryGainMemory(Pawn pawn, Job job)
         {

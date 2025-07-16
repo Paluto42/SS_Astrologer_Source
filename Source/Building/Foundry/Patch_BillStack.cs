@@ -7,9 +7,9 @@ namespace Astrologer.HarmonyPatches
     public class Patch_BillStack
     {
         [HarmonyPostfix]
-        public static void Postfix(BillStack __instance) 
+        public static void Postfix(BillStack __instance)
         {
-            if (__instance.billGiver is Building_CraftingTable table) 
+            if (__instance.billGiver is Building_CraftingTable table)
             {
                 table.Notify_BillAdded();
             }

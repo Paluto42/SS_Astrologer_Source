@@ -56,6 +56,7 @@
         </stuffProps>
         <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
         <allowedArchonexusCount>80</allowedArchonexusCount>
+        <tradeTags Inherit="false"/>
     </ThingDef>
 
     <ThingDef ParentName="RoughPlantBase">
@@ -111,6 +112,7 @@
             <li>PlantMatter</li>
             <li>ResourcesRaw</li>
         </thingCategories>
+        <tradeTags Inherit="false"/>
     </ThingDef>
 
     <ThingDef ParentName="ResourceBase">
@@ -150,6 +152,7 @@
         <thingCategories>
             <li>Manufactured</li>
         </thingCategories>
+        <tradeTags Inherit="false"/>
     </ThingDef>
 
 </Defs>

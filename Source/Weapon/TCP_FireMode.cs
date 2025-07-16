@@ -5,7 +5,7 @@ using Verse;
 
 namespace Astrologer.Insight
 {
-    public enum FireTickStatus
+    public enum BurstFireStatus
     {
         None = 0,
         Started = 1,
@@ -20,7 +20,6 @@ namespace Astrologer.Insight
 
         public int consumeAmount = 1;
         public int consumeDuration = 0;
-
         public string mainIcon;
         public string mainWeaponLabel;
         public string mainDescription;
@@ -32,39 +31,32 @@ namespace Astrologer.Insight
             compClass = typeof(TC_FireMode);
         }
     }
+
     //每发子弹都消耗洞察力
     public class TC_FireMode : ThingComp
     {
-        public FireTickStatus tickStatus = FireTickStatus.None;
+        public BurstFireStatus burstStatus = BurstFireStatus.None;
         private VAB_AstroTracker CompInsight => CasterPawn?.TryGetAstroTracker();//洞察力comp
-
         private Verb verbInt;
-
         private CompEquippable compEquippableInt;
 
         private bool isSecondaryVerbSelected = false;
         public TCP_FireMode Props => (TCP_FireMode)props;
         public bool IsSecondaryVerbSelected => isSecondaryVerbSelected;
-
+        //private int burstCount = 0;
+        private int burstTick = 0;
         private CompEquippable EquipmentSource
         {
             get
             {
-                if (compEquippableInt != null)
-                {
-                    return compEquippableInt;
-                }
+                if (compEquippableInt != null) return compEquippableInt;
                 compEquippableInt = parent.TryGetComp<CompEquippable>();
-                if (compEquippableInt == null)
-                {
-                    Log.ErrorOnce(parent.LabelCap + " has CompSecondaryVerb but no CompEquippable", 50020);
-                }
+                if (compEquippableInt == null) Log.ErrorOnce(parent.LabelCap + " has CompSecondaryVerb but no CompEquippable", 50020);
                 return compEquippableInt;
             }
         }
 
         public Pawn CasterPawn => Verb.CasterPawn;
-
         private Verb Verb
         {
             get
@@ -73,15 +65,36 @@ namespace Astrologer.Insight
                 return verbInt;
             }
         }
-        //
+        //public bool ShouldCalulateBursts => Props.verbProps.burstShotCount > 0;
+        public bool ShouldCalulateBursts => Props.consumeDuration > 0;
+
+        //打完这一梭子以后过一段时间才会扣洞察力
         public override void CompTick()
         {
-            if (!isSecondaryVerbSelected || tickStatus != FireTickStatus.Started) return;
-            if (Utility.IsTickInterval(Props.consumeDuration))
+            if (!isSecondaryVerbSelected || burstStatus != BurstFireStatus.Started) return;
+            burstTick++;
+            if (burstTick >= Props.consumeDuration)
             {
-                tickStatus = FireTickStatus.Completed;
+                burstTick = 0;
+                burstStatus = BurstFireStatus.Completed;
+                CompInsight.ConsumeInsight(Props.consumeAmount);
             }
         }
+
+        public void Notify_Launched()
+        {
+            if (!isSecondaryVerbSelected) return;
+            if (!ShouldCalulateBursts) CompInsight.ConsumeInsight(Props.consumeAmount);
+            //if (burstStatus != BurstFireStatus.Started) return;
+            /*if (burstCount == 0) CompInsight.ConsumeInsight(Props.consumeAmount);
+            burstCount++;
+            if (burstCount >= Verb.verbProps.burstShotCount)
+            {
+                burstCount = 0;
+                burstStatus = BurstFireStatus.Completed;
+            }*/
+        }
+
         //这个居然不会自动调用...
         public override IEnumerable<Gizmo> CompGetGizmosExtra()
         {
@@ -132,7 +145,7 @@ namespace Astrologer.Insight
             Scribe_Values.Look(ref isSecondaryVerbSelected, "AS_useSecondaryVerb", defaultValue: false);
             if (Scribe.mode == LoadSaveMode.PostLoadInit)
             {
-                PostAmmoDataLoaded();
+                PostExposeVerbData();
             }
         }
 
@@ -150,7 +163,7 @@ namespace Astrologer.Insight
             }
         }
 
-        private void PostAmmoDataLoaded()
+        private void PostExposeVerbData()
         {
             if (isSecondaryVerbSelected)
             {

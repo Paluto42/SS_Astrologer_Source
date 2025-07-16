@@ -11,10 +11,10 @@ namespace Astrologer
 
         public override IEnumerable<FloatMenuOption> GetFloatMenuOptions(Pawn selPawn)
         {
-            return base.GetFloatMenuOptions(selPawn);   
+            return base.GetFloatMenuOptions(selPawn);
         }
 
-        public virtual void Notify_BillAdded() 
+        public virtual void Notify_BillAdded()
         {
             canProduceNow = false;
         }

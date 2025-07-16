@@ -167,11 +167,12 @@
             </skillRequirements>
         </recipeMaker>
         <verbs>
-            <li>
-                <verbClass>Verb_Shoot</verbClass>
+            <li Class="Astrologer.VerbProperties_Shotgun">
+                <verbClass>Astrologer.Verb_ShootShotgun</verbClass>
                 <hasStandardCommand>true</hasStandardCommand>
                 <!--应该写个新的弹药种类-->
                 <defaultProjectile>LOF_Bullet_Shotgun</defaultProjectile>
+                <projectilesCount>4</projectilesCount>
                 <warmupTime>0.5</warmupTime>
                 <range>17.9</range>
                 <soundCast>Shot_Shotgun</soundCast>
@@ -274,7 +275,7 @@
             <li>
                 <verbClass>Astrologer.Insight.Verb_InsightShoot</verbClass>
                 <hasStandardCommand>true</hasStandardCommand>
-                <defaultProjectile>LOF_Bullet_DMR</defaultProjectile>
+                <defaultProjectile>LOF_Bullet_Rifle</defaultProjectile>
                 <warmupTime>0.25</warmupTime>
                 <range>30</range>
                 <soundCast>Shot_ChargeRifle</soundCast>
@@ -541,7 +542,7 @@
                 <secondaryDescription>进行一小段时间的高速射击\n需要消耗10点洞察力</secondaryDescription>
                 <consumeAmount>10</consumeAmount>
                 <!--一次连续开火的tick间隔为(burstShotCount*ticksBetweenBurstShots)-->
-                <consumeDuration>75</consumeDuration>
+                <consumeDuration>80</consumeDuration>
                 <verbProps>
                     <verbClass>Astrologer.Insight.Verb_InsightShoot</verbClass>
                     <hasStandardCommand>true</hasStandardCommand>

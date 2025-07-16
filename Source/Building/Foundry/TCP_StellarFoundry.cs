@@ -6,14 +6,14 @@ namespace Astrologer
 {
     public class TCP_StellarFoundry : CompProperties
     {
-        public TCP_StellarFoundry() 
+        public TCP_StellarFoundry()
         {
             compClass = typeof(TC_StellarFoundry);
         }
     }
 
     [StaticConstructorOnStartup]
-    public class TC_StellarFoundry : ThingComp 
+    public class TC_StellarFoundry : ThingComp
     {
         public CompPowerTrader CompPower => parent.GetComp<CompPowerTrader>();
         public CompRefuelable CompRefuelable => parent.GetComp<CompRefuelable>();

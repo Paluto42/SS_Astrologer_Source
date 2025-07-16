@@ -133,7 +133,7 @@
     <Compile Include="Misc\ScenPart_GameStartLetter.cs" />
     <Compile Include="OperatorDef\RPEW_AstroDoc.cs" />
     <Compile Include="QuestNode\IncidentWorker_GiveQuestAstroScenario.cs" />
-    <Compile Include="Thing\ApparelAstro.cs" />
+    <Compile Include="Apparel\ApparelAstro.cs" />
     <Compile Include="HarmonyPatches\Patch_DraftController.cs" />
     <Compile Include="Insight\TCP_UpgradeInsight.cs" />
     <Compile Include="Comp\TCP_AddHediff.cs" />
@@ -143,14 +143,14 @@
     <Compile Include="Ability\Gizmo\Gizmo_InsightMonitor.cs" />
     <Compile Include="HarmonyPatches\Patch_GeneTracker.cs" />
     <Compile Include="HarmonyPatches\Patch_Main.cs" />
-    <Compile Include="Insight\TCP_FireMode.cs" />
+    <Compile Include="Weapon\TCP_FireMode.cs" />
     <Compile Include="Insight\VAB_AstroTracker.cs" />
     <Compile Include="Insight\InteractableComp\IInsightInteractable.cs" />
     <Compile Include="Insight\InteractableComp\JobDriver_InsightInteract.cs" />
     <Compile Include="Insight\InteractableComp\TCP_AddHediffInRange.cs" />
     <Compile Include="Insight\InteractableComp\TCP_InsightInteractable_Base.cs" />
-    <Compile Include="Misc\DamageWorker_Bomb.cs" />
-    <Compile Include="Misc\DamageWorker_ForcePartDestruct.cs" />
+    <Compile Include="Weapon\DamageWorker_Bomb.cs" />
+    <Compile Include="Weapon\DamageWorker_ForcePartDestruct.cs" />
     <Compile Include="Building\PsychicDevice.cs" />
     <Compile Include="Thing\GravityDeflectionDust.cs" />
     <Compile Include="ModSettings.cs" />
@@ -158,7 +158,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="QuestNode\QuestNode_IsFactionRelationKind.cs" />
     <Compile Include="QuestNode\QuestNode_Root_GetAdventurerJoin_WalkIn.cs" />
-    <Compile Include="Misc\DamageWorker_EMP.cs" />
+    <Compile Include="Weapon\DamageWorker_EMP.cs" />
     <Compile Include="Thing\Projectile_Leech.cs" />
     <Compile Include="Thing\ActivatedPulsePack.cs" />
     <Compile Include="Thing\DrafterEquipment.cs" />
@@ -166,7 +166,8 @@
     <Compile Include="Thought\ThoughtWorker_SightMood.cs" />
     <Compile Include="TypeDef.cs" />
     <Compile Include="Utility.cs" />
-    <Compile Include="Insight\Verb_InsightShoot.cs" />
+    <Compile Include="Weapon\Verb_InsightShoot.cs" />
+    <Compile Include="Weapon\Verb_ShootShotgun.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>

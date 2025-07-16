@@ -18,9 +18,9 @@ namespace Astrologer.Insight
         public TCP_InsightUsable Prop => (TCP_InsightUsable)props;
 
         private Building_CraftingTable craftTable;
-        protected Building_CraftingTable SelTable 
+        protected Building_CraftingTable SelTable
         {
-            get 
+            get
             {
 
                 if (craftTable == null && parent is Building_CraftingTable table)

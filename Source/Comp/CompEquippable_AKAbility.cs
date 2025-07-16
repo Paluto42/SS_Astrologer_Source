@@ -1,8 +1,4 @@
-﻿using AKA_Ability;
-using System.Collections.Generic;
-using Verse;
-
-namespace Astrologer
+﻿namespace Astrologer
 {
     /*
     public class CompEquippable_AKAbility : CompEquippable

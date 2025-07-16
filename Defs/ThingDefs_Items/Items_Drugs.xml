@@ -50,6 +50,7 @@
                 <overdoseSeverityOffset>0.08~0.14</overdoseSeverityOffset>
             </li>
         </comps>
+        <tradeTags Inherit="false"/>
     </ThingDef>
 
 </Defs>

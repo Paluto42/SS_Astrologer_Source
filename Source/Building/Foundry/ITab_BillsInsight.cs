@@ -132,15 +132,15 @@ namespace Astrologer
                                 TutorSystem.Notify_Event("AddBill-" + recipe.LabelCap.Resolve());
                             }*/
                         },
-                        #if ver16
+#if ver16
                         iconTex: recipe.UIIcon, shownItemForIcon: recipe.UIIconThing, thingStyle: null, forceBasicStyle: false, priority: MenuOptionPriority.Default, mouseoverGuiAction: delegate (Rect rect)
-                        #endif
-                        #if !ver16
+#endif
+#if ver15
                         itemIcon: recipe.UIIcon, shownItemForIcon: recipe.UIIconThing, thingStyle: null, forceBasicStyle: false, priority: MenuOptionPriority.Default, mouseoverGuiAction: delegate (Rect rect)
-                        #endif
+#endif
                         {
                             BillUtility.DoBillInfoWindow(i, label, rect, recipe);
-                        }, 
+                        },
                         revalidateClickTarget: null, extraPartWidth: 29f, extraPartOnGUI: (Rect rect) => Widgets.InfoCardButton(rect.x + 5f, rect.y + (rect.height - 24f) / 2f, recipe, precept), revalidateWorldClickTarget: null, playSelectionSound: true, orderInPriority: -recipe.displayPriority));
                     }
                 }
@@ -152,7 +152,7 @@ namespace Astrologer
                         new("LOF_LimitedCraft".Translate(), null)// 未激活
                     };
                 }
-                else if (!opts.Any()) 
+                else if (!opts.Any())
                 {
                     opts.Add(new FloatMenuOption("NoneBrackets".Translate(), null));// 无配方
                 }
