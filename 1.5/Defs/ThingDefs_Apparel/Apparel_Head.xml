@@ -132,16 +132,17 @@
         </stuffCategories>
         <costStuffCount>20</costStuffCount>
         <apparel>
-            <wornGraphicPath>Things/Apparel/LOF_PriestessVeil/PriestessVeil</wornGraphicPath>
+            <!--wornGraphicPath>Things/Apparel/LOF_PriestessVeil/PriestessVeil</wornGraphicPath-->
             <renderSkipFlags>
                 <li>None</li>
             </renderSkipFlags>
             <useWornGraphicMask>true</useWornGraphicMask>
             <renderNodeProperties>
                 <li>
+                    <workerClass>PawnRenderNodeWorker_Apparel_Head</workerClass>
                     <texPath>Things/Apparel/LOF_PriestessVeil/PriestessVeil</texPath>
                     <baseLayer>0</baseLayer>
-                    <parentTagDef>Head</parentTagDef>
+                    <parentTagDef>ApparelHead</parentTagDef>
                     <pawnType>Any</pawnType>
                     <drawData>
                         <defaultData>
@@ -150,23 +151,15 @@
                     </drawData>
                 </li>
                 <li>
+                    <workerClass>PawnRenderNodeWorker_Apparel_Head</workerClass>
                     <texPath>Things/Apparel/LOF_PriestessVeil/PriestessVeilBack</texPath>
                     <baseLayer>0</baseLayer>
-                    <parentTagDef>Head</parentTagDef>
+                    <parentTagDef>ApparelHead</parentTagDef>
                     <pawnType>Any</pawnType>
                     <drawData>
-                        <dataEast>
+                        <defaultData>
                             <layer>10</layer>
-                        </dataEast>
-                        <dataSouth>
-                            <layer>10</layer>
-                        </dataSouth>
-                        <dataNorth>
-                            <layer>-99</layer>
-                        </dataNorth>
-                        <dataWest>
-                            <layer>10</layer>
-                        </dataWest>
+                        </defaultData>
                     </drawData>
                 </li>
             </renderNodeProperties>
@@ -358,15 +351,15 @@
             <ComponentIndustrial>1</ComponentIndustrial>
         </costList>
         <apparel>
-            <wornGraphicPath>Things/Apparel/LOF_EmergencyHelmet/EmergencyHelmet</wornGraphicPath>
             <renderSkipFlags>
                 <li>None</li>
             </renderSkipFlags>
             <renderNodeProperties>
                 <li>
+                    <workerClass>PawnRenderNodeWorker_Apparel_Head</workerClass>
                     <texPath>Things/Apparel/LOF_EmergencyHelmet/EmergencyHelmet</texPath>
                     <baseLayer>0</baseLayer>
-                    <parentTagDef>Head</parentTagDef>
+                    <parentTagDef>ApparelHead</parentTagDef>
                     <pawnType>Any</pawnType>
                     <drawData>
                         <defaultData>
