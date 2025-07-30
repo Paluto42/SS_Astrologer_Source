@@ -435,6 +435,11 @@ Tips:\nWhen the Astrologer is near the Starlight Grass,the insight recovery spee
                     <label>jump</label>
                     <soundCast>Longjump_Jump</soundCast>
                     <soundLanding>Longjump_Land</soundLanding>
+                    <targetParams>
+                        <canTargetLocations>true</canTargetLocations>
+                        <canTargetPawns>false</canTargetPawns>
+                        <canTargetBuildings>false</canTargetBuildings>
+                    </targetParams>
                 </verbJump>
             </li>
             <li Class="AKA_Ability.AbilityEffect.AE_CostChargeStatic"/>

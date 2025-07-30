@@ -146,7 +146,7 @@
                     <pawnType>Any</pawnType>
                     <drawData>
                         <defaultData>
-                            <layer>90</layer>
+                            <layer>99</layer>
                         </defaultData>
                     </drawData>
                 </li>
@@ -158,7 +158,7 @@
                     <pawnType>Any</pawnType>
                     <drawData>
                         <defaultData>
-                            <layer>10</layer>
+                            <layer>-99</layer>
                         </defaultData>
                     </drawData>
                 </li>

@@ -142,7 +142,7 @@ namespace Astrologer.Insight
         public override void PostExposeData()
         {
             base.PostExposeData();
-            Scribe_Values.Look(ref isSecondaryVerbSelected, "AS_useSecondaryVerb", defaultValue: false);
+            Scribe_Values.Look(ref isSecondaryVerbSelected, "useSecondaryVerb", defaultValue: false);
             if (Scribe.mode == LoadSaveMode.PostLoadInit)
             {
                 PostExposeVerbData();

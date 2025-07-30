@@ -174,4 +174,8 @@
     <PostBuildEvent>DEL "$(SolutionDir)..\1.6\Assemblies\Astrologer.dll"
 COPY "$(TargetPath)" "$(SolutionDir)..\1.6\Assemblies\"</PostBuildEvent>
   </PropertyGroup>
+  <PropertyGroup>
+    <PreBuildEvent>DEL "E:\SteamLibrary\steamapps\common\RimWorld\Mods\SS_Astrologer_Source\Source\Rely\1.6\Assembly-CSharp.dll"
+COPY "E:\SteamLibrary\steamapps\common\RimWorld\RimWorldWin64_Data\Managed\Assembly-CSharp.dll" "E:\SteamLibrary\steamapps\common\RimWorld\Mods\SS_Astrologer_Source\Source\Rely\1.6\"</PreBuildEvent>
+  </PropertyGroup>
 </Project>
