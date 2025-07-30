@@ -2,6 +2,7 @@
 <Defs>
 
     <ThingDef Name="Astro_ClothBase" ParentName="Astro_ApparelBase" Abstract="True">
+        <uiIconScale>1.75</uiIconScale>
         <recipeMaker>
             <researchPrerequisite>LOF_Research_BaseCloth</researchPrerequisite>
             <workSpeedStat>GeneralLaborSpeed</workSpeedStat>

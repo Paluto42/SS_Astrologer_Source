@@ -2,6 +2,7 @@
 <Defs>
 
     <ThingDef Name="Astro_HelmetBase" ParentName="Astro_ApparelBase" Abstract="True">
+        <uiIconScale>1.5</uiIconScale>
         <thingCategories Inherit="false">
             <li>LOF_AS_Category_Armor</li>
         </thingCategories>
@@ -116,6 +117,7 @@
             <graphicClass>Graphic_Single</graphicClass>
             <shaderType>CutoutComplex</shaderType>
         </graphicData>
+        <uiIconScale>1.25</uiIconScale>
         <!--占位,原版数值-->
         <statBases>
             <MaxHitPoints>80</MaxHitPoints>
@@ -332,6 +334,7 @@
             <graphicClass>Graphic_Single</graphicClass>
             <drawSize>(0.5,0.5)</drawSize>
         </graphicData>
+        <uiIconScale>4</uiIconScale>
         <!--占位,原版数值-->
         <statBases>
             <WorkToMake>8000</WorkToMake>
@@ -388,10 +391,16 @@
         <defName>LOF_Apparel_StandardHelmet</defName>
         <label>&lt;color=#00AEEF&gt;"MPE-2" 制式头盔&lt;/color&gt;</label>
         <description>"MPE-2"制式头盔，增加瞄准能力，防毒防腐气</description>
-        <!--等待贴图-->
-        <graphicData>
+        <thingClass>Astrologer.TransformApparel</thingClass>
+        <graphicData Class="AK_DLL.GraphicData_MultiFoam">
             <texPath>Things/Apparel/LOF_StandardHelmet/StandardHelmet</texPath>
             <graphicClass>Graphic_Single</graphicClass>
+            <innerGraphicPath_Worn>
+                <li>
+                    <key>0</key>
+                    <value>Things/Apparel/LOF_StandardHelmet/StandardHelmet_D</value>
+                </li>
+            </innerGraphicPath_Worn>
         </graphicData>
         <!--占位,原版数值-->
         <statBases>
@@ -417,10 +426,11 @@
             <ComponentIndustrial>5</ComponentIndustrial>
         </costList>
         <apparel>
+            <wornGraphicPath>Things/Apparel/LOF_StandardHelmet/StandardHelmet</wornGraphicPath>
             <bodyPartGroups>
                 <li>FullHead</li>
             </bodyPartGroups>
-            <renderSkipFlags>
+            <!--renderSkipFlags>
                 <li>None</li>
             </renderSkipFlags>
             <renderNodeProperties>
@@ -436,7 +446,7 @@
                         </defaultData>
                     </drawData>
                 </li>
-            </renderNodeProperties>
+            </renderNodeProperties-->
         </apparel>
         <recipeMaker>
             <researchPrerequisite>LOF_Research_SeriesArmor_MPE</researchPrerequisite>

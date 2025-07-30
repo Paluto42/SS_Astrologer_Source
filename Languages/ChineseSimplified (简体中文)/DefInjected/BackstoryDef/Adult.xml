@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+
+    <!-- EN: In one adventure after another, [PAWN_nameDef] always learns a lot. -->
+    <LOF_Backstory_SpaceExplorer.description>在一次又一次的探险中，[PAWN_nameDef]总能学到很多东西。</LOF_Backstory_SpaceExplorer.description>
+    <LOF_Backstory_SpaceExplorer.baseDesc>在一次又一次的探险中，[PAWN_nameDef]总能学到很多东西。</LOF_Backstory_SpaceExplorer.baseDesc>
+    <!-- EN: space explorer -->
+    <LOF_Backstory_SpaceExplorer.title>太空探险家</LOF_Backstory_SpaceExplorer.title>
+    <LOF_Backstory_SpaceExplorer.titleShort>探险家</LOF_Backstory_SpaceExplorer.titleShort>
+
+    <!-- EN: In the remote regions of the Star Empire, chaos and violence reign supreme. [PAWN_nameDef] is a bounty hunter roaming this chaotic land. [PAWN_pronoun] will do anything for you if you pay him enough. -->
+    <LOF_Backstory_BountyHunter.description>在繁星帝国的偏远地带，充斥着混乱与暴力。而[PAWN_nameDef]就是混迹在这片混乱之地的一名赏金猎人，只要你给的钱够多，[PAWN_pronoun]就敢为你于任何事。</LOF_Backstory_BountyHunter.description>
+    <LOF_Backstory_BountyHunter.baseDesc>在繁星帝国的偏远地带，充斥着混乱与暴力。而[PAWN_nameDef]就是混迹在这片混乱之地的一名赏金猎人，只要你给的钱够多，[PAWN_pronoun]就敢为你于任何事。</LOF_Backstory_BountyHunter.baseDesc>
+    <!-- EN: bounty hunter -->
+    <LOF_Backstory_BountyHunter.title>赏金猎人</LOF_Backstory_BountyHunter.title>
+    <LOF_Backstory_BountyHunter.titleShort>赏金猎人</LOF_Backstory_BountyHunter.titleShort>
+
+    <!-- EN: Legend has it that long ago, the ancestors of astrologers once ruled this star region alongside the great dragon of the sky. There are also vague records of this in fragments of epic poetry, but these are all stories that cannot be verified. -->
+    <LOF_Backstory_DragonRider.description>传说在很久以前，占星师的先祖曾经和星空巨龙一起统治着这篇星域。而在一些史诗的只言片语中，也存在着模糊不清的相关纪录。但这都是不可考究的故事罢了。</LOF_Backstory_DragonRider.description>
+    <LOF_Backstory_DragonRider.baseDesc>传说在很久以前，占星师的先祖曾经和星空巨龙一起统治着这篇星域。而在一些史诗的只言片语中，也存在着模糊不清的相关纪录。但这都是不可考究的故事罢了。</LOF_Backstory_DragonRider.baseDesc>
+    <!-- EN: dragon rider -->
+    <LOF_Backstory_DragonRider.title>巨龙骑士</LOF_Backstory_DragonRider.title>
+    <LOF_Backstory_DragonRider.titleShort>巨龙骑士</LOF_Backstory_DragonRider.titleShort>
+
+    <!-- EN: On every planet in the Star Empire, there are numerous research institutes, both private and public. [PAWN_nameDef] is an employee at one of these institutes. -->
+    <LOF_Backstory_Researcher.description>在繁星帝国的各个星球上，总是存在着许多研究所。私人的，公立的，层出不穷。[PAWN_nameDef]就是其中一所研究所的职员。</LOF_Backstory_Researcher.description>
+    <LOF_Backstory_Researcher.baseDesc>在繁星帝国的各个星球上，总是存在着许多研究所。私人的，公立的，层出不穷。[PAWN_nameDef]就是其中一所研究所的职员。</LOF_Backstory_Researcher.baseDesc>
+    <!-- EN: researcher -->
+    <LOF_Backstory_Researcher.title>研究员</LOF_Backstory_Researcher.title>
+    <LOF_Backstory_Researcher.titleShort>研究员</LOF_Backstory_Researcher.titleShort>
+
+    <!-- EN: [PAWN_nameDef] is an elusive agent known for [PAWN_possessive] ability to obtain intelligence. -->
+    <LOF_Backstory_Agent.description>[PAWN_nameDef]是一名神出鬼没的特工，[PAWN_pronoun]以获取情报闻名。</LOF_Backstory_Agent.description>
+    <LOF_Backstory_Agent.baseDesc>[PAWN_nameDef]是一名神出鬼没的特工，[PAWN_pronoun]以获取情报闻名。</LOF_Backstory_Agent.baseDesc>
+    <!-- EN: agent -->
+    <LOF_Backstory_Agent.title>特工</LOF_Backstory_Agent.title>
+    <LOF_Backstory_Agent.titleShort>特工</LOF_Backstory_Agent.titleShort>
+
+    <!-- EN: [PAWN_nameDef] is a soldier. After undergoing physical training, shooting, and combat training, [PAWN_pronoun] was finally allowed to wear the uniform of an astrologer. -->
+    <LOF_Backstory_ServingSoldier.description>[PAWN_nameDef]是一名士兵。在经过了体能，射击，格斗训练后，[PAWN_pronoun]如愿以偿的被允许穿上占星师的制式装备。</LOF_Backstory_ServingSoldier.description>
+    <LOF_Backstory_ServingSoldier.baseDesc>[PAWN_nameDef]是一名士兵。在经过了体能，射击，格斗训练后，[PAWN_pronoun]如愿以偿的被允许穿上占星师的制式装备。</LOF_Backstory_ServingSoldier.baseDesc>
+    <!-- EN: serving soldier -->
+    <LOF_Backstory_ServingSoldier.title>现役士兵</LOF_Backstory_ServingSoldier.title>
+    <LOF_Backstory_ServingSoldier.titleShort>士兵</LOF_Backstory_ServingSoldier.titleShort>
+
+    <!-- EN: There have been many geniuses like you in this era, and I have brought them all down. [PAWN_nameDef] once served in the Star Empire Space Force. [PAWN_pronoun] was an undisputed ace. -->
+    <LOF_Backstory_AcePilot.description>这个时代有很多像你这样的天才，而他们都被我击落了。[PAWN_nameDef]曾经在繁星帝国太空军服役，[PAWN_pronoun]是无可置疑的王牌。</LOF_Backstory_AcePilot.description>
+    <LOF_Backstory_AcePilot.baseDesc>这个时代有很多像你这样的天才，而他们都被我击落了。[PAWN_nameDef]曾经在繁星帝国太空军服役，[PAWN_pronoun]是无可置疑的王牌。</LOF_Backstory_AcePilot.baseDesc>
+    <!-- EN: ace pilot -->
+    <LOF_Backstory_AcePilot.title>王牌飞行员</LOF_Backstory_AcePilot.title>
+    <LOF_Backstory_AcePilot.titleShort>王牌</LOF_Backstory_AcePilot.titleShort>
+
+    <!-- EN: [PAWN_nameDef] had crossed streams stained red with blood, walked across battlefields strewn with blood and flesh, and climbed out of trenches piled with corpses. Years of war had changed [PAWN_pronoun]. -->
+    <LOF_Backstory_Veteran.description>[PAWN_nameDef]曾跨过鲜血染红的小溪，走过血肉横飞的战场，爬出过堆满尸体的境沟。数年的战争改变了[PAWN_pronoun]。</LOF_Backstory_Veteran.description>
+    <LOF_Backstory_Veteran.baseDesc>[PAWN_nameDef]曾跨过鲜血染红的小溪，走过血肉横飞的战场，爬出过堆满尸体的境沟。数年的战争改变了[PAWN_pronoun]。</LOF_Backstory_Veteran.baseDesc>
+    <!-- EN: veteran -->
+    <LOF_Backstory_Veteran.title>百战老兵</LOF_Backstory_Veteran.title>
+    <LOF_Backstory_Veteran.titleShort>老兵</LOF_Backstory_Veteran.titleShort>
+
+    <!-- EN: [PAWN_nameDef] claims to possess friendship magic, and [PAWN_pronoun] claims to be able to unleash a powerful force upon the souls of five like-minded companions. -->
+    <LOF_Backstory_FriendshipPrincess.description>[PAWN_nameDef]宣称她会友谊魔法，[PAWN_pronoun]还宣称只需要找到五位志同道合的同伴就能使用一股强大的力量。</LOF_Backstory_FriendshipPrincess.description>
+    <LOF_Backstory_FriendshipPrincess.baseDesc>[PAWN_nameDef]宣称她会友谊魔法，[PAWN_pronoun]还宣称只需要找到五位志同道合的同伴就能使用一股强大的力量。</LOF_Backstory_FriendshipPrincess.baseDesc>
+    <!-- EN: friendship princess -->
+    <LOF_Backstory_FriendshipPrincess.title>友谊公主</LOF_Backstory_FriendshipPrincess.title>
+    <LOF_Backstory_FriendshipPrincess.titleShort>友谊公主</LOF_Backstory_FriendshipPrincess.titleShort>
+
+    <!-- EN: Years later, facing the huge crowds of people, [PAWN_nameDef] would remember that distant afternoon when [PAWN_possessive] sister took him to see a concert. -->
+    <LOF_Backstory_Socialite.description>多年以后，面对人山人海，[PAWN_nameDef]会想起姐姐带自己去看演唱会的那个遥远的下午。</LOF_Backstory_Socialite.description>
+    <LOF_Backstory_Socialite.baseDesc>多年以后，面对人山人海，[PAWN_nameDef]会想起姐姐带自己去看演唱会的那个遥远的下午。</LOF_Backstory_Socialite.baseDesc>
+    <!-- EN: last socialite -->
+    <LOF_Backstory_Socialite.title>最后的社交高手</LOF_Backstory_Socialite.title>
+    <LOF_Backstory_Socialite.titleShort>社交高手</LOF_Backstory_Socialite.titleShort>
+
+    <!-- EN: [PAWN_nameDef] tends to wounded soldiers on the battlefield, and [PAWN_pronoun] also enjoys striking down enemies. -->
+    <LOF_Backstory_CombatMedic.description>[PAWN_nameDef]在战场上为受伤的士兵治疗伤口，同时[PAWN_pronoun]也乐于击倒敌人。</LOF_Backstory_CombatMedic.description>
+    <LOF_Backstory_CombatMedic.baseDesc>[PAWN_nameDef]在战场上为受伤的士兵治疗伤口，同时[PAWN_pronoun]也乐于击倒敌人。</LOF_Backstory_CombatMedic.baseDesc>
+    <!-- EN: combat medic -->
+    <LOF_Backstory_CombatMedic.title>战斗医生</LOF_Backstory_CombatMedic.title>
+    <LOF_Backstory_CombatMedic.titleShort>医生</LOF_Backstory_CombatMedic.titleShort>
+
+    <!-- EN: [PAWN_nameDef] is obsessed with the mysterious occult. [PAWN_pronoun] dreams of using magic to turn stones into gold so that [PAWN_pronoun] can make a fortune. -->
+    <LOF_Backstory_Mystic.description>[PAWN_nameDef]痴迷于不可思议的神秘学，[PAWN_pronoun]幻想着用魔法将石头变成金子，这样[PAWN_pronoun]就可以赚一大笔钱了。</LOF_Backstory_Mystic.description>
+    <LOF_Backstory_Mystic.baseDesc>[PAWN_nameDef]痴迷于不可思议的神秘学，[PAWN_pronoun]幻想着用魔法将石头变成金子，这样[PAWN_pronoun]就可以赚一大笔钱了。</LOF_Backstory_Mystic.baseDesc>
+    <!-- EN: mystic -->
+    <LOF_Backstory_Mystic.title>神秘学家</LOF_Backstory_Mystic.title>
+    <LOF_Backstory_Mystic.titleShort>神秘学家</LOF_Backstory_Mystic.titleShort>
+
+    <!-- EN: [PAWN_nameDef] travels between interstellar city-states, primarily bringing news of cosmic disasters to planets with less advanced information systems.For the governments of these planets, the sooner they learn of a disaster, the less damage they will suffer. Therefore, Disaster Messengers generally enjoy exceptionally high treatment and social status among them. -->
+    <LOF_Backstory_DisasterMessenger.description>[PAWN_nameDef]在各大星际城邦间穿梭，[PAWN_pronoun]主要为一些信息落后的星球带来宇宙灾难的消息。
+    对这些星球的政府来说，越早的知道灾难的降临意味着越小的损失。所以灾厄信使在他们之中一般享有极高的待遇和社会地位。</LOF_Backstory_DisasterMessenger.description>
+    <LOF_Backstory_DisasterMessenger.baseDesc>[PAWN_nameDef]在各大星际城邦间穿梭，[PAWN_pronoun]主要为一些信息落后的星球带来宇宙灾难的消息。
+    对这些星球的政府来说，越早的知道灾难的降临意味着越小的损失。所以灾厄信使在他们之中一般享有极高的待遇和社会地位。</LOF_Backstory_DisasterMessenger.baseDesc>
+    <!-- EN: disaster messenger -->
+    <LOF_Backstory_DisasterMessenger.title>灾厄信使</LOF_Backstory_DisasterMessenger.title>
+    <LOF_Backstory_DisasterMessenger.titleShort>信使</LOF_Backstory_DisasterMessenger.titleShort>
+
+    <!-- EN: [PAWN_nameDef] is a diplomat. Due to its vast territory, the Star Empire has a staggering number of diplomats, each of whom carries the Star Empire's diplomatic philosophy of mutual assistance, friendship, and win-win cooperation. -->
+    <LOF_Backstory_Diplomat.description>[PAWN_nameDef]是一名外交官。由于辽阔的疆域，繁星帝国的外交官数量相当惊人，每名外交官都承载着繁星帝国互助友好，合作共赢的外交理念。</LOF_Backstory_Diplomat.description>
+    <LOF_Backstory_Diplomat.baseDesc>[PAWN_nameDef]是一名外交官。由于辽阔的疆域，繁星帝国的外交官数量相当惊人，每名外交官都承载着繁星帝国互助友好，合作共赢的外交理念。</LOF_Backstory_Diplomat.baseDesc>
+    <!-- EN: diplomat -->
+    <LOF_Backstory_Diplomat.title>外交官</LOF_Backstory_Diplomat.title>
+    <LOF_Backstory_Diplomat.titleShort>外交官</LOF_Backstory_Diplomat.titleShort>
+
+    <!-- EN: [PAWN_nameDef] is a scientific researcher. In a research accident, [PAWN_nameDef] was unfortunately exposed to a large dose of gamma rays. This, however, not only did not kill [PAWN_pronoun], but it actually enhanced [PAWN_pronoun]'s physical strength. -->
+    <LOF_Backstory_RadiationSurvivor.description>[PAWN_nameDef]是一名科研工作者， 在一次科研事故中，[PAWN_nameDef]不幸被大剂量的伽马射线照射。但这不仅没杀死[PAWN_pronoun]，反而增强了[PAWN_pronoun]的体力。</LOF_Backstory_RadiationSurvivor.description>
+    <LOF_Backstory_RadiationSurvivor.baseDesc>[PAWN_nameDef]是一名科研工作者， 在一次科研事故中，[PAWN_nameDef]不幸被大剂量的伽马射线照射。但这不仅没杀死[PAWN_pronoun]，反而增强了[PAWN_pronoun]的体力。</LOF_Backstory_RadiationSurvivor.baseDesc>
+    <!-- EN: survivor -->
+    <LOF_Backstory_RadiationSurvivor.title>伽马射线幸存者</LOF_Backstory_RadiationSurvivor.title>
+    <LOF_Backstory_RadiationSurvivor.titleShort>幸存者</LOF_Backstory_RadiationSurvivor.titleShort>
+
+    <!-- EN: [PAWN_nameDef] was so rich he didn't know what to do with himself. So [PAWN_pronoun] decided to leave everything behind and go on a spontaneous trip. However, since he had no experience, [PAWN_nameDef]'s trip wasn't going to go smoothly. -->
+    <LOF_Backstory_Richman.description>[PAWN_nameDef]因为太过有钱所以不知道干什么好了。于是[PAWN_pronoun]决定抛下一切给自己来一场说走就先的旅行。不过由于啥也不会，[PAWN_nameDef]的旅行可以预见的不会那么顺利。</LOF_Backstory_Richman.description>
+    <LOF_Backstory_Richman.baseDesc>[PAWN_nameDef]因为太过有钱所以不知道干什么好了。于是[PAWN_pronoun]决定抛下一切给自己来一场说走就先的旅行。不过由于啥也不会，[PAWN_nameDef]的旅行可以预见的不会那么顺利。</LOF_Backstory_Richman.baseDesc>
+    <!-- EN: rich man -->
+    <LOF_Backstory_Richman.title>富人</LOF_Backstory_Richman.title>
+    <LOF_Backstory_Richman.titleShort>富人</LOF_Backstory_Richman.titleShort>
+
+</LanguageData>

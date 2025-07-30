@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <BackstoryDef Name="LOF_BackstoryAdultBase" Abstract="True">
+        <ignoreIllegalLabelCharacterConfigError>False</ignoreIllegalLabelCharacterConfigError>
+        <slot>Adulthood</slot>
+        <shuffleable>False</shuffleable>
+    </BackstoryDef>
+
+    <BackstoryDef ParentName="LOF_BackstoryAdultBase">
+        <defName>LOF_Backstory_SpaceExplorer</defName>
+        <identifier>LOF_Backstory_SpaceExplorer</identifier>
+        <title>space explorer</title>
+        <titleShort>explorer</titleShort>
+        <description>In one adventure after another, [PAWN_nameDef] always learns a lot.</description>
+        <skillGains>
+            <Crafting>2</Crafting>
+            <Intellectual>2</Intellectual>
+        </skillGains>
+        <workDisables>None</workDisables>
+        <requiredWorkTags>None</requiredWorkTags>
+    </BackstoryDef>
+
+    <BackstoryDef ParentName="LOF_BackstoryAdultBase">
+        <defName>LOF_Backstory_BountyHunter</defName>
+        <identifier>LOF_Backstory_BountyHunter</identifier>
+        <title>bounty hunter</title>
+        <titleShort>bounty hunter</titleShort>
+        <description>In the remote regions of the Star Empire, chaos and violence reign supreme. [PAWN_nameDef] is a bounty hunter roaming this chaotic land. [PAWN_pronoun] will do anything for you if you pay him enough.</description>
+        <skillGains>
+            <Shooting>6</Shooting>
+            <Melee>3</Melee>
+        </skillGains>
+        <workDisables>None</workDisables>
+        <requiredWorkTags>None</requiredWorkTags>
+    </BackstoryDef>
+
+    <BackstoryDef ParentName="LOF_BackstoryAdultBase">
+        <defName>LOF_Backstory_DragonRider</defName>
+        <identifier>LOF_Backstory_DragonRider</identifier>
+        <title>dragon rider</title>
+        <titleShort>dragon rider</titleShort>
+        <description>Legend has it that long ago, the ancestors of astrologers once ruled this star region alongside the great dragon of the sky. There are also vague records of this in fragments of epic poetry, but these are all stories that cannot be verified.</description>
+        <skillGains>
+            <Melee>6</Melee>
+        </skillGains>
+        <workDisables>None</workDisables>
+        <requiredWorkTags>None</requiredWorkTags>
+    </BackstoryDef>
+
+    <BackstoryDef ParentName="LOF_BackstoryAdultBase">
+        <defName>LOF_Backstory_Researcher</defName>
+        <identifier>LOF_Backstory_Researcher</identifier>
+        <title>researcher</title>
+        <titleShort>researcher</titleShort>
+        <description>On every planet in the Star Empire, there are numerous research institutes, both private and public. [PAWN_nameDef] is an employee at one of these institutes.</description>
+        <skillGains>
+            <Intellectual>5</Intellectual>
+        </skillGains>
+        <workDisables>None</workDisables>
+        <requiredWorkTags>None</requiredWorkTags>
+    </BackstoryDef>
+
+    <BackstoryDef ParentName="LOF_BackstoryAdultBase">
+        <defName>LOF_Backstory_Agent</defName>
+        <identifier>LOF_Backstory_Agent</identifier>
+        <title>agent</title>
+        <titleShort>agent</titleShort>
+        <description>[PAWN_nameDef] is an elusive agent known for [PAWN_possessive] ability to obtain intelligence.</description>
+        <skillGains>
+            <Social>6</Social>
+        </skillGains>
+        <workDisables>None</workDisables>
+        <requiredWorkTags>None</requiredWorkTags>
+    </BackstoryDef>
+
+    <BackstoryDef ParentName="LOF_BackstoryAdultBase">
+        <defName>LOF_Backstory_ServingSoldier</defName>
+        <identifier>LOF_Backstory_ServingSoldier</identifier>
+        <title>serving soldier</title>
+        <titleShort>soldier</titleShort>
+        <description>[PAWN_nameDef] is a soldier. After undergoing physical training, shooting, and combat training, [PAWN_pronoun] was finally allowed to wear the uniform of an astrologer.</description>
+        <skillGains>
+            <Shooting>3</Shooting>
+        </skillGains>
+        <workDisables>Cleaning</workDisables>
+        <requiredWorkTags>None</requiredWorkTags>
+    </BackstoryDef>
+
+    <BackstoryDef ParentName="LOF_BackstoryAdultBase">
+        <defName>LOF_Backstory_AcePilot</defName>
+        <identifier>LOF_Backstory_AcePilot</identifier>
+        <title>ace pilot</title>
+        <titleShort>ace</titleShort>
+        <description>There have been many geniuses like you in this era, and I have brought them all down. [PAWN_nameDef] once served in the Star Empire Space Force. [PAWN_pronoun] was an undisputed ace.</description>
+        <skillGains>
+            <Shooting>8</Shooting>
+            <Melee>-10</Melee>
+        </skillGains>
+        <workDisables>None</workDisables>
+        <requiredWorkTags>None</requiredWorkTags>
+    </BackstoryDef>
+
+    <BackstoryDef ParentName="LOF_BackstoryAdultBase">
+        <defName>LOF_Backstory_Veteran</defName>
+        <identifier>LOF_Backstory_Veteran</identifier>
+        <title>veteran</title>
+        <titleShort>veteran</titleShort>
+        <description>[PAWN_nameDef] had crossed streams stained red with blood, walked across battlefields strewn with blood and flesh, and climbed out of trenches piled with corpses. Years of war had changed [PAWN_pronoun].</description>
+        <skillGains>
+            <Shooting>5</Shooting>
+            <Melee>6</Melee>
+            <Social>-3</Social>
+        </skillGains>
+        <workDisables>Artistic</workDisables>
+        <requiredWorkTags>None</requiredWorkTags>
+    </BackstoryDef>
+
+    <BackstoryDef ParentName="LOF_BackstoryAdultBase">
+        <defName>LOF_Backstory_FriendshipPrincess</defName>
+        <identifier>LOF_Backstory_FriendshipPrincess</identifier>
+        <title>friendship princess</title>
+        <titleShort>friendship princess</titleShort>
+        <description>[PAWN_nameDef] claims to possess friendship magic, and [PAWN_pronoun] claims to be able to unleash a powerful force upon the souls of five like-minded companions.</description>
+        <skillGains>
+            <Social>6</Social>
+        </skillGains>
+        <workDisables>None</workDisables>
+        <requiredWorkTags>None</requiredWorkTags>
+    </BackstoryDef>
+
+    <BackstoryDef ParentName="LOF_BackstoryAdultBase">
+        <defName>LOF_Backstory_Socialite</defName>
+        <identifier>LOF_Backstory_Socialite</identifier>
+        <title>last socialite</title>
+        <titleShort>socialite</titleShort>
+        <description>Years later, facing the huge crowds of people, [PAWN_nameDef] would remember that distant afternoon when [PAWN_possessive] sister took him to see a concert.</description>
+        <skillGains>
+            <Artistic>7</Artistic>
+        </skillGains>
+        <workDisables>Social</workDisables>
+        <requiredWorkTags>None</requiredWorkTags>
+    </BackstoryDef>
+
+    <BackstoryDef ParentName="LOF_BackstoryAdultBase">
+        <defName>LOF_Backstory_CombatMedic</defName>
+        <identifier>LOF_Backstory_CombatMedic</identifier>
+        <title>combat medic</title>
+        <titleShort>combat medic</titleShort>
+        <description>[PAWN_nameDef] tends to wounded soldiers on the battlefield, and [PAWN_pronoun] also enjoys striking down enemies.</description>
+        <skillGains>
+            <Melee>4</Melee>
+            <Medicine>5</Medicine>
+        </skillGains>
+        <workDisables>None</workDisables>
+        <requiredWorkTags>None</requiredWorkTags>
+    </BackstoryDef>
+
+    <BackstoryDef ParentName="LOF_BackstoryAdultBase">
+        <defName>LOF_Backstory_Mystic</defName>
+        <identifier>LOF_Backstory_Mystic</identifier>
+        <title>mystic</title>
+        <titleShort>mystic</titleShort>
+        <description>[PAWN_nameDef] is obsessed with the mysterious occult. [PAWN_pronoun] dreams of using magic to turn stones into gold so that [PAWN_pronoun] can make a fortune.</description>
+        <skillGains Inherit="false"/>
+        <workDisables>None</workDisables>
+        <requiredWorkTags>None</requiredWorkTags>
+    </BackstoryDef>
+
+    <BackstoryDef ParentName="LOF_BackstoryAdultBase">
+        <defName>LOF_Backstory_DisasterMessenger</defName>
+        <identifier>LOF_Backstory_DisasterMessenger</identifier>
+        <title>disaster messenger</title>
+        <titleShort>messenger</titleShort>
+        <description>[PAWN_nameDef] travels between interstellar city-states, primarily bringing news of cosmic disasters to planets with less advanced information systems.
+For the governments of these planets, the sooner they learn of a disaster, the less damage they will suffer. Therefore, Disaster Messengers generally enjoy exceptionally high treatment and social status among them.</description>
+        <skillGains>
+            <Social>5</Social>
+        </skillGains>
+        <workDisables>None</workDisables>
+        <requiredWorkTags>None</requiredWorkTags>
+    </BackstoryDef>
+
+    <BackstoryDef ParentName="LOF_BackstoryAdultBase">
+        <defName>LOF_Backstory_Diplomat</defName>
+        <identifier>LOF_Backstory_Diplomat</identifier>
+        <title>diplomat</title>
+        <titleShort>diplomat</titleShort>
+        <description>[PAWN_nameDef] is a diplomat. Due to its vast territory, the Star Empire has a staggering number of diplomats, each of whom carries the Star Empire's diplomatic philosophy of mutual assistance, friendship, and win-win cooperation.</description>
+        <skillGains>
+            <Social>3</Social>
+        </skillGains>
+        <workDisables>None</workDisables>
+        <requiredWorkTags>None</requiredWorkTags>
+    </BackstoryDef>
+
+    <BackstoryDef ParentName="LOF_BackstoryAdultBase">
+        <defName>LOF_Backstory_RadiationSurvivor</defName>
+        <identifier>LOF_Backstory_RadiationSurvivor</identifier>
+        <title>radiation survivor</title>
+        <titleShort>survivor</titleShort>
+        <description>[PAWN_nameDef] is a scientific researcher. In a research accident, [PAWN_nameDef] was unfortunately exposed to a large dose of gamma rays. This, however, not only did not kill [PAWN_pronoun], but it actually enhanced [PAWN_pronoun]'s physical strength.</description>
+        <skillGains>
+            <Melee>5</Melee>
+        </skillGains>
+        <workDisables>None</workDisables>
+        <requiredWorkTags>None</requiredWorkTags>
+    </BackstoryDef>
+
+    <BackstoryDef ParentName="LOF_BackstoryAdultBase">
+        <defName>LOF_Backstory_Richman</defName>
+        <identifier>LOF_Backstory_Richman</identifier>
+        <title>rich man</title>
+        <titleShort>rich man</titleShort>
+        <description>[PAWN_nameDef] was so rich he didn't know what to do with himself. So [PAWN_pronoun] decided to leave everything behind and go on a spontaneous trip. However, since he had no experience, [PAWN_nameDef]'s trip wasn't going to go smoothly.</description>
+        <skillGains>
+            <Shooting>-3</Shooting>
+            <Melee>-3</Melee>
+            <Social>2</Social>
+        </skillGains>
+        <workDisables>Cleaning</workDisables>
+        <requiredWorkTags>None</requiredWorkTags>
+    </BackstoryDef>
+
+</Defs>

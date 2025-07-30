@@ -133,7 +133,7 @@
     <Compile Include="Misc\ScenPart_GameStartLetter.cs" />
     <Compile Include="OperatorDef\RPEW_AstroDoc.cs" />
     <Compile Include="QuestNode\IncidentWorker_GiveQuestAstroScenario.cs" />
-    <Compile Include="Apparel\ApparelAstro.cs" />
+    <Compile Include="Equipment\TransformApparel.cs" />
     <Compile Include="HarmonyPatches\Patch_DraftController.cs" />
     <Compile Include="Insight\TCP_UpgradeInsight.cs" />
     <Compile Include="Comp\TCP_AddHediff.cs" />
@@ -143,6 +143,7 @@
     <Compile Include="Ability\Gizmo\Gizmo_InsightMonitor.cs" />
     <Compile Include="HarmonyPatches\Patch_GeneTracker.cs" />
     <Compile Include="HarmonyPatches\Patch_Main.cs" />
+    <Compile Include="Equipment\TransformEquipment.cs" />
     <Compile Include="Weapon\TCP_FireMode.cs" />
     <Compile Include="Insight\VAB_AstroTracker.cs" />
     <Compile Include="Insight\InteractableComp\IInsightInteractable.cs" />
@@ -152,16 +153,16 @@
     <Compile Include="Weapon\DamageWorker_Bomb.cs" />
     <Compile Include="Weapon\DamageWorker_ForcePartDestruct.cs" />
     <Compile Include="Building\PsychicDevice.cs" />
-    <Compile Include="Thing\GravityDeflectionDust.cs" />
+    <Compile Include="Equipment\GravityDeflectionDust.cs" />
     <Compile Include="ModSettings.cs" />
     <Compile Include="Plant\TCP_NightGlower.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="QuestNode\QuestNode_IsFactionRelationKind.cs" />
     <Compile Include="QuestNode\QuestNode_Root_GetAdventurerJoin_WalkIn.cs" />
     <Compile Include="Weapon\DamageWorker_EMP.cs" />
-    <Compile Include="Thing\Projectile_Leech.cs" />
-    <Compile Include="Thing\ActivatedPulsePack.cs" />
-    <Compile Include="Thing\DrafterEquipment.cs" />
+    <Compile Include="Equipment\Projectile_Leech.cs" />
+    <Compile Include="Equipment\ActivatedPulsePack.cs" />
+    <Compile Include="Equipment\DrafterEquipment.cs" />
     <Compile Include="Thought\JoyGiver_InteractBuildingCell.cs" />
     <Compile Include="Thought\ThoughtWorker_SightMood.cs" />
     <Compile Include="TypeDef.cs" />

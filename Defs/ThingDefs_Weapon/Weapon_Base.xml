@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
+
     <ThingDef Name="Astro_BaseWeapon" Abstract="True" ParentName="BaseWeapon">
         <comps Inherit="false">
             <li Class="CompProperties_Forbiddable"/>

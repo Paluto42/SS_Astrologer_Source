@@ -2,6 +2,7 @@
 <Defs>
 
     <ThingDef Name="Astro_ArmorBase" ParentName="Astro_ApparelBase" Abstract="True">
+        <uiIconScale>1.75</uiIconScale>
         <thingCategories Inherit="false">
             <li>LOF_AS_Category_Armor</li>
         </thingCategories>
@@ -55,7 +56,7 @@
             <texPath>Things/Apparel/LOF_LightArmor/LightArmor</texPath>
             <graphicClass>Graphic_Single</graphicClass>
         </graphicData>
-        <uiIconScale>1.25</uiIconScale>
+        <!--uiIconScale>1.25</uiIconScale-->
         <!--占位,原版数值-->
         <statBases>
             <MaxHitPoints>260</MaxHitPoints>
@@ -99,7 +100,6 @@
         <defName>LOF_Apparel_StandardArmor</defName>
         <label>&lt;color=#00AEEF&gt;"MPE-3" 制式装甲&lt;/color&gt;</label>
         <description>"MPE-3"制式装甲，可以发射动能火箭弹(需要装填钢铁),但是精度较低.</description>
-        <!--等待贴图-->
         <graphicData>
             <texPath>Things/Apparel/LOF_StandardArmor/StandardArmor</texPath>
             <graphicClass>Graphic_Single</graphicClass>
@@ -325,7 +325,7 @@
 
     <ThingDef ParentName="Astro_ArmorBase">
         <defName>LOF_Apparel_TwilightKnightArmor</defName>
-        <thingClass>Astrologer.ApparelAstro</thingClass>
+        <thingClass>Astrologer.TransformApparel</thingClass>
         <label>&lt;color=#AF23A5&gt;ES-110 "盾牌座" 重护甲&lt;/color&gt;</label>
         <description>繁星帝国列装的重型作战装甲\n自带可恢复护盾,拥有很高的盾防和防御.\n增加疼痛阈值,减少崩溃临界值，减少移动速度.</description>
         <graphicData Class="AK_DLL.GraphicData_MultiFoam">
@@ -460,7 +460,7 @@
     <![CDATA[
     <ThingDef ParentName="Astro_ArmorBase">
         <defName>LOF_Apparel_TravelArmor</defName>
-        <thingClass>Astrologer.ApparelAstro</thingClass>
+        <thingClass>Astrologer.TransformApparel</thingClass>
         <label>TLK-11 "凤凰座" 远行装甲</label>
         <description>离死亡越近，生命的火焰就燃烧的越炽热\n高机动作战装甲--穿戴有移速加成,增加加疼痛阈,减少崩溃临界值,被击中不会影响移动.\n内置医疗系统,消耗一次洞察力可以对穿戴者进行一次治疗,生命值越低则承伤系数越低.</description>
         <!--等待贴图-->

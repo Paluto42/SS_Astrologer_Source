@@ -11,12 +11,12 @@ namespace Astrologer.Insight
         Started = 1,
         Completed = 2
     }
+
     //和TC_Insight联动的Comp
     public class TCP_FireMode : CompProperties
     {
-        [TranslationHandle]
-        public string refName = "LOF_FireMode";
-        public VerbProperties verbProps = new();
+        public VerbProperties verbProps;
+        public GraphicData graphicData; //变形贴图
 
         public int consumeAmount = 1;
         public int consumeDuration = 0;
@@ -45,6 +45,8 @@ namespace Astrologer.Insight
         public bool IsSecondaryVerbSelected => isSecondaryVerbSelected;
         //private int burstCount = 0;
         private int burstTick = 0;
+        public GraphicData Graphic => Props.graphicData;
+
         private CompEquippable EquipmentSource
         {
             get

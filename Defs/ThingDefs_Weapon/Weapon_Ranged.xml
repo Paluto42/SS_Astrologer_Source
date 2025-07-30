@@ -239,6 +239,7 @@
         <defName>LOF_Weapon_PsychicRifle</defName>
         <label>&lt;color=#00AEEF&gt;"MK-5" 等离子心灵干扰步枪&lt;/color&gt;</label>
         <description>标准射手步枪,点击切换模式,此时该步枪每发子弹会有心灵错乱效果.</description>
+        <thingClass>Astrologer.TransformEquipment</thingClass>
         <graphicData>
             <texPath>Things/Weapons/LOF_PsychicRifle</texPath>
             <graphicClass>Graphic_Single</graphicClass>
@@ -292,6 +293,11 @@
                 </trackerGenProp>
             </li>
             <li Class="Astrologer.Insight.TCP_FireMode">
+                <graphicData>
+                    <texPath>Things/Weapons/LOF_PsychicRifle_M</texPath>
+                    <graphicClass>Graphic_Single</graphicClass>
+                    <drawSize>1.25</drawSize>
+                </graphicData>
                 <verbProps>
                     <verbClass>Astrologer.Insight.Verb_InsightShoot</verbClass>
                     <hasStandardCommand>true</hasStandardCommand>

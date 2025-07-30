@@ -74,7 +74,7 @@
             <texPath>Things/Apparel/LOF_EmpactPack/EmpactPack</texPath>
             <graphicClass>Graphic_Single</graphicClass>
         </graphicData>
-        <uiIconScale>1.5</uiIconScale>
+        <!--uiIconScale>1.5</uiIconScale-->
         <!--占位,原版数值-->
         <statBases>
             <MaxHitPoints>80</MaxHitPoints>

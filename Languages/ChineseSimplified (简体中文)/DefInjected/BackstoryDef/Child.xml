@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+
+    <!-- EN: [PAWN_nameDef] grew up in a flower shop. When spring and summer merged, [PAWN_pronoun] could be found jumping among the colorful flowers. -->
+    <LOF_Backstory_GardenKid.description>[PAWN_nameDef]幼年在一家花铺长大，在春夏交织之时，五颜六色的花朵中，你可以找到[PAWN_pronoun]雀跃的身影。</LOF_Backstory_GardenKid.description>
+    <LOF_Backstory_GardenKid.baseDesc>[PAWN_nameDef]幼年在一家花铺长大，在春夏交织之时，五颜六色的花朵中，你可以找到[PAWN_pronoun]雀跃的身影。</LOF_Backstory_GardenKid.baseDesc>
+    <!-- EN: garden kid -->
+    <LOF_Backstory_GardenKid.title>花园里的孩子</LOF_Backstory_GardenKid.title>
+    <LOF_Backstory_GardenKid.titleShort>花匠</LOF_Backstory_GardenKid.titleShort>
+
+    <!-- EN: [PAWN_nameDef] received a good education in a public school in the Star Empire during her childhood. [PAWN_pronoun] spent a precious and unforgettable time in school. -->
+    <LOF_Backstory_Student.description>[PAWN_nameDef]童年在繁星帝国的一所公立学校里接受了良好的教育，[PAWN_pronoun]在学校里度过了一段宝贵而难忘的时光。</LOF_Backstory_Student.description>
+    <LOF_Backstory_Student.baseDesc>[PAWN_nameDef]童年在繁星帝国的一所公立学校里接受了良好的教育，[PAWN_pronoun]在学校里度过了一段宝贵而难忘的时光。</LOF_Backstory_Student.baseDesc>
+    <!-- EN: student -->
+    <LOF_Backstory_Student.title>学生</LOF_Backstory_Student.title>
+    <LOF_Backstory_Student.titleShort>学生</LOF_Backstory_Student.titleShort>
+
+    <!-- EN: [PAWN_nameDef] grew up in the border area. Due to the harsh living conditions, [PAWN_nameDef] had to fight for [PAWN_possessive] survival earlier. -->
+    <LOF_Backstory_BorderChild.description>[PAWN_nameDef]在边境长大，由于恶劣的生活条件，[PAWN_pronoun]不得不更早的为[PAWN_possessive]生存而战。</LOF_Backstory_BorderChild.description>
+    <LOF_Backstory_BorderChild.baseDesc>[PAWN_nameDef]在边境长大，由于恶劣的生活条件，[PAWN_pronoun]不得不更早的为[PAWN_possessive]生存而战。</LOF_Backstory_BorderChild.baseDesc>
+    <!-- EN: border child -->
+    <LOF_Backstory_BorderChild.title>边境儿童</LOF_Backstory_BorderChild.title>
+    <LOF_Backstory_BorderChild.titleShort>边境儿童</LOF_Backstory_BorderChild.titleShort>
+
+    <!-- EN: [PAWN_nameDef] was far from an ordinary person in [PAWN_possessive] childhood, and this characteristic became more prominent after [PAWN_pronoun] beat up [PAWN_possessive] teacher. -->
+    <LOF_Backstory_ProblemChild.description>[PAWN_nameDef]在童年就远非常人，这个特点在[PAWN_pronoun]胖揍了老师一顿后更加凸显。</LOF_Backstory_ProblemChild.description>
+    <LOF_Backstory_ProblemChild.baseDesc>[PAWN_nameDef]在童年就远非常人，这个特点在[PAWN_pronoun]胖揍了老师一顿后更加凸显。</LOF_Backstory_ProblemChild.baseDesc>
+    <!-- EN: problem child -->
+    <LOF_Backstory_ProblemChild.title>问题儿童</LOF_Backstory_ProblemChild.title>
+    <LOF_Backstory_ProblemChild.titleShort>问题儿童</LOF_Backstory_ProblemChild.titleShort>
+
+    <!-- EN: [PAWN_nameDef] is the child of a locally well-known merchant, and [PAWN_pronoun] grew up in affluent circumstances. [PAWN_possessive] parents could even specially invite art teachers from other ethnic groups on other planets to train [PAWN_pronoun]. The long-term life of luxury has brought [PAWN_pronoun] many conveniences, but also some bad habits. -->
+    <LOF_Backstory_BusinessmenChild.description>[PAWN_nameDef]是当地一名小有名气的商人的孩子，[PAWN_pronoun]在富裕的条件下长大。[PAWN_possessive]父母甚至能专门从其它星球请别族的艺术老师培养[PAWN_pronoun]。长期的优渥生活给[PAWN_pronoun]带了很多便利，但也带给了[PAWN_pronoun]一些坏习惯。</LOF_Backstory_BusinessmenChild.description>
+    <LOF_Backstory_BusinessmenChild.baseDesc>[PAWN_nameDef]是当地一名小有名气的商人的孩子，[PAWN_pronoun]在富裕的条件下长大。[PAWN_possessive]父母甚至能专门从其它星球请别族的艺术老师培养[PAWN_pronoun]。长期的优渥生活给[PAWN_pronoun]带了很多便利，但也带给了[PAWN_pronoun]一些坏习惯。</LOF_Backstory_BusinessmenChild.baseDesc>
+    <!-- EN: businessmen child -->
+    <LOF_Backstory_BusinessmenChild.title>商人子女</LOF_Backstory_BusinessmenChild.title>
+    <LOF_Backstory_BusinessmenChild.titleShort>商人子女</LOF_Backstory_BusinessmenChild.titleShort>
+
+    <!-- EN: [PAWN_nameDef] spent [PAWN_pronoun] childhood gazing into the distance, longing to communicate with people beyond astrologers. [PAWN_pronoun] even fantasized about marrying a prince from another race—perhaps a human, or maybe another species entirely. -->
+    <LOF_Backstory_AlienFan.description>[PAWN_nameDef]童年时总是在眺望，[PAWN_pronoun]渴望与占星师之外的人沟通和交流。[PAWN_pronoun]甚至幻想要嫁给一位异族的王子，可能是智人，也可能是别的种族。</LOF_Backstory_AlienFan.description>
+    <LOF_Backstory_AlienFan.baseDesc>[PAWN_nameDef]童年时总是在眺望，[PAWN_pronoun]渴望与占星师之外的人沟通和交流。[PAWN_pronoun]甚至幻想要嫁给一位异族的王子，可能是智人，也可能是别的种族。</LOF_Backstory_AlienFan.baseDesc>
+    <!-- EN: alien fan -->
+    <LOF_Backstory_AlienFan.title>外星人爱好者</LOF_Backstory_AlienFan.title>
+    <LOF_Backstory_AlienFan.titleShort>外星人爱好者</LOF_Backstory_AlienFan.titleShort>
+
+    <!-- EN: [PAWN_nameDef] displayed extraordinary talent that caught the attention of the local magistrate. This meant [PAWN_pronoun] was expected to become a member of "Twilight Knights". -->
+    <LOF_Backstory_KnightCandidate.description>[PAWN_nameDef]表现出了异于常人的天赋，对于当地的执政官来说，这意味着[PAWN_pronoun]有望成为“登光骑土团"的一员。</LOF_Backstory_KnightCandidate.description>
+    <LOF_Backstory_KnightCandidate.baseDesc>[PAWN_nameDef]表现出了异于常人的天赋，对于当地的执政官来说，这意味着[PAWN_pronoun]有望成为“登光骑土团"的一员。</LOF_Backstory_KnightCandidate.baseDesc>
+    <!-- EN: twilightknight candidate -->
+    <LOF_Backstory_KnightCandidate.title>暮光骑士候选人</LOF_Backstory_KnightCandidate.title>
+    <LOF_Backstory_KnightCandidate.titleShort>暮光骑士候选人</LOF_Backstory_KnightCandidate.titleShort>
+
+    <!-- EN: [PAWN_nameDef] was the illegitimate child of a noble, raised in a blacksmith's workshop. [PAWN_possessive] foster father made a living crafting intricate metalwork for nobles. As [PAWN_nameDef] grew older, [PAWN_pronoun] developed a growing interest in swordsmanship—though strangely, [PAWN_possessive] father always refused to teach [PAWN_objective] this skill. That is, until [PAWN_possessive] biological father came knocking. -->
+    <LOF_Backstory_IllegitimateChild.description>[PAWN_nameDef]是一位贵族的私生子，[PAWN_pronoun]在一间锻造坊长大。[PAWN_possessive]养父以为贵族打造精巧的金属制品为生。随着[PAWN_nameDef]年龄的增长，[PAWN_pronoun]越来越对剑法感到兴趣。但奇怪的是，[PAWN_possessive]父亲却总是不愿教授[PAWN_pronoun]这方面的知识。直到有一天[PAWN_possessive]亲生父亲找上门。</LOF_Backstory_IllegitimateChild.description>
+    <LOF_Backstory_IllegitimateChild.baseDesc>[PAWN_nameDef]是一位贵族的私生子，[PAWN_pronoun]在一间锻造坊长大。[PAWN_possessive]养父以为贵族打造精巧的金属制品为生。随着[PAWN_nameDef]年龄的增长，[PAWN_pronoun]越来越对剑法感到兴趣。但奇怪的是，[PAWN_possessive]父亲却总是不愿教授[PAWN_pronoun]这方面的知识。直到有一天[PAWN_possessive]亲生父亲找上门。</LOF_Backstory_IllegitimateChild.baseDesc>
+    <!-- EN: illegitimate child -->
+    <LOF_Backstory_IllegitimateChild.title>贵族私生子</LOF_Backstory_IllegitimateChild.title>
+    <LOF_Backstory_IllegitimateChild.titleShort>私生子</LOF_Backstory_IllegitimateChild.titleShort>
+
+    <!-- EN: [PAWN_nameDef] was a professional shooting game competitor, young and exceptionally talented. Everyone said it was only a matter of time before [PAWN_pronoun] claimed the highest honors in competitions. -->
+    <LOF_Backstory_YouthProGamer.description>[PAWN_nameDef]是一名射击游戏的职业选手，[PAWN_pronoun]很年轻，并且天赋异亮。大家都说[PAWN_pronoun]拿到比赛的最高荣誉只是时间问题。</LOF_Backstory_YouthProGamer.description>
+    <LOF_Backstory_YouthProGamer.baseDesc>[PAWN_nameDef]是一名射击游戏的职业选手，[PAWN_pronoun]很年轻，并且天赋异亮。大家都说[PAWN_pronoun]拿到比赛的最高荣誉只是时间问题。</LOF_Backstory_YouthProGamer.baseDesc>
+    <!-- EN: young pro-gamer -->
+    <LOF_Backstory_YouthProGamer.title>青训比赛选手</LOF_Backstory_YouthProGamer.title>
+    <LOF_Backstory_YouthProGamer.titleShort>青训选手</LOF_Backstory_YouthProGamer.titleShort>
+
+    <!-- EN: In [PAWN_possessive] first year of high school, [PAWN_nameDef] formed a band with three remarkable girls—each with unique talents: one was a split-personality master of left-right brain rivalry, another angry girl who dropped out and ran away from home, and the third... a zombie? Compared to that, [PAWN_possessive] autism seemed trivial. -->
+    <LOF_Backstory_BandGirl.description>[PAWN_nameDef]在高中的第一年与三位杰出的少女组成了一支乐队。乐队成员个个身怀绝技。
+一位人格分裂左右脑互博高手，一位高中辍学离家出走的暴躁少女，还有一位是僵尸?如此看来，[PAWN_possessive]自闭症看来并不是什么要紧的事。</LOF_Backstory_BandGirl.description>
+    <LOF_Backstory_BandGirl.baseDesc>[PAWN_nameDef]在高中的第一年与三位杰出的少女组成了一支乐队。乐队里的少女个个身怀绝技。
+一位人格分裂左右脑互博高手，一位高中辍学离家出走的暴躁少女，还有一位是僵尸?如此看来，[PAWN_possessive]自闭症看来并不是什么要紧的事。</LOF_Backstory_BandGirl.baseDesc>
+    <!-- EN: band girl -->
+    <LOF_Backstory_BandGirl.title>乐队少女</LOF_Backstory_BandGirl.title>
+    <LOF_Backstory_BandGirl.titleShort>乐队少女</LOF_Backstory_BandGirl.titleShort>
+
+    <!-- EN: [PAWN_nameDef] wandered among the mountains, walking freely among the beasts. From a young age, [PAWN_pronoun] shared an extraordinary connection with animals—some even called [PAWN_objective] a little druid. -->
+    <LOF_Backstory_AnimalFriend.description>在大山间，[PAWN_nameDef]在百兽中行走。[PAWN_pronoun]从小就与动物们有着非凡的联系。说[PAWN_pronoun]是一位小德鲁伊也不为过。</LOF_Backstory_AnimalFriend.description>
+    <LOF_Backstory_AnimalFriend.baseDesc>在大山间，[PAWN_nameDef]在百兽中行走。[PAWN_pronoun]从小就与动物们有着非凡的联系。说[PAWN_pronoun]是一位小德鲁伊也不为过。</LOF_Backstory_AnimalFriend.baseDesc>
+    <!-- EN: animal friend -->
+    <LOF_Backstory_AnimalFriend.title>动物朋友</LOF_Backstory_AnimalFriend.title>
+    <LOF_Backstory_AnimalFriend.titleShort>动物朋友</LOF_Backstory_AnimalFriend.titleShort>
+
+    <!-- EN: [PAWN_nameDef] was a "genius" hacker who, at a very young age, hacked into the school's network to alter [PAWN_possessive] grades. The result was, naturally, a good beating. It turns out that being a "genius" comes with a price. -->
+    <LOF_Backstory_HackerKid.description>[PAWN_nameDef]是一名“天才”黑客，[PAWN_pronoun]在很小的后就黑入过学校的网络修改[PAWN_possessive]成绩。结果自然是免不了一顿打。事实证明，想成为"天才“是要付出代价的。</LOF_Backstory_HackerKid.description>
+    <LOF_Backstory_HackerKid.baseDesc>[PAWN_nameDef]是一名“天才”黑客，[PAWN_pronoun]在很小的后就黑入过学校的网络修改[PAWN_possessive]成绩。结果自然是免不了一顿打。事实证明，想成为"天才“是要付出代价的。</LOF_Backstory_HackerKid.baseDesc>
+    <!-- EN: hacker kid-->
+    <LOF_Backstory_HackerKid.title>少年黑客</LOF_Backstory_HackerKid.title>
+    <LOF_Backstory_HackerKid.titleShort>黑客</LOF_Backstory_HackerKid.titleShort>
+
+</LanguageData>

@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <BackstoryDef Name="LOF_BackstoryChildBase" Abstract="True">
+        <ignoreIllegalLabelCharacterConfigError>False</ignoreIllegalLabelCharacterConfigError>
+        <slot>Childhood</slot>
+        <shuffleable>False</shuffleable>
+    </BackstoryDef>
+
+    <BackstoryDef ParentName="LOF_BackstoryChildBase">
+        <defName>LOF_Backstory_GardenKid</defName>
+        <identifier>LOF_Backstory_GardenKid</identifier>
+        <title>garden kid</title>
+        <titleShort>gardener</titleShort>
+        <description>[PAWN_nameDef] grew up in a flower shop. When spring and summer merged, [PAWN_pronoun] could be found jumping among the colorful flowers.</description>
+        <skillGains>
+            <Plants>3</Plants>
+        </skillGains>
+        <workDisables>None</workDisables>
+        <requiredWorkTags>None</requiredWorkTags>
+    </BackstoryDef>
+
+    <BackstoryDef ParentName="LOF_BackstoryChildBase">
+        <defName>LOF_Backstory_Student</defName>
+        <identifier>LOF_Backstory_Student</identifier>
+        <title>student</title>
+        <titleShort>student</titleShort>
+        <description>[PAWN_nameDef] received a good education in a public school in the Star Empire during her childhood. [PAWN_pronoun] spent a precious and unforgettable time in school.</description>
+        <skillGains>
+            <Intellectual>3</Intellectual>
+        </skillGains>
+        <workDisables>None</workDisables>
+        <requiredWorkTags>None</requiredWorkTags>
+    </BackstoryDef>
+
+    <BackstoryDef ParentName="LOF_BackstoryChildBase">
+        <defName>LOF_Backstory_BorderChild</defName>
+        <identifier>LOF_Backstory_BorderChild</identifier>
+        <title>border child</title>
+        <titleShort>border child</titleShort>
+        <description>[PAWN_nameDef] grew up in the border area. Due to the harsh living conditions, [PAWN_pronoun] had to fight for [PAWN_possessive] survival earlier.</description>
+        <skillGains>
+            <Shooting>4</Shooting>
+            <Melee>3</Melee>
+        </skillGains>
+        <workDisables>Artistic</workDisables>
+        <requiredWorkTags>None</requiredWorkTags>
+    </BackstoryDef>
+
+    <BackstoryDef ParentName="LOF_BackstoryChildBase">
+        <defName>LOF_Backstory_ProblemChild</defName>
+        <identifier>LOF_Backstory_ProblemChild</identifier>
+        <title>problem child</title>
+        <titleShort>problem child</titleShort>
+        <description>[PAWN_nameDef] was far from an ordinary person in [PAWN_possessive] childhood, and this characteristic became more prominent after [PAWN_pronoun] beat up [PAWN_possessive] teacher.</description>
+        <skillGains>
+            <Shooting>4</Shooting>
+            <Melee>3</Melee>
+            <Intellectual>-5</Intellectual>
+        </skillGains>
+        <workDisables>None</workDisables>
+        <requiredWorkTags>None</requiredWorkTags>
+    </BackstoryDef>
+
+    <BackstoryDef ParentName="LOF_BackstoryChildBase">
+        <defName>LOF_Backstory_BusinessmenChild</defName>
+        <identifier>LOF_Backstory_BusinessmenChild</identifier>
+        <title>businessmen child</title>
+        <titleShort>businessmen child</titleShort>
+        <description>[PAWN_nameDef] is the child of a locally well-known merchant, and [PAWN_pronoun] grew up in affluent circumstances. XX's parents could even specially invite art teachers from other ethnic groups on other planets to train [PAWN_pronoun]. The long-term life of luxury has brought [PAWN_pronoun] many conveniences, but also some bad habits.</description>
+        <skillGains>
+            <Artistic>6</Artistic>
+        </skillGains>
+        <workDisables>Cooking, Cleaning</workDisables>
+        <requiredWorkTags>None</requiredWorkTags>
+    </BackstoryDef>
+
+    <BackstoryDef ParentName="LOF_BackstoryChildBase">
+        <defName>LOF_Backstory_AlienFan</defName>
+        <identifier>LOF_Backstory_AlienFan</identifier>
+        <title>alien fan</title>
+        <titleShort>alien fan</titleShort>
+        <description>[PAWN_nameDef] spent [PAWN_pronoun] childhood gazing into the distance, longing to communicate with people beyond astrologers. [PAWN_pronoun] even fantasized about marrying a prince from another race—perhaps a human, or maybe another species entirely.</description>
+        <skillGains>
+            <Social>4</Social>
+        </skillGains>
+        <workDisables>None</workDisables>
+        <requiredWorkTags>None</requiredWorkTags>
+    </BackstoryDef>
+
+    <BackstoryDef ParentName="LOF_BackstoryChildBase">
+        <defName>LOF_Backstory_KnightCandidate</defName>
+        <identifier>LOF_Backstory_KnightCandidate</identifier>
+        <title>twilightknight candidate</title>
+        <titleShort>candidate</titleShort>
+        <description>[PAWN_nameDef] displayed extraordinary talent that caught the attention of the local magistrate. This meant [PAWN_pronoun] was expected to become a member of "Twilight Knights".</description>
+        <skillGains>
+            <Shooting>3</Shooting>
+            <Melee>5</Melee>
+        </skillGains>
+        <workDisables>None</workDisables>
+        <requiredWorkTags>None</requiredWorkTags>
+    </BackstoryDef>
+
+    <BackstoryDef ParentName="LOF_BackstoryChildBase">
+        <defName>LOF_Backstory_IllegitimateChild</defName>
+        <identifier>LOF_Backstory_IllegitimateChild</identifier>
+        <title>illegitimate child</title>
+        <titleShort>illegitimate child</titleShort>
+        <description>[PAWN_nameDef] was the illegitimate child of a noble, raised in a blacksmith's workshop. [PAWN_possessive] foster father made a living crafting intricate metalwork for nobles. As [PAWN_nameDef] grew older, [PAWN_pronoun] developed a growing interest in swordsmanship—though strangely, [PAWN_possessive] father always refused to teach [PAWN_objective] this skill. That is, until [PAWN_possessive] biological father came knocking.</description>
+        <skillGains>
+            <Melee>1</Melee>
+        </skillGains>
+        <workDisables>None</workDisables>
+        <requiredWorkTags>None</requiredWorkTags>
+    </BackstoryDef>
+
+    <BackstoryDef ParentName="LOF_BackstoryChildBase">
+        <defName>LOF_Backstory_YouthProGamer</defName>
+        <identifier>LOF_Backstory_YouthProGamer</identifier>
+        <title>young pro-gamer</title>
+        <titleShort>gamer</titleShort>
+        <description>[PAWN_nameDef] was a professional shooting game competitor, young and exceptionally talented. Everyone said it was only a matter of time before [PAWN_pronoun] claimed the highest honors in competitions.</description>
+        <skillGains>
+            <Shooting>6</Shooting>
+        </skillGains>
+        <workDisables>None</workDisables>
+        <requiredWorkTags>None</requiredWorkTags>
+    </BackstoryDef>
+
+    <BackstoryDef ParentName="LOF_BackstoryChildBase">
+        <defName>LOF_Backstory_BandGirl</defName>
+        <identifier>LOF_Backstory_BandGirl</identifier>
+        <title>band girl</title>
+        <titleShort>band girl</titleShort>
+        <description>In [PAWN_possessive] first year of high school, [PAWN_nameDef] formed a band with three remarkable girls—each with unique talents: one was a split-personality master of left-right brain rivalry, another angry girl who dropped out and ran away from home, and the third... a zombie? Compared to that, [PAWN_possessive] autism seemed trivial.</description>
+        <skillGains>
+            <Artistic>3</Artistic>
+        </skillGains>
+        <workDisables>Social</workDisables>
+        <requiredWorkTags>None</requiredWorkTags>
+    </BackstoryDef>
+
+    <BackstoryDef ParentName="LOF_BackstoryChildBase">
+        <defName>LOF_Backstory_AnimalFriend</defName>
+        <identifier>LOF_Backstory_AnimalFriend</identifier>
+        <title>animal friend</title>
+        <titleShort>animal friend</titleShort>
+        <description>[PAWN_nameDef] wandered among the mountains, walking freely among the beasts. From a young age, [PAWN_pronoun] shared an extraordinary connection with animals—some even called [PAWN_objective] a little druid.</description>
+        <skillGains>
+            <Animals>4</Animals>
+        </skillGains>
+        <workDisables>None</workDisables>
+        <requiredWorkTags>None</requiredWorkTags>
+    </BackstoryDef>
+
+    <BackstoryDef ParentName="LOF_BackstoryChildBase">
+        <defName>LOF_Backstory_HackerKid</defName>
+        <identifier>LOF_Backstory_HackerKid</identifier>
+        <title>hacker kid</title>
+        <titleShort>hacker</titleShort>
+        <description>[PAWN_nameDef] was a "genius" hacker who, at a very young age, hacked into the school's network to alter [PAWN_possessive] grades. The result was, naturally, a good beating. It turns out that being a "genius" comes with a price.</description>
+        <skillGains>
+            <Melee>-3</Melee>
+            <Intellectual>5</Intellectual>
+        </skillGains>
+        <workDisables>None</workDisables>
+        <requiredWorkTags>None</requiredWorkTags>
+    </BackstoryDef>
+
+</Defs>

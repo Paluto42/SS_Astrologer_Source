@@ -29,7 +29,7 @@
         <relicChance>0</relicChance>
     </ThingDef>
 
-    <ThingDef Name="Astrologer_ApparelMakeableBase" ParentName="ApparelMakeableBase" Abstract="True">
+    <!--ThingDef Name="Astrologer_ApparelMakeableBase" ParentName="ApparelMakeableBase" Abstract="True">
         <stuffCategories>
             <li>Fabric</li>
             <li>Leathery</li>
@@ -43,7 +43,7 @@
             </tags>
             <canBeDesiredForIdeo>false</canBeDesiredForIdeo>
         </apparel>
-    </ThingDef>
+    </ThingDef-->
 
     <ApparelLayerDef>
         <defName>LOF_ApparelLayer_Webbing</defName>

@@ -9,7 +9,7 @@ namespace Astrologer.HarmonyPatches
         [HarmonyPostfix]
         public static void Postfix(Pawn_DraftController __instance)
         {
-            /*List<ApparelAstro> apparelOp = __instance.pawn.apparel.WornApparel.OfType<ApparelAstro>().ToList();
+            /*List<TransformApparel> apparelOp = __instance.pawn.apparel.WornApparel.OfType<TransformApparel>().ToList();
             if (apparelOp.NullOrEmpty()) return;*/
             __instance.pawn.Drawer.renderer.SetAllGraphicsDirty();
         }

@@ -37,10 +37,36 @@
         </hairColorRange>
         <skinColor>(255, 255, 255)</skinColor>
         <backstoryChildRange>
-            <SpaceFanboy22 DefClass="BackstoryDef">1</SpaceFanboy22>
+            <LOF_Backstory_GardenKid DefClass="BackstoryDef">10</LOF_Backstory_GardenKid>
+            <LOF_Backstory_Student DefClass="BackstoryDef">10</LOF_Backstory_Student>
+            <LOF_Backstory_BorderChild DefClass="BackstoryDef">6</LOF_Backstory_BorderChild>
+            <LOF_Backstory_ProblemChild DefClass="BackstoryDef">6</LOF_Backstory_ProblemChild>
+            <LOF_Backstory_BusinessmenChild DefClass="BackstoryDef">4</LOF_Backstory_BusinessmenChild>
+            <LOF_Backstory_AlienFan DefClass="BackstoryDef">4</LOF_Backstory_AlienFan>
+            <LOF_Backstory_KnightCandidate DefClass="BackstoryDef">2</LOF_Backstory_KnightCandidate>
+            <LOF_Backstory_IllegitimateChild DefClass="BackstoryDef">4</LOF_Backstory_IllegitimateChild>
+            <LOF_Backstory_YouthProGamer DefClass="BackstoryDef">4</LOF_Backstory_YouthProGamer>
+            <LOF_Backstory_BandGirl DefClass="BackstoryDef">2</LOF_Backstory_BandGirl>
+            <LOF_Backstory_AnimalFriend DefClass="BackstoryDef">4</LOF_Backstory_AnimalFriend>
+            <LOF_Backstory_HackerKid DefClass="BackstoryDef">4</LOF_Backstory_HackerKid>
         </backstoryChildRange>
         <backstoryAdultRange>
-            <SpaceResearcher25 DefClass="BackstoryDef">1</SpaceResearcher25>
+            <LOF_Backstory_SpaceExplorer DefClass="BackstoryDef">8</LOF_Backstory_SpaceExplorer>
+            <LOF_Backstory_BountyHunter DefClass="BackstoryDef">4</LOF_Backstory_BountyHunter>
+            <LOF_Backstory_DragonRider DefClass="BackstoryDef">2</LOF_Backstory_DragonRider>
+            <LOF_Backstory_Researcher DefClass="BackstoryDef">8</LOF_Backstory_Researcher>
+            <LOF_Backstory_Agent DefClass="BackstoryDef">6</LOF_Backstory_Agent>
+            <LOF_Backstory_ServingSoldier DefClass="BackstoryDef">4</LOF_Backstory_ServingSoldier>
+            <LOF_Backstory_AcePilot DefClass="BackstoryDef">2</LOF_Backstory_AcePilot>
+            <LOF_Backstory_Veteran DefClass="BackstoryDef">4</LOF_Backstory_Veteran>
+            <LOF_Backstory_FriendshipPrincess DefClass="BackstoryDef">2</LOF_Backstory_FriendshipPrincess>
+            <LOF_Backstory_Socialite DefClass="BackstoryDef">2</LOF_Backstory_Socialite>
+            <LOF_Backstory_CombatMedic DefClass="BackstoryDef">4</LOF_Backstory_CombatMedic>
+            <LOF_Backstory_Mystic DefClass="BackstoryDef">4</LOF_Backstory_Mystic>
+            <LOF_Backstory_DisasterMessenger DefClass="BackstoryDef">2</LOF_Backstory_DisasterMessenger>
+            <LOF_Backstory_Diplomat DefClass="BackstoryDef">2</LOF_Backstory_Diplomat>
+            <LOF_Backstory_RadiationSurvivor DefClass="BackstoryDef">4</LOF_Backstory_RadiationSurvivor>
+            <LOF_Backstory_Richman DefClass="BackstoryDef">6</LOF_Backstory_Richman>
         </backstoryAdultRange>
         <operatorID>LOF_VAbility_Astro</operatorID>
         <AKAbilities>

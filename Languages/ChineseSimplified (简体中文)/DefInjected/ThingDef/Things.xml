@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
-    <LOF_Weapon_PsychicRifle.comps.LOF_FireMode.mainWeaponLabel>普通射击模式</LOF_Weapon_PsychicRifle.comps.LOF_FireMode.mainWeaponLabel>
-    <LOF_Weapon_PsychicRifle.comps.LOF_FireMode.mainDescription>占星师使用时，可以切换到特殊的开火模式\n此时开火将消耗洞察力</LOF_Weapon_PsychicRifle.comps.LOF_FireMode.mainDescription>
-    <LOF_Weapon_PsychicRifle.comps.LOF_FireMode.secondaryWeaponLabel>心灵错乱射击</LOF_Weapon_PsychicRifle.comps.LOF_FireMode.secondaryWeaponLabel>
-    <LOF_Weapon_PsychicRifle.comps.LOF_FireMode.secondaryDescription>每一发子弹命中带有心灵错乱效果\n每次射击需要消耗5点洞察力</LOF_Weapon_PsychicRifle.comps.LOF_FireMode.secondaryDescription>
+    <LOF_Weapon_PsychicRifle.comps.TC_FireMode.mainWeaponLabel>普通射击模式</LOF_Weapon_PsychicRifle.comps.TC_FireMode.mainWeaponLabel>
+    <LOF_Weapon_PsychicRifle.comps.TC_FireMode.mainDescription>占星师使用时，可以切换到特殊的开火模式\n此时开火将消耗洞察力</LOF_Weapon_PsychicRifle.comps.TC_FireMode.mainDescription>
+    <LOF_Weapon_PsychicRifle.comps.TC_FireMode.secondaryWeaponLabel>心灵错乱射击</LOF_Weapon_PsychicRifle.comps.TC_FireMode.secondaryWeaponLabel>
+    <LOF_Weapon_PsychicRifle.comps.TC_FireMode.secondaryDescription>每一发子弹命中带有心灵错乱效果\n每次射击需要消耗5点洞察力</LOF_Weapon_PsychicRifle.comps.TC_FireMode.secondaryDescription>
 </LanguageData>
