@@ -3,7 +3,7 @@
 namespace Astrologer
 {
     //给武器用的
-    public class DrafterEquipment : ThingWithComps
+    /*public class DrafterEquipment : ThingWithComps
     {
         private Graphic secGraphicInt;
         Pawn_EquipmentTracker PawnEqTracker => (Pawn_EquipmentTracker)ParentHolder; //不能直接用哦
@@ -30,5 +30,5 @@ namespace Astrologer
                 return secGraphicInt;
             }
         }
-    }
+    }*/
 }

@@ -36,40 +36,20 @@ namespace Astrologer.Insight
     //每发子弹都消耗洞察力
     public class TC_FireMode : ThingComp
     {
-        public BurstFireStatus burstStatus = BurstFireStatus.None;
+        public TCP_FireMode Props => (TCP_FireMode)props;
+        public GraphicData GraphicData => Props.graphicData;
+        public TransformEquipment Equipment => parent as TransformEquipment;
+        private CompEquippable EquipmentSource => Equipment.EquipmentSource;
+        public Pawn CasterPawn => (EquipmentSource?.ParentHolder as Pawn_EquipmentTracker)?.pawn;
         private VAB_AstroTracker CompInsight => CasterPawn?.TryGetAstroTracker();//洞察力comp
-        private Verb verbInt;
-        private CompEquippable compEquippableInt;
 
         private bool isSecondaryVerbSelected = false;
-        public TCP_FireMode Props => (TCP_FireMode)props;
         public bool IsSecondaryVerbSelected => isSecondaryVerbSelected;
-        //private int burstCount = 0;
-        private int burstTick = 0;
-        public GraphicData Graphic => Props.graphicData;
-
-        private CompEquippable EquipmentSource
-        {
-            get
-            {
-                if (compEquippableInt != null) return compEquippableInt;
-                compEquippableInt = parent.TryGetComp<CompEquippable>();
-                if (compEquippableInt == null) Log.ErrorOnce(parent.LabelCap + " has CompSecondaryVerb but no CompEquippable", 50020);
-                return compEquippableInt;
-            }
-        }
-
-        public Pawn CasterPawn => Verb.CasterPawn;
-        private Verb Verb
-        {
-            get
-            {
-                verbInt ??= EquipmentSource.PrimaryVerb;
-                return verbInt;
-            }
-        }
-        //public bool ShouldCalulateBursts => Props.verbProps.burstShotCount > 0;
         public bool ShouldCalulateBursts => Props.consumeDuration > 0;
+
+        public BurstFireStatus burstStatus = BurstFireStatus.None;
+
+        private int burstTick = 0;
 
         //打完这一梭子以后过一段时间才会扣洞察力
         public override void CompTick()
@@ -121,7 +101,7 @@ namespace Astrologer.Insight
                 }
                 yield return new Command_Action//只能显示主Verb
                 {
-                    action = delegate 
+                    action = delegate
                     {
                         Messages.Message("LOF_NeedInsight".Translate(), MessageTypeDefOf.RejectInput);
                     },
@@ -151,7 +131,7 @@ namespace Astrologer.Insight
             Scribe_Values.Look(ref isSecondaryVerbSelected, "useSecondaryVerb", defaultValue: false);
             if (Scribe.mode == LoadSaveMode.PostLoadInit)
             {
-                PostExposeVerbData();
+                if (isSecondaryVerbSelected) EquipmentSource.PrimaryVerb.verbProps = Props.verbProps;
             }
         }
 
@@ -166,14 +146,6 @@ namespace Astrologer.Insight
             {
                 EquipmentSource.PrimaryVerb.verbProps = parent.def.Verbs[0];
                 isSecondaryVerbSelected = false;
-            }
-        }
-
-        private void PostExposeVerbData()
-        {
-            if (isSecondaryVerbSelected)
-            {
-                EquipmentSource.PrimaryVerb.verbProps = Props.verbProps;
             }
         }
 

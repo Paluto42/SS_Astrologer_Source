@@ -79,8 +79,8 @@
         </verbs>
     </ThingDef>
 
-    <!--=============== SMG  ====================-->\
-                <!--LU:0731-->
+    <!--=============== SMG ====================-->
+    <!--LU:0731-->
     <ThingDef ParentName="Astro_BasicWeaponRangedBase">
         <defName>LOF_Weapon_CombatSMG</defName>
         <label>格斗冲锋枪</label>
@@ -353,7 +353,7 @@
 
     <ThingDef ParentName="Astro_AKAWeaponRangedBase">
         <defName>LOF_Weapon_AMSR</defName>
-        <thingClass>Astrologer.DrafterEquipment</thingClass>
+        <!--thingClass>Astrologer.DrafterEquipment</thingClass-->
         <label>&lt;color=#AF23A5&gt;ASAT-112 "船边星云"&lt;/color&gt;</label>
         <description>当占星师使用时,可使用洞察力强化该武器,每一发消耗一定量洞察力.\n在这种模式下,每一发子弹命中会打掉对方身体的随机的一个部位,并挂一个debuff(星云射线)持续扣血.</description>
         <graphicData>
@@ -405,13 +405,13 @@
             </li>
         </verbs>
         <comps>
-            <li Class="Astrologer.TCP_DrafterGraphic">
+            <!--li Class="Astrologer.TCP_DrafterGraphic">
                 <graphicData>
                     <texPath>Things/Weapons/LOF_AMSR</texPath>
                     <graphicClass>Graphic_Single</graphicClass>
                     <drawSize>1.25</drawSize>
                 </graphicData>
-            </li>
+            </li-->
             <li Class="AKA_Ability.TCP_AKATracker">
                 <trackerGenProp>
                     <abilities>
@@ -443,7 +443,7 @@
 
     <ThingDef ParentName="Astro_AKAWeaponRangedBase">
         <defName>LOF_Weapon_Sagitta</defName>
-        <thingClass>Astrologer.DrafterEquipment</thingClass>
+        <!--thingClass>Astrologer.DrafterEquipment</thingClass-->
         <label>&lt;color=#AF23A5&gt;天箭座&lt;/color&gt;</label>
         <description>消耗洞察力可以发射一枚光子炸弹，该炸弹可以跨墙释放.</description>
         <graphicData>
@@ -496,13 +496,13 @@
             </li>
         </verbs>
         <comps>
-            <li Class="Astrologer.TCP_DrafterGraphic">
+            <!--li Class="Astrologer.TCP_DrafterGraphic">
                 <graphicData>
                     <texPath>Things/Weapons/LOF_Sagitta</texPath>
                     <graphicClass>Graphic_Single</graphicClass>
                     <drawSize>1.25</drawSize>
                 </graphicData>
-            </li>
+            </li-->
             <li Class="AKA_Ability.TCP_AKATracker">
                 <trackerGenProp>
                     <abilities>
@@ -519,6 +519,8 @@
         <defName>LOF_Weapon_PlasmaHMG</defName>
         <label>&lt;color=#00AEEF&gt;"MPE-1" 等离子重机枪&lt;/color&gt;</label>
         <description>占星师的制式装备，以强大而可靠的火力著称(如果是占星师使用的话？)</description>
+        <tickerType>Normal</tickerType>
+        <thingClass>Astrologer.TransformEquipment</thingClass>
         <graphicData>
             <texPath>Things/Weapons/LOF_ChargeHMG</texPath>
             <graphicClass>Graphic_Single</graphicClass>
@@ -604,7 +606,7 @@
                 <secondaryDescription>进行一小段时间的高速射击</secondaryDescription>
                 <consumeAmount>34</consumeAmount>
                 <!--一次连续开火的tick间隔为(burstShotCount*ticksBetweenBurstShots)-->
-                <consumeDuration>330</consumeDuration>
+                <consumeDuration>250</consumeDuration>
             </li>
         </comps>
     </ThingDef>
@@ -745,12 +747,12 @@
         </verbs>
         <comps>
             <!--实验征召贴图-->
-            <li Class="Astrologer.TCP_DrafterGraphic">
+            <!--li Class="Astrologer.TCP_DrafterGraphic">
                 <graphicData>
                     <texPath>Things/Weapons/ChargeSniper</texPath>
                     <graphicClass>Graphic_Single</graphicClass>
                 </graphicData>
-            </li>
+            </li-->
             <li Class="AKA_Ability.TCP_AKATracker">
                 <trackerGenProp>
                     <abilities>

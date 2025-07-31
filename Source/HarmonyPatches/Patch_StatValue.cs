@@ -1,5 +1,4 @@
-﻿using Astrologer.Insight;
-using HarmonyLib;
+﻿using HarmonyLib;
 using RimWorld;
 using System.Collections.Generic;
 using Verse;
@@ -8,18 +7,17 @@ namespace Astrologer.HarmonyPatches
 {
     //可切换的StatBase
     [HarmonyPatch(typeof(StatRequest), "StatBases", MethodType.Getter)]
-    public class Patch_Stat1 
+    public class Patch_StatValue
     {
         [HarmonyPostfix]
-        public static List<StatModifier> Postfix(List<StatModifier> values, StatRequest __instance) 
+        public static List<StatModifier> Postfix(List<StatModifier> values, StatRequest __instance)
         {
-            if (__instance.Def is not BuildableDef || __instance.Thing is not ThingWithComps eq) return values;
+            if (__instance.Def is not BuildableDef || __instance.Thing is not TransformEquipment eq) return values;
 
-            TC_FireMode comp = eq.GetComp<TC_FireMode>();
-            if (comp?.Props.overrideStatBase != true) return values;
+            if (eq.CompFiremode?.Props.overrideStatBase != true) return values;
 
-            VerbProperties verbProps = eq.GetComp<CompEquippable>()?.PrimaryVerb?.verbProps;
-            if (verbProps is not null) 
+            VerbProperties verbProps = eq.EquipmentSource?.PrimaryVerb?.verbProps;
+            if (verbProps is not null)
             {
                 foreach (StatModifier item in values)
                 {

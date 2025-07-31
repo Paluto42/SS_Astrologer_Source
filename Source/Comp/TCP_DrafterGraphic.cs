@@ -2,7 +2,7 @@
 
 namespace Astrologer
 {
-    public class TCP_DrafterGraphic : CompProperties
+    /*public class TCP_DrafterGraphic : CompProperties
     {
         public GraphicData graphicData;
 
@@ -16,5 +16,5 @@ namespace Astrologer
     {
         public TCP_DrafterGraphic Props => (TCP_DrafterGraphic)props;
         public GraphicData Graphic => Props.graphicData;
-    }
+    }*/
 }
