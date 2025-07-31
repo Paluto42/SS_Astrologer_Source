@@ -3,6 +3,7 @@ using Verse;
 
 namespace Astrologer
 {
+    //要和CompEquippable_AKAbility一起绑定使用
     public class TransformEquipment : ThingWithComps
     {
         #region 缓存
@@ -43,10 +44,7 @@ namespace Astrologer
         {
             get
             {
-                if (Holder == null || TransformGraphic == null || !CanTransform())
-                {
-                    return base.Graphic;
-                }
+                if (Holder == null || TransformGraphic == null || !CanTransform()) return base.Graphic;
                 return secGraphicInt ??= TransformGraphic.Graphic;
             }
         }

@@ -96,7 +96,7 @@ namespace Astrologer.Insight
                 if (isSecondaryVerbSelected)
                 {
                     SwitchVerb();
-                    string message = "LOF_NeedInsight!".Translate();
+                    string message = "LOF_NeedInsight".Translate();
                     MoteMaker.ThrowText(CasterPawn.PositionHeld.ToVector3(), CasterPawn.MapHeld, message, 3f);
                 }
                 yield return new Command_Action//只能显示主Verb

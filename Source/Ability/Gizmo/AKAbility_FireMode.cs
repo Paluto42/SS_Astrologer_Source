@@ -5,20 +5,11 @@ using Verse;
 
 namespace Astrologer.Ability
 {
+    //显示Gizmo的载体
     public class AKAbility_FireMode : AKAbility_Base
     {
-        private ThingWithComps Weapon => CasterPawn?.equipment?.Primary;
-
-        private TC_FireMode compFiremodeInt;
-        public TC_FireMode CompFiremode
-        {
-            get
-            {
-                if (compFiremodeInt != null) return compFiremodeInt;
-                compFiremodeInt = Weapon?.GetComp<TC_FireMode>();
-                return compFiremodeInt;
-            }
-        }
+        private TransformEquipment Weapon => CasterPawn?.equipment?.Primary as TransformEquipment;
+        public TC_FireMode CompFiremode => Weapon?.CompFiremode;
 
         public AKAbility_FireMode(AbilityTracker tracker) : base(tracker)
         {

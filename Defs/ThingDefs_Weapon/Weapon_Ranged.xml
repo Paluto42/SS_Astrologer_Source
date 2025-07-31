@@ -356,6 +356,7 @@
         <!--thingClass>Astrologer.DrafterEquipment</thingClass-->
         <label>&lt;color=#AF23A5&gt;ASAT-112 "船边星云"&lt;/color&gt;</label>
         <description>当占星师使用时,可使用洞察力强化该武器,每一发消耗一定量洞察力.\n在这种模式下,每一发子弹命中会打掉对方身体的随机的一个部位,并挂一个debuff(星云射线)持续扣血.</description>
+        <thingClass>Astrologer.TransformEquipment</thingClass>
         <graphicData>
             <texPath>Things/Weapons/LOF_AMSR</texPath>
             <graphicClass>Graphic_Single</graphicClass>
