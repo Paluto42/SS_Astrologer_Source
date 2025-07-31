@@ -5,12 +5,22 @@ namespace Astrologer
 {
     public class TransformEquipment : ThingWithComps
     {
+        private TC_FireMode compFiremodeInt;
+        public TC_FireMode CompFiremode
+        {
+            get
+            {
+                if (compFiremodeInt != null) return compFiremodeInt;
+                compFiremodeInt = GetComp<TC_FireMode>();
+                return compFiremodeInt;
+            }
+        }
+
         private Graphic secGraphicInt;
+        GraphicData TransformGraphic => CompFiremode?.Graphic;
+
         private Pawn_EquipmentTracker PawnEqTracker => ParentHolder as Pawn_EquipmentTracker;
         private Pawn Holder => PawnEqTracker?.pawn;
-
-        TC_FireMode CompFiremode => GetComp<TC_FireMode>();
-        GraphicData TransformGraphic => CompFiremode?.Graphic;
 
         public virtual bool CanTransform()
         {

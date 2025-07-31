@@ -100,6 +100,10 @@
     </ThingDef>
 
     <ThingDef Name="Astro_WeaponRangedBase" Abstract="True" ParentName="Astro_IndustrialWeaponBase">
+        <statBases>
+            <DeteriorationRate>0</DeteriorationRate>
+            <SellPriceFactor>0.2</SellPriceFactor>
+        </statBases>
         <thingCategories>
             <li>LOF_AS_Category_WeaponRanged</li>
         </thingCategories>

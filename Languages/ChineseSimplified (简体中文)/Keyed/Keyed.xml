@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <LanguageData>
-    <LOF_NeedInsight>需要洞察力</LOF_NeedInsight>
-    <LOF_InsufficientInsight>洞察力不足</LOF_InsufficientInsight>
+
+    <LOF_NeedInsight>洞察力不足</LOF_NeedInsight>
+    <LOF_InsufficientInsight>需要 {0} 点洞察力</LOF_InsufficientInsight>
+
 </LanguageData>

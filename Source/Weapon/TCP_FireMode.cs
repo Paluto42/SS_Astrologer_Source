@@ -18,6 +18,7 @@ namespace Astrologer.Insight
         public VerbProperties verbProps;
         public GraphicData graphicData; //变形贴图
 
+        public bool overrideStatBase = false;
         public int consumeAmount = 1;
         public int consumeDuration = 0;
         public string mainIcon;
@@ -115,14 +116,17 @@ namespace Astrologer.Insight
                 if (isSecondaryVerbSelected)
                 {
                     SwitchVerb();
-                    string message = "洞察力不足了!".Translate();
+                    string message = "LOF_NeedInsight!".Translate();
                     MoteMaker.ThrowText(CasterPawn.PositionHeld.ToVector3(), CasterPawn.MapHeld, message, 3f);
                 }
                 yield return new Command_Action//只能显示主Verb
                 {
-                    action = delegate { },
+                    action = delegate 
+                    {
+                        Messages.Message("LOF_NeedInsight".Translate(), MessageTypeDefOf.RejectInput);
+                    },
                     defaultLabel = Props.mainWeaponLabel,
-                    defaultDesc = Props.mainDescription,
+                    defaultDesc = Props.mainDescription + "\n" + "LOF_InsufficientInsight".Translate(Props.consumeAmount).Colorize(ColorLibrary.Yellow),
                     icon = ContentFinder<Texture2D>.Get(Props.mainIcon, reportFailure: false)
                 };
                 yield break;
@@ -131,7 +135,7 @@ namespace Astrologer.Insight
             {
                 action = SwitchVerb,
                 defaultLabel = IsSecondaryVerbSelected ? Props.secondaryWeaponLabel : Props.mainWeaponLabel,
-                defaultDesc = IsSecondaryVerbSelected ? Props.secondaryDescription : Props.mainDescription,
+                defaultDesc = IsSecondaryVerbSelected ? Props.secondaryDescription : Props.mainDescription + "\n" + "LOF_InsufficientInsight".Translate(Props.consumeAmount).Colorize(ColorLibrary.Yellow),
                 icon = ContentFinder<Texture2D>.Get(text, reportFailure: false)
             };
 

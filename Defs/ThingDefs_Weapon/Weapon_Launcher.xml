@@ -4,7 +4,7 @@
     <ThingDef ParentName="Astro_WeaponRangedBase">
         <defName>LOF_Weapon_TandemHEATLauncher</defName>
         <label>串联破甲战斗部发射器</label>
-        <description>一次性反重甲武器，用完弃用.</description>
+        <description>通过各种堆料制作的一次性火箭筒。虽然威力巨大，但总觉得有点浪费...</description>
         <tickerType>Normal</tickerType>
         <graphicData>
             <texPath>Things/Weapons/LOF_TandemHEATLauncher</texPath>
@@ -19,14 +19,16 @@
             <li>LOF_WeaponRanged</li>
         </weaponTags>
         <!--占位,原版数值-->
+        <stackLimit>1</stackLimit>
         <statBases>
+            <MarketValue>1500</MarketValue>
             <WorkToMake>10500</WorkToMake>
-            <Mass>6</Mass>
-            <RangedWeapon_Cooldown>2.5</RangedWeapon_Cooldown>
+            <Mass>8</Mass>
+            <RangedWeapon_Cooldown>3.5</RangedWeapon_Cooldown>
         </statBases>
         <costList>
-            <Steel>40</Steel>
-            <ComponentIndustrial>1</ComponentIndustrial>
+            <Steel>300</Steel>
+            <ComponentIndustrial>5</ComponentIndustrial>
         </costList>
         <recipeMaker>
             <researchPrerequisite>LOF_Research_BaseGun</researchPrerequisite>
@@ -38,12 +40,11 @@
             <li>
                 <verbClass>Verb_ShootOneUse</verbClass>
                 <hasStandardCommand>true</hasStandardCommand>
-                <!--应该写个新的弹药种类-->
                 <defaultProjectile>LOF_Bullet_TandemHEAT</defaultProjectile>
                 <ai_IsBuildingDestroyer>false</ai_IsBuildingDestroyer>
-                <forcedMissRadius>0.1</forcedMissRadius>
-                <warmupTime>2.5</warmupTime>
-                <range>30</range>
+                <forcedMissRadius>0.9</forcedMissRadius>
+                <warmupTime>3.5</warmupTime>
+                <range>40</range>
                 <burstShotCount>1</burstShotCount>
                 <soundCast>InfernoCannon_Fire</soundCast>
                 <soundCastTail>GunTail_Heavy</soundCastTail>
@@ -57,69 +58,6 @@
             <li Class="CompProperties_Explosive">
                 <damageAmountBase>150</damageAmountBase>
                 <explosiveRadius>2</explosiveRadius>
-                <explosiveDamageType>Bomb</explosiveDamageType>
-                <requiredDamageTypeToExplode>Flame</requiredDamageTypeToExplode>
-            </li>
-        </comps>
-    </ThingDef>
-
-    <ThingDef ParentName="Astro_WeaponRangedBase">
-        <defName>LOF_Weapon_CarlGustaf</defName>
-        <label>&lt;color=#00AEEF&gt;"MPE-4" 反重甲武器&lt;/color&gt;</label>
-        <description>可再装填的反重甲无后坐力步枪.</description>
-        <tickerType>Normal</tickerType>
-        <graphicData>
-            <texPath>Things/Weapons/LOF_RailgunAT</texPath>
-            <graphicClass>Graphic_Single</graphicClass>
-        </graphicData>
-        <soundInteract>Interact_Rifle</soundInteract>
-        <weaponClasses>
-            <li>RangedHeavy</li>
-        </weaponClasses>
-        <weaponTags>
-            <li>LOF_WeaponRanged</li>
-        </weaponTags>
-        <!--占位,原版数值-->
-        <statBases>
-            <WorkToMake>10500</WorkToMake>
-            <Mass>6</Mass>
-            <RangedWeapon_Cooldown>5</RangedWeapon_Cooldown>
-        </statBases>
-        <costList>
-            <Steel>20</Steel>
-            <LOF_Thing_StarlightIron>20</LOF_Thing_StarlightIron>
-            <ComponentIndustrial>1</ComponentIndustrial>
-        </costList>
-        <recipeMaker>
-            <researchPrerequisite>LOF_Research_SeriesWeapon_MPE</researchPrerequisite>
-            <skillRequirements>
-                <Crafting>6</Crafting>
-            </skillRequirements>
-        </recipeMaker>
-        <verbs>
-            <li>
-                <verbClass>Verb_Shoot</verbClass>
-                <hasStandardCommand>true</hasStandardCommand>
-                <!--explosionRadiusRingColor>(0.72, 0.72, 0.72)</explosionRadiusRingColor-->
-                <!--应该写个新的弹药种类-->
-                <defaultProjectile>LOF_Bullet_TandemHEAT</defaultProjectile>
-                <ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
-                <forcedMissRadius>0.1</forcedMissRadius>
-                <warmupTime>2.5</warmupTime>
-                <range>55</range>
-                <minRange>8</minRange>
-                <soundCast>InfernoCannon_Fire</soundCast>
-                <soundCastTail>GunTail_Heavy</soundCastTail>
-                <targetParams>
-                    <canTargetLocations>true</canTargetLocations>
-                </targetParams>
-                <muzzleFlashScale>14</muzzleFlashScale>
-            </li>
-        </verbs>
-        <comps>
-            <li Class="CompProperties_Explosive">
-                <damageAmountBase>50</damageAmountBase>
-                <explosiveRadius>1</explosiveRadius>
                 <explosiveDamageType>Bomb</explosiveDamageType>
                 <requiredDamageTypeToExplode>Flame</requiredDamageTypeToExplode>
             </li>

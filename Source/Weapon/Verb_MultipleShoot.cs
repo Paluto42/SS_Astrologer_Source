@@ -2,15 +2,15 @@
 
 namespace Astrologer
 {
-    public class VerbProperties_Shotgun : VerbProperties
+    public class VerbProperties_MultipleShoot : VerbProperties
     {
         public int projectilesCount = 1;
     }
 
     //霰弹说是 凑合用
-    public class Verb_ShootShotgun : Verb_Shoot
+    public class Verb_MultipleShoot : Verb_Shoot
     {
-        protected VerbProperties_Shotgun Props => (VerbProperties_Shotgun)this.verbProps;
+        protected VerbProperties_MultipleShoot Props => (VerbProperties_MultipleShoot)this.verbProps;
         protected override bool TryCastShot()
         {
             bool result = base.TryCastShot();

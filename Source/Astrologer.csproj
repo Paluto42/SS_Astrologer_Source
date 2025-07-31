@@ -125,6 +125,7 @@
     <Compile Include="HarmonyPatches\Patch_MassCapacity.cs" />
     <Compile Include="HarmonyPatches\Patch_ProcessApparel.cs" />
     <Compile Include="HarmonyPatches\Patch_JobDriver.cs" />
+    <Compile Include="HarmonyPatches\Patch_StatValue.cs" />
     <Compile Include="Insight\InteractableComp\TCP_InsightUsable.cs" />
     <Compile Include="Insight\InteractableComp\TCP_OpenBillTab.cs" />
     <Compile Include="Misc\MC_Astrologer.cs" />
@@ -168,7 +169,7 @@
     <Compile Include="TypeDef.cs" />
     <Compile Include="Utility.cs" />
     <Compile Include="Weapon\Verb_InsightShoot.cs" />
-    <Compile Include="Weapon\Verb_ShootShotgun.cs" />
+    <Compile Include="Weapon\Verb_MultipleShoot.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>

@@ -25,10 +25,11 @@
         </tools>
     </ThingDef>
 
+    <!--LU:0731-->
     <ThingDef ParentName="Astro_BasicWeaponRangedBase">
         <defName>LOF_Weapon_EagleMoon</defName>
         <label>鹰月</label>
-        <description>一把暗红色的手炮.</description>
+        <description>一把普通的左轮，让你感觉充斥光能.</description>
         <graphicData>
             <texPath>Things/Weapons/LOF_Relover</texPath>
             <graphicClass>Graphic_Single</graphicClass>
@@ -44,16 +45,19 @@
         </weaponTags>
         <!--占位,原版数值-->
         <statBases>
-            <WorkToMake>8000</WorkToMake>
-            <Mass>1.2</Mass>
-            <AccuracyTouch>0.8</AccuracyTouch>
-            <AccuracyShort>0.85</AccuracyShort>
-            <AccuracyMedium>0.75</AccuracyMedium>
-            <AccuracyLong>0.45</AccuracyLong>
-            <RangedWeapon_Cooldown>0.8</RangedWeapon_Cooldown>
+            <MarketValue>500</MarketValue>
+            <Flammability>0.1</Flammability>
+            <Beauty>2</Beauty>
+            <WorkToMake>200</WorkToMake>
+            <Mass>2</Mass>
+            <AccuracyTouch>0.65</AccuracyTouch>
+            <AccuracyShort>0.60</AccuracyShort>
+            <AccuracyMedium>0.50</AccuracyMedium>
+            <AccuracyLong>0.30</AccuracyLong>
+            <RangedWeapon_Cooldown>1.0</RangedWeapon_Cooldown>
         </statBases>
         <costList>
-            <LOF_Thing_StarlightIron>30</LOF_Thing_StarlightIron>
+            <Steel>100</Steel>
             <ComponentIndustrial>2</ComponentIndustrial>
         </costList>
         <recipeMaker>
@@ -65,10 +69,9 @@
             <li>
                 <verbClass>Verb_Shoot</verbClass>
                 <hasStandardCommand>true</hasStandardCommand>
-                <!--应该写个新的弹药种类-->
                 <defaultProjectile>LOF_Projectile_EagleMoon</defaultProjectile>
-                <warmupTime>0.4</warmupTime>
-                <range>25.9</range>
+                <warmupTime>1.0</warmupTime>
+                <range>20</range>
                 <soundCast>Shot_Revolver</soundCast>
                 <soundCastTail>GunTail_Heavy</soundCastTail>
                 <muzzleFlashScale>9</muzzleFlashScale>
@@ -76,12 +79,12 @@
         </verbs>
     </ThingDef>
 
-    <!--=============== SMG  ====================-->
-
+    <!--=============== SMG  ====================-->\
+                <!--LU:0731-->
     <ThingDef ParentName="Astro_BasicWeaponRangedBase">
         <defName>LOF_Weapon_CombatSMG</defName>
         <label>格斗冲锋枪</label>
-        <description>这把冲锋枪设计于繁星帝国内战的时代，便宜和耐用是该枪的代名词.</description>
+        <description>这种冲锋枪来源甚广，在一些星球，她被称为短剑。一些占星师收藏家愿意花大价钱收购一把来自原产地的正品格斗冲锋枪。</description>
         <graphicData>
             <texPath>Things/Weapons/LOF_CombatSMG</texPath>
             <graphicClass>Graphic_Single</graphicClass>
@@ -102,13 +105,17 @@
         </recipeMaker>
         <!--占位,原版数值-->
         <statBases>
-            <WorkToMake>20000</WorkToMake>
+            <MarketValue>500</MarketValue>
+            <SellPriceFactor>0.1</SellPriceFactor>
+            <Beauty>3</Beauty>
+            <Flammability>0.1</Flammability>
+            <WorkToMake>300</WorkToMake>
             <Mass>2.5</Mass>
-            <AccuracyTouch>0.85</AccuracyTouch>
-            <AccuracyShort>0.65</AccuracyShort>
-            <AccuracyMedium>0.45</AccuracyMedium>
-            <AccuracyLong>0.20</AccuracyLong>
-            <RangedWeapon_Cooldown>0.36</RangedWeapon_Cooldown>
+            <AccuracyTouch>0.60</AccuracyTouch>
+            <AccuracyShort>0.50</AccuracyShort>
+            <AccuracyMedium>0.30</AccuracyMedium>
+            <AccuracyLong>0.10</AccuracyLong>
+            <RangedWeapon_Cooldown>1.0</RangedWeapon_Cooldown>
         </statBases>
         <costList>
             <LOF_Thing_StarlightIron>70</LOF_Thing_StarlightIron>
@@ -119,10 +126,10 @@
                 <verbClass>Verb_Shoot</verbClass>
                 <hasStandardCommand>true</hasStandardCommand>
                 <defaultProjectile>LOF_Bullet_SMG</defaultProjectile>
-                <warmupTime>0.6</warmupTime>
-                <range>12.9</range>
-                <burstShotCount>6</burstShotCount>
-                <ticksBetweenBurstShots>6</ticksBetweenBurstShots>
+                <warmupTime>2.0</warmupTime>
+                <range>20</range>
+                <burstShotCount>10</burstShotCount>
+                <ticksBetweenBurstShots>5</ticksBetweenBurstShots>
                 <soundCast>Shot_MachinePistol</soundCast>
                 <soundCastTail>GunTail_Medium</soundCastTail>
                 <muzzleFlashScale>9</muzzleFlashScale>
@@ -131,11 +138,11 @@
     </ThingDef>
 
     <!--=============== Shotguns  ====================-->
-
+    <!--LU:0731-->
     <ThingDef ParentName="Astro_BasicWeaponRangedBase">
         <defName>LOF_Weapon_PiercingShotgun</defName>
         <label>破甲霰弹枪</label>
-        <description>这是一把开罐器.</description>
+        <description>这种老式的火药枪械在过去的城市巷战，以及镇暴中表现优异。</description>
         <graphicData>
             <texPath>Things/Weapons/LOF_Shotgun</texPath>
             <graphicClass>Graphic_Single</graphicClass>
@@ -149,17 +156,20 @@
         </weaponTags>
         <!--占位,原版数值-->
         <statBases>
-            <WorkToMake>12000</WorkToMake>
-            <Mass>3.4</Mass>
-            <AccuracyTouch>0.80</AccuracyTouch>
+            <MarketValue>600</MarketValue>
+            <Beauty>3</Beauty>
+            <Flammability>0.1</Flammability>
+            <WorkToMake>300</WorkToMake>
+            <Mass>3</Mass>
+            <AccuracyTouch>1</AccuracyTouch>
             <AccuracyShort>0.87</AccuracyShort>
-            <AccuracyMedium>0.77</AccuracyMedium>
-            <AccuracyLong>0.64</AccuracyLong>
-            <RangedWeapon_Cooldown>1.00</RangedWeapon_Cooldown>
+            <AccuracyMedium>0.50</AccuracyMedium>
+            <AccuracyLong>0.20</AccuracyLong>
+            <RangedWeapon_Cooldown>0.1</RangedWeapon_Cooldown>
         </statBases>
         <costList>
-            <LOF_Thing_StarlightIron>60</LOF_Thing_StarlightIron>
-            <ComponentIndustrial>5</ComponentIndustrial>
+            <Steel>100</Steel>
+            <ComponentIndustrial>3</ComponentIndustrial>
         </costList>
         <recipeMaker>
             <skillRequirements>
@@ -167,14 +177,13 @@
             </skillRequirements>
         </recipeMaker>
         <verbs>
-            <li Class="Astrologer.VerbProperties_Shotgun">
-                <verbClass>Astrologer.Verb_ShootShotgun</verbClass>
+            <li Class="Astrologer.VerbProperties_MultipleShoot">
+                <verbClass>Astrologer.Verb_MultipleShoot</verbClass>
                 <hasStandardCommand>true</hasStandardCommand>
-                <!--应该写个新的弹药种类-->
                 <defaultProjectile>LOF_Bullet_Shotgun</defaultProjectile>
-                <projectilesCount>4</projectilesCount>
-                <warmupTime>0.5</warmupTime>
-                <range>17.9</range>
+                <projectilesCount>15</projectilesCount>
+                <warmupTime>1.5</warmupTime>
+                <range>15</range>
                 <soundCast>Shot_Shotgun</soundCast>
                 <soundCastTail>GunTail_Heavy</soundCastTail>
                 <muzzleFlashScale>9</muzzleFlashScale>
@@ -182,10 +191,11 @@
         </verbs>
     </ThingDef>
 
+    <!--LU:0731-->
     <ThingDef ParentName="Astro_BasicWeaponRangedBase">
         <defName>LOF_Weapon_RapidShotgun</defName>
         <label>&lt;color=#00AEEF&gt;"AMA-1" 电能霰弹枪&lt;/color&gt;</label>
-        <description>一把能快速发射的霰弹枪，对目标造成EMP伤害。</description>
+        <description>使用电荷弹药的霰弹枪，设计初衷是在巷战环境中破坏敌方的高护甲单位。</description>
         <graphicData>
             <texPath>Things/Weapons/LOF_ChargeShotgun</texPath>
             <graphicClass>Graphic_Single</graphicClass>
@@ -198,17 +208,22 @@
         </weaponTags>
         <!--占位,原版数值-->
         <statBases>
-            <WorkToMake>12000</WorkToMake>
-            <Mass>3.4</Mass>
-            <AccuracyTouch>0.80</AccuracyTouch>
-            <AccuracyShort>0.87</AccuracyShort>
-            <AccuracyMedium>0.77</AccuracyMedium>
-            <AccuracyLong>0.64</AccuracyLong>
-            <RangedWeapon_Cooldown>1.25</RangedWeapon_Cooldown>
+            <MarketValue>2000</MarketValue>
+            <Beauty>2</Beauty>
+            <Flammability>0</Flammability>
+            <WorkToMake>1300</WorkToMake>
+            <Mass>3.0</Mass>
+            <AccuracyTouch>0.78</AccuracyTouch>
+            <AccuracyShort>0.70</AccuracyShort>
+            <AccuracyMedium>0.50</AccuracyMedium>
+            <AccuracyLong>0.50</AccuracyLong>
+            <RangedWeapon_Cooldown>0.5</RangedWeapon_Cooldown>
         </statBases>
         <costList>
-            <LOF_Thing_StarlightIron>75</LOF_Thing_StarlightIron>
-            <ComponentIndustrial>8</ComponentIndustrial>
+            <LOF_Thing_StarlightIron>350</LOF_Thing_StarlightIron>
+            <Plasteel>100</Plasteel>
+            <Gold>50</Gold>
+            <ComponentIndustrial>20</ComponentIndustrial>
         </costList>
         <recipeMaker>
             <researchPrerequisite>LOF_Research_SeriesWeapon_AMA</researchPrerequisite>
@@ -217,15 +232,13 @@
             </skillRequirements>
         </recipeMaker>
         <verbs>
-            <li>
-                <verbClass>Verb_Shoot</verbClass>
+            <li Class="Astrologer.VerbProperties_MultipleShoot">
+                <verbClass>Astrologer.Verb_MultipleShoot</verbClass>
                 <hasStandardCommand>true</hasStandardCommand>
-                <!--应该写个新的弹药种类-->
                 <defaultProjectile>LOF_Bullet_StunShotgun</defaultProjectile>
-                <warmupTime>0.5</warmupTime>
-                <range>17.9</range>
-                <burstShotCount>2</burstShotCount>
-                <ticksBetweenBurstShots>12</ticksBetweenBurstShots>
+                <projectilesCount>15</projectilesCount>
+                <warmupTime>1.5</warmupTime>
+                <range>15</range>
                 <soundCast>Shot_Shotgun</soundCast>
                 <soundCastTail>GunTail_Heavy</soundCastTail>
                 <muzzleFlashScale>9</muzzleFlashScale>
@@ -234,11 +247,11 @@
     </ThingDef>
 
     <!--=============== Rifles  ====================-->
-
+    <!--LU:0731-->
     <ThingDef ParentName="Astro_AKAWeaponRangedBase">
         <defName>LOF_Weapon_PsychicRifle</defName>
         <label>&lt;color=#00AEEF&gt;"MK-5" 等离子心灵干扰步枪&lt;/color&gt;</label>
-        <description>标准射手步枪,点击切换模式,此时该步枪每发子弹会有心灵错乱效果.</description>
+        <description>在一些报告中，有占星师声称自己见到了恐惧之神的化身。祂从战场上走过，接着所有人都陷入了不可控制的错乱和恐惧之中。这件事引起了装备部的兴趣，通过研究那些陷入疯狂的人，他们最终研发出了这把武器。</description>
         <thingClass>Astrologer.TransformEquipment</thingClass>
         <graphicData>
             <texPath>Things/Weapons/LOF_PsychicRifle</texPath>
@@ -254,17 +267,23 @@
         </weaponTags>
         <!--占位,原版数值-->
         <statBases>
-            <WorkToMake>56000</WorkToMake>
-            <Mass>6</Mass>
-            <AccuracyTouch>0.85</AccuracyTouch>
-            <AccuracyShort>0.80</AccuracyShort>
-            <AccuracyMedium>0.78</AccuracyMedium>
-            <AccuracyLong>0.75</AccuracyLong>
-            <RangedWeapon_Cooldown>0.75</RangedWeapon_Cooldown>
+            <MarketValue>1500</MarketValue>
+            <Flammability>0</Flammability>
+            <Beauty>-3</Beauty>
+            <WorkToMake>1500</WorkToMake>
+            <Mass>5</Mass>
+            <AccuracyTouch>0.60</AccuracyTouch>
+            <AccuracyShort>0.70</AccuracyShort>
+            <AccuracyMedium>0.60</AccuracyMedium>
+            <AccuracyLong>0.60</AccuracyLong>
+            <RangedWeapon_Cooldown>1.0</RangedWeapon_Cooldown>
         </statBases>
         <costList>
-            <LOF_Thing_StarlightIron>75</LOF_Thing_StarlightIron>
-            <ComponentIndustrial>6</ComponentIndustrial>
+            <LOF_Thing_StarlightIron>500</LOF_Thing_StarlightIron>
+            <Plasteel>150</Plasteel>
+            <Gold>50</Gold>
+            <ComponentIndustrial>20</ComponentIndustrial>
+            <ComponentSpacer>5</ComponentSpacer>
         </costList>
         <recipeMaker>
             <researchPrerequisite>LOF_Research_SeriesWeapon_MK</researchPrerequisite>
@@ -277,8 +296,15 @@
                 <verbClass>Astrologer.Insight.Verb_InsightShoot</verbClass>
                 <hasStandardCommand>true</hasStandardCommand>
                 <defaultProjectile>LOF_Bullet_Rifle</defaultProjectile>
-                <warmupTime>0.25</warmupTime>
+                <burstShotCount>3</burstShotCount>
+                <ticksBetweenBurstShots>9</ticksBetweenBurstShots>
+                <warmupTime>1.5</warmupTime>
                 <range>30</range>
+                <accuracyTouch>0.60</accuracyTouch>
+                <accuracyShort>0.70</accuracyShort>
+                <accuracyMedium>0.60</accuracyMedium>
+                <accuracyLong>0.60</accuracyLong>
+                <defaultCooldownTime>1.0</defaultCooldownTime>
                 <soundCast>Shot_ChargeRifle</soundCast>
                 <soundCastTail>GunTail_Heavy</soundCastTail>
                 <muzzleFlashScale>9</muzzleFlashScale>
@@ -302,13 +328,19 @@
                     <verbClass>Astrologer.Insight.Verb_InsightShoot</verbClass>
                     <hasStandardCommand>true</hasStandardCommand>
                     <defaultProjectile>LOF_Bullet_PsychicInsanity</defaultProjectile>
-                    <warmupTime>0.25</warmupTime>
+                    <warmupTime>1.0</warmupTime>
                     <range>30</range>
+                    <accuracyTouch>1.0</accuracyTouch>
+                    <accuracyShort>1.0</accuracyShort>
+                    <accuracyMedium>1.0</accuracyMedium>
+                    <accuracyLong>1.0</accuracyLong>
+                    <defaultCooldownTime>1.0</defaultCooldownTime>
                     <soundCast>Shot_ChargeRifle</soundCast>
                     <soundCastTail>GunTail_Heavy</soundCastTail>
                     <muzzleFlashScale>9</muzzleFlashScale>
                 </verbProps>
-                <consumeAmount>2</consumeAmount>
+                <overrideStatBase>true</overrideStatBase>
+                <consumeAmount>50</consumeAmount>
                 <mainWeaponLabel>Normal FireMode</mainWeaponLabel>
                 <mainIcon>UI/Buttons/NormalFire</mainIcon>
                 <mainDescription>When used by the Astrologer, you can switch to a special firing mode that consume insight.</mainDescription>
@@ -482,11 +514,11 @@
     </ThingDef>
 
     <!--=============== Heavy  ====================-->
-
+    <!--LU:0731-->
     <ThingDef ParentName="Astro_AKAWeaponRangedBase">
         <defName>LOF_Weapon_PlasmaHMG</defName>
         <label>&lt;color=#00AEEF&gt;"MPE-1" 等离子重机枪&lt;/color&gt;</label>
-        <description>MPE-1是占星帝国初次遭遇暗灵时设计给前线战斗人员的制式武器.\n消耗洞察力可以进行一小段时间的高速射击.</description>
+        <description>占星师的制式装备，以强大而可靠的火力著称(如果是占星师使用的话？)</description>
         <graphicData>
             <texPath>Things/Weapons/LOF_ChargeHMG</texPath>
             <graphicClass>Graphic_Single</graphicClass>
@@ -499,17 +531,20 @@
         </weaponTags>
         <!--占位,原版数值-->
         <statBases>
-            <WorkToMake>56000</WorkToMake>
+            <MarketValue>1500</MarketValue>
+            <Beauty>4</Beauty>
+            <Flammability>0</Flammability>
+            <WorkToMake>1200</WorkToMake>
             <Mass>8</Mass>
-            <AccuracyTouch>0.80</AccuracyTouch>
-            <AccuracyShort>0.87</AccuracyShort>
-            <AccuracyMedium>0.77</AccuracyMedium>
-            <AccuracyLong>0.64</AccuracyLong>
-            <RangedWeapon_Cooldown>0.6</RangedWeapon_Cooldown>
+            <AccuracyTouch>0.40</AccuracyTouch>
+            <AccuracyShort>0.50</AccuracyShort>
+            <AccuracyMedium>0.40</AccuracyMedium>
+            <RangedWeapon_Cooldown>2.0</RangedWeapon_Cooldown>
         </statBases>
         <costList>
-            <LOF_Thing_StarlightIron>150</LOF_Thing_StarlightIron>
-            <ComponentIndustrial>30</ComponentIndustrial>
+            <LOF_Thing_StarlightIron>500</LOF_Thing_StarlightIron>
+            <Gold>50</Gold>
+            <ComponentIndustrial>15</ComponentIndustrial>
         </costList>
         <recipeMaker>
             <researchPrerequisite>LOF_Research_SeriesWeapon_MPE</researchPrerequisite>
@@ -521,11 +556,15 @@
             <li>
                 <verbClass>Astrologer.Insight.Verb_InsightShoot</verbClass>
                 <hasStandardCommand>true</hasStandardCommand>
-                <defaultProjectile>LOF_Bullet_ChargeRifle</defaultProjectile>
-                <warmupTime>1.2</warmupTime>
-                <range>60</range>
-                <burstShotCount>8</burstShotCount>
-                <ticksBetweenBurstShots>6</ticksBetweenBurstShots>
+                <defaultProjectile>LOF_Bullet_ChargeHMG</defaultProjectile>
+                <warmupTime>2.0</warmupTime>
+                <defaultCooldownTime>2.0</defaultCooldownTime>
+                <accuracyTouch>0.40</accuracyTouch>
+                <accuracyShort>0.50</accuracyShort>
+                <accuracyMedium>0.40</accuracyMedium>
+                <range>30</range>
+                <burstShotCount>30</burstShotCount>
+                <ticksBetweenBurstShots>5</ticksBetweenBurstShots>
                 <soundCast>Shot_ChargeRifle</soundCast>
                 <soundCastTail>GunTail_Medium</soundCastTail>
                 <muzzleFlashScale>9</muzzleFlashScale>
@@ -540,36 +579,113 @@
                 </trackerGenProp>
             </li>
             <li Class="Astrologer.Insight.TCP_FireMode">
-                <mainWeaponLabel>普通射击模式</mainWeaponLabel>
-                <mainIcon>UI/Buttons/NormalFire</mainIcon>
-                <mainDescription>占星师使用时可切换到特殊的开火模式\n开火将消耗洞察力</mainDescription>
-                <secondaryWeaponLabel>过载射击模式</secondaryWeaponLabel>
-                <secondaryIcon>UI/Buttons/SpecialFire</secondaryIcon>
-                <secondaryDescription>进行一小段时间的高速射击\n需要消耗10点洞察力</secondaryDescription>
-                <consumeAmount>10</consumeAmount>
-                <!--一次连续开火的tick间隔为(burstShotCount*ticksBetweenBurstShots)-->
-                <consumeDuration>80</consumeDuration>
                 <verbProps>
                     <verbClass>Astrologer.Insight.Verb_InsightShoot</verbClass>
                     <hasStandardCommand>true</hasStandardCommand>
-                    <defaultProjectile>LOF_Bullet_ChargeRifle</defaultProjectile>
-                    <warmupTime>0.5</warmupTime>
-                    <range>60</range>
-                    <burstShotCount>18</burstShotCount>
-                    <ticksBetweenBurstShots>4</ticksBetweenBurstShots>
-                    <soundCast>Shot_Shotgun</soundCast>
+                    <defaultProjectile>LOF_Bullet_ChargeHMG</defaultProjectile>
+                    <warmupTime>2.5</warmupTime>
+                    <defaultCooldownTime>3.5</defaultCooldownTime>
+                    <accuracyTouch>0.40</accuracyTouch>
+                    <accuracyShort>0.50</accuracyShort>
+                    <accuracyMedium>0.40</accuracyMedium>
+                    <range>30</range>
+                    <burstShotCount>80</burstShotCount>
+                    <ticksBetweenBurstShots>3</ticksBetweenBurstShots>
+                    <soundCast>Shot_ChargeRifle</soundCast>
                     <soundCastTail>GunTail_Heavy</soundCastTail>
                     <muzzleFlashScale>9</muzzleFlashScale>
                 </verbProps>
+                <overrideStatBase>true</overrideStatBase>
+                <mainWeaponLabel>普通射击模式</mainWeaponLabel>
+                <mainIcon>UI/Buttons/NormalFire</mainIcon>
+                <mainDescription>占星师使用时可切换到特殊的开火模式,开火将消耗洞察力</mainDescription>
+                <secondaryWeaponLabel>过载射击模式</secondaryWeaponLabel>
+                <secondaryIcon>UI/Buttons/SpecialFire</secondaryIcon>
+                <secondaryDescription>进行一小段时间的高速射击</secondaryDescription>
+                <consumeAmount>34</consumeAmount>
+                <!--一次连续开火的tick间隔为(burstShotCount*ticksBetweenBurstShots)-->
+                <consumeDuration>330</consumeDuration>
             </li>
         </comps>
     </ThingDef>
 
+    <!--LU:0731-->
+    <ThingDef ParentName="Astro_WeaponRangedBase">
+        <defName>LOF_Weapon_RailgunAT</defName>
+        <label>&lt;color=#00AEEF&gt;"MPE-4" 反重甲武器&lt;/color&gt;</label>
+        <description>由占星师装备部第一研究所根据陆军特战部队的“反重甲计划”研制的一款大威力高穿甲武器。它通过电磁加速特殊材料弹药实现破坏装甲，如果再配合占星师的洞察能力，则可以破坏护盾。</description>
+        <!--tickerType>Normal</tickerType-->
+        <graphicData>
+            <texPath>Things/Weapons/LOF_RailgunAT</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <soundInteract>Interact_Rifle</soundInteract>
+        <weaponClasses>
+            <li>RangedHeavy</li>
+        </weaponClasses>
+        <weaponTags>
+            <li>LOF_WeaponRanged</li>
+        </weaponTags>
+        <!--占位,原版数值-->
+        <statBases>
+            <MarketValue>2000</MarketValue>
+            <Flammability>0</Flammability>
+            <Beauty>3</Beauty>
+            <WorkToMake>1500</WorkToMake>
+            <Mass>5</Mass>
+            <AccuracyTouch>0.95</AccuracyTouch>
+            <AccuracyShort>1.00</AccuracyShort>
+            <AccuracyMedium>0.90</AccuracyMedium>
+            <AccuracyLong>0.80</AccuracyLong>
+            <RangedWeapon_Cooldown>0.5</RangedWeapon_Cooldown>
+        </statBases>
+        <costList>
+            <LOF_Thing_StarlightIron>500</LOF_Thing_StarlightIron>
+            <Plasteel>100</Plasteel>
+            <Gold>50</Gold>
+            <ComponentIndustrial>20</ComponentIndustrial>
+            <ComponentSpacer>4</ComponentSpacer>
+        </costList>
+        <recipeMaker>
+            <researchPrerequisite>LOF_Research_SeriesWeapon_MPE</researchPrerequisite>
+            <skillRequirements>
+                <Crafting>6</Crafting>
+            </skillRequirements>
+        </recipeMaker>
+        <verbs>
+            <li>
+                <verbClass>Verb_Shoot</verbClass>
+                <hasStandardCommand>true</hasStandardCommand>
+                <!--explosionRadiusRingColor>(0.72, 0.72, 0.72)</explosionRadiusRingColor-->
+                <defaultProjectile>LOF_Bullet_RailgunAT</defaultProjectile>
+                <ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
+                <!--forcedMissRadius>0.1</forcedMissRadius-->
+                <warmupTime>2.5</warmupTime>
+                <range>59.9</range>
+                <!--minRange>8</minRange-->
+                <soundCast>InfernoCannon_Fire</soundCast>
+                <soundCastTail>GunTail_Heavy</soundCastTail>
+                <targetParams>
+                    <canTargetLocations>true</canTargetLocations>
+                </targetParams>
+                <muzzleFlashScale>14</muzzleFlashScale>
+            </li>
+        </verbs>
+        <!--comps>
+            <li Class="CompProperties_Explosive">
+                <damageAmountBase>50</damageAmountBase>
+                <explosiveRadius>1</explosiveRadius>
+                <explosiveDamageType>Bomb</explosiveDamageType>
+                <requiredDamageTypeToExplode>Flame</requiredDamageTypeToExplode>
+            </li>
+        </comps-->
+    </ThingDef>
+
     <ThingDef ParentName="Astro_AKAWeaponRangedBase">
-        <defName>LOF_Weapon_Railgun</defName>
+        <defName>LOF_Weapon_ShipborneRailgun</defName>
         <label>&lt;color=#AF23A5&gt;ES-117 "英仙座" 舰载轨道炮&lt;/color&gt;</label>
         <description>手持轨道炮.</description>
-        <tickerType>Normal</tickerType>
+        <!--tickerType>Normal</tickerType-->
         <graphicData>
             <texPath>Things/Weapons/LOF_Railgun</texPath>
             <graphicClass>Graphic_Single</graphicClass>
