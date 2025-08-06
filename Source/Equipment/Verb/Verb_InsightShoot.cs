@@ -7,7 +7,7 @@ namespace Astrologer.Insight
         //private VAB_AstroTracker CompInsightInt => CasterPawn?.TryGetAstroTracker();
         public TC_FireMode CompFireMode => EquipmentSource?.GetComp<TC_FireMode>();
         public bool ShouldConsumeInsight => CompFireMode.IsSecondaryVerbSelected;
-        public bool ShouldCalulateBursts => CompFireMode.Props.verbProps.burstShotCount > 0;
+        public bool ShouldCalulateBursts => CompFireMode.Props.verbProp.burstShotCount > 0;
 
         //连射武器改成倒数第二发结算了 懒得改
         protected override bool TryCastShot()

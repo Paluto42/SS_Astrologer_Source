@@ -5,7 +5,7 @@ using Verse;
 
 namespace Astrologer.Insight
 {
-    public enum BurstFireStatus
+    public enum BurstFireStatus : byte
     {
         None = 0,
         Started = 1,
@@ -15,7 +15,7 @@ namespace Astrologer.Insight
     //和TC_Insight联动的Comp
     public class TCP_FireMode : CompProperties
     {
-        public VerbProperties verbProps;
+        public VerbProperties verbProp;
         public GraphicData graphicData; //变形贴图
 
         public bool overrideStatBase = false;
@@ -131,7 +131,7 @@ namespace Astrologer.Insight
             Scribe_Values.Look(ref isSecondaryVerbSelected, "useSecondaryVerb", defaultValue: false);
             if (Scribe.mode == LoadSaveMode.PostLoadInit)
             {
-                if (isSecondaryVerbSelected) EquipmentSource.PrimaryVerb.verbProps = Props.verbProps;
+                if (isSecondaryVerbSelected) EquipmentSource.PrimaryVerb.verbProps = Props.verbProp;
             }
         }
 
@@ -139,7 +139,7 @@ namespace Astrologer.Insight
         {
             if (!IsSecondaryVerbSelected)
             {
-                EquipmentSource.PrimaryVerb.verbProps = Props.verbProps;
+                EquipmentSource.PrimaryVerb.verbProps = Props.verbProp;
                 isSecondaryVerbSelected = true;
             }
             else

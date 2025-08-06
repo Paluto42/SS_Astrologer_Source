@@ -292,19 +292,26 @@
             </skillRequirements>
         </recipeMaker>
         <verbs Inherit="false">
-            <li>
+            <li Class="Astrologer.VP_StatValue">
                 <verbClass>Astrologer.Insight.Verb_InsightShoot</verbClass>
+                <statBases>
+                    <MarketValue>1500</MarketValue>
+                    <Flammability>0</Flammability>
+                    <Beauty>-3</Beauty>
+                    <WorkToMake>1500</WorkToMake>
+                    <Mass>5</Mass>
+                    <AccuracyTouch>0.60</AccuracyTouch>
+                    <AccuracyShort>0.70</AccuracyShort>
+                    <AccuracyMedium>0.60</AccuracyMedium>
+                    <AccuracyLong>0.60</AccuracyLong>
+                    <RangedWeapon_Cooldown>1.0</RangedWeapon_Cooldown>
+                </statBases>
                 <hasStandardCommand>true</hasStandardCommand>
                 <defaultProjectile>LOF_Bullet_Rifle</defaultProjectile>
                 <burstShotCount>3</burstShotCount>
                 <ticksBetweenBurstShots>9</ticksBetweenBurstShots>
                 <warmupTime>1.5</warmupTime>
                 <range>30</range>
-                <accuracyTouch>0.60</accuracyTouch>
-                <accuracyShort>0.70</accuracyShort>
-                <accuracyMedium>0.60</accuracyMedium>
-                <accuracyLong>0.60</accuracyLong>
-                <defaultCooldownTime>1.0</defaultCooldownTime>
                 <soundCast>Shot_ChargeRifle</soundCast>
                 <soundCastTail>GunTail_Heavy</soundCastTail>
                 <muzzleFlashScale>9</muzzleFlashScale>
@@ -324,21 +331,28 @@
                     <graphicClass>Graphic_Single</graphicClass>
                     <drawSize>1.25</drawSize>
                 </graphicData>
-                <verbProps>
+                <verbProp Class="Astrologer.VP_StatValue">
                     <verbClass>Astrologer.Insight.Verb_InsightShoot</verbClass>
+                    <statBases>
+                        <MarketValue>1500</MarketValue>
+                        <Flammability>0</Flammability>
+                        <Beauty>-3</Beauty>
+                        <WorkToMake>1500</WorkToMake>
+                        <Mass>5</Mass>
+                        <AccuracyTouch>1.00</AccuracyTouch>
+                        <AccuracyShort>1.00</AccuracyShort>
+                        <AccuracyMedium>1.00</AccuracyMedium>
+                        <AccuracyLong>1.00</AccuracyLong>
+                        <RangedWeapon_Cooldown>1.0</RangedWeapon_Cooldown>
+                    </statBases>
                     <hasStandardCommand>true</hasStandardCommand>
                     <defaultProjectile>LOF_Bullet_PsychicInsanity</defaultProjectile>
                     <warmupTime>1.0</warmupTime>
                     <range>30</range>
-                    <accuracyTouch>1.0</accuracyTouch>
-                    <accuracyShort>1.0</accuracyShort>
-                    <accuracyMedium>1.0</accuracyMedium>
-                    <accuracyLong>1.0</accuracyLong>
-                    <defaultCooldownTime>1.0</defaultCooldownTime>
                     <soundCast>Shot_ChargeRifle</soundCast>
                     <soundCastTail>GunTail_Heavy</soundCastTail>
                     <muzzleFlashScale>9</muzzleFlashScale>
-                </verbProps>
+                </verbProp>
                 <overrideStatBase>true</overrideStatBase>
                 <consumeAmount>50</consumeAmount>
                 <mainWeaponLabel>Normal FireMode</mainWeaponLabel>
@@ -421,7 +435,7 @@
                 </trackerGenProp>
             </li>
             <li Class="Astrologer.Insight.TCP_FireMode">
-                <verbProps>
+                <verbProp>
                     <verbClass>Astrologer.Insight.Verb_InsightShoot</verbClass>
                     <hasStandardCommand>true</hasStandardCommand>
                     <defaultProjectile>LOF_Projectile_NebulaRay</defaultProjectile>
@@ -430,7 +444,7 @@
                     <soundCast>ChargeLance_Fire</soundCast>
                     <soundCastTail>GunTail_Heavy</soundCastTail>
                     <muzzleFlashScale>9</muzzleFlashScale>
-                </verbProps>
+                </verbProp>
                 <consumeAmount>10</consumeAmount>
                 <mainWeaponLabel>普通射击模式</mainWeaponLabel>
                 <mainIcon>UI/Buttons/NormalFire</mainIcon>
@@ -556,15 +570,22 @@
             </skillRequirements>
         </recipeMaker>
         <verbs>
-            <li>
+            <li Class="Astrologer.VP_StatValue">
                 <verbClass>Astrologer.Insight.Verb_InsightShoot</verbClass>
+                <statBases>
+                    <MarketValue>1500</MarketValue>
+                    <Beauty>4</Beauty>
+                    <Flammability>0</Flammability>
+                    <WorkToMake>1200</WorkToMake>
+                    <Mass>8</Mass>
+                    <AccuracyTouch>0.40</AccuracyTouch>
+                    <AccuracyShort>0.50</AccuracyShort>
+                    <AccuracyMedium>0.40</AccuracyMedium>
+                    <RangedWeapon_Cooldown>2.0</RangedWeapon_Cooldown>
+                </statBases>
                 <hasStandardCommand>true</hasStandardCommand>
                 <defaultProjectile>LOF_Bullet_ChargeHMG</defaultProjectile>
                 <warmupTime>2.0</warmupTime>
-                <defaultCooldownTime>2.0</defaultCooldownTime>
-                <accuracyTouch>0.40</accuracyTouch>
-                <accuracyShort>0.50</accuracyShort>
-                <accuracyMedium>0.40</accuracyMedium>
                 <range>30</range>
                 <burstShotCount>30</burstShotCount>
                 <ticksBetweenBurstShots>5</ticksBetweenBurstShots>
@@ -582,22 +603,29 @@
                 </trackerGenProp>
             </li>
             <li Class="Astrologer.Insight.TCP_FireMode">
-                <verbProps>
+                <verbProp Class="Astrologer.VP_StatValue">
                     <verbClass>Astrologer.Insight.Verb_InsightShoot</verbClass>
+                    <statBases>
+                        <MarketValue>1500</MarketValue>
+                        <Beauty>4</Beauty>
+                        <Flammability>0</Flammability>
+                        <WorkToMake>1200</WorkToMake>
+                        <Mass>8</Mass>
+                        <AccuracyTouch>0.40</AccuracyTouch>
+                        <AccuracyShort>0.50</AccuracyShort>
+                        <AccuracyMedium>0.40</AccuracyMedium>
+                        <RangedWeapon_Cooldown>3.5</RangedWeapon_Cooldown>
+                    </statBases>
                     <hasStandardCommand>true</hasStandardCommand>
                     <defaultProjectile>LOF_Bullet_ChargeHMG</defaultProjectile>
                     <warmupTime>2.5</warmupTime>
-                    <defaultCooldownTime>3.5</defaultCooldownTime>
-                    <accuracyTouch>0.40</accuracyTouch>
-                    <accuracyShort>0.50</accuracyShort>
-                    <accuracyMedium>0.40</accuracyMedium>
                     <range>30</range>
                     <burstShotCount>80</burstShotCount>
                     <ticksBetweenBurstShots>3</ticksBetweenBurstShots>
                     <soundCast>Shot_ChargeRifle</soundCast>
                     <soundCastTail>GunTail_Heavy</soundCastTail>
                     <muzzleFlashScale>9</muzzleFlashScale>
-                </verbProps>
+                </verbProp>
                 <overrideStatBase>true</overrideStatBase>
                 <mainWeaponLabel>普通射击模式</mainWeaponLabel>
                 <mainIcon>UI/Buttons/NormalFire</mainIcon>

@@ -83,7 +83,7 @@ namespace Astrologer
         [Obsolete]
         public override void SendLetter(Quest quest, Pawn pawn)
         {
-            SendLetter_NewTemp(quest, pawn, Find.AnyPlayerHomeMap);
+            SendLetter_NewTemp(quest, pawn, Find.RandomPlayerHomeMap);
         }
 
         public override void SendLetter_NewTemp(Quest quest, Pawn pawn, Map map) 
@@ -101,6 +101,7 @@ namespace Astrologer
             choiceLetter_AcceptJoiner.signalAccept = signalAccept;
             choiceLetter_AcceptJoiner.signalReject = signalReject;
             choiceLetter_AcceptJoiner.quest = quest;
+            choiceLetter_AcceptJoiner.overrideMap = map;
             choiceLetter_AcceptJoiner.StartTimeout(60000);
             Find.LetterStack.ReceiveLetter(choiceLetter_AcceptJoiner);
         }

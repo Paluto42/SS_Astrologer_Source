@@ -14,6 +14,7 @@ namespace Astrologer.HarmonyPatches
         {
             if (value == 0f) return 0f;
             if (!p.RaceProps.Humanlike) return value;
+            if (!p.kindDef.defName.StartsWith("LOF_PawnKind_Astro")) return value;
             if (p.apparel == null) return value;
             if (p.apparel.WornApparel.Find(ap => ap.def.defName == "LOF_Apparel_MiningArmor") == null) return value;
             value += addtionCapacity;

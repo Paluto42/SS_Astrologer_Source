@@ -1,13 +1,29 @@
 ﻿using HarmonyLib;
 using RimWorld;
 using System.Collections.Generic;
-using System.Reflection;
-using System.Reflection.Emit;
 using Verse;
 
 namespace Astrologer.HarmonyPatches
 {
-    [HarmonyPatch(typeof(StatWorker), "GetBaseValueFor")]
+    //通过Verb切换StatBaseValue
+    [HarmonyPatch(typeof(StatRequest), "StatBases", MethodType.Getter)]
+    public class Patch_StatValue
+    {
+        [HarmonyPostfix]
+        public static List<StatModifier> Postfix(List<StatModifier> values, StatRequest __instance)
+        {
+            if (__instance.Def is not BuildableDef || __instance.Thing is not TransformEquipment eq) return values;
+
+            if (eq.CompFiremode?.Props.overrideStatBase != true) return values;
+
+            VP_StatValue verbProps = eq.EquipmentSource?.PrimaryVerb?.verbProps as VP_StatValue;
+            if (verbProps is null) return values;
+
+            return verbProps.statBases;
+        }
+    }
+
+    /*[HarmonyPatch(typeof(StatWorker), "GetBaseValueFor")]
     public class Patch_StatValue
     {
         public static void GetStatBase(ref StatRequest request, StatDef stat, ref float value) 
@@ -45,5 +61,5 @@ namespace Astrologer.HarmonyPatches
 
             return codeMatcher.Instructions();
         }
-    }
+    }*/
 }
