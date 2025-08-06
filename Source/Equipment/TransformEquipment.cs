@@ -12,8 +12,8 @@ namespace Astrologer
         {
             get
             {
-                if (compFiremodeInt != null) return compFiremodeInt;
-                compFiremodeInt = GetComp<TC_FireMode>();
+                /*if (compFiremodeInt != null) return compFiremodeInt;
+                compFiremodeInt = GetComp<TC_FireMode>();*/
                 return compFiremodeInt;
             }
         }
@@ -23,7 +23,7 @@ namespace Astrologer
         {
             get
             {
-                compEquippableInt ??= GetComp<CompEquippable>();
+                //compEquippableInt ??= GetComp<CompEquippable>();
                 return compEquippableInt;
             }
         }
@@ -34,6 +34,13 @@ namespace Astrologer
 
         private Graphic secGraphicInt;
         GraphicData TransformGraphic => CompFiremode?.GraphicData;
+
+        public override void PostMake()
+        {
+            base.PostMake();
+            compFiremodeInt = GetComp<TC_FireMode>();
+            compEquippableInt = GetComp<CompEquippable>();
+        }
 
         public virtual bool CanTransform()
         {

@@ -40,6 +40,9 @@ namespace Astrologer
             this.FailOnDestroyedOrNull(indexLaundry);
             this.FailOnDestroyedNullOrForbidden(indexApparel);
 
+            //this.AddFailCondition();
+            //this.AddFinishAction();
+
             yield return Toils_General.DoAtomic(delegate
             {
                 job.count = ThingApparel.stackCount;

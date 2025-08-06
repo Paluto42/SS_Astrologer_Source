@@ -1,34 +1,49 @@
 ﻿using HarmonyLib;
 using RimWorld;
 using System.Collections.Generic;
+using System.Reflection;
+using System.Reflection.Emit;
 using Verse;
 
 namespace Astrologer.HarmonyPatches
 {
-    //可切换的StatBase
-    [HarmonyPatch(typeof(StatRequest), "StatBases", MethodType.Getter)]
+    [HarmonyPatch(typeof(StatWorker), "GetBaseValueFor")]
     public class Patch_StatValue
     {
-        [HarmonyPostfix]
-        public static List<StatModifier> Postfix(List<StatModifier> values, StatRequest __instance)
+        public static void GetStatBase(ref StatRequest request, StatDef stat, ref float value) 
         {
-            if (__instance.Def is not BuildableDef || __instance.Thing is not TransformEquipment eq) return values;
-
-            if (eq.CompFiremode?.Props.overrideStatBase != true) return values;
-
+            if (request.Def is not BuildableDef || request.Thing is not TransformEquipment eq) return;
+            if (eq.CompFiremode?.Props.overrideStatBase != true) return;
             VerbProperties verbProps = eq.EquipmentSource?.PrimaryVerb?.verbProps;
             if (verbProps is not null)
             {
-                foreach (StatModifier item in values)
-                {
-                    if (item.stat == StatDefOf.AccuracyTouch) item.value = verbProps.accuracyTouch;
-                    if (item.stat == StatDefOf.AccuracyShort) item.value = verbProps.accuracyShort;
-                    if (item.stat == StatDefOf.AccuracyMedium) item.value = verbProps.accuracyMedium;
-                    if (item.stat == StatDefOf.AccuracyLong) item.value = verbProps.accuracyLong;
-                    if (item.stat == StatDefOf.RangedWeapon_Cooldown) item.value = verbProps.defaultCooldownTime;
-                }
+                if (stat == StatDefOf.AccuracyTouch) 
+                    value = verbProps.accuracyTouch;
+                if (stat == StatDefOf.AccuracyShort) 
+                    value = verbProps.accuracyShort;
+                if (stat == StatDefOf.AccuracyMedium) 
+                    value = verbProps.accuracyMedium;
+                if (stat == StatDefOf.AccuracyLong) 
+                    value = verbProps.accuracyLong;
+                if (stat == StatDefOf.RangedWeapon_Cooldown) 
+                    value = verbProps.defaultCooldownTime;
             }
-            return values;
+        }
+
+        [HarmonyTranspiler]
+        public static IEnumerable<CodeInstruction> Transpiler(IEnumerable<CodeInstruction> instructions, MethodBase original)
+        {
+            CodeMatcher codeMatcher = new(instructions);
+            codeMatcher.Start();
+            codeMatcher.MatchStartForward(new CodeMatch(OpCodes.Blt_S))
+                .InsertAndAdvance(
+                new(OpCodes.Ldarga_S, 1),
+                new(OpCodes.Ldarg, 0),
+                new(OpCodes.Ldfld, typeof(StatWorker).GetField("stat", BindingFlags.Instance | BindingFlags.NonPublic)),
+                new(OpCodes.Ldloca, 0),
+                new(OpCodes.Call, AccessTools.Method(typeof(Patch_StatValue), nameof(GetStatBase))));
+
+            return codeMatcher.Instructions();
         }
     }
 }

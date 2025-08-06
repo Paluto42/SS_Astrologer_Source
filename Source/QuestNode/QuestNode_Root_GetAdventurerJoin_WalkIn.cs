@@ -1,6 +1,7 @@
 ﻿using RimWorld;
 using RimWorld.Planet;
 using RimWorld.QuestGen;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using Verse;
@@ -10,8 +11,8 @@ namespace Astrologer
     public class QuestNode_Root_GetAdventurerJoin_WalkIn : QuestNode_Root_WandererJoin
     {
         [NoTranslate]
-        public SlateRef<string> storeAs;
-        public SlateRef<PawnKindDef> mustBeOfKind;
+        protected SlateRef<string> storeAs;
+        protected SlateRef<PawnKindDef> mustBeOfKind;
 
         protected const int TimeoutTicks = 60000;
         public const float RelationWithColonistWeight = 20f;
@@ -20,7 +21,7 @@ namespace Astrologer
 
         protected override bool TestRunInt(Slate slate)
         {
-            if (slate.TryGet<Pawn>(storeAs.GetValue(slate), out var pawn))
+            if (slate.TryGet<Pawn>(storeAs.GetValue(slate), out _))
             {
                 return true;
             }
@@ -79,7 +80,13 @@ namespace Astrologer
             });
         }
 
+        [Obsolete]
         public override void SendLetter(Quest quest, Pawn pawn)
+        {
+            SendLetter_NewTemp(quest, pawn, Find.AnyPlayerHomeMap);
+        }
+
+        public override void SendLetter_NewTemp(Quest quest, Pawn pawn, Map map) 
         {
             TaggedString title = "LetterLabelWandererJoins".Translate(pawn.Named("PAWN")).AdjustedFor(pawn);
             TaggedString letterText = "LetterWandererJoins".Translate(pawn.Named("PAWN")).AdjustedFor(pawn);
