@@ -14,6 +14,11 @@ namespace Astrologer
     [DefOf]
     public static class AstroDefOf
     {
+        static AstroDefOf()
+        {
+            DefOfHelper.EnsureInitializedInCtor(typeof(AstroDefOf));
+        }
+
         public static HairDef LOF_Hair_A;
         public static HairDef LOF_Hair_B;
         public static HairDef LOF_Hair_C;
