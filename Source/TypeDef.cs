@@ -47,7 +47,7 @@ namespace Astrologer
         public static ThingDef LOF_Thing_Laundy; //环形重塑器
 
         public static ThingDef LOF_Weapon_AMSR; //ASAT-112
-        public static ThingDef LOF_Weapon_Railgun; //ES-117
+        public static ThingDef LOF_Weapon_ShipborneRailgun; //ES-117
 
         public static ThingDef LOF_Plant_StarlightGrass; //种地上的 植物 星光草
         public static ThingDef LOF_Plant_MoonFlower; //月光花
