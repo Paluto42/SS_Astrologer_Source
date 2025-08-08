@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <loadFolders>
-	<v1.5>
+	<!--v1.5>
 		<li>/</li>
 		<li>1.5</li>
 		<li IfModActive="erdelf.HumanoidAlienRaces">SoftRely/1.5/HAR</li>
 		<li IfModActive="Paluto22.AK.Compatibility">SoftRely/1.5/AKC</li>
-	</v1.5>
+	</v1.5-->
 	<v1.6>
 		<li>/</li>
 		<li>1.6</li>
-		<li IfModActive="erdelf.HumanoidAlienRaces">SoftRely/1.5/HAR</li>
+		<li IfModActive="erdelf.HumanoidAlienRaces">SoftRely/1.6/HAR</li>
 		<li IfModActive="Paluto22.AK.Compatibility">SoftRely/1.6/AKC</li>
 	</v1.6>
 </loadFolders>
