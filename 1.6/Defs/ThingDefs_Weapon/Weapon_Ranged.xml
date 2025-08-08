@@ -48,7 +48,7 @@
             <MarketValue>500</MarketValue>
             <Flammability>0.1</Flammability>
             <Beauty>2</Beauty>
-            <WorkToMake>200</WorkToMake>
+            <WorkToMake>12000</WorkToMake>
             <Mass>2</Mass>
             <AccuracyTouch>0.65</AccuracyTouch>
             <AccuracyShort>0.60</AccuracyShort>
@@ -109,7 +109,7 @@
             <SellPriceFactor>0.1</SellPriceFactor>
             <Beauty>3</Beauty>
             <Flammability>0.1</Flammability>
-            <WorkToMake>300</WorkToMake>
+            <WorkToMake>18000</WorkToMake>
             <Mass>2.5</Mass>
             <AccuracyTouch>0.60</AccuracyTouch>
             <AccuracyShort>0.50</AccuracyShort>
@@ -159,7 +159,7 @@
             <MarketValue>600</MarketValue>
             <Beauty>3</Beauty>
             <Flammability>0.1</Flammability>
-            <WorkToMake>300</WorkToMake>
+            <WorkToMake>18000</WorkToMake>
             <Mass>3</Mass>
             <AccuracyTouch>1</AccuracyTouch>
             <AccuracyShort>0.87</AccuracyShort>
@@ -211,7 +211,7 @@
             <MarketValue>2000</MarketValue>
             <Beauty>2</Beauty>
             <Flammability>0</Flammability>
-            <WorkToMake>1300</WorkToMake>
+            <WorkToMake>78000</WorkToMake>
             <Mass>3.0</Mass>
             <AccuracyTouch>0.78</AccuracyTouch>
             <AccuracyShort>0.70</AccuracyShort>
@@ -270,7 +270,7 @@
             <MarketValue>1500</MarketValue>
             <Flammability>0</Flammability>
             <Beauty>-3</Beauty>
-            <WorkToMake>1500</WorkToMake>
+            <WorkToMake>90000</WorkToMake>
             <Mass>5</Mass>
             <AccuracyTouch>0.60</AccuracyTouch>
             <AccuracyShort>0.70</AccuracyShort>
@@ -551,7 +551,7 @@
             <MarketValue>1500</MarketValue>
             <Beauty>4</Beauty>
             <Flammability>0</Flammability>
-            <WorkToMake>1200</WorkToMake>
+            <WorkToMake>72000</WorkToMake>
             <Mass>8</Mass>
             <AccuracyTouch>0.40</AccuracyTouch>
             <AccuracyShort>0.50</AccuracyShort>
@@ -662,7 +662,7 @@
             <MarketValue>2000</MarketValue>
             <Flammability>0</Flammability>
             <Beauty>3</Beauty>
-            <WorkToMake>1500</WorkToMake>
+            <WorkToMake>90000</WorkToMake>
             <Mass>5</Mass>
             <AccuracyTouch>0.95</AccuracyTouch>
             <AccuracyShort>1.00</AccuracyShort>

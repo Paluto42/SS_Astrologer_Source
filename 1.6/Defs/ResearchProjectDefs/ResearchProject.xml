@@ -67,6 +67,7 @@
     </ResearchProjectDef>
 
     <!--T1-->
+    <![CDATA[
     <ResearchProjectDef>
         <defName>LOF_Research_AstrologyObservatory</defName>
         <label>占星台(未实装)</label>
@@ -81,6 +82,7 @@
         <tab>LOF_ResearchTab_Astrologer</tab>
         <generalRules></generalRules>
     </ResearchProjectDef>
+    ]]>
 
     <ResearchProjectDef>
         <defName>LOF_Research_NightGenerator</defName>
@@ -187,7 +189,7 @@
     </ResearchProjectDef>
 
     <!--T2-->
-
+    <![CDATA[
     <ResearchProjectDef>
         <defName>LOF_Research_Stargazer</defName>
         <label>观星仪(未实装)</label>
@@ -202,6 +204,7 @@
         <tab>LOF_ResearchTab_Astrologer</tab>
         <generalRules></generalRules>
     </ResearchProjectDef>
+    ]]>
 
     <ResearchProjectDef>
         <defName>LOF_Research_Laundy</defName>
