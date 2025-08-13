@@ -9,7 +9,7 @@
 		<invNutrition>2</invNutrition>
 		<!--gearHealthRange>0.8~1.0</gearHealthRange-->
 		<apparelIgnoreSeasons>true</apparelIgnoreSeasons>
-		<minGenerationAge>20</minGenerationAge>
+		<minGenerationAge>16</minGenerationAge>
 		<maxGenerationAge>100</maxGenerationAge>
 		<initialWillRange>60~90</initialWillRange>
 		<initialResistanceRange>60~90</initialResistanceRange>

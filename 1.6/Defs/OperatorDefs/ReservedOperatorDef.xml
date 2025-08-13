@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-    <AK_DLL.ReserveOperatorDef Name="AstroRecruitBase">
-        <defName>LOF_Recruit_Test</defName>
+    <AK_DLL.ReserveOperatorDef Name="AstroRecruitBase" Abstract="True">
         <bodyTypeDef>AstroBody</bodyTypeDef>
+        <age>20</age>
+        <ignoreFixedAge>true</ignoreFixedAge>
         <headTypeRange>
             <Astro_Head_B DefClass="HeadTypeDef">4</Astro_Head_B>
             <Astro_Head_C DefClass="HeadTypeDef">3</Astro_Head_C>
