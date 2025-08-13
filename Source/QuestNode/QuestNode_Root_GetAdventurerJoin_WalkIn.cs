@@ -86,7 +86,7 @@ namespace Astrologer
             SendLetter_NewTemp(quest, pawn, Find.RandomPlayerHomeMap);
         }
 
-        public override void SendLetter_NewTemp(Quest quest, Pawn pawn, Map map) 
+        public override void SendLetter_NewTemp(Quest quest, Pawn pawn, Map map)
         {
             TaggedString title = "LetterLabelWandererJoins".Translate(pawn.Named("PAWN")).AdjustedFor(pawn);
             TaggedString letterText = "LetterWandererJoins".Translate(pawn.Named("PAWN")).AdjustedFor(pawn);

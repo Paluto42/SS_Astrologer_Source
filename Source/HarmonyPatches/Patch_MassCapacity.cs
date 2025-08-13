@@ -1,6 +1,5 @@
 ﻿using HarmonyLib;
 using RimWorld;
-using System.Text;
 using Verse;
 
 namespace Astrologer.HarmonyPatches
@@ -10,7 +9,7 @@ namespace Astrologer.HarmonyPatches
     {
         public const float addtionCapacity = 20;
         [HarmonyPostfix]
-        public static float Postfix(float value, Pawn p, StringBuilder explanation)
+        public static float Postfix(float value, Pawn p)
         {
             if (value == 0f) return 0f;
             if (!p.RaceProps.Humanlike) return value;

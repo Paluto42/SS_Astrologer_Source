@@ -8,6 +8,7 @@
             <!--li>LOF_AS_Category_Armor</li-->
         </thingCategories>
         <statBases>
+            <MaxHitPoints>300</MaxHitPoints>
             <Flammability>0</Flammability>
             <DeteriorationRate>1</DeteriorationRate>
         </statBases>
@@ -52,65 +53,65 @@
         <label>登山帽</label>
         <description>在繁星帝国，很多占星师喜欢在夜间的山顶观星，这顶登山帽很好的满足了她们对于保暖的需求</description>
         <!--等待贴图-->
-        <graphicData>
-            <texPath>Things/Pawn/Humanlike/Apparel/Tuque/Tuque</texPath>
-            <graphicClass>Graphic_Single</graphicClass>
-        </graphicData>
-        <!--占位,原版数值-->
-        <statBases>
-            <MaxHitPoints>80</MaxHitPoints>
-            <WorkToMake>1200</WorkToMake>
-            <Mass>0.07</Mass>
-            <StuffEffectMultiplierArmor>0.2</StuffEffectMultiplierArmor>
-            <StuffEffectMultiplierInsulation_Cold>1.50</StuffEffectMultiplierInsulation_Cold>
-            <StuffEffectMultiplierInsulation_Heat>0</StuffEffectMultiplierInsulation_Heat>
-            <EquipDelay>0.8</EquipDelay>
-        </statBases>
-        <stuffCategories>
-            <li>Fabric</li>
-            <li>Leathery</li>
-        </stuffCategories>
-        <costStuffCount>20</costStuffCount>
-        <apparel>
-            <!--parentTagDef>ApparelHead</parentTagDef-->
-            <countsAsClothingForNudity>false</countsAsClothingForNudity>
-            <wornGraphicPath>Things/Pawn/Humanlike/Apparel/Tuque/Tuque</wornGraphicPath>
-            <bodyPartGroups>
-                <li>UpperHead</li>
-            </bodyPartGroups>
-            <layers>
-                <li>Overhead</li>
-            </layers>
-            <defaultOutfitTags>
-                <li>Worker</li>
-            </defaultOutfitTags>
-        </apparel>
-        <recipeMaker>
-            <researchPrerequisite>LOF_Research_BaseCloth</researchPrerequisite>
-            <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
-            <workSkill>Crafting</workSkill>
-            <effectWorking>Tailor</effectWorking>
-            <soundWorking>Recipe_Tailor</soundWorking>
-            <recipeUsers>
-                <li>ElectricTailoringBench</li>
-                <li>HandTailoringBench</li>
-            </recipeUsers>
-            <unfinishedThingDef>UnfinishedApparel</unfinishedThingDef>
-            <defaultIngredientFilter>
-                <categories>
-                    <li>Root</li>
-                </categories>
-                <disallowedThingDefs>
-                    <li>Gold</li>
-                    <li>Silver</li>
-                    <li>Plasteel</li>
-                    <li>Jade</li>
-                    <li>Uranium</li>
-                    <li MayRequire="Ludeon.RimWorld.Anomaly">Bioferrite</li>
-                </disallowedThingDefs>
-            </defaultIngredientFilter>
-        </recipeMaker>
-    </ThingDef>
+<graphicData>
+<texPath>Things/Pawn/Humanlike/Apparel/Tuque/Tuque</texPath>
+<graphicClass>Graphic_Single</graphicClass>
+</graphicData>
+<!--占位,原版数值-->
+<statBases>
+<MaxHitPoints>80</MaxHitPoints>
+<WorkToMake>1200</WorkToMake>
+<Mass>0.07</Mass>
+<StuffEffectMultiplierArmor>0.2</StuffEffectMultiplierArmor>
+<StuffEffectMultiplierInsulation_Cold>1.50</StuffEffectMultiplierInsulation_Cold>
+<StuffEffectMultiplierInsulation_Heat>0</StuffEffectMultiplierInsulation_Heat>
+<EquipDelay>0.8</EquipDelay>
+</statBases>
+<stuffCategories>
+<li>Fabric</li>
+<li>Leathery</li>
+</stuffCategories>
+<costStuffCount>20</costStuffCount>
+<apparel>
+<!--parentTagDef>ApparelHead</parentTagDef-->
+<countsAsClothingForNudity>false</countsAsClothingForNudity>
+<wornGraphicPath>Things/Pawn/Humanlike/Apparel/Tuque/Tuque</wornGraphicPath>
+<bodyPartGroups>
+<li>UpperHead</li>
+</bodyPartGroups>
+<layers>
+<li>Overhead</li>
+</layers>
+<defaultOutfitTags>
+<li>Worker</li>
+</defaultOutfitTags>
+</apparel>
+<recipeMaker>
+<researchPrerequisite>LOF_Research_BaseCloth</researchPrerequisite>
+<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+<workSkill>Crafting</workSkill>
+<effectWorking>Tailor</effectWorking>
+<soundWorking>Recipe_Tailor</soundWorking>
+<recipeUsers>
+<li>ElectricTailoringBench</li>
+<li>HandTailoringBench</li>
+</recipeUsers>
+<unfinishedThingDef>UnfinishedApparel</unfinishedThingDef>
+<defaultIngredientFilter>
+<categories>
+<li>Root</li>
+</categories>
+<disallowedThingDefs>
+<li>Gold</li>
+<li>Silver</li>
+<li>Plasteel</li>
+<li>Jade</li>
+<li>Uranium</li>
+<li MayRequire="Ludeon.RimWorld.Anomaly">Bioferrite</li>
+</disallowedThingDefs>
+</defaultIngredientFilter>
+</recipeMaker>
+</ThingDef>
     ]]>
 
     <ThingDef ParentName="Astro_ApparelBase">
@@ -220,15 +221,13 @@
     <ThingDef ParentName="Astro_HelmetBase">
         <defName>LOF_Apparel_LightHelmet</defName>
         <label>&lt;color=#00AEEF&gt;生存作战头盔&lt;/color&gt;</label>
-        <description>轻量化全能型作战头盔，较高的锐防和普通的钝防,同时能过滤一定量的毒气吸入</description>
+        <description>轻量化全能型作战头盔。</description>
         <graphicData>
             <texPath>Things/Apparel/LOF_LightHelmet/LightHelmet</texPath>
             <graphicClass>Graphic_Single</graphicClass>
         </graphicData>
-        <!--占位,原版数值-->
         <statBases>
-            <MarketValue>1500</MarketValue>
-            <MaxHitPoints>300</MaxHitPoints>
+            <MarketValue>1000</MarketValue>
             <WorkToMake>18000</WorkToMake>
             <Beauty>2</Beauty>
             <Mass>2</Mass>
@@ -240,9 +239,9 @@
             <EquipDelay>3</EquipDelay>
         </statBases>
         <equippedStatOffsets>
-            <AimingDelayFactor>-0.25</AimingDelayFactor>
+            <!--AimingDelayFactor>-0.25</AimingDelayFactor>
             <ToxicResistance>0.5</ToxicResistance>
-            <ToxicEnvironmentResistance>1</ToxicEnvironmentResistance>
+            <ToxicEnvironmentResistance>1</ToxicEnvironmentResistance-->
         </equippedStatOffsets>
         <costList>
             <Steel>100</Steel>
@@ -269,30 +268,30 @@
     <ThingDef ParentName="Astro_HelmetBase">
         <defName>LOF_Apparel_MiningHelmet</defName>
         <label>&lt;color=#00AEEF&gt;MI矿业支持头盔&lt;/color&gt;</label>
-        <description>desc.</description>
+        <description>MI集团生产的的矿物探测装置，"滋滋滋"，希望不要探测到什么吓人的东西。</description>
         <graphicData>
             <texPath>Things/Apparel/LOF_MiningHelmet/MiningHelmet</texPath>
             <graphicClass>Graphic_Single</graphicClass>
         </graphicData>
-        <!--占位,原版数值-->
         <statBases>
-            <MaxHitPoints>160</MaxHitPoints>
-            <WorkToMake>5000</WorkToMake>
-            <Mass>1</Mass>
-            <ArmorRating_Sharp>0.92</ArmorRating_Sharp>
-            <ArmorRating_Blunt>0.4</ArmorRating_Blunt>
-            <ArmorRating_Heat>0.46</ArmorRating_Heat>
-            <Insulation_Cold>4</Insulation_Cold>
-            <Insulation_Heat>2</Insulation_Heat>
-            <EquipDelay>2</EquipDelay>
+            <MarketValue>1200</MarketValue>
+            <Beauty>1</Beauty>
+            <WorkToMake>36000</WorkToMake>
+            <Mass>3</Mass>
+            <ArmorRating_Sharp>1</ArmorRating_Sharp>
+            <ArmorRating_Blunt>1</ArmorRating_Blunt>
+            <ArmorRating_Heat>1</ArmorRating_Heat>
+            <Insulation_Cold>65</Insulation_Cold>
+            <Insulation_Heat>65</Insulation_Heat>
+            <EquipDelay>17</EquipDelay>
         </statBases>
         <equippedStatOffsets>
-            <MiningYield>3</MiningYield>
+            <!--MiningYield>3</MiningYield-->
         </equippedStatOffsets>
         <costList>
-            <Cloth>10</Cloth>
-            <LOF_Thing_StarlightIron>40</LOF_Thing_StarlightIron>
-            <ComponentIndustrial>2</ComponentIndustrial>
+            <LOF_Thing_StarlightIron>100</LOF_Thing_StarlightIron>
+            <Plasteel>60</Plasteel>
+            <ComponentIndustrial>5</ComponentIndustrial>
         </costList>
         <recipeMaker>
             <researchPrerequisite>LOF_Research_MultiArmor</researchPrerequisite>
@@ -332,18 +331,16 @@
     <ThingDef ParentName="Astro_HelmetBase">
         <defName>LOF_Apparel_EmergencyHelmet</defName>
         <label>&lt;color=#00AEEF&gt;ERT-EMT应急反应面罩&lt;/color&gt;</label>
-        <description>desc.</description>
+        <description>这件面罩可以帮你隔绝高温和毒气，并提供一定的防护。</description>
         <graphicData>
             <texPath>Things/Apparel/LOF_EmergencyHelmet/EmergencyHelmet</texPath>
             <graphicClass>Graphic_Single</graphicClass>
             <drawSize>(0.5,0.5)</drawSize>
         </graphicData>
         <uiIconScale>4</uiIconScale>
-        <!--占位,原版数值-->
         <statBases>
             <MarketValue>600</MarketValue>
             <Beauty>2</Beauty>
-            <MaxHitPoints>300</MaxHitPoints>
             <WorkToMake>36000</WorkToMake>
             <MaxHitPoints>120</MaxHitPoints>
             <Mass>2</Mass>
@@ -355,8 +352,9 @@
             <EquipDelay>5</EquipDelay>
         </statBases>
         <equippedStatOffsets>
-            <ToxicResistance>1</ToxicResistance>
-            <ToxicEnvironmentResistance>1</ToxicEnvironmentResistance>
+            <MoveSpeed>0.3</MoveSpeed>
+            <!--ToxicResistance>1</ToxicResistance>
+            <ToxicEnvironmentResistance>1</ToxicEnvironmentResistance-->
         </equippedStatOffsets>
         <!--材料-->
         <costList>
@@ -399,7 +397,7 @@
     <ThingDef ParentName="Astro_HelmetBase">
         <defName>LOF_Apparel_StandardHelmet</defName>
         <label>&lt;color=#00AEEF&gt;"MPE-2" 制式头盔&lt;/color&gt;</label>
-        <description>"MPE-2"制式头盔，增加瞄准能力，防毒防腐气</description>
+        <description>搭载了HMDS技术的特战头盔，内置的系统会收集和分析周围环境并反馈给穿戴者。这使得佩戴者的命中率大幅度提高并强化了自身感知危险的能力。</description>
         <thingClass>Astrologer.TransformApparel</thingClass>
         <graphicData Class="AK_DLL.GraphicData_MultiFoam">
             <texPath>Things/Apparel/LOF_StandardHelmet/StandardHelmet</texPath>
@@ -411,28 +409,32 @@
                 </li>
             </innerGraphicPath_Worn>
         </graphicData>
-        <!--占位,原版数值-->
         <statBases>
-            <MaxHitPoints>160</MaxHitPoints>
-            <WorkToMake>8000</WorkToMake>
-            <Mass>1.2</Mass>
-            <ArmorRating_Sharp>0.92</ArmorRating_Sharp>
-            <ArmorRating_Blunt>0.4</ArmorRating_Blunt>
-            <ArmorRating_Heat>0.46</ArmorRating_Heat>
-            <Insulation_Cold>4</Insulation_Cold>
-            <Insulation_Heat>2</Insulation_Heat>
-            <EquipDelay>2</EquipDelay>
+            <MarketValue>2000</MarketValue>
+            <Beauty>2</Beauty>
+            <WorkToMake>78000</WorkToMake>
+            <Mass>5</Mass>
+            <ArmorRating_Sharp>1.5</ArmorRating_Sharp>
+            <ArmorRating_Blunt>1.2</ArmorRating_Blunt>
+            <ArmorRating_Heat>1</ArmorRating_Heat>
+            <Insulation_Cold>65</Insulation_Cold>
+            <Insulation_Heat>65</Insulation_Heat>
+            <EquipDelay>10</EquipDelay>
         </statBases>
         <equippedStatOffsets>
-            <AimingDelayFactor>-0.25</AimingDelayFactor>
-            <ToxicResistance>0.5</ToxicResistance>
-            <ToxicEnvironmentResistance>1</ToxicEnvironmentResistance>
+            <MoveSpeed>0.3</MoveSpeed>
+            <ShootingAccuracyPawn>10</ShootingAccuracyPawn>
+            <AimingDelayFactor>-0.2</AimingDelayFactor>
+            <MeleeDodgeChance>10</MeleeDodgeChance>
+            <!--ToxicResistance>0.5</ToxicResistance>
+            <ToxicEnvironmentResistance>1</ToxicEnvironmentResistance-->
         </equippedStatOffsets>
         <!--材料-->
         <costList>
-            <Cloth>10</Cloth>
-            <LOF_Thing_StarlightIron>40</LOF_Thing_StarlightIron>
-            <ComponentIndustrial>5</ComponentIndustrial>
+            <LOF_Thing_StarlightIron>100</LOF_Thing_StarlightIron>
+            <Plasteel>100</Plasteel>
+            <ComponentIndustrial>10</ComponentIndustrial>
+            <ComponentSpacer>5</ComponentSpacer>
         </costList>
         <recipeMaker>
             <researchPrerequisite>LOF_Research_SeriesArmor_MPE</researchPrerequisite>

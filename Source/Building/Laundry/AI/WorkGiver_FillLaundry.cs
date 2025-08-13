@@ -39,14 +39,14 @@ namespace Astrologer
 
         protected virtual JobDef FillJob => AstroDefOf.LOF_Job_FillLaundry;
 
-        protected bool _ContentValidator(Thing t)
+        protected bool ContentValidator(Thing t)
         {
             return t.def.useHitPoints && t.HitPoints < t.MaxHitPoints;
         }
 
         public override Job JobOnThing(Pawn pawn, Thing t, bool forced = false)
         {
-            if (!forced || !_ContentValidator(t))   //显然先判断一个物品是否合法再搜索洗衣机更快
+            if (!forced || !ContentValidator(t))   //显然先判断一个物品是否合法再搜索洗衣机更快
             {
                 //Log.Message($"for {t} : {!forced}, {!_ContentValidator(t)}");
                 return null;

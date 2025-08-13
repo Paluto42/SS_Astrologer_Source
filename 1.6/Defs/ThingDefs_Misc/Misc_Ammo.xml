@@ -8,74 +8,7 @@
         </graphicData>
     </ThingDef>
 
-
-    <ThingDef ParentName="BaseBullet">
-        <defName>LOF_Projectile_EagleMoon</defName>
-        <label>手炮弹药</label>
-        <graphicData>
-            <texPath>Things/Projectile/Bullet_Small</texPath>
-            <graphicClass>Graphic_Single</graphicClass>
-        </graphicData>
-        <projectile>
-            <damageDef>Bullet</damageDef>
-            <damageAmountBase>15</damageAmountBase>
-            <armorPenetrationBase>0.2</armorPenetrationBase>
-            <stoppingPower>1</stoppingPower>
-            <speed>60</speed>
-        </projectile>
-    </ThingDef>
-
-    <ThingDef ParentName="BaseBullet">
-        <defName>LOF_Bullet_SMG</defName>
-        <label>冲锋枪子弹</label>
-        <graphicData>
-            <texPath>Things/Projectile/Bullet_Small</texPath>
-            <graphicClass>Graphic_Single</graphicClass>
-        </graphicData>
-        <projectile>
-            <damageDef>Bullet</damageDef>
-            <damageAmountBase>7</damageAmountBase>
-            <armorPenetrationBase>0.1</armorPenetrationBase>
-            <speed>48</speed>
-            <stoppingPower>0.5</stoppingPower>
-        </projectile>
-    </ThingDef>
-
-    <ThingDef ParentName="BaseBullet">
-        <defName>LOF_Bullet_Shotgun</defName>
-        <label>霰弹</label>
-        <graphicData>
-            <texPath>Things/Projectile/Bullet_Shotgun</texPath>
-            <graphicClass>Graphic_Single</graphicClass>
-        </graphicData>
-        <projectile>
-            <damageDef>Bullet</damageDef>
-            <damageAmountBase>10</damageAmountBase>
-            <stoppingPower>1</stoppingPower>
-            <armorPenetrationBase>0.10</armorPenetrationBase>
-            <speed>55</speed>
-        </projectile>
-    </ThingDef>
-
-    <ThingDef ParentName="LOF_ChargedShotBase">
-        <defName>LOF_Bullet_StunShotgun</defName>
-        <label>高速电能霰弹</label>
-        <projectile>
-            <damageDef>Bullet</damageDef>
-            <damageAmountBase>10</damageAmountBase>
-            <armorPenetrationBase>0.50</armorPenetrationBase>
-            <extraDamages>
-                <li>
-                    <def>EMP</def>
-                    <amount>1</amount>
-                    <chance>10</chance>
-                </li>
-            </extraDamages>
-            <speed>65</speed>
-            <stoppingPower>1.5</stoppingPower>
-        </projectile>
-    </ThingDef>
-
+    <!--这些是未完成的弹药-->
     <ThingDef ParentName="LOF_ChargedShotBase">
         <defName>LOF_Bullet_ChargeRifle</defName>
         <label>charge shot</label>
@@ -84,68 +17,6 @@
             <damageAmountBase>15</damageAmountBase>
             <armorPenetrationBase>0.35</armorPenetrationBase>
             <speed>70</speed>
-        </projectile>
-    </ThingDef>
-
-    <ThingDef ParentName="LOF_ChargedShotBase">
-        <defName>LOF_Bullet_ChargeHMG</defName>
-        <label>charge shot</label>
-        <projectile>
-            <damageDef>Bullet</damageDef>
-            <damageAmountBase>19</damageAmountBase>
-            <armorPenetrationBase>0.30</armorPenetrationBase>
-            <speed>70</speed>
-            <stoppingPower>1</stoppingPower>
-        </projectile>
-    </ThingDef>
-
-    <ThingDef ParentName="BaseBullet">
-        <defName>LOF_Bullet_Rifle</defName>
-        <label>突击步枪子弹</label>
-        <graphicData>
-            <texPath>Things/Projectile/Bullet_Small</texPath>
-            <graphicClass>Graphic_Single</graphicClass>
-        </graphicData>
-        <projectile>
-            <damageDef>Bullet</damageDef>
-            <damageAmountBase>25</damageAmountBase>
-            <armorPenetrationBase>0.5</armorPenetrationBase>
-            <speed>70</speed>
-            <stoppingPower>1</stoppingPower>
-        </projectile>
-    </ThingDef>
-
-    <ThingDef ParentName="BaseBullet">
-        <defName>LOF_Bullet_PsychicInsanity</defName>
-        <label>心灵错乱弹</label>
-        <graphicData>
-            <texPath>Things/Projectile/LOF_PsychicinsanityShot</texPath>
-            <graphicClass>Graphic_Single</graphicClass>
-        </graphicData>
-        <projectile>
-            <damageDef>LOF_Cast_PsychicInsanity</damageDef>
-            <damageAmountBase>25</damageAmountBase>
-            <armorPenetrationBase>0.5</armorPenetrationBase>
-            <speed>70</speed>
-            <stoppingPower>1</stoppingPower>
-        </projectile>
-    </ThingDef>
-
-    <ThingDef ParentName="BaseBullet">
-        <defName>LOF_Bullet_RailgunAT</defName>
-        <label>电磁弹</label>
-        <graphicData>
-            <texPath>Things/Projectile/TandemHEAT</texPath>
-            <graphicClass>Graphic_Single</graphicClass>
-            <shaderType>TransparentPostLight</shaderType>
-        </graphicData>
-        <projectile>
-            <damageDef>Bullet</damageDef>
-            <damageAmountBase>75</damageAmountBase>
-            <armorPenetrationBase>0.7</armorPenetrationBase>
-            <!--explosionRadius>2</explosionRadius-->
-            <speed>75</speed>
-            <stoppingPower>3</stoppingPower>
         </projectile>
     </ThingDef>
 
@@ -209,27 +80,6 @@
             <soundExplode>Explosion_GiantBomb</soundExplode>
             <soundImpactAnticipate>MortarRound_PreImpact</soundImpactAnticipate>
             <soundAmbient>MortarRound_Ambient</soundAmbient>
-        </projectile>
-    </ThingDef>
-
-    <!--Rockets-->
-
-    <ThingDef ParentName="BaseBullet">
-        <defName>LOF_Bullet_TandemHEAT</defName>
-        <label>串联破甲火箭弹</label>
-        <graphicData>
-            <texPath>Things/Projectile/TandemHEAT</texPath>
-            <graphicClass>Graphic_Single</graphicClass>
-            <shaderType>TransparentPostLight</shaderType>
-        </graphicData>
-        <thingClass>Projectile_Explosive</thingClass>
-        <projectile>
-            <damageDef>Bomb</damageDef>
-            <damageAmountBase>120</damageAmountBase>
-            <armorPenetrationBase>0.3</armorPenetrationBase>
-            <explosionRadius>10</explosionRadius>
-            <speed>65</speed>
-            <stoppingPower>1</stoppingPower>
         </projectile>
     </ThingDef>
 

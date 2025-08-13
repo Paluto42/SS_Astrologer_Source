@@ -1,6 +1,4 @@
-﻿using Verse;
-
-namespace Astrologer
+﻿namespace Astrologer
 {
     /*public class TCP_DrafterGraphic : CompProperties
     {

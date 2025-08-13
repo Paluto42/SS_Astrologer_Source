@@ -11,7 +11,7 @@ namespace Astrologer_HAR
     public class Patch_BodyGraphicForPrefix
     {
         [HarmonyPrefix]
-        public static bool BodyGraphicForPrefix_Prefix(ref bool __result, PawnRenderNode_Body __instance, Pawn pawn)
+        public static bool BodyGraphicForPrefix_Prefix(ref bool __result, Pawn pawn)
         {
             __result = true;
             if (pawn.TryGetAstroDoc() != null)

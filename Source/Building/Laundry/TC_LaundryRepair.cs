@@ -11,7 +11,7 @@ namespace Astrologer
         protected override string GizmoActiveLabel => "SSR_开关生物编码洗衣机副桶";
         protected override string GizmoActiveDesc => "SSR_开关生物编码洗衣机副桶desc";
 
-        List<Thing> pendingDropping = new();
+        readonly List<Thing> pendingDropping = new();
 
         public override void CompleteWashing()
         {
@@ -36,8 +36,7 @@ namespace Astrologer
         }
         protected override void CompleteWashingSingle(Thing t)
         {
-            ThingWithComps j = t as ThingWithComps;
-            if (j == null) goto LABEL_ShouldDrop;
+            if (t is not ThingWithComps j) goto LABEL_ShouldDrop;
             if (j.def.useHitPoints)
             {
                 j.HitPoints = (int)Math.Min(j.MaxHitPoints, j.HitPoints + Prop.effect);
@@ -50,7 +49,7 @@ namespace Astrologer
             pendingDropping.Add(t);
         }
 
-        protected override bool _ContentValidator(Thing t)
+        protected override bool ValidateContent(Thing t)
         {
             return t.def.useHitPoints && t.HitPoints < t.MaxHitPoints;
         }

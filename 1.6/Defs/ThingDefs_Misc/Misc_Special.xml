@@ -5,14 +5,13 @@
         <defName>LOF_ActivatedPulsePack</defName>
         <label>EMP冲击背包(工作中)</label>
         <thingClass>Astrologer.ActivatedPulsePack</thingClass>
-        <category>Building</category>
         <tickerType>Normal</tickerType>
         <drawerType>MapMeshOnly</drawerType>
         <description>投射在地面上会产生持续的emp脉冲,范围较大且放置距离较长</description>
+        <category>Projectile</category>
+        <useHitPoints>False</useHitPoints>
         <selectable>true</selectable>
         <soundImpactDefault>BulletImpact_Metal</soundImpactDefault>
-        <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
-        <leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
         <filthLeaving>Filth_RubbleBuilding</filthLeaving>
         <graphicData>
             <texPath>Things/Apparel/LOF_EmpactPack/EmpactPack</texPath>
@@ -30,7 +29,8 @@
         <tickerType>Normal</tickerType>
         <drawerType>RealtimeOnly</drawerType>
         <drawOffscreen>true</drawOffscreen>
-        <useHitPoints>false</useHitPoints>
+        <category>Projectile</category>
+        <useHitPoints>False</useHitPoints>
         <comps>
             <li Class="Astrologer.TCP_TimedRemove">
                 <lastTime>2500</lastTime>

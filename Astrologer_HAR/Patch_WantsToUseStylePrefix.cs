@@ -30,7 +30,7 @@ namespace Astrologer_HAR
     {
         [HarmonyBefore("rimworld.erdelf.alien_race.main")]
         [HarmonyPrefix]
-        public static bool Prefix(Pawn pawn, StyleItemDef styleItemDef)
+        public static bool Prefix(Pawn pawn)
         {
             if (pawn.TryGetAstroDoc() == null) return true;
             //Log.Message("WantsToUseStylePostfix");//这个方法甚至一次能调用79-120次，sbHAR

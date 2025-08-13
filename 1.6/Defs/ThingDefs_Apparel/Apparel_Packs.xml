@@ -191,51 +191,33 @@
 
     <ThingDef ParentName="Astro_ApparelBase">
         <defName>LOF_Equip_Waistbag</defName>
-        <label>埃兰迪尔</label>
-        <description>挂在腰间的装备，消耗洞察力可以进行折跃距离较长.</description>
+        <label>&lt;color=#AF23A5&gt;ASAT-31 “埃兰迪尔” 动力系统&lt;/color&gt;</label>
+        <description>由先进科技研究所为特殊需要的士兵研发的辅助动力系统。只需要消耗洞察力，就能通过背包内置的折跃装置在空间中穿梭。可以说，这个装置决定了占星师士兵的作战能力上限。</description>
         <graphicData>
             <texPath>Things/Apparel/LOF_Waistbag/Waistbag</texPath>
             <graphicClass>Graphic_Single</graphicClass>
         </graphicData>
-        <possessionCount>1</possessionCount>
-        <!--占位,原版数值-->
         <statBases>
-            <MaxHitPoints>120</MaxHitPoints>
-            <WorkToMake>8000</WorkToMake>
+            <MarketValue>2000</MarketValue>
+            <MaxHitPoints>300</MaxHitPoints>
+            <Beauty>2</Beauty>
+            <Flammability>0</Flammability>
+            <DeteriorationRate>1</DeteriorationRate>
+            <WorkToMake>60000</WorkToMake>
             <Mass>2</Mass>
-            <EquipDelay>3.0</EquipDelay>
+            <ArmorRating_Sharp>0.2</ArmorRating_Sharp>
+            <ArmorRating_Blunt>0.2</ArmorRating_Blunt>
+            <ArmorRating_Heat>0.2</ArmorRating_Heat>
+            <Insulation_Cold>10</Insulation_Cold>
+            <Insulation_Heat>10</Insulation_Heat>
+            <EquipDelay>3</EquipDelay>
         </statBases>
-        <equippedStatOffsets>
-        </equippedStatOffsets>
-        <comps>
-            <li Class="AKA_Ability.TCP_AKATracker">
-                <trackerGenProp>
-                    <abilities>
-                        <li>LOF_Ability_Teleport</li>
-                    </abilities>
-                </trackerGenProp>
-            </li>
-        </comps>
         <costList>
-            <Cloth>20</Cloth>
-            <LOF_Thing_StarlightIron>40</LOF_Thing_StarlightIron>
-            <ComponentIndustrial>10</ComponentIndustrial>
+            <LOF_Thing_StarlightIron>100</LOF_Thing_StarlightIron>
+            <Plasteel>20</Plasteel>
+            <ComponentIndustrial>5</ComponentIndustrial>
+            <ComponentSpacer>10</ComponentSpacer>
         </costList>
-        <apparel>
-            <wornGraphicPath>Things/Apparel/LOF_Waistbag/Waistbag</wornGraphicPath>
-            <bodyPartGroups>
-                <li>Waist</li>
-            </bodyPartGroups>
-            <layers>
-                <li>LOF_ApparelLayer_Webbing</li>
-            </layers>
-            <defaultOutfitTags>
-                <li>Soldier</li>
-            </defaultOutfitTags>
-            <tags>
-                <li>Astrologer_Equipment</li>
-            </tags>
-        </apparel>
         <recipeMaker Inherit="false">
             <!--researchPrerequisite>LOF_Research_AdvancedManufacture</researchPrerequisite>
             <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
@@ -248,6 +230,36 @@
             </recipeUsers>
             <unfinishedThingDef>UnfinishedPack</unfinishedThingDef-->
         </recipeMaker>
+        <equippedStatOffsets>
+            <MoveSpeed>0.5</MoveSpeed>
+        </equippedStatOffsets>
+        <apparel>
+            <wornGraphicPath>Things/Apparel/LOF_Waistbag/Waistbag</wornGraphicPath>
+            <careIfWornByCorpse>false</careIfWornByCorpse>
+            <careIfDamaged>false</careIfDamaged>
+            <wearPerDay>0</wearPerDay>
+            <bodyPartGroups>
+                <li>Waist</li>
+            </bodyPartGroups>
+            <layers>
+                <li>Belt</li>
+            </layers>
+            <defaultOutfitTags>
+                <li>Soldier</li>
+            </defaultOutfitTags>
+            <tags>
+                <li>Astrologer_Equipment</li>
+            </tags>
+        </apparel>
+        <comps>
+            <li Class="AKA_Ability.TCP_AKATracker">
+                <trackerGenProp>
+                    <abilities>
+                        <li>LOF_Ability_Teleport</li>
+                    </abilities>
+                </trackerGenProp>
+            </li>
+        </comps>
     </ThingDef>
 
 </Defs>

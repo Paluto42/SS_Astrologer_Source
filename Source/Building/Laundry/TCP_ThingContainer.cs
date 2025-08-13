@@ -53,16 +53,13 @@ namespace Astrologer
         {
             if (!ShowGizemo || parent == null || parent.Map == null) yield break;
             //fixme
-            if (cachedGizmo == null)
+            cachedGizmo ??= new Command_Action
             {
-                cachedGizmo = new Command_Action
-                {
-                    defaultLabel = Prop.gizmoEjectLabel.Translate(),
-                    defaultDesc = Prop.gizmoEjectDesc.Translate(),
-                    icon = ContentFinder<Texture2D>.Get(Prop.gizmoEjectUIIconPath),
-                    action = EjectAll
-                };
-            }
+                defaultLabel = Prop.gizmoEjectLabel.Translate(),
+                defaultDesc = Prop.gizmoEjectDesc.Translate(),
+                icon = ContentFinder<Texture2D>.Get(Prop.gizmoEjectUIIconPath),
+                action = EjectAll
+            };
             yield return cachedGizmo;
         }
 

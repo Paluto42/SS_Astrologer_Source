@@ -89,6 +89,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Ability\AbilityEffect\AE_CostInsight.cs" />
+    <Compile Include="Ability\AbilityEffect\AE_TriggerEffect.cs" />
     <Compile Include="Ability\AbilityEffect\AE_DeployBuilding.cs" />
     <Compile Include="Ability\AbilityEffect\AE_AddHediffRadial.cs" />
     <Compile Include="Ability\AbilityEffect\AE_IgnoreDmg.cs" />
@@ -98,6 +99,7 @@
     <Compile Include="Ability\CC_InsightThreshold.cs" />
     <Compile Include="Ability\HarmonyPatches\Patch_IgnoreDmg.cs" />
     <Compile Include="Ability\HarmonyPatches\Patch_IgnoreStagger.cs" />
+    <Compile Include="Ability\HarmonyPatches\Patch_StatValue.cs" />
     <Compile Include="Ability\HC_IncreastHarvest.cs" />
     <Compile Include="Ability\AstroDocument.cs" />
     <Compile Include="AstroMatPool.cs" />
@@ -116,8 +118,9 @@
     <Compile Include="Building\Foundry\Building_CraftingTable.cs" />
     <Compile Include="Building\StellarStove.cs" />
     <Compile Include="Building\TCP_NightGenerator.cs" />
+    <Compile Include="Comp\Ability\TCP_EnhanceDefense.cs" />
     <Compile Include="Comp\TCP_DrafterGraphic.cs" />
-    <Compile Include="Comp\TCP_EffectWorn.cs" />
+    <Compile Include="Comp\Ability\TCP_EffectWorn.cs" />
     <Compile Include="Comp\TCP_TimedRemove.cs" />
     <Compile Include="Ability\HarmonyPatches\Patch_IncomingDamageFactor.cs" />
     <Compile Include="Equipment\Verb\VP_StatValue.cs" />
@@ -125,7 +128,7 @@
     <Compile Include="HarmonyPatches\Patch_MassCapacity.cs" />
     <Compile Include="HarmonyPatches\Patch_ProcessApparel.cs" />
     <Compile Include="HarmonyPatches\Patch_JobDriver.cs" />
-    <Compile Include="HarmonyPatches\Patch_StatValue.cs" />
+    <Compile Include="HarmonyPatches\Patch_StatRequest.cs" />
     <Compile Include="Insight\InteractableComp\TCP_InsightUsable.cs" />
     <Compile Include="Insight\InteractableComp\TCP_OpenBillTab.cs" />
     <Compile Include="Misc\MC_Astrologer.cs" />
@@ -134,7 +137,7 @@
     <Compile Include="Misc\ScenPart_GameStartLetter.cs" />
     <Compile Include="OperatorDef\RPEW_AstroDoc.cs" />
     <Compile Include="QuestNode\IncidentWorker_GiveQuestAstroScenario.cs" />
-    <Compile Include="Equipment\TransformApparel.cs" />
+    <Compile Include="Thing\TransformApparel.cs" />
     <Compile Include="HarmonyPatches\Patch_DraftController.cs" />
     <Compile Include="Insight\TCP_UpgradeInsight.cs" />
     <Compile Include="Comp\TCP_AddHediff.cs" />
@@ -144,7 +147,7 @@
     <Compile Include="Ability\Gizmo\Gizmo_InsightMonitor.cs" />
     <Compile Include="HarmonyPatches\Patch_GeneTracker.cs" />
     <Compile Include="HarmonyPatches\Patch_Main.cs" />
-    <Compile Include="Equipment\TransformEquipment.cs" />
+    <Compile Include="Thing\TransformEquipment.cs" />
     <Compile Include="Equipment\Weapon\TCP_FireMode.cs" />
     <Compile Include="Insight\VAB_AstroTracker.cs" />
     <Compile Include="Insight\InteractableComp\IInsightInteractable.cs" />
@@ -154,15 +157,15 @@
     <Compile Include="Equipment\Weapon\DamageWorker_Bomb.cs" />
     <Compile Include="Equipment\Weapon\DamageWorker_ForcePartDestruct.cs" />
     <Compile Include="Building\PsychicDevice.cs" />
-    <Compile Include="Equipment\GravityDeflectionDust.cs" />
+    <Compile Include="Thing\GravityDeflectionDust.cs" />
     <Compile Include="ModSettings.cs" />
-    <Compile Include="Plant\TCP_NightGlower.cs" />
+    <Compile Include="Comp\Plant\TCP_NightGlower.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="QuestNode\QuestNode_IsFactionRelationKind.cs" />
     <Compile Include="QuestNode\QuestNode_Root_GetAdventurerJoin_WalkIn.cs" />
     <Compile Include="Equipment\Weapon\DamageWorker_EMP.cs" />
     <Compile Include="Equipment\Projectile_Leech.cs" />
-    <Compile Include="Equipment\ActivatedPulsePack.cs" />
+    <Compile Include="Thing\ActivatedPulsePack.cs" />
     <Compile Include="Equipment\DrafterEquipment.cs" />
     <Compile Include="Thought\JoyGiver_InteractBuildingCell.cs" />
     <Compile Include="Thought\ThoughtWorker_SightMood.cs" />
@@ -171,6 +174,7 @@
     <Compile Include="Equipment\Verb\Verb_InsightShoot.cs" />
     <Compile Include="Equipment\Verb\Verb_MultipleShoot.cs" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
     <PostBuildEvent>DEL "$(SolutionDir)..\1.6\Assemblies\Astrologer.dll"

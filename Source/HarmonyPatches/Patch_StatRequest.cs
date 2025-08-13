@@ -6,10 +6,11 @@ using Verse;
 namespace Astrologer.HarmonyPatches
 {
     //通过Verb切换StatBaseValue
-    [HarmonyPatch(typeof(StatRequest), "StatBases", MethodType.Getter)]
-    public class Patch_StatValue
+    [HarmonyPatch(typeof(StatRequest))]
+    public class Patch_StatRequest
     {
         [HarmonyPostfix]
+        [HarmonyPatch("StatBases", MethodType.Getter)]
         public static List<StatModifier> Postfix(List<StatModifier> values, StatRequest __instance)
         {
             if (__instance.Def is not BuildableDef || __instance.Thing is not TransformEquipment eq) return values;
@@ -22,7 +23,6 @@ namespace Astrologer.HarmonyPatches
             return verbProps.statBases;
         }
     }
-
     /*[HarmonyPatch(typeof(StatWorker), "GetBaseValueFor")]
     public class Patch_StatValue
     {

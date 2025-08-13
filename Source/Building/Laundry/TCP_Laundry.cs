@@ -144,8 +144,8 @@ namespace Astrologer
 
         protected abstract void CompleteWashingSingle(Thing t); //洗完的效果改这里
 
-        public Predicate<Thing> ContentValidator => _ContentValidator;
+        public Predicate<Thing> ContentValidator => ValidateContent;
 
-        protected abstract bool _ContentValidator(Thing t);  //判断某个thing是否是合格的可以放进来洗的
+        protected abstract bool ValidateContent(Thing t);  //判断某个thing是否是合格的可以放进来洗的
     }
 }

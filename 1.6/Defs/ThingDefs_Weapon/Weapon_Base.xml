@@ -1,17 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-    <ThingDef Name="Astro_BaseWeapon" Abstract="True" ParentName="BaseWeapon">
-        <comps Inherit="false">
-            <li Class="CompProperties_Forbiddable"/>
-            <li Class="CompProperties_Styleable"/>
-            <li>
-                <compClass>CompEquippable</compClass>
-            </li>
-        </comps>
-    </ThingDef>
-
-    <ThingDef Name="Astro_MedievalWeaponBase" Abstract="True" ParentName="Astro_BaseWeapon">
+    <ThingDef Name="Astro_MedievalWeaponBase" Abstract="True" ParentName="BaseWeapon">
         <techLevel>Medieval</techLevel>
         <smeltable>true</smeltable>
         <relicChance>0</relicChance>
@@ -34,7 +24,7 @@
         <burnableByRecipe>true</burnableByRecipe>
     </ThingDef>
 
-    <ThingDef Name="Astro_IndustrialWeaponBase" Abstract="True" ParentName="Astro_BaseWeapon">
+    <ThingDef Name="Astro_IndustrialWeaponBase" Abstract="True" ParentName="BaseWeapon">
         <techLevel>Industrial</techLevel>
         <smeltable>true</smeltable>
         <relicChance>0</relicChance>

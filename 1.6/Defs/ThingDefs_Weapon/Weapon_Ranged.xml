@@ -25,7 +25,6 @@
         </tools>
     </ThingDef>
 
-    <!--LU:0731-->
     <ThingDef ParentName="Astro_BasicWeaponRangedBase">
         <defName>LOF_Weapon_EagleMoon</defName>
         <label>鹰月</label>
@@ -43,7 +42,6 @@
             <li>LOF_BaseGun</li>
             <li>LOF_WeaponRanged</li>
         </weaponTags>
-        <!--占位,原版数值-->
         <statBases>
             <MarketValue>500</MarketValue>
             <Flammability>0.1</Flammability>
@@ -78,9 +76,23 @@
             </li>
         </verbs>
     </ThingDef>
+    <ThingDef ParentName="BaseBullet">
+        <defName>LOF_Projectile_EagleMoon</defName>
+        <label>手炮弹药</label>
+        <graphicData>
+            <texPath>Things/Projectile/Bullet_Small</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <projectile>
+            <damageDef>Bullet</damageDef>
+            <damageAmountBase>15</damageAmountBase>
+            <armorPenetrationBase>0.2</armorPenetrationBase>
+            <stoppingPower>1</stoppingPower>
+            <speed>60</speed>
+        </projectile>
+    </ThingDef>
 
     <!--=============== SMG ====================-->
-    <!--LU:0731-->
     <ThingDef ParentName="Astro_BasicWeaponRangedBase">
         <defName>LOF_Weapon_CombatSMG</defName>
         <label>格斗冲锋枪</label>
@@ -103,7 +115,6 @@
                 <Crafting>4</Crafting>
             </skillRequirements>
         </recipeMaker>
-        <!--占位,原版数值-->
         <statBases>
             <MarketValue>500</MarketValue>
             <SellPriceFactor>0.1</SellPriceFactor>
@@ -118,8 +129,8 @@
             <RangedWeapon_Cooldown>1.0</RangedWeapon_Cooldown>
         </statBases>
         <costList>
-            <LOF_Thing_StarlightIron>70</LOF_Thing_StarlightIron>
-            <ComponentIndustrial>4</ComponentIndustrial>
+            <Steel>150</Steel>
+            <ComponentIndustrial>5</ComponentIndustrial>
         </costList>
         <verbs>
             <li>
@@ -136,9 +147,23 @@
             </li>
         </verbs>
     </ThingDef>
+    <ThingDef ParentName="BaseBullet">
+        <defName>LOF_Bullet_SMG</defName>
+        <label>冲锋枪子弹</label>
+        <graphicData>
+            <texPath>Things/Projectile/Bullet_Small</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <projectile>
+            <damageDef>Bullet</damageDef>
+            <damageAmountBase>7</damageAmountBase>
+            <armorPenetrationBase>0.1</armorPenetrationBase>
+            <speed>48</speed>
+            <stoppingPower>0.5</stoppingPower>
+        </projectile>
+    </ThingDef>
 
     <!--=============== Shotguns  ====================-->
-    <!--LU:0731-->
     <ThingDef ParentName="Astro_BasicWeaponRangedBase">
         <defName>LOF_Weapon_PiercingShotgun</defName>
         <label>破甲霰弹枪</label>
@@ -154,15 +179,14 @@
             <li>LOF_BaseGun</li>
             <li>LOF_WeaponRanged</li>
         </weaponTags>
-        <!--占位,原版数值-->
         <statBases>
             <MarketValue>600</MarketValue>
             <Beauty>3</Beauty>
             <Flammability>0.1</Flammability>
             <WorkToMake>18000</WorkToMake>
             <Mass>3</Mass>
-            <AccuracyTouch>1</AccuracyTouch>
-            <AccuracyShort>0.87</AccuracyShort>
+            <AccuracyTouch>1.0</AccuracyTouch>
+            <AccuracyShort>1.0</AccuracyShort>
             <AccuracyMedium>0.50</AccuracyMedium>
             <AccuracyLong>0.20</AccuracyLong>
             <RangedWeapon_Cooldown>0.1</RangedWeapon_Cooldown>
@@ -190,8 +214,22 @@
             </li>
         </verbs>
     </ThingDef>
+    <ThingDef ParentName="BaseBullet">
+        <defName>LOF_Bullet_Shotgun</defName>
+        <label>霰弹</label>
+        <graphicData>
+            <texPath>Things/Projectile/Bullet_Shotgun</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <projectile>
+            <damageDef>Bullet</damageDef>
+            <damageAmountBase>10</damageAmountBase>
+            <stoppingPower>1</stoppingPower>
+            <armorPenetrationBase>0.10</armorPenetrationBase>
+            <speed>55</speed>
+        </projectile>
+    </ThingDef>
 
-    <!--LU:0731-->
     <ThingDef ParentName="Astro_BasicWeaponRangedBase">
         <defName>LOF_Weapon_RapidShotgun</defName>
         <label>&lt;color=#00AEEF&gt;"AMA-1" 电能霰弹枪&lt;/color&gt;</label>
@@ -206,7 +244,6 @@
         <weaponTags>
             <li>LOF_WeaponRanged</li>
         </weaponTags>
-        <!--占位,原版数值-->
         <statBases>
             <MarketValue>2000</MarketValue>
             <Beauty>2</Beauty>
@@ -245,9 +282,26 @@
             </li>
         </verbs>
     </ThingDef>
+    <ThingDef ParentName="LOF_ChargedShotBase">
+        <defName>LOF_Bullet_StunShotgun</defName>
+        <label>高速电能霰弹</label>
+        <projectile>
+            <damageDef>Bullet</damageDef>
+            <damageAmountBase>10</damageAmountBase>
+            <armorPenetrationBase>0.50</armorPenetrationBase>
+            <extraDamages>
+                <li>
+                    <def>EMP</def>
+                    <amount>1</amount>
+                    <chance>10</chance>
+                </li>
+            </extraDamages>
+            <speed>65</speed>
+            <stoppingPower>1.5</stoppingPower>
+        </projectile>
+    </ThingDef>
 
     <!--=============== Rifles  ====================-->
-    <!--LU:0731-->
     <ThingDef ParentName="Astro_AKAWeaponRangedBase">
         <defName>LOF_Weapon_PsychicRifle</defName>
         <label>&lt;color=#00AEEF&gt;"MK-5" 等离子心灵干扰步枪&lt;/color&gt;</label>
@@ -265,7 +319,6 @@
         <weaponTags>
             <li>LOF_WeaponRanged</li>
         </weaponTags>
-        <!--占位,原版数值-->
         <statBases>
             <MarketValue>1500</MarketValue>
             <Flammability>0</Flammability>
@@ -363,6 +416,36 @@
                 <secondaryDescription>Each bullet hits with a Psychicinsanity effect\nRequires 5 points of insight for each shot.</secondaryDescription>
             </li>
         </comps>
+    </ThingDef>
+    <ThingDef ParentName="BaseBullet">
+        <defName>LOF_Bullet_Rifle</defName>
+        <label>突击步枪子弹</label>
+        <graphicData>
+            <texPath>Things/Projectile/Bullet_Small</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <projectile>
+            <damageDef>Bullet</damageDef>
+            <damageAmountBase>25</damageAmountBase>
+            <armorPenetrationBase>0.5</armorPenetrationBase>
+            <speed>70</speed>
+            <stoppingPower>1</stoppingPower>
+        </projectile>
+    </ThingDef>
+    <ThingDef ParentName="BaseBullet">
+        <defName>LOF_Bullet_PsychicInsanity</defName>
+        <label>心灵错乱弹</label>
+        <graphicData>
+            <texPath>Things/Projectile/LOF_PsychicinsanityShot</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <projectile>
+            <damageDef>LOF_Cast_PsychicInsanity</damageDef>
+            <damageAmountBase>25</damageAmountBase>
+            <armorPenetrationBase>0.5</armorPenetrationBase>
+            <speed>70</speed>
+            <stoppingPower>1</stoppingPower>
+        </projectile>
     </ThingDef>
 
     <ThingDef ParentName="Astro_AKAWeaponRangedBase">
@@ -529,7 +612,6 @@
     </ThingDef>
 
     <!--=============== Heavy  ====================-->
-    <!--LU:0731-->
     <ThingDef ParentName="Astro_AKAWeaponRangedBase">
         <defName>LOF_Weapon_PlasmaHMG</defName>
         <label>&lt;color=#00AEEF&gt;"MPE-1" 等离子重机枪&lt;/color&gt;</label>
@@ -546,7 +628,6 @@
         <weaponTags>
             <li>LOF_WeaponRanged</li>
         </weaponTags>
-        <!--占位,原版数值-->
         <statBases>
             <MarketValue>1500</MarketValue>
             <Beauty>4</Beauty>
@@ -639,8 +720,18 @@
             </li>
         </comps>
     </ThingDef>
+    <ThingDef ParentName="LOF_ChargedShotBase">
+        <defName>LOF_Bullet_ChargeHMG</defName>
+        <label>charge shot</label>
+        <projectile>
+            <damageDef>Bullet</damageDef>
+            <damageAmountBase>19</damageAmountBase>
+            <armorPenetrationBase>0.30</armorPenetrationBase>
+            <speed>70</speed>
+            <stoppingPower>1</stoppingPower>
+        </projectile>
+    </ThingDef>
 
-    <!--LU:0731-->
     <ThingDef ParentName="Astro_WeaponRangedBase">
         <defName>LOF_Weapon_RailgunAT</defName>
         <label>&lt;color=#00AEEF&gt;"MPE-4" 反重甲武器&lt;/color&gt;</label>
@@ -657,7 +748,6 @@
         <weaponTags>
             <li>LOF_WeaponRanged</li>
         </weaponTags>
-        <!--占位,原版数值-->
         <statBases>
             <MarketValue>2000</MarketValue>
             <Flammability>0</Flammability>
@@ -710,6 +800,23 @@
                 <requiredDamageTypeToExplode>Flame</requiredDamageTypeToExplode>
             </li>
         </comps-->
+    </ThingDef>
+    <ThingDef ParentName="BaseBullet">
+        <defName>LOF_Bullet_RailgunAT</defName>
+        <label>电磁弹</label>
+        <graphicData>
+            <texPath>Things/Projectile/TandemHEAT</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <shaderType>TransparentPostLight</shaderType>
+        </graphicData>
+        <projectile>
+            <damageDef>Bullet</damageDef>
+            <damageAmountBase>75</damageAmountBase>
+            <armorPenetrationBase>0.7</armorPenetrationBase>
+            <!--explosionRadius>2</explosionRadius-->
+            <speed>75</speed>
+            <stoppingPower>3</stoppingPower>
+        </projectile>
     </ThingDef>
 
     <ThingDef ParentName="Astro_AKAWeaponRangedBase">

@@ -2,6 +2,7 @@
 <LanguageData>
 
     <LOF_NeedInsight>洞察力不足</LOF_NeedInsight>
+    <UnderRequiredInsight>洞察力不足</UnderRequiredInsight>
     <LOF_InsufficientInsight>需要 {0} 点洞察力</LOF_InsufficientInsight>
 
 </LanguageData>

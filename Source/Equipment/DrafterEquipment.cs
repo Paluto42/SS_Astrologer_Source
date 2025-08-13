@@ -1,6 +1,4 @@
-﻿using Verse;
-
-namespace Astrologer
+﻿namespace Astrologer
 {
     //给武器用的
     /*public class DrafterEquipment : ThingWithComps
