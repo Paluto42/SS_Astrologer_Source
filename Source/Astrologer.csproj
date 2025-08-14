@@ -99,7 +99,6 @@
     <Compile Include="Ability\CC_InsightThreshold.cs" />
     <Compile Include="Ability\HarmonyPatches\Patch_IgnoreDmg.cs" />
     <Compile Include="Ability\HarmonyPatches\Patch_IgnoreStagger.cs" />
-    <Compile Include="Ability\HarmonyPatches\Patch_StatValue.cs" />
     <Compile Include="Ability\HC_IncreastHarvest.cs" />
     <Compile Include="Ability\AstroDocument.cs" />
     <Compile Include="AstroMatPool.cs" />
@@ -126,7 +125,6 @@
     <Compile Include="Equipment\Verb\VP_StatValue.cs" />
     <Compile Include="HarmonyPatches\Patch_Corpse.cs" />
     <Compile Include="HarmonyPatches\Patch_MassCapacity.cs" />
-    <Compile Include="HarmonyPatches\Patch_ProcessApparel.cs" />
     <Compile Include="HarmonyPatches\Patch_JobDriver.cs" />
     <Compile Include="HarmonyPatches\Patch_StatRequest.cs" />
     <Compile Include="Insight\InteractableComp\TCP_InsightUsable.cs" />

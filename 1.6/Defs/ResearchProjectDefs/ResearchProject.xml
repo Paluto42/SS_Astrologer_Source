@@ -173,6 +173,7 @@
         <generalRules></generalRules>
     </ResearchProjectDef>
 
+    <![CDATA[
     <ResearchProjectDef>
         <defName>LOF_Research_Supplies</defName>
         <label>行军补给品(未实装)</label>
@@ -187,6 +188,7 @@
         <tab>LOF_ResearchTab_Astrologer</tab>
         <generalRules></generalRules>
     </ResearchProjectDef>
+    ]]>
 
     <!--T2-->
     <![CDATA[
