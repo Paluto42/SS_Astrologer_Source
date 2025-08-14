@@ -122,7 +122,7 @@
     <Compile Include="Comp\Ability\TCP_EffectWorn.cs" />
     <Compile Include="Comp\TCP_TimedRemove.cs" />
     <Compile Include="Ability\HarmonyPatches\Patch_IncomingDamageFactor.cs" />
-    <Compile Include="Equipment\Verb\VP_StatValue.cs" />
+    <Compile Include="Verb\VP_StatValue.cs" />
     <Compile Include="HarmonyPatches\Patch_Corpse.cs" />
     <Compile Include="HarmonyPatches\Patch_MassCapacity.cs" />
     <Compile Include="HarmonyPatches\Patch_JobDriver.cs" />
@@ -146,14 +146,14 @@
     <Compile Include="HarmonyPatches\Patch_GeneTracker.cs" />
     <Compile Include="HarmonyPatches\Patch_Main.cs" />
     <Compile Include="Thing\TransformEquipment.cs" />
-    <Compile Include="Equipment\Weapon\TCP_FireMode.cs" />
+    <Compile Include="Comp\TCP_FireMode.cs" />
     <Compile Include="Insight\VAB_AstroTracker.cs" />
     <Compile Include="Insight\InteractableComp\IInsightInteractable.cs" />
     <Compile Include="Insight\InteractableComp\JobDriver_InsightInteract.cs" />
     <Compile Include="Insight\InteractableComp\TCP_AddHediffInRange.cs" />
     <Compile Include="Insight\InteractableComp\TCP_InsightInteractable_Base.cs" />
-    <Compile Include="Equipment\Weapon\DamageWorker_Bomb.cs" />
-    <Compile Include="Equipment\Weapon\DamageWorker_ForcePartDestruct.cs" />
+    <Compile Include="Misc\Weapon\DamageWorker_Bomb.cs" />
+    <Compile Include="Misc\Weapon\DamageWorker_ForcePartDestruct.cs" />
     <Compile Include="Building\PsychicDevice.cs" />
     <Compile Include="Thing\GravityDeflectionDust.cs" />
     <Compile Include="ModSettings.cs" />
@@ -161,16 +161,16 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="QuestNode\QuestNode_IsFactionRelationKind.cs" />
     <Compile Include="QuestNode\QuestNode_Root_GetAdventurerJoin_WalkIn.cs" />
-    <Compile Include="Equipment\Weapon\DamageWorker_EMP.cs" />
-    <Compile Include="Equipment\Projectile_Leech.cs" />
+    <Compile Include="Misc\Weapon\DamageWorker_EMP.cs" />
+    <Compile Include="Thing\Projectile_Leech.cs" />
     <Compile Include="Thing\ActivatedPulsePack.cs" />
-    <Compile Include="Equipment\DrafterEquipment.cs" />
+    <Compile Include="Thing\DrafterEquipment.cs" />
     <Compile Include="Thought\JoyGiver_InteractBuildingCell.cs" />
     <Compile Include="Thought\ThoughtWorker_SightMood.cs" />
     <Compile Include="TypeDef.cs" />
     <Compile Include="Utility.cs" />
-    <Compile Include="Equipment\Verb\Verb_InsightShoot.cs" />
-    <Compile Include="Equipment\Verb\Verb_MultipleShoot.cs" />
+    <Compile Include="Verb\Verb_InsightShoot.cs" />
+    <Compile Include="Verb\Verb_MultipleShoot.cs" />
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

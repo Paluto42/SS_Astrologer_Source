@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <SoundDef>
+        <defName>LOF_Sound_ShotChargeRifle</defName>
+        <context>MapOnly</context>
+        <maxSimultaneous>1</maxSimultaneous>
+        <subSounds>
+            <li>
+                <grains>
+                    <li Class="AudioGrain_Clip">
+                        <clipPath>Weapon/LOF/RAW_Shot</clipPath>
+                    </li>
+                </grains>
+                <volumeRange>15~15</volumeRange>
+            </li>
+        </subSounds>
+    </SoundDef>
+
+    <SoundDef>
+        <defName>LOF_Sound_ShotElectricShotgun</defName>
+        <context>MapOnly</context>
+        <maxSimultaneous>1</maxSimultaneous>
+        <subSounds>
+            <li>
+                <grains>
+                    <li Class="AudioGrain_Clip">
+                        <clipPath>Weapon/LOF/DCM8_shot</clipPath>
+                    </li>
+                </grains>
+                <volumeRange>35~35</volumeRange>
+                <distRange>39.11765~70</distRange>
+                <sustainLoop>False</sustainLoop>
+            </li>
+            <li>
+                <grains>
+                    <li Class="AudioGrain_Folder">
+                        <clipFolderPath>Weapon/Shotgun/Rack</clipFolderPath>
+                    </li>
+                </grains>
+                <volumeRange>10.58823~10.58823</volumeRange>
+                <pitchRange>0.9311765~1.137647</pitchRange>
+                <sustainLoop>False</sustainLoop>
+            </li>
+        </subSounds>
+    </SoundDef>
+
+    <SoundDef>
+        <defName>LOF_Sound_ShotPsychicInsanity</defName>
+        <context>MapOnly</context>
+        <maxSimultaneous>1</maxSimultaneous>
+        <subSounds>
+            <li>
+                <grains>
+                    <li Class="AudioGrain_Clip">
+                        <clipPath>Weapon/LOF/Erad_Shot</clipPath>
+                    </li>
+                </grains>
+                <volumeRange>90~90</volumeRange>
+                <pitchRange>0.7~0.8</pitchRange>
+                <sustainLoop>False</sustainLoop>
+            </li>
+        </subSounds>
+    </SoundDef>
+
+</Defs>

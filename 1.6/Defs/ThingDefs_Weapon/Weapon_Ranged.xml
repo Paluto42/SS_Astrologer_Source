@@ -231,7 +231,7 @@
     </ThingDef>
 
     <ThingDef ParentName="Astro_BasicWeaponRangedBase">
-        <defName>LOF_Weapon_RapidShotgun</defName>
+        <defName>LOF_Weapon_ElectricShotgun</defName>
         <label>&lt;color=#00AEEF&gt;"AMA-1" 电能霰弹枪&lt;/color&gt;</label>
         <description>使用电荷弹药的霰弹枪，设计初衷是在巷战环境中破坏敌方的高护甲单位。</description>
         <graphicData>
@@ -272,18 +272,18 @@
             <li Class="Astrologer.VerbProperties_MultipleShoot">
                 <verbClass>Astrologer.Verb_MultipleShoot</verbClass>
                 <hasStandardCommand>true</hasStandardCommand>
-                <defaultProjectile>LOF_Bullet_StunShotgun</defaultProjectile>
+                <defaultProjectile>LOF_Bullet_ElectricShotgun</defaultProjectile>
                 <projectilesCount>15</projectilesCount>
                 <warmupTime>1.5</warmupTime>
                 <range>15</range>
-                <soundCast>Shot_Shotgun</soundCast>
+                <soundCast>LOF_Sound_ShotElectricShotgun</soundCast>
                 <soundCastTail>GunTail_Heavy</soundCastTail>
                 <muzzleFlashScale>9</muzzleFlashScale>
             </li>
         </verbs>
     </ThingDef>
     <ThingDef ParentName="LOF_ChargedShotBase">
-        <defName>LOF_Bullet_StunShotgun</defName>
+        <defName>LOF_Bullet_ElectricShotgun</defName>
         <label>高速电能霰弹</label>
         <projectile>
             <damageDef>Bullet</damageDef>
@@ -307,6 +307,7 @@
         <label>&lt;color=#00AEEF&gt;"MK-5" 等离子心灵干扰步枪&lt;/color&gt;</label>
         <description>在一些报告中，有占星师声称自己见到了恐惧之神的化身。祂从战场上走过，接着所有人都陷入了不可控制的错乱和恐惧之中。这件事引起了装备部的兴趣，通过研究那些陷入疯狂的人，他们最终研发出了这把武器。</description>
         <thingClass>Astrologer.TransformEquipment</thingClass>
+        <tickerType>Normal</tickerType>
         <graphicData>
             <texPath>Things/Weapons/LOF_PsychicRifle</texPath>
             <graphicClass>Graphic_Single</graphicClass>
@@ -365,7 +366,7 @@
                 <ticksBetweenBurstShots>9</ticksBetweenBurstShots>
                 <warmupTime>1.5</warmupTime>
                 <range>30</range>
-                <soundCast>Shot_ChargeRifle</soundCast>
+                <soundCast>LOF_Sound_ShotChargeRifle</soundCast>
                 <soundCastTail>GunTail_Heavy</soundCastTail>
                 <muzzleFlashScale>9</muzzleFlashScale>
             </li>
@@ -402,7 +403,7 @@
                     <defaultProjectile>LOF_Bullet_PsychicInsanity</defaultProjectile>
                     <warmupTime>1.0</warmupTime>
                     <range>30</range>
-                    <soundCast>Shot_ChargeRifle</soundCast>
+                    <soundCast>LOF_Sound_ShotPsychicInsanity</soundCast>
                     <soundCastTail>GunTail_Heavy</soundCastTail>
                     <muzzleFlashScale>9</muzzleFlashScale>
                 </verbProp>
@@ -421,7 +422,7 @@
         <defName>LOF_Bullet_Rifle</defName>
         <label>突击步枪子弹</label>
         <graphicData>
-            <texPath>Things/Projectile/Bullet_Small</texPath>
+            <texPath>Things/Projectile/Charge_Small</texPath>
             <graphicClass>Graphic_Single</graphicClass>
         </graphicData>
         <projectile>
@@ -670,7 +671,7 @@
                 <range>30</range>
                 <burstShotCount>30</burstShotCount>
                 <ticksBetweenBurstShots>5</ticksBetweenBurstShots>
-                <soundCast>Shot_ChargeRifle</soundCast>
+                <soundCast>LOF_Sound_ShotChargeRifle</soundCast>
                 <soundCastTail>GunTail_Medium</soundCastTail>
                 <muzzleFlashScale>9</muzzleFlashScale>
             </li>
@@ -703,7 +704,7 @@
                     <range>30</range>
                     <burstShotCount>80</burstShotCount>
                     <ticksBetweenBurstShots>3</ticksBetweenBurstShots>
-                    <soundCast>Shot_ChargeRifle</soundCast>
+                    <soundCast>LOF_Sound_ShotChargeRifle</soundCast>
                     <soundCastTail>GunTail_Heavy</soundCastTail>
                     <muzzleFlashScale>9</muzzleFlashScale>
                 </verbProp>

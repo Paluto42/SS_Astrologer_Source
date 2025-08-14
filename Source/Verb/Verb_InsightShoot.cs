@@ -9,7 +9,11 @@ namespace Astrologer.Insight
         public bool ShouldConsumeInsight => CompFireMode.IsSecondaryVerbSelected;
         public bool ShouldCalulateBursts => CompFireMode.Props.verbProp.burstShotCount > 0;
 
-        //连射武器改成倒数第二发结算了 懒得改
+        public override bool CanHitTarget(LocalTargetInfo targ)
+        {
+            return base.CanHitTarget(targ);
+        }
+
         protected override bool TryCastShot()
         {
             bool IF_SUCCESS_CAST = base.TryCastShot();
@@ -27,7 +31,6 @@ namespace Astrologer.Insight
             if (CompFireMode.burstStatus == BurstFireStatus.None || CompFireMode.burstStatus == BurstFireStatus.Completed)
             {
                 CompFireMode.burstStatus = BurstFireStatus.Started;
-                return;
             }
         }
     }
