@@ -201,7 +201,7 @@
         <apparel>
             <wornGraphicPath>Things/Apparel/LOF_EmergencyArmor/EmergencyArmor</wornGraphicPath>
         </apparel>
-        <verbs>
+        <!--verbs>
             <li>
                 <verbClass>Verb_FirefoamPop</verbClass>
                 <label>喷射泡沫灭火剂</label>
@@ -211,9 +211,9 @@
                 <nonInterruptingSelfCast>true</nonInterruptingSelfCast>
                 <onlyManualCast>True</onlyManualCast>
             </li>
-        </verbs>
+        </verbs-->
         <comps>
-            <li Class="CompProperties_ApparelReloadable">
+            <!--li Class="CompProperties_ApparelReloadable">
                 <maxCharges>5</maxCharges>
                 <ammoDef>Chemfuel</ammoDef>
                 <ammoCountPerCharge>40</ammoCountPerCharge>
@@ -222,7 +222,7 @@
                 <hotKey>Misc4</hotKey>
                 <chargeNoun>incendiary</chargeNoun>
                 <displayGizmoWhileUndrafted>false</displayGizmoWhileUndrafted>
-            </li>
+            </li-->
             <li Class="CompProperties_Explosive">
                 <explosiveRadius>4.9</explosiveRadius>
                 <explosiveDamageType>Extinguish</explosiveDamageType>
@@ -297,8 +297,11 @@
             <wornGraphicPath>Things/Apparel/LOF_StandardArmor/StandardArmor</wornGraphicPath>
         </apparel>
         <comps>
-            <li Class="Astrologer.TCP_EnhanceDefense">
-                <armorRatingMultiplier>2</armorRatingMultiplier>
+            <li Class="Astrologer.TCP_StatEffecter">
+                <statFactors>
+                    <ArmorRating_Sharp>2</ArmorRating_Sharp>
+                    <ArmorRating_Blunt>2</ArmorRating_Blunt>
+                </statFactors>
             </li>
             <li Class="AKA_Ability.TCP_AKATracker">
                 <trackerGenProp>
@@ -451,75 +454,75 @@
         <label>TLK-11 "凤凰座" 远行装甲</label>
         <description>离死亡越近，生命的火焰就燃烧的越炽热\n高机动作战装甲--穿戴有移速加成,增加加疼痛阈,减少崩溃临界值,被击中不会影响移动.\n内置医疗系统,消耗一次洞察力可以对穿戴者进行一次治疗,生命值越低则承伤系数越低.</description>
         <!--等待贴图-->
-        <graphicData Class="AK_DLL.GraphicData_MultiFoam">
-            <texPath>Things/Pawn/Humanlike/Apparel/PowerArmor/PowerArmor</texPath>
-            <graphicClass>Graphic_Single</graphicClass>
-            <innerGraphicData_Drop>
-                <li>
-                    <key>0</key>
-                    <value>
-                        <texPath>Things/Pawn/Humanlike/Apparel/PowerArmor/PowerArmor</texPath>
-                        <graphicClass>Graphic_Single</graphicClass>
-                    </value>
-                </li>
-            </innerGraphicData_Drop>
-            <innerGraphicPath_Worn>
-                <li>
-                    <key>0</key>
-                    <value>Things/Pawn/Humanlike/Apparel/Parka/Parka</value>
-                </li>
-            </innerGraphicPath_Worn>
-        </graphicData>
-        <!--占位,原版数值-->
-        <statBases>
-            <MaxHitPoints>260</MaxHitPoints>
-            <WorkToMake>6000</WorkToMake>
-            <Mass>6</Mass>
-            <ArmorRating_Sharp>0.92</ArmorRating_Sharp>
-            <ArmorRating_Blunt>0.4</ArmorRating_Blunt>
-            <ArmorRating_Heat>0.46</ArmorRating_Heat>
-            <Insulation_Cold>32</Insulation_Cold>
-            <Insulation_Heat>9</Insulation_Heat>
-            <EquipDelay>6</EquipDelay>
-        </statBases>
-        <equippedStatOffsets>
-            <MoveSpeed>0.50</MoveSpeed>
-            <PainShockThreshold>0.4</PainShockThreshold>
-            <MentalBreakThreshold>-0.4</MentalBreakThreshold>
-        </equippedStatOffsets>
-        <costList>
-            <ComponentSpacer>4</ComponentSpacer>
-            <Plasteel>40</Plasteel>
-            <LOF_Thing_StarlightIron>100</LOF_Thing_StarlightIron>
-            <Uranium>20</Uranium>
-        </costList>
-        <apparel>
-            <wornGraphicPath>Things/Pawn/Humanlike/Apparel/PowerArmor/PowerArmor</wornGraphicPath>
-            <useDeflectMetalEffect>true</useDeflectMetalEffect>
-            <soundWear>Wear_PowerArmor</soundWear>
-            <soundRemove>Remove_PowerArmor</soundRemove>
-        </apparel>
-        <comps>
-            <li Class="AKA_Ability.TCP_AKATracker">
-                <abilities>
-                    <li>LOF_Ability_EmergencyRescue</li>
-                </abilities>
-            </li>
-            <li Class="Astrologer.TCP_EffectWorn">
-                <effect>ignoreStagger</effect>
-            </li>
-        </comps>
-        <recipeMaker>
-            <researchPrerequisite>LOF_Research_TwilightKnight</researchPrerequisite>
-            <recipeUsers Inherit="false">
-                <li>LOF_StellarFoundry</li>
-            </recipeUsers>
-            <skillRequirements>
-                <Crafting>8</Crafting>
-            </skillRequirements>
-            <displayPriority>1000</displayPriority>
-        </recipeMaker>
-    </ThingDef>
+<graphicData Class="AK_DLL.GraphicData_MultiFoam">
+<texPath>Things/Pawn/Humanlike/Apparel/PowerArmor/PowerArmor</texPath>
+<graphicClass>Graphic_Single</graphicClass>
+<innerGraphicData_Drop>
+<li>
+<key>0</key>
+<value>
+<texPath>Things/Pawn/Humanlike/Apparel/PowerArmor/PowerArmor</texPath>
+<graphicClass>Graphic_Single</graphicClass>
+</value>
+</li>
+</innerGraphicData_Drop>
+<innerGraphicPath_Worn>
+<li>
+<key>0</key>
+<value>Things/Pawn/Humanlike/Apparel/Parka/Parka</value>
+</li>
+</innerGraphicPath_Worn>
+</graphicData>
+<!--占位,原版数值-->
+<statBases>
+<MaxHitPoints>260</MaxHitPoints>
+<WorkToMake>6000</WorkToMake>
+<Mass>6</Mass>
+<ArmorRating_Sharp>0.92</ArmorRating_Sharp>
+<ArmorRating_Blunt>0.4</ArmorRating_Blunt>
+<ArmorRating_Heat>0.46</ArmorRating_Heat>
+<Insulation_Cold>32</Insulation_Cold>
+<Insulation_Heat>9</Insulation_Heat>
+<EquipDelay>6</EquipDelay>
+</statBases>
+<equippedStatOffsets>
+<MoveSpeed>0.50</MoveSpeed>
+<PainShockThreshold>0.4</PainShockThreshold>
+<MentalBreakThreshold>-0.4</MentalBreakThreshold>
+</equippedStatOffsets>
+<costList>
+<ComponentSpacer>4</ComponentSpacer>
+<Plasteel>40</Plasteel>
+<LOF_Thing_StarlightIron>100</LOF_Thing_StarlightIron>
+<Uranium>20</Uranium>
+</costList>
+<apparel>
+<wornGraphicPath>Things/Pawn/Humanlike/Apparel/PowerArmor/PowerArmor</wornGraphicPath>
+<useDeflectMetalEffect>true</useDeflectMetalEffect>
+<soundWear>Wear_PowerArmor</soundWear>
+<soundRemove>Remove_PowerArmor</soundRemove>
+</apparel>
+<comps>
+<li Class="AKA_Ability.TCP_AKATracker">
+<abilities>
+<li>LOF_Ability_EmergencyRescue</li>
+</abilities>
+</li>
+<li Class="Astrologer.TCP_EffectWorn">
+<effect>ignoreStagger</effect>
+</li>
+</comps>
+<recipeMaker>
+<researchPrerequisite>LOF_Research_TwilightKnight</researchPrerequisite>
+<recipeUsers Inherit="false">
+<li>LOF_StellarFoundry</li>
+</recipeUsers>
+<skillRequirements>
+<Crafting>8</Crafting>
+</skillRequirements>
+<displayPriority>1000</displayPriority>
+</recipeMaker>
+</ThingDef>
     ]]>
 
 </Defs>

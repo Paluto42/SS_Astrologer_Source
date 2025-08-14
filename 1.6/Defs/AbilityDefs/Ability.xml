@@ -388,7 +388,7 @@ Tips:\nWhen the Astrologer is near the Starlight Grass,the insight recovery spee
     <AKA_Ability.AKAbilityDef>
         <defName>LOF_Ability_EnhanceDefence</defName>
         <label>Enhance ArmorRating</label>
-        <description>desc.</description>
+        <description>装甲锐钝防御 x 200%.</description>
         <icon>UI/Element/Placeholder</icon>
         <abilityClass>AKA_Ability.AKAbility_SelfTarget</abilityClass>
         <castConditions>

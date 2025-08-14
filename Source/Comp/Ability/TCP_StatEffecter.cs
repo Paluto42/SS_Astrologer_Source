@@ -1,22 +1,22 @@
-﻿using AK_DLL;
+﻿using RimWorld;
+using System.Collections.Generic;
 using Verse;
 
 namespace Astrologer
 {
-    public class TCP_EnhanceDefense : CompProperties
+    public class TCP_StatEffecter : CompProperties
     {
-        //public int duration = 0;
-        public float armorRatingMultiplier = 1f;
+        public List<StatModifier> statFactors;
 
-        public TCP_EnhanceDefense()
+        public TCP_StatEffecter()
         {
-            compClass = typeof(TC_EnhanceDefense);
+            compClass = typeof(TC_StatEffecter);
         }
     }
 
-    public class TC_EnhanceDefense : ThingComp
+    public class TC_StatEffecter : ThingComp
     {
-        public TCP_EnhanceDefense Props => props as TCP_EnhanceDefense;
+        public TCP_StatEffecter Props => props as TCP_StatEffecter;
 
         private int tick = 0;
         public bool Effect => tick > 0;
@@ -29,6 +29,14 @@ namespace Astrologer
         public void RemoveEffect() 
         {
             tick = 0;
+        }
+
+        public override float GetStatFactor(StatDef stat)
+        {
+            float num = 1f;
+            if (!Effect) return num;
+            num *= Props.statFactors.GetStatFactorFromList(stat);
+            return num;
         }
 
         public override void CompTick()

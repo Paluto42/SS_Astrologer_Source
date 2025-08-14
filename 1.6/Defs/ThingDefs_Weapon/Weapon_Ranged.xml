@@ -715,8 +715,8 @@
                 <secondaryIcon>UI/Buttons/SpecialFire</secondaryIcon>
                 <secondaryDescription>进行一小段时间的高速射击</secondaryDescription>
                 <consumeAmount>34</consumeAmount>
-                <!--一次连续开火的tick间隔为(burstShotCount*ticksBetweenBurstShots)-->
-                <consumeDuration>250</consumeDuration>
+                <!--(burstShotCount*ticksBetweenBurstShots)-->
+                <consumeDuration>242</consumeDuration>
             </li>
         </comps>
     </ThingDef>

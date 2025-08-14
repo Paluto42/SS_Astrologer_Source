@@ -11,11 +11,11 @@ namespace Astrologer.Ability
 
         protected override bool DoEffect(AKAbility_Base caster, LocalTargetInfo target)
         {
-            List<Apparel> armors = caster.CasterPawn.apparel.WornApparel.FindAll(ap => ap.HasComp<TC_EnhanceDefense>());
+            List<Apparel> armors = caster.CasterPawn.apparel.WornApparel.FindAll(ap => ap.HasComp<TC_StatEffecter>());
 
             foreach (var item in armors)
             {
-                TC_EnhanceDefense compEnhance = item.GetComp<TC_EnhanceDefense>();
+                TC_StatEffecter compEnhance = item.GetComp<TC_StatEffecter>();
                 compEnhance?.DoEffect(duration);
             }
             return true;

@@ -118,7 +118,7 @@
     <Compile Include="Building\Foundry\Building_CraftingTable.cs" />
     <Compile Include="Building\StellarStove.cs" />
     <Compile Include="Building\TCP_NightGenerator.cs" />
-    <Compile Include="Comp\Ability\TCP_EnhanceDefense.cs" />
+    <Compile Include="Comp\Ability\TCP_StatEffecter.cs" />
     <Compile Include="Comp\TCP_DrafterGraphic.cs" />
     <Compile Include="Comp\Ability\TCP_EffectWorn.cs" />
     <Compile Include="Comp\TCP_TimedRemove.cs" />

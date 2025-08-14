@@ -4,9 +4,10 @@ using Verse;
 
 namespace Astrologer.Ability.HarmonyPatches
 {
-    [HarmonyPatch(typeof(StatExtension))]
+    /*[HarmonyPatch(typeof(StatExtension))]
     internal class Patch_StatValue
     {
+        
         [HarmonyPostfix]
         [HarmonyPatch("GetStatValue")]
         public static float Postfix(float value, Thing thing, StatDef stat)
@@ -18,5 +19,5 @@ namespace Astrologer.Ability.HarmonyPatches
             }
             return value;
         }
-    }
+    }*/
 }
